@@ -1,0 +1,2 @@
+# 2024-T0012-IN01-G02
+Repositório do grupo 2024-T0012-IN01-G02
