@@ -76,7 +76,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 \# | Requisito
 --- | ---
 1 | Recompensas de bonificação por responder perguntas relacionadas à Unilever 
-2 | O controle será feito por WSAD
+2 | Os controles serão: seta cima, esquerda, baixo, direita, espaço D e F.
 3 | HUB de direcionamento para trilhas específicas de Onboarding da Unilever
 4 | Apresentação de informações públicas da empresa de forma gamificada
 5 | O jogo será em 2D de plataforma
