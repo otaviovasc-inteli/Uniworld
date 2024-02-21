@@ -1,7 +1,6 @@
 // Phaser config to instanciate game
-
 const WIDTH = 1280;
-const HEIGHT = 600;
+const HEIGHT = 720;
 const PLAYER_POSITION = {x: WIDTH * 0.1, y: HEIGHT / 2}
 
 const SHARED_CONFIG = {
@@ -10,7 +9,7 @@ const SHARED_CONFIG = {
   startPosition: PLAYER_POSITION
 }
 
-const Scenes = [TitleScreen, Scene1];
+const Scenes = [TitleScreen, Scene1, Preload];
 const createScenes = Scene => new Scene(SHARED_CONFIG);
 const initScene = () => Scenes.map(createScenes)
 
@@ -20,7 +19,7 @@ var config = {
   physics: {
     default: 'arcade',
     arcade: {
-        gravity: { y: 300 },
+        gravity: { y: 1000 },
         debug: true
     }
   },

@@ -1,6 +1,6 @@
 class TitleScreen extends Phaser.Scene {
   constructor() {
-    super("bootGame");
+    super("titleScreen");
   }
 
   create() {
@@ -9,6 +9,6 @@ class TitleScreen extends Phaser.Scene {
   }
 
   startGame() {
-    this.scene.start("playGame")
+    this.scene.start("preload")
   }
 }

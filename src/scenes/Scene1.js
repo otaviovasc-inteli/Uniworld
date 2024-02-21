@@ -3,18 +3,12 @@ class Scene1 extends Phaser.Scene {
     super("playGame");
   }
 
-  preload () {
-    this.load.image("bg1", "assets/sprites/background/back.png");
-    this.load.image("floor", "assets/sprites/background/floor.png");
-    this.load.spritesheet("npc1_talk", "assets/sprites/npc/npc_talk.png", { frameWidth: 256, frameHeight: 160 });
-    this.load.spritesheet("player_fall", "assets/sprites/player/fall.png", { frameWidth: 256, frameHeight: 160 });
-    this.load.spritesheet("player_jump", "assets/sprites/player/jump.png", { frameWidth: 256, frameHeight: 160 });
-    this.load.spritesheet("player_run", "assets/sprites/player/run.png", { frameWidth: 256, frameHeight: 160 });
-    this.load.spritesheet("player_idle", "assets/sprites/player/idle.png", { frameWidth: 256, frameHeight: 160 });
-  }
-
   create () {
-    this.add.image(650, 350, "bg1").setScale(1.1);
+    this.add.image(0, 0, "bg1").setOrigin(0, 0);
+
+    // // Add tilesets
+    // const map = this.make.tilemap({key: 'platforms1'});
+    // const tileset1 = map.addTilesetImage('platforms');
 
     // create platforms
     this.platforms = this.physics.add.staticGroup();
@@ -30,10 +24,6 @@ class Scene1 extends Phaser.Scene {
     this.npc1.setFlip(true, false);
     this.player = this.physics.add.sprite(100, 500, 'player_idle').setScale(1);
     this.player.setSize(40, 110);
-
-    // Create a dialogue box and make sure it doesnt move
-    this.dialogueBox = this.add.text(450, 500, '', { fontSize: '32px', fill: '#fff' });
-    this.dialogueBox.setScrollFactor(0);
 
     // Player properties, player not to run outside the canvas
     this.player.setCollideWorldBounds(true);
@@ -78,6 +68,7 @@ class Scene1 extends Phaser.Scene {
     // Say that our keyboard cursor will be a input
     this.cursors = this.input.keyboard.createCursorKeys();
     this.interactKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
+    this.spaceBar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE)
 
     this.physics.add.collider(this.player, this.platforms);
     this.physics.add.collider(this.npc1, this.platforms);
@@ -109,8 +100,8 @@ class Scene1 extends Phaser.Scene {
     }
 
     // Jump movement
-    if (this.cursors.up.isDown && this.player.body.touching.down)
-      this.player.setVelocityY(-450);
+    if (this.spaceBar.isDown && this.player.body.touching.down)
+      this.player.setVelocityY(-600);
 
     // Jump and fall animation
     if (!this.player.body.touching.down)
