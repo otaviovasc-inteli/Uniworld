@@ -1,4 +1,4 @@
-class TitleScreen extends Phaser.Scene {
+export default class TitleScreen extends Phaser.Scene {
   constructor() {
     super("titleScreen");
   }
