@@ -1,3 +1,7 @@
+import TitleScreen from "./scenes/TitleScreen.js";
+import Preload from "./scenes/Preload.js";
+import Scene1 from "./scenes/scene1.js";
+
 // Phaser config to instanciate game
 const WIDTH = 1280;
 const HEIGHT = 720;
@@ -19,7 +23,7 @@ var config = {
   physics: {
     default: 'arcade',
     arcade: {
-        gravity: { y: 1000 },
+        gravity: { y: 0 },
         debug: true
     }
   },
