@@ -6,7 +6,7 @@ export default class Play extends Phaser.Scene {
   }
 
   create () {
-    this.add.image(0, -200, "bg1").setScale(1.12).setOrigin(0, 0);
+    // this.add.image(0, -200, "bg1").setScale(1.12).setOrigin(0, 0);
 
     // Add map and layers
     const map = this.createMap();
@@ -38,17 +38,19 @@ export default class Play extends Phaser.Scene {
   createMap() {
     console.log(`level${this.getCurrentLevel()}_t1`);
     const map = this.make.tilemap({key: `level${this.getCurrentLevel()}`});
-    map.addTilesetImage('terrainGrass16', `level${this.getCurrentLevel()}_t1`);
-    map.addTilesetImage('cenario01_16x4', `level${this.getCurrentLevel()}_t2`);
+    map.addTilesetImage('level1_t1', `level${this.getCurrentLevel()}_t1`);
+    map.addTilesetImage('level1_t2', `level${this.getCurrentLevel()}_t2`);
+    map.addTilesetImage('level1_t3', `level${this.getCurrentLevel()}_t3`);
     return map;
   }
 
   createLayers(map) {
-    const tileset1 = map.getTileset('terrainGrass16');
-    const tileset2 = map.getTileset('cenario01_16x4');
+    const tileset1 = map.getTileset('level1_t1');
+    const tileset2 = map.getTileset('level1_t2');
+    const tileset3 = map.getTileset('level1_t3');
 
     const environment = map.createLayer('bg', tileset2).setScale(0.4);
-    const platforms = map.createLayer('platform', tileset1).setScale(0.4);
+    const platforms = map.createLayer('platform', [tileset1, tileset2, tileset3]).setScale(0.4);
 
     platforms.setCollisionByExclusion(-1, true);
 
