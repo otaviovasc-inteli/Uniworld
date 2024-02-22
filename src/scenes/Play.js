@@ -22,6 +22,11 @@ export default class Play extends Phaser.Scene {
     }})
   }
 
+  getCurrentLevel() {
+    return 2
+    // return this.registry.get('level') || 1
+  }
+
   createPlayer() {
     return new Player(this, 100, 250);
   }
@@ -31,15 +36,17 @@ export default class Play extends Phaser.Scene {
   }
 
   createMap() {
-    const map = this.make.tilemap({key: 'map1'});
-    map.addTilesetImage('terrainGrass16', 'tileset1');
-    map.addTilesetImage('cenario01_16x4', 'tileset2');
+    console.log(`level${this.getCurrentLevel()}_t1`);
+    const map = this.make.tilemap({key: `level${this.getCurrentLevel()}`});
+    map.addTilesetImage('terrainGrass16', `level${this.getCurrentLevel()}_t1`);
+    map.addTilesetImage('cenario01_16x4', `level${this.getCurrentLevel()}_t2`);
     return map;
   }
 
   createLayers(map) {
     const tileset1 = map.getTileset('terrainGrass16');
     const tileset2 = map.getTileset('cenario01_16x4');
+
     const environment = map.createLayer('bg', tileset2).setScale(0.4);
     const platforms = map.createLayer('platform', tileset1).setScale(0.4);
 

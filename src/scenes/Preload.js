@@ -4,17 +4,17 @@ export default class Preload extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("bg1", "assets/level1/back.png");
+    this.load.image("bg1", "assets/level2/back.png");
 
-    // Room
-    // this.load.tilemapTiledJSON('room', 'assets/room/sceneInterior.json');
-    // this.load.image('tileset1', 'assets/level1/Tile-SetsDoor.png');
-    // this.load.image('tileset2', 'assets/level1/Tile-SetsIntern.png');
+    // level1
+    this.load.tilemapTiledJSON('level1', 'assets/level1/sceneInterior.json');
+    this.load.image('level1_t1', 'assets/level1/Tile-SetsDoor.png');
+    this.load.image('level1_t2', 'assets/level1/Tile-SetsIntern.png');
 
-    // Level 1
-    this.load.tilemapTiledJSON('map1', 'assets/level1/map01v2.json');
-    this.load.image('tileset1', 'assets/level1/terrainGrass16.png');
-    this.load.image('tileset2', 'assets/level1/cenario01_16x4.png');
+    // Level2
+    this.load.tilemapTiledJSON('level2', 'assets/level2/map01v2.json');
+    this.load.image('level2_t1', 'assets/level2/terrainGrass16.png');
+    this.load.image('level2_t2', 'assets/level2/cenario01_16x4.png');
 
 
     this.load.spritesheet("npc1_talk", "assets/npc/npc_talk.png", { frameWidth: 256, frameHeight: 160 });
@@ -22,9 +22,14 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("player_jump", "assets/player/jump.png", { frameWidth: 256, frameHeight: 160 });
     this.load.spritesheet("player_run", "assets/player/run.png", { frameWidth: 256, frameHeight: 160 });
     this.load.spritesheet("player_idle", "assets/player/idle.png", { frameWidth: 256, frameHeight: 160 });
+
+    this.load.once('complete', () => {
+      this.startGame();
+    })
   }
 
-  create() {
+  startGame() {
+    this.registry.set('level', 1)
     this.scene.start("playGame")
   }
 }
