@@ -1,10 +1,13 @@
 import initAnimations from './playerAnims.js'
+import collidable from '../mixins/collidable.js';
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   constructor(scene, x, y) {
     super(scene, x, y, 'player_idle')
     scene.add.existing(this);
     scene.physics.add.existing(this);
+
+    Object.assign(this, collidable);
 
     this.init()
     this.initEvents()
@@ -39,7 +42,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     const interactKey = this.interactKey;
 
     this.playerVelocityY = this.body.velocity.y;
-    
+
     // If 'left' walks left and play animation, if not moving play "player idle"
     if (left.isDown) {
       this.setFlip(true, false);
@@ -57,17 +60,16 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     if (down.isDown)
-      this.setVelocityY(this.playerSpeed * 1.6)
+      this.setVelocityY(this.playerSpeed * 2)
 
-    // Jumping logics
+    // Jumping logics with double jumpt
     if ((isSpaceJustDown || isUpJustDown) && (onFloor || this.jumpCount < this.consecutiveJumps)) {
       this.setVelocityY(-this.playerSpeed * 1.6)
       this.jumpCount++;
     }
 
     // Jump and fall animation
-    if (!onFloor)
-    {
+    if (!onFloor) {
       this.play('player_jump', true);
       if (!onFloor && this.playerVelocityY > 0)
         this.play('player_fall', true);

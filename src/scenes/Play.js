@@ -1,6 +1,6 @@
 import Player from "../entities/Player.js";
 
-export default class Scene1 extends Phaser.Scene {
+export default class Play extends Phaser.Scene {
   constructor() {
     super("playGame");
   }
@@ -16,11 +16,18 @@ export default class Scene1 extends Phaser.Scene {
     const player = this.createPlayer().setScale(0.6);
 
     // Collider player with platforms
-    this.physics.add.collider(player, layers.platforms);
+    this.createPlayerColliders(player, {
+      colliders: {
+        platforms: layers.platforms
+    }})
   }
 
   createPlayer() {
     return new Player(this, 100, 250);
+  }
+
+  createPlayerColliders(player, {colliders}) {
+    player.addCollider(colliders.platforms)
   }
 
   createMap() {
