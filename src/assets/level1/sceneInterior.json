@@ -77,17 +77,6 @@
          "name":"player_zones",
          "objects":[
                 {
-                 "height":189,
-                 "id":1,
-                 "name":"endZone",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":75,
-                 "x":1151,
-                 "y":514
-                }, 
-                {
                  "height":0,
                  "id":3,
                  "name":"startZone",
@@ -96,8 +85,20 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":192,
-                 "y":512
+                 "x":224.860957075375,
+                 "y":699.62764428014
+                }, 
+                {
+                 "height":0,
+                 "id":5,
+                 "name":"endZone",
+                 "point":true,
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":453.891969603615,
+                 "y":630.519613883754
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -106,7 +107,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":5,
+ "nextobjectid":7,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",

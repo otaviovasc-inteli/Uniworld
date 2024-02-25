@@ -1,6 +1,7 @@
 import TitleScreen from "./scenes/TitleScreen.js";
 import Preload from "./scenes/Preload.js";
-import Play from "./scenes/Play.js";
+import Level1 from "./scenes/Level1.js";
+import Level2 from "./scenes/Level2.js";
 
 // Phaser config to instanciate game
 const WIDTH = 1280;
@@ -13,7 +14,7 @@ const SHARED_CONFIG = {
   startPosition: PLAYER_POSITION
 }
 
-const Scenes = [TitleScreen, Play, Preload];
+const Scenes = [TitleScreen, Level1, Level2, Preload];
 const createScenes = Scene => new Scene(SHARED_CONFIG);
 const initScene = () => Scenes.map(createScenes)
 

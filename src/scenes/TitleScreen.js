@@ -1,6 +1,12 @@
 export default class TitleScreen extends Phaser.Scene {
   constructor() {
     super("titleScreen");
+    var sky;
+    var cloudCover;
+    var clouds;
+    var title;
+    var hills;
+    var foreground;
   }
 
   preload() {
@@ -16,12 +22,12 @@ export default class TitleScreen extends Phaser.Scene {
   }
 
   create() {
-    const sky = this.add.image(0, 0, "sky").setOrigin(0, 0).setScale(1.5);
-    const cloudCover = this.add.image(0, -50, "cloudCover").setOrigin(0, 0).setScale(1.12);
-    const clouds = this.add.image(0, -80, "clouds").setOrigin(0, 0).setScale(1.12);
-    const title = this.add.image(250, 120, "title").setOrigin(0, 0);
-    const hills = this.add.image(0, -100, "hills").setOrigin(0, 0).setScale(1.12);
-    const foreground = this.add.image(0, -100, "foreground").setOrigin(0, 0).setScale(1.12);
+    this.sky = this.add.image(0, 0, "sky").setOrigin(0, 0).setScale(1.5);
+    this.cloudCover = this.add.image(0, -50, "cloudCover").setOrigin(0, 0).setScale(1.12);
+    this.clouds = this.add.image(0, -80, "clouds").setOrigin(0, 0).setScale(1.12);
+    this.title = this.add.image(250, 120, "title").setOrigin(0, 0);
+    this.hills = this.add.image(0, -100, "hills").setOrigin(0, 0).setScale(1.12);
+    this.foreground = this.add.image(0, -100, "foreground").setOrigin(0, 0).setScale(1.12);
 
     const playButton = this.add.sprite(533, 320, 'play', 0).setOrigin(0, 0).setScale(1.2);
     const musicButton = this.add.sprite(686, 400, 'music', 0).setOrigin(0, 0).setScale(1.2);
@@ -40,7 +46,7 @@ export default class TitleScreen extends Phaser.Scene {
 
     playButton.on('pointerdown', () => {
       // Call the startGame function when the button is clicked
-      this.startGame();
+      this.preloadGame();
     });
 
     let isMusicToggled = false;
@@ -50,12 +56,9 @@ export default class TitleScreen extends Phaser.Scene {
 
       isMusicToggled ? musicButton.setFrame(0) : musicButton.setFrame(1)
     });
-
-
-
   }
 
-  startGame() {
+  preloadGame() {
     this.scene.start("preload")
   }
 }

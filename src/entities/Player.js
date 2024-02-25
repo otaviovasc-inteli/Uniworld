@@ -1,12 +1,11 @@
 import initAnimations from './playerAnims.js'
-import collidable from '../mixins/collidable.js';
+import collidable from '../mixins/collidable.js'
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   constructor(scene, x, y) {
     super(scene, x, y, 'player_idle')
     scene.add.existing(this);
     scene.physics.add.existing(this);
-
     Object.assign(this, collidable);
 
     this.init()
@@ -18,12 +17,14 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.cursors = this.scene.input.keyboard.createCursorKeys();
     this.interactKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
 
+    // Player properties
     this.gravity = 1000
     this.body.setGravityY(this.gravity);
     this.playerSpeed = 200;
     this.jumpCount = 0;
     this.consecutiveJumps = 1;
 
+    // Collider
     this.setSize(40, 124);
     this.setCollideWorldBounds(true);
 

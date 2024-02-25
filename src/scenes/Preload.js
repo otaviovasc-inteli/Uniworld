@@ -14,8 +14,8 @@ export default class Preload extends Phaser.Scene {
 
     // Level2
     this.load.tilemapTiledJSON('level2', 'assets/level2/map01v2.json');
-    this.load.image('level2_t1', 'assets/level2/terrainGrass16.png');
-    this.load.image('level2_t2', 'assets/level2/cenario01_16x4.png');
+    this.load.image('level2_t1', 'assets/level2/level2_t1.png');
+    this.load.image('level2_t2', 'assets/level2/level2_t2.png');
 
 
     this.load.spritesheet("npc1_talk", "assets/npc/npc_talk.png", { frameWidth: 256, frameHeight: 160 });
@@ -25,12 +25,13 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("player_idle", "assets/player/idle.png", { frameWidth: 256, frameHeight: 160 });
 
     this.load.once('complete', () => {
+      console.log('Game Loaded');
       this.startGame();
     })
   }
 
   startGame() {
-    this.registry.set('level', 1)
-    this.scene.start("playGame")
+    console.log('Starting level 1');
+    this.scene.start("level1")
   }
 }
