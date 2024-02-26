@@ -89,15 +89,16 @@
                  "y":699.62764428014
                 }, 
                 {
-                 "height":130.251689354618,
-                 "id":8,
-                 "name":"computerZone",
+                 "height":0,
+                 "id":5,
+                 "name":"endZone",
+                 "point":true,
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":133.189697385173,
-                 "x":479.874644990696,
-                 "y":563.118205856429
+                 "width":0,
+                 "x":1178.88683507907,
+                 "y":616.142945163278
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -106,7 +107,7 @@
          "y":0
         }],
  "nextlayerid":7,
- "nextobjectid":9,
+ "nextobjectid":11,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",

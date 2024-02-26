@@ -2,11 +2,16 @@ import initAnimations from './playerAnims.js'
 import collidable from '../mixins/collidable.js'
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
+  static instanceCount = 0;
+
   constructor(scene, x, y) {
     super(scene, x, y, 'player_idle')
     scene.add.existing(this);
     scene.physics.add.existing(this);
     Object.assign(this, collidable);
+
+    // Track how many Npc is in the scene
+    Player.instanceCount++;
 
     this.init()
     this.initEvents()
@@ -15,9 +20,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   init() {
     // Controls
     this.cursors = this.scene.input.keyboard.createCursorKeys();
-    this.interactKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
 
     // Player properties
+    this.setDepth(1);
     this.gravity = 1000
     this.body.setGravityY(this.gravity);
     this.playerSpeed = 200;
@@ -28,7 +33,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.setSize(40, 124);
     this.setCollideWorldBounds(true);
 
-    initAnimations(this.scene.anims)
+    // This if is just to not recriate animations.
+    if(Player.instanceCount <= 1)
+      initAnimations(this.scene.anims)
   }
 
   initEvents() {
@@ -40,7 +47,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     const isSpaceJustDown = Phaser.Input.Keyboard.JustDown(space);
     const isUpJustDown = Phaser.Input.Keyboard.JustDown(up);
     const onFloor = this.body.onFloor();
-    const interactKey = this.interactKey;
 
     this.playerVelocityY = this.body.velocity.y;
 

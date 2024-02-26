@@ -48,12 +48,12 @@ export default class Level2 extends Phaser.Scene {
 
     const bg = map.createLayer('bg', tileset2).setScale(0.4);
     const platforms = map.createLayer('platforms', tileset1).setScale(0.4);
+    const movingPlatforms = map.createLayer('movingPlatforms', tileset1);
     const playerZones = map.getObjectLayer('player_zones');
-
 
     platforms.setCollisionByExclusion(-1, true);
 
-    return { bg, platforms, playerZones };
+    return { bg, platforms, playerZones, movingPlatforms };
   }
 
   getPlayerZones(playerZonesLayer) {

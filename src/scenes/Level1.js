@@ -7,7 +7,11 @@ export default class Level1 extends Phaser.Scene {
   }
 
   create () {
+    // Background
     this.add.image(0, -200, "bg1").setScale(1.12).setOrigin(0, 0);
+
+    // Interact Key
+    const interactKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
 
     // Add map and layers
     const map = this.createMap();
@@ -15,10 +19,22 @@ export default class Level1 extends Phaser.Scene {
     const playerZones = this.getPlayerZones(layers.playerZones)
 
     // Add pc sprite
-    const computerNpc = new Npc(this, 400, 530, 'computer_sprite', 'computerNpc').setScale(0.9).setOrigin(0, 0).setSize(150, 120);
+    const player = this.createPlayer(playerZones)
+    .setScale(1.3)
+
+    // ComputerNpc sprite
+    const computerNpc = new Npc(this, 400, 530, 'computer_sprite', 'computer', player)
+      .setScale(0.9)
+      .setOrigin(0, 0)
+      .setSize(150, 120)
+
+    // RexonaNpc sprite
+    const rexonaNpc = new Npc(this, 800, 500, 'rexona_sprite', 'rexona', player)
+    .setScale(0.6)
+    .setOrigin(0, 0)
+    .setSize(150, 120)
 
     // Add player object
-    const player = this.createPlayer(playerZones).setScale(1.3);
     console.log(player);
 
     // Collider player with platforms
@@ -28,7 +44,6 @@ export default class Level1 extends Phaser.Scene {
     }})
 
     this.createEndOfLevel(playerZones.end, player)
-    player.gravity = 200
   }
 
   createPlayer({start}) {
@@ -76,7 +91,6 @@ export default class Level1 extends Phaser.Scene {
   getPlayerZones(playerZonesLayer) {
     const playerZones = playerZonesLayer.objects
     return {
-      computer: playerZones.find(zone => zone.name === 'computerZone'),
       start: playerZones.find(zone => zone.name === 'startZone'),
       end: playerZones.find(zone => zone.name === 'endZone')
     }
