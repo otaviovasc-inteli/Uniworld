@@ -1,4 +1,5 @@
 import Player from "../entities/Player.js";
+import Npc from "../entities/Npc.js";
 
 export default class Level1 extends Phaser.Scene {
   constructor() {
@@ -13,8 +14,11 @@ export default class Level1 extends Phaser.Scene {
     const layers = this.createLayers(map);
     const playerZones = this.getPlayerZones(layers.playerZones)
 
+    // Add pc sprite
+    const computerNpc = new Npc(this, 400, 530, 'computer_sprite', 'computerNpc').setScale(0.9).setOrigin(0, 0).setSize(150, 120);
+
     // Add player object
-    const player = this.createPlayer(playerZones);
+    const player = this.createPlayer(playerZones).setScale(1.3);
     console.log(player);
 
     // Collider player with platforms
@@ -72,6 +76,7 @@ export default class Level1 extends Phaser.Scene {
   getPlayerZones(playerZonesLayer) {
     const playerZones = playerZonesLayer.objects
     return {
+      computer: playerZones.find(zone => zone.name === 'computerZone'),
       start: playerZones.find(zone => zone.name === 'startZone'),
       end: playerZones.find(zone => zone.name === 'endZone')
     }

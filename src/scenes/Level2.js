@@ -14,7 +14,7 @@ export default class Level2 extends Phaser.Scene {
     const playerZones = this.getPlayerZones(layers.playerZones)
 
     // Add player object
-    const player = this.createPlayer(playerZones);
+    const player = this.createPlayer(playerZones).setScale(0.6);
     // let player = this.registry.get('player');
     console.log(player);
 
