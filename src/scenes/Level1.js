@@ -34,9 +34,6 @@ export default class Level1 extends Phaser.Scene {
     .setOrigin(0, 0)
     .setSize(150, 120)
 
-    // Add player object
-    console.log(player);
-
     // Collider player with platforms
     this.createPlayerColliders(player, {
       colliders: {

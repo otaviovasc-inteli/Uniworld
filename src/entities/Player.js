@@ -20,6 +20,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   init() {
     // Controls
     this.cursors = this.scene.input.keyboard.createCursorKeys();
+    this.dashKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.X);
 
     // Player properties
     this.setDepth(1);
@@ -28,6 +29,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.playerSpeed = 200;
     this.jumpCount = 0;
     this.consecutiveJumps = 1;
+    this.dashSpeed = 500;
+    this.canDash = false;
 
     // Collider
     this.setSize(40, 124);
@@ -43,8 +46,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   }
 
   update() {
-    const { left, right, down, up, space } = this.cursors;
-    const isSpaceJustDown = Phaser.Input.Keyboard.JustDown(space);
+    const { left, right, down, up } = this.cursors;
+    const isXJustDown = Phaser.Input.Keyboard.JustDown(this.dashKey);
     const isUpJustDown = Phaser.Input.Keyboard.JustDown(up);
     const onFloor = this.body.onFloor();
 
@@ -70,7 +73,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       this.setVelocityY(this.playerSpeed * 2)
 
     // Jumping logics with double jumpt
-    if ((isSpaceJustDown || isUpJustDown) && (onFloor || this.jumpCount < this.consecutiveJumps)) {
+    if (isUpJustDown && (onFloor || this.jumpCount < this.consecutiveJumps)) {
       this.setVelocityY(-this.playerSpeed * 1.6)
       this.jumpCount++;
     }
@@ -82,7 +85,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.play('player_fall', true);
     }
 
-    if (onFloor)
+    if (onFloor) {
       this.jumpCount = 0;
+      this.canDash = true
+    }
   }
 }

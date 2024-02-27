@@ -1,8 +1,9 @@
 // computerTexts.js
 const computerTexts =
 [
-  '12344567890',
+  'Bem-vindo estagiário, espero que esteja tudo bem',
   'pc dahora',
-  'pc maneiro'
+  'pc maneiro',
+  'dwkqodkqwowdq'
 ];
 export default computerTexts;
