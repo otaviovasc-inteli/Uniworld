@@ -214,6 +214,8 @@ Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 
 *Posicione aqui seu "storyboard de programação" - o diagrama de cenas do jogo. Indique, por exemplo, como o jogo começa, quais opções o jogador tem, como ele avança nas fases, quais as condições de 'game over', como o jogo reinicia. Seu diagrama deve representar as classes, atributos e métodos usados no jogo.*
 
+<img src="../assets/GameFlow.png">
+
 ## 3.6. Regras do jogo (sprint 3)
 
 *Descreva aqui as regras do seu jogo: objetivos/desafios, meios para se conseguir alcançar*
@@ -259,7 +261,7 @@ Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 *Descreva nesta seção os casos de teste comuns que podem ser executados a qualquer momento para testar o funcionamento e integração das partes do jogo. Utilize tabelas para facilitar a organização.*
 
 *Exemplo de tabela*
-\# | pré-condição | descrição do teste | pós-condição 
+\# | pré-condição do teste | o que ocorre no teste | resultado esperado do teste
 --- | --- | --- | --- 
 1 | posicionar o jogo na tela de abertura | iniciar o jogo desde seu início | o jogo deve iniciar da fase 1
 2 | posicionar o personagem em local seguro de inimigos | aguardar o tempo passar até o final da contagem | o personagem deve perder uma vida e reiniciar a fase
