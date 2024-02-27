@@ -1,7 +1,7 @@
 // computerTexts.js
 const computerTexts =
 [
-  'pc bacana',
+  '12344567890',
   'pc dahora',
   'pc maneiro'
 ];

@@ -51,18 +51,19 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         console.log('interact');
         // Which Npc are you interacting with
         switch (this.name) {
-          case 'computer':
-            console.log('computadooooo');
+          case 'computer':  
+            // Create Teams image
+            if (!this.dialogImage)this.dialogImage = this.scene.add.image(-280, -520, 'reuniaoTeams').setOrigin(0, 0).setDepth(2)
             if (this.dialogIndex >= this.texts.length) {
-              // If all messages have been displayed, destroy the dialog window
+              // If all messages have been displayed, destroy the dialog window and image
               this.destroyDialog();
+              this.dialogImage.destroy();
             } else {
               // Show the next message
               this.createDialog(this.texts);
             }
             break;
           case 'rexona':
-            console.log('rexonaaaaa');
             if (this.dialogIndex >= this.texts.length) {
               // If all messages have been displayed, destroy the dialog window
               this.destroyDialog();

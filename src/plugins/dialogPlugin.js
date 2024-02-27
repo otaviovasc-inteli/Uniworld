@@ -41,7 +41,6 @@ export default class DialogModalPlugin {
     this.windowColor = opts.windowColor || 0x303030;
     this.windowHeight = opts.windowHeight || 150;
     this.padding = opts.padding || 50;
-    this.closeBtnColor = opts.closeBtnColor || 'darkgoldenrod';
     this.dialogSpeed = opts.dialogSpeed || 3;
     this.depth = opts.depth;
     // used for animating the text
@@ -53,7 +52,6 @@ export default class DialogModalPlugin {
     // the text that will be displayed in the window
     this.dialog;
     this.graphics;
-    this.closeBtn;
     // Create the dialog window
     this._createWindow();
     // Set depth for graphics and text objects
@@ -93,40 +91,10 @@ export default class DialogModalPlugin {
     this.graphics.strokeRect(x, y, rectWidth, rectHeight);
   }
   // Creates the close dialog window button
-  _createCloseModalButton() {
-    var self = this;
-    this.closeBtn = this.scene.make.text({
-      x: this._getGameWidth() - this.padding - 14,
-      y: this._getGameHeight() - this.windowHeight - this.padding + 3,
-      text: 'X',
-      style: {
-        font: 'bold 12px Arial',
-        fill: this.closeBtnColor
-      }
-    });
-    this.closeBtn.setInteractive();
-    this.closeBtn.on('pointerover', function () {
-      this.setTint(0xff0000);
-    });
-    this.closeBtn.on('pointerout', function () {
-      this.clearTint();
-    });
-    this.closeBtn.on('pointerdown', function () {
-      self.toggleWindow();
-    });
-    if (self.timedEvent) self.timedEvent.remove();
-    if (self.text) self.text.destroy();
-  }
-  _createCloseModalButtonBorder() {
-    var x = this._getGameWidth() - this.padding - 20;
-    var y = this._getGameHeight() - this.windowHeight - this.padding;
-    this.graphics.strokeRect(x, y, 20, 20);
-  }
   toggleWindow() {
     this.visible = !this.visible;
     if (this.text) this.text.visible = this.visible;
     if (this.graphics) this.graphics.visible = this.visible;
-    if (this.closeBtn) this.closeBtn.visible = this.visible;
   }
   // Sets the text for the dialog window
   setText(text, animate) {
@@ -179,7 +147,5 @@ export default class DialogModalPlugin {
     this.graphics = this.scene.add.graphics();
     this._createOuterWindow(dimensions.x, dimensions.y, dimensions.rectWidth, dimensions.rectHeight);
     this._createInnerWindow(dimensions.x, dimensions.y, dimensions.rectWidth, dimensions.rectHeight);
-    this._createCloseModalButton();
-    this._createCloseModalButtonBorder();
   }
 }
