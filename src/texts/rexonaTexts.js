@@ -1,7 +1,7 @@
 // rexonaTexts.js
 const rexonaTexts =
 [
-  'xo fedo',
-  'hm to xeroso'
+  'Parabéns, você conseguiu o power-up "Rexona"',
+  'Para utilizar seus novos poderes utilize a tecla Q'
 ];
 export default rexonaTexts;
