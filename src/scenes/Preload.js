@@ -5,6 +5,7 @@ export default class Preload extends Phaser.Scene {
 
   preload() {
     this.load.image("bg1", "assets/level2/back.png");
+    // this.load.plugin('DialogModalPlugin', 'plugins/dialogPlugin.js');
 
     // level1
     this.load.spritesheet("computer_sprite", "assets/level1/computer.png", { frameWidth: 320, frameHeight: 192 });

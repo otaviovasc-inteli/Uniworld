@@ -1,4 +1,5 @@
 import initAnimations from './npcAnims.js'
+import DialogModalPlugin from '../plugins/dialogPlugin.js'
 
 export default class Npc extends Phaser.Physics.Arcade.Sprite {
   static instanceCount = 0;
@@ -17,14 +18,24 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.initEvents()
   }
 
-  init() {
+  async init() {
     // Set layer depth
     this.setDepth(0);
+    // Set InteractKey
     this.interactKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
 
     // This is just to not recriate animations.
     if(Npc.instanceCount <= 1)
-      initAnimations(this.scene.anims)
+    initAnimations(this.scene.anims)
+
+    // Set texts modularly
+    try {
+      const textsModule = await import(`../texts/${this.name}Texts.js`);
+      this.texts = textsModule.default;
+    } catch (error) {
+      console.error(`Error importing texts for ${this.name}:`, error);
+      this.texts = ['Lorem Ipsum Dolor Amet'];
+    }
   }
 
   initEvents() {
@@ -42,9 +53,23 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         switch (this.name) {
           case 'computer':
             console.log('computadooooo');
+            if (this.dialogIndex >= this.texts.length) {
+              // If all messages have been displayed, destroy the dialog window
+              this.destroyDialog();
+            } else {
+              // Show the next message
+              this.createDialog(this.texts);
+            }
             break;
           case 'rexona':
             console.log('rexonaaaaa');
+            if (this.dialogIndex >= this.texts.length) {
+              // If all messages have been displayed, destroy the dialog window
+              this.destroyDialog();
+            } else {
+              // Show the next message
+              this.createDialog(this.texts);
+            }
             break;
           default:
             console.log('Npc name wrong');;
@@ -56,5 +81,44 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     {
       this.name === 'computer' ? this.setFrame(0) : this.play(`${this.name}_idle`, true);
     }
+  }
+
+  destroyDialog() {
+    // Check if there is an existing dialogModal instance
+    if (this.dialogModal) {
+      // Destroy the dialog window
+      this.dialogModal.destroy();
+      this.dialogModal = null;
+      this.dialogIndex = 0; // Reset the index for future interactions
+    }
+  }
+
+  createDialog(texts) {
+    // Check if there is an existing dialogModal instance
+    if (this.dialogModal)
+      this.dialogModal.destroy();
+
+    // Create a new DialogModalPlugin instance
+    this.dialogModal = new DialogModalPlugin(this.scene);
+
+    console.log(this.dialogModal);
+
+    // Start the dialog with the provided texts
+    this.startDialog(this.dialogModal, texts, { depth: 3 });
+}
+
+  startDialog(dialogModal, texts, options = {}) {
+    // Set text for the dialog window
+    dialogModal.init({
+      depth: options.depth
+    });
+
+    // Initialize or increment the index based on the number of messages
+    if (!this.dialogIndex || this.dialogIndex >= texts.length) {
+        this.dialogIndex = 0;
+    }
+
+    dialogModal.setText(texts[this.dialogIndex], true);
+    this.dialogIndex++;
   }
 }

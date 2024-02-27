@@ -15,7 +15,6 @@ export default class Level2 extends Phaser.Scene {
 
     // Add player object
     const player = this.createPlayer(playerZones).setScale(0.6);
-    // let player = this.registry.get('player');
     console.log(player);
 
     // Collider player with platforms
