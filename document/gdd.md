@@ -83,6 +83,12 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 6 | Apresentação das mecânicas do Onboarding
 7 | Mostrar o dicionário da Unilever
 8 | O personagem perde uma vida toda vez que toca em um inimigo ou em algum projétil inimigo
+9 | Mecânica de utilização de poderes
+10 | Mundo lúdico - estilo mario
+11 | dinâmica de plantar arvores
+12 | realização de quiz
+13 | Contato com plataformas Unilever (Uniops & degreed)
+14 | mecânica de dash
 
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
