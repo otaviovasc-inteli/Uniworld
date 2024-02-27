@@ -263,9 +263,13 @@ Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 *Exemplo de tabela*
 \# | pré-condição do teste | o que ocorre no teste | resultado esperado do teste
 --- | --- | --- | --- 
-1 | posicionar o jogo na tela de abertura | iniciar o jogo desde seu início | o jogo deve iniciar da fase 1
-2 | posicionar o personagem em local seguro de inimigos | aguardar o tempo passar até o final da contagem | o personagem deve perder uma vida e reiniciar a fase
-3 | ...
+1 | Abrir tela inicial do jogo | Clicar no botão “play” | Iniciar cena 1
+2 | Abrir tela inicial do jogo | Clicar no botão “som” | Silenciar som do jogo
+3 | Posicionar personagem em frente ao notebook | Apertar tecla de interação com o notebook | Abrir diálogo na plataforma teams
+4 | Posicionar o personagem em frente ao Rexona | Apertar tecla de interação com o Rexona | Pegar o item Rexona
+5 | Posicionar o personagem em frente à porta do quarto | Passar pela porta do quarto | Encerrar cena e Iniciar cena 2
+ 
+
 
 ## 5.2. Testes de jogabilidade (playtests) (sprint 4)
 
