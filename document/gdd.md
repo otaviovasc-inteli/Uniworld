@@ -155,13 +155,13 @@ Descrição: Tela simples de título com botão play, configurações e som.
 &nbsp;&nbsp;&nbsp;&nbsp;Fala da diretora:
 
 'Diretora: Olá, colaborador, seja bem vindo a Unilever!',
- 'Diretora: aqui na Unilever utilizamos o Google Teams como principal forma de comunicação remota.',
- 'Diretora: Algo aconteceu e o mundo está em completa desordem, e mesmo que hoje seja seu primeiro dia, precisamos da sua ajuda para consertar o mundo',
+'Diretora: aqui na Unilever utilizamos o Google Teams como principal forma de comunicação remota.',
+'Diretora: Algo aconteceu e o mundo está em completa desordem, e mesmo que hoje seja seu primeiro dia, precisamos da sua ajuda para consertar o mundo',
 'Diretora: durante o caminho, represente os valores da Unilever e tudo ficará bem.'
 
 &nbsp;&nbsp;&nbsp;&nbsp;Em seguida, o personagem seguirá pela cena e deverá interagir com o Rexona.
 
- &nbsp;&nbsp;&nbsp;&nbsp;Iniciará o diálogo:
+&nbsp;&nbsp;&nbsp;&nbsp;Iniciará o diálogo:
  
 'Parabéns, você conseguiu o power-up "Rexona"',
 'Para utilizar seus novos poderes utilize a tecla Q'
@@ -170,19 +170,19 @@ Descrição: Tela simples de título com botão play, configurações e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;O personagem sai do quarto e se depara com um mundo estilo Mário. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do Rexona. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. No caminho, também estarão disponíveis 3 pontos de interação não obrigatórios (que serão lixos a serem coletados), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu, (exemplo: ⅓), caso o personagem interaja com todos eles ocorrerá o seguinte diálogo com a diretora:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Uau! Você foi além e recolheu todo o lixo que encontrou pelo caminho. Receba uma bonificação pelo seu ato de valor!
+Uau! Você foi além e recolheu todo o lixo que encontrou pelo caminho. Receba uma bonificação pelo seu ato de valor!
 (nesse momento o personagem receberá uma bonificação, de preferência uma vida extra).
 
 &nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um quiz no computador, que também servirá como checkpoint, caso ele acerte o quiz, receberá um aumento de poder, caso perca, nada acontecerá, e ele poderá prosseguir na fase e enfrentar o boss “Rei da poluição”. Caso ela perca pro rei, poderá retornar a fase onde está o quiz, e poderá refazê-lo caso não tenha acertado da última vez, assim, enfrentará novamente o boss quantas vezes forem necessárias. Caso ganhe do boss, ele deverá soltar um item um “Rexona”, ao personagem interagir com o item, ele se tornará o “Homem Rexona”, e o diretora aparecerá novamente com o seguinte diálogo:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Nossa! Sempre soube que você era capaz. Você derrotou o rei da poluição, mas ainda há muito por vir. Continue no caminho para Unilever e você encontrará o rei do desmatamento, com seus novos poderes, você será capaz de derrotá-lo.
+Nossa! Sempre soube que você era capaz. Você derrotou o rei da poluição, mas ainda há muito por vir. Continue no caminho para Unilever e você encontrará o rei do desmatamento, com seus novos poderes, você será capaz de derrotá-lo.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Para finalizar a fase terá um botão na janela de diálogo com a diretora escrito “Seguir para próxima fase”
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;O personagem inicia a fase e se depara com um mundo estilo Mário, mas agora em um cenário urbano e acabado. No início, a assistente de jogo do personagem o ensinará como utilizar a mecânica “dash”. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do OMO, utilizando todas as mecânicas de movimentação necessárias. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. Ao longo da fase também estarão disponíveis 3 pontos de interação não obrigatórios (que serão árvores a serem plantadas), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu (exemplo: ⅓), caso o personagem interaja com todos eles ocorrerá o seguinte diálogo com a diretora:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Uau! Você foi além e plantou árvores pelo caminho. Receba uma bonificação pelo seu ato de valor!
+Uau! Você foi além e plantou árvores pelo caminho. Receba uma bonificação pelo seu ato de valor!
 (nesse momento o personagem receberá uma bonificação, de preferência uma vida extra).
 
 &nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um quiz no computador, que também servirá como checkpoint, caso ele acerte o quiz, receberá um aumento de poder, caso perca, nada acontecerá, e ele poderá prosseguir na fase e enfrentar o boss “Rei do desmatamento”. Caso ela perca pro rei, poderá retornar a fase onde está o quiz, e poderá refazê-lo caso não tenha acertado da última vez, assim, enfrentará novamente o boss quantas vezes forem necessárias. Caso ele ganhe do boss, o boss deverá soltar o item “Kibon”, ao interagir com o item, o personagem ganhará novos poderes. Deverá se iniciar o diálogo:
@@ -197,7 +197,7 @@ Para finalizar a fase basta interagir com uma placa desenhada no cenário escrit
 
 &nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, o jogador encontrará a diretora. Ao conversar com o NPC se iniciará o seguinte diálogo:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Olá, você realmente se mostrou um funcionário capaz, por conta disso, você deve estar pronto para representar todos os nossos valores e saber todos os nossos pilares, ao chegar até aqui significa que você passou no teste e se provou ser um membro da nossa família Unilever! Seja bem vindo (nome), esperamos muito de um herói como você!
+Olá, você realmente se mostrou um funcionário capaz, por conta disso, você deve estar pronto para representar todos os nossos valores e saber todos os nossos pilares, ao chegar até aqui significa que você passou no teste e se provou ser um membro da nossa família Unilever! Seja bem vindo (nome), esperamos muito de um herói como você!
 
 &nbsp;&nbsp;&nbsp;&nbsp;A fase acaba com o personagem seguindo pelo cenário e encontrando um computador para interação no final do mapa. Neste computador quando ele interagir, reaparecerá a cena 0, mas agora com um botão a mais, sendo esse: “Consultar materiais disponíveis”
 
