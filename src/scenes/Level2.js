@@ -74,12 +74,13 @@ export default class Level2 extends Phaser.Scene {
       .setAlpha(0)
 
     this.physics.add.overlap(player, endOfLevel, () => {
-      this.registry.set('player', player);
       console.log("start level3");
     })
   }
   setupFollowupCameraOn(player, map) {
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
     this.cameras.main.startFollow(player, true)
+    this.cameras.main.setZoom(0.9);
+    this.cameras.main.setDeadzone(50, 300);
   }
 }

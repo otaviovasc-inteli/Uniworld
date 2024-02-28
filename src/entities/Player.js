@@ -77,8 +77,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.play('player_idle', true);
     }
 
+    // Increase gravity when pressing down
     if (down.isDown)
-      this.setVelocityY(this.playerSpeed * 2)
+      this.body.setGravityY(this.gravity * 3)
+    else
+      this.body.setGravityY(this.gravity);
 
     // Jump logic
     if (isUpJustDown && (onFloor || this.jumpCount < this.consecutiveJumps)) {
