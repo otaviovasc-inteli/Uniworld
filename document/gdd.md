@@ -44,8 +44,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;*A análise SWOT é relacionada ao parceiro Unilever, a tabela foi feita a fim de realizar uma avaliação ambiental no âmbito estratégico, levando em consideração o contexto da indústria, ocorrências e as características do ambiente interno e externo da Unilever.*
 
-
-<img src="../assets/SWOT-analise.png">
+<div align="center">
+<sub>Figura X - Análise SWOT</sub>
+<img src="../assets/SWOT-analise.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ### 1.1.3. Descrição da Solução Desenvolvida (sprints 1 e 4)
 
@@ -56,17 +59,22 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 &nbsp;&nbsp;&nbsp;&nbsp;*A proposta de valor descreve aspectos essenciais para criação de valor para o projeto, traçando o objetivo de melhor entender a realidade do parceiro e entregar uma solução alinhada com o que a Unilever espera.*
 
-
-<img src="../assets/vpc.png">
-
+<div align="center">
+<sub>Figura X - Proposta de Valor</sub>
+<img src="../assets/vpc.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ### 1.1.5. Matriz de Riscos (sprints 1 e 4)
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;*A matriz de risco demonstra os riscos observados no projeto pela equipe de desenvolvimento, representando ameaças e oportunidades, assim como impactos relevantes sobre o projeto. Em verde, estão indicados percalços que não necessitam de intervenção; em amarelo, pontos que apresentam média probabilidade e demandam certa atenção; e, em vermelho, estão destacados pontos críticos que devem ser evitados.*
 
-
-<img src="../assets/Matriz de Riscos4.png">
+<div align="center">
+<sub>Figura X - Matriz de Riscos</sub>
+<img src="../assets/Matriz de Riscos4.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ## 1.2. Requisitos do Projeto (sprints 1 e 2)
 
@@ -105,19 +113,19 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 ### 2.2.1. Gênero do Jogo (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em *  
+&nbsp;&nbsp;&nbsp;&nbsp;*O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em movimentar seu personagem através do ambiente no qual jogo acontece. O Gênero de aventura, por sua vez, são jogos nos quais o jogador assume o lugar de protagonista e tem como objetivo explorar o ambiente interativamente concluir quebra-cabeças*  
 
 ### 2.2.2. Plataforma do Jogo (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo é feito para Desktop e será jogado na plataforma Web.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogo é feito para Desktop e será jogado na plataforma Web. Como indicado pelo termo de abertura do projeto e reafirmado pelos parceiros durante as sprints, a opção pela plataforma web desktop está mais alinhada com a proposta e objetivos que delineados para o projeto.*
 
 ### 2.2.3. Número de jogadores (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo é para apenas um jogador.*
+&nbsp;&nbsp;&nbsp;&nbsp;*Devido a indicação do parceiro e, as limitações provenientes das escolhas pela plataforma web e sem ligação com os servidores da empresa, o jogo será individual, por buscando salientar o desenvolvimento individual de cada colaborador.*
 
 ### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*Entre as inspirações para o jogo, pode-se listar Sonic, Mario e Mega Man. Os jogos citados pertencem aos mesmos gêneros do jogo criado, tendo como base a movimentação em duas dimensões, arte em pixel e a temática de aventura.*
+&nbsp;&nbsp;&nbsp;&nbsp;*Entre as inspirações para o jogo, pode-se listar Sonic, Mario e Mega Man. As escolhas decorrem do fato de que os jogos citados pertencem aos mesmos gêneros do jogo criado, tendo como base a movimentação em duas dimensões, arte em pixel e a temática de aventura. Além disso, os jogos em questão revolucionaram suas época ao trazer inovação, originalidade e simplicidade, valores igualmente desenvolvidos neste projeto.*
 
 ### 2.2.5. Tempo estimado de jogo (sprint 5)
 
@@ -150,31 +158,24 @@ Em seguida, o personagem seguirá pela cena e deverá interagir com o Rexona.
 'Parabéns, você conseguiu o power-up "Rexona"',
 'Para utilizar seus novos poderes utilize a tecla Q'
 Cena 2 - Cenário combate 1
-O personagem sai do quarto e se depara com um mundo estilo Mário. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do Rexona. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. No caminho, também estarão disponíveis 3 pontos de interação não obrigatórios (que serão lixos a serem coletados), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu, (exemplo: ⅓), caso o personagem interaja com todos eles ocorrerá o seguinte diálogo com a diretora:
+&nbsp;&nbsp;&nbsp;&nbsp;O personagem sai do quarto e se depara com um mundo estilo Mário. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do Rexona. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. No caminho, também estarão disponíveis 3 pontos de interação não obrigatórios (que serão lixos a serem coletados), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu, (exemplo: ⅓), caso o personagem interaja com todos eles ocorrerá o seguinte diálogo com a diretora:
 Uau! Você foi além e recolheu todo o lixo que encontrou pelo caminho. Receba uma bonificação pelo seu ato de valor!
 (nesse momento o personagem receberá uma bonificação, de preferência uma vida extra).
-Perto do fim da fase, haverá um quiz no computador, que também servirá como checkpoint, caso ele acerte o quiz, receberá um aumento de poder, caso perca, nada acontecerá, e ele poderá prosseguir na fase e enfrentar o boss “Rei da poluição”. Caso ela perca pro rei, poderá retornar a fase onde está o quiz, e poderá refazê-lo caso não tenha acertado da última vez, assim, enfrentará novamente o boss quantas vezes forem necessárias. Caso ganhe do boss, ele deverá soltar um item um “Rexona”, ao personagem interagir com o item, ele se tornará o “Homem Rexona”, e o diretora aparecerá novamente com o seguinte diálogo:
+&nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um quiz no computador, que também servirá como checkpoint, caso ele acerte o quiz, receberá um aumento de poder, caso perca, nada acontecerá, e ele poderá prosseguir na fase e enfrentar o boss “Rei da poluição”. Caso ela perca pro rei, poderá retornar a fase onde está o quiz, e poderá refazê-lo caso não tenha acertado da última vez, assim, enfrentará novamente o boss quantas vezes forem necessárias. Caso ganhe do boss, ele deverá soltar um item um “Rexona”, ao personagem interagir com o item, ele se tornará o “Homem Rexona”, e o diretora aparecerá novamente com o seguinte diálogo:
 Nossa! Sempre soube que você era capaz. Você derrotou o rei da poluição, mas ainda há muito por vir. Continue no caminho para Unilever e você encontrará o rei do desmatamento, com seus novos poderes, você será capaz de derrotá-lo.
-Para finalizar a fase terá um botão na janela de diálogo com a diretora escrito “Seguir para próxima fase”
+&nbsp;&nbsp;&nbsp;&nbsp;Para finalizar a fase terá um botão na janela de diálogo com a diretora escrito “Seguir para próxima fase”
 O personagem inicia a fase e se depara com um mundo estilo Mário, mas agora em um cenário urbano e acabado. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do OMO. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. Ao longo da fase também estarão disponíveis 3 pontos de interação não obrigatórios (que serão árvores a serem plantadas), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu (exemplo: ⅓), caso o personagem interaja com todos eles ocorrerá o seguinte diálogo com a diretora:
 Uau! Você foi além e plantou árvores pelo caminho. Receba uma bonificação pelo seu ato de valor!
 (nesse momento o personagem receberá uma bonificação, de preferência uma vida extra).
-Perto do fim da fase, haverá um quiz no computador, que também servirá como checkpoint, caso ele acerte o quiz, receberá um aumento de poder, caso perca, nada acontecerá, e ele poderá prosseguir na fase e enfrentar o boss “Rei do desmatamento”. Caso ela perca pro rei, poderá retornar a fase onde está o quiz, e poderá refazê-lo caso não tenha acertado da última vez, assim, enfrentará novamente o boss quantas vezes forem necessárias. Caso ele ganhe do boss, o boss deverá soltar o item  “chave de acesso à Unilever”, ao coletá-lo, a diretora aparecerá novamente com o seguinte diálogo:
+&nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um quiz no computador, que também servirá como checkpoint, caso ele acerte o quiz, receberá um aumento de poder, caso perca, nada acontecerá, e ele poderá prosseguir na fase e enfrentar o boss “Rei do desmatamento”. Caso ela perca pro rei, poderá retornar a fase onde está o quiz, e poderá refazê-lo caso não tenha acertado da última vez, assim, enfrentará novamente o boss quantas vezes forem necessárias. Caso ele ganhe do boss, o boss deverá soltar o item  “chave de acesso à Unilever”, ao coletá-lo, a diretora aparecerá novamente com o seguinte diálogo:
 Eu sempre soube que você era capaz! Agora com a chave, vá direto para Unilever e dê um fim a tudo isso!
 Para finalizar a fase basta interagir com uma placa desenhada no cenário escrito “U”, e assim, aparecerá uma janela escrita “Deseja utilizar a chave de entrada para Unilever?”, quando o funcionário apertar o botão “Sim”, a próxima fase se iniciará.
 Cena 4 - Dentro da Unilever (cena final)
-O personagem inicia a fase e se depara com um mundo estilo Mário, mas agora dentro da Unilever. No início da fase haverá um Kibon para interação. Com esse power up, o personagem poderá utilizar o dash, e assim, avançar na fase, ele deve seguir para direita e avançar pelo terreno um pouco mais difícil agora. Ao longo da fase, não terão NPCs, a fim de instigar dúvidas no jogador. Também não terão pontos de interação pelo mapa.
+&nbsp;&nbsp;&nbsp;&nbsp;O personagem inicia a fase e se depara com um mundo estilo Mário, mas agora dentro da Unilever. No início da fase haverá um Kibon para interação. Com esse power up, o personagem poderá utilizar o dash, e assim, avançar na fase, ele deve seguir para direita e avançar pelo terreno um pouco mais difícil agora. Ao longo da fase, não terão NPCs, a fim de instigar dúvidas no jogador. Também não terão pontos de interação pelo mapa.
 Perto do fim da fase, o jogador encontrará a diretora. Ao conversar com o NPC se iniciará o seguinte diálogo:
 Olá,  você realmente se mostrou um funcionário capaz, por conta disso, você deve estar pronto para representar todos os nossos valores e saber todos os nossos pilares, ao chegar até aqui significa que você passou no teste e se provou ser um membro da nossa família Unilever! Seja bem vindo (nome), esperamos muito de um herói como você!
 
 A fase acaba com o personagem seguindo pelo cenário e encontrando um computador para interação no final do mapa. Neste computador quando ele interagir, reaparecerá a cena 0, mas agora com um botão a mais, sendo esse: “Consultar materiais disponíveis”
-
-
-
-
-
-
-
 
 
 *Caso seu jogo não possua enredo/história (ex. jogo Tetris), mencione os motivos de não existir e como o jogador pode se contextualizar com o ambiente do jogo.*
@@ -191,34 +192,44 @@ A fase acaba com o personagem seguindo pelo cenário e encontrando um computador
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no game, cujo o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Para figuras com semblantes, terão 3 opções de etnia. Para semblantes femininos, também haverá 3 opções de etnia.
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no game, cujo o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Para figuras com semblantes, terão 3 opções de etnia. Para semblantes femininos, também haverá 3 opções de etnia. Além disso, os personagens não jogavéis ao longo do jogo possuem diversas etnias e origens.
 Seguem alguns exemplos:*
 
 ## 3.3. Mundo do jogo (sprints 2 e 3)
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*A cena inicial do jogo será no quarto, o personagem irá acordar nele. Nisso, ao acordar, irá interagir com um notebook que, dentro dele, encontrará informações sobre as plataformas que são utilizadas na empresa. No computador após aprender sobre a ferramenta do teams, entra numa reunião onde recebe a missão de chegar a Unilever.*
+&nbsp;&nbsp;&nbsp;&nbsp;*A cena inicial do jogo será no quarto, ambiente no qual é possível encontrar objetos mundanos como uma cama, guarda-roupas, mesa, janelas, um quadro e os itens principais deste ambiente: o desodorante Rexona e um notebook. O personagem irá acordar no ambiente em questão e irá interagir com um notebook que, dentro dele, encontrará informações sobre as plataformas que são utilizadas na empresa. No computador após utilizar a ferramenta do teams, entra numa reunião onde recebe a missão de chegar a Unilever.*
+
+<div align="center">
+<sub>Figura X - Ilustração do ambiente Quarto</sub>
+<img src="../assets/printQuarto.jpg" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;*O segundo ambiente...*
 
 *Descreva o ambiente do jogo, em que locais ele ocorre. Ilustre com imagens. Se houverem mapas, posicione-os aqui, descrevendo as áreas em acordo com o enredo. Se houverem fases, descreva-as também em acordo com o enredo (pode ser um jogo de uma fase só). Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.*
 
 ### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O personagem controlável tem a possibilidade de mover-se no eixo X, fazendo com que seja intuitivo a linearidade de avanço da história, cujo seguir para direita indica avanço. Ademais, o personagem tem a possibilidade de se deslocar no eixo Y, mas retornando sempre para o ponto inicial neste eixo após algum tempo, simulando uma mecânica de pulo . Além disso, as fases são desbloqueadas conforme conclusão dos objetivos de cada fase, que consiste em, até o momento, completar um quiz ou derrotar determinado inimigo. A progressão em questão acontece naturalmente, ao decorrer do jogo e sem grandes dificuldades para o jogador.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O personagem controlável tem a possibilidade de mover-se no eixo X, fazendo com que seja intuitivo a linearidade de avanço da história, cujo seguir para direita indica avanço. Ademais, o personagem tem a possibilidade de se deslocar no eixo Y, mas retornando sempre para o ponto inicial neste eixo após algum tempo, simulando uma mecânica de pulo. Além disso, as fases são desbloqueadas conforme conclusão dos objetivos de cada fase, que consiste em, até o momento, completar um quiz ou derrotar determinado inimigo. A progressão em questão acontece naturalmente, ao decorrer do jogo e sem grandes dificuldades para o jogador.*
 
 ### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo não apresentará mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários foram projetados com um tempo ensolarado que permeia do início ao fim do jogo.*
-
-*Caso seja relevante, descreva como o tempo passa, se ele é um fator limitante ao jogo (ex. contagem de tempo para terminar uma fase)*
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogo não apresentará mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários foram projetados com um tempo ensolarado que permeia do início ao fim do jogo Além disso, a passagem do tempo não possui influência no mundo do jogo, devido a pedido do próprio parceiro sobre a criação de poucas ou nenhuma limitaçõe para conclusão do onboarding.*
 
 ### 3.3.4. Concept Art (sprint 2)
 
 *Inclua imagens de Concept Art do jogo que ainda não foram demonstradas em outras seções deste documento. Para cada imagem, coloque legendas, como no exemplo abaixo.*
 
-<img src="../assets/Conceptart.png">
+<div align="center">
+<sub>Figura X - Arte Conceitual da Cena 2</sub>
+<img src="../assets/Conceptart.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
-Figura 1: Descrição dos objetos dispostos na primeira cena, como plataformas, NPCS e coletáveis.
+Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, NPCS e coletáveis.
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
@@ -259,7 +270,11 @@ Figura 1: Descrição dos objetos dispostos na primeira cena, como plataformas, 
 
 *Posicione aqui seu "storyboard de programação" - o diagrama de cenas do jogo. Indique, por exemplo, como o jogo começa, quais opções o jogador tem, como ele avança nas fases, quais as condições de 'game over', como o jogo reinicia. Seu diagrama deve representar as classes, atributos e métodos usados no jogo.*
 
-<img src="../assets/GameFlow.png">
+<div align="center">
+<sub>Figura X - Diagrama de Cenas</sub>
+<img src="../assets/GameFlow.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ## 3.6. Regras do jogo (sprint 3)
 
