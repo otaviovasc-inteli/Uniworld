@@ -170,7 +170,7 @@ Segue alguns exemplos.*
 
 <img src="../assets/Conceptart.png">
 
-Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
+Figura 1: Descrição dos objetos dispostos na primeira cena, como plataformas, NPCS e coletáveis.
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
