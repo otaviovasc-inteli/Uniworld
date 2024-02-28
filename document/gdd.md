@@ -44,8 +44,11 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;*A análise SWOT é relacionada ao parceiro Unilever, a tabela foi feita a fim de realizar uma avaliação ambiental no âmbito estratégico, levando em consideração o contexto da indústria, ocorrências e as características do ambiente interno e externo da Unilever.*
 
-
-<img src="../assets/SWOT-analise.png">
+<div align="center">
+<sub>Figura X - Análise SWOT</sub>
+<img src="../assets/SWOT-analise.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ### 1.1.3. Descrição da Solução Desenvolvida (sprints 1 e 4)
 
@@ -56,17 +59,22 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 &nbsp;&nbsp;&nbsp;&nbsp;*A proposta de valor descreve aspectos essenciais para criação de valor para o projeto, traçando o objetivo de melhor entender a realidade do parceiro e entregar uma solução alinhada com o que a Unilever espera.*
 
-
-<img src="../assets/vpc.png">
-
+<div align="center">
+<sub>Figura X - Proposta de Valor</sub>
+<img src="../assets/vpc.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ### 1.1.5. Matriz de Riscos (sprints 1 e 4)
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;*A matriz de risco demonstra os riscos observados no projeto pela equipe de desenvolvimento, representando ameaças e oportunidades, assim como impactos relevantes sobre o projeto. Em verde, estão indicados percalços que não necessitam de intervenção; em amarelo, pontos que apresentam média probabilidade e demandam certa atenção; e, em vermelho, estão destacados pontos críticos que devem ser evitados.*
 
-
-<img src="../assets/Matriz de Riscos4.png">
+<div align="center">
+<sub>Figura X - Matriz de Riscos</sub>
+<img src="../assets/Matriz de Riscos4.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ## 1.2. Requisitos do Projeto (sprints 1 e 2)
 
@@ -263,7 +271,7 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 *Posicione aqui seu "storyboard de programação" - o diagrama de cenas do jogo. Indique, por exemplo, como o jogo começa, quais opções o jogador tem, como ele avança nas fases, quais as condições de 'game over', como o jogo reinicia. Seu diagrama deve representar as classes, atributos e métodos usados no jogo.*
 
 <div align="center">
-<sub>Figura X - Arte Conceitual</sub>
+<sub>Figura X - Diagrama de Cenas</sub>
 <img src="../assets/GameFlow.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
