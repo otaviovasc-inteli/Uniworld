@@ -99,27 +99,25 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-*Descreva o que o jogador deve cumprir para avançar ou concluir o jogo*
+*O jogador precisa derrotar inimigos pelo mapa, concluir o quiz e derrotar o chefão da fase, nos dois mundos disponíveis: Mundo Lúdico e Mundo Unilever. Desse modo, o jogador será capaz de concluir o jogo integralmente. Logicamente, conforme solicitado, nenhuma das partes anteriormente citadas será uma barreira para o colaborador completar o processo de integração.*
 
 ## 2.2. Características do Jogo (sprint 2)
 
 ### 2.2.1. Gênero do Jogo (sprint 2)
 
-*simulação, RPG, corrida, estratégia, esportes, ação, aventura etc.*  
+*O gênero do jogo é de plataforma e aventura.*  
 
 ### 2.2.2. Plataforma do Jogo (sprint 2)
 
-*quanto ao dispositivo: desktop, smartphones, tablets, TV etc.*
-
-*quanto ao sistema: Web, Windows, MacOS, Android, IOS etc.*
+*O jogo é feito para Desktop e será jogado na plataforma Web.*
 
 ### 2.2.3. Número de jogadores (sprint 2)
 
-*1 jogador, 2 jogadores versus, 2 jogadores cooperação, multiplayer etc.*
+*O jogo é para apenas um jogador.*
 
 ### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
 
-*Liste e descreva títulos semelhantes e jogos que inspiram e são usados como referência do projeto*
+*Entre as inspirações para o jogo, pode-se listar Sonic, Mario e Mega Man.*
 
 ### 2.2.5. Tempo estimado de jogo (sprint 5)
 
@@ -139,17 +137,16 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 ### 3.2.1. Controláveis
 
-*Descreva os personagens controláveis pelo jogador. Mencione nome, objetivos, características, habilidades, diferenciais etc. Utilize figuras (character art, sprite sheets etc.) para ilustrá-los. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
-
-*Caso não existam personagens (ex. jogo Tetris), mencione os motivos de não existirem e como o jogador pode interpretar tal fato.*
+*O jogo contará apenas com 1 personagem controlável que terá variações de gênero e etnia. O personagem não tem nome nem rosto, ele deverá representar o funcionário da Unilever, portanto possui forma humana e tem como objetivo seguir as instruções dadas ao longo do enredo da história. Ao longo do game, o personagem receberá power-ups, que irão alterar suas roupas.*
 
 ### 3.2.2. Non-Playable Characters (NPC)
 
-*\<opcional\> Se existirem coadjuvantes ou vilões, aqui é o local para descrevê-los e ilustrá-los. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes. Caso não existam NPCs, remova esta seção.*
+*O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o player. Ao interagir com os NPCs pacíficos, o jogador terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 4 NPCs diferentes, com design parecido com o a seguir.*
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-Considerando as personagens do game, analise se estas estão alinhadas ao público-alvo do jogo (seção 1.3), e compare-as dentro da realidade da sociedade brasileira. Por fim, discorra sobre qual é o impacto esperado da escolha dessas personagens.
+*O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no game, cujo o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Para homens, terão 3 opções de etnia. Para mulher, também haverá 3 opções de etnia.
+Segue alguns exemplos.*
 
 ## 3.3. Mundo do jogo (sprints 2 e 3)
 
