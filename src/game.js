@@ -6,12 +6,10 @@ import Level2 from "./scenes/Level2.js";
 // Phaser config to instanciate game
 const WIDTH = 1280;
 const HEIGHT = 720;
-const PLAYER_POSITION = {x: WIDTH * 0.1, y: HEIGHT / 2}
 
 const SHARED_CONFIG = {
   width: WIDTH,
-  height: HEIGHT,
-  startPosition: PLAYER_POSITION
+  height: HEIGHT
 }
 
 const Scenes = [TitleScreen, Level1, Level2, Preload];
