@@ -168,7 +168,7 @@ Segue alguns exemplos.*
 
 *Inclua imagens de Concept Art do jogo que ainda não foram demonstradas em outras seções deste documento. Para cada imagem, coloque legendas, como no exemplo abaixo.*
 
-<img src="../assets/concept1.jpg">
+<img src="../assets/Conceptart.png">
 
 Figura 1: detalhe da cena da partida do herói para a missão, usando sua nave
 
