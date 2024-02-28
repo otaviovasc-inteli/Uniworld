@@ -1,4 +1,4 @@
-export default anims =>{
+export default (anims, selectedPlayer) =>{
   // Animate the sprites
   anims.create({
     key: 'player_run',
@@ -34,4 +34,6 @@ export default anims =>{
     frameRate: 4,
     repeat: -1
   });
+
+  console.log(selectedPlayer);
 }

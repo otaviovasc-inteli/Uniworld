@@ -4,11 +4,13 @@ import collidable from '../mixins/collidable.js'
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   static instanceCount = 0;
 
-  constructor(scene, x, y, oldPlayer) {
+  constructor(scene, x, y, selectedPlayer, oldPlayer) {
     super(scene, x, y, `player_idle`)
     scene.add.existing(this);
     scene.physics.add.existing(this);
     Object.assign(this, collidable);
+    if(selectedPlayer)
+      this.selectedPlayer = selectedPlayer
 
     if (oldPlayer)
       this.oldPlayer = oldPlayer
@@ -48,7 +50,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     // This if is just to not recriate animations.
     if(Player.instanceCount <= 1)
-      initAnimations(this.scene.anims)
+      initAnimations(this.scene.anims, this.selectedPlayer)
   }
 
   initEvents() {
@@ -79,7 +81,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     // Increase gravity when pressing down
     if (down.isDown)
-      this.body.setGravityY(this.gravity * 3)
+      this.body.setGravityY(this.gravity * 2)
     else
       this.body.setGravityY(this.gravity);
 

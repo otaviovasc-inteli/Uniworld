@@ -9,7 +9,6 @@ export default class Level1 extends Phaser.Scene {
   create () {
     // Background
     const personagemSelecionado = this.sys.settings.data.playerSelecionado;
-    console.log(personagemSelecionado);
     this.add.image(0, -200, "bg1").setScale(1.12).setOrigin(0, 0);
 
     // Add map and layers
@@ -18,7 +17,7 @@ export default class Level1 extends Phaser.Scene {
     const playerZones = this.getPlayerZones(layers.playerZones)
 
     // Add pc sprite
-    const player = this.createPlayer(playerZones)
+    const player = this.createPlayer(playerZones, personagemSelecionado)
     .setScale(1.3)
 
     // ComputerNpc sprite
@@ -42,8 +41,8 @@ export default class Level1 extends Phaser.Scene {
     this.setupFollowupCameraOn(player, map)
   }
 
-  createPlayer({start}) {
-    return new Player(this, start.x, start.y);
+  createPlayer({start}, personagemSelecionado) {
+    return new Player(this, start.x, start.y, personagemSelecionado);
   }
 
   createEndOfLevel(end, player) {
