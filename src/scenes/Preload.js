@@ -7,6 +7,8 @@ export default class Preload extends Phaser.Scene {
     this.load.image("bg1", "assets/level2/back.png");
     // this.load.plugin('DialogModalPlugin', 'plugins/dialogPlugin.js');
 
+    // playerSelect
+
     // level1
     this.load.spritesheet("computer_sprite", "assets/level1/computer.png", { frameWidth: 320, frameHeight: 192 });
     this.load.spritesheet("rexona_sprite", "assets/level1/rexona.png", { frameWidth: 128, frameHeight: 192 });
@@ -29,13 +31,13 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("player_idle", "assets/player/idle.png", { frameWidth: 256, frameHeight: 160 });
 
     this.load.once('complete', () => {
-      console.log('Game Loaded');
-      this.startGame();
+      console.log('Assets Loaded');
+      this.startSelectScreen();
     })
   }
 
-  startGame() {
-    console.log('Starting level 1');
-    this.scene.start("level1")
+  startSelectScreen() {
+    console.log('Player Select');
+    this.scene.start("playerSelect")
   }
 }

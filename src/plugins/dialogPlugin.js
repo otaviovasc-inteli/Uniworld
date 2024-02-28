@@ -41,7 +41,7 @@ export default class DialogModalPlugin {
     this.windowColor = opts.windowColor || 0x303030;
     this.windowHeight = opts.windowHeight || 150;
     this.padding = opts.padding || 50;
-    this.dialogSpeed = opts.dialogSpeed || 3;
+    this.dialogSpeed = opts.dialogSpeed || 4;
     this.depth = opts.depth;
     // used for animating the text
     this.eventCounter = 0;

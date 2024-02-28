@@ -1,12 +1,6 @@
 export default class TitleScreen extends Phaser.Scene {
   constructor() {
     super("titleScreen");
-    var sky;
-    var cloudCover;
-    var clouds;
-    var title;
-    var hills;
-    var foreground;
   }
 
   preload() {

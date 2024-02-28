@@ -10,7 +10,6 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     scene.physics.add.existing(this);
     this.name = npcName
     this.npcPlayer = player
-
     // Track how many Npc is in the scene
     Npc.instanceCount++;
 
@@ -52,7 +51,6 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         switch (this.name) {
           case 'computer':
             // Create Teams image
-            console.log(this.dialogImage);
             if (!this.dialogImage)this.dialogImage = this.scene.add.image(-290, -520, 'reuniaoTeams').setOrigin(0, 0).setDepth(2)
             if (this.dialogIndex >= this.texts.length) {
               // If all messages have been displayed, destroy the dialog window and image
@@ -67,7 +65,10 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           case 'rexona':
             if (this.dialogIndex >= this.texts.length) {
               // If all messages have been displayed, destroy the dialog window
+              // Aumenta o dano do player
+              this.npcPlayer.damage += 1;
               this.destroyDialog();
+              this.destroyInstance()
             } else {
               // Show the next message
               this.createDialog(this.texts);
@@ -83,6 +84,14 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     {
       this.name === 'computer' ? this.setFrame(0) : this.play(`${this.name}_idle`, true);
     }
+  }
+
+  destroyInstance() {
+    // Unregister the update function from the scene's update event
+    this.scene.events.removeListener(Phaser.Scenes.Events.UPDATE, this.update, this);
+
+    // Call the superclass destroy method
+    super.destroy();
   }
 
   destroyDialog() {
@@ -102,8 +111,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
     // Create a new DialogModalPlugin instance
     this.dialogModal = new DialogModalPlugin(this.scene);
-
-    console.log(this.dialogModal);
+    console.log('Dialog Happening');
 
     // Start the dialog with the provided texts
     this.startDialog(this.dialogModal, texts, { depth: 3 });

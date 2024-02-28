@@ -8,10 +8,9 @@ export default class Level1 extends Phaser.Scene {
 
   create () {
     // Background
+    const personagemSelecionado = this.sys.settings.data.playerSelecionado;
+    console.log(personagemSelecionado);
     this.add.image(0, -200, "bg1").setScale(1.12).setOrigin(0, 0);
-
-    // Interact Key
-    const interactKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
 
     // Add map and layers
     const map = this.createMap();
@@ -29,7 +28,7 @@ export default class Level1 extends Phaser.Scene {
       .setSize(150, 120)
 
     // RexonaNpc sprite
-    const rexonaNpc = new Npc(this, 800, 500, 'rexona_sprite', 'rexona', player)
+    const rexonaNpc = new Npc(this, 800, 500, 'rexona_sprite', 'rexona', player, true)
     .setScale(0.6)
     .setOrigin(0, 0)
     .setSize(150, 120)
@@ -39,8 +38,8 @@ export default class Level1 extends Phaser.Scene {
       colliders: {
         platforms: layers.platforms
     }})
-
     this.createEndOfLevel(playerZones.end, player)
+    this.setupFollowupCameraOn(player, map)
   }
 
   createPlayer({start}) {
@@ -53,8 +52,7 @@ export default class Level1 extends Phaser.Scene {
       .setAlpha(0)
 
     this.physics.add.overlap(player, endOfLevel, () => {
-      this.registry.set('player', player);
-      this.scene.start("level2");
+      this.scene.start("level2", {player: player});
     })
   }
 
@@ -91,5 +89,9 @@ export default class Level1 extends Phaser.Scene {
       start: playerZones.find(zone => zone.name === 'startZone'),
       end: playerZones.find(zone => zone.name === 'endZone')
     }
+  }
+  setupFollowupCameraOn(player, map) {
+    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
+    this.cameras.main.startFollow(player, true)
   }
 }

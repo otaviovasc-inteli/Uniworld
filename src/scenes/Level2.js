@@ -13,34 +13,26 @@ export default class Level2 extends Phaser.Scene {
     const layers = this.createLayers(map);
     const playerZones = this.getPlayerZones(layers.playerZones)
 
-    // Add player object
-    const player = this.createPlayer(playerZones).setScale(0.6);
+    // Add player object and set bounds to map pass player from previous scene
+    const oldPlayer = this.sys.settings.data.player;
+    const player = this.createPlayer(playerZones, oldPlayer);
 
-    this.physics.world.bounds.width = map.widthInPixels
-    this.physics.world.bounds.height = map.heightInPixels
-
-    // Camera setup
-    this.cameras.main.startFollow(player, true);
-    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
-    this.cameras.main.setDeadzone(200, 200);
-    this.cameras.main.setZoom(0.5);
-
-
-
-    console.log(player);
+    this.physics.world.bounds.height = map.heightInPixels;
+    this.physics.world.bounds.width = map.widthInPixels;
 
     // Collider player with platforms
     this.createPlayerColliders(player, {
       colliders: {
         platforms: layers.platforms,
-        platformsMoving: layers.platformsMoving
+        // platformsMoving: layers.platformsMoving
     }})
 
     this.createEndOfLevel(playerZones.end, player)
+    this.setupFollowupCameraOn(player, map)
   }
 
-  createPlayer({start}) {
-    return new Player(this, start.x, start.y);
+  createPlayer({start}, oldPlayer) {
+    return new Player(this, start.x, start.y, oldPlayer);
   }
 
   createPlayerColliders(player, {colliders}) {
@@ -58,14 +50,14 @@ export default class Level2 extends Phaser.Scene {
     const tileset1 = map.getTileset('level2_t1');
     const tileset2 = map.getTileset('level2_t2');
 
-    const bg = map.createLayer('bg', tileset2).setScale(0.4);
-    const platforms = map.createLayer('platforms', tileset1).setScale(0.4);
+    const env = map.createLayer('env', tileset2);
+    const platforms = map.createLayer('platforms', tileset1);
     // const movingPlatforms = map.createLayer('movingPlatforms', tileset1);
     const playerZones = map.getObjectLayer('player_zones');
 
     platforms.setCollisionByExclusion(-1, true);
 
-    return { bg, platforms, playerZones };
+    return { env, platforms, playerZones };
   }
 
   getPlayerZones(playerZonesLayer) {
@@ -85,5 +77,9 @@ export default class Level2 extends Phaser.Scene {
       this.registry.set('player', player);
       console.log("start level3");
     })
+  }
+  setupFollowupCameraOn(player, map) {
+    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
+    this.cameras.main.startFollow(player, true)
   }
 }
