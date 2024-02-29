@@ -27,7 +27,7 @@ export default class Level1 extends Phaser.Scene {
       .setSize(150, 120)
 
     // RexonaNpc sprite
-    const rexonaNpc = new Npc(this, 800, 500, 'rexona_sprite', 'rexona', player, true)
+    const rexonaNpc = new Npc(this, 800, 300, 'rexona_sprite', 'rexona', player, true)
     .setScale(0.6)
     .setOrigin(0, 0)
     .setSize(150, 120)
