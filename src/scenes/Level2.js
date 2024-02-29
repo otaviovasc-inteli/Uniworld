@@ -122,6 +122,6 @@ export default class Level2 extends Phaser.Scene {
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
     this.cameras.main.startFollow(player, true)
     this.cameras.main.setZoom(0.9);
-    this.cameras.main.setDeadzone(50, 300);
+    this.cameras.main.setDeadzone(50, 0);
   }
 }
