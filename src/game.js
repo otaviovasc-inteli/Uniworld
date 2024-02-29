@@ -27,6 +27,12 @@ var config = {
         debug: true
     }
   },
+  pixelArt: true,
+    render: {
+        antialias: false,
+        pixelArt: true,
+        roundPixels: true
+    },
   scene: initScene()
 };
 

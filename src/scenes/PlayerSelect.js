@@ -4,6 +4,8 @@ export default class PlayerSelect extends Phaser.Scene {
   }
 
   create() {
+    const bg = this.add.image(0, 0, "blue-bg").setScale(10).setOrigin(0, 0);
+    const title = this.add.image(250, 80, "title").setOrigin(0, 0);
     const f1 = this.add.image(240, 360, "frame1F");
     const f2 = this.add.image(510, 360, "frame2F");
     const m1 = this.add.image(770, 360, "frame1M");

@@ -25,7 +25,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
     // This is just to not recriate animations.
     if(Npc.instanceCount <= 1)
-    initAnimations(this.scene.anims)
+      initAnimations(this.scene.anims)
 
     // Set texts modularly
     try {
@@ -51,7 +51,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         switch (this.name) {
           case 'computer':
             // Create Teams image
-            if (!this.dialogImage)this.dialogImage = this.scene.add.image(-290, -520, 'reuniaoTeams').setOrigin(0, 0).setDepth(2)
+            if (!this.dialogImage) this.dialogImage = this.scene.add.image(-290, -520, 'reuniaoTeams').setOrigin(0, 0).setDepth(2)
             if (this.dialogIndex >= this.texts.length) {
               // If all messages have been displayed, destroy the dialog window and image
               this.destroyDialog();
@@ -115,7 +115,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
     // Start the dialog with the provided texts
     this.startDialog(this.dialogModal, texts, { depth: 3 });
-}
+  }
 
   startDialog(dialogModal, texts, options = {}) {
     // Set text for the dialog window
