@@ -485,7 +485,7 @@
         {
          "columns":1,
          "firstgid":203,
-         "image":"..\/titleScreen\/background\/bg-color-blue.png",
+         "image":"background\/bg-color-blue.png",
          "imageheight":1088,
          "imagewidth":1984,
          "margin":0,
@@ -499,7 +499,7 @@
         {
          "columns":1,
          "firstgid":204,
-         "image":"..\/titleScreen\/background\/bg-cloud.png",
+         "image":"background\/bg-cloud.png",
          "imageheight":1088,
          "imagewidth":1984,
          "margin":0,
@@ -513,7 +513,7 @@
         {
          "columns":1,
          "firstgid":205,
-         "image":"..\/titleScreen\/background\/foreground.png",
+         "image":"background\/foreground.png",
          "imageheight":832,
          "imagewidth":1152,
          "margin":0,
@@ -527,7 +527,7 @@
         {
          "columns":1,
          "firstgid":206,
-         "image":"..\/titleScreen\/background\/hills.png",
+         "image":"background\/hills.png",
          "imageheight":832,
          "imagewidth":1152,
          "margin":0,
@@ -555,7 +555,7 @@
         {
          "columns":31,
          "firstgid":3951,
-         "image":"..\/titleScreen\/background\/bg-color-blue.png",
+         "image":"background\/bg-color-blue.png",
          "imageheight":1088,
          "imagewidth":1984,
          "margin":0,
