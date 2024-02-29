@@ -101,7 +101,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
-*Posicione aqui uma descrição justificada do público-alvo do jogo, em termos demográficos e de preferências/gostos pessoais.*
+Nosso público alvo são pessoas com perfil médio de estagiários na Unilever,  na faixa etária média de 24 anos, com, em média, uma formação acadêmica conectados com a área de tecnologia
 
 # <a name="c2"></a>2. Visão Geral do Jogo (sprint 2)
 
