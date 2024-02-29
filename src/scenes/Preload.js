@@ -27,7 +27,12 @@ export default class Preload extends Phaser.Scene {
     this.load.image('level2_t1', 'assets/level2/level2_t1.png');
     this.load.image('level2_t2', 'assets/level2/level2_t2.png');
 
-
+    // Players
+    this.load.spritesheet("player1", "assets/player/player1.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player2", "assets/player/player2.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player3", "assets/player/player3.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player4", "assets/player/player4.png", { frameWidth: 256, frameHeight: 256 });
+    
     this.load.spritesheet("npc1_talk", "assets/npc/npc_talk.png", { frameWidth: 256, frameHeight: 160 });
     this.load.spritesheet("player_fall", "assets/player/fall.png", { frameWidth: 256, frameHeight: 160 });
     this.load.spritesheet("player_jump", "assets/player/jump.png", { frameWidth: 256, frameHeight: 160 });

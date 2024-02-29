@@ -46,6 +46,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     // Collider
     this.setSize(40, 124);
+    this.body.setOffset(110, 70);
     this.setCollideWorldBounds(true);
 
     // This if is just to not recriate animations.
