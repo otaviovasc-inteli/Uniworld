@@ -45,7 +45,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;*A análise SWOT é relacionada ao parceiro Unilever, a tabela foi feita a fim de realizar uma avaliação ambiental no âmbito estratégico, levando em consideração o contexto da indústria, ocorrências e as características do ambiente interno e externo da Unilever.*
 
 <div align="center">
-<sub>Figura X - Análise SWOT</sub>
+<sub>Figura 1 - Análise SWOT</sub>
 <img src="../assets/SWOT-analise.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -60,7 +60,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 &nbsp;&nbsp;&nbsp;&nbsp;*A proposta de valor descreve aspectos essenciais para criação de valor para o projeto, traçando o objetivo de melhor entender a realidade do parceiro e entregar uma solução alinhada com o que a Unilever espera.*
 
 <div align="center">
-<sub>Figura X - Proposta de Valor</sub>
+<sub>Figura 2 - Proposta de Valor</sub>
 <img src="../assets/vpc.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -71,7 +71,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 &nbsp;&nbsp;&nbsp;&nbsp;*A matriz de risco demonstra os riscos observados no projeto pela equipe de desenvolvimento, representando ameaças e oportunidades, assim como impactos relevantes sobre o projeto. Em verde, estão indicados percalços que não necessitam de intervenção; em amarelo, pontos que apresentam média probabilidade e demandam certa atenção; e, em vermelho, estão destacados pontos críticos que devem ser evitados.*
 
 <div align="center">
-<sub>Figura X - Matriz de Riscos</sub>
+<sub>Figura 3 - Matriz de Riscos</sub>
 <img src="../assets/Matriz de Riscos4.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -224,7 +224,7 @@ Seguem alguns exemplos:*
 &nbsp;&nbsp;&nbsp;&nbsp;*A cena inicial do jogo será no quarto, ambiente no qual é possível encontrar objetos mundanos como uma cama, guarda-roupas, mesa, janelas, um quadro e os itens principais deste ambiente: o desodorante Rexona e um notebook. O personagem irá acordar no ambiente em questão e irá interagir com um notebook que, dentro dele, encontrará informações sobre as plataformas que são utilizadas na empresa. No computador após utilizar a ferramenta do teams, entra numa reunião onde recebe a missão de chegar a Unilever.*
 
 <div align="center">
-<sub>Figura X - Ilustração do ambiente Quarto</sub>
+<sub>Figura 4 - Ilustração do ambiente Quarto</sub>
 <img src="../assets/printQuarto.jpg" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -246,7 +246,7 @@ Seguem alguns exemplos:*
 *Inclua imagens de Concept Art do jogo que ainda não foram demonstradas em outras seções deste documento. Para cada imagem, coloque legendas, como no exemplo abaixo.*
 
 <div align="center">
-<sub>Figura X - Arte Conceitual da Cena 2</sub>
+<sub>Figura 5 - Arte Conceitual da Cena 2</sub>
 <img src="../assets/Conceptart.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -293,7 +293,7 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 *Posicione aqui seu "storyboard de programação" - o diagrama de cenas do jogo. Indique, por exemplo, como o jogo começa, quais opções o jogador tem, como ele avança nas fases, quais as condições de 'game over', como o jogo reinicia. Seu diagrama deve representar as classes, atributos e métodos usados no jogo.*
 
 <div align="center">
-<sub>Figura X - Diagrama de Cenas</sub>
+<sub>Figura 6 - Diagrama de Cenas</sub>
 <img src="../assets/GameFlow.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
