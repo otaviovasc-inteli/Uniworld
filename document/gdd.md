@@ -346,7 +346,7 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 
 <div align="center">
 <sub>Figura 2 - Seleção de Personagem</sub>
-<img src="../assets/PlayerSelecter.png" width="100%">
+<img src="../assets/PlayerSelecter.jpg" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -358,7 +358,7 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 
 <div align="center">
 <sub>Figura 4 - Fase 1 - Interação com NPC dentro Quarto</sub>
-<img src="../assets/NotebookNpcQuarto.jpg" width="100%">
+<img src="../assets/NotebookNpcQuarto.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
