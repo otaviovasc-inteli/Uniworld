@@ -320,7 +320,7 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 
 ## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O processo inicial de desenvolvimento se deu por meio da entrega do MPV, implementando a existência de um cenárioe  a movimentação básica do personagem, como ilustra a figura 1. Além disso diálogos com NPCs (Personagem não Jogável) também foram incluídos, contemplados na figura 2.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O processo inicial de desenvolvimento se deu por meio da entrega do MPV, implementando a existência de um cenário e  a movimentação básica do personagem, como ilustra a figura 1. Além disso diálogos com NPCs (Personagem não Jogável) também foram incluídos, contemplados na figura 2.*
 
 <div align="center">
 <sub>Figura 1 - Fase Inicial - Mundo Lúdico</sub>
