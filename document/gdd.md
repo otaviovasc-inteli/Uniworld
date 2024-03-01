@@ -320,11 +320,54 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 
 ## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
 
-*Descreva e ilustre aqui o desenvolvimento da sua primeira versão do jogo, explicando brevemente o que foi entregue em termos de código e jogo. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O processo inicial de desenvolvimento se deu por meio da entrega do MPV, implementando a existência de um cenárioe  a movimentação básica do personagem, como ilustra a figura 1. Além disso diálogos com NPCs (Personagem não Jogável) também foram incluídos, contemplados na figura 2.*
+
+<div align="center">
+<sub>Figura 1 - Fase Inicial - Mundo Lúdico</sub>
+<img src="../assets/versaoInicialJogo.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Figura 2 - Fase Inicial - Interação com NPC</sub>
+<img src="../assets/DialogoInical.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
 
-*Descreva e ilustre aqui o desenvolvimento da versão básica do jogo, explicando brevemente o que foi entregue em termos de código e jogo. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+&nbsp;&nbsp;&nbsp;&nbsp;*Ao longo do desenvolvimento da versão básica do jogo, o grupo foi capaz de incluir novas mecânicas, novo design e mais fases. A figura 1 abaixo ilustra a tela de início funcional do jogo, que permite o acesso às demais funcionalidades. Em seguida, a figura 2 apresenta a tela de seleção de personagem criada, possibilitando maior diversidade ao representar o colaborador. A figura 3 ilustra o ambiente do Quarto, que contém as novas interações com itens e NPCs (Personagens Não-Jogáveis), como demonstradas na figura 4. Por fim, a figura 5 ilustra o novo cenário ao ar livre chamado Mundo Lúdico, que será intermediário ao longo do jogo.
+
+<div align="center">
+<sub>Figura 1 - Tela de Início</sub>
+<img src="../assets/UniWorld.jpg" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Figura 2 - Seleção de Personagem</sub>
+<img src="../assets/PlayerSelecter.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Figura 3 - Fase 1 - Quarto</sub>
+<img src="../assets/printQuarto.jpg" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Figura 4 - Fase 1 - Interação com NPC dentro Quarto</sub>
+<img src="../assets/NotebookNpcQuarto.jpg" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Figura 5 - Fase 2 - Mundo Lúdico</sub>
+<img src="../assets/MundoLudico.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
