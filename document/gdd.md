@@ -144,7 +144,10 @@ Nosso público alvo são pessoas com perfil médio de estagiários na Unilever, 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 0 - Tela de Título
 Descrição: Tela simples de título com botão play, configurações e som.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Cena 1 - Quarto
+&nbsp;&nbsp;&nbsp;&nbsp;Cena 1 - Seletor de personagem
+
+&nbsp;&nbsp;&nbsp;&nbsp;Cena 2 - Quarto
+&nbsp;&nbsp;&nbsp;&nbsp;Tela simples para que o jogador selecione seu personagem.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Descrição: Quarto com um PC e um Rexona interativo.
 
@@ -165,7 +168,7 @@ Descrição: Tela simples de título com botão play, configurações e som.
 'Parabéns, você conseguiu o power-up "Rexona"',
 'Para utilizar seus novos poderes utilize a tecla Q'
 
-&nbsp;&nbsp;&nbsp;&nbsp;Cena 2 - Cenário combate 1
+&nbsp;&nbsp;&nbsp;&nbsp;Cena 3 - Cenário combate 1
 
 &nbsp;&nbsp;&nbsp;&nbsp;O personagem sai do quarto e se depara com um mundo estilo Mário. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do Rexona. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. No caminho, também estarão disponíveis 3 pontos de interação não obrigatórios (que serão lixos a serem coletados), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu, (exemplo: ⅓), caso o personagem interaja com todos eles ocorrerá o seguinte diálogo com a diretora:
 
@@ -178,7 +181,7 @@ Nossa! Sempre soube que você era capaz. Você derrotou o rei da poluição, mas
 
 &nbsp;&nbsp;&nbsp;&nbsp;Para finalizar a fase terá um botão na janela de diálogo com a diretora escrito “Seguir para próxima fase”
 
-&nbsp;&nbsp;&nbsp;&nbsp;Cena 3 - Exploração urbana combate 2
+&nbsp;&nbsp;&nbsp;&nbsp;Cena 4 - Exploração urbana combate 2
 
 &nbsp;&nbsp;&nbsp;&nbsp;O personagem inicia a fase e se depara com um mundo estilo Mário, mas agora em um cenário urbano e acabado. No início, a assistente de jogo do personagem o ensinará como utilizar a mecânica “dash”. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do OMO, utilizando todas as mecânicas de movimentação necessárias. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. Ao longo da fase também estarão disponíveis 3 pontos de interação não obrigatórios (que serão árvores a serem plantadas), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu (exemplo: ⅓), caso o personagem interaja com todos eles ocorrerá o seguinte diálogo com a diretora:
 
@@ -191,7 +194,7 @@ Uau! Você foi além e plantou árvores pelo caminho. Receba uma bonificação p
 Para finalizar a fase basta interagir com uma placa desenhada no cenário escrito “U”, e assim, aparecerá uma janela escrita “Deseja utilizar a chave de entrada para Unilever?”, quando o funcionário apertar o botão “Sim”, a próxima fase se iniciará.
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Cena 4 - Dentro da Unilever (cena final)
+&nbsp;&nbsp;&nbsp;&nbsp;Cena 5 - Dentro da Unilever (cena final)
 
 &nbsp;&nbsp;&nbsp;&nbsp;O personagem inicia a fase e se depara com um mundo estilo Mário, mas agora na Unilever.  No início, a assistente de jogo do personagem o ensinará como utilizar a mecânica “super dash”. Com esse power up da Kibon, o personagem deverá utilizar o super dash, e assim, avançar na fase, ele deve seguir para direita e avançar pelo terreno um pouco mais difícil agora.  Ao longo da fase, não terão NPCs, a fim de instigar dúvidas no jogador. Também não terão pontos de interação pelo mapa.
 
