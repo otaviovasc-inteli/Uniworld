@@ -357,7 +357,7 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 </div>
 
 <div align="center">
-<sub>Figura 4 - Fase 1 - Interação com NPC dentro Quarto</sub>
+<sub>Figura 4 - Fase 1 - Interação com NPC dentro do Quarto</sub>
 <img src="../assets/NotebookNpcQuarto.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
