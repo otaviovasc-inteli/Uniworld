@@ -83,8 +83,8 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 &nbsp;&nbsp;&nbsp;&nbsp;*Aqui, adicionamos alguns pontos que acreditamos que devem estar presentes em nosso projeto. Diante disso, enviamos esta tabela.*
 \# | Requisito
 --- | ---
-1 | Recompensas de bonificação por responder perguntas relacionadas à Unilever 
-2 | Os controles serão: seta cima, esquerda, baixo, direita, espaço D e F.
+1 | Recompensas por responder perguntas relacionadas à Unilever 
+2 | Os controles serão: seta cima, esquerda, baixo, direita, Q W e E
 3 | HUB de direcionamento para trilhas específicas de Onboarding da Unilever
 4 | Apresentação de informações públicas da empresa de forma gamificada
 5 | O jogo será em 2D de plataforma
@@ -92,16 +92,15 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 7 | Mostrar o dicionário da Unilever
 8 | O personagem perde uma vida toda vez que toca em um inimigo ou em algum projétil inimigo
 9 | Mecânica de utilização de poderes
-10 | Mundo lúdico - estilo mario
-11 | dinâmica de plantar arvores
-12 | realização de quiz
-13 | Contato com plataformas Unilever (Uniops & degreed)
-14 | mecânica de dash
+10 | Mundo lúdico - estilo Mario
+11 | realização de quiz
+12 | Contato com plataformas Unilever (Uniops & degreed)
+13 | Mecânica de dash
 
 
 ## 1.3. Público-alvo do Projeto (sprint 2)
 
-Nosso público alvo são pessoas com perfil médio de estagiários na Unilever,  na faixa etária média de 24 anos, com, em média, uma formação acadêmica conectados com a área de tecnologia
+Nosso público alvo são pessoas com perfil médio de estagiários na Unilever, na faixa etária média de 24 anos, com formação acadêmica conectada à área de tecnologia
 
 # <a name="c2"></a>2. Visão Geral do Jogo (sprint 2)
 
