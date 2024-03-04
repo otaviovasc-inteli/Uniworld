@@ -1,4 +1,4 @@
-// rexonaTexts.js
+// Each line represent one interaction in that dialog box, you can edit text as you want
 const rexonaTexts =
 [
   '"Rexona" adquirido!',

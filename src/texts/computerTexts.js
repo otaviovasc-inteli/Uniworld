@@ -1,4 +1,4 @@
-// computerTexts.js
+// Each line represent one interaction in that dialog box, you can edit text as you want
 const computerTexts =
 [
   'Diretora: Olá, colaborador, seja bem vindo a Unilever!',

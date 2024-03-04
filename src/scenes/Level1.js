@@ -45,6 +45,7 @@ export default class Level1 extends Phaser.Scene {
     return new Player(this, start.x, start.y, personagemSelecionado);
   }
 
+  // Uses endZone from Tiled and change level when overlapping
   createEndOfLevel(end, player) {
     const endOfLevel = this.physics.add.sprite(end.x, end.y, 'end')
       .setSize(5, 400)
@@ -67,6 +68,7 @@ export default class Level1 extends Phaser.Scene {
     return map;
   }
 
+  // Split map layers and return layers object
   createLayers(map) {
     const tileset1 = map.getTileset('level1_t1');
     const tileset2 = map.getTileset('level1_t2');
@@ -82,6 +84,7 @@ export default class Level1 extends Phaser.Scene {
     return { bg, env, platforms, playerZones };
   }
 
+  // Return the start and end zone from Tiled
   getPlayerZones(playerZonesLayer) {
     const playerZones = playerZonesLayer.objects
     return {
@@ -89,6 +92,7 @@ export default class Level1 extends Phaser.Scene {
       end: playerZones.find(zone => zone.name === 'endZone')
     }
   }
+  // Setup camera
   setupFollowupCameraOn(player, map) {
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
     this.cameras.main.startFollow(player, true)

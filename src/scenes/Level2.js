@@ -66,8 +66,8 @@ export default class Level2 extends Phaser.Scene {
     return { env, platforms, playerZones };
   }
 
+  // Create background for assets and set its positions
   createBg(map) {
-
     const bgSky = map.getObjectLayer('bg-sky').objects[0]
     this.add.tileSprite(bgSky.x - 100, bgSky.y, bgSky.width, bgSky.height, 'bg_color_blue')
       .setDepth(-10)
@@ -97,6 +97,7 @@ export default class Level2 extends Phaser.Scene {
 
   }
 
+  // Return the start and end zone from Tiled
   getPlayerZones(playerZonesLayer) {
     const playerZones = playerZonesLayer.objects
     return {
@@ -105,6 +106,7 @@ export default class Level2 extends Phaser.Scene {
     }
   }
 
+  // Uses endZone from Tiled and change level when overlapping
   createEndOfLevel(end, player) {
     const endOfLevel = this.physics.add.sprite(end.x, end.y, 'end')
       .setSize(5, 400)
@@ -114,6 +116,7 @@ export default class Level2 extends Phaser.Scene {
       console.log("start level3");
     })
   }
+
   setupFollowupCameraOn(player, map) {
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
     this.cameras.main.startFollow(player, true)
