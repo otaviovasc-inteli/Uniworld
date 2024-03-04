@@ -46,7 +46,6 @@ export default class Level2 extends Phaser.Scene {
     map.addTilesetImage('level2_t1', 'level2_t1');
     map.addTilesetImage('level2_t2', 'level2_t2');
     map.addTilesetImage('bg-color-green', 'bg_color_green');
-    map.addTilesetImage('bg-color-blue', 'bg_color_blue');
     return map;
   }
 
@@ -54,17 +53,13 @@ export default class Level2 extends Phaser.Scene {
     // Add tilesets
     const tileset1 = map.getTileset('level2_t1');
     const tileset2 = map.getTileset('level2_t2');
-    const tileset3 = map.getTileset('bg-color-blue');
-    const tileset4 = map.getTileset('bg-color-green');
+    const tileset3 = map.getTileset('bg-color-green');
 
     // Create layers
     const env = map.createLayer('env', tileset2);
     const platforms = map.createLayer('platforms', tileset1);
-    map.createLayer('bg-color-green', tileset4).setDepth(-9);
-    map.createLayer('bg-color-blue', tileset3).setDepth(-12);
+    map.createLayer('bg-color-green', tileset3).setDepth(-9);
     const playerZones = map.getObjectLayer('player_zones');
-
-
 
     platforms.setCollisionByExclusion(-1, true);
 
@@ -78,6 +73,7 @@ export default class Level2 extends Phaser.Scene {
       .setDepth(-10)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
+      .setScale(5)
 
     const bgCloud = map.getObjectLayer('bg-cloud').objects[0]
     this.add.tileSprite(bgCloud.x - 100, bgCloud.y, bgCloud.width, bgCloud.height, 'bg_cloud')
