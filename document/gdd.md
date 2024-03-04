@@ -316,6 +316,8 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 
 *Ex. Em um jogo de puzzle para celular, o jogador pode tocar e arrastar sobre uma peça para movê-la sobre o tabuleiro, ou fazer um toque simples para rotacioná-la*
 
+&nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem ira dar um pulo duplo. Outra tecla importante para a jogabilidade proposta pelo nosso game é a tecla E, que usa a mecanica de interação, caso apertada ao lado de um NPC ou power-up por exemplo.
+
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
 ## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
