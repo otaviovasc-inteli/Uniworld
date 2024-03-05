@@ -275,9 +275,11 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 *Exemplo de tabela*
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | moeda | <img src="../assets/coin.png"> | há muitas espalhadas em todas as fases | acumula dinheiro para comprar outros itens | som de moeda
-2 | madeira | <img src="../assets/wood.png"> | há muitas espalhadas em todas as fases | acumula madeira para construir casas | som de madeiras
-3 | ... 
+1 | rexona | <img src="../assets/coin.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
+2 | omo | <img src="../assets/wood.png"> |  | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
+3 | kibon | <img src="../assets/wood.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
+4 | coração | <img src="../assets/wood.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
+
 
 ### 3.4.2. Bestiário
 
@@ -286,7 +288,7 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 *Exemplo de tabela*
 \# | inimigo |  | ocorrências | função | impacto | efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | robô terrestre | <img src="../assets/inimigo2.PNG"> |  a partir da fase 1 | ataca o personagem vindo pelo chão em sua direção, com velocidade constante, atirando parafusos | se encostar no inimigo ou no parafuso arremessado, o personagem perde 1 ponto de vida | sons de tiros e engrenagens girando
+1 | fumaçinha | <img src="../assets/inimigo2.PNG"> |  a partir da fase 1 | ataca o personagem vindo pelo chão em sua direção, com velocidade constante, atirando parafusos | se encostar no inimigo ou no parafuso arremessado, o personagem perde 1 ponto de vida | sons de tiros e engrenagens girando
 2 | robô voador | <img src="../assets/inimigo1.PNG"> | a partir da fase 2 | ataca o personagem vindo pelo ar, fazendo movimento em 'V' quando se aproxima | se encostar, o personagem perde 3 pontos de vida | som de hélice
 3 | ... 
 
