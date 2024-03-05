@@ -68,33 +68,32 @@ export default class Level2 extends Phaser.Scene {
 
   // Create background for assets and set its positions
   createBg(map) {
-    const bgSky = map.getObjectLayer('bg-sky').objects[0]
-    this.add.tileSprite(bgSky.x - 100, bgSky.y, bgSky.width, bgSky.height, 'bg_color_blue')
+    const bgSkyObject = map.getObjectLayer('bg-sky').objects[0]
+    this.bgSky =this.add.tileSprite(bgSkyObject.x - 100, bgSkyObject.y, bgSkyObject.width, bgSkyObject.height, 'bg_color_blue')
       .setDepth(-10)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
       .setScale(5)
 
-    this.bgCloud = map.getObjectLayer('bg-cloud').objects[0]
-    this.add.tileSprite(bgCloud.x - 100, bgCloud.y, bgCloud.width, bgCloud.height, 'bg_cloud')
+    const bgCloudObject = map.getObjectLayer('bg-cloud').objects[0]
+    this.bgCloud = this.add.tileSprite(bgCloudObject.x - 100, bgCloudObject.y, bgCloudObject.width, bgCloudObject.height, 'bg_cloud')
       .setDepth(-9)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
 
-    this.bgHills = map.getObjectLayer('bg-hills').objects[0]
-    this.add.tileSprite(bgHills.x - 100, bgHills.y, bgHills.width, bgHills.height, 'bg_hills')
+    const bgHillsObject = map.getObjectLayer('bg-hills').objects[0]
+    this.bgHills = this.add.tileSprite(bgHillsObject.x - 100, bgHillsObject.y, bgHillsObject.width, bgHillsObject.height, 'bg_hills')
       .setDepth(-8)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
       .setScale(1.3)
 
-    this.bgForeGround = map.getObjectLayer('bg-foreground').objects[0]
-    this.add.tileSprite(bgForeGround.x - 100, bgForeGround.y, bgForeGround.width, bgForeGround.height, 'bg_foreground')
+    const bgForeGroundObject = map.getObjectLayer('bg-foreground').objects[0]
+    this.bgForeGround = this.add.tileSprite(bgForeGroundObject.x - 100, bgForeGroundObject.y, bgForeGroundObject.width, bgForeGroundObject.height, 'bg_foreground')
       .setDepth(-7)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
       .setScale(1.3)
-
   }
 
   // Return the start and end zone from Tiled
@@ -124,10 +123,9 @@ export default class Level2 extends Phaser.Scene {
     this.cameras.main.setDeadzone(50, 0);
   }
 
-
-  // update() {
-  //   this.bgCloud.tilePositionX = this.cameras.main.scrollX
-  //   this.bgForeGround.tilePositionX = this.cameras.main.scrollX
-  //   this.bgHills.tilePositionX = this.cameras.main.scrollX
-  // }
+  update() {
+    this.bgCloud.tilePositionX = this.cameras.main.scrollX * 0.25
+    this.bgForeGround.tilePositionX = this.cameras.main.scrollX * 0.5
+    this.bgHills.tilePositionX = this.cameras.main.scrollX * 0.4
+  }
 }

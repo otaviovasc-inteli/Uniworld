@@ -55,6 +55,8 @@ export default class TitleScreen extends Phaser.Scene {
   }
 
   preloadGame() {
-    this.scene.start("preload")
+    this.cameras.main.fadeOut(400, 0, 0, 0, (camera, progress) => {
+      if(progress === 1) this.scene.start("preload")
+    })
   }
 }
