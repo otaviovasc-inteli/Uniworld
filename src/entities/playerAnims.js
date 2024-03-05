@@ -3,7 +3,7 @@ export default (anims, selectedPlayer) =>{
   anims.create({
     key: 'player_run',
     frames: anims.generateFrameNumbers(`player${selectedPlayer}`, { start: 10, end: 17 }),
-    frameRate: 10,
+    frameRate: 12,
     repeat: -1
   });
 

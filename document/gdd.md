@@ -146,18 +146,19 @@ Descrição: Tela simples de título com botão play, configurações e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 1 - Seletor de personagem
 
-&nbsp;&nbsp;&nbsp;&nbsp;Cena 2 - Quarto
 &nbsp;&nbsp;&nbsp;&nbsp;Tela simples para que o jogador selecione seu personagem.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Descrição: Quarto com um PC e um Rexona interativo.
+&nbsp;&nbsp;&nbsp;&nbsp;Cena 2 - Quarto
 
-&nbsp;&nbsp;&nbsp;&nbsp;O personagem irá acordar em seu aconchegante quarto, tendo como objetivo interagir com o computador. No computador, ele será apresentado ao Google Teams, onde sua diretora o dará a missão de ir à Unilever.
+&nbsp;&nbsp;&nbsp;&nbsp;Descrição: Quarto do personagem com um PC e um Rexona (Power-up) interativo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;O personagem irá acordar em seu aconchegante quarto, tendo como objetivo interagir com o computador. No dispositivo, ele será apresentado ao Microsoft Teams, onde sua diretora o dará a missão de ir à Unilever.
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Fala da diretora:
 
 'Diretora: Olá, colaborador, seja bem vindo a Unilever!',
-'Diretora: aqui na Unilever utilizamos o Google Teams como principal forma de comunicação remota.',
+'Diretora: aqui na Unilever utilizamos o Microsoft Teams como principal forma de comunicação remota.',
 'Diretora: Algo aconteceu e o mundo está em completa desordem, e mesmo que hoje seja seu primeiro dia, precisamos da sua ajuda para consertar o mundo',
 'Diretora: durante o caminho, represente os valores da Unilever e tudo ficará bem.'
 
@@ -165,17 +166,17 @@ Descrição: Tela simples de título com botão play, configurações e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Iniciará o diálogo:
  
-'Parabéns, você conseguiu o power-up "Rexona"',
+'Parabéns, você conseguiu o power-up do Super Rexona!',
 'Para utilizar seus novos poderes utilize a tecla Q'
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 3 - Cenário combate 1
 
-&nbsp;&nbsp;&nbsp;&nbsp;O personagem sai do quarto e se depara com um mundo estilo Mário. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do Rexona. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. No caminho, também estarão disponíveis 3 pontos de interação não obrigatórios (que serão lixos a serem coletados), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu, (exemplo: ⅓), caso o personagem interaja com todos eles ocorrerá o seguinte diálogo com a diretora:
+&nbsp;&nbsp;&nbsp;&nbsp;O personagem sai do quarto e se depara com um mundo lúdico estilo Super Mario. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do Rexona. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. No caminho, também estarão disponíveis 3 pontos de interação não obrigatórios (que serão lixos a serem coletados), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu, (exemplo: ⅓), caso o personagem interaja com todos eles ocorrerá o seguinte diálogo com a diretora:
 
 Uau! Você foi além e recolheu todo o lixo que encontrou pelo caminho. Receba uma bonificação pelo seu ato de valor!
-(nesse momento o personagem receberá uma bonificação, de preferência uma vida extra).
+(nesse momento o personagem receberá uma bonificação, uma vida extra).
 
-&nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um quiz no computador, que também servirá como checkpoint, caso ele acerte o quiz, receberá um aumento de poder, caso perca, nada acontecerá, e ele poderá prosseguir na fase e enfrentar o boss “Rei da poluição”. Caso ele perca para o rei, poderá retornar a fase onde está o quiz, e poderá refazê-lo caso não tenha acertado da última vez, assim, enfrentará novamente o boss quantas vezes forem necessárias. Caso ganhe do boss, ele deverá soltar um item um “Rexona”, ao personagem interagir com o item, ele se tornará o “Homem Rexona”, e o diretora aparecerá novamente com o seguinte diálogo:
+&nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um quiz no computador, que também servirá como checkpoint, caso ele acerte o quiz, receberá um aumento de poder, caso perca, nada acontecerá, e ele poderá prosseguir na fase e enfrentar o boss “Rei da poluição”. Caso ele perca para o rei, poderá retornar a fase onde está o quiz, e poderá refazê-lo caso não tenha acertado da última vez, assim, enfrentará novamente o boss quantas vezes forem necessárias. Caso ganhe do boss, ele deverá soltar um item um “Omo”, ao personagem interagir com o item, ele se tornará o “SUPER OMO”, e o diretora aparecerá novamente com o seguinte diálogo:
 
 Nossa! Sempre soube que você era capaz. Você derrotou o rei da poluição, mas ainda há muito por vir. Continue no caminho para Unilever e você encontrará o rei do desmatamento, com seus novos poderes, você será capaz de derrotá-lo.
 
@@ -183,12 +184,12 @@ Nossa! Sempre soube que você era capaz. Você derrotou o rei da poluição, mas
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 4 - Exploração urbana combate 2
 
-&nbsp;&nbsp;&nbsp;&nbsp;O personagem inicia a fase e se depara com um mundo estilo Mário, mas agora em um cenário urbano e acabado. No início, a assistente de jogo do personagem o ensinará como utilizar a mecânica “dash”. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do OMO, utilizando todas as mecânicas de movimentação necessárias. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. Ao longo da fase também estarão disponíveis 3 pontos de interação não obrigatórios (que serão árvores a serem plantadas), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu (exemplo: ⅓), caso o personagem interaja com todos eles ocorrerá o seguinte diálogo com a diretora:
+&nbsp;&nbsp;&nbsp;&nbsp;Agora o personagem se encotra em um cenário urbano e acabado. No início, a assistente de jogo do personagem o ensinará como utilizar a mecânica “dash”. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do OMO, utilizando todas as mecânicas de movimentação necessárias. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs. Ao longo da fase também estarão disponíveis 3 pontos de interação não obrigatórios (que serão árvores a serem plantadas), ao interagir com eles, aparecerá no topo da tela quantos desses você interagiu (exemplo: ⅓), caso o personagem interaja com todos, ocorrerá o seguinte diálogo com a diretora:
 
 Uau! Você foi além e plantou árvores pelo caminho. Receba uma bonificação pelo seu ato de valor!
 (nesse momento o personagem receberá uma bonificação, de preferência uma vida extra).
 
-&nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um quiz no computador, que também servirá como checkpoint, caso ele acerte o quiz, receberá um aumento de poder, caso perca, nada acontecerá, e ele poderá prosseguir na fase e enfrentar o boss “Rei do desmatamento”. Caso ela perca pro rei, poderá retornar a fase onde está o quiz, e poderá refazê-lo caso não tenha acertado da última vez, assim, enfrentará novamente o boss quantas vezes forem necessárias. Caso ele ganhe do boss, o boss deverá soltar o item “Kibon”, ao interagir com o item, o personagem ganhará novos poderes. Deverá se iniciar o diálogo:
+&nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um quiz que o NPC te fornecerá, que também servirá como checkpoint, caso o jogador acerte o quiz, receberá um aumento de poder. Caso erre, nada acontecerá, e ele poderá prosseguir na fase e enfrentar o boss “Rei do desmatamento”. Caso ele perca pro rei, irá retornar a seção onde está o quiz, e poderá refazê-lo caso não tenha acertado da última vez, assim, enfrentará novamente o boss quantas vezes forem necessárias. Caso ele ganhe do chefe, o boss deverá soltar o item “Kibon” e a chave de acesso a Unilever, ao interagir com o item, o personagem ganhará novos poderes, Se tornando o "Super Kibon" e então deverá se iniciar o diálogo:
 
 &nbsp;&nbsp;&nbsp;&nbsp;Eu sempre soube que você era capaz! Agora com seus novos poderes, vá direto para Unilever para consertarmos o planeta!
 Para finalizar a fase basta interagir com uma placa desenhada no cenário escrito “U”, e assim, aparecerá uma janela escrita “Deseja utilizar a chave de entrada para Unilever?”, quando o funcionário apertar o botão “Sim”, a próxima fase se iniciará.
@@ -196,11 +197,11 @@ Para finalizar a fase basta interagir com uma placa desenhada no cenário escrit
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 5 - Dentro da Unilever (cena final)
 
-&nbsp;&nbsp;&nbsp;&nbsp;O personagem inicia a fase e se depara com um mundo estilo Mário, mas agora na Unilever.  No início, a assistente de jogo do personagem o ensinará como utilizar a mecânica “super dash”. Com esse power up da Kibon, o personagem deverá utilizar o super dash, e assim, avançar na fase, ele deve seguir para direita e avançar pelo terreno um pouco mais difícil agora.  Ao longo da fase, não terão NPCs, a fim de instigar dúvidas no jogador. Também não terão pontos de interação pelo mapa.
+&nbsp;&nbsp;&nbsp;&nbsp;O personagem se encontra agora na Unilever.  No início, a assistente de jogo do personagem o ensinará como utilizar a mecânica “super dash”. Com esse power up da Kibon, o personagem deverá utilizar o super dash, e assim, avançar na fase, ele deve seguir para direita e avançar pelo terreno um pouco mais difícil agora.  Ao longo da fase, não terão NPCs, a fim de instigar dúvidas no jogador. Também não terão pontos de interação pelo mapa.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, o jogador encontrará a diretora. Ao conversar com o NPC se iniciará o seguinte diálogo:
 
-Olá, você realmente se mostrou um funcionário capaz, por conta disso, você deve estar pronto para representar todos os nossos valores e saber todos os nossos pilares, ao chegar até aqui significa que você passou no teste e se provou ser um membro da nossa família Unilever! Seja bem vindo (nome), esperamos muito de um herói como você!
+Olá, você realmente se mostrou um funcionário capaz, por conta disso, você deve estar pronto para representar todos os nossos valores e saber todos os nossos pilares, ao chegar até aqui significa que você passou no teste e se provou ser um membro da nossa família Unilever! Seja bem vindo oficialmente, esperamos muito de um herói como você!
 
 &nbsp;&nbsp;&nbsp;&nbsp;A fase acaba com o personagem seguindo pelo cenário e encontrando um computador para interação no final do mapa. Neste computador quando ele interagir, reaparecerá a cena 0, mas agora com um botão a mais, sendo esse: “Consultar materiais disponíveis”
 
@@ -318,7 +319,7 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 
 *Ex. Em um jogo de puzzle para celular, o jogador pode tocar e arrastar sobre uma peça para movê-la sobre o tabuleiro, ou fazer um toque simples para rotacioná-la*
 
-&nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem ira dar um pulo duplo. Outra tecla importante para a jogabilidade proposta pelo nosso game é a tecla E, que usa a mecanica de interação, caso apertada ao lado de um NPC ou power-up por exemplo.
+&nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem irá dar um pulo duplo. Outra tecla importante para a jogabilidade proposta no nosso game é a tecla E, que usa a mecânica de interação, caso apertada ao lado de um NPC ou power-up por exemplo.
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 

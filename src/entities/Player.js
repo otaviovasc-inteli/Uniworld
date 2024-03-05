@@ -1,39 +1,37 @@
-import initAnimations from './playerAnims.js'
-import collidable from '../mixins/collidable.js'
+import initAnimations from "./playerAnims.js";
+import collidable from "../mixins/collidable.js";
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   static instanceCount = 0;
 
   constructor(scene, x, y, selectedPlayer, oldPlayer) {
-    super(scene, x, y, `player_idle`)
+    super(scene, x, y, `player_idle`);
     scene.add.existing(this);
     scene.physics.add.existing(this);
     Object.assign(this, collidable);
-    if(selectedPlayer)
-      this.selectedPlayer = selectedPlayer
+    if (selectedPlayer) this.selectedPlayer = selectedPlayer;
 
-    if (oldPlayer)
-      this.oldPlayer = oldPlayer
-    else
-      this.oldPlayer = false
+    if (oldPlayer) this.oldPlayer = oldPlayer;
+    else this.oldPlayer = false;
 
     // Track how many Npc is in the scene
     Player.instanceCount++;
 
-    this.init()
-    this.initEvents()
+    this.init();
+    this.initEvents();
   }
 
   init() {
     // Controls
     this.cursors = this.scene.input.keyboard.createCursorKeys();
-    this.dashKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
+    this.dashKey = this.scene.input.keyboard.addKey(
+      Phaser.Input.Keyboard.KeyCodes.W
+    );
 
     // Player properties
     this.setDepth(1);
-    this.gravity = this.oldPlayer.gravity || 1000
+    this.gravity = this.oldPlayer.gravity || 1000;
     this.body.setGravityY(this.gravity);
-
     this.playerSpeed = this.oldPlayer.playerSpeed || 250;
     this.jumpSpeed = this.oldPlayer.jumpSpeed || 550;
     this.jumpCount = this.oldPlayer.jumpCount || 0;
@@ -41,8 +39,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.dashSpeed = this.oldPlayer.dashSpeed || 2000;
     this.canDash = this.oldPlayer.canDash || false;
     this.dashDuration = this.oldPlayer.dashDuration || 500;
-
     this.damage = this.oldPlayer.damage || 0;
+
+    // Sounds
+    this.createSounds(this.scene)
 
     // Collider
     this.setSize(40, 124);
@@ -50,12 +50,26 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.setCollideWorldBounds(true);
 
     // This if is just to not recriate animations.
-    if(Player.instanceCount <= 1)
-      initAnimations(this.scene.anims, this.selectedPlayer)
+    if (Player.instanceCount <= 1)
+      initAnimations(this.scene.anims, this.selectedPlayer);
+  }
+
+  createSounds(scene) {
+    switch (this.scene.sys.settings.key) {
+      case "level1":
+        this.walkSound = scene.sound.add("floorSound", {loop: false, volume: 0.05, rate: 0.55});
+        break;
+      case "level2":
+        this.walkSound = scene.sound.add("grassSound", {loop: false, volume: 0.2, rate: 0.55});
+        break;
+      // add mais dps
+      default:
+        break;
+    }
   }
 
   initEvents() {
-    this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this)
+    this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
   }
 
   update() {
@@ -66,19 +80,27 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     this.playerVelocityY = this.body.velocity.y;
 
-    // Movement logic
+    // Movement and movement sound logic
     if (left.isDown) {
-        this.setFlip(true, false);
-        this.setVelocityX(-this.playerSpeed);
-        this.play('player_run', true);
+      this.setFlip(true, false);
+      this.setVelocityX(-this.playerSpeed);
+      this.play("player_run", true);
+      if (!this.walkSound.isPlaying) 
+        this.walkSound.play();
     } else if (right.isDown) {
-        this.setFlip(false, false);
-        this.setVelocityX(this.playerSpeed);
-        this.play('player_run', true);
+      this.setFlip(false, false);
+      this.setVelocityX(this.playerSpeed);
+      this.play("player_run", true);
+      if (!this.walkSound.isPlaying) 
+        this.walkSound.play();
     } else {
-        this.setVelocityX(0);
-        this.play('player_idle', true);
-    }
+      this.setVelocityX(0);
+      this.play("player_idle", true);
+        this.walkSound.pause();
+    } 
+    
+    // stops walking sounds when player jumps
+    if (!onFloor && this.walkSound.isPlaying) this.walkSound.pause()
 
     // Jump logic
     if (isUpJustDown && (onFloor || this.jumpCount < this.consecutiveJumps)) {
@@ -88,9 +110,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     // Animation logic for jumping and falling
     if (!onFloor) {
-      this.play('player_jump', true);
-      if (this.playerVelocityY > 0)
-        this.play('player_fall', true);
+      this.play("player_jump", true);
+      if (this.playerVelocityY > 0) this.play("player_fall", true);
     }
 
     // Reset jump count and dash availability on landing
