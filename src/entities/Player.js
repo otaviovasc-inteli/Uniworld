@@ -44,6 +44,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     // Sounds
     this.createSounds(this.scene)
 
+    // Allow update (prevent player from moving)
+    this.updateEnabled = true;
+
     // Collider
     this.setSize(40, 124);
     this.body.setOffset(110, 70);
@@ -72,7 +75,20 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
   }
 
+  pauseUpdate() {
+    this.updateEnabled = false;
+  }
+
+  resumeUpdate() {
+    this.updateEnabled = true;
+  }
+
   update() {
+    // If player update is paused, do nothing
+    if (!this.updateEnabled) {
+      return;
+    }
+
     const { left, right, down, up } = this.cursors;
     const isWJustDown = Phaser.Input.Keyboard.JustDown(this.dashKey);
     const isUpJustDown = Phaser.Input.Keyboard.JustDown(up);
@@ -85,20 +101,20 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       this.setFlip(true, false);
       this.setVelocityX(-this.playerSpeed);
       this.play("player_run", true);
-      if (!this.walkSound.isPlaying) 
+      if (!this.walkSound.isPlaying)
         this.walkSound.play();
     } else if (right.isDown) {
       this.setFlip(false, false);
       this.setVelocityX(this.playerSpeed);
       this.play("player_run", true);
-      if (!this.walkSound.isPlaying) 
+      if (!this.walkSound.isPlaying)
         this.walkSound.play();
     } else {
       this.setVelocityX(0);
       this.play("player_idle", true);
         this.walkSound.pause();
-    } 
-    
+    }
+
     // stops walking sounds when player jumps
     if (!onFloor && this.walkSound.isPlaying) this.walkSound.pause()
 

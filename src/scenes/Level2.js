@@ -75,20 +75,20 @@ export default class Level2 extends Phaser.Scene {
       .setScrollFactor(0, 1)
       .setScale(5)
 
-    const bgCloud = map.getObjectLayer('bg-cloud').objects[0]
+    this.bgCloud = map.getObjectLayer('bg-cloud').objects[0]
     this.add.tileSprite(bgCloud.x - 100, bgCloud.y, bgCloud.width, bgCloud.height, 'bg_cloud')
       .setDepth(-9)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
 
-    const bgHills = map.getObjectLayer('bg-hills').objects[0]
+    this.bgHills = map.getObjectLayer('bg-hills').objects[0]
     this.add.tileSprite(bgHills.x - 100, bgHills.y, bgHills.width, bgHills.height, 'bg_hills')
       .setDepth(-8)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
       .setScale(1.3)
 
-    const bgForeGround = map.getObjectLayer('bg-foreground').objects[0]
+    this.bgForeGround = map.getObjectLayer('bg-foreground').objects[0]
     this.add.tileSprite(bgForeGround.x - 100, bgForeGround.y, bgForeGround.width, bgForeGround.height, 'bg_foreground')
       .setDepth(-7)
       .setOrigin(0, 1)
@@ -123,4 +123,11 @@ export default class Level2 extends Phaser.Scene {
     this.cameras.main.setZoom(0.9);
     this.cameras.main.setDeadzone(50, 0);
   }
+
+
+  // update() {
+  //   this.bgCloud.tilePositionX = this.cameras.main.scrollX
+  //   this.bgForeGround.tilePositionX = this.cameras.main.scrollX
+  //   this.bgHills.tilePositionX = this.cameras.main.scrollX
+  // }
 }

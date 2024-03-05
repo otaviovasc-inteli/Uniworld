@@ -7,6 +7,9 @@ export default class Level1 extends Phaser.Scene {
   }
 
   create () {
+    // FadeIn Effect
+    this.cameras.main.fadeIn(500, 0, 0, 0)
+
     // Background
     const personagemSelecionado = this.sys.settings.data.playerSelecionado;
     this.add.image(0, -200, "bg1").setScale(1.12).setOrigin(0, 0);

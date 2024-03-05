@@ -57,21 +57,22 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
               this.destroyDialog();
               this.dialogImage.destroy();
               this.dialogImage = null
+              this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
             } else {
               // Show the next message
               this.createDialog(this.texts);
+              this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
             }
             break;
           case 'rexona':
             if (this.dialogIndex >= this.texts.length) {
-              // If all messages have been displayed, destroy the dialog window
-              // Aumenta o dano do player
-              this.npcPlayer.damage += 1;
-              this.destroyDialog();
-              this.destroyInstance()
+              this.npcPlayer.damage += 1; // Aumenta o dano do player
+              this.destroyDialog(); // If all messages have been displayed, destroy the dialog window
+              this.destroyInstance() // Destroy NPC(collect item)
+              this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
             } else {
-              // Show the next message
-              this.createDialog(this.texts);
+              this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
+              this.createDialog(this.texts); // Show the next message
             }
             break;
           default:
