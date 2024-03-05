@@ -42,7 +42,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.damage = this.oldPlayer.damage || 0;
 
     // Sounds
-    this.walkSound = this.scene.sound.add("room_walking_sound", {loop: true, volume: 0.5});
+    this.createSounds(this.scene)
 
     // Collider
     this.setSize(40, 124);
@@ -52,6 +52,20 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     // This if is just to not recriate animations.
     if (Player.instanceCount <= 1)
       initAnimations(this.scene.anims, this.selectedPlayer);
+  }
+
+  createSounds(scene) {
+    switch (this.scene.sys.settings.key) {
+      case "level1":
+        this.walkSound = scene.sound.add("floorSound", {loop: false, volume: 0.05, rate: 0.55});
+        break;
+      case "level2":
+        this.walkSound = scene.sound.add("grassSound", {loop: false, volume: 0.2', rate: 0.55});
+        break;
+      // add mais dps
+      default:
+        break;
+    }
   }
 
   initEvents() {
@@ -82,7 +96,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     } else {
       this.setVelocityX(0);
       this.play("player_idle", true);
-      if (this.walkSound.isPlaying)
         this.walkSound.pause();
     } 
     
