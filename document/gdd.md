@@ -136,7 +136,7 @@ Nosso público alvo são pessoas com perfil médio de estagiários na Unilever, 
 
 ## 3.1. Enredo do Jogo (sprints 2 e 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;Você acorda, está se preparando para o primeiro dia na Unilever, mas nota algo diferente, o mundo está imerso em um ambiente mágico, onde a harmonia é mantida pela energia vital da natureza. No entanto, essa energia está sendo ameaçada pela ascensão de dois terríveis vilões, conhecidos como "Rei da Poluição" e “Rei do Desmatamento”. Este vilão, acompanhado por seus monstros, espalha o caos, sujeira e a destruição, poluindo os belos cenários naturais e ameaçando a vida de todas as criaturas mágicas que habitam esse mundo, incluindo a sua. E agora? O que te aguarda nesse caminho para o seu primeiro dia na empresa?
+&nbsp;&nbsp;&nbsp;&nbsp;Você acorda, está se preparando para o primeiro dia na Unilever, mas nota algo diferente, o mundo está imerso em um ambiente mágico, onde a harmonia é mantida pela energia vital da natureza balanceada pela Unilever. No entanto, este equilíbrio está sendo abalado pois as principais marcas foram roubadas por vilões tenebrosos, e agora você precisa batalhar com eles para recuperar e restaurar o equílibro. Os vilões por trás disso tudo são o "Rei da Poluição" e o "Rei do Desmatamento". Estes vilões, acompanhados por seus monstros, espalham o caos, sujeira e a destruição, poluindo e destruindo os belos cenários naturais e ameaçando a vida de todas as criaturas mágicas que habitam esse mundo, incluindo a sua. E agora? Devolva as marcas para Unilver para salvar o mundo?
 
 
 
@@ -152,15 +152,16 @@ Descrição: Tela simples de título com botão play, configurações e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Descrição: Quarto do personagem com um PC e um Rexona (Power-up) interativo.
 
-&nbsp;&nbsp;&nbsp;&nbsp;O personagem irá acordar em seu aconchegante quarto, tendo como objetivo interagir com o computador. No dispositivo, ele será apresentado ao Microsoft Teams, onde sua diretora o dará a missão de ir à Unilever.
+&nbsp;&nbsp;&nbsp;&nbsp;O personagem irá acordar em seu aconchegante quarto, tendo como objetivo interagir com o computador. No dispositivo, ele será apresentado ao Microsoft Teams, onde sua diretora o dará a missão de recuperar as marcas e lhe dará uma das marcas que sobraram para ajuda-lo em sua caminhada.
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Fala da diretora:
 
 'Diretora: Olá, colaborador, seja bem vindo a Unilever!',
 'Diretora: aqui na Unilever utilizamos o Microsoft Teams como principal forma de comunicação remota.',
-'Diretora: Algo aconteceu e o mundo está em completa desordem, e mesmo que hoje seja seu primeiro dia, precisamos da sua ajuda para consertar o mundo',
-'Diretora: durante o caminho, represente os valores da Unilever e tudo ficará bem.'
+'Diretora: Vilões tenebrosos roubaram algumas de nossas marcas, e por conta disso, não estamos mais conseguindo manter o equilíbrio da Unilever.',
+'Diretora: Iremos te enviar uma das nossas marcas para você conseguir enfrentar os desafios a frente sem nem suar'
+'Diretora: Contamos com você, herói, ajude-nos a recuperar nossas marcas e reestruturar a empresa'
 
 &nbsp;&nbsp;&nbsp;&nbsp;Em seguida, o personagem seguirá pela cena e deverá interagir com o Rexona.
 
@@ -201,9 +202,13 @@ Para finalizar a fase basta interagir com uma placa desenhada no cenário escrit
 
 &nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, o jogador encontrará a diretora. Ao conversar com o NPC se iniciará o seguinte diálogo:
 
+<<<<<<< Updated upstream
 Olá, você realmente se mostrou um funcionário capaz, por conta disso, você deve estar pronto para representar todos os nossos valores e saber todos os nossos pilares, ao chegar até aqui significa que você passou no teste e se provou ser um membro da nossa família Unilever! Seja bem vindo oficialmente, esperamos muito de um herói como você!
+=======
+PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão queridas marcas. Graças a você, conseguimos voltar a nossa força total e recuperar o equilíbrio do mundo. Seja bem vindo, herói, faça parte da nossa família Unilever.
+>>>>>>> Stashed changes
 
-&nbsp;&nbsp;&nbsp;&nbsp;A fase acaba com o personagem seguindo pelo cenário e encontrando um computador para interação no final do mapa. Neste computador quando ele interagir, reaparecerá a cena 0, mas agora com um botão a mais, sendo esse: “Consultar materiais disponíveis”
+&nbsp;&nbsp;&nbsp;&nbsp;A fase acaba com o personagem seguindo pelo cenário e encontrando um computador para interação no final do mapa. Neste computador quando ele interagir, reaparecerá a cena 0.
 
 ## 3.2. Personagens (sprints 2 e 3)
 
