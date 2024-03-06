@@ -48,11 +48,9 @@ export default class TitleScreen extends Phaser.Scene {
       this.preloadGame();
     });
 
-    let isMusicToggled = false;
     musicButton.setInteractive();
     musicButton.on('pointerdown', () => {
-      isMusicToggled = !isMusicToggled
-      isMusicToggled ? musicButton.setFrame(0) : musicButton.setFrame(1)
+      this.game.sound.mute ? musicButton.setFrame(0) : musicButton.setFrame(1)
       this.game.sound.setMute(!this.game.sound.mute)
     });
   }
