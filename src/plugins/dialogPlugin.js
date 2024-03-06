@@ -106,7 +106,7 @@ export default class DialogModalPlugin {
     this._setText(tempText, this.depth);
     if (animate) {
       this.timedEvent = this.scene.time.addEvent({
-        delay: 200 - (this.dialogSpeed * 45),
+        delay: 25,
         callback: this._animateText,
         callbackScope: this,
         loop: true
