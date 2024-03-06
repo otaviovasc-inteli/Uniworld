@@ -72,7 +72,7 @@ export default class Level1 extends Phaser.Scene {
   }
 
   createPlayerColliders(player, {colliders}) {
-    player.addCollider(colliders.platforms)
+    player.addCollider(colliders.platforms);
   }
 
   createMap() {

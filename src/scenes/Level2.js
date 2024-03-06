@@ -1,5 +1,5 @@
 import Player from "../entities/Player.js";
-
+import Gosma from "../entities/enemies/Gosma.js";
 export default class Level2 extends Phaser.Scene {
   constructor() {
     super("level2");
@@ -31,14 +31,35 @@ export default class Level2 extends Phaser.Scene {
 
     this.createEndOfLevel(playerZones.end, player)
     this.setupFollowupCameraOn(player, map)
+
+    // create enemy
+    const enemy = this.createEnemy(); 
+
+    this.createEnemyColliders(enemy, {
+      colliders: {
+        platforms: layers.platforms
+        // platformsMoving: layers.platformsMoving
+      }
+    })
   }
 
+  //create player in scene
   createPlayer({start}, oldPlayer) {
     return new Player(this, start.x, start.y, oldPlayer);
   }
 
+  createEnemy() {
+    return new Gosma(this, 600, 1200);
+  }
+
+  //add player colliders 
   createPlayerColliders(player, {colliders}) {
     player.addCollider(colliders.platforms)
+  }
+
+  // add enemy colliders 
+  createEnemyColliders(enemy, {colliders}) {
+    enemy.addCollider(colliders.platforms);
   }
 
   createMap() {

@@ -47,6 +47,12 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("player_jump", "assets/player/jump.png", { frameWidth: 256, frameHeight: 160 });
     this.load.spritesheet("player_run", "assets/player/run.png", { frameWidth: 256, frameHeight: 160 });
     this.load.spritesheet("player_idle", "assets/player/idle.png", { frameWidth: 256, frameHeight: 160 });
+    //-------------------------------------------------------------------
+    //enemies
+    this.load.sprite('gosma_verde', 'assets/sprites/EnemySheetx8.png', {frameWidth:128,frameHeight:128});
+    this.load.sprite('gosma_roxa', 'assets/sprites/EnemySheetx8Roxa.png', {frameWidth:128,frameHeight:128});
+    this.load.sprite('fumacinha', 'assets/sprites/fumacaSpritesheetx4.png', {frameWidth:128,frameHeight:128});
+
     this.load.image("Ekey", "assets/player/E.png");
 
     // ------------------------------------------------------------------
