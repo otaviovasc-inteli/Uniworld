@@ -29,7 +29,8 @@ export default class TitleScreen extends Phaser.Scene {
     const musicButton = this.add.sprite(686, 400, 'music', 0).setOrigin(0, 0).setScale(1.2);
     const settingsButton = this.add.sprite(533, 400, 'settings', 0).setOrigin(0, 0).setScale(1.2);
 
-    this.titleMusic = this.sound.add('title_music', {loop: true, volume: 0.7}).play()
+    this.titleMusic = this.sound.add('title_music', {loop: true, volume: 0.7})
+    this.titleMusic.play()
 
     playButton.setInteractive();
     playButton.on('pointerover', () => {
@@ -50,6 +51,7 @@ export default class TitleScreen extends Phaser.Scene {
 
     musicButton.setInteractive();
     musicButton.on('pointerdown', () => {
+      // Change frame and mute based on game sound mute
       this.game.sound.mute ? musicButton.setFrame(0) : musicButton.setFrame(1)
       this.game.sound.setMute(!this.game.sound.mute)
     });

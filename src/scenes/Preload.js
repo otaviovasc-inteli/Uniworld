@@ -47,6 +47,7 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("player_jump", "assets/player/jump.png", { frameWidth: 256, frameHeight: 160 });
     this.load.spritesheet("player_run", "assets/player/run.png", { frameWidth: 256, frameHeight: 160 });
     this.load.spritesheet("player_idle", "assets/player/idle.png", { frameWidth: 256, frameHeight: 160 });
+    this.load.image("Ekey", "assets/player/E.png");
 
     // ------------------------------------------------------------------
     // Sound effects and music
@@ -67,6 +68,6 @@ export default class Preload extends Phaser.Scene {
 
   startSelectScreen() {
     console.log('Player Select');
-    this.scene.start("playerSelect")
+    this.scene.start("playerSelect", {titleMusicObject: this.sys.settings.data.titleMusicObject})
   }
 }

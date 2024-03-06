@@ -5,12 +5,14 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   static instanceCount = 0;
 
   constructor(scene, x, y, selectedPlayer, oldPlayer) {
-    super(scene, x, y, `player_idle`);
+    super(scene, x, y);
     scene.add.existing(this);
     scene.physics.add.existing(this);
     Object.assign(this, collidable);
+    // Which player art will be used as sprite
     if (selectedPlayer) this.selectedPlayer = selectedPlayer;
 
+    // Set old player properties when recreating
     if (oldPlayer) this.oldPlayer = oldPlayer;
     else this.oldPlayer = false;
 
