@@ -52,33 +52,11 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         // Which Npc are you interacting with
         switch (this.name) {
           case 'computer':
-            // Create Teams image
-            if (!this.dialogImage) this.dialogImage = this.scene.add.image(-290, -520, 'reuniaoTeams').setOrigin(0, 0).setDepth(2)
-            if (this.dialogIndex >= this.texts.length) {
-              // If all messages have been displayed, destroy the dialog window and image
-              this.destroyDialog();
-              this.dialogImage.destroy();
-              this.dialogImage = null
-              this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
-              this.dialogSound.pause() // pause dialog sound
-            } else {
-              // Show the next message
-              this.createDialog(this.texts);
-              this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
-              this.dialogSound.stop() // Stop dialog sound
-              this.dialogSound.play() // Play dialog sound
-            }
+            // Computer logic
+              this.computerLogic()
             break;
           case 'rexona':
-            if (this.dialogIndex >= this.texts.length) {
-              this.npcPlayer.damage += 1; // Aumenta o dano do player
-              this.destroyDialog(); // If all messages have been displayed, destroy the dialog window
-              this.destroyInstance() // Destroy NPC(collect item)
-              this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
-            } else {
-              this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
-              this.createDialog(this.texts); // Show the next message
-            }
+              this.rexonaLogic()
             break;
           default:
             console.log('Npc name wrong');;
@@ -92,6 +70,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     }
   }
 
+  // Help functions
   destroyInstance() {
     // Unregister the update function from the scene's update event
     this.scene.events.removeListener(Phaser.Scenes.Events.UPDATE, this.update, this);
@@ -136,5 +115,37 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
     dialogModal.setText(texts[this.dialogIndex], true);
     this.dialogIndex++;
+  }
+
+
+  // Npc's Logics
+  computerLogic() {
+    if (!this.dialogImage) this.dialogImage = this.scene.add.image(-290, -520, 'reuniaoTeams').setOrigin(0, 0).setDepth(2)
+      if (this.dialogIndex >= this.texts.length) {
+        // If all messages have been displayed, destroy the dialog window and image
+        this.destroyDialog();
+        this.dialogImage.destroy();
+        this.dialogImage = null
+        this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
+        this.dialogSound.pause() // pause dialog sound
+      } else {
+        // Show the next message
+        this.createDialog(this.texts);
+        this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
+        this.dialogSound.stop() // Stop dialog sound
+        this.dialogSound.play() // Play dialog sound
+      }
+  }
+
+  rexonaLogic() {
+    if (this.dialogIndex >= this.texts.length) {
+      this.npcPlayer.damage += 1; // Aumenta o dano do player
+      this.destroyDialog(); // If all messages have been displayed, destroy the dialog window
+      this.destroyInstance() // Destroy NPC(collect item)
+      this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
+    } else {
+      this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
+      this.createDialog(this.texts); // Show the next message
+    }
   }
 }

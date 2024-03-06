@@ -5,6 +5,7 @@ export default class TitleScreen extends Phaser.Scene {
 
   preload() {
     this.load.audio("select_sound", "assets/sounds/select_sound.wav");
+    this.load.audio("title_music", "assets/sounds/title_music.ogg");
     this.load.image('sky', 'assets/titleScreen/sky.png');
     this.load.image('title', 'assets/titleScreen/title.png');
     this.load.image('hills', 'assets/titleScreen/hills.png');
@@ -23,12 +24,12 @@ export default class TitleScreen extends Phaser.Scene {
     this.title = this.add.image(250, 120, "title").setOrigin(0, 0);
     this.hills = this.add.image(0, -100, "hills").setOrigin(0, 0).setScale(1.12);
     this.foreground = this.add.image(0, -100, "foreground").setOrigin(0, 0).setScale(1.12);
-    //const musicSound = this.sound.add("musicSound", {loop: true, volume: 0.2});
-
 
     const playButton = this.add.sprite(533, 320, 'play', 0).setOrigin(0, 0).setScale(1.2);
     const musicButton = this.add.sprite(686, 400, 'music', 0).setOrigin(0, 0).setScale(1.2);
     const settingsButton = this.add.sprite(533, 400, 'settings', 0).setOrigin(0, 0).setScale(1.2);
+
+    this.titleMusic = this.sound.add('title_music', {loop: true, volume: 0.7}).play()
 
     playButton.setInteractive();
     playButton.on('pointerover', () => {
@@ -43,7 +44,7 @@ export default class TitleScreen extends Phaser.Scene {
 
     playButton.on('pointerdown', () => {
       // Call the startGame function when the button is clicked
-      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
+      this.sound.add('select_sound', {loop: false, volume: 0.7}).play()
       this.preloadGame();
     });
 
@@ -51,14 +52,14 @@ export default class TitleScreen extends Phaser.Scene {
     musicButton.setInteractive();
     musicButton.on('pointerdown', () => {
       isMusicToggled = !isMusicToggled
-
       isMusicToggled ? musicButton.setFrame(0) : musicButton.setFrame(1)
+      this.game.sound.setMute(!this.game.sound.mute)
     });
   }
 
   preloadGame() {
     this.cameras.main.fadeOut(400, 0, 0, 0, (camera, progress) => {
-      if(progress === 1) this.scene.start("preload")
+      if(progress === 1) this.scene.start("preload", {titleMusicObject: this.titleMusic})
     })
   }
 }

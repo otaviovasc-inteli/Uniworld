@@ -6,6 +6,7 @@ export default class TutorialScreen extends Phaser.Scene {
   create() {
     this.video = this.add.video(0, 0, 'tutorial').setOrigin(0, 0); // Create and position video
     this.video.play() // Play video
+    
 
     this.interactKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E); // Interact key
 
@@ -16,6 +17,7 @@ export default class TutorialScreen extends Phaser.Scene {
     // Start Game
     if(Phaser.Input.Keyboard.JustDown(this.interactKey)) {
       this.video.stop() // Stop video
+      this.sound.add('select_sound', {loop: false, volume: 0.7}).play() // Select Sound
       this.startGame() // Start game
     }
   }
