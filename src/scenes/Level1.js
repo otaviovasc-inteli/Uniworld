@@ -14,7 +14,7 @@ export default class Level1 extends Phaser.Scene {
     this.cameras.main.fadeIn(5000, 30, 30, 0)
 
     // Background
-    const personagemSelecionado = this.sys.settings.data.playerSelecionado;
+    const playerSelecionado = this.sys.settings.data.playerSelecionado;
     this.add.image(0, -200, "bg1").setScale(1.12).setOrigin(0, 0);
 
     // Add map and layers
@@ -23,7 +23,7 @@ export default class Level1 extends Phaser.Scene {
     const playerZones = this.getPlayerZones(layers.playerZones)
 
     // Add pc sprite
-    const player = this.createPlayer(playerZones, personagemSelecionado)
+    const player = this.createPlayer(playerZones, playerSelecionado)
     .setScale(1.3)
 
     // ComputerNpc sprite
@@ -47,8 +47,8 @@ export default class Level1 extends Phaser.Scene {
     this.setupFollowupCameraOn(player, map)
   }
 
-  createPlayer({start}, personagemSelecionado) {
-    return new Player(this, start.x, start.y, personagemSelecionado);
+  createPlayer({start}, playerSelecionado) {
+    return new Player(this, start.x, start.y, playerSelecionado);
   }
 
   // Uses endZone from Tiled and change level when overlapping

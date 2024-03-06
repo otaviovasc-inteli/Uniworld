@@ -33,7 +33,5 @@ export default (anims, selectedPlayer) =>{
     frames: anims.generateFrameNumbers('npc1_talk', { start: 0, end: 6 }),
     frameRate: 4,
     repeat: -1
-  });
-
-  // console.log(selectedPlayer);
+  })
 }

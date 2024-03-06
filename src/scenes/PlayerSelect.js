@@ -83,9 +83,9 @@ export default class PlayerSelect extends Phaser.Scene {
   }
 
   startGame(playerSelecionado) {
-    console.log('Start level 1');
+    console.log('Tutorial Screen');
     this.cameras.main.fadeOut(500, 0, 0, 0, (camera, progress) => {
-      if(progress === 1) this.scene.start("level1", { playerSelecionado: playerSelecionado})
+      if(progress === 1) this.scene.start("tutorialScreen", { playerSelecionado: playerSelecionado})
     })
   }
 }

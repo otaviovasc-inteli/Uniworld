@@ -14,6 +14,9 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("frame2M", "assets/selection/selection2M.png", { frameWidth: 256, frameHeight: 256 })
     this.load.image("blue-bg", "assets/selection/bg-lightblue.png")
     // ------------------------------------------------------------------
+    // Tutorial
+    this.load.video('tutorial', 'assets/links/videoTutorial.mp4');
+    // ------------------------------------------------------------------
     // level1
     this.load.spritesheet("computer_sprite", "assets/level1/computer.png", { frameWidth: 320, frameHeight: 192 });
     this.load.spritesheet("rexona_sprite", "assets/level1/rexona.png", { frameWidth: 128, frameHeight: 192 });
