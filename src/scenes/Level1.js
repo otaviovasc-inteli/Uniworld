@@ -45,6 +45,14 @@ export default class Level1 extends Phaser.Scene {
     }})
     this.createEndOfLevel(playerZones.end, player)
     this.setupFollowupCameraOn(player, map)
+
+    //starts playing music
+    this.musicSound = this.sound.add("music_level1", {loop: false, volume: 0.5, rate: 0.55});
+
+    // start playing music
+    if (!this.musicSound.isPlaying) {
+      this.musicSound.play();
+    } else {}
   }
 
   createPlayer({start}, playerSelecionado) {
@@ -59,6 +67,7 @@ export default class Level1 extends Phaser.Scene {
 
     this.physics.add.overlap(player, endOfLevel, () => {
       this.scene.start("level2", {player: player});
+      this.musicSound.stop();
     })
   }
 
