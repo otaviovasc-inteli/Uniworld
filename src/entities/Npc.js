@@ -13,6 +13,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     // Track how many Npc is in the scene
     Npc.instanceCount++;
 
+    // Create interactKeyImage
+    this.interactKeyImage = this.scene.add.image(x, y - 120, 'Ekey').setScale(0.1).setAlpha(0)
+
     this.init()
     this.initEvents()
   }
@@ -30,12 +33,14 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       initAnimations(this.scene.anims)
 
     // Set texts modularly
-    try {
-      const textsModule = await import(`../texts/${this.name}Texts.js`);
-      this.texts = textsModule.default;
-    } catch (error) {
-      console.error(`Error importing texts for ${this.name}:`, error);
-      this.texts = ['Lorem Ipsum Dolor Amet'];
+    if(this.name != 'hub') {
+      try {
+        const textsModule = await import(`../texts/${this.name}Texts.js`);
+        this.texts = textsModule.default;
+      } catch (error) {
+        console.error(`Error importing texts for ${this.name}:`, error);
+        this.texts = ['Lorem Ipsum Dolor Amet'];
+      }
     }
   }
 
@@ -46,6 +51,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   update() {
     // When overlapping
     if (this.scene.physics.overlap(this.npcPlayer, this)) {
+      this.interactKeyImage.setAlpha(1)
       this.name === 'computer' ? this.setFrame(1) : this.play(`${this.name}_overlap`, true);
       if (Phaser.Input.Keyboard.JustDown(this.interactKey))
       {
@@ -58,6 +64,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           case 'rexona':
               this.rexonaLogic()
             break;
+          case 'hub':
+              console.log('overlap hub');
+            break;
           default:
             console.log('Npc name wrong');;
         }
@@ -66,6 +75,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     // Not overlapping
     else if (!this.scene.physics.overlap(this.npcPlayer, this))
     {
+      this.interactKeyImage.setAlpha(0)
       this.name === 'computer' ? this.setFrame(0) : this.play(`${this.name}_idle`, true);
     }
   }
