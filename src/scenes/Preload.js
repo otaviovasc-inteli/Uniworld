@@ -44,10 +44,15 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("player_jump", "assets/player/jump.png", { frameWidth: 256, frameHeight: 160 });
     this.load.spritesheet("player_run", "assets/player/run.png", { frameWidth: 256, frameHeight: 160 });
     this.load.spritesheet("player_idle", "assets/player/idle.png", { frameWidth: 256, frameHeight: 160 });
+
     // ------------------------------------------------------------------
     // Sound effects
-    this.load.audio("grassSound", "assets/sounds/lvl_2_grass_walk.ogg");
-    this.load.audio("floorSound", "assets/sounds/lvl_1_floor_walk.ogg");
+    this.load.audio("grassSound", "assets/sounds/level2/lvl_2_grass_walk.ogg");
+    this.load.audio("floorSound", "assets/sounds/level1/lvl_1_floor_walk.ogg");
+    this.load.audio("open_level1", "assets/sounds/level1/open_level_1.ogg");
+    this.load.audio("dialog_sound", "assets/sounds/dialog_sound.ogg");
+    this.load.audio("hover_sound", "assets/sounds/hover_sound.wav");
+    this.load.audio("select_sound", "assets/sounds/select_sound.wav");
 
     // Completed
     this.load.once('complete', () => {

@@ -22,6 +22,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.setDepth(0);
     // Set InteractKey
     this.interactKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
+    // Set dialog sound
+    this.dialogSound = this.scene.sound.add('dialog_sound', {loop: false, rate: 2})
 
     // This is just to not recriate animations.
     if(Npc.instanceCount <= 1)
@@ -58,10 +60,13 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
               this.dialogImage.destroy();
               this.dialogImage = null
               this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
+              this.dialogSound.pause() // pause dialog sound
             } else {
               // Show the next message
               this.createDialog(this.texts);
               this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
+              this.dialogSound.stop() // Stop dialog sound
+              this.dialogSound.play() // Play dialog sound
             }
             break;
           case 'rexona':

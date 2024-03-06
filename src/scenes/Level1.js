@@ -7,8 +7,11 @@ export default class Level1 extends Phaser.Scene {
   }
 
   create () {
+    // Play Open audio
+    this.sound.add("open_level1", {loop: false, volume: 0.15}).play();
+
     // FadeIn Effect
-    this.cameras.main.fadeIn(500, 0, 0, 0)
+    this.cameras.main.fadeIn(5000, 30, 30, 0)
 
     // Background
     const personagemSelecionado = this.sys.settings.data.playerSelecionado;

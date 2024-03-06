@@ -4,6 +4,7 @@ export default class TitleScreen extends Phaser.Scene {
   }
 
   preload() {
+    this.load.audio("select_sound", "assets/sounds/select_sound.wav");
     this.load.image('sky', 'assets/titleScreen/sky.png');
     this.load.image('title', 'assets/titleScreen/title.png');
     this.load.image('hills', 'assets/titleScreen/hills.png');
@@ -42,6 +43,7 @@ export default class TitleScreen extends Phaser.Scene {
 
     playButton.on('pointerdown', () => {
       // Call the startGame function when the button is clicked
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
       this.preloadGame();
     });
 
