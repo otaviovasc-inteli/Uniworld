@@ -1,4 +1,5 @@
 import Player from "../entities/Player.js";
+import Npc from "../entities/Npc.js";
 
 export default class Level2 extends Phaser.Scene {
   constructor() {
@@ -16,6 +17,10 @@ export default class Level2 extends Phaser.Scene {
     // Add player object and set bounds to map pass player from previous scene
     const oldPlayer = this.sys.settings.data.player;
     const player = this.createPlayer(playerZones, oldPlayer);
+
+    // RexonaNpc sprite
+    const dvdNpc = new Npc(this, 200, 1663, 'hub_sprite', 'hub', player)
+    .setSize(150, 120)
 
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;

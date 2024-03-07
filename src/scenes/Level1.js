@@ -27,15 +27,13 @@ export default class Level1 extends Phaser.Scene {
     .setScale(1.3)
 
     // ComputerNpc sprite
-    const computerNpc = new Npc(this, 400, 530, 'computer_sprite', 'computer', player)
+    const computerNpc = new Npc(this, 580, 615, 'computer_sprite', 'computer', player)
       .setScale(0.9)
-      .setOrigin(0, 0)
       .setSize(150, 120)
 
     // RexonaNpc sprite
-    const rexonaNpc = new Npc(this, 800, 550, 'rexona_sprite', 'rexona', player, true)
+    const rexonaNpc = new Npc(this, 920, 600, 'rexona_sprite', 'rexona', player)
     .setScale(0.6)
-    .setOrigin(0, 0)
     .setSize(150, 120)
 
     // Collider player with platforms
@@ -47,7 +45,7 @@ export default class Level1 extends Phaser.Scene {
     this.setupFollowupCameraOn(player, map)
 
     //starts playing music
-    this.musicSound = this.sound.add("music_level1", {loop: false, volume: 0.5, rate: 0.55});
+    this.musicSound = this.sound.add("music_level1", {loop: false, volume: 0.1, rate: 0.55});
 
     // start playing music
     if (!this.musicSound.isPlaying) {
