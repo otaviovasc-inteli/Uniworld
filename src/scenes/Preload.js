@@ -35,7 +35,11 @@ export default class Preload extends Phaser.Scene {
     this.load.image('bg_color_green', 'assets/level2/background/bg-color-green.png');
     this.load.image('bg_foreground', 'assets/level2/background/foreground.png');
     this.load.image('bg_hills', 'assets/level2/background/hills.png');
+    // Hub
     this.load.spritesheet('hub_sprite', 'assets/level2/dvd_npc.png', { frameWidth: 256, frameHeight: 160 });
+    this.load.image('hub_screen', 'assets/links/links_screen.png');
+    this.load.image('hub_close', 'assets/links/x_button.png');
+
     // ------------------------------------------------------------------
     // Players
     this.load.spritesheet("player1", "assets/player/player1.png", { frameWidth: 256, frameHeight: 256 });

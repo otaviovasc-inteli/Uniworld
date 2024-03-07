@@ -65,7 +65,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
               this.rexonaLogic()
             break;
           case 'hub':
-              console.log('overlap hub');
+              this.hubLogic();
+              // const screen = this.scene.add.image(this.x, this.y, "hub_screen").setDepth(2)
+              // const xBtn = this.scene.add.image(this.x + 380, this.y - 240, "hub_close").setDepth(3).setScale(0.05)
             break;
           default:
             console.log('Npc name wrong');;
@@ -157,5 +159,26 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
       this.createDialog(this.texts); // Show the next message
     }
+  }
+
+  hubLogic() {
+    // Add hub screen and x button if they dont exist already
+    if (!this.screen)
+      this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y, "hub_screen").setDepth(2)
+    if (!this.xBtn)
+      this.xBtn = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 240, "hub_close").setDepth(3).setScale(0.05)
+
+    // Prevent player from moving while hub is opened
+    this.npcPlayer.pauseUpdate()
+
+    // Close button loginc
+    this.xBtn.setInteractive()
+    this.xBtn.on('pointerdown', () => {
+      // Destroy images and end function
+      this.npcPlayer.resumeUpdate()
+      this.screen.destroy()
+      this.xBtn.destroy()
+      return;
+    });
   }
 }
