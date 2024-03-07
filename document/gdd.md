@@ -216,6 +216,8 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 
 &nbsp;&nbsp;&nbsp;&nbsp;*O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o player. Ao interagir com os NPCs pacíficos, o jogador terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 4 NPCs diferentes, com design parecido com o a seguir.*
 
+<img src="../assets/Dvdd.png">
+
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
 &nbsp;&nbsp;&nbsp;&nbsp;*O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no game, cujo o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Para figuras com semblantes, terão 3 opções de etnia. Para semblantes femininos, também haverá 3 opções de etnia. Além disso, os personagens não jogavéis ao longo do jogo possuem diversas etnias e origens.
