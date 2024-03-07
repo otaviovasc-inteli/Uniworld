@@ -219,6 +219,7 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 ### 3.2.2. Non-Playable Characters (NPC)
 
 &nbsp;&nbsp;&nbsp;&nbsp;*O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o player. Ao interagir com os NPCs pacíficos, o jogador terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 4 NPCs diferentes, com design parecido com o a seguir.*
+
 <img src="../assets/Dvdd.png">
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
