@@ -25,6 +25,7 @@ class Slime extends Phaser.Physics.Arcade.Sprite {
         this.Slime.move = this.tweens.add({
             targets: slime,
             x: x,
+            flipX: true,    
             ease: "Linear", // add (falar heitor)
             duration: 1800,
             repeat: -1,
