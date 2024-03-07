@@ -1,5 +1,5 @@
 import Player from "../entities/Player.js";
-import Gosma from "../entities/enemies/Gosma.js";
+import Slime from "../entities/enemies/Slime.js";
 export default class Level2 extends Phaser.Scene {
   constructor() {
     super("level2");
@@ -33,14 +33,14 @@ export default class Level2 extends Phaser.Scene {
     this.setupFollowupCameraOn(player, map)
 
     // create enemy
-    const enemy = this.createEnemy(); 
+    const slime = this.createEnemy(); 
 
-    this.createEnemyColliders(enemy, {
+    this.createEnemyColliders(slime, {
       colliders: {
         platforms: layers.platforms
         // platformsMoving: layers.platformsMoving
       }
-    })
+    });
   }
 
   //create player in scene
@@ -48,16 +48,17 @@ export default class Level2 extends Phaser.Scene {
     return new Player(this, start.x, start.y, oldPlayer);
   }
 
-  createEnemy() {
-    return new Gosma(this, 600, 1200);
-  }
-
   //add player colliders 
   createPlayerColliders(player, {colliders}) {
     player.addCollider(colliders.platforms)
   }
 
-  // add enemy colliders 
+  //create enemy slime in scene
+  createEnemy() {
+    return new Slime(this, 600, 1200);
+  }
+
+  // add enemy slime colliders 
   createEnemyColliders(enemy, {colliders}) {
     enemy.addCollider(colliders.platforms);
   }
