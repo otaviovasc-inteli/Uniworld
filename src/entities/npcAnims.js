@@ -17,7 +17,7 @@ export default anims =>{
   anims.create({
     key: 'hub_idle',
     frames: anims.generateFrameNumbers('hub_sprite', {start: 0, end: 4}),
-    frameRate: 5,
+    frameRate: 2,
     repeat: -1
   })
 

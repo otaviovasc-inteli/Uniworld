@@ -19,8 +19,9 @@ export default class Level2 extends Phaser.Scene {
     const player = this.createPlayer(playerZones, oldPlayer);
 
     // RexonaNpc sprite
-    const dvdNpc = new Npc(this, 200, 1663, 'hub_sprite', 'hub', player)
+    const dvdNpc = new Npc(this, 700, 1655, 'hub_sprite', 'hub', player)
     .setSize(150, 120)
+    .setScale(1.2)
 
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
