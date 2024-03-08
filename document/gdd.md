@@ -202,11 +202,7 @@ Para finalizar a fase basta interagir com uma placa desenhada no cenário escrit
 
 &nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, o jogador encontrará a diretora. Ao conversar com o NPC se iniciará o seguinte diálogo:
 
-<<<<<<< Updated upstream
-Olá, você realmente se mostrou um funcionário capaz, por conta disso, você deve estar pronto para representar todos os nossos valores e saber todos os nossos pilares, ao chegar até aqui significa que você passou no teste e se provou ser um membro da nossa família Unilever! Seja bem vindo oficialmente, esperamos muito de um herói como você!
-=======
 PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão queridas marcas. Graças a você, conseguimos voltar a nossa força total e recuperar o equilíbrio do mundo. Seja bem vindo, herói, faça parte da nossa família Unilever.
->>>>>>> Stashed changes
 
 &nbsp;&nbsp;&nbsp;&nbsp;A fase acaba com o personagem seguindo pelo cenário e encontrando um computador para interação no final do mapa. Neste computador quando ele interagir, reaparecerá a cena 0.
 
@@ -219,6 +215,8 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 ### 3.2.2. Non-Playable Characters (NPC)
 
 &nbsp;&nbsp;&nbsp;&nbsp;*O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o player. Ao interagir com os NPCs pacíficos, o jogador terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 4 NPCs diferentes, com design parecido com o a seguir.*
+
+<img src="../assets/Dvdd.png">
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
@@ -268,10 +266,12 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 *Exemplo de tabela*
 \# | titulo | ocorrência | autoria
 --- | --- | --- | ---
-1 | tema de abertura | tela de início | própria
-2 | tema de combate | cena de combate com inimigos comuns | Hans Zimmer
-3 | ... 
+1 | Pure Imaginaion | tela de início | Avery Mavery
+2 | tema de combate | Level 1 (Quarto do Personagem) | Hans Zimmer
+3 | tema de combate | Level 2 (Mundo Lúdico) | Hans Zimmer
 
+
+Licensas: https://mixkit.co/license/#sfxFree
 ## 3.4. Inventário e Bestiário (sprint 3)
 
 ### 3.4.1. Inventário
@@ -317,12 +317,6 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 *Ex. O jogador deve concluir a fase, derrotando os inimigos e coletando os pedaços do logo da Unilever. Além disso, no final da fase, deve derrotar um boss e responder um quiz. Caso ele acerte o quiz, ele terá uma bonificação em alguma habilidade (força, alcance, velocidade...). Além disso, caso o jogador consiga formar a logo da Unilever espalhada pelo mapa, reunindo os pedaços, ele ganha uma vida extra. O jogador deve concluir a fase dentro do tempo, para obter uma estrela. Se além disso ele coletar todas as moedas, ganha mais uma estrela. E se além disso ele coletar os três medalhões espalhados, ganha mais uma estrela, totalizando três. Ao final do jogo, obtendo três estrelas em todas as fases, desbloqueia o mundo secreto.*  
 
 ## 3.7. Mecânicas do jogo (sprint 3)
-
-*Descreva aqui as formas de controle e interação que o jogador tem sobre o jogo: quais os comandos disponíveis, quais combinações de comandos, e quais as ações consequentes desses comandos. Utilize listas ou tabelas para organizar esta seção.*
-
-*Ex. Em um jogo de plataforma 2D para desktop, o jogador pode usar as teclas WASD para mecânicas de andar, mirar para cima, agachar, e as teclas JKL para atacar, correr, arremesar etc.*
-
-*Ex. Em um jogo de puzzle para celular, o jogador pode tocar e arrastar sobre uma peça para movê-la sobre o tabuleiro, ou fazer um toque simples para rotacioná-la*
 
 &nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem irá dar um pulo duplo. Outra tecla importante para a jogabilidade proposta no nosso game é a tecla E, que usa a mecânica de interação, caso apertada ao lado de um NPC ou power-up por exemplo.
 

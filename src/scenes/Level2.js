@@ -1,5 +1,7 @@
 import Player from "../entities/Player.js";
 import Slime from "../entities/enemies/Slime.js";
+import Npc from "../entities/Npc.js";
+
 export default class Level2 extends Phaser.Scene {
   constructor() {
     super("level2");
@@ -17,18 +19,23 @@ export default class Level2 extends Phaser.Scene {
     const oldPlayer = this.sys.settings.data.player;
     const player = this.createPlayer(playerZones, oldPlayer);
 
+    // RexonaNpc sprite
+    const dvdNpc = new Npc(this, 1200, 1655, 'hub_sprite', 'hub', player)
+    .setSize(100, 120)
+    .setScale(1.2)
+
+    // Set world bounds based on maps
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
 
-    this.createBg(map);
+    // Create background
+    this.createBg(map)
 
     // Collider player with platforms
     this.createPlayerColliders(player, {
       colliders: {
         platforms: layers.platforms,
-        // platformsMoving: layers.platformsMoving
-      },
-    });
+    }})
 
     this.createEndOfLevel(playerZones.end, player);
     this.setupFollowupCameraOn(player, map);
@@ -61,7 +68,7 @@ export default class Level2 extends Phaser.Scene {
       colliders: {
         platforms: layers.platforms,
         player,
-        // platformsMoving: layers.platformsMoving
+
       },
     });
   }
@@ -114,60 +121,33 @@ export default class Level2 extends Phaser.Scene {
 
   // Create background for assets and set its positions
   createBg(map) {
-    const bgSkyObject = map.getObjectLayer("bg-sky").objects[0];
-    this.bgSky = this.add
-      .tileSprite(
-        bgSkyObject.x - 100,
-        bgSkyObject.y,
-        bgSkyObject.width,
-        bgSkyObject.height,
-        "bg_color_blue"
-      )
+    const bgSkyObject = map.getObjectLayer('bg-sky').objects[0]
+    this.bgSky =this.add.tileSprite(bgSkyObject.x - 300, bgSkyObject.y, bgSkyObject.width, bgSkyObject.height, 'bg_color_blue')
       .setDepth(-10)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
-      .setScale(5);
+      .setScale(7)
 
-    const bgCloudObject = map.getObjectLayer("bg-cloud").objects[0];
-    this.bgCloud = this.add
-      .tileSprite(
-        bgCloudObject.x - 100,
-        bgCloudObject.y,
-        bgCloudObject.width,
-        bgCloudObject.height,
-        "bg_cloud"
-      )
+    const bgCloudObject = map.getObjectLayer('bg-cloud').objects[0]
+    this.bgCloud = this.add.tileSprite(bgCloudObject.x - 300, bgCloudObject.y, bgCloudObject.width, bgCloudObject.height, 'bg_cloud')
       .setDepth(-9)
       .setOrigin(0, 1)
-      .setScrollFactor(0, 1);
+      .setScrollFactor(0, 1)
+      .setScale(1.2)
 
-    const bgHillsObject = map.getObjectLayer("bg-hills").objects[0];
-    this.bgHills = this.add
-      .tileSprite(
-        bgHillsObject.x - 100,
-        bgHillsObject.y,
-        bgHillsObject.width,
-        bgHillsObject.height,
-        "bg_hills"
-      )
+    const bgHillsObject = map.getObjectLayer('bg-hills').objects[0]
+    this.bgHills = this.add.tileSprite(bgHillsObject.x - 300, bgHillsObject.y, bgHillsObject.width, bgHillsObject.height, 'bg_hills')
       .setDepth(-8)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
-      .setScale(1.3);
+      .setScale(1.7)
 
-    const bgForeGroundObject = map.getObjectLayer("bg-foreground").objects[0];
-    this.bgForeGround = this.add
-      .tileSprite(
-        bgForeGroundObject.x - 100,
-        bgForeGroundObject.y,
-        bgForeGroundObject.width,
-        bgForeGroundObject.height,
-        "bg_foreground"
-      )
+    const bgForeGroundObject = map.getObjectLayer('bg-foreground').objects[0]
+    this.bgForeGround = this.add.tileSprite(bgForeGroundObject.x - 300, bgForeGroundObject.y, bgForeGroundObject.width, bgForeGroundObject.height, 'bg_foreground')
       .setDepth(-7)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
-      .setScale(1.3);
+      .setScale(1.7)
   }
 
   // Return the start and end zone from Tiled
@@ -192,10 +172,9 @@ export default class Level2 extends Phaser.Scene {
   }
 
   setupFollowupCameraOn(player, map) {
-    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
-    this.cameras.main.startFollow(player, true);
-    this.cameras.main.setZoom(0.9);
-    this.cameras.main.setDeadzone(50, 0);
+    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
+    this.cameras.main.startFollow(player, true)
+    this.cameras.main.setZoom(0.7);
   }
 
   update() {

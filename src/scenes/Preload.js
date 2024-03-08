@@ -27,7 +27,7 @@ export default class Preload extends Phaser.Scene {
     this.load.image('level1_t3', 'assets/level1/level1_t3.png');
     // ------------------------------------------------------------------
     // Level2
-    this.load.tilemapTiledJSON('level2', 'assets/level2/map01v2.json');
+    this.load.tilemapTiledJSON('level2', 'assets/level2/mundo_ludico.json');
     this.load.image('level2_t1', 'assets/level2/level2_t1.png');
     this.load.image('level2_t2', 'assets/level2/level2_t2.png');
     this.load.image('bg_cloud', 'assets/level2/background/bg-cloud.png');
@@ -35,6 +35,12 @@ export default class Preload extends Phaser.Scene {
     this.load.image('bg_color_green', 'assets/level2/background/bg-color-green.png');
     this.load.image('bg_foreground', 'assets/level2/background/foreground.png');
     this.load.image('bg_hills', 'assets/level2/background/hills.png');
+    // Hub
+    this.load.spritesheet('hub_sprite', 'assets/level2/dvd_npc.png', { frameWidth: 256, frameHeight: 160 });
+    this.load.image('hub_screen', 'assets/links/links_screen.png');
+    this.load.image('hub_close', 'assets/links/x_button.png');
+    this.load.spritesheet('hub_link_button', 'assets/links/link_button.png', { frameWidth: 128, frameHeight: 128 })
+
     // ------------------------------------------------------------------
     // Players
     this.load.spritesheet("player1", "assets/player/player1.png", { frameWidth: 256, frameHeight: 256 });

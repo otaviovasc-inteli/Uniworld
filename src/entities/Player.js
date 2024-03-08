@@ -79,6 +79,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
   pauseUpdate() {
     this.updateEnabled = false;
+    this.setVelocityX(0);
+    this.play('player_idle')
   }
 
   resumeUpdate() {
