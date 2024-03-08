@@ -13,20 +13,47 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
         Object.assign(this, collidable);
 
         this.init();
-    }
-
-    update () {
-        //this.enemyFollows();
-        this.slimesOverlap("green_slime", this.npcPlayer);
+        // this.initEvents()
     }
 
     //initiates physics and colliders
     init() {
         this.gravity = 1000;
-        this.body.setGravityY(this.gravity);
-        this.SlimeSpeed = 250;
+        this.speed = 150
+
+        this.body.setGravityY(this.gravity)
         this.setCollideWorldBounds(true);
+        this.setOrigin(0.5, 1)
+        this.setImmovable(true)
+        this.setSize(this.width, this.height)
     }
+
+    initEvents() {
+        this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
+    }
+
+    // create() {
+    //     this.slimeAnims("green_slime");
+    //     this.play("slime_jump");
+    //     this.setBounce(1);
+    //     this.body.setSize(100, 45);
+
+    //     this.scene.tweens.add({
+    //         targets: this,
+    //         x: 1550,
+    //         flipX: true,
+    //         ease: "Linear",
+    //         duration: 9000,
+    //         repeat: -1,
+    //         yoyo: true
+    //     }).play();
+    // }
+
+    // update () {
+    //     this.scene.physics.add.overlap(this, this.npcPlayer, () => {
+    //         console.log("hitou o slime");
+    //     });
+    // }
 
     // animate slimes movement
     slimeAnims(slime_name) {   
@@ -36,17 +63,5 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
         frameRate: 3,
         repeat:-1
         });
-    }
-
-    // makes the slime follow player
-    // slimeFollows (slimes, playerSelecionado) {
-    //     if (aaa) { // (talvez) se o qualquer slimes aparecer na tela, ele segue o player
-    //         this.physics.moveToObject(slimes, playerSelecionado, 100);
-    //     }
-    // }
-
-    //overlap that works for both slimes, green and purple
-    slimesOverlap (slime_name, player) {
-        this.scene.physics.overlap(slime_name, player)
     }
 }

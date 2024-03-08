@@ -17,6 +17,9 @@ export default class Level2 extends Phaser.Scene {
     const oldPlayer = this.sys.settings.data.player;
     const player = this.createPlayer(playerZones, oldPlayer);
 
+    // create green greenSlime enemy
+    const greenSlime = this.createSlime(600, 1620, "green_slime", player).setScale(0.6);
+
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
 
@@ -30,40 +33,15 @@ export default class Level2 extends Phaser.Scene {
       },
     });
 
-    this.createEndOfLevel(playerZones.end, player);
-    this.setupFollowupCameraOn(player, map);
-
-    // create green greenSlime enemy
-    const greenSlime = this.createEnemy(600, 1620, "green_slime").setScale(0.4);
-    greenSlime.slimeAnims("green_slime");
-    greenSlime.play("slime_jump");
-    greenSlime.setBounce(1);
-    greenSlime.body.setSize(100, 45);
-
-    var greenSlimeTweensX = this.tweens.add({
-      targets: greenSlime,
-      x: 1550,
-      flipX: true,
-      ease: "Linear",
-      duration: 9000,
-      repeat: -1,
-      yoyo: true,
-    });
-    greenSlimeTweensX.play();
-
-    this.physics.add.overlap(player, greenSlime, () => {
-      this.scene.restart();
-      console.log("aaaaa");
-    });
-
-    // create greenSlime collider w/ platforms and player
+    // Collider enemy with platforms
     this.createEnemyColliders(greenSlime, {
       colliders: {
         platforms: layers.platforms,
-        player,
-        // platformsMoving: layers.platformsMoving
+        player
       },
     });
+    this.createEndOfLevel(playerZones.end, player);
+    this.setupFollowupCameraOn(player, map);
   }
 
   //create player in scene
@@ -71,20 +49,21 @@ export default class Level2 extends Phaser.Scene {
     return new Player(this, start.x, start.y, oldPlayer);
   }
 
+  //create enemy slime in scene
+  createSlime(x, y, sprite) {
+    return new Slime(this, x, y, sprite);
+  }
+
   //add player colliders
   createPlayerColliders(player, { colliders }) {
     player.addCollider(colliders.platforms);
   }
 
-  //create enemy slime in scene
-  createEnemy(x, y, sprite) {
-    return new Slime(this, x, y, sprite);
-  }
-
   // add enemy slime colliders
   createEnemyColliders(enemy, { colliders }) {
-    enemy.addCollider(colliders.platforms);
-    enemy.addCollider(colliders.player);
+    enemy
+      .addCollider(colliders.platforms)
+      .addCollider(colliders.player)
   }
 
   createMap() {
