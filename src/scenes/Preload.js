@@ -39,6 +39,7 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet('hub_sprite', 'assets/level2/dvd_npc.png', { frameWidth: 256, frameHeight: 160 });
     this.load.image('hub_screen', 'assets/links/links_screen.png');
     this.load.image('hub_close', 'assets/links/x_button.png');
+    this.load.spritesheet('hub_link_button', 'assets/links/link_button.png', { frameWidth: 128, frameHeight: 128 })
 
     // ------------------------------------------------------------------
     // Players
