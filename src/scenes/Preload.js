@@ -49,9 +49,9 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("player_idle", "assets/player/idle.png", { frameWidth: 256, frameHeight: 160 });
     //-------------------------------------------------------------------
     //level 2 enemies
-    this.load.sprite('gosma_verde', 'assets/sprites/level1/green_slime.png', {frameWidth:128,frameHeight:128});
-    this.load.sprite('gosma_roxa', 'assets/sprites/level1/purple_slime.png', {frameWidth:128,frameHeight:128});
-    this.load.sprite('fumacinha', 'assets/sprites/level1/smoke.png', {frameWidth:128,frameHeight:128});
+    this.load.spritesheet('green_slime', 'assets/enemies/green_slime.png', {frameWidth:128,frameHeight:128});
+    this.load.spritesheet('purple_slime', 'assets/enemies/purple_slime.png', {frameWidth:128,frameHeight:128});
+    this.load.spritesheet('fumacinha', 'assets/enemies/smoke.png', {frameWidth:128,frameHeight:128});
 
     this.load.image("Ekey", "assets/player/E.png");
 
