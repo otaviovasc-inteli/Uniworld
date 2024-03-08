@@ -33,14 +33,12 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       initAnimations(this.scene.anims)
 
     // Set texts modularly
-    if(this.name != 'hub') {
-      try {
-        const textsModule = await import(`../texts/${this.name}Texts.js`);
-        this.texts = textsModule.default;
-      } catch (error) {
-        console.error(`Error importing texts for ${this.name}:`, error);
-        this.texts = ['Lorem Ipsum Dolor Amet'];
-      }
+    try {
+      const textsModule = await import(`../texts/${this.name}Texts.js`);
+      this.texts = textsModule.default;
+    } catch (error) {
+      console.error(`Error importing texts for ${this.name}:`, error);
+      this.texts = ['Lorem Ipsum Dolor Amet'];
     }
   }
 
@@ -66,8 +64,6 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
             break;
           case 'hub':
               this.hubLogic();
-              // const screen = this.scene.add.image(this.x, this.y, "hub_screen").setDepth(2)
-              // const xBtn = this.scene.add.image(this.x + 380, this.y - 240, "hub_close").setDepth(3).setScale(0.05)
             break;
           default:
             console.log('Npc name wrong');;
@@ -161,12 +157,47 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     }
   }
 
+  // Build hub images links and texts
   hubLogic() {
+    // Get texts and urls from hubTexts.js
+    const url1 = this.texts[0]
+    const url2 = this.texts[1]
+    const url3 = this.texts[2]
+    const url4 = this.texts[3]
+
+    // Those if's check if the element already exists so it wont double them.
     // Add hub screen and x button if they dont exist already
-    if (!this.screen)
-      this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y, "hub_screen").setDepth(2)
-    if (!this.xBtn)
-      this.xBtn = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 240, "hub_close").setDepth(3).setScale(0.05)
+    if (!this.screen) this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y - 100, "hub_screen").setDepth(2)
+    if (!this.xBtn) this.xBtn = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 340, "hub_close").setDepth(3).setScale(0.05)
+
+    // Clickable links
+    if (!this.link_button1) this.link_button1 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 110  - 100, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
+    if (!this.link_button2) this.link_button2 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 20 - 100, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
+    if (!this.link_button3) this.link_button3 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y + 70 - 100, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
+    if (!this.link_button4) this.link_button4 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y + 160 - 100, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
+
+    // Add text labels
+    this.text_hub_1 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 130 - 100, url1[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    this.text_hub_2 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 40 - 100, url2[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    this.text_hub_3 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 50 - 100, url3[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    this.text_hub_4 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 140 - 100, url4[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+
+    // Add links to the buttons
+    this.link_button1.on('pointerdown', () => {
+      window.open(url1[0], '_blank'); // Open in a new tab
+    });
+
+    this.link_button2.on('pointerdown', () => {
+      window.open(url2[0], '_blank'); // Open in a new tab
+    });
+
+    this.link_button3.on('pointerdown', () => {
+      window.open(url3[0], '_blank'); // Open in a new tab
+    });
+
+    this.link_button4.on('pointerdown', () => {
+      window.open(url4[0], '_blank'); // Open in a new tab
+    });
 
     // Prevent player from moving while hub is opened
     this.npcPlayer.pauseUpdate()
@@ -177,8 +208,50 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       // Destroy images and end function
       this.npcPlayer.resumeUpdate()
       this.screen.destroy()
+      this.screen = null
       this.xBtn.destroy()
+      this.xBtn = null
+      this.link_button1.destroy()
+      this.link_button1 = null
+      this.link_button2.destroy()
+      this.link_button2 = null
+      this.link_button3.destroy()
+      this.link_button3 = null
+      this.link_button4.destroy()
+      this.link_button4 = null
+      this.text_hub_1.destroy()
+      this.text_hub_2.destroy()
+      this.text_hub_3.destroy()
+      this.text_hub_4.destroy()
       return;
+    });
+
+    // Set frame to 1 (mouse to click)
+    this.link_button1.on('pointerover', () => {
+      this.setFrame(1) // Open in a new tab
+    });
+    this.link_button2.on('pointerover', () => {
+      this.setFrame(1) // Open in a new tab
+    });
+    this.link_button3.on('pointerover', () => {
+      this.setFrame(1) // Open in a new tab
+    });
+    this.link_button4.on('pointerover', () => {
+      this.setFrame(1) // Open in a new tab
+    });
+
+    // Set frame to 0 (mouse not to click)
+    this.link_button1.on('pointerout', () => {
+      this.setFrame(0) // Open in a new tab
+    });
+    this.link_button2.on('pointerout', () => {
+      this.setFrame(0) // Open in a new tab
+    });
+    this.link_button3.on('pointerout', () => {
+      this.setFrame(0) // Open in a new tab
+    });
+    this.link_button4.on('pointerout', () => {
+      this.setFrame(0) // Open in a new tab
     });
   }
 }

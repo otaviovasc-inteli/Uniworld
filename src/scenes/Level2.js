@@ -19,20 +19,21 @@ export default class Level2 extends Phaser.Scene {
     const player = this.createPlayer(playerZones, oldPlayer);
 
     // RexonaNpc sprite
-    const dvdNpc = new Npc(this, 700, 1655, 'hub_sprite', 'hub', player)
+    const dvdNpc = new Npc(this, 1200, 1655, 'hub_sprite', 'hub', player)
     .setSize(100, 120)
     .setScale(1.2)
 
+    // Set world bounds based on maps
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
 
+    // Create background
     this.createBg(map)
 
     // Collider player with platforms
     this.createPlayerColliders(player, {
       colliders: {
         platforms: layers.platforms,
-        // platformsMoving: layers.platformsMoving
     }})
 
     this.createEndOfLevel(playerZones.end, player)
@@ -45,6 +46,7 @@ export default class Level2 extends Phaser.Scene {
 
   createPlayerColliders(player, {colliders}) {
     player.addCollider(colliders.platforms)
+    player.addCollider(colliders.platformsMovement)
   }
 
   createMap() {
