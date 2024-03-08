@@ -1,5 +1,7 @@
 import Player from "../entities/Player.js";
 import Slime from "../entities/enemies/Slime.js";
+import Npc from "../entities/Npc.js";
+
 export default class Level2 extends Phaser.Scene {
   constructor() {
     super("level2");
@@ -19,6 +21,11 @@ export default class Level2 extends Phaser.Scene {
 
     // create green greenSlime enemy
     const greenSlime = this.createSlime(600, 1620, "green_slime", player).setScale(0.6);
+    
+    // RexonaNpc sprite
+    const dvdNpc = new Npc(this, 700, 1655, 'hub_sprite', 'hub', player)
+    .setSize(100, 120)
+    .setScale(1.2)
 
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
@@ -171,10 +178,9 @@ export default class Level2 extends Phaser.Scene {
   }
 
   setupFollowupCameraOn(player, map) {
-    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
-    this.cameras.main.startFollow(player, true);
-    this.cameras.main.setZoom(0.9);
-    this.cameras.main.setDeadzone(50, 0);
+    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
+    this.cameras.main.startFollow(player, true)
+    this.cameras.main.setZoom(0.7);
   }
 
   update() {

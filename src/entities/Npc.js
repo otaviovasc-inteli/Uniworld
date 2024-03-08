@@ -13,6 +13,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     // Track how many Npc is in the scene
     Npc.instanceCount++;
 
+    // Create interactKeyImage
+    this.interactKeyImage = this.scene.add.image(x, y - 120, 'Ekey').setScale(0.1).setAlpha(0)
+
     this.init()
     this.initEvents()
   }
@@ -30,12 +33,14 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       initAnimations(this.scene.anims);
 
     // Set texts modularly
-    try {
-      const textsModule = await import(`../texts/${this.name}Texts.js`);
-      this.texts = textsModule.default;
-    } catch (error) {
-      console.error(`Error importing texts for ${this.name}:`, error);
-      this.texts = ['Lorem Ipsum Dolor Amet'];
+    if(this.name != 'hub') {
+      try {
+        const textsModule = await import(`../texts/${this.name}Texts.js`);
+        this.texts = textsModule.default;
+      } catch (error) {
+        console.error(`Error importing texts for ${this.name}:`, error);
+        this.texts = ['Lorem Ipsum Dolor Amet'];
+      }
     }
   }
 
@@ -46,6 +51,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   update() {
     // When overlapping
     if (this.scene.physics.overlap(this.npcPlayer, this)) {
+      this.interactKeyImage.setAlpha(1)
       this.name === 'computer' ? this.setFrame(1) : this.play(`${this.name}_overlap`, true);
       if (Phaser.Input.Keyboard.JustDown(this.interactKey))
       {
@@ -58,6 +64,11 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           case 'rexona':
               this.rexonaLogic();
             break;
+          case 'hub':
+              this.hubLogic();
+              // const screen = this.scene.add.image(this.x, this.y, "hub_screen").setDepth(2)
+              // const xBtn = this.scene.add.image(this.x + 380, this.y - 240, "hub_close").setDepth(3).setScale(0.05)
+            break;
           default:
             console.log('Npc name wrong');;
         }
@@ -66,6 +77,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     // Not overlapping
     else if (!this.scene.physics.overlap(this.npcPlayer, this))
     {
+      this.interactKeyImage.setAlpha(0)
       this.name === 'computer' ? this.setFrame(0) : this.play(`${this.name}_idle`, true);
     }
   }
@@ -147,5 +159,26 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
       this.createDialog(this.texts); // Show the next message
     }
+  }
+
+  hubLogic() {
+    // Add hub screen and x button if they dont exist already
+    if (!this.screen)
+      this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y, "hub_screen").setDepth(2)
+    if (!this.xBtn)
+      this.xBtn = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 240, "hub_close").setDepth(3).setScale(0.05)
+
+    // Prevent player from moving while hub is opened
+    this.npcPlayer.pauseUpdate()
+
+    // Close button loginc
+    this.xBtn.setInteractive()
+    this.xBtn.on('pointerdown', () => {
+      // Destroy images and end function
+      this.npcPlayer.resumeUpdate()
+      this.screen.destroy()
+      this.xBtn.destroy()
+      return;
+    });
   }
 }
