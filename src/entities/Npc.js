@@ -170,20 +170,20 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
     // Those if's check if the element already exists so it wont double them.
     // Add hub screen and x button if they dont exist already
-    if (!this.screen) this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y - 100, "hub_screen").setDepth(2)
-    if (!this.xBtn) this.xBtn = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 340, "hub_close").setDepth(3).setScale(0.05)
+    if (!this.screen) this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y - 50, "hub_screen").setDepth(2)
+    if (!this.xBtn) this.xBtn = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 290, "hub_close").setDepth(3).setScale(0.05)
 
     // Clickable links
-    if (!this.link_button1) this.link_button1 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 110  - 100, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
-    if (!this.link_button2) this.link_button2 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 20 - 100, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
-    if (!this.link_button3) this.link_button3 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y + 70 - 100, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
-    if (!this.link_button4) this.link_button4 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y + 160 - 100, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
+    if (!this.link_button1) this.link_button1 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 110  - 50, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
+    if (!this.link_button2) this.link_button2 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 20 - 50, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
+    if (!this.link_button3) this.link_button3 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y + 70 - 50, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
+    if (!this.link_button4) this.link_button4 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y + 160 - 50, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
 
     // Add text labels
-    this.text_hub_1 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 130 - 100, url1[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
-    this.text_hub_2 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 40 - 100, url2[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
-    this.text_hub_3 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 50 - 100, url3[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
-    this.text_hub_4 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 140 - 100, url4[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    this.text_hub_1 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 130 - 50, url1[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    this.text_hub_2 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 40 - 50, url2[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    this.text_hub_3 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 50 - 50, url3[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    this.text_hub_4 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 140 - 50, url4[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
 
     // Add links to the buttons
     this.link_button1.on('pointerdown', () => {

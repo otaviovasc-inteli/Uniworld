@@ -55,12 +55,23 @@ export default class Level1 extends Phaser.Scene {
       .setSize(5, 400)
       .setAlpha(0)
 
+    // Change level logic, sounds and camera effect
+    let overlapInitiated = false; // Flag to track if the overlap action has been initiated
     this.physics.add.overlap(player, endOfLevel, () => {
-      this.scene.start("level2", {player: player});
+      if (overlapInitiated) return; // Return early if the overlap action has already been initiated
+      overlapInitiated = true; // Set the flag to prevent future executions
+
+      this.doorSound.play();
       this.musicSound.stop();
-    })
+
+      this.cameras.main.fadeOut(1000, 0, 0, 0, (camera, progress) => {
+        if(progress === 1) this.scene.start("level2", {player: player});
+      });
+    });
+
   }
 
+  // addCollider() is a function built-in player
   createPlayerColliders(player, {colliders}) {
     player.addCollider(colliders.platforms)
   }
@@ -107,6 +118,7 @@ export default class Level1 extends Phaser.Scene {
   createSounds() {
     // Play Open audio
     this.sound.add("open_level1", {loop: false, volume: 0.15}).play();
+    this.doorSound = this.sound.add('door_sound', {loop: false, volume: 0.7})
 
     //starts playing music
     this.musicSound = this.sound.add("music_level1", {loop: false, volume: 0.2});
