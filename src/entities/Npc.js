@@ -26,7 +26,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     // Set InteractKey
     this.interactKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
     // Set dialog sound
-    this.dialogSound = this.scene.sound.add('dialog_sound', {loop: false, rate: 2})
+    this.dialogSound = this.scene.sound.add('dialog_sound', {loop: false, volume: 0.5, rate: 2})
 
     // This is just to not recriate animations.
     if(Npc.instanceCount <= 1)
@@ -82,6 +82,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   destroyInstance() {
     // Unregister the update function from the scene's update event
     this.scene.events.removeListener(Phaser.Scenes.Events.UPDATE, this.update, this);
+
+    // Destroy interaction button image
+    this.interactKeyImage.destroy()
 
     // Call the superclass destroy method
     super.destroy();

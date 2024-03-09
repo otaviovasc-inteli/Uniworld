@@ -7,8 +7,8 @@ export default class Level1 extends Phaser.Scene {
   }
 
   create () {
-    // Play Open audio
-    this.sound.add("open_level1", {loop: false, volume: 0.15}).play();
+    // Play level1 sounds
+    this.createSounds()
 
     // FadeIn Effect
     this.cameras.main.fadeIn(5000, 30, 30, 0)
@@ -43,14 +43,6 @@ export default class Level1 extends Phaser.Scene {
     }})
     this.createEndOfLevel(playerZones.end, player)
     this.setupFollowupCameraOn(player, map)
-
-    //starts playing music
-    this.musicSound = this.sound.add("music_level1", {loop: false, volume: 0.1, rate: 0.55});
-
-    // start playing music
-    if (!this.musicSound.isPlaying) {
-      this.musicSound.play();
-    } else {}
   }
 
   createPlayer({start}, playerSelecionado) {
@@ -109,5 +101,18 @@ export default class Level1 extends Phaser.Scene {
   setupFollowupCameraOn(player, map) {
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
     this.cameras.main.startFollow(player, true)
+  }
+
+  // Handle sounds logics
+  createSounds() {
+    // Play Open audio
+    this.sound.add("open_level1", {loop: false, volume: 0.15}).play();
+
+    //starts playing music
+    this.musicSound = this.sound.add("music_level1", {loop: false, volume: 0.2});
+
+    // start playing music if not playing already
+    if (!this.musicSound.isPlaying)
+      this.musicSound.play();
   }
 }

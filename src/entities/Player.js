@@ -50,7 +50,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.updateEnabled = true;
 
     // Collider
-    this.setSize(40, 124);
+    this.setSize(40, 115);
     this.body.setOffset(110, 70);
     this.setCollideWorldBounds(true);
 
@@ -60,12 +60,13 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   }
 
   createSounds(scene) {
+    this.jumpSound = scene.sound.add('jump_sound', {loop: false, volume: 0.2, rate: 1.5})
     switch (this.scene.sys.settings.key) {
       case "level1":
-        this.walkSound = scene.sound.add("floor_sound", {loop: false, volume: 0.05, rate: 0.55});
+        this.walkSound = scene.sound.add("floor_sound", {loop: false, volume: 0.2, rate: 0.55});
         break;
       case "level2":
-        this.walkSound = scene.sound.add("grass_sound", {loop: false, volume: 0.2, rate: 0.55});
+        this.walkSound = scene.sound.add("grass_sound", {loop: false, volume: 0.3, rate: 0.55});
         break;
       // add mais dps
       default:
@@ -124,8 +125,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     // Jump logic
     if (isUpJustDown && (onFloor || this.jumpCount < this.consecutiveJumps)) {
-      this.setVelocityY(-this.jumpSpeed);
       this.jumpCount++;
+      this.setVelocityY(-this.jumpSpeed)
+      this.jumpSound.play()
     }
 
     // Animation logic for jumping and falling
@@ -133,7 +135,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       this.play("player_jump", true);
       if (this.playerVelocityY > 0) this.play("player_fall", true);
     }
-
     // Reset jump count and dash availability on landing
     if (onFloor) {
       this.jumpCount = 0;

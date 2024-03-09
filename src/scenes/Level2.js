@@ -7,7 +7,8 @@ export default class Level2 extends Phaser.Scene {
   }
 
   create () {
-    // this.add.image(0, -200, "bg1").setScale(1.12).setOrigin(0, 0);
+    // Init all sounds in the level
+    this.createSounds()
 
     // Add map and layers
     const map = this.createMap();
@@ -129,6 +130,16 @@ export default class Level2 extends Phaser.Scene {
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
     this.cameras.main.startFollow(player, true)
     this.cameras.main.setZoom(0.7);
+  }
+
+  // Handle sounds logics
+  createSounds() {
+    //starts playing music
+    this.musicSound = this.sound.add("music_level2", {loop: true, volume: 0.2});
+
+    // start playing music if not playing already
+    if (!this.musicSound.isPlaying)
+      this.musicSound.play();
   }
 
   update() {

@@ -59,11 +59,14 @@ export default class Preload extends Phaser.Scene {
     // Sound effects and music
     this.load.audio("grass_sound", "assets/sounds/level2/lvl_2_grass_walk.ogg");
     this.load.audio("floor_sound", "assets/sounds/level1/lvl_1_floor_walk.ogg");
-    this.load.audio("music_level1", "assets/sounds/level1/music_level1.ogg");
+    this.load.audio("jump_sound", "assets/sounds/jump_sound.mp3");
+    this.load.audio("music_level1", "assets/sounds/level1/music_level_1.mp3");
     this.load.audio("open_level1", "assets/sounds/level1/open_level_1.ogg");
     this.load.audio("dialog_sound", "assets/sounds/dialog_sound.ogg");
     this.load.audio("hover_sound", "assets/sounds/hover_sound.wav");
     this.load.audio("select_sound", "assets/sounds/select_sound.wav");
+    this.load.audio("music_level2", "assets/sounds/level2/lvl_2_theme.mp3");
+
 
     // Completed
     this.load.once('complete', () => {
