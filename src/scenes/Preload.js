@@ -41,6 +41,13 @@ export default class Preload extends Phaser.Scene {
     this.load.image('hub_screen', 'assets/links/links_screen.png');
     this.load.image('hub_close', 'assets/links/x_button.png');
     this.load.spritesheet('hub_link_button', 'assets/links/link_button.png', { frameWidth: 128, frameHeight: 128 })
+  // ------------------------------------------------------------------
+    // Quiz
+    this.load.image('quiz_window', 'assets/quiz/quiz_window.png');
+    this.load.image('quiz_button_A', 'assets/quiz/quiz_button_A.png');
+    this.load.image('quiz_button_B', 'assets/quiz/quiz_button_B.png');
+    this.load.image('quiz_button_C', 'assets/quiz/quiz_button_C.png');
+    this.load.image('quiz_button_D', 'assets/quiz/quiz_button_D.png');
     // ------------------------------------------------------------------
     // Players
     this.load.spritesheet("player1", "assets/player/player1.png", { frameWidth: 256, frameHeight: 256 });
