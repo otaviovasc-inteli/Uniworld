@@ -410,6 +410,24 @@ Licensas: https://mixkit.co/license/#sfxFree
 3 | Posicionar personagem em frente ao notebook | Apertar tecla de interação com o notebook | Abrir diálogo na plataforma teams
 4 | Posicionar o personagem em frente ao Rexona | Apertar tecla de interação com o Rexona | Pegar o item Rexona
 5 | Posicionar o personagem em frente à porta do quarto | Passar pela porta do quarto | Encerrar cena e Iniciar cena 2
+6 |  entrar no jogo | apertar “E” na frente do NPC | interagir com o  NPC
+7 |  entrar no jogo | pular no primeiro buraco   | reiniciar o jogo
+8 |  entrar no jogo | apertar várias vezes o botão “E” na frente do npc   | o jogo não bugar
+9 |  entrar no jogo | apertar ‘E” com coletáveis   | coletar o item
+10 | entrar no jogo | alguém, que nunca jogou o jogo, vai passar todo o jogo | conseguir finalizar 
+11 | entrar no jogo | alguém, que nunca jogou o jogo, enfrentar os inimigos fáceis | conseguir finalizar
+12 | entrar no jogo |  alguém, que nunca jogou, enfrentar o boss | conseguir matá-lo
+13 | entrar no jogo |   pular,correr,ficar parado | movimentação fluida das sprites 
+14 | entrar no menu  |   ativar e desativar o  som | o som parar (ao clicar em desativar) e voltar (ao clicar em ativar)  
+15 | entrar na seleção de personagem |  selecionar personagem | o jogo iniciar com o personagem selecionado 
+
+
+
+
+
+
+
+
  
 
 
