@@ -180,10 +180,10 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     if (!this.link_button4) this.link_button4 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y + 160 - 50, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
 
     // Add text labels
-    this.text_hub_1 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 130 - 50, url1[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
-    this.text_hub_2 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 40 - 50, url2[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
-    this.text_hub_3 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 50 - 50, url3[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
-    this.text_hub_4 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 140 - 50, url4[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    if (!this.text_hub_1) this.text_hub_1 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 130 - 50, url1[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    if (!this.text_hub_2) this.text_hub_2 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 40 - 50, url2[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    if (!this.text_hub_3) this.text_hub_3 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 50 - 50, url3[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    if (!this.text_hub_4) this.text_hub_4 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 140 - 50, url4[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
 
     // Add links to the buttons
     this.link_button1.on('pointerdown', () => {
@@ -227,34 +227,6 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       this.text_hub_3.destroy()
       this.text_hub_4.destroy()
       return;
-    });
-
-    // Set frame to 1 (mouse to click)
-    this.link_button1.on('pointerover', () => {
-      this.setFrame(1) // Open in a new tab
-    });
-    this.link_button2.on('pointerover', () => {
-      this.setFrame(1) // Open in a new tab
-    });
-    this.link_button3.on('pointerover', () => {
-      this.setFrame(1) // Open in a new tab
-    });
-    this.link_button4.on('pointerover', () => {
-      this.setFrame(1) // Open in a new tab
-    });
-
-    // Set frame to 0 (mouse not to click)
-    this.link_button1.on('pointerout', () => {
-      this.setFrame(0) // Open in a new tab
-    });
-    this.link_button2.on('pointerout', () => {
-      this.setFrame(0) // Open in a new tab
-    });
-    this.link_button3.on('pointerout', () => {
-      this.setFrame(0) // Open in a new tab
-    });
-    this.link_button4.on('pointerout', () => {
-      this.setFrame(0) // Open in a new tab
     });
   }
 }
