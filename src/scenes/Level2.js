@@ -1,5 +1,5 @@
 import Player from "../entities/Player.js";
-import Slime from "../entities/enemies/Slime.js";
+import Enemies from "../groups/enemies.js";
 import Npc from "../entities/Npc.js";
 
 export default class Level2 extends Phaser.Scene {
@@ -23,8 +23,8 @@ export default class Level2 extends Phaser.Scene {
     const oldPlayer = this.sys.settings.data.player;
     const player = this.createPlayer(playerZones, oldPlayer);
 
-    // create green greenSlime enemy
-    const greenSlime = this.createSlime(600, 1620, "green_slime", player).setScale(0.6);
+    // create enemies
+    const enemies = this.createEnemies(layers.enemySpawns);
     
     // RexonaNpc sprite
     const dvdNpc = new Npc(this, 7420, 700, 'hub_sprite', 'hub', player)
@@ -37,6 +37,7 @@ export default class Level2 extends Phaser.Scene {
 
     // Create background
     this.createBg(map)
+    
     // Create decorations
     this.createEnv()
 
@@ -47,10 +48,11 @@ export default class Level2 extends Phaser.Scene {
     }})
 
     // Collider enemy with platforms
-    this.createEnemyColliders(greenSlime, {
+    this.createEnemyColliders(enemies, {
       colliders: {
         platforms: layers.platforms,
-        player
+        player: player,
+
       },
     });
     this.createEndOfLevel(playerZones.end, player);
@@ -63,20 +65,27 @@ export default class Level2 extends Phaser.Scene {
   }
 
   //create enemy slime in scene
-  createSlime(x, y, sprite) {
-    return new Slime(this, x, y, sprite);
-  }
+  createEnemies(spawnLayer) {
+    const enemies = new Enemies(this);
+    const enemyTypes = enemies.getTypes();
+    spawnLayer.objects.forEach(spawnPoint => {
+      const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y);
+      enemies.add(enemy);
+    });
 
-  //add player colliders
-  createPlayerColliders(player, { colliders }) {
-    player.addCollider(colliders.platforms);
+    return enemies;
   }
 
   // add enemy slime colliders
-  createEnemyColliders(enemy, { colliders }) {
-    enemy
+  createEnemyColliders(enemies, { colliders }) {
+    enemies
       .addCollider(colliders.platforms)
       .addCollider(colliders.player)
+  }
+
+  // Add player colliders
+  createPlayerColliders(player, { colliders }) {
+    player.addCollider(colliders.platforms)
   }
 
   createMap() {
@@ -98,10 +107,11 @@ export default class Level2 extends Phaser.Scene {
     const platforms = map.createLayer("platforms", tileset1);
     map.createLayer("bg-color-green", tileset3).setDepth(-9);
     const playerZones = map.getObjectLayer("player_zones");
+    const enemySpawns = map.getObjectLayer("enemy_spawns");
 
     platforms.setCollisionByExclusion(-1, true);
 
-    return { env, platforms, playerZones };
+    return { env, platforms, playerZones, enemySpawns };
   }
 
   // Create background for assets and set its positions

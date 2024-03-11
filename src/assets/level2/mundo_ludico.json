@@ -325,9 +325,56 @@
          "visible":true,
          "x":0,
          "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":16,
+         "name":"enemy_spawns",
+         "objects":[
+                {
+                 "height":0,
+                 "id":47,
+                 "name":"spawnPoint",
+                 "point":true,
+                 "rotation":0,
+                 "type":"greenSlime",
+                 "visible":true,
+                 "width":0,
+                 "x":952,
+                 "y":1612
+                }, 
+                {
+                 "height":0,
+                 "id":48,
+                 "name":"spawnPoint",
+                 "point":true,
+                 "rotation":0,
+                 "type":"greenSlime",
+                 "visible":true,
+                 "width":0,
+                 "x":2836,
+                 "y":1552
+                }, 
+                {
+                 "height":0,
+                 "id":49,
+                 "name":"spawnPoint",
+                 "point":true,
+                 "rotation":0,
+                 "type":"purpleSlime",
+                 "visible":true,
+                 "width":0,
+                 "x":4148,
+                 "y":1104
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
         }],
- "nextlayerid":16,
- "nextobjectid":47,
+ "nextlayerid":18,
+ "nextobjectid":50,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",
@@ -434,7 +481,7 @@
         {
          "columns":1,
          "firstgid":734,
-         "image":"..\/..\/..\/..\/..\/..\/..\/Downloads\/bg-color-green.png",
+         "image":"background\/bg-color-green.png",
          "imageheight":64,
          "imagewidth":64,
          "margin":0,
