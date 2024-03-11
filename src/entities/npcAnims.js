@@ -17,14 +17,14 @@ export default anims =>{
   anims.create({
     key: 'hub_idle',
     frames: anims.generateFrameNumbers('hub_sprite', {start: 0, end: 4}),
-    frameRate: 2,
+    frameRate: 4,
     repeat: -1
   })
 
   anims.create({
     key: 'hub_overlap',
     frames: anims.generateFrameNumbers('hub_sprite', {start: 5, end: 9}),
-    frameRate: 5,
+    frameRate: 4,
     repeat: -1
   })
 }

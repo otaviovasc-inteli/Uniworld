@@ -27,11 +27,4 @@ export default (anims, selectedPlayer) =>{
     frameRate: 2,
     repeat: -1
   });
-
-  anims.create({
-    key: 'npc1_talk',
-    frames: anims.generateFrameNumbers('npc1_talk', { start: 0, end: 6 }),
-    frameRate: 4,
-    repeat: -1
-  })
 }

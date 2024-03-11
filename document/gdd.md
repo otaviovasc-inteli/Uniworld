@@ -202,11 +202,7 @@ Para finalizar a fase basta interagir com uma placa desenhada no cenário escrit
 
 &nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, o jogador encontrará a diretora. Ao conversar com o NPC se iniciará o seguinte diálogo:
 
-<<<<<<< Updated upstream
-Olá, você realmente se mostrou um funcionário capaz, por conta disso, você deve estar pronto para representar todos os nossos valores e saber todos os nossos pilares, ao chegar até aqui significa que você passou no teste e se provou ser um membro da nossa família Unilever! Seja bem vindo oficialmente, esperamos muito de um herói como você!
-=======
 PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão queridas marcas. Graças a você, conseguimos voltar a nossa força total e recuperar o equilíbrio do mundo. Seja bem vindo, herói, faça parte da nossa família Unilever.
->>>>>>> Stashed changes
 
 &nbsp;&nbsp;&nbsp;&nbsp;A fase acaba com o personagem seguindo pelo cenário e encontrando um computador para interação no final do mapa. Neste computador quando ele interagir, reaparecerá a cena 0.
 
@@ -241,7 +237,18 @@ Seguem alguns exemplos:*
 
 &nbsp;&nbsp;&nbsp;&nbsp;*O segundo ambiente...*
 
-*Descreva o ambiente do jogo, em que locais ele ocorre. Ilustre com imagens. Se houverem mapas, posicione-os aqui, descrevendo as áreas em acordo com o enredo. Se houverem fases, descreva-as também em acordo com o enredo (pode ser um jogo de uma fase só). Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.*
+*Esse ambiente se encontra no Mundo Lúdico, onde o Player terá a primeira gameplay de fato do jogo, nessa fase, é possivel encontrar objetos de decoração relacionados à Unilever, será possível batalhar contra inimigos e no final da fase um "chefão". O objetivo do Player nessa fase é interagir com o NPC que disponibiliza dos Links de aprendizado da Unilever e depois interagir com o objeto de Quiz que lhe dará ou não o powerUp baseado no resultado. Depois de derrotar o primeiro chefe, pode seguir para o terceiro ambiente*
+<div align="center">
+<sub>Figura 5 - Ilustração do Mundo Lúdico</sub>
+<img src="../assets/printMundoLudico.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Figura 6 - Ilustração NPC do Hub de Links</sub>
+<img src="../assets/printDvdNpc.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Figura 7 - Ilustração do Hub de Links</sub>
+<img src="../assets/printHubLinks.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
 
@@ -256,7 +263,7 @@ Seguem alguns exemplos:*
 *Inclua imagens de Concept Art do jogo que ainda não foram demonstradas em outras seções deste documento. Para cada imagem, coloque legendas, como no exemplo abaixo.*
 
 <div align="center">
-<sub>Figura 5 - Arte Conceitual da Cena 2</sub>
+<sub>Figura 8 - Arte Conceitual da Cena 2</sub>
 <img src="../assets/Conceptart.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -270,10 +277,12 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 *Exemplo de tabela*
 \# | titulo | ocorrência | autoria
 --- | --- | --- | ---
-1 | tema de abertura | tela de início | própria
-2 | tema de combate | cena de combate com inimigos comuns | Hans Zimmer
-3 | ... 
+1 | Pure Imaginaion | tela de início | Avery Mavery
+2 | tema de combate | Level 1 (Quarto do Personagem) | Hans Zimmer
+3 | tema de combate | Level 2 (Mundo Lúdico) | Hans Zimmer
 
+
+Licensas: https://mixkit.co/license/#sfxFree
 ## 3.4. Inventário e Bestiário (sprint 3)
 
 ### 3.4.1. Inventário
@@ -319,12 +328,6 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 *Ex. O jogador deve concluir a fase, derrotando os inimigos e coletando os pedaços do logo da Unilever. Além disso, no final da fase, deve derrotar um boss e responder um quiz. Caso ele acerte o quiz, ele terá uma bonificação em alguma habilidade (força, alcance, velocidade...). Além disso, caso o jogador consiga formar a logo da Unilever espalhada pelo mapa, reunindo os pedaços, ele ganha uma vida extra. O jogador deve concluir a fase dentro do tempo, para obter uma estrela. Se além disso ele coletar todas as moedas, ganha mais uma estrela. E se além disso ele coletar os três medalhões espalhados, ganha mais uma estrela, totalizando três. Ao final do jogo, obtendo três estrelas em todas as fases, desbloqueia o mundo secreto.*  
 
 ## 3.7. Mecânicas do jogo (sprint 3)
-
-*Descreva aqui as formas de controle e interação que o jogador tem sobre o jogo: quais os comandos disponíveis, quais combinações de comandos, e quais as ações consequentes desses comandos. Utilize listas ou tabelas para organizar esta seção.*
-
-*Ex. Em um jogo de plataforma 2D para desktop, o jogador pode usar as teclas WASD para mecânicas de andar, mirar para cima, agachar, e as teclas JKL para atacar, correr, arremesar etc.*
-
-*Ex. Em um jogo de puzzle para celular, o jogador pode tocar e arrastar sobre uma peça para movê-la sobre o tabuleiro, ou fazer um toque simples para rotacioná-la*
 
 &nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem irá dar um pulo duplo. Outra tecla importante para a jogabilidade proposta no nosso game é a tecla E, que usa a mecânica de interação, caso apertada ao lado de um NPC ou power-up por exemplo.
 
