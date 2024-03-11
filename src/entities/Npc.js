@@ -29,8 +29,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.dialogSound = this.scene.sound.add('dialog_sound', {loop: false, volume: 0.5, rate: 2})
 
     // This is just to not recriate animations.
-    if(Npc.instanceCount <= 1)
-      initAnimations(this.scene.anims)
+    if(Npc.instanceCount <= 1);
+      initAnimations(this.scene.anims);
 
     // Set texts modularly
     try {
@@ -43,7 +43,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   initEvents() {
-    this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this)
+    this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
   }
 
   update() {
@@ -57,10 +57,10 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         switch (this.name) {
           case 'computer':
             // Computer logic
-              this.computerLogic()
+              this.computerLogic();
             break;
           case 'rexona':
-              this.rexonaLogic()
+              this.rexonaLogic();
             break;
           case 'hub':
               this.hubLogic();

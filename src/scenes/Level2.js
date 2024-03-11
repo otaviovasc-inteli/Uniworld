@@ -1,4 +1,5 @@
 import Player from "../entities/Player.js";
+import Enemies from "../groups/enemies.js";
 import Npc from "../entities/Npc.js";
 
 export default class Level2 extends Phaser.Scene {
@@ -16,12 +17,15 @@ export default class Level2 extends Phaser.Scene {
     // Add map and layers
     const map = this.createMap();
     const layers = this.createLayers(map);
-    const playerZones = this.getPlayerZones(layers.playerZones)
+    const playerZones = this.getPlayerZones(layers.playerZones);
 
     // Add player object and set bounds to map pass player from previous scene
     const oldPlayer = this.sys.settings.data.player;
     const player = this.createPlayer(playerZones, oldPlayer);
 
+    // create enemies
+    const enemies = this.createEnemies(layers.enemySpawns);
+    
     // RexonaNpc sprite
     const dvdNpc = new Npc(this, 7420, 700, 'hub_sprite', 'hub', player)
     .setSize(100, 120)
@@ -33,6 +37,7 @@ export default class Level2 extends Phaser.Scene {
 
     // Create background
     this.createBg(map)
+    
     // Create decorations
     this.createEnv()
 
@@ -42,42 +47,71 @@ export default class Level2 extends Phaser.Scene {
         platforms: layers.platforms,
     }})
 
-    this.createEndOfLevel(playerZones.end, player)
-    this.setupFollowupCameraOn(player, map)
+    // Collider enemy with platforms
+    this.createEnemyColliders(enemies, {
+      colliders: {
+        platforms: layers.platforms,
+        player: player,
+
+      },
+    });
+    this.createEndOfLevel(playerZones.end, player);
+    this.setupFollowupCameraOn(player, map);
   }
 
-  createPlayer({start}, oldPlayer) {
+  //create player in scene
+  createPlayer({ start }, oldPlayer) {
     return new Player(this, start.x, start.y, oldPlayer);
   }
 
-  createPlayerColliders(player, {colliders}) {
+  //create enemy slime in scene
+  createEnemies(spawnLayer) {
+    const enemies = new Enemies(this);
+    const enemyTypes = enemies.getTypes();
+    spawnLayer.objects.forEach(spawnPoint => {
+      const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y);
+      enemies.add(enemy);
+    });
+
+    return enemies;
+  }
+
+  // add enemy slime colliders
+  createEnemyColliders(enemies, { colliders }) {
+    enemies
+      .addCollider(colliders.platforms)
+      .addCollider(colliders.player)
+  }
+
+  // Add player colliders
+  createPlayerColliders(player, { colliders }) {
     player.addCollider(colliders.platforms)
-    player.addCollider(colliders.platformsMovement)
   }
 
   createMap() {
-    const map = this.make.tilemap({key: `level2`});
-    map.addTilesetImage('level2_t1', 'level2_t1');
-    map.addTilesetImage('level2_t2', 'level2_t2');
-    map.addTilesetImage('bg-color-green', 'bg_color_green');
+    const map = this.make.tilemap({ key: `level2` });
+    map.addTilesetImage("level2_t1", "level2_t1");
+    map.addTilesetImage("level2_t2", "level2_t2");
+    map.addTilesetImage("bg-color-green", "bg_color_green");
     return map;
   }
 
   createLayers(map) {
     // Add tilesets
-    const tileset1 = map.getTileset('level2_t1');
-    const tileset2 = map.getTileset('level2_t2');
-    const tileset3 = map.getTileset('bg-color-green');
+    const tileset1 = map.getTileset("level2_t1");
+    const tileset2 = map.getTileset("level2_t2");
+    const tileset3 = map.getTileset("bg-color-green");
 
-    // Create layers
-    const env = map.createLayer('env', tileset2);
-    const platforms = map.createLayer('platforms', tileset1);
-    map.createLayer('bg-color-green', tileset3).setDepth(-9);
-    const playerZones = map.getObjectLayer('player_zones');
+    // create layers
+    const env = map.createLayer("env", tileset2);
+    const platforms = map.createLayer("platforms", tileset1);
+    map.createLayer("bg-color-green", tileset3).setDepth(-9);
+    const playerZones = map.getObjectLayer("player_zones");
+    const enemySpawns = map.getObjectLayer("enemy_spawns");
 
     platforms.setCollisionByExclusion(-1, true);
 
-    return { env, platforms, playerZones };
+    return { env, platforms, playerZones, enemySpawns };
   }
 
   // Create background for assets and set its positions
@@ -113,22 +147,23 @@ export default class Level2 extends Phaser.Scene {
 
   // Return the start and end zone from Tiled
   getPlayerZones(playerZonesLayer) {
-    const playerZones = playerZonesLayer.objects
+    const playerZones = playerZonesLayer.objects;
     return {
-      start: playerZones.find(zone => zone.name === 'startZone'),
-      end: playerZones.find(zone => zone.name === 'endZone')
-    }
+      start: playerZones.find((zone) => zone.name === "startZone"),
+      end: playerZones.find((zone) => zone.name === "endZone"),
+    };
   }
 
   // Uses endZone from Tiled and change level when overlapping
   createEndOfLevel(end, player) {
-    const endOfLevel = this.physics.add.sprite(end.x, end.y, 'end')
+    const endOfLevel = this.physics.add
+      .sprite(end.x, end.y, "end")
       .setSize(5, 400)
-      .setAlpha(0)
+      .setAlpha(0);
 
     this.physics.add.overlap(player, endOfLevel, () => {
       console.log("start level3");
-    })
+    });
   }
 
   setupFollowupCameraOn(player, map) {
