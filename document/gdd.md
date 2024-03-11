@@ -237,7 +237,18 @@ Seguem alguns exemplos:*
 
 &nbsp;&nbsp;&nbsp;&nbsp;*O segundo ambiente...*
 
-*Descreva o ambiente do jogo, em que locais ele ocorre. Ilustre com imagens. Se houverem mapas, posicione-os aqui, descrevendo as áreas em acordo com o enredo. Se houverem fases, descreva-as também em acordo com o enredo (pode ser um jogo de uma fase só). Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.*
+*Esse ambiente se encontra no Mundo Lúdico, onde o Player terá a primeira gameplay de fato do jogo, nessa fase, é possivel encontrar objetos de decoração relacionados à Unilever, será possível batalhar contra inimigos e no final da fase um "chefão". O objetivo do Player nessa fase é interagir com o NPC que disponibiliza dos Links de aprendizado da Unilever e depois interagir com o objeto de Quiz que lhe dará ou não o powerUp baseado no resultado. Depois de derrotar o primeiro chefe, pode seguir para o terceiro ambiente*
+<div align="center">
+<sub>Figura 5 - Ilustração do Mundo Lúdico</sub>
+<img src="../assets/printMundoLudico.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Figura 6 - Ilustração NPC do Hub de Links</sub>
+<img src="../assets/printDvdNpc.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Figura 7 - Ilustração do Hub de Links</sub>
+<img src="../assets/printHubLinks.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
 
@@ -252,7 +263,7 @@ Seguem alguns exemplos:*
 *Inclua imagens de Concept Art do jogo que ainda não foram demonstradas em outras seções deste documento. Para cada imagem, coloque legendas, como no exemplo abaixo.*
 
 <div align="center">
-<sub>Figura 5 - Arte Conceitual da Cena 2</sub>
+<sub>Figura 8 - Arte Conceitual da Cena 2</sub>
 <img src="../assets/Conceptart.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>

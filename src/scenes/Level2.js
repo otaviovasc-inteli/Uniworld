@@ -7,8 +7,12 @@ export default class Level2 extends Phaser.Scene {
     super("level2");
   }
 
-  create() {
-    // this.add.image(0, -200, "bg1").setScale(1.12).setOrigin(0, 0);
+  create () {
+    // Init all sounds in the level
+    this.createSounds()
+
+    // FadeIn effect
+    this.cameras.main.fadeIn(2000, 30, 30, 0)
 
     // Add map and layers
     const map = this.createMap();
@@ -23,7 +27,7 @@ export default class Level2 extends Phaser.Scene {
     const greenSlime = this.createSlime(600, 1620, "green_slime", player).setScale(0.6);
     
     // RexonaNpc sprite
-    const dvdNpc = new Npc(this, 1200, 1655, 'hub_sprite', 'hub', player)
+    const dvdNpc = new Npc(this, 7420, 700, 'hub_sprite', 'hub', player)
     .setSize(100, 120)
     .setScale(1.2)
 
@@ -33,6 +37,8 @@ export default class Level2 extends Phaser.Scene {
 
     // Create background
     this.createBg(map)
+    // Create decorations
+    this.createEnv()
 
     // Collider player with platforms
     this.createPlayerColliders(player, {
@@ -156,9 +162,50 @@ export default class Level2 extends Phaser.Scene {
     this.cameras.main.setZoom(0.7);
   }
 
+  // Handle sounds logics
+  createSounds() {
+    //starts playing music
+    this.musicSound = this.sound.add("music_level2", {loop: true, volume: 0.2});
+
+    // start playing music if not playing already
+    if (!this.musicSound.isPlaying)
+      this.musicSound.play();
+  }
+
   update() {
-    this.bgCloud.tilePositionX = this.cameras.main.scrollX * 0.25;
-    this.bgForeGround.tilePositionX = this.cameras.main.scrollX * 0.5;
-    this.bgHills.tilePositionX = this.cameras.main.scrollX * 0.4;
+    this.bgCloud.tilePositionX = this.cameras.main.scrollX * 0.25
+    this.bgForeGround.tilePositionX = this.cameras.main.scrollX * 0.5
+    this.bgHills.tilePositionX = this.cameras.main.scrollX * 0.4
+    // Moves plane every frame
+    this.plane.x += 0.7
+  }
+
+  createEnv() {
+    // Aviao
+    this.plane = this.add.sprite(600, 1000, 'aviao_unilever')
+      .setOrigin(0, 0).setScale(0.7).setAlpha(0.6).setDepth(-2);
+    this.anims.create({
+      key: 'aviao',
+      frames: this.anims.generateFrameNumbers(`aviao_unilever`, { start: 0, end: 4 }),
+      frameRate: 8,
+      repeat: -1
+    });
+    this.plane.play('aviao', true)
+
+    // Balao
+    this.balao = this.add.sprite(2100, 700, 'balao_unilever')
+      .setOrigin(0, 0).setScale(0.8).setAlpha(0.8).setDepth(-1);
+    this.anims.create({
+      key: 'balao',
+      frames: this.anims.generateFrameNumbers(`balao_unilever`, { start: 0, end: 1 }),
+      frameRate: 2,
+      repeat: -1
+    });
+    this.balao.play('balao')
+
+    // Placas
+    this.add.image(600, 1680, 'placa_unilever').setScale(0.8)
+    this.add.image(3100, 1680, 'placa_unilever').setScale(0.8)
+    this.add.image(7630, 720, 'placa_unilever').setScale(0.8)
   }
 }
