@@ -22,24 +22,16 @@ export default class purpleSlime extends Enemy {
   }
 
   update() {
-//     if (this.VelocityX != 0) {
-//       this.setVelocityX(30);
-//     }
-
-    //     if ( && !this.slimeJump) {
-    //       this.setVelocityX(0);
-    //       this.play("purpleSlime_idle", true);
-    //     } else if (!this.body.onFloor()) {
-    //       this.setVelocityY(-400);
-          this.play("purpleSlime_jump", true);
-    //     }
-
-    //     if (this.body.velocity.x > 0) {
-    //       this.setVelocityX(slimeVelocity);
-    //       this.setFlip(true, false);
-    //     } else if (this.body.velocity.x < 0) {
-    //       this.setVelocityX(-slimeVelocity);
-    //       this.setFlip(false, false);
-    //     }
+    // set slime movements
+    if (this.body.onFloor()) {
+      this.play("purpleSlime_idle", true);
+      this.setVelocityX(0);
+      this.setVelocityY(0);
+      this.scene.time.delayedCall(400, () => {
+        this.setVelocityY(-200);
+        this.play("purpleSlime_jump", true);
+        this.setVelocityX(-50);
+      });
+    }
   }
 }
