@@ -265,7 +265,7 @@ Seguem alguns exemplos:*
 
 ### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo não apresentará mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários foram projetados com um tempo ensolarado que permeia do início ao fim do jogo Além disso, a passagem do tempo não possui influência no mundo do jogo, devido a pedido do próprio parceiro sobre a criação de poucas ou nenhuma limitaçõe para conclusão do onboarding.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogo apresentará algumas mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários da segunda cena foram projetados com um tempo ensolarado que permeia do início ao fim. Além disso, a passagem do tempo não possui influência no mundo do jogo, devido a pedido do próprio parceiro sobre a criação de poucas ou nenhuma limitaçõe para conclusão do onboarding.*
 
 ### 3.3.4. Concept Art (sprint 2)
 
@@ -312,10 +312,12 @@ Licensas: https://mixkit.co/license/#sfxFree
 *\<opcional\> Caso seu jogo tenha inimigos, descreva-os aqui, indicando nomes, imagens, momentos de aparição, funções e impactos no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
 
 *Exemplo de tabela*
-\# | inimigo |  | ocorrências | função | impacto | efeito sonoro
+\# | Inimigo |  | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | fumaçinha | <img src="../assets/inimigo2.PNG"> |  a partir da fase 1 | ataca o personagem vindo pelo chão em sua direção, com velocidade constante, atirando parafusos | se encostar no inimigo ou no parafuso arremessado, o personagem perde 1 ponto de vida | sons de tiros e engrenagens girando
-2 | robô voador | <img src="../assets/inimigo1.PNG"> | a partir da fase 2 | ataca o personagem vindo pelo ar, fazendo movimento em 'V' quando se aproxima | se encostar, o personagem perde 3 pontos de vida | som de hélice
+1 | Slime verde | <img src="../../2024-T0012-IN01-G02/src/assets/enemies/green_slime.png"> | Primeira cena de combate | Vindo pulando pelo chão em sua direção, com velocidade constante e atirando parafusos, tendo 2 de vida e 1 de dano por ataque, com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
+2 | Slime roxo | <img src="../../2024-T0012-IN01-G02/src/assets/enemies/purple_slime.png"> | Primeira cena de combate | Vindo pulando pelo chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque, com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
+4 | Fumaçinha |  Na primeira cena de combate | Atacar o personagem, vindo pelo chão em sua direção, com velocidade constante e atirando parafusos | Caso o jogador encoste no inimigo ou no parafuso arremessado, o personagem perde 1 ponto de vida | Sons de tiros e engrenagens girando
+2 | robô voador | <img src="../assets/inimigo2.PNG"> | Na segunda cena de combate | Atacar o personagem, vindo pelo ar, fazendo movimento em 'V' quando se aproxima | se encostar e o personagem perde 3 pontos de vida | Som de hélice
 3 | ... 
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
