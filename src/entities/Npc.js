@@ -12,6 +12,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.npcPlayer = player
 
     this.questionIndex = 0; // Keep track of the current question on quiz
+    this.answerTexts = []
 
     // Track how many Npc is in the scene
     Npc.instanceCount++;
@@ -189,7 +190,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.quizTitle = this.scene.add.text(centerX, centerY - 200, 'UniQuiz', { font: '24px Arial', fill: '#000' }).setOrigin(0.5).setDepth(2);
 
     // Display the question text, creating or updating it
-    this.quizText = this.scene.add.text(centerX - 170, centerY - 150, questionText, { font: '24px Arial', fill: '#000' }).setOrigin(0.5).setDepth(2);
+    this.quizText = this.scene.add.text(centerX - 220, centerY - 150, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2);
 
     // Close button logic
     this.quizXBtn = this.scene.add.image(centerX + 200, centerY - 200, 'hub_close').setInteractive().setDepth(3).setScale(0.05);
@@ -201,6 +202,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         let buttonImage = `quiz_button_${letter}`;
         let answerButton = this.scene.add.image(centerX + (index * 172) - 172, centerY + 170, buttonImage).setScale(3.8).setInteractive().setDepth(2);
         this.answerButtons.push(answerButton)
+
+        // Answers text
+        this.answerTexts.push(this.scene.add.text(centerX - 220, centerY + (70 * index) - 80, answers[index], { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2))
 
         // Checking if the selected button is the correct answer
         answerButton.on('pointerdown', () => {
@@ -219,7 +223,6 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.questionIndex++;
     if (this.questionIndex < this.texts.length) {
         // this.scene.restart(); // Or another way to refresh your question display
-        console.log("NextQuestion");
         this.closeQuiz()
         this.rexonaLogic()
     } else {
@@ -237,6 +240,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     if (this.quizText) this.quizText.destroy();
     if (this.quizTitle) this.quizTitle.destroy();
     this.answerButtons.forEach(button => button.destroy());
+    this.answerTexts.forEach(text => text.destroy());
     if (this.quizXBtn) this.quizXBtn.destroy();
 
     // Resetting the flags and references

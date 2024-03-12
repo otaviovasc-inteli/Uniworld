@@ -15,9 +15,6 @@ export default class purpleSlime extends Enemy {
         this.setScale(.6);
         this.body.offset.x = 0
         this.body.offset.y = 0
-
-        console.log(this.body)
-
     }
 
     initEvents() {
