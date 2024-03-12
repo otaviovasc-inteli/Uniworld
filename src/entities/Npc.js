@@ -16,6 +16,10 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
     // Track how many Npc is in the scene
     Npc.instanceCount++;
+    // This is just to not recriate animations.
+    if(Npc.instanceCount <= 1) {
+      initAnimations(this.scene.anims);
+    }
 
     // Create interactKeyImage
     this.interactKeyImage = this.scene.add.image(x, y - 120, 'Ekey').setScale(0.1).setAlpha(0)
@@ -33,10 +37,6 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.interactKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
     // Set dialog sound
     this.dialogSound = this.scene.sound.add('dialog_sound', {loop: false, volume: 0.5, rate: 2})
-
-    // This is just to not recriate animations.
-    if(Npc.instanceCount <= 1);
-      initAnimations(this.scene.anims);
 
     // Set texts modularly
     try {
@@ -210,10 +210,19 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         answerButton.on('pointerdown', () => {
             if (letter === correctAnswerLetter) {
                 console.log('Correct answer!');
-                this.nextQuestion();
+                this.scene.sound.add('select_sound', {loop: false, volume: 0.7}).play()
+                // Make the button green to indicate correct answer
+                answerButton.setTint(0x00ff00);
+                this.scene.time.delayedCall(500, () => {
+                  this.nextQuestion();
+                })
             } else {
                 console.log('Wrong answer!');
-                this.nextQuestion();
+                this.scene.sound.add('select_sound', {loop: false, volume: 0.7}).play()
+                answerButton.setTint(0xff0000);
+                this.scene.time.delayedCall(500, () => {
+                  this.nextQuestion();
+                })
             }
         });
     });
