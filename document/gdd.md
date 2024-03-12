@@ -409,9 +409,11 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 5.1. Casos de Teste
 
-*Descreva nesta seção os casos de teste comuns que podem ser executados a qualquer momento para testar o funcionamento e integração das partes do jogo. Utilize tabelas para facilitar a organização.*
+Primeiramente, os casos de testes são fundamentais para validar a procedência do jogo, garantindo que o mesmo funcione corretamente e evitando que os jogadores encontrem bugs e erros durante a experiência de jogo. Em outras palavras, realizamos testes com o objetivo de confirmar a funcionalidade do jogo.
 
-*Exemplo de tabela*
+Nesse sentido, conduzimos esses testes com a participação de jovens, incluindo nós mesmos, com idades entre 18 e 20 anos. As avaliações foram realizadas no período de fevereiro a março de 2024. A seguir, apresentamos os resultados desses testes
+
+
 \# | pré-condição do teste | o que ocorre no teste | resultado esperado do teste
 --- | --- | --- | --- 
 1 | Abrir tela inicial do jogo | Clicar no botão “play” | Iniciar cena 1
