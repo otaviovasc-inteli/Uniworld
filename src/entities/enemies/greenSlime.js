@@ -2,34 +2,36 @@ import Enemy from "./enemy.js";
 import initAnimations from "./anims/SlimeAnims.js";
 
 export default class greenSlime extends Enemy {
-    constructor(scene, x, y, slime_name) {
-        super(scene, x, y, slime_name);
-        initAnimations(scene.anims);
-        this.initEvents();
-        this.initSlime();
+  constructor(scene, x, y, slime_name) {
+    super(scene, x, y, slime_name);
+    initAnimations(scene.anims);
+    this.initEvents();
+    this.initSlime();
+  }
 
-    }
+  initSlime() {
+    this.setSize(128, 76.8);
+    this.setScale(0.6);
+    this.body.offset.x = 0;
+    this.body.offset.y = 0;
+    this.slimeJump = false;
+  }
 
-    initSlime() {
-        this.setSize(128, 76.8);
-        this.setScale(.6);
-        this.body.offset.x = 0
-        this.body.offset.y = 0
+  initEvents() {
+    this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
+  }
 
-        console.log(this.body)
-    }
-
-    initEvents() {
-        this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
-    }
-
-    update() {
-        this.setVelocityX(-30)
-        if(this.velocityX != 0) {
-            this.play("greenSlime_jump", true)
-        }
-        if (this.velocityX < 0) {
-            this.setFlip(true, false)
-        }
-    }
+  update() {
+    // set slime movements
+    if (this.body.onFloor()) {
+      this.play("greenSlime_idle", true);
+      this.setVelocityX(0);
+      this.setVelocityY(0);
+      this.scene.time.delayedCall(400, () => {
+        this.setVelocityY(-200);
+        this.play("greenSlime_jump", true);
+        this.setVelocityX(-50);
+      });
+    } else {}
+  }
 }
