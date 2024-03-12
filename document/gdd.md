@@ -296,12 +296,12 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ### 3.4.1. Inventário
 
-*\<opcional\> Caso seu jogo utilize itens ou poderes para os personagens obterem, descreva-os aqui, indicando títulos, imagens, meios de obtenção e funções no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
+Aqui está o nosso vestiário de itens presentes no nosso jogo.
 
-*Exemplo de tabela*
+
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | rexona | <img src="../assets/coin.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
+1 | rexona | <img src="../src/assets/sprites/itens/RexonnaSpritesheet.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
 2 | omo | <img src="../assets/wood.png"> |  | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
 3 | kibon | <img src="../assets/wood.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
 4 | coração | <img src="../assets/wood.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
@@ -411,9 +411,11 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 5.1. Casos de Teste
 
-*Descreva nesta seção os casos de teste comuns que podem ser executados a qualquer momento para testar o funcionamento e integração das partes do jogo. Utilize tabelas para facilitar a organização.*
+Primeiramente, os casos de testes são fundamentais para validar a procedência do jogo, garantindo que o mesmo funcione corretamente e evitando que os jogadores encontrem bugs e erros durante a experiência de jogo. Em outras palavras, realizamos testes com o objetivo de confirmar a funcionalidade do jogo.
 
-*Exemplo de tabela*
+Nesse sentido, conduzimos esses testes com a participação de jovens, incluindo nós mesmos, com idades entre 18 e 20 anos. As avaliações foram realizadas no período de fevereiro a março de 2024. A seguir, apresentamos os resultados desses testes
+
+
 \# | pré-condição do teste | o que ocorre no teste | resultado esperado do teste
 --- | --- | --- | --- 
 1 | Abrir tela inicial do jogo | Clicar no botão “play” | Iniciar cena 1
@@ -422,15 +424,14 @@ Licensas: https://mixkit.co/license/#sfxFree
 4 | Posicionar o personagem em frente ao Rexona | Apertar tecla de interação com o Rexona | Pegar o item Rexona
 5 | Posicionar o personagem em frente à porta do quarto | Passar pela porta do quarto | Encerrar cena e Iniciar cena 2
 6 |  entrar no jogo | apertar “E” na frente do NPC | interagir com o  NPC
-7 |  entrar no jogo | pular no primeiro buraco   | reiniciar o jogo
-8 |  entrar no jogo | apertar várias vezes o botão “E” na frente do npc   | o jogo não bugar
-9 |  entrar no jogo | apertar ‘E” com coletáveis   | coletar o item
-10 | entrar no jogo | alguém, que nunca jogou o jogo, vai passar todo o jogo | conseguir finalizar 
-11 | entrar no jogo | alguém, que nunca jogou o jogo, enfrentar os inimigos fáceis | conseguir finalizar
-12 | entrar no jogo |  alguém, que nunca jogou, enfrentar o boss | conseguir matá-lo
-13 | entrar no jogo |   pular,correr,ficar parado | movimentação fluida das sprites 
-14 | entrar no menu  |   ativar e desativar o  som | o som parar (ao clicar em desativar) e voltar (ao clicar em ativar)  
-15 | entrar na seleção de personagem |  selecionar personagem | o jogo iniciar com o personagem selecionado 
+7 |  entrar no jogo | apertar várias vezes o botão “E” na frente do npc   | o jogo não bugar
+8 |  entrar no jogo | apertar ‘E” com coletáveis   | coletar o item
+9 | entrar no jogo | alguém, que nunca jogou o jogo, vai passar todo o jogo | conseguir finalizar 
+10 | entrar no jogo | alguém, que nunca jogou o jogo, enfrentar os inimigos fáceis | conseguir finalizar
+11 | entrar no jogo |  alguém, que nunca jogou, enfrentar o boss | conseguir matá-lo
+12 | entrar no jogo |   pular,correr,ficar parado | movimentação fluida das sprites 
+13 | entrar no menu  |   ativar e desativar o  som | o som parar (ao clicar em desativar) e voltar (ao clicar em ativar)  
+14 | entrar na seleção de personagem |  selecionar personagem | o jogo iniciar com o personagem selecionado 
 
 
 
