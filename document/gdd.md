@@ -220,8 +220,17 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no game, cujo o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Para figuras com semblantes, terão 3 opções de etnia. Para semblantes femininos, também haverá 3 opções de etnia. Além disso, os personagens não jogavéis ao longo do jogo possuem diversas etnias e origens.
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no game, cujo o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Para figuras com semblantes, terão 2 opções de etnia. Para semblantes femininos, também haverá 2 opções de etnia. Além disso, os personagens não jogavéis ao longo do jogo possuem diversas etnias e origens.
 Seguem alguns exemplos:*
+
+ <div align="center">
+<sub>Figura 4 - Ilustração do ambiente Quarto</sub>
+<img src="../assets/playerSelecter.jpg" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 ## 3.3. Mundo do jogo (sprints 2 e 3)
 
