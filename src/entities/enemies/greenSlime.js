@@ -32,6 +32,6 @@ export default class greenSlime extends Enemy {
         this.play("greenSlime_jump", true);
         this.setVelocityX(-50);
       });
-    } else {}
+    }
   }
 }

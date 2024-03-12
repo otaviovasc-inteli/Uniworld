@@ -10,6 +10,10 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     scene.physics.add.existing(this);
     this.name = npcName
     this.npcPlayer = player
+
+    this.questionIndex = 0; // Keep track of the current question on quiz
+    this.answerTexts = []
+
     // Track how many Npc is in the scene
     Npc.instanceCount++;
 
@@ -21,6 +25,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   async init() {
+    // Update is enabled by default
+    this.updateEnabled = true;
     // Set layer depth
     this.setDepth(0);
     // Set InteractKey
@@ -47,6 +53,10 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   update() {
+    // Do nothing if update is not enabled
+    if (!this.updateEnabled)
+      return;
+
     // When overlapping
     if (this.scene.physics.overlap(this.npcPlayer, this)) {
       this.interactKeyImage.setAlpha(1)
@@ -76,6 +86,13 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       this.interactKeyImage.setAlpha(0)
       this.name === 'computer' ? this.setFrame(0) : this.play(`${this.name}_idle`, true);
     }
+  }
+
+  pauseUpdate() {
+    this.updateEnabled = false
+  }
+  resumeUpdate() {
+    this.updateEnabled = true
   }
 
   // Help functions
@@ -149,15 +166,89 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   rexonaLogic() {
-    if (this.dialogIndex >= this.texts.length) {
-      this.npcPlayer.damage += 1; // Aumenta o dano do player
-      this.destroyDialog(); // If all messages have been displayed, destroy the dialog window
-      this.destroyInstance() // Destroy NPC(collect item)
-      this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
+    // Parse informations from texts array
+    const currentQuestion = this.texts[this.questionIndex];
+    const questionText = currentQuestion[0];
+    const answers = currentQuestion[1];
+    const correctAnswerLetter = answers[3];
+    this.answerButtons = []
+
+    // Get the camera's center x and y coordinates
+    const centerX = this.scene.cameras.main.centerX;
+    const centerY = this.scene.cameras.main.centerY;
+
+    this.npcPlayer.pauseUpdate() // Make sure player will not move while interacting
+    this.pauseUpdate() // Make sure no other interaction while interacting
+
+    // Make sure not to recreate things
+    this.closeQuiz()
+
+    // Create quiz window
+    this.quizWindow = this.scene.add.image(centerX, centerY, 'quiz_window').setDepth(2);
+
+    // Create 'UniQuiz'
+    this.quizTitle = this.scene.add.text(centerX, centerY - 200, 'UniQuiz', { font: '24px Arial', fill: '#000' }).setOrigin(0.5).setDepth(2);
+
+    // Display the question text, creating or updating it
+    this.quizText = this.scene.add.text(centerX - 220, centerY - 150, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2);
+
+    // Close button logic
+    this.quizXBtn = this.scene.add.image(centerX + 200, centerY - 200, 'hub_close').setInteractive().setDepth(3).setScale(0.05);
+    this.quizXBtn.on('pointerdown', () => this.closeQuiz());
+
+    // Display each answer button
+    ['A', 'B', 'C'].forEach((letter, index) => {
+        // Determine button image based on letter
+        let buttonImage = `quiz_button_${letter}`;
+        let answerButton = this.scene.add.image(centerX + (index * 172) - 172, centerY + 170, buttonImage).setScale(3.8).setInteractive().setDepth(2);
+        this.answerButtons.push(answerButton)
+
+        // Answers text
+        this.answerTexts.push(this.scene.add.text(centerX - 220, centerY + (70 * index) - 80, answers[index], { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2))
+
+        // Checking if the selected button is the correct answer
+        answerButton.on('pointerdown', () => {
+            if (letter === correctAnswerLetter) {
+                console.log('Correct answer!');
+                this.nextQuestion();
+            } else {
+                console.log('Wrong answer!');
+                this.nextQuestion();
+            }
+        });
+    });
+  }
+
+  nextQuestion() {
+    this.questionIndex++;
+    if (this.questionIndex < this.texts.length) {
+        // this.scene.restart(); // Or another way to refresh your question display
+        this.closeQuiz()
+        this.rexonaLogic()
     } else {
-      this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
-      this.createDialog(this.texts); // Show the next message
+        console.log('End of quiz');
+        this.npcPlayer.resumeUpdate() // Make sure player will not move while interacting
+        this.resumeUpdate() // Make sure no other interaction while interacting
+        this.closeQuiz()
+        this.questionIndex = 0
     }
+  }
+
+  closeQuiz() {
+    // Close button logic to destroy the quiz interface
+    if (this.quizWindow) this.quizWindow.destroy();
+    if (this.quizText) this.quizText.destroy();
+    if (this.quizTitle) this.quizTitle.destroy();
+    this.answerButtons.forEach(button => button.destroy());
+    this.answerTexts.forEach(text => text.destroy());
+    if (this.quizXBtn) this.quizXBtn.destroy();
+
+    // Resetting the flags and references
+    this.quizWindow = null;
+    this.quizText = null;
+    this.quizTitle = null;
+    this.answerButtons = [];
+    this.quizXBtn = null;
   }
 
   // Build hub images links and texts
@@ -171,7 +262,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     // Those if's check if the element already exists so it wont double them.
     // Add hub screen and x button if they dont exist already
     if (!this.screen) this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y - 50, "hub_screen").setDepth(2)
-    if (!this.xBtn) this.xBtn = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 290, "hub_close").setDepth(3).setScale(0.05)
+    if (!this.xBtnLink) this.xBtnLink = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 290, "hub_close").setDepth(3).setScale(0.05)
 
     // Clickable links
     if (!this.link_button1) this.link_button1 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 110  - 50, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
@@ -206,14 +297,14 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.npcPlayer.pauseUpdate()
 
     // Close button loginc
-    this.xBtn.setInteractive()
-    this.xBtn.on('pointerdown', () => {
+    this.xBtnLink.setInteractive()
+    this.xBtnLink.on('pointerdown', () => {
       // Destroy images and end function
       this.npcPlayer.resumeUpdate()
       this.screen.destroy()
       this.screen = null
-      this.xBtn.destroy()
-      this.xBtn = null
+      this.xBtnLink.destroy()
+      this.xBtnLink = null
       this.link_button1.destroy()
       this.link_button1 = null
       this.link_button2.destroy()

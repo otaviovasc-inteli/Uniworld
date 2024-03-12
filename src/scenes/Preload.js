@@ -47,7 +47,6 @@ export default class Preload extends Phaser.Scene {
     this.load.image('quiz_button_A', 'assets/quiz/quiz_button_A.png');
     this.load.image('quiz_button_B', 'assets/quiz/quiz_button_B.png');
     this.load.image('quiz_button_C', 'assets/quiz/quiz_button_C.png');
-    this.load.image('quiz_button_D', 'assets/quiz/quiz_button_D.png');
     // ------------------------------------------------------------------
     // Players
     this.load.spritesheet("player1", "assets/player/player1.png", { frameWidth: 256, frameHeight: 256 });

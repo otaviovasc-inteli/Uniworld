@@ -38,9 +38,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.jumpSpeed = this.oldPlayer.jumpSpeed || 600;
     this.jumpCount = this.oldPlayer.jumpCount || 0;
     this.consecutiveJumps = this.oldPlayer.consecutiveJumps || 1;
-    this.dashSpeed = this.oldPlayer.dashSpeed || 2000;
+
+    this.dashDistance = this.oldPlayer.dashSpeed || 150;
+    this.dashDuration = this.oldPlayer.dashDuration || 150;
     this.canDash = this.oldPlayer.canDash || false;
-    this.dashDuration = this.oldPlayer.dashDuration || 500;
+
     this.damage = this.oldPlayer.damage || 0;
 
     // Sounds
@@ -130,6 +132,46 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       this.jumpSound.play()
     }
 
+    // Dash logic
+    if (isWJustDown && this.canDash) {
+      let dashX = 0;
+      let dashY = 0;
+
+      if (left.isDown) dashX = -1;
+      else if (right.isDown) dashX = 1;
+
+      if (up.isDown) dashY = -1;
+      else if (down.isDown) dashY = 1;
+
+      // Calculate the target position for the dash
+      const targetX = this.x + dashX * this.dashDistance;
+      const targetY = this.y + dashY * this.dashDistance;
+
+      this.scene.tweens.add({
+        targets: this,
+        x: targetX,
+        y: targetY,
+        duration: this.dashDuration,
+        onStart: () => {
+          console.log('start dash');
+          this.body.setAllowGravity(false);
+          this.body.enable = false; // Disable physics body during the dash
+        },
+        onComplete: () => {
+          console.log('complete dash');
+          this.body.setAllowGravity(true);
+          this.body.enable = true; // Re-enable physics body
+        }
+      });
+
+      this.canDash = false;
+    }
+
+    // Reset `canDash` when landing on the ground
+    if (onFloor && !this.canDash && !Phaser.Input.Keyboard.JustDown(this.dashKey)) {
+      this.canDash = true;
+    }
+
     // Animation logic for jumping and falling
     if (!onFloor) {
       this.play("player_jump", true);
@@ -137,8 +179,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
     // Reset jump count and dash availability on landing
     if (onFloor) {
-      this.jumpCount = 0;
-      this.canDash = true;
+      this.jumpCount = 0
     }
   }
 }
