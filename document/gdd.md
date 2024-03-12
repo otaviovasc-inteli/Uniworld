@@ -301,7 +301,7 @@ Aqui está o nosso vestiário de itens presentes no nosso jogo.
 
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | rexona | <img src="/src/assets/sprites/itens/RexonnaSpritesheet.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
+1 | rexona | <img src="../src/assets/sprites/itens/RexonnaSpritesheet.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
 2 | omo | <img src="../assets/wood.png"> |  | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
 3 | kibon | <img src="../assets/wood.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
 4 | coração | <img src="../assets/wood.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
