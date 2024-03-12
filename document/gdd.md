@@ -9,7 +9,7 @@
 
 #### Nomes dos integrantes do grupo
 
-<img src= "src/assets/titleScreen/sky.png">
+<img src= "assets/titleScreen/sky.png">
 
 ## Sumário
 
