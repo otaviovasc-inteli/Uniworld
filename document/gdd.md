@@ -314,8 +314,8 @@ Licensas: https://mixkit.co/license/#sfxFree
 *Exemplo de tabela*
 \# | Inimigo |  | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | Slime verde | <img src="../../2024-T0012-IN01-G02/src/assets/enemies/green_slime.png"> | Primeira cena de combate | Vindo pulando pelo chão em sua direção, com velocidade constante e atirando parafusos, tendo 2 de vida e 1 de dano por ataque, com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
-2 | Slime roxo | <img src="../../2024-T0012-IN01-G02/src/assets/enemies/purple_slime.png"> | Primeira cena de combate | Vindo pulando pelo chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque, com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
+1 | Slime verde | <img src="../../2024-T0012-IN01-G02/src/assets/enemies/green_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
+2 | Slime roxo | <img src="../../2024-T0012-IN01-G02/src/assets/enemies/purple_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
 4 | Fumaçinha |  Na primeira cena de combate | Atacar o personagem, vindo pelo chão em sua direção, com velocidade constante e atirando parafusos | Caso o jogador encoste no inimigo ou no parafuso arremessado, o personagem perde 1 ponto de vida | Sons de tiros e engrenagens girando
 2 | robô voador | <img src="../assets/inimigo2.PNG"> | Na segunda cena de combate | Atacar o personagem, vindo pelo ar, fazendo movimento em 'V' quando se aproxima | se encostar e o personagem perde 3 pontos de vida | Som de hélice
 3 | ... 
