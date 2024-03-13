@@ -36,6 +36,17 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet('aviao_unilever', 'assets/level2/aviao_unilever.png', { frameWidth: 256, frameHeight: 144 });
     this.load.spritesheet('balao_unilever', 'assets/level2/balao_unilever.png', { frameWidth: 192, frameHeight: 256 });
     // ------------------------------------------------------------------
+    // Level3
+    this.load.tilemapTiledJSON('level3', 'assets/level3/mundo_cidade.json');
+    this.load.image('clouds1', 'assets/level3/nuvem6.png')
+    this.load.image('clouds2', 'assets/level3/nuvens.png')
+    this.load.image('clouds3', 'assets/level3/Nuvens2.png')
+    this.load.image('city_platform', 'assets/level3/plat.png')
+    this.load.image('road', 'assets/level3/road.png')
+    this.load.image('predios_env', 'assets/level3/predios.png')
+    this.load.image('ceu_env', 'assets/level3/ceu.png')
+
+    // ------------------------------------------------------------------
     // Hub
     this.load.spritesheet('hub_sprite', 'assets/level2/dvd_npc.png', { frameWidth: 256, frameHeight: 160 });
     this.load.image('hub_screen', 'assets/links/links_screen.png');

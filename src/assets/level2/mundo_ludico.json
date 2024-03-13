@@ -293,7 +293,6 @@
         {
          "draworder":"topdown",
          "id":2,
-         "locked":true,
          "name":"player_zones",
          "objects":[
                 {
@@ -317,8 +316,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":9496,
-                 "y":1660
+                 "x":348.187624744079,
+                 "y":1648.67212083071
                 }],
          "opacity":1,
          "type":"objectgroup",
