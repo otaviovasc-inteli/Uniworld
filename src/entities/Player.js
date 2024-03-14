@@ -26,9 +26,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   init() {
     // Controls
     this.cursors = this.scene.input.keyboard.createCursorKeys();
-    this.dashKey = this.scene.input.keyboard.addKey(
-      Phaser.Input.Keyboard.KeyCodes.W
-    );
+    this.dashKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
+    this.attackKey = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.Q);
 
     // Player properties
     this.setDepth(1);
@@ -70,6 +69,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       case "level2":
         this.walkSound = scene.sound.add("grass_sound", {loop: false, volume: 0.8, rate: 0.65});
         break;
+      case "level3":
+        this.walkSound = scene.sound.add("grass_sound", {loop: false, volume: 0.8, rate: 0.65});
+        break;
       // add mais dps
       default:
         break;
@@ -90,6 +92,13 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.updateEnabled = true;
   }
 
+  collectRexona() {
+    console.log("Collect Rexona");
+    this.damage = 1;
+    this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
+    this.resumeUpdate()
+  }
+
   update() {
     // If player update is paused, do nothing
     if (!this.updateEnabled) {
@@ -98,6 +107,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     const { left, right, down, up } = this.cursors;
     const isWJustDown = Phaser.Input.Keyboard.JustDown(this.dashKey);
+    const isQJustDown = Phaser.Input.Keyboard.JustDown(this.attackKey);
     const isUpJustDown = Phaser.Input.Keyboard.JustDown(up);
     const onFloor = this.body.onFloor();
 
@@ -132,6 +142,15 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       this.jumpSound.play()
     }
 
+    // Attack Logic
+    if (isQJustDown) {
+      this.pauseUpdate()
+      this.play("player_attack", true)
+      this.scene.time.delayedCall(150, () => {
+        this.resumeUpdate()
+      })
+    }
+
     // Dash logic
     if (isWJustDown && this.canDash) {
       let dashX = 0;
@@ -142,6 +161,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
       if (up.isDown) dashY = -1;
       else if (down.isDown) dashY = 1;
+
+      this.pauseUpdate()
+      this.play('player_dash', true)
+      this.scene.sound.add("dash_sound", {loop: false, volume: 0.2, rate: 1.2}).play()
 
       // Calculate the target position for the dash
       const targetX = this.x + dashX * this.dashDistance;
@@ -163,6 +186,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
           this.body.enable = true; // Re-enable physics body
         }
       });
+      this.resumeUpdate()
 
       this.canDash = false;
     }

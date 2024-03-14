@@ -9,7 +9,7 @@
 
 #### Nomes dos integrantes do grupo
 
-
+<img src= "assets/titleScreen/sky.png">
 
 ## Sumário
 
@@ -265,7 +265,7 @@ Seguem alguns exemplos:*
 
 ### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo não apresentará mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários foram projetados com um tempo ensolarado que permeia do início ao fim do jogo Além disso, a passagem do tempo não possui influência no mundo do jogo, devido a pedido do próprio parceiro sobre a criação de poucas ou nenhuma limitaçõe para conclusão do onboarding.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogo apresentará algumas mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários da segunda cena foram projetados com um tempo ensolarado que permeia do início ao fim. Além disso, a passagem do tempo não possui influência no mundo do jogo, devido a pedido do próprio parceiro sobre a criação de poucas ou nenhuma limitaçõe para conclusão do onboarding.*
 
 ### 3.3.4. Concept Art (sprint 2)
 
@@ -296,27 +296,20 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ### 3.4.1. Inventário
 
-*\<opcional\> Caso seu jogo utilize itens ou poderes para os personagens obterem, descreva-os aqui, indicando títulos, imagens, meios de obtenção e funções no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
-
-*Exemplo de tabela*
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | rexona | <img src="../assets/coin.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
-2 | omo | <img src="../assets/wood.png"> |  | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
-3 | kibon | <img src="../assets/wood.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
-4 | coração | <img src="../assets/wood.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
-
+1 | rexona | <img src= "../assets/inventario/rexonnaSpritesheet.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
+2 | omo | <img src="../assets/inventario/omoSpritesheetx4.png"> | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
+3 | kibon | <img src="../assets/inventario/sorveteSpritesheetx4.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
+4 | coração | <img src="../assets/inventario/coracaoSpritesheet.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
 
 ### 3.4.2. Bestiário
 
-*\<opcional\> Caso seu jogo tenha inimigos, descreva-os aqui, indicando nomes, imagens, momentos de aparição, funções e impactos no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
-
-*Exemplo de tabela*
-\# | inimigo |  | ocorrências | função | impacto | efeito sonoro
+\# | Inimigo |  | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | fumaçinha | <img src="../assets/inimigo2.PNG"> |  a partir da fase 1 | ataca o personagem vindo pelo chão em sua direção, com velocidade constante, atirando parafusos | se encostar no inimigo ou no parafuso arremessado, o personagem perde 1 ponto de vida | sons de tiros e engrenagens girando
-2 | robô voador | <img src="../assets/inimigo1.PNG"> | a partir da fase 2 | ataca o personagem vindo pelo ar, fazendo movimento em 'V' quando se aproxima | se encostar, o personagem perde 3 pontos de vida | som de hélice
-3 | ... 
+1 | Slime verde | <img src="../assets/bestiario/green_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
+2 | Slime roxo | <img src="../assets/bestiario/purple_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
+3 | Fumaçinha | <img src="../assets/bestiario/smoke.png"> | Segunda cena de combate | Anda na direção do player e possui 2 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
@@ -330,11 +323,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 3.6. Regras do jogo (sprint 3)
 
-*Descreva aqui as regras do seu jogo: objetivos/desafios, meios para se conseguir alcançar*
-
-*Ex. O jogador deve pilotar o carro e conseguir terminar a corrida dentro de um minuto sem bater em nenhum obstáculo.*
-
-*Ex. O jogador deve concluir a fase, derrotando os inimigos e coletando os pedaços do logo da Unilever. Além disso, no final da fase, deve derrotar um boss e responder um quiz. Caso ele acerte o quiz, ele terá uma bonificação em alguma habilidade (força, alcance, velocidade...). Além disso, caso o jogador consiga formar a logo da Unilever espalhada pelo mapa, reunindo os pedaços, ele ganha uma vida extra. O jogador deve concluir a fase dentro do tempo, para obter uma estrela. Se além disso ele coletar todas as moedas, ganha mais uma estrela. E se além disso ele coletar os três medalhões espalhados, ganha mais uma estrela, totalizando três. Ao final do jogo, obtendo três estrelas em todas as fases, desbloqueia o mundo secreto.*  
+&nbsp;&nbsp;&nbsp;&nbsp;O jogador deve concluir a fase, derrotando os inimigos, ganhando power ups e coletando os pedaços do logo da Unilever. Além disso, no final da fase, deve derrotar um boss e responder um quiz. Caso ele acerte o quiz, ele terá uma bonificação em alguma habilidade (força, alcance, velocidade...). Além disso, caso o jogador consiga formar a logo da Unilever espalhada pelo mapa, reunindo os pedaços, ele ganha uma vida extra.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
@@ -409,9 +398,11 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 5.1. Casos de Teste
 
-*Descreva nesta seção os casos de teste comuns que podem ser executados a qualquer momento para testar o funcionamento e integração das partes do jogo. Utilize tabelas para facilitar a organização.*
+Primeiramente, os casos de testes são fundamentais para validar a procedência do jogo, garantindo que o mesmo funcione corretamente e evitando que os jogadores encontrem bugs e erros durante a experiência de jogo. Em outras palavras, realizamos testes com o objetivo de confirmar a funcionalidade do jogo.
 
-*Exemplo de tabela*
+Nesse sentido, conduzimos esses testes com a participação de jovens, incluindo nós mesmos, com idades entre 18 e 20 anos. As avaliações foram realizadas no período de fevereiro a março de 2024. A seguir, apresentamos os resultados desses testes
+
+
 \# | pré-condição do teste | o que ocorre no teste | resultado esperado do teste
 --- | --- | --- | --- 
 1 | Abrir tela inicial do jogo | Clicar no botão “play” | Iniciar cena 1
@@ -420,15 +411,14 @@ Licensas: https://mixkit.co/license/#sfxFree
 4 | Posicionar o personagem em frente ao Rexona | Apertar tecla de interação com o Rexona | Pegar o item Rexona
 5 | Posicionar o personagem em frente à porta do quarto | Passar pela porta do quarto | Encerrar cena e Iniciar cena 2
 6 |  entrar no jogo | apertar “E” na frente do NPC | interagir com o  NPC
-7 |  entrar no jogo | pular no primeiro buraco   | reiniciar o jogo
-8 |  entrar no jogo | apertar várias vezes o botão “E” na frente do npc   | o jogo não bugar
-9 |  entrar no jogo | apertar ‘E” com coletáveis   | coletar o item
-10 | entrar no jogo | alguém, que nunca jogou o jogo, vai passar todo o jogo | conseguir finalizar 
-11 | entrar no jogo | alguém, que nunca jogou o jogo, enfrentar os inimigos fáceis | conseguir finalizar
-12 | entrar no jogo |  alguém, que nunca jogou, enfrentar o boss | conseguir matá-lo
-13 | entrar no jogo |   pular,correr,ficar parado | movimentação fluida das sprites 
-14 | entrar no menu  |   ativar e desativar o  som | o som parar (ao clicar em desativar) e voltar (ao clicar em ativar)  
-15 | entrar na seleção de personagem |  selecionar personagem | o jogo iniciar com o personagem selecionado 
+7 |  entrar no jogo | apertar várias vezes o botão “E” na frente do npc   | o jogo não bugar
+8 |  entrar no jogo | apertar ‘E” com coletáveis   | coletar o item
+9 | entrar no jogo | alguém, que nunca jogou o jogo, vai passar todo o jogo | conseguir finalizar 
+10 | entrar no jogo | alguém, que nunca jogou o jogo, enfrentar os inimigos fáceis | conseguir finalizar
+11 | entrar no jogo |  alguém, que nunca jogou, enfrentar o boss | conseguir matá-lo
+12 | entrar no jogo |   pular,correr,ficar parado | movimentação fluida das sprites 
+13 | entrar no menu  |   ativar e desativar o  som | o som parar (ao clicar em desativar) e voltar (ao clicar em ativar)  
+14 | entrar na seleção de personagem |  selecionar personagem | o jogo iniciar com o personagem selecionado 
 
 
 

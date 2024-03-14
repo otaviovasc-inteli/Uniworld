@@ -1,10 +1,8 @@
 import Enemy from "./enemy.js";
-import initAnimations from "./anims/SlimeAnims.js";
 
 export default class greenSlime extends Enemy {
   constructor(scene, x, y, slime_name) {
     super(scene, x, y, slime_name);
-    initAnimations(scene.anims);
     this.initEvents();
     this.initSlime();
   }
