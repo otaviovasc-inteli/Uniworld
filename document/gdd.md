@@ -296,12 +296,8 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ### 3.4.1. Inventário
 
-Aqui está o nosso vestiário de itens presentes no nosso jogo.
-
-
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-<<<<<<< Updated upstream
 1 | rexona | <img src= "../assets/inventario/rexonnaSpritesheet.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
 2 | omo | <img src="../assets/inventario/omoSpritesheetx4.png"> |  | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
 3 | kibon | <img src="../assets/inventario/sorveteSpritesheetx4.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
@@ -309,14 +305,11 @@ Aqui está o nosso vestiário de itens presentes no nosso jogo.
 
 ### 3.4.2. Bestiário
 
-*\<opcional\> Caso seu jogo tenha inimigos, descreva-os aqui, indicando nomes, imagens, momentos de aparição, funções e impactos no jogo. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.* 
-
-*Exemplo de tabela*
 \# | Inimigo |  | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-<<<<<<< Updated upstream
 1 | Slime verde | <img src="../assets/bestiario/green_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
 2 | Slime roxo | <img src="../assets/bestiario/purple_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
+3 | Fumaçinha | <img src="../assets/bestiario/smoke.png"> | Segunda cena de combate | Anda na direção do player e possui 2 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
@@ -330,11 +323,7 @@ Aqui está o nosso vestiário de itens presentes no nosso jogo.
 
 ## 3.6. Regras do jogo (sprint 3)
 
-*Descreva aqui as regras do seu jogo: objetivos/desafios, meios para se conseguir alcançar*
-
-*Ex. O jogador deve pilotar o carro e conseguir terminar a corrida dentro de um minuto sem bater em nenhum obstáculo.*
-
-*Ex. O jogador deve concluir a fase, derrotando os inimigos e coletando os pedaços do logo da Unilever. Além disso, no final da fase, deve derrotar um boss e responder um quiz. Caso ele acerte o quiz, ele terá uma bonificação em alguma habilidade (força, alcance, velocidade...). Além disso, caso o jogador consiga formar a logo da Unilever espalhada pelo mapa, reunindo os pedaços, ele ganha uma vida extra. O jogador deve concluir a fase dentro do tempo, para obter uma estrela. Se além disso ele coletar todas as moedas, ganha mais uma estrela. E se além disso ele coletar os três medalhões espalhados, ganha mais uma estrela, totalizando três. Ao final do jogo, obtendo três estrelas em todas as fases, desbloqueia o mundo secreto.*  
+&nbsp;&nbsp;&nbsp;&nbsp;O jogador deve concluir a fase, derrotando os inimigos, ganhando power ups e coletando os pedaços do logo da Unilever. Além disso, no final da fase, deve derrotar um boss e responder um quiz. Caso ele acerte o quiz, ele terá uma bonificação em alguma habilidade (força, alcance, velocidade...). Além disso, caso o jogador consiga formar a logo da Unilever espalhada pelo mapa, reunindo os pedaços, ele ganha uma vida extra.*  
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
