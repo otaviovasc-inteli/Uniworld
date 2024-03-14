@@ -323,7 +323,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 3.6. Regras do jogo (sprint 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;O jogador deve concluir a fase, derrotando os inimigos, ganhando power ups e coletando os pedaços do logo da Unilever. Além disso, no final da fase, deve derrotar um boss e responder um quiz. Caso ele acerte o quiz, ele terá uma bonificação em alguma habilidade (força, alcance, velocidade...). Além disso, caso o jogador consiga formar a logo da Unilever espalhada pelo mapa, reunindo os pedaços, ele ganha uma vida extra.*  
+&nbsp;&nbsp;&nbsp;&nbsp;O jogador deve concluir a fase, derrotando os inimigos, ganhando power ups e coletando os pedaços do logo da Unilever. Além disso, no final da fase, deve derrotar um boss e responder um quiz. Caso ele acerte o quiz, ele terá uma bonificação em alguma habilidade (força, alcance, velocidade...). Além disso, caso o jogador consiga formar a logo da Unilever espalhada pelo mapa, reunindo os pedaços, ele ganha uma vida extra.
 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
