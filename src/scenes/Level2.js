@@ -57,23 +57,7 @@ export default class Level2 extends Phaser.Scene {
     });
     this.createEndOfLevel(playerZones.end, player);
     this.setupFollowupCameraOn(player, map);
-
-    // Creates line configurations (makes enemies still on the platforms)
-    this.plotting = false;
-    this.graphics = this.add.graphics();
-    this.line = new Phaser.Geom.Line();
-    this.graphics.lineStyle(1, 0X800080);
-
-    // Makes pointer creates line
-    this.input.on("pointerdown", this.startDrawing, this);
-    this.input.on("pointerup", pointer => this.finishDrawing(pointer, layers.platforms), this);
   }
-
-  startDrawing(pointer) {
-    this.line.x1 = pointer.worldX;
-    this.line.y1 = pointer.worldY;
-    this.plotting = true;
-    }
 
   finishDrawing(pointer, layer) {
     this.line.x2 = pointer.worldX;
@@ -84,9 +68,11 @@ export default class Level2 extends Phaser.Scene {
 
     this.tileHits = layer.getTilesWithinShape(this.line);
 
-    console.log(this.tileHits.length);
-
-    this.plotting = false;
+    if(this.tileHits.length > 0) {
+      this.tileHits.forEach(tile => {
+        tile.index !== -1 && tile.setCollision(true);
+      });
+    }
       }
 
   //create player in scene
