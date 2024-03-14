@@ -12,7 +12,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.npcPlayer = player
 
     this.questionIndex = 0; // Keep track of the current question on quiz
+    this.questionsCorrectCount = 0; // Track correct answers on quiz
     this.answerTexts = []
+    this.isDestroyed = false; // Track if this instance is destroyed
 
     // Track how many Npc is in the scene
     Npc.instanceCount++;
@@ -76,7 +78,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
               this.hubLogic();
             break;
           default:
-            console.log('Npc name wrong');;
+            throw new Error('Npc name not found')
         }
       }
     }
@@ -95,15 +97,42 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.updateEnabled = true
   }
 
-  // Help functions
+
   destroyInstance() {
+    // If already destroyed, do nothing
+    if (this.isDestroyed) return;
+
+    // Mark this instance as destroyed
+    this.isDestroyed = true;
+
     // Unregister the update function from the scene's update event
     this.scene.events.removeListener(Phaser.Scenes.Events.UPDATE, this.update, this);
 
     // Destroy interaction button image
-    this.interactKeyImage.destroy()
+    if (this.interactKeyImage)
+      this.interactKeyImage.destroy()
 
-    // Call the superclass destroy method
+    // Remove physics from NPC
+    if (this.body) {
+      this.scene.physics.world.remove(this.body)
+    }
+
+    // Destroy dialog and quiz elements
+    this.destroyDialog();
+    this.closeQuiz();
+
+    // Destroy any additional dynamic elements
+    if (this.dialogImage) {
+      this.dialogImage.destroy();
+      this.dialogImage = null;
+    }
+
+    // Ensure all interactive keys are removed
+    if (this.interactKey) {
+      this.interactKey.destroy();
+    }
+
+    // Finally, call the superclass destroy method
     super.destroy();
   }
 
@@ -180,21 +209,18 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.npcPlayer.pauseUpdate() // Make sure player will not move while interacting
     this.pauseUpdate() // Make sure no other interaction while interacting
 
-    // Make sure not to recreate things
-    this.closeQuiz()
-
     // Create quiz window
     this.quizWindow = this.scene.add.image(centerX, centerY, 'quiz_window').setDepth(2);
 
     // Create 'UniQuiz'
-    this.quizTitle = this.scene.add.text(centerX, centerY - 200, 'UniQuiz', { font: '24px Arial', fill: '#000' }).setOrigin(0.5).setDepth(2);
+    this.quizTitle = this.scene.add.text(centerX, centerY - 210, 'UniQuiz', { font: '24px Arial', fill: '#000' }).setOrigin(0.5).setDepth(2);
 
     // Display the question text, creating or updating it
-    this.quizText = this.scene.add.text(centerX - 220, centerY - 180, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2);
+    this.quizText = this.scene.add.text(centerX - 210, centerY - 180, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2);
 
     // Close button logic
-    this.quizXBtn = this.scene.add.image(centerX + 200, centerY - 200, 'hub_close').setInteractive().setDepth(3).setScale(0.05);
-    this.quizXBtn.on('pointerdown', () => this.closeQuiz());
+    this.quizXBtn = this.scene.add.image(centerX + 200, centerY - 210, 'hub_close').setInteractive().setDepth(3).setScale(0.025);
+    this.quizXBtn.on('pointerdown', () => this.closeQuiz(true));
 
     // Display each answer button
     ['A', 'B', 'C'].forEach((letter, index) => {
@@ -204,21 +230,21 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         this.answerButtons.push(answerButton)
 
         // Answers text
-        this.answerTexts.push(this.scene.add.text(centerX - 220, centerY + (65 * index) - 100, answers[index], { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2))
+        this.answerTexts.push(this.scene.add.text(centerX - 210, centerY + (55 * index) - 80, answers[index], { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2))
 
         // Checking if the selected button is the correct answer
         answerButton.on('pointerdown', () => {
             if (letter === correctAnswerLetter) {
                 console.log('Correct answer!');
+                this.questionsCorrectCount++; // Increase correct answers counter
                 this.scene.sound.add('select_sound', {loop: false, volume: 0.7}).play()
-                // Make the button green to indicate correct answer
-                answerButton.setTint(0x00ff00);
-                this.scene.time.delayedCall(500, () => {
+                answerButton.setTint(0x00ff00); // Make the button green to indicate correct answer
+                this.scene.time.delayedCall(500, () => { // This delayedCall add time so player can see the button turning green
                   this.nextQuestion();
                 })
             } else {
                 console.log('Wrong answer!');
-                this.scene.sound.add('select_sound', {loop: false, volume: 0.7}).play()
+                this.scene.sound.add('select_sound', {loop: false, volume: 0.7, rate: 0.5}).play()
                 answerButton.setTint(0xff0000);
                 this.scene.time.delayedCall(500, () => {
                   this.nextQuestion();
@@ -228,22 +254,33 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     });
   }
 
+  // Uma função recursiva para chamar o quiz novamente (não, não foi chat gpt)
   nextQuestion() {
     this.questionIndex++;
     if (this.questionIndex < this.texts.length) {
-        // this.scene.restart(); // Or another way to refresh your question display
+        this.resumeUpdate()
         this.closeQuiz()
+        // Chama rexonaLogic denovo mas na proxima questão, por causa do this.questionIndex++;
         this.rexonaLogic()
     } else {
         console.log('End of quiz');
         this.npcPlayer.resumeUpdate() // Make sure player will not move while interacting
-        this.resumeUpdate() // Make sure no other interaction while interacting
         this.closeQuiz()
-        this.questionIndex = 0
+        console.log('correct questions: '+ this.questionsCorrectCount);
+        console.log('ammount of questions: '+ this.texts.length);
+        if (this.questionsCorrectCount === this.texts.length)
+        {
+          this.npcPlayer.collectRexona()
+          this.destroyInstance()
+        }
+        else {
+          this.closeQuiz(true, true)
+        }
+        // this.destroyInstance() // Destroy instance and give powerup if everything is right
     }
   }
 
-  closeQuiz() {
+  closeQuiz(resume, resetVariables) {
     // Close button logic to destroy the quiz interface
     if (this.quizWindow) this.quizWindow.destroy();
     if (this.quizText) this.quizText.destroy();
@@ -258,6 +295,18 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.quizTitle = null;
     this.answerButtons = [];
     this.quizXBtn = null;
+
+    // If closeBtn clicked, resume this.update
+    if(resume) this.resumeUpdate()
+
+    // Reset Variables if needed
+    if (resetVariables) {
+      this.questionIndex = 0
+      this.questionsCorrectCount = 0
+    }
+
+    // Allow the player to move again
+    this.npcPlayer.resumeUpdate();
   }
 
   // Build hub images links and texts
@@ -323,9 +372,13 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       this.link_button4.destroy()
       this.link_button4 = null
       this.text_hub_1.destroy()
+      this.text_hub_1 = null
       this.text_hub_2.destroy()
+      this.text_hub_2 = null
       this.text_hub_3.destroy()
+      this.text_hub_3 = null
       this.text_hub_4.destroy()
+      this.text_hub_4 = null
       return;
     });
   }
