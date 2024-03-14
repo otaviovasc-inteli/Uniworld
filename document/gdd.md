@@ -301,10 +301,10 @@ Aqui está o nosso vestiário de itens presentes no nosso jogo.
 
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | rexona | <img src= "../src/assets/sprites/Itens/RexonnaSpritesheet.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
-2 | omo | <img src="../src/assets/sprites/Itens/OmoSpritesheetx4.png"> |  | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
-3 | kibon | <img src="../src/assets/sprites/Itens/sorveteSpritesheetx4.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
-4 | coração | <img src="../assets/wood.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
+1 | rexona | <img src= "../assets/inventario/rexonnaSpritesheet.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
+2 | omo | <img src="../assets/inventario/omoSpritesheetx4.png"> |  | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
+3 | kibon | <img src="../assets/inventario/sorveteSpritesheetx4.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
+4 | coração | <img src="../assets/inventario/coracaoSpritesheet.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
 
 
 ### 3.4.2. Bestiário
@@ -314,8 +314,8 @@ Aqui está o nosso vestiário de itens presentes no nosso jogo.
 *Exemplo de tabela*
 \# | Inimigo |  | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | Slime verde | <img src="../2024-T0012-IN01-G02/src/assets/enemies/green_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
-2 | Slime roxo | <img src="../../2024-T0012-IN01-G02/src/assets/enemies/purple_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
+1 | Slime verde | <img src="../assets/bestiario/green_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
+2 | Slime roxo | <img src="../assets/bestiario/purple_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
 
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
