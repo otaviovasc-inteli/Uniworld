@@ -70,6 +70,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       case "level2":
         this.walkSound = scene.sound.add("grass_sound", {loop: false, volume: 0.8, rate: 0.65});
         break;
+      case "level3":
+        this.walkSound = scene.sound.add("grass_sound", {loop: false, volume: 0.8, rate: 0.65});
+        break;
       // add mais dps
       default:
         break;

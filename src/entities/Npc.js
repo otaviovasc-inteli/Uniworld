@@ -190,7 +190,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.quizTitle = this.scene.add.text(centerX, centerY - 200, 'UniQuiz', { font: '24px Arial', fill: '#000' }).setOrigin(0.5).setDepth(2);
 
     // Display the question text, creating or updating it
-    this.quizText = this.scene.add.text(centerX - 220, centerY - 150, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2);
+    this.quizText = this.scene.add.text(centerX - 220, centerY - 180, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2);
 
     // Close button logic
     this.quizXBtn = this.scene.add.image(centerX + 200, centerY - 200, 'hub_close').setInteractive().setDepth(3).setScale(0.05);
@@ -204,7 +204,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         this.answerButtons.push(answerButton)
 
         // Answers text
-        this.answerTexts.push(this.scene.add.text(centerX - 220, centerY + (70 * index) - 80, answers[index], { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2))
+        this.answerTexts.push(this.scene.add.text(centerX - 220, centerY + (65 * index) - 100, answers[index], { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2))
 
         // Checking if the selected button is the correct answer
         answerButton.on('pointerdown', () => {

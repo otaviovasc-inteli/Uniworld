@@ -2,6 +2,7 @@
 const rexonaTexts =
 [
   ['Com quantos paus se faz uma canoa?', ['A) 42', 'B) 3', 'C) mais de 1', 'A']], // Question with answers and correct answer
-  ['Qual o nome do cavalo branco de napoleao?', ['A) Preto Claro', 'B) Verde Musgo', 'C) Branco escuro', 'B']]
+  ['Qual o nome do cavalo branco de napoleao?', ['A) Preto Claro', 'B) Verde Musgo', 'C) Branco escuro', 'B']],
+  ['Qual o nome do pai do dvd', ['A) Deodato', 'B) Verde Musgo', 'C) Dono da aliexpress', 'B']]
 ];
 export default rexonaTexts;

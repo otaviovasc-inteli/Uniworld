@@ -25,7 +25,7 @@ export default class Level2 extends Phaser.Scene {
 
     // create enemies
     const enemies = this.createEnemies(layers.enemySpawns);
-    
+
     // RexonaNpc sprite
     const dvdNpc = new Npc(this, 7420, 700, 'hub_sprite', 'hub', player)
     .setSize(100, 120)
@@ -37,7 +37,7 @@ export default class Level2 extends Phaser.Scene {
 
     // Create background
     this.createBg(map)
-    
+
     // Create decorations
     this.createEnv()
 
@@ -57,7 +57,7 @@ export default class Level2 extends Phaser.Scene {
     });
     this.createEndOfLevel(playerZones.end, player);
     this.setupFollowupCameraOn(player, map);
-    
+
     // Creates line configurations (makes enemies still on the platforms)
     this.plotting = false;
     this.graphics = this.add.graphics();
@@ -193,6 +193,7 @@ export default class Level2 extends Phaser.Scene {
 
     this.physics.add.overlap(player, endOfLevel, () => {
       console.log("start level3");
+      this.scene.start("level3")
     });
   }
 
