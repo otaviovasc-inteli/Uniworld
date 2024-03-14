@@ -299,7 +299,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
 1 | rexona | <img src= "../assets/inventario/rexonnaSpritesheet.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
-2 | omo | <img src="../assets/inventario/omoSpritesheetx4.png"> |  | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
+2 | omo | <img src="../assets/inventario/omoSpritesheetx4.png"> | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
 3 | kibon | <img src="../assets/inventario/sorveteSpritesheetx4.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
 4 | coração | <img src="../assets/inventario/coracaoSpritesheet.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
 
