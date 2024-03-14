@@ -1,31 +1,53 @@
 import collidable from "../../mixins/collidable.js";
 
 export default class Enemy extends Phaser.Physics.Arcade.Sprite {
-    constructor(scene, x, y, key) {
-        super(scene, x, y, key);
+  constructor(scene, x, y, key) {
+    super(scene, x, y, key);
 
-        scene.add.existing(this);
-        scene.physics.add.existing(this);
+    scene.add.existing(this);
+    scene.physics.add.existing(this);
 
-        // Mixins
-        Object.assign(this, collidable)
+    // Mixins
+    Object.assign(this, collidable);
 
-        this.init();
-        this.initEvents();
-    }
+    this.init();
+    this.initEvents();
+  }
 
-    init() {
-        this.gravity = 1000;
-        this.speed = 150
+  init() {
+    this.gravity = 1000;
+    this.speed = 150;
+    this.rayGraphics = this.scene.add.graphics({
+      lineStyle: { width: 2, color: 0xaa00aa },
+    });
 
-        this.body.setGravityY(this.gravity);
-        this.setCollideWorldBounds(true);
-        this.setOrigin(0.5, 1);
-        this.setImmovable(true);
-        this.setSize(this.width, this.height);
-    }
+    this.body.setGravityY(this.gravity);
+    this.setCollideWorldBounds(true);
+    this.setOrigin(0.5, 1);
+    this.setImmovable(true);
+    this.setSize(this.width, this.height);
+  }
 
-    initEvents() {
-        this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
-    }
+  initEvents() {
+    this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
+  }
+
+  update() {
+    const ray = this.raycast(this.body);
+
+    this.rayGraphics.clear();
+    this.rayGraphics.strokeLineShape(ray);
+  }
+
+  raycast(body, rayLength = 30) {
+    const { x, y, width, halfHeight } = body;
+    const line = new Phaser.Geom.Line();
+
+    line.x1 = 0;
+    line.x2 = 0;
+    line.y1 = 0;
+    line.y2 = 0;
+
+    return line;
+  }
 }
