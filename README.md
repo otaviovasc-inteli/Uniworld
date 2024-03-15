@@ -15,7 +15,7 @@
 - <a href="https://www.linkedin.com/in/marlos-do-carmo-guedes-366987250/">Marlos do Carmo Guedes</a>
 - <a href="https://www.linkedin.com/in/raphaelfelipesilva/">Raphael Silva</a>
 - <a href="https://www.linkedin.com/in/thiago-volcati-a42a94208/">Thiago Martins Volcati de Almeida</a>
-- <a href="https://www.linkedin.com/in/victorbarq/">Igor Sampaio Silva</a>
+- <a href="https://www.linkedin.com/in/igor-sampaio-silva/">Igor Sampaio Silva</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Ricardo Planas</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">David Deodato Alvarenga Nascimento</a>
 
