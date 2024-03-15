@@ -288,18 +288,20 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | rexona | <img src= "../assets/inventario/rexonnaSpritesheet.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
-2 | omo | <img src="../assets/inventario/omoSpritesheetx4.png"> | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
-3 | kibon | <img src="../assets/inventario/sorveteSpritesheetx4.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
-4 | coração | <img src="../assets/inventario/coracaoSpritesheet.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
+1 | rexona | <img src="../assets/inventario/rexonaImagem.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
+2 | omo | <img src="../assets/inventario/omoImagem.png"> | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
+3 | kibon | <img src="../assets/inventario/sorveteImagem.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
+4 | coração | <img src="../assets/inventario/coracaoImagem.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
 
 ### 3.4.2. Bestiário
 
 \# | Inimigo |  | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | Slime verde | <img src="../assets/bestiario/green_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
-2 | Slime roxo | <img src="../assets/bestiario/purple_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
-3 | Fumaçinha | <img src="../assets/bestiario/smoke.png"> | Segunda cena de combate | Anda na direção do player e possui 2 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
+1 | Slime verde | <img src="../assets/bestiario/greenSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
+2 | Slime roxo | <img src="../assets/bestiario/purpleSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
+3 | Fumaçinha | <img src="../assets/bestiario/smokeImagem.png"> | Segunda cena de combate | Anda na direção do player e possui 2 de vida e 1 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
+3 | Chefe Desmatamento | <img src="../assets/bestiario/reiMamentoImagem.png"> | No final do nível 2 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
+3 | Rei da Poluição | <img src="../assets/bestiario/mudImagem.png"> | No final do nível 3 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
