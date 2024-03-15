@@ -372,13 +372,57 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
-Dentro do âmbito técnico, o jogo já possui grandes avanços. Antes mesmo do início do jogo em si houve a criação de uma tela de pré-carregamento dedicada, garantindo uma modularidade do código, onde todos os preloads poderiam ser encontrados de uma vez só. Essa tela é essencial para carregar todos os recursos necessários, como imagens, áudios e outros ativos, otimizando assim o desempenho geral do jogo. 
+Dentro do âmbito técnico, o jogo já possui grandes avanços. Antes mesmo da programação do jogo em si houve a criação de uma tela de pré-carregamento dedicada, garantindo uma modularidade do código, onde todos os preloads poderiam ser encontrados de uma vez só. Essa tela é essencial para carregar todos os recursos necessários, como imagens, áudios e outros ativos, otimizando assim o desempenho geral do jogo. 
+<div align="center">
+<sub>Figura 1 - Página de preload - Exemplo de modularização do código</sub>
+<img src="../assets/Desenvolvimento/Preload_1.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
-Em seguida, introduzimos a tela de título pixelada, que não apenas estabelece o estilo visual distintivo do jogo, mas também mergulha os jogadores em uma atmosfera nostálgica desde o início. Uma captura de tela dessa tela de título seria uma adição valiosa para ilustrar esse aspecto. [Inserir captura de tela da tela de título pixelada]
 
-Para simplificar o gerenciamento das transições entre as diferentes cenas do jogo, fazemos uso da classe Phaser.Scene. Essa abordagem não só facilita a criação de ambientes de jogo coesos, mas também contribui para uma experiência de jogo mais organizada e envolvente.
+Em seguida, iniciamos o processo de confecção do jogo em si. Buscando referêncis externas, chegamos a conclusão que em jogos desse estilo, é natural trazer uma tela de título antes da jogatina, no intuito de induzir o jogador a querer iniciar o jogo, mas além disso, buscamos já imergir o jogador no estilo de arte pixelada que ele encontrará ao longo da aventura, e mergulha os jogadores em uma atmosfera nostálgica desde o início. 
+<div align="center">
+<sub>Figura 2 - Página de título - Apresentação inicial do game</sub>
+<img src="../assets/Desenvolvimento/titleScreen.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
-Dando um passo adiante na direção da inclusão e diversidade, implementamos um sistema de seleção de personagens complexo. Os jogadores podem escolher entre quatro personagens diferentes, cada um com suas próprias características e aparências únicas. Uma captura de tela desta tela de seleção de personagens adicionaria contexto visual a este ponto. [Inserir captura de tela da tela de seleção de personagens]
+Para simplificar o gerenciamento das transições entre as diferentes cenas do jogo, fazemos uso da classe Phaser.Scene. Essa abordagem não só facilita a criação de ambientes de jogo coesos, mas também contribui para uma experiência de jogo mais organizada e envolvente. Ao tornar o botão "PLAY" interativo, com o auxílio dessa classe a transição para a próxima cena se torna eficiente e enxuto.
+<div align="center">
+<sub>Figura 3 - Botão de PLAY - Interatividade e Comandos</sub>
+<img src="../assets/Desenvolvimento/transicao_de_cena_1.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Figura 4 - Transição de Cena - Utilização do Phaser.Scene</sub>
+<img src="../assets/Desenvolvimento/transicao_de_cena_2.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+Dando um passo adiante na direção da inclusão e diversidade, foi encontrado em uma pesquisa de público alvo uma necessidade latente de englobar a diversidade dentro do jogo. Por conta disso, implementamos um sistema de seleção de personagens complexo. Os jogadores podem escolher entre quatro personagens diferentes, cada um com suas próprias características e aparências únicas. 
+<div align="center">
+<sub>Figura 5 - Inclusão e Diversidade - Player select</sub>
+<img src="../assets/Desenvolvimento/character_select.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+Quando o jogador interage com a tela da player select, o código reage de acordo com a seleção feita. Por exemplo, ao clicar em uma das quatro imagens dos personagens disponíveis, um evento de clique é acionado. Esse evento desencadeia uma função que atribui um número de ID ao personagem selecionado. Esse ID pode variar de 1 a 4, representando cada um dos quatro personagens.
+A variável 'selectedPlayer' é então atualizada com o ID do personagem escolhido. Essa variável tem um papel crítico no controle das animações e spritesheets associadas ao personagem selecionado. Por exemplo, se o jogador selecionar o personagem com ID 2, a variável 'selectedPlayer' será definida como 2.
+Essa informação é utilizada em uma função específica, como a 'initAnimations', que é responsável por carregar as animações corretas para o personagem escolhido. Isso é feito utilizando estruturas de decisão condicionais, como instruções if-else, que verificam o valor da variável 'selectedPlayer' e carregam as spritesheets e animações correspondentes.
+<div align="center">
+<sub>Figura 6 - Trecho de código da Player Select - Números de ID</sub>
+<img src="../assets/Desenvolvimento/ID_playerselect.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Figura 7 - Trecho de código da PlayerAnims - Infusão do ID para carregamento dos sprites desejados</sub>
+<img src="../assets/Desenvolvimento/playerSelecionado.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+
 
 Na primeira cena de interação, os jogadores são introduzidos às mecânicas básicas do jogo. Aqui, eles aprendem sobre as habilidades de movimentação do personagem principal, incluindo movimento horizontal e vertical.
 
