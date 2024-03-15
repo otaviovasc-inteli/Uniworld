@@ -262,13 +262,23 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 
 ### 3.3.4. Concept Art (sprint 2)
 
+Concept art é a criação de imagens que representam ideias, personagens, ambientes e conceitos para produtos, ajudando a visualizar e desenvolver a direção criativa antes da produção completa.
+
 <div align="center">
 <sub>Figura 8 - Arte Conceitual da Cena 2</sub>
 <img src="../assets/Conceptart.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, NPCS e coletáveis.
+Figura 8: Descrição dos objetos dispostos na primeira cena de combate, como plataformas, NPCs e coletáveis.
+
+<div align="center">
+<sub>Figura 9 - Página de preload - Exemplo de modularização do código</sub>
+<img src="../assets/concept_cena_combate_2.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+Figura 9: Descrição dos objetos dispostos na segunda cena de combate, como plataformas, NPCs e coletáveis.
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
