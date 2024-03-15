@@ -38,11 +38,11 @@
 
 ### 1.1.1. Contexto da indústria (sprints 1 e 4)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*Unilever é uma empresa multinacional que possui mais de 400 marcas em mais de 190 países ao redor do mundo e está presente na vida de mais de 3,4 bilhões de pessoas com seus produtos diariamente. Essa indústria é uma das maiores no segmento de bens de consumo no mundo, possuindo cinco vertentes no mercado: alimentação, limpeza, produtos de higiene e produtos de cuidados pessoais. Entre as principais marcas estão: Omo, Dove, Doriana, Kibon, Hellmann 's, Rexona, Knorr-Cica, Lipton, Magnum, Comfort. Contudo, há corporações  multinacionais nesse ramo que competem o pódio, como a Procter & Gamble e a Nestlé.*
+&nbsp;&nbsp;&nbsp;&nbsp;Unilever é uma empresa multinacional que possui mais de 400 marcas em mais de 190 países ao redor do mundo e está presente na vida de mais de 3,4 bilhões de pessoas com seus produtos diariamente. Essa indústria é uma das maiores no segmento de bens de consumo no mundo, possuindo cinco vertentes no mercado: alimentação, limpeza, produtos de higiene e produtos de cuidados pessoais. Entre as principais marcas estão: Omo, Dove, Doriana, Kibon, Hellmann 's, Rexona, Knorr-Cica, Lipton, Magnum, Comfort. Contudo, há corporações  multinacionais nesse ramo que competem o pódio, como a Procter & Gamble e a Nestlé.
 
 ### 1.1.2. Análise SWOT (sprints 1 e 4)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*A análise SWOT é relacionada ao parceiro Unilever, a tabela foi feita a fim de realizar uma avaliação ambiental no âmbito estratégico, levando em consideração o contexto da indústria, ocorrências e as características do ambiente interno e externo da Unilever.*
+&nbsp;&nbsp;&nbsp;&nbsp;A análise SWOT é relacionada ao parceiro Unilever, a tabela foi feita a fim de realizar uma avaliação ambiental no âmbito estratégico, levando em consideração o contexto da indústria, ocorrências e as características do ambiente interno e externo da Unilever.
 
 <div align="center">
 <sub>Figura 1 - Análise SWOT</sub>
@@ -52,12 +52,12 @@
 
 ### 1.1.3. Descrição da Solução Desenvolvida (sprints 1 e 4)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*A Unilever, apesar de sua posição como empresa líder global, identificou defasagens em seu processo de onboarding, notada na baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o onboarding, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa. 
-A solução proposta será utilizada como uma ferramenta interativa e dinâmica, apresentando-se na forma de um jogo personalizado destinado a envolver ativamente os novos membros da empresa. Os benefícios almejados incluem aumento na retenção de informações, uma compreensão mais profunda da empresa e um alinhamento eficaz com os valores e objetivos da Unilever. O critério de sucesso será medido através de análises periódicas de desempenho, satisfação e engajamento, visando proporcionar uma transição positiva para o ambiente de trabalho da Unilever.*
+&nbsp;&nbsp;&nbsp;&nbsp;A Unilever, apesar de sua posição como empresa líder global, identificou defasagens em seu processo de onboarding, notada na baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o onboarding, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa. 
+A solução proposta será utilizada como uma ferramenta interativa e dinâmica, apresentando-se na forma de um jogo personalizado destinado a envolver ativamente os novos membros da empresa. Os benefícios almejados incluem aumento na retenção de informações, uma compreensão mais profunda da empresa e um alinhamento eficaz com os valores e objetivos da Unilever. O critério de sucesso será medido através de análises periódicas de desempenho, satisfação e engajamento, visando proporcionar uma transição positiva para o ambiente de trabalho da Unilever.
 
 ### 1.1.4. Proposta de Valor (sprints 1 e 4)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*A proposta de valor descreve aspectos essenciais para criação de valor para o projeto, traçando o objetivo de melhor entender a realidade do parceiro e entregar uma solução alinhada com o que a Unilever espera.*
+&nbsp;&nbsp;&nbsp;&nbsp;A proposta de valor descreve aspectos essenciais para criação de valor para o projeto, traçando o objetivo de melhor entender a realidade do parceiro e entregar uma solução alinhada com o que a Unilever espera.
 
 <div align="center">
 <sub>Figura 2 - Proposta de Valor</sub>
@@ -68,7 +68,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 ### 1.1.5. Matriz de Riscos (sprints 1 e 4)
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;*A matriz de risco demonstra os riscos observados no projeto pela equipe de desenvolvimento, representando ameaças e oportunidades, assim como impactos relevantes sobre o projeto. Em verde, estão indicados percalços que não necessitam de intervenção; em amarelo, pontos que apresentam média probabilidade e demandam certa atenção; e, em vermelho, estão destacados pontos críticos que devem ser evitados.*
+&nbsp;&nbsp;&nbsp;&nbsp;A matriz de risco demonstra os riscos observados no projeto pela equipe de desenvolvimento, representando ameaças e oportunidades, assim como impactos relevantes sobre o projeto. Em verde, estão indicados percalços que não necessitam de intervenção; em amarelo, pontos que apresentam média probabilidade e demandam certa atenção; e, em vermelho, estão destacados pontos críticos que devem ser evitados.
 
 <div align="center">
 <sub>Figura 3 - Matriz de Riscos</sub>
@@ -104,25 +104,25 @@ Nosso público alvo são pessoas com perfil médio de estagiários na Unilever, 
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogador precisa derrotar inimigos pelo mapa, concluir os quizzes e derrotar o chefão da fase, nas duas cenas de combate. Desse modo, o jogador será capaz de concluir o jogo integralmente. Conforme solicitado, nenhuma das partes anteriormente citadas será uma barreira para o colaborador completar o processo de integração.*
+&nbsp;&nbsp;&nbsp;&nbsp;O jogador precisa derrotar inimigos pelo mapa, concluir os quizzes e derrotar o chefão da fase, nas duas cenas de combate. Desse modo, o jogador será capaz de concluir o jogo integralmente. Conforme solicitado, nenhuma das partes anteriormente citadas será uma barreira para o colaborador completar o processo de integração.
 
 ## 2.2. Características do Jogo (sprint 2)
 
 ### 2.2.1. Gênero do Jogo (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em movimentar seu personagem através do ambiente no qual jogo acontece. O Gênero de aventura, por sua vez, são jogos nos quais o jogador assume o lugar de protagonista e tem como objetivo explorar o ambiente interativamente e concluir quebra-cabeças*  
+&nbsp;&nbsp;&nbsp;&nbsp;O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em movimentar seu personagem através do ambiente no qual jogo acontece. O Gênero de aventura, por sua vez, são jogos nos quais o jogador assume o lugar de protagonista e tem como objetivo explorar o ambiente interativamente e concluir quebra-cabeças.
 
 ### 2.2.2. Plataforma do Jogo (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo é feito para Desktop e será jogado na plataforma Web. Como indicado pelo termo de abertura do projeto e reafirmado pelos parceiros durante as sprints, a opção pela plataforma web desktop está mais alinhada com a proposta e objetivos definidos para o projeto.*
+&nbsp;&nbsp;&nbsp;&nbsp;O jogo é feito para Desktop e será jogado na plataforma Web. Como indicado pelo termo de abertura do projeto e reafirmado pelos parceiros durante as sprints, a opção pela plataforma web desktop está mais alinhada com a proposta e objetivos definidos para o projeto.
 
 ### 2.2.3. Número de jogadores (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*Devido a indicação do parceiro e, as limitações provenientes das escolhas pela plataforma web e sem ligação com os servidores da empresa, o jogo será individual, por buscando salientar o desenvolvimento individual de cada colaborador.*
+&nbsp;&nbsp;&nbsp;&nbsp;Devido a indicação do parceiro e, as limitações provenientes das escolhas pela plataforma web e sem ligação com os servidores da empresa, o jogo será individual, por buscando salientar o desenvolvimento individual de cada colaborador.
 
 ### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*Entre as inspirações para o jogo, pode-se listar Sonic, Mario e Mega Man. As escolhas decorrem do fato de que os jogos citados pertencem aos mesmos gêneros do jogo criado, tendo como base a movimentação em duas dimensões, arte em pixel e a temática de aventura. Além disso, os jogos em questão revolucionaram suas época ao trazer inovação, originalidade, simplicidade e valores igualmente desenvolvidos neste projeto.*
+&nbsp;&nbsp;&nbsp;&nbsp;Entre as inspirações para o jogo, pode-se listar Sonic, Mario e Mega Man. As escolhas decorrem do fato de que os jogos citados pertencem aos mesmos gêneros do jogo criado, tendo como base a movimentação em duas dimensões, arte em pixel e a temática de aventura. Além disso, os jogos em questão revolucionaram suas época ao trazer inovação, originalidade, simplicidade e valores igualmente desenvolvidos neste projeto.
 
 ### 2.2.5. Tempo estimado de jogo (sprint 5)
 
@@ -208,19 +208,19 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 
 ### 3.2.1. Controláveis
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo contará apenas com 1 personagem controlável que terá variações de gênero e etnia. O personagem não tem nome nem rosto, ele deverá representar o funcionário da Unilever, portanto possui forma humana e tem como objetivo seguir as instruções dadas ao longo do enredo da história. Ao longo do jogo, o personagem receberá poderes, que irão alterar suas roupas.*
+&nbsp;&nbsp;&nbsp;&nbsp;O jogo contará apenas com 1 personagem controlável que terá variações de gênero e etnia. O personagem não tem nome nem rosto, ele deverá representar o funcionário da Unilever, portanto possui forma humana e tem como objetivo seguir as instruções dadas ao longo do enredo da história. Ao longo do jogo, o personagem receberá poderes, que irão alterar suas roupas.
 
 ### 3.2.2. Non-Playable Characters (NPC)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o jogador. Ao interagir com os NPCs pacíficos, o personagem terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 5 NPCs diferentes, com design parecido com o a seguir.*
+&nbsp;&nbsp;&nbsp;&nbsp;O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o jogador. Ao interagir com os NPCs pacíficos, o personagem terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 5 NPCs diferentes, com design parecido com o a seguir.
 
 <img src="../assets/Dvdd.png">
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no jogo, no qual o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Tanto para os semblantes masculinos, quanto para os femininos, haveram 2 opções de etnia.*
+&nbsp;&nbsp;&nbsp;&nbsp;O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no jogo, no qual o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Tanto para os semblantes masculinos, quanto para os femininos, haveram 2 opções de etnia.
 
- <div align="center">
+<div align="center">
 <sub>Figura 4 - Ilustração do ambiente Quarto</sub>
 <img src="../assets/playerSelecter.jpg" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
@@ -230,7 +230,7 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*A cena inicial do jogo será no quarto, ambiente no qual é possível encontrar objetos como uma cama, guarda-roupas, mesa, janelas, um quadro e os itens principais deste ambiente: o desodorante Rexona e um notebook. O personagem irá acordar no ambiente em questão e irá interagir com um notebook que, dentro dele, encontrará informações sobre as plataformas que são utilizadas na empresa. No computador, após utilizar a ferramenta do Teams, entrará numa reunião onde receberá a missão de chegar a Unilever.*
+&nbsp;&nbsp;&nbsp;&nbsp;A cena inicial do jogo será no quarto, ambiente no qual é possível encontrar objetos como uma cama, guarda-roupas, mesa, janelas, um quadro e os itens principais deste ambiente: o desodorante Rexona e um notebook. O personagem irá acordar no ambiente em questão e irá interagir com um notebook que, dentro dele, encontrará informações sobre as plataformas que são utilizadas na empresa. No computador, após utilizar a ferramenta do Teams, entrará numa reunião onde receberá a missão de chegar a Unilever.
 
 <div align="center">
 <sub>Figura 4 - Ilustração do ambiente Quarto</sub>
@@ -238,9 +238,8 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O segundo ambiente...*
 
-*Esse ambiente se encontra no Mundo Lúdico, onde o Player terá a primeira gameplay de fato do jogo, nessa fase, é possivel encontrar objetos de decoração relacionados à Unilever, será possível batalhar contra inimigos e no final da fase um "chefão". O objetivo do Player nessa fase é interagir com o NPC que disponibiliza dos Links de aprendizado da Unilever e depois interagir com o objeto de Quiz que lhe dará ou não o powerUp baseado no resultado. Depois de derrotar o primeiro chefe, pode seguir para o terceiro ambiente*
+&nbsp;&nbsp;&nbsp;&nbsp;O segundo ambiente se encontra no Mundo Lúdico, onde o Player terá a primeira gameplay de fato do jogo, nessa fase, é possivel encontrar objetos de decoração relacionados à Unilever, será possível batalhar contra inimigos e no final da fase um "chefão". O objetivo do Player nessa fase é interagir com o NPC que disponibiliza dos Links de aprendizado da Unilever e depois interagir com o objeto de Quiz que lhe dará ou não o powerUp baseado no resultado. Depois de derrotar o primeiro chefe, pode seguir para o terceiro ambiente
 <div align="center">
 <sub>Figura 5 - Ilustração do Mundo Lúdico</sub>
 <img src="../assets/printMundoLudico.png" width="100%">
@@ -255,11 +254,11 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 
 ### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O personagem controlável tem a possibilidade de mover-se no eixo X, fazendo com que seja intuitivo a linearidade de avanço da história, cujo seguir para direita indica avanço. Ademais, o personagem tem a possibilidade de se deslocar no eixo Y, mas retornando sempre para o ponto inicial neste eixo após algum tempo, simulando uma mecânica de pulo. Além disso, as fases são desbloqueadas conforme conclusão dos objetivos de cada fase, que consiste em, até o momento, completar um quiz ou derrotar determinado inimigo. A progressão em questão acontece naturalmente, ao decorrer do jogo e sem grandes dificuldades para o jogador.*
+&nbsp;&nbsp;&nbsp;&nbsp;O personagem controlável tem a possibilidade de mover-se no eixo X, fazendo com que seja intuitivo a linearidade de avanço da história, cujo seguir para direita indica avanço. Ademais, o personagem tem a possibilidade de se deslocar no eixo Y, mas retornando sempre para o ponto inicial neste eixo após algum tempo, simulando uma mecânica de pulo. Além disso, as fases são desbloqueadas conforme conclusão dos objetivos de cada fase, que consiste em, até o momento, completar um quiz ou derrotar determinado inimigo. A progressão em questão acontece naturalmente, ao decorrer do jogo e sem grandes dificuldades para o jogador.
 
 ### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo apresentará algumas mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários da segunda cena foram projetados com um tempo ensolarado que permeia do início ao fim. Além disso, a passagem do tempo não possui influência no mundo do jogo, devido a pedido do próprio parceiro sobre a criação de poucas ou nenhuma limitaçõe para conclusão do onboarding.*
+&nbsp;&nbsp;&nbsp;&nbsp;O jogo apresentará algumas mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários da segunda cena foram projetados com um tempo ensolarado que permeia do início ao fim. Além disso, a passagem do tempo não possui influência no mundo do jogo, devido a pedido do próprio parceiro sobre a criação de poucas ou nenhuma limitaçõe para conclusão do onboarding.
 
 ### 3.3.4. Concept Art (sprint 2)
 
@@ -273,7 +272,6 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
-*Exemplo de tabela*
 \# | titulo | ocorrência | autoria
 --- | --- | --- | ---
 1 | Pure Imaginaion | tela de início | Avery Mavery
@@ -286,20 +284,26 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ### 3.4.1. Inventário
 
+&nbsp;&nbsp;&nbsp;&nbsp;O inventário é constituído por todos os itens presentes dentro do jogo.
+
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
-1 | rexona | <img src= "../assets/inventario/rexonnaSpritesheet.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | não tem
-2 | omo | <img src="../assets/inventario/omoSpritesheetx4.png"> | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | não tem
-3 | kibon | <img src="../assets/inventario/sorveteSpritesheetx4.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | não tem
-4 | coração | <img src="../assets/inventario/coracaoSpritesheet.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | não tem
+1 | Rexona | <img src="../assets/inventario/rexonaImagem.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | Não tem
+2 | Omo | <img src="../assets/inventario/omoImagem.png"> | ele pode ser obtido no final da cena 3 | aumentar a força do personagem | Não tem
+3 | Kibon | <img src="../assets/inventario/sorveteImagem.png"> | ele pode ser obtido no final da cena 4 | aumentar a velocidade do personagem | Não tem
+4 | Coração | <img src="../assets/inventario/coracaoImagem.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | Não tem
 
 ### 3.4.2. Bestiário
 
+&nbsp;&nbsp;&nbsp;&nbsp;O bestiário é constituído por todos os inimigos presentes dentro do jogo.
+
 \# | Inimigo |  | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | Slime verde | <img src="../assets/bestiario/green_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
-2 | Slime roxo | <img src="../assets/bestiario/purple_slime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
-3 | Fumaçinha | <img src="../assets/bestiario/smoke.png"> | Segunda cena de combate | Anda na direção do player e possui 2 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
+1 | Slime verde | <img src="../assets/bestiario/greenSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
+2 | Slime roxo | <img src="../assets/bestiario/purpleSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
+3 | Fumaçinha | <img src="../assets/bestiario/smokeImagem.png"> | Segunda cena de combate | Anda na direção do player e possui 2 de vida e 1 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
+3 | Chefe Desmatamento | <img src="../assets/bestiario/reiMamentoImagem.png"> | No final do nível 2 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
+3 | Rei da Poluição | <img src="../assets/bestiario/mudImagem.png"> | No final do nível 3 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
@@ -321,7 +325,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O processo inicial de desenvolvimento se deu por meio da entrega do MPV, implementando a existência de um cenário e  a movimentação básica do personagem, como ilustra a figura 1. Além disso, diálogos com NPCs (Personagem não Jogável) também foram incluídos, contemplados na figura 2.*
+&nbsp;&nbsp;&nbsp;&nbsp;O processo inicial de desenvolvimento se deu por meio da entrega do MPV, implementando a existência de um cenário e  a movimentação básica do personagem, como ilustra a figura 1. Além disso, diálogos com NPCs (Personagem não Jogável) também foram incluídos, contemplados na figura 2.
 
 <div align="center">
 <sub>Figura 1 - Fase Inicial - Mundo Lúdico</sub>
@@ -337,7 +341,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 4.2. Desenvolvimento básico do jogo (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*Ao longo do desenvolvimento da versão básica do jogo, o grupo foi capaz de incluir novas mecânicas, novo design e mais fases. A figura 1 abaixo ilustra a tela de início funcional do jogo, que permite o acesso às demais funcionalidades. Em seguida, a figura 2 apresenta a tela de seleção de personagem criada, possibilitando maior diversidade ao representar o colaborador. A figura 3 ilustra o ambiente do Quarto, que contém as novas interações com itens e NPCs (Personagens Não-Jogáveis), como demonstradas na figura 4. Por fim, a figura 5 ilustra o novo cenário ao ar livre chamado Mundo Lúdico, que será intermediário ao longo do jogo.
+&nbsp;&nbsp;&nbsp;&nbsp;Ao longo do desenvolvimento da versão básica do jogo, o grupo foi capaz de incluir novas mecânicas, novo design e mais fases. A figura 1 abaixo ilustra a tela de início funcional do jogo, que permite o acesso às demais funcionalidades. Em seguida, a figura 2 apresenta a tela de seleção de personagem criada, possibilitando maior diversidade ao representar o colaborador. A figura 3 ilustra o ambiente do Quarto, que contém as novas interações com itens e NPCs (Personagens Não-Jogáveis), como demonstradas na figura 4. Por fim, a figura 5 ilustra o novo cenário ao ar livre chamado Mundo Lúdico, que será intermediário ao longo do jogo.
 
 <div align="center">
 <sub>Figura 1 - Tela de Início</sub>
@@ -424,11 +428,11 @@ Essa informação é utilizada em uma função específica, como a 'initAnimatio
 
 
 
-Na primeira cena de interação, os jogadores são introduzidos às mecânicas básicas do jogo. Aqui, eles aprendem sobre as habilidades de movimentação do personagem principal, incluindo movimento horizontal e vertical.
+&nbsp;&nbsp;&nbsp;&nbsp;Na primeira cena de interação, os jogadores são introduzidos às mecânicas básicas do jogo. Aqui, eles aprendem sobre as habilidades de movimentação do personagem principal, incluindo movimento horizontal e vertical.
 
-Uma das mecânicas mais importantes do jogo é a movimentação e o pulo duplo. A movimentação é controlada pelas teclas direcionais do teclado ou pelas teclas A, W e D. Já o pulo duplo adiciona uma camada adicional de complexidade à jogabilidade, permitindo que os jogadores realizem até dois pulos consecutivos. Uma imagem que demonstre a movimentação do personagem e a mecânica do pulo duplo seria ideal para elucidar este ponto. [Inserir captura de tela da movimentação do personagem e do pulo duplo]
+&nbsp;&nbsp;&nbsp;&nbsp;Uma das mecânicas mais importantes do jogo é a movimentação e o pulo duplo. A movimentação é controlada pelas teclas direcionais do teclado ou pelas teclas A, W e D. Já o pulo duplo adiciona uma camada adicional de complexidade à jogabilidade, permitindo que os jogadores realizem até dois pulos consecutivos. Uma imagem que demonstre a movimentação do personagem e a mecânica do pulo duplo seria ideal para elucidar este ponto. [Inserir captura de tela da movimentação do personagem e do pulo duplo]
 
-Com as bases do jogo estabelecidas neste estágio intermediário de desenvolvimento, estamos prontos para avançar para etapas mais avançadas, incluindo a expansão das mecânicas, a introdução de desafios adicionais e o refinamento geral da experiência do jogador.*
+&nbsp;&nbsp;&nbsp;&nbsp;Com as bases do jogo estabelecidas neste estágio intermediário de desenvolvimento, estamos prontos para avançar para etapas mais avançadas, incluindo a expansão das mecânicas, a introdução de desafios adicionais e o refinamento geral da experiência do jogador.*
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
@@ -442,9 +446,9 @@ Com as bases do jogo estabelecidas neste estágio intermediário de desenvolvime
 
 ## 5.1. Casos de Teste
 
-Primeiramente, os casos de testes são fundamentais para validar a procedência do jogo, garantindo que o mesmo funcione corretamente e evitando que os jogadores encontrem bugs e erros durante a experiência de jogo. Em outras palavras, realizamos testes com o objetivo de confirmar a funcionalidade do jogo.
+&nbsp;&nbsp;&nbsp;&nbsp;Primeiramente, os casos de testes são fundamentais para validar a procedência do jogo, garantindo que o mesmo funcione corretamente e evitando que os jogadores encontrem bugs e erros durante a experiência de jogo. Em outras palavras, realizamos testes com o objetivo de confirmar a funcionalidade do jogo.
 
-Nesse sentido, conduzimos esses testes com a participação de jovens, incluindo nós mesmos, com idades entre 18 e 20 anos. As avaliações foram realizadas no período de fevereiro a março de 2024. A seguir, apresentamos os resultados desses testes
+&nbsp;&nbsp;&nbsp;&nbsp;Nesse sentido, conduzimos esses testes com a participação de jovens, incluindo nós mesmos, com idades entre 18 e 20 anos. As avaliações foram realizadas no período de fevereiro a março de 2024. A seguir, apresentamos os resultados desses testes
 
 
 \# | pré-condição do teste | o que ocorre no teste | resultado esperado do teste
