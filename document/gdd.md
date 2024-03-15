@@ -272,12 +272,12 @@ Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, N
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
-\# | titulo | ocorrência | autoria
+\# | título | ocorrência | autoria
 --- | --- | --- | ---
-1 | Pure Imaginaion | tela de início | Avery Mavery
-2 | tema de combate | Level 1 (Quarto do Personagem) | Hans Zimmer
-3 | tema de combate | Level 2 (Mundo Lúdico) | Hans Zimmer
-
+1 | Pure Imaginaion | tela de início | - <a href="https://www.youtube.com/watch?v=tVzXp5ujQXw">Avery Mavery</a>
+2 | Acoustic Folk Music Guitar | Level 1 (Quarto do Personagem) | <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Art Music</a>
+3 | The Grand Score | Level 2 (Mundo Lúdico) | - <a href="https://www.chosic.com/download-audio/28030/">Alexander Nakarada</a>
+4 | The Grand Score | Level 3 (Cidade Unilever) | - <a href="https://pixabay.com/music/solo-guitar-trip-to-home-relaxing-acoustic-guitar-background-music-7625/">Oleksii Kaplunskyi</a>
 
 Licensas: https://mixkit.co/license/#sfxFree
 ## 3.4. Inventário e Bestiário (sprint 3)
@@ -294,9 +294,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 4 | Coração | <img src="../assets/inventario/coracaoImagem.png"> | ele pode ser obtido após acertar um quiz | representa a quantidade de vidas do personagem | Não tem
 
 ### 3.4.2. Bestiário
-
 &nbsp;&nbsp;&nbsp;&nbsp;O bestiário é constituído por todos os inimigos presentes dentro do jogo.
-
 \# | Inimigo |  | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
 1 | Slime verde | <img src="../assets/bestiario/greenSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
@@ -306,6 +304,20 @@ Licensas: https://mixkit.co/license/#sfxFree
 3 | Rei da Poluição | <img src="../assets/bestiario/mudImagem.png"> | No final do nível 3 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
+
+&nbsp;&nbsp;&nbsp;&nbsp;Essa imagem apresenta um diagrama de fluxo de jogo para "UniWorld". Nele, encontramos várias cenas do jogo, diagramas de classe associados à programação orientada a objetos, e explicações sobre a progressão do jogador e suas interações. Aqui está uma explicação detalhada dos diferentes elementos:
+
+&nbsp;&nbsp;&nbsp;&nbsp;Na cena inicial, quando o jogador inicia o jogo, é recebido com a tela inicial, oferecendo opções para jogar ("PLAY"), ajustar configurações ou silenciar o som. À esquerda, vemos um diagrama de classe intitulado "Tela de Título", que lista atributos e métodos como setInteractive() e preloadGame(), indicando que esta tela prepara o jogo para começar e configura elementos interativos.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Na cena de Seleção de Personagem, o jogador pode escolher seu personagem. O diagrama de classe associado é "Seleção de Jogador", com atributos como countdown e cloudCover, e métodos incluindo startGame() e setInteractive(). Nisso, vemos  a presença de um temporizador de contagem regressiva e uma animação como se fosse nuvens cobrindo os personagens antes da seleção.
+
+&nbsp;&nbsp;&nbsp;&nbsp;No Mundo do Jogo, a área principal de jogabilidade, o jogador navega com o personagem pelo mundo, explorando, eliminando inimigos e superando obstáculos. O diagrama de classe inclui atributos como player e métodos como createPlayer(), createWorldLevel(), e vários outros que indicam funcionalidades para criar o nível, o personagem do jogador e a física do jogo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Na cena do Quarto, o jogador está dentro de um quarto e deve interagir com um objeto, um item "Renona", para coletá-lo. O diagrama de classe é semelhante ao "Jogador no Mundo", mas inclui um método createMap(), sugerindo que esta cena envolve navegar em um espaço menor e fechado, como um mapa.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Cada cena é conectada por linhas vermelhas para a próxima, indicando o fluxo do jogo. O jogador começa na tela inicial, escolhe seu personagem, entra no mundo do jogo para navegar pelos níveis e interage com objetos em cenas específicas, como o quarto.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Esse tipo de diagrama é útil para os desenvolvedores de jogos planejarem a progressão do jogo, as classes e métodos necessários para implementar diferentes cenas do jogo, e para acompanhar como o jogador irá experimentar o jogo do início ao fim.
 
 <div align="center">
 <sub>Figura 6 - Diagrama de Cenas</sub>
