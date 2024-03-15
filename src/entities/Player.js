@@ -116,7 +116,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     // Movement and movement sound logic
     if (left.isDown) {
       this.setFlip(true, false);
-      this.setVelocityX(-this.playerSpeed);
+      this.setVelocityX(-this.playerSpeed);   
       this.play("player_run", true);
       if (!this.walkSound.isPlaying)
         this.walkSound.play();
