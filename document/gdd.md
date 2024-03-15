@@ -497,7 +497,7 @@ Ao realizar essa interação, uma caixa de texto surge, introduzindo a história
 
 <div align="center">
 <sub>Figura 11 - Imagem do Teams - player recebendo a missão </sub>
-<img src="../assets/desenvolvimento/Teams.png" width="100%">
+<img src="../assets/Desenvolvimento/Teams.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
