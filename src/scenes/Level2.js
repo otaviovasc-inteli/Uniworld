@@ -57,16 +57,6 @@ export default class Level2 extends Phaser.Scene {
     });
     this.createEndOfLevel(playerZones.end, player);
     this.setupFollowupCameraOn(player, map);
-
-    // Creates line configurations (makes enemies still on the platforms)
-    this.plotting = false;
-    this.graphics = this.add.graphics();
-    this.line = new Phaser.Geom.Line();
-    this.graphics.lineStyle(1, 0X800080);
-
-    // Makes pointer creates line
-    this.input.on("pointerdown", this.startDrawing, this);
-    this.input.on("pointerup", pointer => this.finishDrawing(pointer, layers.platforms), this);
   }
 
   startDrawing(pointer) {
