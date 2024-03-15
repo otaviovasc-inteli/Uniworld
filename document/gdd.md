@@ -384,7 +384,19 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
 
-*Descreva e ilustre aqui o desenvolvimento da versão intermediária do jogo, explicando brevemente o que foi entregue em termos de código e jogo. Utilize prints de tela para ilustrar. Indique as eventuais dificuldades e próximos passos.*
+Dentro do âmbito técnico, o jogo já possui grandes avanços. Antes mesmo do início do jogo em si houve a criação de uma tela de pré-carregamento dedicada, garantindo uma modularidade do código, onde todos os preloads poderiam ser encontrados de uma vez só. Essa tela é essencial para carregar todos os recursos necessários, como imagens, áudios e outros ativos, otimizando assim o desempenho geral do jogo. 
+
+Em seguida, introduzimos a tela de título pixelada, que não apenas estabelece o estilo visual distintivo do jogo, mas também mergulha os jogadores em uma atmosfera nostálgica desde o início. Uma captura de tela dessa tela de título seria uma adição valiosa para ilustrar esse aspecto. [Inserir captura de tela da tela de título pixelada]
+
+Para simplificar o gerenciamento das transições entre as diferentes cenas do jogo, fazemos uso da classe Phaser.Scene. Essa abordagem não só facilita a criação de ambientes de jogo coesos, mas também contribui para uma experiência de jogo mais organizada e envolvente.
+
+Dando um passo adiante na direção da inclusão e diversidade, implementamos um sistema de seleção de personagens complexo. Os jogadores podem escolher entre quatro personagens diferentes, cada um com suas próprias características e aparências únicas. Uma captura de tela desta tela de seleção de personagens adicionaria contexto visual a este ponto. [Inserir captura de tela da tela de seleção de personagens]
+
+Na primeira cena de interação, os jogadores são introduzidos às mecânicas básicas do jogo. Aqui, eles aprendem sobre as habilidades de movimentação do personagem principal, incluindo movimento horizontal e vertical.
+
+Uma das mecânicas mais importantes do jogo é a movimentação e o pulo duplo. A movimentação é controlada pelas teclas direcionais do teclado ou pelas teclas A, W e D. Já o pulo duplo adiciona uma camada adicional de complexidade à jogabilidade, permitindo que os jogadores realizem até dois pulos consecutivos. Uma imagem que demonstre a movimentação do personagem e a mecânica do pulo duplo seria ideal para elucidar este ponto. [Inserir captura de tela da movimentação do personagem e do pulo duplo]
+
+Com as bases do jogo estabelecidas neste estágio intermediário de desenvolvimento, estamos prontos para avançar para etapas mais avançadas, incluindo a expansão das mecânicas, a introdução de desafios adicionais e o refinamento geral da experiência do jogador.*
 
 ## 4.4. Desenvolvimento final do MVP (sprint 4)
 
