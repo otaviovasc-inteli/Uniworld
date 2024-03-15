@@ -457,7 +457,21 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 &nbsp;&nbsp;&nbsp;&nbsp;Na primeira cena de interação, os jogadores são introduzidos às mecânicas básicas do jogo. Aqui, eles aprendem sobre as habilidades de movimentação do personagem principal, incluindo movimento horizontal e vertical.
 
-[BACKEND TUTORIAL]
+<div align="center">
+<sub>Figura 8 - Imagem do tutorial - Primeira cena de interação com o usuário</sub>
+<img src="../assets/Desenvolvimento/tutorial.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;Para isso ser possível, foi feito um vídeo em formato de cutscene. Com o método do Phaser "create", o vídeo é adicionado na tela, fazendo com que pareça que uma imagem está se locomovendo.
+
+<div align="center">
+<sub>Figura 9 - Trecho do código da TutorialScreen - criano a animação do vídeo/sub>
+<img src="../assets/Desenvolvimento/video_tutorial.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
 
 [FRONTEND DO QUARTO]
 [BACKEND DO QUARTO]
