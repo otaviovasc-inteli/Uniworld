@@ -78,9 +78,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 ## 1.2. Requisitos do Projeto (sprints 1 e 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*Posicione aqui a lista de requisitos levantados para o projeto, sejam pedidos do parceiro ou invenções do grupo. Descreva-os de forma objetiva, de modo que seja possível entender claramente como implementá-los tecnicamente.*
 
-&nbsp;&nbsp;&nbsp;&nbsp;*Aqui, adicionamos alguns pontos que acreditamos que devem estar presentes em nosso projeto. Diante disso, enviamos esta tabela.*
 \# | Requisito
 --- | ---
 1 | Recompensas por responder perguntas relacionadas à Unilever 
@@ -93,7 +91,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 8 | O personagem perde uma vida toda vez que toca em um inimigo ou em algum projétil inimigo
 9 | Mecânica de utilização de poderes
 10 | Mundo lúdico - estilo Mario
-11 | realização de quiz
+11 | Realização de quiz
 12 | Contato com plataformas Unilever (Uniops & degreed)
 13 | Mecânica de dash
 
@@ -106,17 +104,17 @@ Nosso público alvo são pessoas com perfil médio de estagiários na Unilever, 
 
 ## 2.1. Objetivos do Jogo (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogador precisa derrotar inimigos pelo mapa, concluir o quiz e derrotar o chefão da fase, nos dois mundos disponíveis: Mundo Lúdico e Mundo Unilever. Desse modo, o jogador será capaz de concluir o jogo integralmente. Logicamente, conforme solicitado, nenhuma das partes anteriormente citadas será uma barreira para o colaborador completar o processo de integração.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogador precisa derrotar inimigos pelo mapa, concluir os quizzes e derrotar o chefão da fase, nas duas cenas de combate. Desse modo, o jogador será capaz de concluir o jogo integralmente. Conforme solicitado, nenhuma das partes anteriormente citadas será uma barreira para o colaborador completar o processo de integração.*
 
 ## 2.2. Características do Jogo (sprint 2)
 
 ### 2.2.1. Gênero do Jogo (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em movimentar seu personagem através do ambiente no qual jogo acontece. O Gênero de aventura, por sua vez, são jogos nos quais o jogador assume o lugar de protagonista e tem como objetivo explorar o ambiente interativamente concluir quebra-cabeças*  
+&nbsp;&nbsp;&nbsp;&nbsp;*O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em movimentar seu personagem através do ambiente no qual jogo acontece. O Gênero de aventura, por sua vez, são jogos nos quais o jogador assume o lugar de protagonista e tem como objetivo explorar o ambiente interativamente e concluir quebra-cabeças*  
 
 ### 2.2.2. Plataforma do Jogo (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo é feito para Desktop e será jogado na plataforma Web. Como indicado pelo termo de abertura do projeto e reafirmado pelos parceiros durante as sprints, a opção pela plataforma web desktop está mais alinhada com a proposta e objetivos que delineados para o projeto.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogo é feito para Desktop e será jogado na plataforma Web. Como indicado pelo termo de abertura do projeto e reafirmado pelos parceiros durante as sprints, a opção pela plataforma web desktop está mais alinhada com a proposta e objetivos definidos para o projeto.*
 
 ### 2.2.3. Número de jogadores (sprint 2)
 
@@ -124,7 +122,7 @@ Nosso público alvo são pessoas com perfil médio de estagiários na Unilever, 
 
 ### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*Entre as inspirações para o jogo, pode-se listar Sonic, Mario e Mega Man. As escolhas decorrem do fato de que os jogos citados pertencem aos mesmos gêneros do jogo criado, tendo como base a movimentação em duas dimensões, arte em pixel e a temática de aventura. Além disso, os jogos em questão revolucionaram suas época ao trazer inovação, originalidade e simplicidade, valores igualmente desenvolvidos neste projeto.*
+&nbsp;&nbsp;&nbsp;&nbsp;*Entre as inspirações para o jogo, pode-se listar Sonic, Mario e Mega Man. As escolhas decorrem do fato de que os jogos citados pertencem aos mesmos gêneros do jogo criado, tendo como base a movimentação em duas dimensões, arte em pixel e a temática de aventura. Além disso, os jogos em questão revolucionaram suas época ao trazer inovação, originalidade, simplicidade e valores igualmente desenvolvidos neste projeto.*
 
 ### 2.2.5. Tempo estimado de jogo (sprint 5)
 
@@ -210,21 +208,17 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 
 ### 3.2.1. Controláveis
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo contará apenas com 1 personagem controlável que terá variações de gênero e etnia. O personagem não tem nome nem rosto, ele deverá representar o funcionário da Unilever, portanto possui forma humana e tem como objetivo seguir as instruções dadas ao longo do enredo da história. Ao longo do game, o personagem receberá power-ups, que irão alterar suas roupas.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogo contará apenas com 1 personagem controlável que terá variações de gênero e etnia. O personagem não tem nome nem rosto, ele deverá representar o funcionário da Unilever, portanto possui forma humana e tem como objetivo seguir as instruções dadas ao longo do enredo da história. Ao longo do jogo, o personagem receberá poderes, que irão alterar suas roupas.*
 
 ### 3.2.2. Non-Playable Characters (NPC)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o player. Ao interagir com os NPCs pacíficos, o jogador terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 4 NPCs diferentes, com design parecido com o a seguir.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o jogador. Ao interagir com os NPCs pacíficos, o personagem terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 5 NPCs diferentes, com design parecido com o a seguir.*
 
 <img src="../assets/Dvdd.png">
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-
-
-
-&nbsp;&nbsp;&nbsp;&nbsp;*O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no game, cujo o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Para figuras com semblantes, terão 2 opções de etnia. Para semblantes femininos, também haverá 2 opções de etnia. Além disso, os personagens não jogavéis ao longo do jogo possuem diversas etnias e origens.
-Seguem alguns exemplos:*
+&nbsp;&nbsp;&nbsp;&nbsp;*O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no jogo, no qual o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Tanto para os semblantes masculinos, quanto para os femininos, haveram 2 opções de etnia.*
 
  <div align="center">
 <sub>Figura 4 - Ilustração do ambiente Quarto</sub>
@@ -236,7 +230,7 @@ Seguem alguns exemplos:*
 
 ### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*A cena inicial do jogo será no quarto, ambiente no qual é possível encontrar objetos mundanos como uma cama, guarda-roupas, mesa, janelas, um quadro e os itens principais deste ambiente: o desodorante Rexona e um notebook. O personagem irá acordar no ambiente em questão e irá interagir com um notebook que, dentro dele, encontrará informações sobre as plataformas que são utilizadas na empresa. No computador após utilizar a ferramenta do teams, entra numa reunião onde recebe a missão de chegar a Unilever.*
+&nbsp;&nbsp;&nbsp;&nbsp;*A cena inicial do jogo será no quarto, ambiente no qual é possível encontrar objetos como uma cama, guarda-roupas, mesa, janelas, um quadro e os itens principais deste ambiente: o desodorante Rexona e um notebook. O personagem irá acordar no ambiente em questão e irá interagir com um notebook que, dentro dele, encontrará informações sobre as plataformas que são utilizadas na empresa. No computador, após utilizar a ferramenta do Teams, entrará numa reunião onde receberá a missão de chegar a Unilever.*
 
 <div align="center">
 <sub>Figura 4 - Ilustração do ambiente Quarto</sub>
@@ -269,8 +263,6 @@ Seguem alguns exemplos:*
 
 ### 3.3.4. Concept Art (sprint 2)
 
-*Inclua imagens de Concept Art do jogo que ainda não foram demonstradas em outras seções deste documento. Para cada imagem, coloque legendas, como no exemplo abaixo.*
-
 <div align="center">
 <sub>Figura 8 - Arte Conceitual da Cena 2</sub>
 <img src="../assets/Conceptart.png" width="100%">
@@ -280,8 +272,6 @@ Seguem alguns exemplos:*
 Figura 1: Descrição dos objetos dispostos na segunda cena, como plataformas, NPCS e coletáveis.
 
 ### 3.3.5. Trilha sonora (sprint 3)
-
-*Descreva a trilha sonora do jogo, indicando quais músicas serão utilizadas no mundo e nas fases. Utilize listas ou tabelas para organizar esta seção. Caso utilize material de terceiros em licença Creative Commons, não deixe de citar os autores/fontes.*
 
 *Exemplo de tabela*
 \# | titulo | ocorrência | autoria
@@ -313,8 +303,6 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
 
-*Posicione aqui seu "storyboard de programação" - o diagrama de cenas do jogo. Indique, por exemplo, como o jogo começa, quais opções o jogador tem, como ele avança nas fases, quais as condições de 'game over', como o jogo reinicia. Seu diagrama deve representar as classes, atributos e métodos usados no jogo.*
-
 <div align="center">
 <sub>Figura 6 - Diagrama de Cenas</sub>
 <img src="../assets/GameFlow.png" width="100%">
@@ -333,7 +321,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
 
-&nbsp;&nbsp;&nbsp;&nbsp;*O processo inicial de desenvolvimento se deu por meio da entrega do MPV, implementando a existência de um cenário e  a movimentação básica do personagem, como ilustra a figura 1. Além disso diálogos com NPCs (Personagem não Jogável) também foram incluídos, contemplados na figura 2.*
+&nbsp;&nbsp;&nbsp;&nbsp;*O processo inicial de desenvolvimento se deu por meio da entrega do MPV, implementando a existência de um cenário e  a movimentação básica do personagem, como ilustra a figura 1. Além disso, diálogos com NPCs (Personagem não Jogável) também foram incluídos, contemplados na figura 2.*
 
 <div align="center">
 <sub>Figura 1 - Fase Inicial - Mundo Lúdico</sub>
@@ -410,15 +398,15 @@ Nesse sentido, conduzimos esses testes com a participação de jovens, incluindo
 3 | Posicionar personagem em frente ao notebook | Apertar tecla de interação com o notebook | Abrir diálogo na plataforma teams
 4 | Posicionar o personagem em frente ao Rexona | Apertar tecla de interação com o Rexona | Pegar o item Rexona
 5 | Posicionar o personagem em frente à porta do quarto | Passar pela porta do quarto | Encerrar cena e Iniciar cena 2
-6 |  entrar no jogo | apertar “E” na frente do NPC | interagir com o  NPC
-7 |  entrar no jogo | apertar várias vezes o botão “E” na frente do npc   | o jogo não bugar
-8 |  entrar no jogo | apertar ‘E” com coletáveis   | coletar o item
-9 | entrar no jogo | alguém, que nunca jogou o jogo, vai passar todo o jogo | conseguir finalizar 
-10 | entrar no jogo | alguém, que nunca jogou o jogo, enfrentar os inimigos fáceis | conseguir finalizar
-11 | entrar no jogo |  alguém, que nunca jogou, enfrentar o boss | conseguir matá-lo
-12 | entrar no jogo |   pular,correr,ficar parado | movimentação fluida das sprites 
-13 | entrar no menu  |   ativar e desativar o  som | o som parar (ao clicar em desativar) e voltar (ao clicar em ativar)  
-14 | entrar na seleção de personagem |  selecionar personagem | o jogo iniciar com o personagem selecionado 
+6 | Entrar no jogo | Apertar “E” na frente do NPC | Interagir com o  NPC
+7 | Entrar no jogo | Apertar várias vezes o botão “E” na frente do npc   | O jogo não bugar
+8 | Entrar no jogo | Apertar ‘E” com coletáveis   | Coletar o item
+9 | Entrar no jogo | Alguém, que nunca jogou o jogo, vai passar todo o jogo | Conseguir finalizar 
+10 | Entrar no jogo | Alguém, que nunca jogou o jogo, enfrentar os inimigos fáceis | Conseguir finalizar
+11 | Entrar no jogo | Alguém, que nunca jogou, enfrentar o boss | Conseguir matá-lo
+12 | Entrar no jogo | Pular,correr,ficar parado | Movimentação fluida das sprites 
+13 | Entrar no menu  | Ativar e desativar o  som | O som parar (ao clicar em desativar) e voltar (ao clicar em ativar)  
+14 | Entrar na seleção de personagem |  Selecionar personagem | O jogo iniciar com o personagem selecionado 
 
 
 
