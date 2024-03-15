@@ -73,7 +73,7 @@ export default class Level2 extends Phaser.Scene {
     this.line.x1 = pointer.worldX;
     this.line.y1 = pointer.worldY;
     this.plotting = true;
-    }
+  }
 
   finishDrawing(pointer, layer) {
     this.line.x2 = pointer.worldX;
@@ -87,7 +87,7 @@ export default class Level2 extends Phaser.Scene {
     console.log(this.tileHits.length);
 
     this.plotting = false;
-      }
+  }
 
   //create player in scene
   createPlayer({ start }, oldPlayer) {
@@ -102,7 +102,6 @@ export default class Level2 extends Phaser.Scene {
       const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y);
       enemies.add(enemy);
     });
-
     return enemies;
   }
 
