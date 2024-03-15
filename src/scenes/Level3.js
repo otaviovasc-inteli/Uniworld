@@ -13,6 +13,7 @@ export default class Level3 extends Phaser.Scene {
     const map = this.createMap();
     const layers = this.createLayers(map);
     const playerZones = this.getPlayerZones(layers.playerZones);
+    this.createBg(map);
 
     // Add player object and set bounds to map, pass player from previous scene
     const oldPlayer = this.sys.settings.data.player;
@@ -38,29 +39,50 @@ export default class Level3 extends Phaser.Scene {
 
   createMap() {
     const map = this.make.tilemap({ key: `level3` });
-    map.addTilesetImage("plat", "city_platform");
+    map.addTilesetImage("buildings_t1", "buildings");
     map.addTilesetImage("road", "road");
     map.addTilesetImage("predios", "predios_env");
-    map.addTilesetImage("ceu", "ceu_env");
     return map;
   }
 
   createLayers(map) {
     // Add tilesets
-    const tileset1 = map.getTileset("plat");
+    const tileset1 = map.getTileset("buildings_t1");
     const tileset2 = map.getTileset("road");
     const tileset3 = map.getTileset("predios");
 
     // Create layers
-    const bgSky = map.createLayer("bg_sky", tileset3);
-    const env1 = map.createLayer("env1", tileset3);
+    const env1 = map.createLayer("env1", [tileset1, tileset3]);
     const env2 = map.createLayer("env2", tileset3);
+    const env3 = map.createLayer("env3", tileset1);
     const platforms = map.createLayer("platforms", [tileset1, tileset2]);
     const playerZones = map.getObjectLayer("player_zones");
 
     platforms.setCollisionByExclusion(-1, true);
 
-    return { platforms, playerZones, env1, env2, bgSky };
+    return { platforms, playerZones, env2, env3 };
+  }
+
+  createBg(map) {
+    const bgSkyObject = map.getObjectLayer('bg_sky').objects[0]
+    this.bgSky = this.add.tileSprite(bgSkyObject.x - 300, bgSkyObject.y + 200, bgSkyObject.width, bgSkyObject.height, 'ceu_bg')
+      .setDepth(-10)
+      .setOrigin(0, 1)
+      .setScrollFactor(0, 1)
+      .setScale(3)
+
+    const bgCloudObject = map.getObjectLayer('bg_nuvem').objects[0]
+    this.bgCloud = this.add.tileSprite(bgCloudObject.x - 270, bgCloudObject.y, bgCloudObject.width, bgCloudObject.height, 'nuvem_bg')
+      .setDepth(-9)
+      .setOrigin(0, 1)
+      .setScrollFactor(0, 1)
+      .setScale(2)
+
+    const bgBuildingObject = map.getObjectLayer('bg_predios').objects[0]
+    this.bgBuilding = this.add.tileSprite(bgBuildingObject.x + 100, bgBuildingObject.y, bgBuildingObject.width, bgBuildingObject.height, 'predios_bg')
+      .setDepth(-8)
+      .setScrollFactor(0, 1)
+      .setScale(1)
   }
 
   // Return the start and end zone from Tiled
@@ -84,6 +106,7 @@ export default class Level3 extends Phaser.Scene {
   }
 
   update() {
-    // Add any required update logic here
+    this.bgCloud.tilePositionX = this.cameras.main.scrollX * 0.1
+    this.bgBuilding.tilePositionX = this.cameras.main.scrollX * 0.4
   }
 }

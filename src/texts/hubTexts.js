@@ -2,9 +2,10 @@
 // to be displayed (becareful with text length)
 const hubTexts =
 [
-    ['https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'Microsoft Teams'],
-    ['https://www.youtube.com/watch?v=45xpqOPbFdQ', 'UniOps'],
-    ['https://www.youtube.com/watch?v=pTghCNRiRVY', 'Pizza Gratis'],
-    ['https://www.youtube.com/watch?v=xtcr9vM22nw&t=173s', 'Happy Hour na Unilever']
+  // Estrutura ['link', 'texto a ser mostrado'],
+  ['https://unilever.sharepoint.com/sites/AboutUnilever/SitePages/Unilever-Dictionary.aspx', 'Dicionário Unilever'],
+  ['https://degreed.com/plan/3210455?editmode=false⦁autosuggest=false', 'Unilever Degree'],
+  ['https://www.youtube.com/watch?v=LRPgU-KbPhU', 'Microsoft Teams'],
+  ['https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'Happy Hour na Unilever'],
 ];
 export default hubTexts;

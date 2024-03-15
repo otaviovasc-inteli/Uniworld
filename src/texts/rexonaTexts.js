@@ -1,8 +1,8 @@
-// Each line represent one interaction in that dialog box, you can edit text as you want
+// Each line represent one Question options and answers
 const rexonaTexts =
 [
-  ['Com quantos paus se faz uma canoa?', ['A) 42', 'B) 3', 'C) mais de 1', 'A']], // Question with answers and correct answer
-  ['Qual o nome do cavalo branco de napoleao?', ['A) Preto Claro', 'B) Verde Musgo', 'C) Branco escuro', 'B']],
-  ['Qual o nome do pai do dvd', ['A) Deodato', 'B) Verde Musgo', 'C) Dono da aliexpress', 'B']]
+  // Estrutura ['Question', ['option1', 'option2', 'option3', 'answer']]
+  ["Para coletar as marcas, você precisará responder questões ao decorrer do jogo. Entedeu?", ['A) Não', 'B) Sim', 'C) Não', 'B']],
+  ["Questao 2. Entedeu?", ['A) Sim', 'B) Não', 'C) Não', 'A']]
 ];
 export default rexonaTexts;

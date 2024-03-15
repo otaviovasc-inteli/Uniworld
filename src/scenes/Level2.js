@@ -57,23 +57,13 @@ export default class Level2 extends Phaser.Scene {
     });
     this.createEndOfLevel(playerZones.end, player);
     this.setupFollowupCameraOn(player, map);
-
-    // Creates line configurations (makes enemies still on the platforms)
-    this.plotting = false;
-    this.graphics = this.add.graphics();
-    this.line = new Phaser.Geom.Line();
-    this.graphics.lineStyle(1, 0X800080);
-
-    // Makes pointer creates line
-    this.input.on("pointerdown", this.startDrawing, this);
-    this.input.on("pointerup", pointer => this.finishDrawing(pointer, layers.platforms), this);
   }
 
   startDrawing(pointer) {
     this.line.x1 = pointer.worldX;
     this.line.y1 = pointer.worldY;
     this.plotting = true;
-    }
+  }
 
   finishDrawing(pointer, layer) {
     this.line.x2 = pointer.worldX;
@@ -87,7 +77,7 @@ export default class Level2 extends Phaser.Scene {
     console.log(this.tileHits.length);
 
     this.plotting = false;
-      }
+  }
 
   //create player in scene
   createPlayer({ start }, oldPlayer) {
@@ -102,7 +92,6 @@ export default class Level2 extends Phaser.Scene {
       const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y);
       enemies.add(enemy);
     });
-
     return enemies;
   }
 
@@ -133,7 +122,7 @@ export default class Level2 extends Phaser.Scene {
     const tileset3 = map.getTileset("bg-color-green");
 
     // create layers
-    const env = map.createLayer("env", tileset2);
+    const env = map.createLayer("env", [tileset2, tileset1]);
     const platforms = map.createLayer("platforms", tileset1);
     map.createLayer("bg-color-green", tileset3).setDepth(-9);
     const playerZones = map.getObjectLayer("player_zones");
@@ -147,7 +136,7 @@ export default class Level2 extends Phaser.Scene {
   // Create background for assets and set its positions
   createBg(map) {
     const bgSkyObject = map.getObjectLayer('bg-sky').objects[0]
-    this.bgSky =this.add.tileSprite(bgSkyObject.x - 300, bgSkyObject.y, bgSkyObject.width, bgSkyObject.height, 'bg_color_blue')
+    this.bgSky = this.add.tileSprite(bgSkyObject.x - 300, bgSkyObject.y, bgSkyObject.width, bgSkyObject.height, 'bg_color_blue')
       .setDepth(-10)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
@@ -220,15 +209,6 @@ export default class Level2 extends Phaser.Scene {
 
     // Moves plane every frame
     this.plane.x += 0.7
-
-    // creates the line based on the pointer position
-    if (this.plotting){
-    const pointer = this.input.activePointer;
-
-    this.line.x2 = pointer.worldX
-    this.line.y2 = pointer.worldY
-    this.graphics.clear();
-    this.graphics.strokeLineShape(this.line);}
   }
 
   createEnv() {
