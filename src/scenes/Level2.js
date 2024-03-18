@@ -24,7 +24,7 @@ export default class Level2 extends Phaser.Scene {
     const player = this.createPlayer(playerZones, oldPlayer);
 
     // create enemies
-    const enemies = this.createEnemies(layers.enemySpawns);
+    const enemies = this.createEnemies(layers);
 
     // RexonaNpc sprite
     const dvdNpc = new Npc(this, 7420, 700, 'hub_sprite', 'hub', player)
@@ -59,12 +59,6 @@ export default class Level2 extends Phaser.Scene {
     this.setupFollowupCameraOn(player, map);
   }
 
-  startDrawing(pointer) {
-    this.line.x1 = pointer.worldX;
-    this.line.y1 = pointer.worldY;
-    this.plotting = true;
-  }
-
   finishDrawing(pointer, layer) {
     this.line.x2 = pointer.worldX;
     this.line.y2 = pointer.worldY;
@@ -75,8 +69,6 @@ export default class Level2 extends Phaser.Scene {
     this.tileHits = layer.getTilesWithinShape(this.line);
 
     console.log(this.tileHits.length);
-
-    this.plotting = false;
   }
 
   //create player in scene
@@ -85,11 +77,12 @@ export default class Level2 extends Phaser.Scene {
   }
 
   //create enemy slime in scene
-  createEnemies(spawnLayer) {
+  createEnemies(layers) {
     const enemies = new Enemies(this);
     const enemyTypes = enemies.getTypes();
-    spawnLayer.objects.forEach(spawnPoint => {
-      const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y);
+    layers.enemySpawns.objects.forEach(spawnPoint => {
+      console.log("Enemy type:" + spawnPoint.type);
+      const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y, [layers.platforms, spawnPoint.type]);
       enemies.add(enemy);
     });
     return enemies;

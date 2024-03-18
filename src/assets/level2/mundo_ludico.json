@@ -336,11 +336,11 @@
                  "name":"spawnPoint",
                  "point":true,
                  "rotation":0,
-                 "type":"greenSlime",
+                 "type":"GreenSlime",
                  "visible":true,
                  "width":0,
-                 "x":952,
-                 "y":1612
+                 "x":1250,
+                 "y":1382
                 }, 
                 {
                  "height":0,
@@ -348,11 +348,11 @@
                  "name":"spawnPoint",
                  "point":true,
                  "rotation":0,
-                 "type":"greenSlime",
+                 "type":"GreenSlime",
                  "visible":true,
                  "width":0,
-                 "x":2836,
-                 "y":1552
+                 "x":1596,
+                 "y":1236
                 }, 
                 {
                  "height":0,
@@ -360,7 +360,7 @@
                  "name":"spawnPoint",
                  "point":true,
                  "rotation":0,
-                 "type":"purpleSlime",
+                 "type":"PurpleSlime",
                  "visible":true,
                  "width":0,
                  "x":4148,
