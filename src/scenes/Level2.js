@@ -228,8 +228,8 @@ export default class Level2 extends Phaser.Scene {
     this.balao.play('balao')
 
     // Placas
-    this.add.image(600, 1680, 'placa_unilever').setScale(0.8)
-    this.add.image(3100, 1680, 'placa_unilever').setScale(0.8)
-    this.add.image(7630, 720, 'placa_unilever').setScale(0.8)
+    this.add.image(600, 1680, 'placa_unilever').setScale(0.8).setDepth(-5)
+    this.add.image(3100, 1680, 'placa_unilever').setScale(0.8).setDepth(-5)
+    this.add.image(7630, 720, 'placa_unilever').setScale(0.8).setDepth(-5)
   }
 }
