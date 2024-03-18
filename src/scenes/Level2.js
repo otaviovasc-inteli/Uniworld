@@ -89,7 +89,8 @@ export default class Level2 extends Phaser.Scene {
     const enemies = new Enemies(this);
     const enemyTypes = enemies.getTypes();
     spawnLayer.objects.forEach(spawnPoint => {
-      const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y);
+      console.log(spawnPoint.type);
+      const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y, spawnPoint.type);
       enemies.add(enemy);
     });
     return enemies;

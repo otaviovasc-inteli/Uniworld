@@ -1,67 +1,56 @@
 import collidable from "../../mixins/collidable.js";
+import initAnimations from "./anims/SlimeAnims.js";
 
 export default class Slime extends Phaser.Physics.Arcade.Sprite {
-    constructor(scene, x, y, sprite, slimeName, player) {
-        super(scene, x, y, sprite);
+    constructor(scene, x, y, name, key) {
+        super(scene, x, y, key);
 
         scene.add.existing(this);
         scene.physics.add.existing(this);
-        this.npcPlayer = player
-        this.name = slimeName
 
-        //Mixins
-        Object.assign(this, collidable);
+        this.name = name
+
+        // Mixins
+        Object.assign(this, collidable)
 
         this.init();
-        // this.initEvents()
+        this.initEvents();
+
+        // Create Slime anims
+        Slime.instanceCount++
+        if (Slime.instanceCount <= 1)
+          initAnimations(this.scene.anims);
     }
 
-    //initiates physics and colliders
     init() {
         this.gravity = 1000;
         this.speed = 150
 
-        this.body.setGravityY(this.gravity)
+        this.body.setGravityY(this.gravity);
         this.setCollideWorldBounds(true);
-        this.setOrigin(0.5, 1)
-        this.setImmovable(true)
-        this.setSize(this.width, this.height)
+        this.setOrigin(0.5, 1);
+        this.setImmovable(true);
+        this.setSize(120, 76.8);
+        this.setScale(0.6);
+        this.body.offset.x = 0;
+        this.body.offset.y = 0;
     }
 
     initEvents() {
         this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
     }
 
-    // create() {
-    //     this.slimeAnims("green_slime");
-    //     this.play("slime_jump");
-    //     this.setBounce(1);
-    //     this.body.setSize(100, 45);
-
-    //     this.scene.tweens.add({
-    //         targets: this,
-    //         x: 1550,
-    //         flipX: true,
-    //         ease: "Linear",
-    //         duration: 9000,
-    //         repeat: -1,
-    //         yoyo: true
-    //     }).play();
-    // }
-
-    // update () {
-    //     this.scene.physics.add.overlap(this, this.npcPlayer, () => {
-    //         console.log("hitou o slime");
-    //     });
-    // }
-
-    // animate slimes movement
-    slimeAnims(slime_name) {   
-        this.anims.create({
-        key: "slime_jump",
-        frames: this.anims.generateFrameNumbers(slime_name, {start: 0, end: 2}),
-        frameRate: 3,
-        repeat:-1
-        });
-    }
+    update() {
+        // set slime movements
+        if (this.body.onFloor()) {
+          this.play(`${this.name}_jump`, true);
+          this.setVelocityX(0);
+          this.setVelocityY(0);
+          this.scene.time.delayedCall(400, () => {
+            this.setVelocityY(-200);
+            this.play(`${this.name}_idle`, true);
+            this.setVelocityX(-50);
+          });
+        }
+      }
 }
