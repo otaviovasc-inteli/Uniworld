@@ -1,67 +1,104 @@
 import collidable from "../../mixins/collidable.js";
+import initAnimations from "./anims/SlimeAnims.js";
 
 export default class Slime extends Phaser.Physics.Arcade.Sprite {
-    constructor(scene, x, y, sprite, slimeName, player) {
-        super(scene, x, y, sprite);
+	constructor(scene, x, y, layerNameArray) {
+		super(scene, x, y);
 
-        scene.add.existing(this);
-        scene.physics.add.existing(this);
-        this.npcPlayer = player
-        this.name = slimeName
+		scene.add.existing(this);
+		scene.physics.add.existing(this);
 
-        //Mixins
-        Object.assign(this, collidable);
+		this.colliderLayer = layerNameArray[0]
+		this.name = layerNameArray[1]
 
-        this.init();
-        // this.initEvents()
-    }
+		// Mixins
+		Object.assign(this, collidable)
 
-    //initiates physics and colliders
-    init() {
-        this.gravity = 1000;
-        this.speed = 150
+		this.init();
+		this.initEvents();
 
-        this.body.setGravityY(this.gravity)
-        this.setCollideWorldBounds(true);
-        this.setOrigin(0.5, 1)
-        this.setImmovable(true)
-        this.setSize(this.width, this.height)
-    }
+		// Create Slime anims
+		Slime.instanceCount++
+		if (Slime.instanceCount <= 1)
+			initAnimations(this.scene.anims);
+	}
 
-    initEvents() {
-        this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
-    }
+	init() {
+		this.gravity = 1000;
+		this.speed = 150
+		this.timeFromLastTurn = 0
 
-    // create() {
-    //     this.slimeAnims("green_slime");
-    //     this.play("slime_jump");
-    //     this.setBounce(1);
-    //     this.body.setSize(100, 45);
+		this.body.setGravityY(this.gravity);
+		this.setCollideWorldBounds(true);
+		this.setOrigin(0.5, 1);
+		this.setImmovable(true);
+		this.setSize(120, 76.8);
+		this.setScale(0.6);
+		this.body.offset.x = 0;
+		this.body.offset.y = 0;
 
-    //     this.scene.tweens.add({
-    //         targets: this,
-    //         x: 1550,
-    //         flipX: true,
-    //         ease: "Linear",
-    //         duration: 9000,
-    //         repeat: -1,
-    //         yoyo: true
-    //     }).play();
-    // }
+		this.rayGraphics = this.scene.add.graphics({ linestyle: { width: 2, color: 0xaa00aa } })
+	}
 
-    // update () {
-    //     this.scene.physics.add.overlap(this, this.npcPlayer, () => {
-    //         console.log("hitou o slime");
-    //     });
-    // }
+	initEvents() {
+		this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
+	}
 
-    // animate slimes movement
-    slimeAnims(slime_name) {   
-        this.anims.create({
-        key: "slime_jump",
-        frames: this.anims.generateFrameNumbers(slime_name, {start: 0, end: 2}),
-        frameRate: 3,
-        repeat:-1
-        });
-    }
+	update(time, delta) {
+		// set slime movements
+		if (this.body.onFloor()) {
+			this.play(`${this.name}_jump`, true);
+			this.setVelocityX(0);
+			this.setVelocityY(0);
+			this.scene.time.delayedCall(400, () => {
+				// this.setVelocityY(-100);
+				this.hasHit = false;
+				this.play(`${this.name}_idle`, true);
+				this.setVelocityX(this.speed);
+			});
+		}
+
+		const { ray, hasHit } = this.raycast(this.body, this.colliderLayer);
+
+		if (!hasHit && this.timeFromLastTurn + 100 < time) {
+			this.setFlipX(!this.flipX)
+			this.setVelocityX(this.speed = -this.speed)
+			this.timeFromLastTurn = time
+		}
+
+		this.rayGraphics.clear();
+		this.rayGraphics.strokeLineShape(ray);
+	}
+
+
+	raycast(body, layer, rayLength = 130) {
+		const { x, y, width, halfHeight } = body;
+		const line = new Phaser.Geom.Line();
+		let hasHit = false;
+
+		switch (body.facing) {
+			case Phaser.Physics.Arcade.FACING_RIGHT: {
+				line.x1 = x + width;
+				line.y1 = y + halfHeight;
+				line.x2 = line.x1 + rayLength;
+				line.y2 = line.y1 + rayLength;
+				break
+			}
+			case Phaser.Physics.Arcade.FACING_LEFT: {
+				line.x1 = x;
+				line.y1 = y + halfHeight;
+				line.x2 = line.x1 - rayLength;
+				line.y2 = line.y1 + rayLength;
+				break
+			}
+		}
+
+		const hits = layer.getTilesWithinShape(line);
+
+		if (hits.length > 0) {
+			hasHit = hits.some(hit => hit.index !== -1);
+		}
+
+		return { ray: line, hasHit };
+	}
 }

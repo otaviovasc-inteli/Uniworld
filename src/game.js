@@ -26,9 +26,7 @@ var config = {
     default: 'arcade',
     arcade: {
         gravity: { y: 0 },
-        debug: true,
-        fps: 60,
-        fixedStep: true,
+        debug: true
     }
   },
   pixelArt: true,
