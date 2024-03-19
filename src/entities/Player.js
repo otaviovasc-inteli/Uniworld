@@ -1,5 +1,6 @@
 import initAnimations from "./playerAnims.js";
 import collidable from "../mixins/collidable.js";
+import Projectile from "./Projectile.js";
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   static instanceCount = 0;
@@ -144,6 +145,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     // Attack Logic
     if (isQJustDown) {
+      let projectile = new Projectile(this.scene, this.x, this.y, "projectile_anim")
       this.pauseUpdate()
       this.play("player_attack", true)
       this.scene.time.delayedCall(150, () => {
