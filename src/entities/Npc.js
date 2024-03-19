@@ -72,8 +72,11 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
               this.computerLogic();
             break;
           case 'rexona':
-              this.rexonaLogic();
+              this.quizLogic('rexona');
             break;
+          case 'omo':
+              this.quizLogic('omo');
+            break;  
           case 'hub':
               this.hubLogic();
             break;
@@ -194,7 +197,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       }
   }
 
-  rexonaLogic() {
+  quizLogic(sprite) {
     // Parse informations from texts array
     const currentQuestion = this.texts[this.questionIndex];
     const questionText = currentQuestion[0];
@@ -202,9 +205,17 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     const correctAnswerLetter = answers[3];
     this.answerButtons = []
 
+    let centerX = 0
+    let centerY = 0
+
     // Get the camera's center x and y coordinates
-    const centerX = this.scene.cameras.main.centerX;
-    const centerY = this.scene.cameras.main.centerY;
+    if(sprite === 'rexona') {
+      centerX = this.scene.cameras.main.centerX;
+      centerY = this.scene.cameras.main.centerY;
+    } else if (sprite === 'omo') {
+      centerX = this.npcPlayer.x;
+      centerY = this.npcPlayer.y;
+    }
 
     this.npcPlayer.pauseUpdate() // Make sure player will not move while interacting
     this.pauseUpdate() // Make sure no other interaction while interacting
@@ -260,8 +271,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     if (this.questionIndex < this.texts.length) {
         this.resumeUpdate()
         this.closeQuiz()
-        // Chama rexonaLogic denovo mas na proxima questão, por causa do this.questionIndex++;
-        this.rexonaLogic()
+        // Chama quizLogic denovo mas na proxima questão, por causa do this.questionIndex++;
+        this.quizLogic()
     } else {
         console.log('End of quiz');
         this.npcPlayer.resumeUpdate() // Make sure player will not move while interacting
