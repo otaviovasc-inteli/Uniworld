@@ -79,7 +79,7 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 		const line = new Phaser.Geom.Line();
 		let hasHit = false;
 
-		// switch case to make raycast turn when platforms end
+		// switch case to make raycast turn according to enemy facing direction
 		switch (body.facing) {
 			case Phaser.Physics.Arcade.FACING_RIGHT: {
 				line.x1 = x + width;
