@@ -40,6 +40,7 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 		this.rayGraphics = this.scene.add.graphics({ linestyle: { width: 2, color: 0xaa00aa } })
 	}
 
+	// initiates update function on slime
 	initEvents() {
 		this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
 	}
@@ -51,31 +52,34 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 			this.setVelocityX(0);
 			this.setVelocityY(0);
 			this.scene.time.delayedCall(400, () => {
-				// this.setVelocityY(-100);
 				this.hasHit = false;
 				this.play(`${this.name}_idle`, true);
 				this.setVelocityX(this.speed);
 			});
 		}
 
+		// creates raycast property
 		const { ray, hasHit } = this.raycast(this.body, this.colliderLayer);
 
+		// conditional to make the enemy stay on platform
 		if (!hasHit && this.timeFromLastTurn + 100 < time) {
 			this.setFlipX(!this.flipX)
 			this.setVelocityX(this.speed = -this.speed)
 			this.timeFromLastTurn = time
 		}
 
+		// clear old and stroke line 
 		this.rayGraphics.clear();
 		this.rayGraphics.strokeLineShape(ray);
 	}
 
-
+	// raycast function
 	raycast(body, layer, rayLength = 130) {
 		const { x, y, width, halfHeight } = body;
 		const line = new Phaser.Geom.Line();
 		let hasHit = false;
 
+		// switch case to make raycast turn when platforms end
 		switch (body.facing) {
 			case Phaser.Physics.Arcade.FACING_RIGHT: {
 				line.x1 = x + width;
