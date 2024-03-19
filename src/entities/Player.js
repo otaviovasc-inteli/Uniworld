@@ -38,6 +38,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.jumpSpeed = this.oldPlayer.jumpSpeed || 600;
     this.jumpCount = this.oldPlayer.jumpCount || 0;
     this.consecutiveJumps = this.oldPlayer.consecutiveJumps || 1;
+    this.projectile = true
 
     this.dashDistance = this.oldPlayer.dashSpeed || 150;
     this.dashDuration = this.oldPlayer.dashDuration || 150;
@@ -117,7 +118,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     // Movement and movement sound logic
     if (left.isDown) {
       this.setFlip(true, false);
-      this.setVelocityX(-this.playerSpeed);   
+      this.setVelocityX(-this.playerSpeed);
       this.play("player_run", true);
       if (!this.walkSound.isPlaying)
         this.walkSound.play();
@@ -145,7 +146,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     // Attack Logic
     if (isQJustDown) {
-      let projectile = new Projectile(this.scene, this.x, this.y, "projectile_anim")
+      this.projectile = new Projectile(this.scene, this.x, this.y, "projectile_anim", this.flipX)
       this.pauseUpdate()
       this.play("player_attack", true)
       this.scene.time.delayedCall(150, () => {

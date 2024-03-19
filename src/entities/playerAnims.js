@@ -41,4 +41,11 @@ export default (anims, selectedPlayer) =>{
     frameRate: 10,
     repeat: -1
   });
+
+  anims.create({
+    key: 'projectile_anim',
+    frames: anims.generateFrameNumbers('projectile', { start: 0, end: 5}),
+    frameRate: 6,
+    repeat: 0
+  });
 }
