@@ -9,6 +9,9 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite{
     }
 
     init() {
+        this.scene.physics.world.enable(this)
+          this.setSize(140, 80);
+          this.body.setOffset(75, 90)
         this.play("projectile_anim", true)
         this.scene.add.existing(this).setDepth(4).setScale(0.8)
         this.isDestroyed = false;
@@ -17,6 +20,7 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite{
         this.timeToDestroy = 1100
         this.scene.time.delayedCall(this.timeToDestroy, () => {
           this.destroyInstance()
+          
         })
 
         if(this.facingDirection)
@@ -35,6 +39,14 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite{
         this.x += this.projetileVelocity
         this.projetileVelocity += this.projetileAcceleration
     }
+
+    checkProjectileSlimeCollision(Slime) {
+        this.scene.physics.overlap(this, Slime, () => {
+          this.destroy();
+      
+        });
+      }
+
 
     destroyInstance() {
       // If already destroyed, do nothing
