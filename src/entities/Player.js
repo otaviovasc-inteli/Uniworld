@@ -1,5 +1,6 @@
 import initAnimations from "./playerAnims.js";
 import collidable from "../mixins/collidable.js";
+import Projectile from "./Projectile.js";
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   static instanceCount = 0;
@@ -38,6 +39,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.jumpCount = this.oldPlayer.jumpCount || 0;
     this.consecutiveJumps = this.oldPlayer.consecutiveJumps || 1;
 
+    // Projectile properties
+    this.projectileCooldown = 800; // Cooldown in milliseconds
+    this.lastProjectileTime = 0; // Timestamp of the last projectile shot
+
+    // Dash properties
     this.dashDistance = this.oldPlayer.dashSpeed || 150;
     this.dashDuration = this.oldPlayer.dashDuration || 150;
     this.canDash = this.oldPlayer.canDash || false;
@@ -116,7 +122,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     // Movement and movement sound logic
     if (left.isDown) {
       this.setFlip(true, false);
-      this.setVelocityX(-this.playerSpeed);   
+      this.setVelocityX(-this.playerSpeed);
       this.play("player_run", true);
       if (!this.walkSound.isPlaying)
         this.walkSound.play();
@@ -144,11 +150,22 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     // Attack Logic
     if (isQJustDown) {
-      this.pauseUpdate()
-      this.play("player_attack", true)
-      this.scene.time.delayedCall(150, () => {
-        this.resumeUpdate()
-      })
+      const currentTime = this.scene.time.now;
+
+      // Check if enough time has passed
+      if (currentTime - this.lastProjectileTime > this.projectileCooldown) {
+        this.projectile = new Projectile(this.scene, this.x, this.y, "projectile_anim", this.flipX);
+
+        // Update the last projectile time
+        this.lastProjectileTime = currentTime;
+
+        // The rest of your shooting logic
+        this.pauseUpdate();
+        this.play("player_attack", true);
+        this.scene.time.delayedCall(150, () => {
+          this.resumeUpdate();
+        });
+      }
     }
 
     // Dash logic
@@ -176,12 +193,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         y: targetY,
         duration: this.dashDuration,
         onStart: () => {
-          console.log('start dash');
           this.body.setAllowGravity(false);
           this.body.enable = false; // Disable physics body during the dash
         },
         onComplete: () => {
-          console.log('complete dash');
           this.body.setAllowGravity(true);
           this.body.enable = true; // Re-enable physics body
         }

@@ -59,6 +59,7 @@ export default class Preload extends Phaser.Scene {
     this.load.image('quiz_button_C', 'assets/quiz/quiz_button_C.png');
     // ------------------------------------------------------------------
     // Players
+    this.load.spritesheet("projectile", "./assets/player/projectiles/projectile_rexonna2.png", { frameWidth: 254, frameHeight: 232 });
     this.load.spritesheet("player1", "assets/player/player1.png", { frameWidth: 256, frameHeight: 256 });
     this.load.spritesheet("player2", "assets/player/player2.png", { frameWidth: 256, frameHeight: 256 });
     this.load.spritesheet("player3", "assets/player/player3.png", { frameWidth: 256, frameHeight: 256 });
@@ -70,6 +71,7 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet('green_slime', 'assets/enemies/green_slime.png', {frameWidth:128,frameHeight:128});
     this.load.spritesheet('purple_slime', 'assets/enemies/purple_slime.png', {frameWidth:128,frameHeight:128});
     this.load.spritesheet('fumacinha', 'assets/enemies/smoke.png', {frameWidth:128,frameHeight:128});
+    this.load.spritesheet('boss_level2', 'assets/sprites/Enemy/treeboss.png', {frameWidth:174,frameHeight:177});
 
     // ------------------------------------------------------------------
     // Npcs
