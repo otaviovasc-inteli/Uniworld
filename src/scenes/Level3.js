@@ -20,7 +20,7 @@ export default class Level3 extends Phaser.Scene {
     const player = this.createPlayer(playerZones, oldPlayer);
     
     //colocando o Npc de links no terceiro mapa
-    const dvdNpc = new Npc(this, 6848, 1659, 'hub_sprite', 'hub', player)
+    const dvdNpc = new Npc(this, 6828, 1659, 'hub_sprite', 'hub2', player)
     .setSize(100, 120)
     .setScale(1.2)
 

@@ -73,8 +73,11 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
             break;
           case 'rexona':
               this.rexonaLogic();
-            break;
+              break;
           case 'hub':
+              this.hubLogic();
+            break;
+            case 'hub2':
               this.hubLogic();
             break;
           default:
@@ -383,4 +386,5 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       return;
     });
   }
+
 }
