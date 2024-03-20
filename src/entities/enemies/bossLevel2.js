@@ -26,7 +26,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.setOrigin(0.5, 1);
     this.setImmovable(true);
     this.setSize(110, 125);
-    this.body.offset.y = 10;
+    this.body.offset.y = 20;
     this.setFlipX(true)
     this.setScale(2)
   }
