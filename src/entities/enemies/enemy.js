@@ -1,5 +1,4 @@
 import collidable from "../../mixins/collidable.js";
-import initAnimations from "./anims/SlimeAnims.js";
 
 export default class Enemy extends Phaser.Physics.Arcade.Sprite {
     constructor(scene, x, y, key) {
@@ -13,10 +12,6 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
 
         this.init();
         this.initEvents();
-
-        // Create Enemy anims
-        Enemy.instanceCount++;
-        if (Enemy.instanceCount <= 1) initAnimations(this.scene.anims);
     }
 
     // initiate based properties
@@ -34,9 +29,8 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
         this.setSize(this.width, this.height);
     }
 
-    // initiate update function 
+    // initiate update function
     initEvents() {
         this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
     }
 }
-

@@ -2,6 +2,7 @@ import collidable from "../../mixins/collidable.js";
 import initAnimations from "./anims/SlimeAnims.js";
 
 export default class Slime extends Phaser.Physics.Arcade.Sprite {
+  static instanceCount = 0
 	constructor(scene, x, y, layerNameArray) {
 		super(scene, x, y);
 
@@ -68,7 +69,7 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 			this.timeFromLastTurn = time
 		}
 
-		// clear old and stroke line 
+		// clear old and stroke line
 		this.rayGraphics.clear();
 		this.rayGraphics.strokeLineShape(ray);
 	}

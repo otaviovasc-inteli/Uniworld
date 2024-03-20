@@ -1,6 +1,7 @@
 import Player from "../entities/Player.js";
 import Enemies from "../groups/enemies.js";
-import Npc from "../entities/Npc.js";
+import Npc from "../entities/Npc.js";;
+import BossLevel2 from "../entities/enemies/bossLevel2.js";
 
 export default class Level2 extends Phaser.Scene {
   constructor() {
@@ -26,7 +27,10 @@ export default class Level2 extends Phaser.Scene {
     // create enemies
     const enemies = this.createEnemies(layers);
 
-    // hubNpc sprite
+    //create boss
+    const boss = new BossLevel2(this, 9664, 960, 'boss_level2')
+
+    // RexonaNpc sprite
     const dvdNpc = new Npc(this, 7420, 700, 'hub_sprite', 'hub', player)
     .setSize(100, 120)
     .setScale(1.2)
@@ -60,6 +64,15 @@ export default class Level2 extends Phaser.Scene {
 
       },
     });
+
+    // Collider boss with platforms
+    this.createEnemyColliders(boss, {
+      colliders: {
+        platforms: layers.platforms,
+        player: player,
+
+      },
+    });
     this.createEndOfLevel(playerZones.end, player);
     this.setupFollowupCameraOn(player, map);
   }
@@ -80,6 +93,7 @@ export default class Level2 extends Phaser.Scene {
   createPlayer({ start }, oldPlayer) {
     return new Player(this, start.x, start.y, oldPlayer);
   }
+
 
   //create enemy slime in scene
   createEnemies(layers) {
