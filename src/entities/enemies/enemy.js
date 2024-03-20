@@ -19,6 +19,7 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
         if (Enemy.instanceCount <= 1) initAnimations(this.scene.anims);
     }
 
+    // initiate based properties
     init() {
         this.gravity = 1000;
         this.speed = 150;
@@ -33,6 +34,7 @@ export default class Enemy extends Phaser.Physics.Arcade.Sprite {
         this.setSize(this.width, this.height);
     }
 
+    // initiate update function 
     initEvents() {
         this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
     }
