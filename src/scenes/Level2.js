@@ -102,11 +102,15 @@ export default class Level2 extends Phaser.Scene {
     return enemies;
   }
 
+  onPlayerCollision(enemy, player) {
+    player.takesHit(enemy)
+  }
+
   // add enemy slime colliders
   createEnemyColliders(enemies, { colliders }) {
     enemies
       .addCollider(colliders.platforms)
-      .addCollider(colliders.player)
+      .addCollider(colliders.player, this.onPlayerCollision)
   }
 
   // Add player colliders
