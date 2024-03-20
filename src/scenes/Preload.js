@@ -71,7 +71,7 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet('green_slime', 'assets/enemies/green_slime.png', {frameWidth:128,frameHeight:128});
     this.load.spritesheet('purple_slime', 'assets/enemies/purple_slime.png', {frameWidth:128,frameHeight:128});
     this.load.spritesheet('fumacinha', 'assets/enemies/smoke.png', {frameWidth:128,frameHeight:128});
-    this.load.spritesheet('boss_level2', 'assets/sprites/Enemy/treeboss.png', {frameWidth:175,frameHeight:177});
+    this.load.spritesheet('boss_level2', 'assets/sprites/Enemy/treeboss.png', {frameWidth:174,frameHeight:177});
 
     // ------------------------------------------------------------------
     // Npcs
