@@ -1,6 +1,7 @@
 import Player from "../entities/Player.js";
 import Enemies from "../groups/enemies.js";
-import Npc from "../entities/Npc.js";
+import Npc from "../entities/Npc.js";;
+import BossLevel2 from "../entities/enemies/bossLevel2.js";
 
 export default class Level2 extends Phaser.Scene {
   constructor() {
@@ -24,7 +25,10 @@ export default class Level2 extends Phaser.Scene {
     const player = this.createPlayer(playerZones, oldPlayer);
 
     // create enemies
-    const enemies = this.createEnemies(layers.enemySpawns);
+    const enemies = this.createEnemies(layers);
+
+    //create boss
+    const boss = new BossLevel2(this, 9664, 960, 'boss_level2')
 
     // RexonaNpc sprite
     const dvdNpc = new Npc(this, 7420, 700, 'hub_sprite', 'hub', player)
@@ -55,14 +59,17 @@ export default class Level2 extends Phaser.Scene {
 
       },
     });
+
+    // Collider boss with platforms
+    this.createEnemyColliders(boss, {
+      colliders: {
+        platforms: layers.platforms,
+        player: player,
+
+      },
+    });
     this.createEndOfLevel(playerZones.end, player);
     this.setupFollowupCameraOn(player, map);
-  }
-
-  startDrawing(pointer) {
-    this.line.x1 = pointer.worldX;
-    this.line.y1 = pointer.worldY;
-    this.plotting = true;
   }
 
   finishDrawing(pointer, layer) {
@@ -75,8 +82,6 @@ export default class Level2 extends Phaser.Scene {
     this.tileHits = layer.getTilesWithinShape(this.line);
 
     console.log(this.tileHits.length);
-
-    this.plotting = false;
   }
 
   //create player in scene
@@ -84,12 +89,14 @@ export default class Level2 extends Phaser.Scene {
     return new Player(this, start.x, start.y, oldPlayer);
   }
 
+
   //create enemy slime in scene
-  createEnemies(spawnLayer) {
+  createEnemies(layers) {
     const enemies = new Enemies(this);
     const enemyTypes = enemies.getTypes();
-    spawnLayer.objects.forEach(spawnPoint => {
-      const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y);
+    layers.enemySpawns.objects.forEach(spawnPoint => {
+      console.log("Enemy type:" + spawnPoint.type);
+      const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y, [layers.platforms, spawnPoint.type]);
       enemies.add(enemy);
     });
     return enemies;
@@ -237,8 +244,8 @@ export default class Level2 extends Phaser.Scene {
     this.balao.play('balao')
 
     // Placas
-    this.add.image(600, 1680, 'placa_unilever').setScale(0.8)
-    this.add.image(3100, 1680, 'placa_unilever').setScale(0.8)
-    this.add.image(7630, 720, 'placa_unilever').setScale(0.8)
+    this.add.image(600, 1680, 'placa_unilever').setScale(0.8).setDepth(-5)
+    this.add.image(3100, 1680, 'placa_unilever').setScale(0.8).setDepth(-5)
+    this.add.image(7630, 720, 'placa_unilever').setScale(0.8).setDepth(-5)
   }
 }
