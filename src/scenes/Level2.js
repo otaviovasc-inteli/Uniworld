@@ -209,6 +209,8 @@ export default class Level2 extends Phaser.Scene {
 
     // Moves plane every frame
     this.plane.x += 0.7
+
+    console.log(this)
   }
 
   createEnv() {

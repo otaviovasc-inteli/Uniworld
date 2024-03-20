@@ -1,5 +1,5 @@
 import Player from "../entities/Player.js";
-
+import Npc from "../entities/Npc.js"
 export default class Level3 extends Phaser.Scene {
   constructor() {
     super("level3");
@@ -18,6 +18,12 @@ export default class Level3 extends Phaser.Scene {
     // Add player object and set bounds to map, pass player from previous scene
     const oldPlayer = this.sys.settings.data.player;
     const player = this.createPlayer(playerZones, oldPlayer);
+    
+    //colocando o Npc de links no terceiro mapa
+    const dvdNpc = new Npc(this, 6848, 1659, 'hub_sprite', 'hub', player)
+    .setSize(100, 120)
+    .setScale(1.2)
+
 
     // Set world bounds based on maps
     this.physics.world.bounds.height = map.heightInPixels;

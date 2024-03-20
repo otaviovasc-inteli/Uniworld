@@ -276,6 +276,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         else {
           this.closeQuiz(true, true)
         }
+
         // this.destroyInstance() // Destroy instance and give powerup if everything is right
     }
   }
