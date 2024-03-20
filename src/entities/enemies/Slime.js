@@ -2,44 +2,44 @@ import collidable from "../../mixins/collidable.js";
 import initAnimations from "./anims/SlimeAnims.js";
 
 export default class Slime extends Phaser.Physics.Arcade.Sprite {
-  constructor(scene, x, y, layerNameArray) {
-    super(scene, x, y);
+  static instanceCount = 0
+	constructor(scene, x, y, layerNameArray) {
+		super(scene, x, y);
 
-    scene.add.existing(this);
-    scene.physics.add.existing(this);
+		scene.add.existing(this);
+		scene.physics.add.existing(this);
 
-    this.colliderLayer = layerNameArray[0];
-    this.name = layerNameArray[1];
+		this.colliderLayer = layerNameArray[0]
+		this.name = layerNameArray[1]
 
-    // Mixins
-    Object.assign(this, collidable);
+		// Mixins
+		Object.assign(this, collidable)
 
-    this.init();
-    this.initEvents();
+		this.init();
+		this.initEvents();
 
-    // Create Slime anims
-    Slime.instanceCount++;
-    if (Slime.instanceCount <= 1) initAnimations(this.scene.anims);
-  }
+		// Create Slime anims
+		Slime.instanceCount++
+		if (Slime.instanceCount <= 1)
+			initAnimations(this.scene.anims);
+	}
 
-  init() {
-    this.gravity = 1000;
-    this.speed = 150;
-    this.timeFromLastTurn = 0;
+	init() {
+		this.gravity = 1000;
+		this.speed = 150
+		this.timeFromLastTurn = 0
 
-    this.body.setGravityY(this.gravity);
-    this.setCollideWorldBounds(true);
-    this.setOrigin(0.5, 1);
-    this.setImmovable(true);
-    this.setSize(120, 76.8);
-    this.setScale(0.6);
-    this.body.offset.x = 0;
-    this.body.offset.y = 0;
+		this.body.setGravityY(this.gravity);
+		this.setCollideWorldBounds(true);
+		this.setOrigin(0.5, 1);
+		this.setImmovable(true);
+		this.setSize(120, 76.8);
+		this.setScale(0.6);
+		this.body.offset.x = 0;
+		this.body.offset.y = 0;
 
-    this.rayGraphics = this.scene.add.graphics({
-      linestyle: { width: 2, color: 0xaa00aa },
-    });
-  }
+		this.rayGraphics = this.scene.add.graphics({ linestyle: { width: 2, color: 0xaa00aa } })
+	}
 
 	// initiates update function on slime
 	initEvents() {
@@ -98,10 +98,12 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 			}
 		}
 
-    if (hits.length > 0) {
-      hasHit = hits.some((hit) => hit.index !== -1);
-    }
+		const hits = layer.getTilesWithinShape(line);
 
-    return { ray: line, hasHit };
-  }
+		if (hits.length > 0) {
+			hasHit = hits.some(hit => hit.index !== -1);
+		}
+
+		return { ray: line, hasHit };
+	}
 }
