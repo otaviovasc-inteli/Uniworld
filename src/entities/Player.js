@@ -44,7 +44,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     // Health
     this.health = 100
-    this.hp = new HealthBar(this.scene, 100, 200, this.health)
+    this.hp = new HealthBar(this.scene, this.x, this.y, this.health)
 
     // Projectile properties
     this.projectileCooldown = 800; // Cooldown in milliseconds

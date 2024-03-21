@@ -9,7 +9,7 @@ export default class HealthBar {
 
     this.size = {
       width: 100,
-      height: 10
+      height: 1000
     }
 
     this.pixelPerHealth = this.size.width / this.value
