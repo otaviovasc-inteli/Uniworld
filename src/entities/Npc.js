@@ -76,8 +76,11 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
             break;
           case 'omo':
               this.quizLogic('omo');
-            break;  
+            break;
           case 'hub':
+              this.hubLogic();
+            break;
+            case 'hub2':
               this.hubLogic();
             break;
           default:
@@ -258,7 +261,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
                 this.scene.sound.add('select_sound', {loop: false, volume: 0.7, rate: 0.5}).play()
                 answerButton.setTint(0xff0000);
                 this.scene.time.delayedCall(500, () => {
-                  this.nextQuestion();
+                  this.nextQuestion(sprite);
                 })
             }
         });
@@ -266,13 +269,13 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   // Uma função recursiva para chamar o quiz novamente (não, não foi chat gpt)
-  nextQuestion() {
+  nextQuestion(sprite) {
     this.questionIndex++;
     if (this.questionIndex < this.texts.length) {
         this.resumeUpdate()
         this.closeQuiz()
         // Chama quizLogic denovo mas na proxima questão, por causa do this.questionIndex++;
-        this.quizLogic()
+        this.quizLogic(sprite)
     } else {
         console.log('End of quiz');
         this.npcPlayer.resumeUpdate() // Make sure player will not move while interacting
@@ -287,6 +290,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         else {
           this.closeQuiz(true, true)
         }
+
         // this.destroyInstance() // Destroy instance and give powerup if everything is right
     }
   }
@@ -393,4 +397,5 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       return;
     });
   }
+
 }

@@ -1,5 +1,5 @@
 import Player from "../entities/Player.js";
-
+import Npc from "../entities/Npc.js";
 export default class Level3 extends Phaser.Scene {
   constructor() {
     super("level3");
@@ -7,7 +7,7 @@ export default class Level3 extends Phaser.Scene {
 
   create() {
     // FadeIn effect
-    this.cameras.main.fadeIn(2000, 30, 30, 0)
+    this.cameras.main.fadeIn(2000, 30, 30, 0);
 
     // Add map and layers
     const map = this.createMap();
@@ -19,6 +19,12 @@ export default class Level3 extends Phaser.Scene {
     const oldPlayer = this.sys.settings.data.player;
     const player = this.createPlayer(playerZones, oldPlayer);
 
+    //colocando o Npc de links no terceiro mapa
+    const dvdNpc = new Npc(this, 6828, 1659, "hub_sprite", "hub2", player)
+      .setSize(100, 120)
+      .setScale(1.2)
+      .setFlip(true, false);
+
     // Set world bounds based on maps
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
@@ -27,7 +33,8 @@ export default class Level3 extends Phaser.Scene {
     this.createPlayerColliders(player, {
       colliders: {
         platforms: layers.platforms,
-    }})
+      },
+    });
 
     this.setupFollowupCameraOn(player, map);
   }
@@ -64,25 +71,46 @@ export default class Level3 extends Phaser.Scene {
   }
 
   createBg(map) {
-    const bgSkyObject = map.getObjectLayer('bg_sky').objects[0]
-    this.bgSky = this.add.tileSprite(bgSkyObject.x - 300, bgSkyObject.y + 200, bgSkyObject.width, bgSkyObject.height, 'ceu_bg')
+    const bgSkyObject = map.getObjectLayer("bg_sky").objects[0];
+    this.bgSky = this.add
+      .tileSprite(
+        bgSkyObject.x - 300,
+        bgSkyObject.y + 200,
+        bgSkyObject.width,
+        bgSkyObject.height,
+        "ceu_bg"
+      )
       .setDepth(-10)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
-      .setScale(3)
+      .setScale(3);
 
-    const bgCloudObject = map.getObjectLayer('bg_nuvem').objects[0]
-    this.bgCloud = this.add.tileSprite(bgCloudObject.x - 270, bgCloudObject.y, bgCloudObject.width, bgCloudObject.height, 'nuvem_bg')
+    const bgCloudObject = map.getObjectLayer("bg_nuvem").objects[0];
+    this.bgCloud = this.add
+      .tileSprite(
+        bgCloudObject.x - 270,
+        bgCloudObject.y,
+        bgCloudObject.width,
+        bgCloudObject.height,
+        "nuvem_bg"
+      )
       .setDepth(-9)
       .setOrigin(0, 1)
       .setScrollFactor(0, 1)
-      .setScale(2)
+      .setScale(2);
 
-    const bgBuildingObject = map.getObjectLayer('bg_predios').objects[0]
-    this.bgBuilding = this.add.tileSprite(bgBuildingObject.x + 100, bgBuildingObject.y, bgBuildingObject.width, bgBuildingObject.height, 'predios_bg')
+    const bgBuildingObject = map.getObjectLayer("bg_predios").objects[0];
+    this.bgBuilding = this.add
+      .tileSprite(
+        bgBuildingObject.x + 100,
+        bgBuildingObject.y,
+        bgBuildingObject.width,
+        bgBuildingObject.height,
+        "predios_bg"
+      )
       .setDepth(-8)
       .setScrollFactor(0, 1)
-      .setScale(1)
+      .setScale(1);
   }
 
   // Return the start and end zone from Tiled
@@ -96,17 +124,17 @@ export default class Level3 extends Phaser.Scene {
 
   // Add player colliders
   createPlayerColliders(player, { colliders }) {
-    player.addCollider(colliders.platforms)
+    player.addCollider(colliders.platforms);
   }
 
   setupFollowupCameraOn(player, map) {
-    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
-    this.cameras.main.startFollow(player, true)
+    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
+    this.cameras.main.startFollow(player, true);
     this.cameras.main.setZoom(0.7);
   }
 
   update() {
-    this.bgCloud.tilePositionX = this.cameras.main.scrollX * 0.1
-    this.bgBuilding.tilePositionX = this.cameras.main.scrollX * 0.4
+    this.bgCloud.tilePositionX = this.cameras.main.scrollX * 0.1;
+    this.bgBuilding.tilePositionX = this.cameras.main.scrollX * 0.4;
   }
 }
