@@ -105,11 +105,25 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.updateEnabled = true;
   }
 
-  collectRexona() {
-    console.log("Collect Rexona");
-    this.damage = 1;
-    this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
-    this.resumeUpdate()
+  collectPowerUp(powerup) {
+    switch (powerup) {
+      case 'rexona':
+        console.log("Collect Rexona");
+        this.damage = 1;
+        this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
+        this.resumeUpdate()
+        break;
+
+      case 'omo':
+        console.log("Collect Omo");
+        this.damage = 1;
+        this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
+        this.resumeUpdate()
+        break;
+
+      default:
+        break;
+    }
   }
 
   update() {

@@ -79,6 +79,7 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("rexona_sprite", "assets/level1/rexona.png", { frameWidth: 128, frameHeight: 192 });
     this.load.image('reuniaoTeams', 'assets/level1/reuniaoTeams.png');
     this.load.image("Ekey", "assets/player/E.png");
+    this.load.spritesheet('omo_sprite', 'assets/level2/omo.png', {frameWidth: 100, frameHeight: 160})
     // ------------------------------------------------------------------
     // Sound effects and music
     this.load.audio("grass_sound", "assets/sounds/level2/lvl_2_grass_walk.ogg");

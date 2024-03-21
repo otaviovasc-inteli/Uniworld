@@ -72,8 +72,11 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
               this.computerLogic();
             break;
           case 'rexona':
-              this.rexonaLogic();
-              break;
+              this.quizLogic('rexona');
+            break;
+          case 'omo':
+              this.quizLogic('omo');
+            break;
           case 'hub':
               this.hubLogic();
             break;
@@ -197,7 +200,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       }
   }
 
-  rexonaLogic() {
+  quizLogic(sprite) {
     // Parse informations from texts array
     const currentQuestion = this.texts[this.questionIndex];
     const questionText = currentQuestion[0];
@@ -205,9 +208,17 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     const correctAnswerLetter = answers[3];
     this.answerButtons = []
 
+    let centerX = 0
+    let centerY = 0
+
     // Get the camera's center x and y coordinates
-    const centerX = this.scene.cameras.main.centerX;
-    const centerY = this.scene.cameras.main.centerY;
+    if(sprite === 'rexona') {
+      centerX = this.scene.cameras.main.centerX;
+      centerY = this.scene.cameras.main.centerY;
+    } else if (sprite === 'omo') {
+      centerX = this.npcPlayer.x;
+      centerY = this.npcPlayer.y;
+    }
 
     this.npcPlayer.pauseUpdate() // Make sure player will not move while interacting
     this.pauseUpdate() // Make sure no other interaction while interacting
@@ -243,14 +254,14 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
                 this.scene.sound.add('select_sound', {loop: false, volume: 0.7}).play()
                 answerButton.setTint(0x00ff00); // Make the button green to indicate correct answer
                 this.scene.time.delayedCall(500, () => { // This delayedCall add time so player can see the button turning green
-                  this.nextQuestion();
+                  this.nextQuestion(sprite);
                 })
             } else {
                 console.log('Wrong answer!');
                 this.scene.sound.add('select_sound', {loop: false, volume: 0.7, rate: 0.5}).play()
                 answerButton.setTint(0xff0000);
                 this.scene.time.delayedCall(500, () => {
-                  this.nextQuestion();
+                  this.nextQuestion(sprite);
                 })
             }
         });
@@ -258,13 +269,13 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   // Uma função recursiva para chamar o quiz novamente (não, não foi chat gpt)
-  nextQuestion() {
+  nextQuestion(sprite) {
     this.questionIndex++;
     if (this.questionIndex < this.texts.length) {
         this.resumeUpdate()
         this.closeQuiz()
-        // Chama rexonaLogic denovo mas na proxima questão, por causa do this.questionIndex++;
-        this.rexonaLogic()
+        // Chama quizLogic denovo mas na proxima questão, por causa do this.questionIndex++;
+        this.quizLogic(sprite)
     } else {
         console.log('End of quiz');
         this.npcPlayer.resumeUpdate() // Make sure player will not move while interacting
@@ -273,7 +284,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         console.log('ammount of questions: '+ this.texts.length);
         if (this.questionsCorrectCount === this.texts.length)
         {
-          this.npcPlayer.collectRexona()
+          this.npcPlayer.collectPowerUp(sprite)
           this.destroyInstance()
         }
         else {
