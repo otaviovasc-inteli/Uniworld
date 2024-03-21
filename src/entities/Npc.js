@@ -254,7 +254,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
                 this.scene.sound.add('select_sound', {loop: false, volume: 0.7}).play()
                 answerButton.setTint(0x00ff00); // Make the button green to indicate correct answer
                 this.scene.time.delayedCall(500, () => { // This delayedCall add time so player can see the button turning green
-                  this.nextQuestion();
+                  this.nextQuestion(sprite);
                 })
             } else {
                 console.log('Wrong answer!');
@@ -284,7 +284,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         console.log('ammount of questions: '+ this.texts.length);
         if (this.questionsCorrectCount === this.texts.length)
         {
-          this.npcPlayer.collectRexona()
+          this.npcPlayer.collectPowerUp(sprite)
           this.destroyInstance()
         }
         else {
