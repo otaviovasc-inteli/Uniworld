@@ -16,9 +16,9 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     // Create Enemy anims
     initAnimations(scene.anims);
 
-    // store the last attack time
+    // store the last attack time and setup attack interval and flag
     this.lastAttackTime = 0;
-    this.attackInterval = 10000;
+    this.attackInterval = 0;
     this.isAttacking = false;
   }
 
@@ -31,10 +31,9 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.setOrigin(0.5, 1);
     this.setImmovable(true);
     this.setSize(110, 125);
-    this.body.offset.y = 20;
+    this.body.offset.y = 19;
     this.setFlipX(true);
     this.setScale(2);
-
   }
 
   initEvents() {
@@ -49,25 +48,17 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     );
   }
 
+  update(time) {
+    this.attackInterval = Phaser.Math.Between(1000, 4000)
+    // Check if it's time to attack
+    if (time - this.lastAttackTime >= this.attackInterval && !this.isAttacking) {
+      this.lastAttackTime = time;
+      this.isAttacking = true;
 
-  update() {
-    setInterval(() => {
-      console.log("teste");
-      this.play("boss2_attack", true);
-    }, 1000);
+      this.play("boss2_attack", true).once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+        this.play("boss2_idle", true);
+        this.isAttacking = false;
+      });
+    }
   }
-  // update(time, delta) {
-  //   if (
-  //     time - this.lastAttackTime >= this.attackInterval &&
-  //     !this.isAttacking
-  //   ) {
-
-  //     this.lastAttackTime = time;
-  //     this.isAttacking = true;
-  //     console.log("ok");
-  //   } else if (!this.isAnimationPlaying("boss2_attack") && this.isAttacking) {
-  //     this.play("boss2_idle", true);
-  //     this.isAttacking = false;
-  //   }
-  // }
 }
