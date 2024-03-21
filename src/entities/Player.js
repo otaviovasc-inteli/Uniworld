@@ -8,6 +8,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
   constructor(scene, x, y, selectedPlayer, oldPlayer) {
     super(scene, x, y);
+    this.x = x
+    this.y = y
     scene.add.existing(this);
     scene.physics.add.existing(this);
     Object.assign(this, collidable);
@@ -42,9 +44,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hasBeenHit = false
     this.bounceVelocity = 400
 
-    // Health
+    // Health logic and setup
+    const leftTopCornerX = (1280 - (1280 / 0.7)) / 2 + 20
+    const leftTopCornerY = (720 - (720 / 0.7)) / 2 + 20
     this.health = 100
-    this.hp = new HealthBar(this.scene, this.x, this.y, this.health)
+    this.hp = new HealthBar(this.scene, leftTopCornerX, leftTopCornerY, this.health)
 
     // Projectile properties
     this.projectileCooldown = 800; // Cooldown in milliseconds
@@ -255,7 +259,19 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hasBeenHit = true
     this.bounceOff()
 
+    this.health -= 20 //dano do mob
+    this.hp.decrease(this.health)
+
+    if(this.health < 1) {
+      console.log("morri");
+      this.die()
+    }
+
     this.scene.time.delayedCall(500, () => {this.hasBeenHit = false})
+  }
+
+  die() {
+    this.setPosition(this.x, this.y)
   }
 
   bounceOff() {
