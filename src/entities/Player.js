@@ -1,6 +1,7 @@
 import initAnimations from "./playerAnims.js";
 import collidable from "../mixins/collidable.js";
 import Projectile from "./Projectile.js";
+import HealthBar from "../hud/healthBar.js";
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   static instanceCount = 0;
@@ -38,6 +39,12 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.jumpSpeed = this.oldPlayer.jumpSpeed || 600;
     this.jumpCount = this.oldPlayer.jumpCount || 0;
     this.consecutiveJumps = this.oldPlayer.consecutiveJumps || 1;
+    this.hasBeenHit = false
+    this.bounceVelocity = 400
+
+    // Health
+    this.health = 100
+    this.hp = new HealthBar(this.scene, 100, 200, this.health)
 
     // Projectile properties
     this.projectileCooldown = 800; // Cooldown in milliseconds
@@ -98,16 +105,30 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.updateEnabled = true;
   }
 
-  collectRexona() {
-    console.log("Collect Rexona");
-    this.damage = 1;
-    this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
-    this.resumeUpdate()
+  collectPowerUp(powerup) {
+    switch (powerup) {
+      case 'rexona':
+        console.log("Collect Rexona");
+        this.damage = 1;
+        this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
+        this.resumeUpdate()
+        break;
+
+      case 'omo':
+        console.log("Collect Omo");
+        this.damage = 1;
+        this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
+        this.resumeUpdate()
+        break;
+
+      default:
+        break;
+    }
   }
 
   update() {
     // If player update is paused, do nothing
-    if (!this.updateEnabled) {
+    if (!this.updateEnabled || this.hasBeenHit) {
       return;
     }
 
@@ -226,5 +247,22 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     if (this.playerVelocityY > maxFallSpeed) {
       this.body.setVelocityY(maxFallSpeed)
     }
+  }
+
+  takesHit(enemy) {
+    if (this.hasBeenHit) return
+    console.log("Fui hitado");
+    this.hasBeenHit = true
+    this.bounceOff()
+
+    this.scene.time.delayedCall(500, () => {this.hasBeenHit = false})
+  }
+
+  bounceOff() {
+    this.body.touching.right ?
+      this.setVelocityX(-this.bounceVelocity) :
+      this.setVelocityX(this.bounceVelocity)
+
+    setTimeout(() => this.setVelocityY(-this.bounceVelocity), 0)
   }
 }
