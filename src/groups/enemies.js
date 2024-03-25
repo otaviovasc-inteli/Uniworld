@@ -1,6 +1,6 @@
 import collidable from "../mixins/collidable.js";
-import GreenSlime from "../entities/enemies/GreenSlime.js";
-import PurpleSlime from "../entities/enemies/PurpleSlime.js";
+import GreenSlime from "../entities/enemies/greenSlime.js";
+import PurpleSlime from "../entities/enemies/purpleSlime.js";
 
 
 export default class enemies extends Phaser.GameObjects.Group {
