@@ -113,11 +113,16 @@ export default class Level2 extends Phaser.Scene {
     player.takesHit(enemy)
   }
 
+  onProjectileHit(entity, source) {
+    entity.takesHit(source)
+  }
+
   // add enemy slime colliders
   createEnemyColliders(enemies, { colliders }) {
     enemies
       .addCollider(colliders.platforms)
       .addCollider(colliders.player, this.onPlayerCollision)
+      .addCollider(colliders.player.projectiles, this.onProjectileHit)
   }
 
   // Add player colliders
