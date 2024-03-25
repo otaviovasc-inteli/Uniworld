@@ -8,11 +8,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
   constructor(scene, x, y, selectedPlayer, oldPlayer) {
     super(scene, x, y);
-    this.x = x
-    this.y = y
     scene.add.existing(this);
     scene.physics.add.existing(this);
     Object.assign(this, collidable);
+
     // Which player art will be used as sprite
     if (selectedPlayer) this.selectedPlayer = selectedPlayer;
 
@@ -41,8 +40,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.jumpSpeed = this.oldPlayer.jumpSpeed || 600;
     this.jumpCount = this.oldPlayer.jumpCount || 0;
     this.consecutiveJumps = this.oldPlayer.consecutiveJumps || 1;
+    this.bounceVelocity = this.oldPlayer.bounceVelocity || 400
     this.hasBeenHit = false
-    this.bounceVelocity = 400
+    this.allowedNextLevel = false
+    this.allowedToShot = this.oldPlayer.allowedToShot || false
 
     // Health logic and setup
     const leftTopCornerX = (1280 - (1280 / 0.7)) / 2 + 20
@@ -51,8 +52,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hp = new HealthBar(this.scene, leftTopCornerX, leftTopCornerY, this.health)
 
     // Projectile properties
-    this.projectileCooldown = 800; // Cooldown in milliseconds
+    this.projectileCooldown = this.oldPlayer.projectileCooldown || 800; // Cooldown in milliseconds
     this.lastProjectileTime = 0; // Timestamp of the last projectile shot
+
+    // Checkpoint
+    this.checkpointCords = {x: this.x, y: this.y}
 
     // Dash properties
     this.dashDistance = this.oldPlayer.dashSpeed || 150;
@@ -112,22 +116,49 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   collectPowerUp(powerup) {
     switch (powerup) {
       case 'rexona':
-        console.log("Collect Rexona");
-        this.damage = 1;
+        console.log("Collect Rexona, allowed to shot, next level allowed");
         this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
-        this.resumeUpdate()
+        this.allowedToShot = true; // Powerup properties
+        this.allowedNextLevel = true // Allow player to switch level
+        this.powerupTutorial(powerup)
         break;
 
       case 'omo':
-        console.log("Collect Omo");
-        this.damage = 1;
+        console.log("Collect Omo, projectile cooldown reduce, next level allowed");
         this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
+        this.projectileCooldown = 400; // Powerup properties
+        this.allowedNextLevel = true // Allow player to switch level
         this.resumeUpdate()
         break;
 
       default:
         break;
     }
+  }
+
+  powerupTutorial(powerup) {
+    // Set image spawn based on powerup
+    let centerX = 0
+    let centerY = 0
+    if(powerup === 'rexona') {
+      centerX = this.scene.cameras.main.centerX;
+      centerY = this.scene.cameras.main.centerY;
+    } else {
+      centerX = this.x;
+      centerY = this.y;
+    }
+
+    // Create window and close button logic
+    if (!this.tutorialWindow) this.tutorialWindow = this.scene.add.image(centerX, centerY, `${powerup}Tutorial`).setDepth(2).setScale(0.5);
+    if (!this.XBtn) this.XBtn = this.scene.add.image(centerX + 200, centerY - 210, 'hub_close').setInteractive().setDepth(3).setScale(0.025);
+    this.XBtn.on('pointerdown', () => {
+      console.log("close");
+      if (this.XBtn) this.XBtn.destroy();
+      if (this.tutorialWindow) this.tutorialWindow.destroy();
+      this.XBtn = null
+      this.tutorialWindow = null
+      this.resumeUpdate() // Re-allow player movement
+    });
   }
 
   update() {
@@ -174,7 +205,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     // Attack Logic
-    if (isQJustDown) {
+    if (isQJustDown && this.allowedToShot) {
       const currentTime = this.scene.time.now;
 
       // Check if enough time has passed
@@ -255,30 +286,40 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
   takesHit(enemy) {
     if (this.hasBeenHit) return
-    console.log("Fui hitado");
     this.hasBeenHit = true
-    this.bounceOff()
+    console.log("Hit");
 
-    this.health -= 20 //dano do mob
-    this.hp.decrease(this.health)
-
-    if(this.health < 1) {
-      console.log("morri");
+    this.hp.decrease(enemy.damage) // Monster damage
+    // Check if player died
+    if(this.hp.currentHp() < 1) {
+      // Dead
+      console.log("Morri");
       this.die()
+    } else {
+      // Hurt
+      this.bounceOff()
     }
 
     this.scene.time.delayedCall(500, () => {this.hasBeenHit = false})
   }
 
   die() {
-    this.setPosition(this.x, this.y)
+    // Go to checkpointCords and get full hp
+    this.setPosition(this.checkpointCords.x, this.checkpointCords.y)
+    this.hp.restoreHp()
   }
 
   bounceOff() {
+    // if hitted by right side, bounce to right, else to left
     this.body.touching.right ?
       this.setVelocityX(-this.bounceVelocity) :
       this.setVelocityX(this.bounceVelocity)
 
     setTimeout(() => this.setVelocityY(-this.bounceVelocity), 0)
+  }
+
+  checkPoint() {
+    // Update checkpoint
+    this.checkpointCords = {x: this.x, y: this.y}
   }
 }

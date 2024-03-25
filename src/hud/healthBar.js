@@ -18,8 +18,17 @@ export default class HealthBar {
     this.draw(x, y)
   }
 
+  restoreHp() {
+    this.value = 100
+    this.draw(this.x, this.y)
+  }
+
+  currentHp() {
+    return this.value
+  }
+
   decrease(amount) {
-    this.value = amount
+    this.value -= amount
     this.draw(this.x, this.y)
   }
 
