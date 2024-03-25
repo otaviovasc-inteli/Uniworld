@@ -4,6 +4,7 @@ import Npc from "../entities/Npc.js";
 export default class Level1 extends Phaser.Scene {
   constructor() {
     super("level1");
+    this.zoomFactor = 1
   }
 
   create () {
@@ -14,7 +15,6 @@ export default class Level1 extends Phaser.Scene {
     this.cameras.main.fadeIn(5000, 30, 30, 0)
 
     // Background
-    const playerSelecionado = this.sys.settings.data.playerSelecionado;
     this.add.image(0, -200, "bg1").setScale(1.12).setOrigin(0, 0);
 
     // Add map and layers
@@ -22,7 +22,8 @@ export default class Level1 extends Phaser.Scene {
     const layers = this.createLayers(map);
     const playerZones = this.getPlayerZones(layers.playerZones)
 
-    // Add pc sprite
+    // Add player to scene
+    const playerSelecionado = this.sys.settings.data.playerSelecionado;
     const player = this.createPlayer(playerZones, playerSelecionado)
     .setScale(1.3)
 
@@ -45,28 +46,28 @@ export default class Level1 extends Phaser.Scene {
     this.setupFollowupCameraOn(player, map)
   }
 
-  createPlayer({start}, playerSelecionado) {
-    return new Player(this, start.x, start.y, playerSelecionado);
+  createPlayer({start}, playerSelecionado, oldPlayer) {
+    return new Player(this, start.x, start.y, playerSelecionado, oldPlayer);
   }
 
   // Uses endZone from Tiled and change level when overlapping
-  createEndOfLevel(end, player) {
+  createEndOfLevel(end, player, playerSelecionado) {
     const endOfLevel = this.physics.add.sprite(end.x, end.y, 'end')
-      .setSize(5, 400)
+      .setSize(1, 400)
       .setAlpha(0)
 
     // Change level logic, sounds and camera effect
-    let overlapInitiated = false; // Flag to track if the overlap action has been initiated
     this.physics.add.overlap(player, endOfLevel, () => {
-      if (overlapInitiated) return; // Return early if the overlap action has already been initiated
-      overlapInitiated = true; // Set the flag to prevent future executions
-
       this.doorSound.play();
       this.musicSound.stop();
 
-      this.cameras.main.fadeOut(1000, 0, 0, 0, (camera, progress) => {
-        if(progress === 1) this.scene.start("level2", {player: player});
-      });
+      console.log("Next level allowed?: " + player.allowedNextLevel);
+
+      if(player.allowedNextLevel) {
+        this.cameras.main.fadeOut(1000, 0, 0, 0, (camera, progress) => {
+          if(progress === 1) this.scene.start("level2", {player: player, playerSelecionado: playerSelecionado});
+        });
+      }
     });
 
   }

@@ -9,10 +9,11 @@ import Level3 from "./scenes/Level3.js";
 // Phaser config to instanciate game
 const WIDTH = 1280;
 const HEIGHT = 720;
+const ZOOM_FACTOR = 0.7
 
 const SHARED_CONFIG = {
   width: WIDTH,
-  height: HEIGHT
+  height: HEIGHT,
 }
 
 const Scenes = [TitleScreen, Level1, Level2, Level3, Preload, PlayerSelect, TutorialScreen];
