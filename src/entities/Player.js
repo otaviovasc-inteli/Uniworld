@@ -42,7 +42,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.consecutiveJumps = this.oldPlayer.consecutiveJumps || 1;
     this.bounceVelocity = this.oldPlayer.bounceVelocity || 400
     this.hasBeenHit = false
-    this.allowedNextLevel = false
+    this.allowedNextLevel = true
     this.allowedToShot = this.oldPlayer.allowedToShot || false
 
     // Health logic and setup
