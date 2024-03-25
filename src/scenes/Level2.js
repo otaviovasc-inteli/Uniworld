@@ -6,6 +6,7 @@ import BossLevel2 from "../entities/enemies/bossLevel2.js";
 export default class Level2 extends Phaser.Scene {
   constructor() {
     super("level2");
+    this.zoomFactor = 0.7
   }
 
   create () {
@@ -22,7 +23,8 @@ export default class Level2 extends Phaser.Scene {
 
     // Add player object and set bounds to map pass player from previous scene
     const oldPlayer = this.sys.settings.data.player;
-    const player = this.createPlayer(playerZones, oldPlayer);
+    const playerSelecionado = this.sys.settings.data.playerSelecionado;
+    const player = this.createPlayer(playerZones, playerSelecionado, oldPlayer);
 
     // create enemies
     const enemies = this.createEnemies(layers);
@@ -73,7 +75,7 @@ export default class Level2 extends Phaser.Scene {
 
       },
     });
-    this.createEndOfLevel(playerZones.end, player);
+    this.createEndOfLevel(playerZones.end, player, playerSelecionado);
     this.setupFollowupCameraOn(player, map);
   }
 
@@ -90,8 +92,8 @@ export default class Level2 extends Phaser.Scene {
   }
 
   //create player in scene
-  createPlayer({ start }, oldPlayer) {
-    return new Player(this, start.x, start.y, oldPlayer);
+  createPlayer({ start }, playerSelecionado, oldPlayer) {
+    return new Player(this, start.x, start.y, playerSelecionado, oldPlayer);
   }
 
 
@@ -190,22 +192,30 @@ export default class Level2 extends Phaser.Scene {
   }
 
   // Uses endZone from Tiled and change level when overlapping
-  createEndOfLevel(end, player) {
+  createEndOfLevel(end, player, playerSelecionado) {
     const endOfLevel = this.physics.add
       .sprite(end.x, end.y, "end")
-      .setSize(5, 400)
+      .setSize(5, 500)
       .setAlpha(0);
 
+    // Change level logic, sounds and camera effect
     this.physics.add.overlap(player, endOfLevel, () => {
-      console.log("start level3");
-      this.scene.start("level3")
+      // Remember to add sounds after
+
+      console.log("Next level allowed?: " + player.allowedNextLevel);
+
+      if(player.allowedNextLevel) {
+        this.cameras.main.fadeOut(1000, 0, 0, 0, (camera, progress) => {
+          if(progress === 1) this.scene.start("level3", {player: player, playerSelecionado: playerSelecionado});
+        });
+      }
     });
   }
 
   setupFollowupCameraOn(player, map) {
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
+    this.cameras.main.setZoom(this.zoomFactor);
     this.cameras.main.startFollow(player, true)
-    this.cameras.main.setZoom(0.7);
   }
 
   // Handle sounds logics
@@ -218,6 +228,7 @@ export default class Level2 extends Phaser.Scene {
       this.musicSound.play();
   }
 
+  // Paralax updating scroll differently
   update() {
     this.bgCloud.tilePositionX = this.cameras.main.scrollX * 0.25
     this.bgForeGround.tilePositionX = this.cameras.main.scrollX * 0.5
@@ -253,6 +264,5 @@ export default class Level2 extends Phaser.Scene {
     // Placas
     this.add.image(600, 1680, 'placa_unilever').setScale(0.8).setDepth(-5)
     this.add.image(3100, 1680, 'placa_unilever').setScale(0.8).setDepth(-5)
-    this.add.image(7630, 720, 'placa_unilever').setScale(0.8).setDepth(-5)
   }
 }

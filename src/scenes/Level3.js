@@ -3,6 +3,7 @@ import Npc from "../entities/Npc.js";
 export default class Level3 extends Phaser.Scene {
   constructor() {
     super("level3");
+    this.zoomFactor = 0.7
   }
 
   create() {
@@ -17,7 +18,8 @@ export default class Level3 extends Phaser.Scene {
 
     // Add player object and set bounds to map, pass player from previous scene
     const oldPlayer = this.sys.settings.data.player;
-    const player = this.createPlayer(playerZones, oldPlayer);
+    const playerSelecionado = this.sys.settings.data.playerSelecionado
+    const player = this.createPlayer(playerZones, playerSelecionado, oldPlayer);
 
     //colocando o Npc de links no terceiro mapa
     const dvdNpc = new Npc(this, 6828, 1659, "hub_sprite", "hub2", player)
@@ -40,8 +42,8 @@ export default class Level3 extends Phaser.Scene {
   }
 
   // Create player in scene
-  createPlayer({ start }, oldPlayer) {
-    return new Player(this, start.x, start.y, oldPlayer);
+  createPlayer({ start }, playerSelecionado, oldPlayer) {
+    return new Player(this, start.x, start.y, playerSelecionado, oldPlayer);
   }
 
   createMap() {
@@ -67,7 +69,7 @@ export default class Level3 extends Phaser.Scene {
 
     platforms.setCollisionByExclusion(-1, true);
 
-    return { platforms, playerZones, env2, env3 };
+    return { platforms, playerZones, env1, env2, env3 };
   }
 
   createBg(map) {
@@ -130,7 +132,7 @@ export default class Level3 extends Phaser.Scene {
   setupFollowupCameraOn(player, map) {
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
     this.cameras.main.startFollow(player, true);
-    this.cameras.main.setZoom(0.7);
+    this.cameras.main.setZoom(this.zoomFactor);
   }
 
   update() {

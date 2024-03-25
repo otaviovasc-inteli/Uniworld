@@ -25,6 +25,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
   init() {
     this.gravity = 1000;
     this.speed = 150;
+    this.damage = 25
 
     this.body.setGravityY(this.gravity);
     this.setCollideWorldBounds(true);
