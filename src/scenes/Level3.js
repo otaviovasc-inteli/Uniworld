@@ -46,6 +46,14 @@ export default class Level3 extends Phaser.Scene {
         platforms: layers.platforms,
       },
     });
+    
+    this.createEnemyColliders(enemies, {
+      colliders: {
+        platforms: layers.platforms,
+        player: player,
+
+      },
+    });
 
     this.setupFollowupCameraOn(player, map);
   }
