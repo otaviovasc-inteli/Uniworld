@@ -72,10 +72,8 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
       this.body.checkCollision.none = true
       this.setCollideWorldBounds(false)
     } else {
-      this.play("boss2_attack", true).once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-        this.play("boss2_idle", true);
-    })
+      this.play("boss2_hurt", true)
+    }
     source.destroyProjectile()
-  }
   }
 }

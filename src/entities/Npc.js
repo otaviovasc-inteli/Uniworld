@@ -201,6 +201,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   quizLogic(sprite) {
+    this.scene.cameras.main.setZoom(1);
+
     // Parse informations from texts array
     const currentQuestion = this.texts[this.questionIndex];
     const questionText = currentQuestion[0];
@@ -215,7 +217,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     if(sprite === 'rexona') {
       centerX = this.scene.cameras.main.centerX;
       centerY = this.scene.cameras.main.centerY;
-    } else if (sprite === 'omo') {
+    } else {
       centerX = this.npcPlayer.x;
       centerY = this.npcPlayer.y;
     }
@@ -296,6 +298,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   closeQuiz(resume, resetVariables) {
+    // Reset zoom
+    this.scene.cameras.main.setZoom(this.scene.zoomFactor);
     // Close button logic to destroy the quiz interface
     if (this.quizWindow) this.quizWindow.destroy();
     if (this.quizText) this.quizText.destroy();
@@ -326,6 +330,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
   // Build hub images links and texts
   hubLogic() {
+    this.npcPlayer.checkPoint()
+
     // Get texts and urls from hubTexts.js
     const url1 = this.texts[0]
     const url2 = this.texts[1]

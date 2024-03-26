@@ -35,8 +35,8 @@ export default class Level3 extends Phaser.Scene {
     this.physics.world.bounds.width = map.widthInPixels;
 
     this.createPlayerColliders(player, { colliders: { platforms: layers.platforms } });
-    this.createEnemyColliders(enemies, { colliders: { platforms: layers.platforms, player: player } });
-    this.createEnemyColliders(boss, { colliders: { platforms: layers.platforms, player: player } });
+    // this.createEnemyColliders(enemies, { colliders: { platforms: layers.platforms, player: player } });
+    // this.createEnemyColliders(boss, { colliders: { platforms: layers.platforms, player: player } });
     this.setupFollowupCameraOn(player, map);
   }
 
