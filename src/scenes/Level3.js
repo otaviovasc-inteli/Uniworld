@@ -21,12 +21,6 @@ export default class Level3 extends Phaser.Scene {
     const playerSelecionado = this.sys.settings.data.playerSelecionado
     const player = this.createPlayer(playerZones, playerSelecionado, oldPlayer);
 
-    //colocando o Npc de links no terceiro mapa
-    const dvdNpc = new Npc(this, 6828, 1659, "hub_sprite", "hub2", player)
-      .setSize(100, 120)
-      .setScale(1.2)
-      .setFlip(true, false);
-
     // Set world bounds based on maps
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
@@ -39,6 +33,8 @@ export default class Level3 extends Phaser.Scene {
     });
 
     this.setupFollowupCameraOn(player, map);
+    this.createEndOfLevel(playerZones.end, player, playerSelecionado);
+
   }
 
   // Create player in scene
@@ -123,6 +119,18 @@ export default class Level3 extends Phaser.Scene {
       end: playerZones.find((zone) => zone.name === "endZone"),
     };
   }
+
+  // Uses endZone from Tiled and change level when overlapping
+  createEndOfLevel(end, player, playerSelecionado) {
+    const endOfLevel = this.physics.add
+      .sprite(end.x, end.y, "end")
+      .setSize(5, 500)
+      .setAlpha(0);
+
+    // Change level logic, sounds and camera effect
+    this.physics.add.overlap(player, endOfLevel, () => {this.scene.start("level3", {player: player, playerSelecionado: playerSelecionado});
+  });
+}
 
   // Add player colliders
   createPlayerColliders(player, { colliders }) {
