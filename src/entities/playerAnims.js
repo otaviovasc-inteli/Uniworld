@@ -31,7 +31,7 @@ export default (anims, selectedPlayer) =>{
   anims.create({
     key: 'player_attack',
     frames: anims.generateFrameNumbers(`player${selectedPlayer}`, { start: 26, end: 30 }),
-    frameRate: 50,
+    frameRate: 20,
     repeat: 0
   });
 
@@ -40,12 +40,5 @@ export default (anims, selectedPlayer) =>{
     frames: anims.generateFrameNumbers('dash_anim', { start: 0, end: 7 }),
     frameRate: 10,
     repeat: -1
-  });
-
-  anims.create({
-    key: 'projectile_anim',
-    frames: anims.generateFrameNumbers('projectile', { start: 0, end: 5}),
-    frameRate: 6,
-    repeat: 0
   });
 }

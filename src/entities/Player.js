@@ -1,6 +1,6 @@
 import initAnimations from "./playerAnims.js";
 import collidable from "../mixins/collidable.js";
-import Projectile from "./Projectile.js";
+import Projectiles from "./Projectiles.js";
 import HealthBar from "../hud/healthBar.js";
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
@@ -54,6 +54,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     // Projectile properties
     this.projectileCooldown = this.oldPlayer.projectileCooldown || 800; // Cooldown in milliseconds
     this.lastProjectileTime = 0; // Timestamp of the last projectile shot
+    this.projectiles =  new Projectiles(this.scene, "projectile")
+    this.lastDirection = Phaser.Physics.Arcade.FACING_RIGHT
 
     // Checkpoint
     this.checkpointCords = {x: this.x, y: this.y}
@@ -62,8 +64,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.dashDistance = this.oldPlayer.dashSpeed || 150;
     this.dashDuration = this.oldPlayer.dashDuration || 150;
     this.canDash = this.oldPlayer.canDash || false;
-
-    this.damage = this.oldPlayer.damage || 0;
 
     // Sounds
     this.createSounds(this.scene)
@@ -181,14 +181,19 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     this.playerVelocityY = this.body.velocity.y;
 
+    if (this.anims.isPlaying && (this.anims.getName() === 'player_attack' || this.anims.getName() === 'dash_anim'))
+      return
+
     // Movement and movement sound logic
     if (left.isDown) {
+      this.lastDirection = Phaser.Physics.Arcade.FACING_LEFT
       this.setFlip(true, false);
       this.setVelocityX(-this.playerSpeed);
       this.play("player_run", true);
       if (!this.walkSound.isPlaying)
         this.walkSound.play();
     } else if (right.isDown) {
+      this.lastDirection = Phaser.Physics.Arcade.FACING_RIGHT
       this.setFlip(false, false);
       this.setVelocityX(this.playerSpeed);
       this.play("player_run", true);
@@ -216,17 +221,14 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
       // Check if enough time has passed
       if (currentTime - this.lastProjectileTime > this.projectileCooldown) {
-        this.projectile = new Projectile(this.scene, this.x, this.y, "projectile_anim", this.flipX);
+        // var projectile = new Projectiles(this.scene, this.x, this.y, "projectile", this.flipX);
+        this.projectiles.fireProjectile(this)
 
         // Update the last projectile time
         this.lastProjectileTime = currentTime;
 
-        // The rest of your shooting logic
-        this.pauseUpdate();
+        // Shoot anim
         this.play("player_attack", true);
-        this.scene.time.delayedCall(150, () => {
-          this.resumeUpdate();
-        });
       }
     }
 

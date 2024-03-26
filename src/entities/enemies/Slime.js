@@ -106,4 +106,15 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 
 		return { ray: line, hasHit };
 	}
+
+  takesHit(source) {
+    this.health -= source.damage
+    if(this.health <= 0){
+      this.setTint(0xff0000)
+      this.setVelocity(0, -200)
+      this.body.checkCollision.none = true
+      this.setCollideWorldBounds(false)
+    }
+    source.destroyProjectile()
+  }
 }
