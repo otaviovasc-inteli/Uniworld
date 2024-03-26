@@ -128,7 +128,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
         this.projectileCooldown = 400; // Powerup properties
         this.allowedNextLevel = true // Allow player to switch level
-        this.resumeUpdate()
+        this.powerupTutorial(powerup)
         break;
 
       default:
@@ -149,14 +149,20 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     // Create window and close button logic
-    if (!this.tutorialWindow) this.tutorialWindow = this.scene.add.image(centerX, centerY, `${powerup}Tutorial`).setDepth(2).setScale(0.5);
-    if (!this.XBtn) this.XBtn = this.scene.add.image(centerX + 200, centerY - 210, 'hub_close').setInteractive().setDepth(3).setScale(0.025);
+    if (!this.videoTutorial) this.videoTutorial = this.scene.add.video(centerX, centerY, `${powerup}Tutorial`).setDepth(2).setScale(0.5);
+    this.videoTutorial.setLoop(true)
+    this.videoTutorial.play()
+    if (!this.XBtn) this.XBtn = this.scene.add.image(centerX + 400, centerY - 200, 'hub_close').setInteractive().setDepth(3).setScale(0.065);
+    // Close button
     this.XBtn.on('pointerdown', () => {
       console.log("close");
       if (this.XBtn) this.XBtn.destroy();
-      if (this.tutorialWindow) this.tutorialWindow.destroy();
+      if (this.videoTutorial) {
+        this.videoTutorial.destroy();
+        this.videoTutorial.stop()
+      }
       this.XBtn = null
-      this.tutorialWindow = null
+      this.videoTutorial = null
       this.resumeUpdate() // Re-allow player movement
     });
   }

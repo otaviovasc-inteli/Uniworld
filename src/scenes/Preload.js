@@ -16,7 +16,8 @@ export default class Preload extends Phaser.Scene {
     // ------------------------------------------------------------------
     // Tutorial
     this.load.video('tutorial', 'assets/links/videoTutorial1.mp4');
-    this.load.image('rexonaTutorial', 'assets/links/paginaTutorialTeclaQ.png')
+    this.load.video('rexonaTutorial', 'assets/links/videoTutorialQ.mp4')
+    this.load.video('omoTutorial', 'assets/links/videoTutorialW.mp4')
     // ------------------------------------------------------------------
     // level1
     this.load.tilemapTiledJSON('level1', 'assets/level1/sceneInterior.json');
