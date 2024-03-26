@@ -1,5 +1,5 @@
 import collidable from "../../mixins/collidable.js";
-import initAnimations from "./anims/BossAnims.js";
+import initAnimations from "./anims/BossAnims2.js";
 
 export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
   constructor(scene, x, y, key) {
@@ -26,16 +26,15 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.gravity = 1000;
     this.speed = 150;
     this.damage = 25
-    this.health = 5
 
     this.body.setGravityY(this.gravity);
     this.setCollideWorldBounds(true);
     this.setOrigin(0.5, 1);
     this.setImmovable(true);
-    this.setSize(110, 125);
+    this.setSize(240, 235);
     this.body.offset.y = 19;
     this.setFlipX(true);
-    this.setScale(2);
+    this.setScale(1);
   }
 
   initEvents() {
@@ -57,21 +56,10 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
       this.lastAttackTime = time;
       this.isAttacking = true;
 
-      this.play("boss2_attack", true).once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-        this.play("boss2_idle", true);
+      this.play("boss3_hurt", true).once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+        this.play("boss3_idle", true);
         this.isAttacking = false;
       });
     }
-  }
-
-  takesHit(source) {
-    this.health -= source.damage
-    if(this.health <= 0){
-      this.setTint(0xff0000)
-      this.setVelocity(0, -200)
-      this.body.checkCollision.none = true
-      this.setCollideWorldBounds(false)
-    }
-    source.destroyProjectile()
   }
 }

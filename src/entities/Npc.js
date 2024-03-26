@@ -218,7 +218,6 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     } else if (sprite === 'omo') {
       centerX = this.npcPlayer.x;
       centerY = this.npcPlayer.y;
-      this.scene.cameras.main.setZoom(1);
     }
 
     this.npcPlayer.pauseUpdate() // Make sure player will not move while interacting
@@ -279,15 +278,16 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         this.quizLogic(sprite)
     } else {
         console.log('End of quiz');
-        console.log(this.questionsCorrectCount + " out of " + this.texts.length);
-        // Resume camera zoom
-        this.scene.cameras.main.setZoom(this.scene.zoomFactor);
-        // Check Quiz results
-        if (this.questionsCorrectCount === this.texts.length) {
-          this.closeQuiz(false, true)
+        this.npcPlayer.resumeUpdate() // Make sure player will not move while interacting
+        this.closeQuiz()
+        console.log('correct questions: '+ this.questionsCorrectCount);
+        console.log('ammount of questions: '+ this.texts.length);
+        if (this.questionsCorrectCount === this.texts.length)
+        {
           this.npcPlayer.collectPowerUp(sprite)
           this.destroyInstance()
-        } else {
+        }
+        else {
           this.closeQuiz(true, true)
         }
 
@@ -296,8 +296,6 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   closeQuiz(resume, resetVariables) {
-    // Reset zoom
-    this.scene.cameras.main.setZoom(this.scene.zoomFactor);
     // Close button logic to destroy the quiz interface
     if (this.quizWindow) this.quizWindow.destroy();
     if (this.quizText) this.quizText.destroy();
@@ -323,13 +321,11 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     }
 
     // Allow the player to move again
-    if(resume) this.npcPlayer.resumeUpdate();
+    this.npcPlayer.resumeUpdate();
   }
 
   // Build hub images links and texts
   hubLogic() {
-    this.npcPlayer.checkPoint()
-
     // Get texts and urls from hubTexts.js
     const url1 = this.texts[0]
     const url2 = this.texts[1]

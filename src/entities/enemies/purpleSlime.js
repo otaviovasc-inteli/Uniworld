@@ -5,5 +5,6 @@ export default class PurpleSlime extends Slime {
   constructor(scene, x, y, slime_name) {
     super(scene, x, y, slime_name);
     this.damage = 30
+    this.health = 3
   }
 }
