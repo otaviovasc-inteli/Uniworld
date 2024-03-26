@@ -217,7 +217,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     if(sprite === 'rexona') {
       centerX = this.scene.cameras.main.centerX;
       centerY = this.scene.cameras.main.centerY;
-    } else if (sprite === 'omo') {
+    } else {
       centerX = this.npcPlayer.x;
       centerY = this.npcPlayer.y;
     }

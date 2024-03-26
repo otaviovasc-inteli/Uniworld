@@ -8,8 +8,8 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite {
         scene.add.existing(this).setScale(0.8).setDepth(4)
         scene.physics.add.existing(this)
 
-        this.speed = 500
-        this.maxDistance = 700
+        this.speed = 800
+        this.maxDistance = 1000
         this.traveledDistance = 0
 
         this.setSize(140, 80)
