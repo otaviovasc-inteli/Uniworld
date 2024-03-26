@@ -44,6 +44,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hasBeenHit = false
     this.allowedNextLevel = true
     this.allowedToShot = this.oldPlayer.allowedToShot || false
+    this.allowedToDash = this.oldPlayer.allowedToDash || true
 
     // Health logic and setup
     const leftTopCornerX = (1280 - (1280 / 0.7)) / 2 + 20
@@ -128,6 +129,14 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
         this.projectileCooldown = 400; // Powerup properties
         this.allowedNextLevel = true // Allow player to switch level
+        // this.powerupTutorial(powerup)
+        break;
+
+      case 'kibon':
+        console.log("Collect Kibon, allowed to dash, next level allowed");
+        this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
+        this.allowedToDash = true; // Powerup properties
+        this.allowedNextLevel = true // Allow player to switch level
         this.powerupTutorial(powerup)
         break;
 
@@ -181,8 +190,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     this.playerVelocityY = this.body.velocity.y;
 
-    if (this.anims.isPlaying && (this.anims.getName() === 'player_attack' || this.anims.getName() === 'dash_anim'))
+    if (this.anims.isPlaying && this.anims.getName() === 'player_attack') {
+      this.setVelocity(0, 0)
       return
+    }
 
     // Movement and movement sound logic
     if (left.isDown) {
@@ -233,7 +244,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     // Dash logic
-    if (isWJustDown && this.canDash) {
+    if (isWJustDown && this.canDash && this.allowedToDash) {
       let dashX = 0;
       let dashY = 0;
 

@@ -38,7 +38,7 @@ export default class Level2 extends Phaser.Scene {
     .setScale(1.2)
 
     // Npc sprite
-    const omoNpc = new Npc(this, 7600, 700, 'omo_sprite', 'omo', player)
+    const omoNpc = new Npc(this, 9664, 960, 'omo_sprite', 'omo', player)
     .setScale(0.6)
     .setSize(150, 120)
 

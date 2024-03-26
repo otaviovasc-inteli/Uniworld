@@ -26,6 +26,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.gravity = 1000;
     this.speed = 150;
     this.damage = 25
+    this.health = 5
 
     this.body.setGravityY(this.gravity);
     this.setCollideWorldBounds(true);
@@ -61,5 +62,16 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
         this.isAttacking = false;
       });
     }
+  }
+
+  takesHit(source) {
+    this.health -= source.damage
+    if(this.health <= 0){
+      this.setTint(0xff0000)
+      this.setVelocity(0, -200)
+      this.body.checkCollision.none = true
+      this.setCollideWorldBounds(false)
+    }
+    source.destroyProjectile()
   }
 }
