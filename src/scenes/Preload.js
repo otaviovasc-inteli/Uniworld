@@ -68,7 +68,7 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("dash_anim", "assets/player/dash.png", { frameWidth: 128, frameHeight: 128 });
     this.load.spritesheet("collect_sprite", "assets/player/collect_sprite.png", { frameWidth: 256, frameHeight: 208 });
     //-------------------------------------------------------------------
-    //level 2 enemies
+    // enemies
     this.load.spritesheet('green_slime', 'assets/enemies/green_slime.png', {frameWidth:128,frameHeight:128});
     this.load.spritesheet('purple_slime', 'assets/enemies/purple_slime.png', {frameWidth:128,frameHeight:128});
     this.load.spritesheet('graySmoke', 'assets/enemies/smoke.png', {frameWidth:128,frameHeight:128});
