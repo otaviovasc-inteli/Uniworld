@@ -201,6 +201,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   quizLogic(sprite) {
+    this.scene.cameras.main.setZoom(1);
+
     // Parse informations from texts array
     const currentQuestion = this.texts[this.questionIndex];
     const questionText = currentQuestion[0];
@@ -296,6 +298,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   closeQuiz(resume, resetVariables) {
+    // Reset zoom
+    this.scene.cameras.main.setZoom(this.scene.zoomFactor);
     // Close button logic to destroy the quiz interface
     if (this.quizWindow) this.quizWindow.destroy();
     if (this.quizText) this.quizText.destroy();
