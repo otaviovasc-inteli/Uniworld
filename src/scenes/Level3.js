@@ -5,6 +5,7 @@ import Enemy from "../entities/enemies/enemy.js";
 import collidable from "../mixins/collidable.js";
 import GreenSlime from "../entities/enemies/greenSlime.js";
 import PurpleSlime from "../entities/enemies/purpleSlime.js";
+import graySmoke from "../entities/enemies/graySmoke.js";
 import Enemies from "../groups/enemies.js";
 export default class Level3 extends Phaser.Scene {
   constructor() {
@@ -63,12 +64,13 @@ export default class Level3 extends Phaser.Scene {
     return new Player(this, start.x, start.y, playerSelecionado, oldPlayer);
   }
 
-    //create enemy slime in scene
+    //create enemy smoke in scene
     createEnemies(layers) {
       const enemies = new Enemies(this);
       const enemyTypes = {
         GreenSlime: GreenSlime,
         PurpleSlime: PurpleSlime,
+        graySmoke: graySmoke
     }
       layers.enemySpawns.objects.forEach(spawnPoint => {
         console.log("Enemy type:" + spawnPoint.type);
@@ -82,7 +84,7 @@ export default class Level3 extends Phaser.Scene {
       player.takesHit(enemy)
     }
   
-    // add enemy slime colliders
+    // add enemy smoke colliders
     createEnemyColliders(enemies, { colliders }) {
       enemies
         .addCollider(colliders.platforms)
