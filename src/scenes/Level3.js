@@ -7,6 +7,8 @@ import GreenSlime from "../entities/enemies/greenSlime.js";
 import PurpleSlime from "../entities/enemies/purpleSlime.js";
 import Enemies from "../groups/enemies.js";
 import graySmoke from "../entities/enemies/graySmoke.js";
+
+
 export default class Level3 extends Phaser.Scene {
   constructor() {
     super("level3");

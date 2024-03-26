@@ -75,7 +75,7 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 	}
 
 	// raycast function
-	raycast(body, layer, rayLength = 130) {
+	raycast(body, layer, rayLength = 100) {
 		const { x, y, width, halfHeight } = body;
 		const line = new Phaser.Geom.Line();
 		let hasHit = false;

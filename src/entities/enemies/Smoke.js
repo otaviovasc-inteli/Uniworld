@@ -26,7 +26,7 @@ export default class Smoke extends Phaser.Physics.Arcade.Sprite {
 
 	init() {
 		this.gravity = 1000;
-		this.speed = 150
+		this.speed = 100
 		this.timeFromLastTurn = 0
 
 		this.body.setGravityY(this.gravity);
@@ -60,7 +60,7 @@ export default class Smoke extends Phaser.Physics.Arcade.Sprite {
 		}
 
 		// creates raycast property
-		const { ray, hasHit } = this.raycast(this.body, this.colliderLayer);
+		const { ray, hasHit } = this.raycast(this.body, this.colliderLayer, 130, 30);
 
 		// conditional to make the enemy stay on platform
 		if (!hasHit && this.timeFromLastTurn + 100 < time) {
