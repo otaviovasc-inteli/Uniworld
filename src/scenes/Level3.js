@@ -46,6 +46,17 @@ export default class Level3 extends Phaser.Scene {
     return new Player(this, start.x, start.y, playerSelecionado, oldPlayer);
   }
 
+  createEnemies(layers) {
+    const enemies = new Enemies(this);
+    const enemyTypes = enemies.getTypes();
+    layers.enemySpawns.objects.forEach(spawnPoint => {
+      console.log("Enemy type:" + spawnPoint.type);
+      const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y, [layers.platforms, spawnPoint.type]);
+      enemies.add(enemy);
+    });
+    return enemies;
+  }
+  
   createMap() {
     const map = this.make.tilemap({ key: `level3` });
     map.addTilesetImage("buildings_t1", "buildings");

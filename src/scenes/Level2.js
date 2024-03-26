@@ -45,7 +45,6 @@ export default class Level2 extends Phaser.Scene {
     // Set world bounds based on maps
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
-
     // Create background
     this.createBg(map)
 
