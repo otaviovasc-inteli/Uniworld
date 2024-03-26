@@ -1,8 +1,8 @@
 import collidable from "../../mixins/collidable.js";
 
 export default class Enemy extends Phaser.Physics.Arcade.Sprite {
-    constructor(scene, x, y, key) {
-        super(scene, x, y, key);
+    constructor(scene, x, y, layer) {
+        super(scene, x, y, layer);
 
         scene.add.existing(this);
         scene.physics.add.existing(this);

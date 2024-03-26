@@ -3,7 +3,7 @@ import GreenSlime from "../entities/enemies/greenSlime.js";
 import PurpleSlime from "../entities/enemies/purpleSlime.js";
 
 
-export default class enemies extends Phaser.GameObjects.Group {
+export default class Enemies extends Phaser.GameObjects.Group {
     constructor(scene) {
         super(scene);
 

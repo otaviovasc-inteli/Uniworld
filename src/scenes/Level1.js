@@ -65,7 +65,7 @@ export default class Level1 extends Phaser.Scene {
 
       if(player.allowedNextLevel) {
         this.cameras.main.fadeOut(1000, 0, 0, 0, (camera, progress) => {
-          if(progress === 1) this.scene.start("level2", {player: player, playerSelecionado: playerSelecionado});
+          if(progress === 1) this.scene.start("level3", {player: player, playerSelecionado: playerSelecionado});
         });
       }
     });
