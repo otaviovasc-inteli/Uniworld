@@ -46,8 +46,10 @@ export default class Preload extends Phaser.Scene {
     this.load.image('ceu_bg', 'assets/level3/ceu.png')
     this.load.image('nuvem_bg', 'assets/level3/nuvem.png')
     this.load.image('predios_bg', 'assets/level3/predios_bg.png')
-
     // ------------------------------------------------------------------
+     // Level3
+     this.load.spritesheet('diretora_npc', 'assets/npc/diretora_npc.png', { frameWidth: 256, frameHeight: 256});
+         // ------------------------------------------------------------------
     // Hub
     this.load.spritesheet('hub_sprite', 'assets/level2/dvd_npc.png', { frameWidth: 256, frameHeight: 160 });
     this.load.image('hub_screen', 'assets/links/links_screen.png');
