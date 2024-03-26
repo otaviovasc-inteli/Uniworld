@@ -22,7 +22,7 @@ export default class Level3 extends Phaser.Scene {
     const player = this.createPlayer(playerZones, playerSelecionado, oldPlayer);
 
     // Implementação de createEnemies (exemplificativa)
-    const enemies = this.createEnemies(layers);
+    // const enemies = this.createEnemies(layers);
 
     const boss = new BossLevel3(this, 8512, 1344, 'boss_level3');
 
@@ -51,7 +51,7 @@ export default class Level3 extends Phaser.Scene {
       .addCollider(colliders.platforms)
       .addCollider(colliders.player, this.onPlayerCollision);
   }
-  
+
   // Create player in scene
   createPlayer({ start }, playerSelecionado, oldPlayer) {
     return new Player(this, start.x, start.y, playerSelecionado, oldPlayer);
@@ -67,7 +67,7 @@ export default class Level3 extends Phaser.Scene {
     });
     return enemies;
   }
-  
+
   createMap() {
     const map = this.make.tilemap({ key: `level3` });
     map.addTilesetImage("buildings_t1", "buildings");
@@ -88,7 +88,7 @@ export default class Level3 extends Phaser.Scene {
     const env3 = map.createLayer("env3", tileset1);
     const platforms = map.createLayer("platforms", [tileset1, tileset2]);
     const playerZones = map.getObjectLayer("player_zones");
-    
+
 
     platforms.setCollisionByExclusion(-1, true);
 
