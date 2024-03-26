@@ -6,6 +6,7 @@ import collidable from "../mixins/collidable.js";
 import GreenSlime from "../entities/enemies/greenSlime.js";
 import PurpleSlime from "../entities/enemies/purpleSlime.js";
 import Enemies from "../groups/enemies.js";
+import graySmoke from "../entities/enemies/graySmoke.js";
 export default class Level3 extends Phaser.Scene {
   constructor() {
     super("level3");
@@ -69,6 +70,7 @@ export default class Level3 extends Phaser.Scene {
       const enemyTypes = {
         GreenSlime: GreenSlime,
         PurpleSlime: PurpleSlime,
+        graySmoke: graySmoke
     }
       layers.enemySpawns.objects.forEach(spawnPoint => {
         console.log("Enemy type:" + spawnPoint.type);

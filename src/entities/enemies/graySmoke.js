@@ -10,6 +10,6 @@ export default class graySmoke extends Smoke {
   }
 
   init_graySmoke(){
-    this.setScale(1.3)
+    this.setScale(1.1).refreshBody().setSize(60, 80).setOffset(30, 30);
   }
 }

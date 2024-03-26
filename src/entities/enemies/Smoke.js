@@ -1,7 +1,7 @@
 import collidable from "../../mixins/collidable.js";
 import initAnimations from "./anims/smokeAnims.js";
 
-export default class graySmoke extends Phaser.Physics.Arcade.Sprite {
+export default class Smoke extends Phaser.Physics.Arcade.Sprite {
   static instanceCount = 0
 	constructor(scene, x, y, layerNameArray) {
 		super(scene, x, y);
