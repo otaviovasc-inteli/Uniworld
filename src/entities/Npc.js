@@ -330,6 +330,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
   // Build hub images links and texts
   hubLogic() {
+    this.npcPlayer.checkPoint()
+
     // Get texts and urls from hubTexts.js
     const url1 = this.texts[0]
     const url2 = this.texts[1]
