@@ -114,7 +114,15 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
       this.setVelocity(0, -200)
       this.body.checkCollision.none = true
       this.setCollideWorldBounds(false)
-    }
+    } else {
+		this.setAlpha(0.25);
+		console.log('branco');
+		this.scene.time.delayedCall(100, () => {
+			  this.setAlpha(1);
+			  console.log('tirou');
+		})
+	}
+
     source.destroyProjectile()
   }
 }
