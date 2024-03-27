@@ -243,7 +243,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       // Check if enough time has passed
       if (currentTime - this.lastProjectileTime > this.projectileCooldown) {
         // var projectile = new Projectiles(this.scene, this.x, this.y, "projectile", this.flipX);
-        this.projectiles.fireProjectile(this)
+        this.projectiles.fireProjectile(this, "projectile_anim")
 
         // Update the last projectile time
         this.lastProjectileTime = currentTime;
