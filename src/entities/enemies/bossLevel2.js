@@ -62,7 +62,6 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
       this.isAttacking = true;
       this.attackDelay = this.getAttackDelay()
       this.projectiles.fireProjectileBoss(this, "boss2_projectile", this.player.x, this.player.y)
-
       this.play("boss2_attack", true).once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
         this.play("boss2_idle", true);
         this.isAttacking = false;
@@ -82,7 +81,10 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
       this.body.checkCollision.none = true
       this.setCollideWorldBounds(false)
     } else {
-      this.play("boss2_hurt", true)
+      this.setTint(0xff0000)
+      this.scene.time.delayedCall(250, () => {
+          this.clearTint();
+      })
     }
     source.destroyProjectile()
   }

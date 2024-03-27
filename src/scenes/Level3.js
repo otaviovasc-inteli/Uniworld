@@ -52,8 +52,15 @@ export default class Level3 extends Phaser.Scene {
     this.createEnemyColliders(enemies, {
       colliders: {
         platforms: layers.platforms,
-        player: player,
+        player: player
+      },
+    });
 
+    // Collider boss with platforms
+    this.createEnemyColliders(boss, {
+      colliders: {
+        platforms: layers.platforms,
+        player: player
       },
     });
 

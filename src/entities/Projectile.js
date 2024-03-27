@@ -44,7 +44,7 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite {
     fireBoss(x, y, playerX, playerY, anim) {
       // Adjust projectile size to boss
       this.setSize(120, 70)
-      this.body.setOffset(0, 0)
+      this.body.setOffset(0, 15)
 
       // Calculate the vector from the boss to the player
       const dx = playerX - x

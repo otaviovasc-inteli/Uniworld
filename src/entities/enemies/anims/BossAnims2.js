@@ -2,7 +2,7 @@ export default (anims) => {
     anims.create({
         key: 'boss3_idle',
         frames: anims.generateFrameNumbers('boss_level3', { start: 0, end: 7 }),
-        frameRate: 5,
+        frameRate: 8,
         repeat: -1,
     });
 
