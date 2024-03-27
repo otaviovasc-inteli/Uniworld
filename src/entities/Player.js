@@ -176,7 +176,17 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     });
   }
 
-  update() {
+  update() { //Death logic for each level from falling
+    if (this.y > 1960 && this.scene.sys.settings.key === "level2") {
+      this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
+      this.hp.restoreHp();
+      console.log("Player died, respawned at checkpoint")
+    }
+    else if (this.y > 3100 && this.scene.sys.settings.key === "level3") {
+      this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
+      this.hp.restoreHp();
+      console.log("Player died, respawned at checkpoint")
+    }
     // If player update is paused, do nothing
     if (!this.updateEnabled || this.hasBeenHit) {
       return;
