@@ -19,4 +19,4 @@ export default class Enemies extends Phaser.GameObjects.Group {
         }
         return enemyTypes
     }
-}   
+}

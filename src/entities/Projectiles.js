@@ -29,7 +29,7 @@ export default class Projectiles extends Phaser.Physics.Arcade.Group {
     projectile.fire(initiator.x, initiator.y, anim)
   }
 
-  fireProjectileBoss(initiator, anim, playerX, playerY) {
+  fireProjectileBoss(initiator, anim, playerX, playerY, damage) {
     const projectile = this.getFirstDead(false)
     const bossX = initiator.x
     const bossY = initiator.y - 150
@@ -44,6 +44,6 @@ export default class Projectiles extends Phaser.Physics.Arcade.Group {
       projectile.setFlipX(true)
     }
 
-    projectile.fireBoss(bossX, bossY, playerX, playerY, anim)
+    projectile.fireBoss(bossX, bossY, playerX, playerY, anim, damage)
   }
 }

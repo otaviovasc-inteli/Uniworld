@@ -28,10 +28,6 @@ export default class Level3 extends Phaser.Scene {
     //create enemies
     const enemies = this.createEnemies(layers);
 
-    //colocando o Npc de links no terceiro mapa
-    // Implementação de createEnemies (exemplificativa)
-    // const enemies = this.createEnemies(layers);
-
     const boss = new BossLevel3(this, 8512, 1344, 'boss_level3', player).setDepth(3)
 
     const dvdNpc = new Npc(this, 6828, 1659, "hub_sprite", "hub2", player)
@@ -46,6 +42,7 @@ export default class Level3 extends Phaser.Scene {
     this.createPlayerColliders(player, {
       colliders: {
         platforms: layers.platforms,
+        projectiles: boss.getProjectiles()
       },
     });
 
@@ -169,8 +166,6 @@ export default class Level3 extends Phaser.Scene {
       .setDepth(-8)
       .setScrollFactor(0, 1)
       .setScale(1);
-
-
   }
 
   // Return the start and end zone from Tiled
@@ -184,7 +179,9 @@ export default class Level3 extends Phaser.Scene {
 
   // Add player colliders
   createPlayerColliders(player, { colliders }) {
-    player.addCollider(colliders.platforms);
+    player
+      .addCollider(colliders.platforms)
+      .addCollider(colliders.projectiles, this.onProjectileHit)
   }
 
 

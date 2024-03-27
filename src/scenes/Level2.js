@@ -56,14 +56,14 @@ export default class Level2 extends Phaser.Scene {
     this.createPlayerColliders(player, {
       colliders: {
         platforms: layers.platforms,
+        projectiles: boss.getProjectiles()
     }})
 
     // Collider enemy with platforms
     this.createEnemyColliders(enemies, {
       colliders: {
         platforms: layers.platforms,
-        player: player,
-
+        player: player
       },
     });
 
@@ -77,18 +77,6 @@ export default class Level2 extends Phaser.Scene {
     });
     this.createEndOfLevel(playerZones.end, player, playerSelecionado);
     this.setupFollowupCameraOn(player, map);
-  }
-
-  finishDrawing(pointer, layer) {
-    this.line.x2 = pointer.worldX;
-    this.line.y2 = pointer.worldY;
-
-    this.graphics.clear();
-    this.graphics.strokeLineShape(this.line);
-
-    this.tileHits = layer.getTilesWithinShape(this.line);
-
-    console.log(this.tileHits.length);
   }
 
   //create player in scene
@@ -127,7 +115,9 @@ export default class Level2 extends Phaser.Scene {
 
   // Add player colliders
   createPlayerColliders(player, { colliders }) {
-    player.addCollider(colliders.platforms)
+    player
+      .addCollider(colliders.platforms)
+      .addCollider(colliders.projectiles, this.onProjectileHit)
   }
 
   createMap() {

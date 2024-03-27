@@ -44,7 +44,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hasBeenHit = false
     this.allowedNextLevel = false
     this.allowedToShot = this.oldPlayer.allowedToShot || false
-    this.allowedToDash = this.oldPlayer.allowedToDash || true
+    this.allowedToDash = this.oldPlayer.allowedToDash || false
 
     // Health logic and setup
     const leftTopCornerX = (1280 - (1280 / 0.7)) / 2 + 20
@@ -177,16 +177,16 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   }
 
   update() {
-    // if (this.y > 1960 && this.scene.sys.settings.key === "level2") {
-    //   this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
-    //   this.hp.restoreHp();
-    //   console.log("Player died, respawned at checkpoint")
-    // }
-    // else if (this.y > 3100 && this.scene.sys.settings.key === "level3") {
-    //   this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
-    //   this.hp.restoreHp();
-    //   console.log("Player died, respawned at checkpoint")
-    // }
+    if (this.y > 1960 && this.scene.sys.settings.key === "level2") {
+      this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
+      this.hp.restoreHp();
+      console.log("Player died, respawned at checkpoint")
+    }
+    else if (this.y > 3100 && this.scene.sys.settings.key === "level3") {
+      this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
+      this.hp.restoreHp();
+      console.log("Player died, respawned at checkpoint")
+    }
 
     // If player update is paused, do nothing
     if (!this.updateEnabled || this.hasBeenHit) {
@@ -314,12 +314,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
   }
 
-  takesHit(enemy) {
+  takesHit(source) {
     if (this.hasBeenHit) return
-    this.hasBeenHit = true
-    console.log("Hit");
 
-    this.hp.decrease(enemy.damage) // Monster damage
+    this.hasBeenHit = true
+    this.hp.decrease(source.damage) // Monster damage
     // Check if player died
     if(this.hp.currentHp() < 1) {
       // Dead
@@ -328,9 +327,13 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     } else {
       // Hurt
       this.bounceOff()
+      this.setAlpha(0.25)
+      this.scene.time.delayedCall(200, () => {
+        this.setAlpha(1)
+      })
     }
 
-    this.scene.time.delayedCall(500, () => {this.hasBeenHit = false})
+    this.scene.time.delayedCall(800, () => {this.hasBeenHit = false})
   }
 
   die() {

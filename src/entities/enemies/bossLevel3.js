@@ -28,7 +28,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.gravity = 1000;
     this.speed = 150;
     this.damage = 25
-    this.health = 7
+    this.health = 10
 
     this.projectiles = new Projectiles(this.scene, 'boss_level3_projectile').setDepth(2)
 
@@ -64,7 +64,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
       this.timeFromLastAttack = time;
       this.isAttacking = true;
       this.attackDelay = this.getAttackDelay()
-      this.projectiles.fireProjectileBoss(this, "boss3_projectile", this.player.x, this.player.y)
+      this.projectiles.fireProjectileBoss(this, "boss3_projectile", this.player.x, this.player.y, this.damage)
 
       this.play("boss3_attack", true).once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
         this.play("boss3_idle", true);
@@ -75,6 +75,10 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
 
   getAttackDelay() {
     return Phaser.Math.Between(1500, 3000)
+  }
+
+  getProjectiles() {
+    return this.projectiles.getChildren()
   }
 
   takesHit(source) {

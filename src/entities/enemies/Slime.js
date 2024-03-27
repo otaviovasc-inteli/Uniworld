@@ -121,7 +121,6 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
           this.setAlpha(1);
       })
     }
-
     source.destroyProjectile()
   }
 }

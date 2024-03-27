@@ -27,7 +27,7 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite {
       super.preUpdate(time, delta)
       this.traveledDistance += this.body.deltaAbsX()
 
-      if (this.traveledDistance >= this.maxDistance) {
+      if ((this.traveledDistance >= this.maxDistance) || this.y > 4000) {
         this.destroyProjectile()
         this.traveledDistance = 0
       }
@@ -41,10 +41,12 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite {
       this.play(anim, true)
     }
 
-    fireBoss(x, y, playerX, playerY, anim) {
+    fireBoss(x, y, playerX, playerY, anim, damage) {
       // Adjust projectile size to boss
       this.setSize(120, 70)
       this.body.setOffset(0, 15)
+
+      this.damage = damage // set boss damage
 
       // Calculate the vector from the boss to the player
       const dx = playerX - x
@@ -69,6 +71,5 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite {
       this.body.reset(0,0)
       this.setActive(false)
       this.setVisible(false)
-      console.log("destroy projectile");
     }
 }

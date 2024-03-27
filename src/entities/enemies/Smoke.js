@@ -106,7 +106,7 @@ export default class Smoke extends Phaser.Physics.Arcade.Sprite {
 
 	takesHit(source) {
 		this.health -= source.damage
-	
+
 		if(this.health <= 0){
 		  this.setTint(0xff0000)
 		  this.setVelocity(0, -200)
@@ -118,7 +118,6 @@ export default class Smoke extends Phaser.Physics.Arcade.Sprite {
 			  this.setAlpha(1);
 		  })
 		}
-	
-		source.destroyProjectile()
-	  }
+	  source.destroyProjectile()
+	}
 }
