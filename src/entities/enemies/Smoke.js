@@ -49,9 +49,6 @@ export default class Smoke extends Phaser.Physics.Arcade.Sprite {
 	update(time, delta) {
 		// set Smoke movements
 		if (this.body.onFloor()) {
-			this.play(`${this.name}_jump`, true);
-			this.setVelocityX(0);
-			this.setVelocityY(0);
 			this.scene.time.delayedCall(400, () => {
 				this.hasHit = false;
 				this.play(`${this.name}_idle`, true);
