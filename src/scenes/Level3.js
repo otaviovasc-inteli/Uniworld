@@ -128,7 +128,7 @@ export default class Level3 extends Phaser.Scene {
       .setAlpha(0);
 
     // Change level logic, sounds and camera effect
-    this.physics.add.overlap(player, endOfLevel, () => {this.scene.start("level3", {player: player, playerSelecionado: playerSelecionado});
+    this.physics.add.overlap(player, endOfLevel, () => {this.scene.start("level4", {player: player, playerSelecionado: playerSelecionado});
   });
 }
 
