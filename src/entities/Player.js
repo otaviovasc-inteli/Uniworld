@@ -59,7 +59,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.lastDirection = Phaser.Physics.Arcade.FACING_RIGHT
 
     // Checkpoint
-    this.checkpointCords = {x: this.x, y: this.y}
+    this.checkpointCords = {x: this.x, y: this.y + 50}
 
     // Dash properties
     this.dashDistance = this.oldPlayer.dashSpeed || 150;
