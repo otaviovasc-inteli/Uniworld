@@ -33,12 +33,36 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite {
       }
     }
 
-    fire(x, y) {
+    fire(x, y, anim) {
       this.body.reset(x,y)
       this.setActive(true)
       this.setVisible(true)
       this.setVelocityX(this.speed)
-      this.play("projectile_anim", true)
+      this.play(anim, true)
+    }
+
+    fireBoss(x, y, playerX, playerY, anim) {
+      // Adjust projectile size to boss
+      this.setSize(120, 70)
+      this.body.setOffset(0, 15)
+
+      // Calculate the vector from the boss to the player
+      const dx = playerX - x
+      const dy = playerY - y
+
+      // Calculate the distance between the boss and the player
+      const distance = Math.sqrt(dx * dx + dy * dy)
+
+      // Normalize the vector (make it length 1) and multiply by the desired speed
+      const velocityX = (dx / distance) * this.speed * -1
+      const velocityY = (dy / distance) * this.speed * -1
+
+      // Set the projectile's properties and fire it
+      this.body.reset(x, y)
+      this.setActive(true)
+      this.setVisible(true)
+      this.setVelocity(velocityX, velocityY) // This method sets both the X and Y velocity
+      this.play(anim, true)
     }
 
     destroyProjectile() {

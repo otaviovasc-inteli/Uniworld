@@ -32,7 +32,7 @@ export default class Level3 extends Phaser.Scene {
     // Implementação de createEnemies (exemplificativa)
     // const enemies = this.createEnemies(layers);
 
-    const boss = new BossLevel3(this, 8512, 1344, 'boss_level3');
+    const boss = new BossLevel3(this, 8512, 1344, 'boss_level3', player).setDepth(3)
 
     const dvdNpc = new Npc(this, 6828, 1659, "hub_sprite", "hub2", player)
       .setSize(100, 120)
@@ -48,12 +48,19 @@ export default class Level3 extends Phaser.Scene {
         platforms: layers.platforms,
       },
     });
-    
+
     this.createEnemyColliders(enemies, {
       colliders: {
         platforms: layers.platforms,
-        player: player,
+        player: player
+      },
+    });
 
+    // Collider boss with platforms
+    this.createEnemyColliders(boss, {
+      colliders: {
+        platforms: layers.platforms,
+        player: player
       },
     });
 
@@ -84,7 +91,7 @@ export default class Level3 extends Phaser.Scene {
     onProjectileHit(entity, source) {
       entity.takesHit(source)
     }
-  
+
     // add enemy slime colliders
     createEnemyColliders(enemies, { colliders }) {
       enemies

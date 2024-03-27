@@ -177,17 +177,17 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   }
 
   update() {
-    if (this.y > 1960 && this.scene.sys.settings.key === "level2") {
-      this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
-      this.hp.restoreHp();
-      console.log("Player died, respawned at checkpoint")
-    }
-    else if (this.y > 3100 && this.scene.sys.settings.key === "level3") {
-      this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
-      this.hp.restoreHp();
-      console.log("Player died, respawned at checkpoint")
-    }
-    console.log(this.y) 
+    // if (this.y > 1960 && this.scene.sys.settings.key === "level2") {
+    //   this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
+    //   this.hp.restoreHp();
+    //   console.log("Player died, respawned at checkpoint")
+    // }
+    // else if (this.y > 3100 && this.scene.sys.settings.key === "level3") {
+    //   this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
+    //   this.hp.restoreHp();
+    //   console.log("Player died, respawned at checkpoint")
+    // }
+
     // If player update is paused, do nothing
     if (!this.updateEnabled || this.hasBeenHit) {
       return;
@@ -244,7 +244,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       // Check if enough time has passed
       if (currentTime - this.lastProjectileTime > this.projectileCooldown) {
         // var projectile = new Projectiles(this.scene, this.x, this.y, "projectile", this.flipX);
-        this.projectiles.fireProjectile(this)
+        this.projectiles.fireProjectile(this, "projectile_anim")
 
         // Update the last projectile time
         this.lastProjectileTime = currentTime;

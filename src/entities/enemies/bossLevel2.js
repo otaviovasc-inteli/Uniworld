@@ -1,11 +1,13 @@
 import collidable from "../../mixins/collidable.js";
 import initAnimations from "./anims/BossAnims.js";
+import Projectiles from "../Projectiles.js";
 
 export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
-  constructor(scene, x, y, key) {
+  constructor(scene, x, y, key, player) {
     super(scene, x, y, key);
     scene.add.existing(this);
     scene.physics.add.existing(this);
+    this.player = player
 
     // Mixins
     Object.assign(this, collidable);
@@ -17,9 +19,6 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     initAnimations(scene.anims);
 
     // store the last attack time and setup attack interval and flag
-    this.lastAttackTime = 0;
-    this.attackInterval = 0;
-    this.isAttacking = false;
   }
 
   init() {
@@ -27,6 +26,12 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.speed = 150;
     this.damage = 25
     this.health = 5
+
+    this.projectiles = new Projectiles(this.scene, 'boss_level2_projectile').setDepth(2)
+
+    this.isAttacking = false;
+    this.timeFromLastAttack = 0
+    this.attackDelay = this.getAttackDelay()
 
     this.body.setGravityY(this.gravity);
     this.setCollideWorldBounds(true);
@@ -51,17 +56,21 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
   }
 
   update(time) {
-    this.attackInterval = Phaser.Math.Between(1000, 4000)
     // Check if it's time to attack
-    if (time - this.lastAttackTime >= this.attackInterval && !this.isAttacking) {
-      this.lastAttackTime = time;
+    if (time - this.timeFromLastAttack >= this.attackDelay && !this.isAttacking) {
+      this.timeFromLastAttack = time;
       this.isAttacking = true;
-
+      this.attackDelay = this.getAttackDelay()
+      this.projectiles.fireProjectileBoss(this, "boss2_projectile", this.player.x, this.player.y)
       this.play("boss2_attack", true).once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
         this.play("boss2_idle", true);
         this.isAttacking = false;
       });
     }
+  }
+
+  getAttackDelay() {
+    return Phaser.Math.Between(1000, 4000)
   }
 
   takesHit(source) {
@@ -72,7 +81,10 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
       this.body.checkCollision.none = true
       this.setCollideWorldBounds(false)
     } else {
-      this.play("boss2_hurt", true)
+      this.setTint(0xff0000)
+      this.scene.time.delayedCall(250, () => {
+          this.clearTint();
+      })
     }
     source.destroyProjectile()
   }
