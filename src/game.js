@@ -10,7 +10,6 @@ import Level4 from "./scenes/Level4.js";
 // Phaser config to instanciate game
 const WIDTH = 1280;
 const HEIGHT = 720;
-const ZOOM_FACTOR = 0.7
 
 const SHARED_CONFIG = {
   width: WIDTH,

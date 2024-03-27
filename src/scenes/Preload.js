@@ -16,7 +16,8 @@ export default class Preload extends Phaser.Scene {
     // ------------------------------------------------------------------
     // Tutorial
     this.load.video('tutorial', 'assets/links/videoTutorial1.mp4');
-    this.load.image('rexonaTutorial', 'assets/links/paginaTutorialTeclaQ.png')
+    this.load.video('rexonaTutorial', 'assets/links/videoTutorialQ.mp4')
+    this.load.video('kibonTutorial', 'assets/links/videoTutorialW.mp4')
     // ------------------------------------------------------------------
     // level1
     this.load.tilemapTiledJSON('level1', 'assets/level1/sceneInterior.json');
@@ -45,7 +46,7 @@ export default class Preload extends Phaser.Scene {
     this.load.image('ceu_bg', 'assets/level3/ceu.png')
     this.load.image('nuvem_bg', 'assets/level3/nuvem.png')
     this.load.image('predios_bg', 'assets/level3/predios_bg.png')
-     // ------------------------------------------------------------------
+    // ------------------------------------------------------------------
     // Level4
     this.load.tilemapTiledJSON('level4', 'assets/level4/assets/uni_level.json');
     this.load.image('level4_t1', 'assets/level4/assets/level4_t1.png');
@@ -63,6 +64,9 @@ export default class Preload extends Phaser.Scene {
     this.load.image('uni_logo', 'assets/level4/assets/uni_logo.png');
 
     // ------------------------------------------------------------------
+     // Level3
+     this.load.spritesheet('diretora_npc', 'assets/npc/diretora_npc.png', { frameWidth: 256, frameHeight: 256});
+         // ------------------------------------------------------------------
     // Hub
     this.load.spritesheet('hub_sprite', 'assets/level2/dvd_npc.png', { frameWidth: 256, frameHeight: 160 });
     this.load.image('hub_screen', 'assets/links/links_screen.png');
@@ -84,13 +88,18 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("dash_anim", "assets/player/dash.png", { frameWidth: 128, frameHeight: 128 });
     this.load.spritesheet("collect_sprite", "assets/player/collect_sprite.png", { frameWidth: 256, frameHeight: 208 });
     //-------------------------------------------------------------------
-    //level 2 enemies
+    // enemies
     this.load.spritesheet('green_slime', 'assets/enemies/green_slime.png', {frameWidth:128,frameHeight:128});
     this.load.spritesheet('purple_slime', 'assets/enemies/purple_slime.png', {frameWidth:128,frameHeight:128});
-    this.load.spritesheet('fumacinha', 'assets/enemies/smoke.png', {frameWidth:128,frameHeight:128});
+    this.load.spritesheet('graySmoke', 'assets/enemies/smoke.png', {frameWidth:128,frameHeight:128});
     this.load.spritesheet('boss_level2', 'assets/sprites/Enemy/treeboss.png', {frameWidth:192,frameHeight:176});
+    this.load.spritesheet('boss_level2_projectile', 'assets/player/projectiles/bolaMarromArvore.png', {frameWidth:102,frameHeight:102});
+    this.load.spritesheet('boss_level3_projectile', 'assets/player/projectiles/bolaRoxaLama.png', {frameWidth:102,frameHeight:102});
 
     // ------------------------------------------------------------------
+    //level 3 enemies
+    this.load.spritesheet('boss_level3', 'assets/sprites/Enemy/mud_idle4X.png', {frameWidth:248,frameHeight:256});
+    //-------------------------------------------------------------------
     // Npcs
     this.load.spritesheet("computer_sprite", "assets/level1/computer.png", { frameWidth: 320, frameHeight: 192 });
     this.load.spritesheet("rexona_sprite", "assets/level1/rexona.png", { frameWidth: 128, frameHeight: 192 });

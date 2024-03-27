@@ -1,27 +1,42 @@
 import Player from "../entities/Player.js";
 import Npc from "../entities/Npc.js";
+import GreenSlime from "../entities/enemies/greenSlime.js";
+import PurpleSlime from "../entities/enemies/purpleSlime.js";
+import Enemies from "../groups/enemies.js";
+import graySmoke from "../entities/enemies/graySmoke.js";
+import BossLevel3 from "../entities/enemies/bossLevel3.js";
+
+
 export default class Level3 extends Phaser.Scene {
   constructor() {
     super("level3");
-    this.zoomFactor = 0.7
+    this.zoomFactor = 0.7;
   }
 
   create() {
-    // FadeIn effect
     this.cameras.main.fadeIn(2000, 30, 30, 0);
 
-    // Add map and layers
     const map = this.createMap();
     const layers = this.createLayers(map);
     const playerZones = this.getPlayerZones(layers.playerZones);
     this.createBg(map);
 
-    // Add player object and set bounds to map, pass player from previous scene
     const oldPlayer = this.sys.settings.data.player;
-    const playerSelecionado = this.sys.settings.data.playerSelecionado
+    const playerSelecionado = this.sys.settings.data.playerSelecionado;
     const player = this.createPlayer(playerZones, playerSelecionado, oldPlayer);
 
-    // Set world bounds based on maps
+    //create enemies
+    const enemies = this.createEnemies(layers);
+
+    // creates boss on level
+    const boss = new BossLevel3(this, 8512, 1344, 'boss_level3', player).setDepth(3)
+
+    //colocando o Npc de links no terceiro mapa
+    const dvdNpc = new Npc(this, 6828, 1659, "hub_sprite", "hub2", player)
+      .setSize(100, 120)
+      .setScale(1.2)
+      .setFlip(true, false);
+
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
 
@@ -29,6 +44,21 @@ export default class Level3 extends Phaser.Scene {
     this.createPlayerColliders(player, {
       colliders: {
         platforms: layers.platforms,
+      },
+    });
+
+    this.createEnemyColliders(enemies, {
+      colliders: {
+        platforms: layers.platforms,
+        player: player
+      },
+    });
+
+    // Collider boss with platforms
+    this.createEnemyColliders(boss, {
+      colliders: {
+        platforms: layers.platforms,
+        player: player
       },
     });
 
@@ -41,6 +71,34 @@ export default class Level3 extends Phaser.Scene {
   createPlayer({ start }, playerSelecionado, oldPlayer) {
     return new Player(this, start.x, start.y, playerSelecionado, oldPlayer);
   }
+
+    //create enemy slime in scene
+    createEnemies(layers) {
+      const enemies = new Enemies(this);
+      const enemyTypes = enemies.getTypes()
+      layers.enemySpawns.objects.forEach(spawnPoint => {
+        console.log("Enemy type:" + spawnPoint.type);
+        const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y, [layers.platforms, spawnPoint.type]);
+        enemies.add(enemy);
+      });
+      return enemies;
+    }
+
+    onPlayerCollision(enemy, player) {
+      player.takesHit(enemy)
+    }
+
+    onProjectileHit(entity, source) {
+      entity.takesHit(source)
+    }
+
+    // add enemy slime colliders
+    createEnemyColliders(enemies, { colliders }) {
+      enemies
+        .addCollider(colliders.platforms)
+        .addCollider(colliders.player, this.onPlayerCollision)
+        .addCollider(colliders.player.projectiles, this.onProjectileHit)
+    }
 
   createMap() {
     const map = this.make.tilemap({ key: `level3` });
@@ -62,10 +120,12 @@ export default class Level3 extends Phaser.Scene {
     const env3 = map.createLayer("env3", tileset1);
     const platforms = map.createLayer("platforms", [tileset1, tileset2]);
     const playerZones = map.getObjectLayer("player_zones");
+    const enemySpawns = map.getObjectLayer("enemy_spawns");
+
 
     platforms.setCollisionByExclusion(-1, true);
 
-    return { platforms, playerZones, env1, env2, env3 };
+    return { platforms, playerZones, env1, env2, env3, enemySpawns };
   }
 
   createBg(map) {
@@ -109,6 +169,8 @@ export default class Level3 extends Phaser.Scene {
       .setDepth(-8)
       .setScrollFactor(0, 1)
       .setScale(1);
+
+
   }
 
   // Return the start and end zone from Tiled
@@ -136,6 +198,8 @@ export default class Level3 extends Phaser.Scene {
   createPlayerColliders(player, { colliders }) {
     player.addCollider(colliders.platforms);
   }
+
+
 
   setupFollowupCameraOn(player, map) {
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);

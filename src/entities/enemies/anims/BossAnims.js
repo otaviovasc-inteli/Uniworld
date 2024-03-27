@@ -27,4 +27,11 @@ export default (anims) => {
         frameRate: 6,
         repeat: 0
     });
+
+    anims.create({
+      key: 'boss2_projectile',
+      frames: anims.generateFrameNumbers('boss_level2_projectile', { start: 0, end: 3 }),
+      frameRate: 12,
+      repeat: -1
+    });
   };

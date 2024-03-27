@@ -1,71 +1,74 @@
-export default class Projectile extends Phaser.Physics.Arcade.Sprite{
+import initAnimations from "./projectileAnims.js";
+
+export default class Projectile extends Phaser.Physics.Arcade.Sprite {
     static instanceCount = 0;
-    constructor(scene, x, y, sprite, facingDirection){
+    constructor(scene, x, y, sprite){
         super(scene, x + 30, y, sprite);
-        this.facingDirection = facingDirection;
-        this.init()
-        this.initEvents()
+
+        scene.add.existing(this).setScale(0.8).setDepth(4)
+        scene.physics.add.existing(this)
+
+        this.speed = 800
+        this.maxDistance = 1000
+        this.traveledDistance = 0
+
+        this.setSize(140, 80)
+        this.body.setOffset(75, 90)
+
+        this.damage = 1
+
+        // this.init()
         Projectile.instanceCount++
+        if (Projectile.instanceCount <= 1)
+          initAnimations(this.scene.anims);
     }
 
-    init() {
-        this.scene.physics.world.enable(this)
-          this.setSize(140, 80);
-          this.body.setOffset(75, 90)
-        this.play("projectile_anim", true)
-        this.scene.add.existing(this).setDepth(4).setScale(0.8)
-        this.isDestroyed = false;
-        this.projetileVelocity = 5
-        this.projetileAcceleration = 0.25
-        this.timeToDestroy = 1100
-        this.scene.time.delayedCall(this.timeToDestroy, () => {
-          this.destroyInstance()
-          
-        })
+    preUpdate(time, delta) {
+      super.preUpdate(time, delta)
+      this.traveledDistance += this.body.deltaAbsX()
 
-        if(this.facingDirection)
-        {
-          this.projetileVelocity *= -1
-          this.projetileAcceleration *= -1
-          this.setFlipX(true)
-        }
-    }
-
-    initEvents() {
-        this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
-    }
-
-    update() {
-        this.x += this.projetileVelocity
-        this.projetileVelocity += this.projetileAcceleration
-    }
-
-    checkProjectileSlimeCollision(Slime) {
-        this.scene.physics.overlap(this, Slime, () => {
-          this.destroy();
-      
-        });
+      if (this.traveledDistance >= this.maxDistance) {
+        this.destroyProjectile()
+        this.traveledDistance = 0
       }
+    }
 
+    fire(x, y, anim) {
+      this.body.reset(x,y)
+      this.setActive(true)
+      this.setVisible(true)
+      this.setVelocityX(this.speed)
+      this.play(anim, true)
+    }
 
-    destroyInstance() {
-      // If already destroyed, do nothing
-      if (this.isDestroyed) return;
+    fireBoss(x, y, playerX, playerY, anim) {
+      // Adjust projectile size to boss
+      this.setSize(120, 70)
+      this.body.setOffset(0, 15)
 
-      // Mark this instance as destroyed
-      this.isDestroyed = true;
+      // Calculate the vector from the boss to the player
+      const dx = playerX - x
+      const dy = playerY - y
 
-      // Unregister the update function from the scene's update event
-      this.scene.events.removeListener(Phaser.Scenes.Events.UPDATE, this.update, this);
+      // Calculate the distance between the boss and the player
+      const distance = Math.sqrt(dx * dx + dy * dy)
 
-      // Remove physics from NPC
-      if (this.body) {
-        this.scene.physics.world.remove(this.body)
-      }
+      // Normalize the vector (make it length 1) and multiply by the desired speed
+      const velocityX = (dx / distance) * this.speed * -1
+      const velocityY = (dy / distance) * this.speed * -1
 
-      Projectile.instanceCount--;
+      // Set the projectile's properties and fire it
+      this.body.reset(x, y)
+      this.setActive(true)
+      this.setVisible(true)
+      this.setVelocity(velocityX, velocityY) // This method sets both the X and Y velocity
+      this.play(anim, true)
+    }
 
-      // Finally, call the superclass destroy method
-      super.destroy();
+    destroyProjectile() {
+      this.body.reset(0,0)
+      this.setActive(false)
+      this.setVisible(false)
+      console.log("destroy projectile");
     }
 }
