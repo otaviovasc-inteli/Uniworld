@@ -1,7 +1,7 @@
 import collidable from "../../mixins/collidable.js";
-import initAnimations from "./anims/SlimeAnims.js";
+import initAnimations from "./anims/smokeAnims.js";
 
-export default class Slime extends Phaser.Physics.Arcade.Sprite {
+export default class Smoke extends Phaser.Physics.Arcade.Sprite {
   static instanceCount = 0
 	constructor(scene, x, y, layerNameArray) {
 		super(scene, x, y);
@@ -18,15 +18,15 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 		this.init();
 		this.initEvents();
 
-		// Create Slime anims
-		Slime.instanceCount++
-		if (Slime.instanceCount <= 1)
+		// Create Smoke anims
+		Smoke.instanceCount++
+		if (Smoke.instanceCount <= 1)
 			initAnimations(this.scene.anims);
 	}
 
 	init() {
 		this.gravity = 1000;
-		this.speed = 150
+		this.speed = 100
 		this.timeFromLastTurn = 0
 
 		this.body.setGravityY(this.gravity);
@@ -41,17 +41,14 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 		this.rayGraphics = this.scene.add.graphics({ linestyle: { width: 2, color: 0xaa00aa } })
 	}
 
-	// initiates update function on slime
+	// initiates update function on Smoke
 	initEvents() {
 		this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
 	}
 
 	update(time, delta) {
-		// set slime movements
+		// set Smoke movements
 		if (this.body.onFloor()) {
-			this.play(`${this.name}_jump`, true);
-			this.setVelocityX(0);
-			this.setVelocityY(0);
 			this.scene.time.delayedCall(400, () => {
 				this.hasHit = false;
 				this.play(`${this.name}_idle`, true);
@@ -60,7 +57,7 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 		}
 
 		// creates raycast property
-		const { ray, hasHit } = this.raycast(this.body, this.colliderLayer);
+		const { ray, hasHit } = this.raycast(this.body, this.colliderLayer, 130, 30);
 
 		// conditional to make the enemy stay on platform
 		if (!hasHit && this.timeFromLastTurn + 100 < time) {
@@ -75,7 +72,7 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 	}
 
 	// raycast function
-	raycast(body, layer, rayLength = 100) {
+	raycast(body, layer, rayLength = 130) {
 		const { x, y, width, halfHeight } = body;
 		const line = new Phaser.Geom.Line();
 		let hasHit = false;
@@ -107,21 +104,21 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 		return { ray: line, hasHit };
 	}
 
-  takesHit(source) {
-    this.health -= source.damage
-
-    if(this.health <= 0){
-      this.setTint(0xff0000)
-      this.setVelocity(0, -200)
-      this.body.checkCollision.none = true
-      this.setCollideWorldBounds(false)
-    } else {
-      this.setAlpha(0.25);
-      this.scene.time.delayedCall(200, () => {
-          this.setAlpha(1);
-      })
-    }
-
-    source.destroyProjectile()
-  }
+	takesHit(source) {
+		this.health -= source.damage
+	
+		if(this.health <= 0){
+		  this.setTint(0xff0000)
+		  this.setVelocity(0, -200)
+		  this.body.checkCollision.none = true
+		  this.setCollideWorldBounds(false)
+		} else {
+		  this.setAlpha(0.25);
+		  this.scene.time.delayedCall(200, () => {
+			  this.setAlpha(1);
+		  })
+		}
+	
+		source.destroyProjectile()
+	  }
 }

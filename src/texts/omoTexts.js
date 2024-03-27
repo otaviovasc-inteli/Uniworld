@@ -2,7 +2,7 @@
 const omoTexts =
 [
   // Estrutura ['Question', ['option1', 'option2', 'option3', 'answer']]
-  ["São Paulo Futebol Clube Gigantesco?", ['A) Não', 'B) Sim', 'C) Não', 'B']],
-  ["Questao 2. Entedeu?", ['A) Sim', 'B) Não', 'C) Não', 'A']]
+  ["A Unilever é a contra o desmatamento?", ['A) Não', 'B) Sim', 'C) Mais ou menos', 'B']],
+  ["Questao 2. Está se divertindo jogando?", ['A) Sim', 'B) Não', 'C) Mais ou menos', 'A']]
 ];
 export default omoTexts;

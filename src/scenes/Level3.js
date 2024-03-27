@@ -1,7 +1,11 @@
 import Player from "../entities/Player.js";
 import Npc from "../entities/Npc.js";
-import BossLevel3 from "../entities/enemies/bossLevel3.js";
+import GreenSlime from "../entities/enemies/greenSlime.js";
+import PurpleSlime from "../entities/enemies/purpleSlime.js";
 import Enemies from "../groups/enemies.js";
+import graySmoke from "../entities/enemies/graySmoke.js";
+import BossLevel3 from "../entities/enemies/bossLevel3.js";
+
 
 export default class Level3 extends Phaser.Scene {
   constructor() {
@@ -21,6 +25,10 @@ export default class Level3 extends Phaser.Scene {
     const playerSelecionado = this.sys.settings.data.playerSelecionado;
     const player = this.createPlayer(playerZones, playerSelecionado, oldPlayer);
 
+    //create enemies
+    const enemies = this.createEnemies(layers);
+
+    //colocando o Npc de links no terceiro mapa
     // Implementação de createEnemies (exemplificativa)
     // const enemies = this.createEnemies(layers);
 
@@ -34,22 +42,22 @@ export default class Level3 extends Phaser.Scene {
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
 
-    this.createPlayerColliders(player, { colliders: { platforms: layers.platforms } });
-    // this.createEnemyColliders(enemies, { colliders: { platforms: layers.platforms, player: player } });
-    // this.createEnemyColliders(boss, { colliders: { platforms: layers.platforms, player: player } });
+    // Collider player with platforms
+    this.createPlayerColliders(player, {
+      colliders: {
+        platforms: layers.platforms,
+      },
+    });
+    
+    this.createEnemyColliders(enemies, {
+      colliders: {
+        platforms: layers.platforms,
+        player: player,
+
+      },
+    });
+
     this.setupFollowupCameraOn(player, map);
-  }
-
-  createEnemies(layers) {
-    const enemies = new Enemies(this);
-    // Aqui você adicionaria seus inimigos, similar ao que fez no Level2
-    return enemies;
-  }
-
-  createEnemyColliders(object, { colliders }) {
-    object
-      .addCollider(colliders.platforms)
-      .addCollider(colliders.player, this.onPlayerCollision);
   }
 
   // Create player in scene
@@ -57,16 +65,33 @@ export default class Level3 extends Phaser.Scene {
     return new Player(this, start.x, start.y, playerSelecionado, oldPlayer);
   }
 
-  createEnemies(layers) {
-    const enemies = new Enemies(this);
-    const enemyTypes = enemies.getTypes();
-    layers.enemySpawns.objects.forEach(spawnPoint => {
-      console.log("Enemy type:" + spawnPoint.type);
-      const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y, [layers.platforms, spawnPoint.type]);
-      enemies.add(enemy);
-    });
-    return enemies;
-  }
+    //create enemy slime in scene
+    createEnemies(layers) {
+      const enemies = new Enemies(this);
+      const enemyTypes = enemies.getTypes()
+      layers.enemySpawns.objects.forEach(spawnPoint => {
+        console.log("Enemy type:" + spawnPoint.type);
+        const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y, [layers.platforms, spawnPoint.type]);
+        enemies.add(enemy);
+      });
+      return enemies;
+    }
+
+    onPlayerCollision(enemy, player) {
+      player.takesHit(enemy)
+    }
+
+    onProjectileHit(entity, source) {
+      entity.takesHit(source)
+    }
+  
+    // add enemy slime colliders
+    createEnemyColliders(enemies, { colliders }) {
+      enemies
+        .addCollider(colliders.platforms)
+        .addCollider(colliders.player, this.onPlayerCollision)
+        .addCollider(colliders.player.projectiles, this.onProjectileHit)
+    }
 
   createMap() {
     const map = this.make.tilemap({ key: `level3` });
@@ -88,11 +113,12 @@ export default class Level3 extends Phaser.Scene {
     const env3 = map.createLayer("env3", tileset1);
     const platforms = map.createLayer("platforms", [tileset1, tileset2]);
     const playerZones = map.getObjectLayer("player_zones");
+    const enemySpawns = map.getObjectLayer("enemy_spawns");
 
 
     platforms.setCollisionByExclusion(-1, true);
 
-    return { platforms, playerZones, env1, env2, env3 };
+    return { platforms, playerZones, env1, env2, env3, enemySpawns };
   }
 
   createBg(map) {
