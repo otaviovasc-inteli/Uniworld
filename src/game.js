@@ -9,7 +9,6 @@ import Level3 from "./scenes/Level3.js";
 // Phaser config to instanciate game
 const WIDTH = 1280;
 const HEIGHT = 720;
-const ZOOM_FACTOR = 0.7
 
 const SHARED_CONFIG = {
   width: WIDTH,
@@ -27,7 +26,7 @@ var config = {
     default: 'arcade',
     arcade: {
         gravity: { y: 0 },
-        debug: false
+        debug: true
     }
   },
   pixelArt: true,

@@ -1,11 +1,13 @@
 import collidable from "../../mixins/collidable.js";
 import initAnimations from "./anims/BossAnims2.js";
+import Projectiles from "../Projectiles.js";
 
 export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
-  constructor(scene, x, y, key) {
+  constructor(scene, x, y, key, player) {
     super(scene, x, y, key);
     scene.add.existing(this);
     scene.physics.add.existing(this);
+    this.player = player
 
     // Mixins
     Object.assign(this, collidable);
@@ -26,6 +28,13 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.gravity = 1000;
     this.speed = 150;
     this.damage = 25
+    this.health = 6
+
+    this.projectiles = new Projectiles(this.scene, 'boss_level3_projectile').setDepth(2)
+
+    this.isAttacking = false;
+    this.timeFromLastAttack = 0
+    this.attackDelay = this.getAttackDelay()
 
     this.body.setGravityY(this.gravity);
     this.setCollideWorldBounds(true);
@@ -53,13 +62,32 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.attackInterval = Phaser.Math.Between(1000, 4000)
     // Check if it's time to attack
     if (time - this.lastAttackTime >= this.attackInterval && !this.isAttacking) {
-      this.lastAttackTime = time;
+      this.timeFromLastAttack = time;
       this.isAttacking = true;
+      this.attackDelay = this.getAttackDelay()
+      this.projectiles.fireProjectileBoss(this, "boss3_projectile", this.player.x, this.player.y)
 
-      this.play("boss3_hurt", true).once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+      this.play("boss3_attack", true).once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
         this.play("boss3_idle", true);
         this.isAttacking = false;
       });
     }
+  }
+
+  getAttackDelay() {
+    return Phaser.Math.Between(1000, 4000)
+  }
+
+  takesHit(source) {
+    this.health -= source.damage
+    if(this.health <= 0){
+      this.setTint(0xff0000)
+      this.setVelocity(0, -200)
+      this.body.checkCollision.none = true
+      this.setCollideWorldBounds(false)
+    } else {
+      this.play("boss2_hurt", true)
+    }
+    source.destroyProjectile()
   }
 }

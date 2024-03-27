@@ -76,6 +76,7 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet('purple_slime', 'assets/enemies/purple_slime.png', {frameWidth:128,frameHeight:128});
     this.load.spritesheet('graySmoke', 'assets/enemies/smoke.png', {frameWidth:128,frameHeight:128});
     this.load.spritesheet('boss_level2', 'assets/sprites/Enemy/treeboss.png', {frameWidth:192,frameHeight:176});
+    this.load.spritesheet('boss_level2_projectile', 'assets/player/projectiles/bolaMarromArvore.png', {frameWidth:102,frameHeight:102});
 
     // ------------------------------------------------------------------
     //level 3 enemies
