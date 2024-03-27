@@ -41,6 +41,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.body.offset.y = 19;
     this.setFlipX(true);
     this.setScale(2);
+    this.hitSound = this.scene.sound.add('boss_hit_sound_level2', {loop: false, volume: 0.5, rate: 2})
   }
 
   initEvents() {
@@ -85,6 +86,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
       this.body.checkCollision.none = true
       this.setCollideWorldBounds(false)
     } else {
+      this.hitSound.play() // Play hit sound
       this.setTint(0xff0000)
       this.scene.time.delayedCall(250, () => {
           this.clearTint();
