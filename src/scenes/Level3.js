@@ -4,6 +4,7 @@ import GreenSlime from "../entities/enemies/greenSlime.js";
 import PurpleSlime from "../entities/enemies/purpleSlime.js";
 import Enemies from "../groups/enemies.js";
 import graySmoke from "../entities/enemies/graySmoke.js";
+import BossLevel3 from "../entities/enemies/bossLevel3.js";
 
 
 export default class Level3 extends Phaser.Scene {
@@ -59,18 +60,6 @@ export default class Level3 extends Phaser.Scene {
     this.setupFollowupCameraOn(player, map);
   }
 
-  createEnemies(layers) {
-    const enemies = new Enemies(this);
-    // Aqui você adicionaria seus inimigos, similar ao que fez no Level2
-    return enemies;
-  }
-
-  createEnemyColliders(object, { colliders }) {
-    object
-      .addCollider(colliders.platforms)
-      .addCollider(colliders.player, this.onPlayerCollision);
-  }
-
   // Create player in scene
   createPlayer({ start }, playerSelecionado, oldPlayer) {
     return new Player(this, start.x, start.y, playerSelecionado, oldPlayer);
@@ -79,11 +68,7 @@ export default class Level3 extends Phaser.Scene {
     //create enemy slime in scene
     createEnemies(layers) {
       const enemies = new Enemies(this);
-      const enemyTypes = {
-        GreenSlime: GreenSlime,
-        PurpleSlime: PurpleSlime,
-        graySmoke: graySmoke
-    }
+      const enemyTypes = enemies.getTypes()
       layers.enemySpawns.objects.forEach(spawnPoint => {
         console.log("Enemy type:" + spawnPoint.type);
         const enemy =  new enemyTypes[spawnPoint.type](this, spawnPoint.x, spawnPoint.y, [layers.platforms, spawnPoint.type]);
@@ -95,12 +80,17 @@ export default class Level3 extends Phaser.Scene {
     onPlayerCollision(enemy, player) {
       player.takesHit(enemy)
     }
+
+    onProjectileHit(entity, source) {
+      entity.takesHit(source)
+    }
   
     // add enemy slime colliders
     createEnemyColliders(enemies, { colliders }) {
       enemies
         .addCollider(colliders.platforms)
         .addCollider(colliders.player, this.onPlayerCollision)
+        .addCollider(colliders.player.projectiles, this.onProjectileHit)
     }
 
   createMap() {

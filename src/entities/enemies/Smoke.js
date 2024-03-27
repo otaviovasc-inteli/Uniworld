@@ -106,4 +106,22 @@ export default class Smoke extends Phaser.Physics.Arcade.Sprite {
 
 		return { ray: line, hasHit };
 	}
+
+	takesHit(source) {
+		this.health -= source.damage
+	
+		if(this.health <= 0){
+		  this.setTint(0xff0000)
+		  this.setVelocity(0, -200)
+		  this.body.checkCollision.none = true
+		  this.setCollideWorldBounds(false)
+		} else {
+		  this.setAlpha(0.25);
+		  this.scene.time.delayedCall(200, () => {
+			  this.setAlpha(1);
+		  })
+		}
+	
+		source.destroyProjectile()
+	  }
 }

@@ -5,6 +5,7 @@ export default class graySmoke extends Smoke {
   constructor(scene, x, y, smoke_name) {
     super(scene, x, y, smoke_name);
     this.damage = 40
+    this.health = 2
 
     this.init_graySmoke()
   }
