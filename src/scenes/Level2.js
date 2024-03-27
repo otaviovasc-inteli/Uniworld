@@ -79,6 +79,7 @@ export default class Level2 extends Phaser.Scene {
     this.setupFollowupCameraOn(player, map);
   }
 
+  // erase enemies raycast line
   finishDrawing(pointer, layer) {
     this.line.x2 = pointer.worldX;
     this.line.y2 = pointer.worldY;

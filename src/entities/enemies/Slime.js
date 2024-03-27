@@ -75,7 +75,7 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 	}
 
 	// raycast function
-	raycast(body, layer, rayLength = 100) {
+	raycast(body, layer, rayLength = 130) {
 		const { x, y, width, halfHeight } = body;
 		const line = new Phaser.Geom.Line();
 		let hasHit = false;
@@ -87,14 +87,14 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 				line.y1 = y + halfHeight;
 				line.x2 = line.x1 + rayLength;
 				line.y2 = line.y1 + rayLength;
-				break
+				break;
 			}
 			case Phaser.Physics.Arcade.FACING_LEFT: {
 				line.x1 = x;
 				line.y1 = y + halfHeight;
 				line.x2 = line.x1 - rayLength;
 				line.y2 = line.y1 + rayLength;
-				break
+				break;
 			}
 		}
 
@@ -104,24 +104,6 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 			hasHit = hits.some(hit => hit.index !== -1);
 		}
 
-		return { ray: line, hasHit };
+		return { ray: line, hasHit };
 	}
-
-  takesHit(source) {
-    this.health -= source.damage
-
-    if(this.health <= 0){
-      this.setTint(0xff0000)
-      this.setVelocity(0, -200)
-      this.body.checkCollision.none = true
-      this.setCollideWorldBounds(false)
-    } else {
-      this.setAlpha(0.25);
-      this.scene.time.delayedCall(200, () => {
-          this.setAlpha(1);
-      })
-    }
-
-    source.destroyProjectile()
-  }
 }

@@ -59,7 +59,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.lastDirection = Phaser.Physics.Arcade.FACING_RIGHT
 
     // Checkpoint
-    this.checkpointCords = {x: this.x, y: this.y}
+    this.checkpointCords = {x: this.x, y: this.y + 50}
 
     // Dash properties
     this.dashDistance = this.oldPlayer.dashSpeed || 150;
@@ -92,6 +92,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.walkSound = scene.sound.add("grass_sound", {loop: false, volume: 0.8, rate: 0.65});
         break;
       case "level3":
+        this.walkSound = scene.sound.add("grass_sound", {loop: false, volume: 0.8, rate: 0.65});
+        break;
+      case "level4":
         this.walkSound = scene.sound.add("grass_sound", {loop: false, volume: 0.8, rate: 0.65});
         break;
       // add mais dps
@@ -196,9 +199,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     const isWJustDown = Phaser.Input.Keyboard.JustDown(this.dashKey);
     const isQJustDown = Phaser.Input.Keyboard.JustDown(this.attackKey);
     const isUpJustDown = Phaser.Input.Keyboard.JustDown(up);
-    const onFloor = this.body.onFloor();
-
-    this.playerVelocityY = this.body.velocity.y;
 
     if (this.anims.isPlaying && this.anims.getName() === 'player_attack') {
       this.setVelocity(0, 0)
@@ -227,10 +227,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     // stops walking sounds when player jumps
-    if (!onFloor && this.walkSound.isPlaying) this.walkSound.pause()
+    if (!this.body.onFloor() && this.walkSound.isPlaying) this.walkSound.pause()
 
     // Jump logic
-    if (isUpJustDown && (onFloor || this.jumpCount < this.consecutiveJumps)) {
+    if (isUpJustDown && (this.body.onFloor() || this.jumpCount < this.consecutiveJumps)) {
       this.jumpCount++;
       this.setVelocityY(-this.jumpSpeed)
       this.jumpSound.play()
@@ -292,23 +292,23 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     // Reset `canDash` when landing on the ground
-    if (onFloor && !this.canDash && !Phaser.Input.Keyboard.JustDown(this.dashKey)) {
+    if (this.body.onFloor() && !this.canDash && !Phaser.Input.Keyboard.JustDown(this.dashKey)) {
       this.canDash = true;
     }
 
     // Animation logic for jumping and falling
-    if (!onFloor) {
+    if (!this.body.onFloor()) {
       this.play("player_jump", true);
-      if (this.playerVelocityY > 0) this.play("player_fall", true);
+      if (this.body.velocity.y > 0) this.play("player_fall", true);
     }
     // Reset jump count and dash availability on landing
-    if (onFloor) {
+    if (this.body.onFloor()) {
       this.jumpCount = 0
     }
 
     // Prevents player from falling too fast and passing through the ground
     const maxFallSpeed = 1000
-    if (this.playerVelocityY > maxFallSpeed) {
+    if (this.body.velocity.y > maxFallSpeed) {
       this.body.setVelocityY(maxFallSpeed)
     }
   }
@@ -322,15 +322,15 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     // Check if player died
     if(this.hp.currentHp() < 1) {
       // Dead
-      console.log("Morri");
+      console.log("Dead");
       this.die()
     } else {
       // Hurt
-      this.bounceOff()
+      this.bounceOff = this.bounceOff.bind(this)
     }
 
     this.scene.time.delayedCall(500, () => {this.hasBeenHit = false})
-  }
+  }   
 
   die() {
     // Go to checkpointCords and get full hp
@@ -338,8 +338,9 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hp.restoreHp()
   }
 
-  bounceOff() {
+  bounceOff = () => {
     // if hitted by right side, bounce to right, else to left
+    log(this.body);
     this.body.touching.right ?
       this.setVelocityX(-this.bounceVelocity) :
       this.setVelocityX(this.bounceVelocity)

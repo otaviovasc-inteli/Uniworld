@@ -47,6 +47,23 @@ export default class Preload extends Phaser.Scene {
     this.load.image('nuvem_bg', 'assets/level3/nuvem.png')
     this.load.image('predios_bg', 'assets/level3/predios_bg.png')
     // ------------------------------------------------------------------
+    // Level4
+    this.load.tilemapTiledJSON('level4', 'assets/level4/assets/uni_level.json');
+    this.load.image('level4_t1', 'assets/level4/assets/level4_t1.png');
+    this.load.image('bg_azul', 'assets/level4/assets/bg_azul.png');
+    this.load.image('bg_color', 'assets/level4/assets/bg_color.png'); 
+    this.load.image('bg_cinza', 'assets/level4/assets/bg_cinza.png');
+    this.load.image('cif_logo', 'assets/level4/assets/cif_logo.png');
+    this.load.image('clear_logo', 'assets/level4/assets/clear_logo.png');
+    this.load.image('comfort_logo', 'assets/level4/assets/comfort_logo.png');
+    this.load.image('fofo_logo', 'assets/level4/assets/fofo_logo.png');
+    this.load.image('hellmans_logo', 'assets/level4/assets/hellmans_logo.png');
+    this.load.image('lux_logo', 'assets/level4/assets/lux_logo.png');
+    this.load.image('maizena_logo', 'assets/level4/assets/maizena_logo.png');
+    this.load.image('TRES_logo', 'assets/level4/assets/TRES_logo.png');
+    this.load.image('uni_logo', 'assets/level4/assets/uni_logo.png');
+
+    // ------------------------------------------------------------------
      // Level3
      this.load.spritesheet('diretora_npc', 'assets/npc/diretora_npc.png', { frameWidth: 256, frameHeight: 256});
          // ------------------------------------------------------------------
