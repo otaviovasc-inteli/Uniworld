@@ -55,4 +55,18 @@ export default anims =>{
     frameRate: 4,
     repeat: -1
   })
+
+  anims.create({
+    key: 'diretora_idle',
+    frames: anims.generateFrameNumbers('diretora_npc', {start: 0, end: 5}),
+    frameRate: 4,
+    repeat: -1
+  })
+
+  anims.create({
+    key: 'diretora_overlap',
+    frames: anims.generateFrameNumbers('diretora_npc', {start: 6, end: 11}),
+    frameRate: 4,
+    repeat: -1
+  })
 }

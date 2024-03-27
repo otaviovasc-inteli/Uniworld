@@ -1,6 +1,6 @@
 import initAnimations from "./playerAnims.js";
 import collidable from "../mixins/collidable.js";
-import Projectile from "./Projectile.js";
+import Projectiles from "./Projectiles.js";
 import HealthBar from "../hud/healthBar.js";
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
@@ -44,6 +44,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hasBeenHit = false
     this.allowedNextLevel = true
     this.allowedToShot = this.oldPlayer.allowedToShot || false
+    this.allowedToDash = this.oldPlayer.allowedToDash || true
 
     // Health logic and setup
     const leftTopCornerX = (1280 - (1280 / 0.7)) / 2 + 20
@@ -54,6 +55,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     // Projectile properties
     this.projectileCooldown = this.oldPlayer.projectileCooldown || 800; // Cooldown in milliseconds
     this.lastProjectileTime = 0; // Timestamp of the last projectile shot
+    this.projectiles =  new Projectiles(this.scene, "projectile")
+    this.lastDirection = Phaser.Physics.Arcade.FACING_RIGHT
 
     // Checkpoint
     this.checkpointCords = {x: this.x, y: this.y}
@@ -62,8 +65,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.dashDistance = this.oldPlayer.dashSpeed || 150;
     this.dashDuration = this.oldPlayer.dashDuration || 150;
     this.canDash = this.oldPlayer.canDash || false;
-
-    this.damage = this.oldPlayer.damage || 0;
 
     // Sounds
     this.createSounds(this.scene)
@@ -128,7 +129,15 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
         this.projectileCooldown = 400; // Powerup properties
         this.allowedNextLevel = true // Allow player to switch level
-        this.resumeUpdate()
+        // this.powerupTutorial(powerup)
+        break;
+
+      case 'kibon':
+        console.log("Collect Kibon, allowed to dash, next level allowed");
+        this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
+        this.allowedToDash = true; // Powerup properties
+        this.allowedNextLevel = true // Allow player to switch level
+        this.powerupTutorial(powerup)
         break;
 
       default:
@@ -149,14 +158,20 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     // Create window and close button logic
-    if (!this.tutorialWindow) this.tutorialWindow = this.scene.add.image(centerX, centerY, `${powerup}Tutorial`).setDepth(2).setScale(0.5);
-    if (!this.XBtn) this.XBtn = this.scene.add.image(centerX + 200, centerY - 210, 'hub_close').setInteractive().setDepth(3).setScale(0.025);
+    if (!this.videoTutorial) this.videoTutorial = this.scene.add.video(centerX, centerY, `${powerup}Tutorial`).setDepth(2).setScale(0.5);
+    this.videoTutorial.setLoop(true)
+    this.videoTutorial.play()
+    if (!this.XBtn) this.XBtn = this.scene.add.image(centerX + 400, centerY - 200, 'hub_close').setInteractive().setDepth(3).setScale(0.065);
+    // Close button
     this.XBtn.on('pointerdown', () => {
       console.log("close");
       if (this.XBtn) this.XBtn.destroy();
-      if (this.tutorialWindow) this.tutorialWindow.destroy();
+      if (this.videoTutorial) {
+        this.videoTutorial.destroy();
+        this.videoTutorial.stop()
+      }
       this.XBtn = null
-      this.tutorialWindow = null
+      this.videoTutorial = null
       this.resumeUpdate() // Re-allow player movement
     });
   }
@@ -175,14 +190,21 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     this.playerVelocityY = this.body.velocity.y;
 
+    if (this.anims.isPlaying && this.anims.getName() === 'player_attack') {
+      this.setVelocity(0, 0)
+      return
+    }
+
     // Movement and movement sound logic
     if (left.isDown) {
+      this.lastDirection = Phaser.Physics.Arcade.FACING_LEFT
       this.setFlip(true, false);
       this.setVelocityX(-this.playerSpeed);
       this.play("player_run", true);
       if (!this.walkSound.isPlaying)
         this.walkSound.play();
     } else if (right.isDown) {
+      this.lastDirection = Phaser.Physics.Arcade.FACING_RIGHT
       this.setFlip(false, false);
       this.setVelocityX(this.playerSpeed);
       this.play("player_run", true);
@@ -210,22 +232,19 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
       // Check if enough time has passed
       if (currentTime - this.lastProjectileTime > this.projectileCooldown) {
-        this.projectile = new Projectile(this.scene, this.x, this.y, "projectile_anim", this.flipX);
+        // var projectile = new Projectiles(this.scene, this.x, this.y, "projectile", this.flipX);
+        this.projectiles.fireProjectile(this)
 
         // Update the last projectile time
         this.lastProjectileTime = currentTime;
 
-        // The rest of your shooting logic
-        this.pauseUpdate();
+        // Shoot anim
         this.play("player_attack", true);
-        this.scene.time.delayedCall(150, () => {
-          this.resumeUpdate();
-        });
       }
     }
 
     // Dash logic
-    if (isWJustDown && this.canDash) {
+    if (isWJustDown && this.canDash && this.allowedToDash) {
       let dashX = 0;
       let dashY = 0;
 

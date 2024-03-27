@@ -16,7 +16,8 @@ export default class Preload extends Phaser.Scene {
     // ------------------------------------------------------------------
     // Tutorial
     this.load.video('tutorial', 'assets/links/videoTutorial1.mp4');
-    this.load.image('rexonaTutorial', 'assets/links/paginaTutorialTeclaQ.png')
+    this.load.video('rexonaTutorial', 'assets/links/videoTutorialQ.mp4')
+    this.load.video('kibonTutorial', 'assets/links/videoTutorialW.mp4')
     // ------------------------------------------------------------------
     // level1
     this.load.tilemapTiledJSON('level1', 'assets/level1/sceneInterior.json');
@@ -45,8 +46,10 @@ export default class Preload extends Phaser.Scene {
     this.load.image('ceu_bg', 'assets/level3/ceu.png')
     this.load.image('nuvem_bg', 'assets/level3/nuvem.png')
     this.load.image('predios_bg', 'assets/level3/predios_bg.png')
-
     // ------------------------------------------------------------------
+     // Level3
+     this.load.spritesheet('diretora_npc', 'assets/npc/diretora_npc.png', { frameWidth: 256, frameHeight: 256});
+         // ------------------------------------------------------------------
     // Hub
     this.load.spritesheet('hub_sprite', 'assets/level2/dvd_npc.png', { frameWidth: 256, frameHeight: 160 });
     this.load.image('hub_screen', 'assets/links/links_screen.png');
@@ -75,6 +78,9 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet('boss_level2', 'assets/sprites/Enemy/treeboss.png', {frameWidth:192,frameHeight:176});
 
     // ------------------------------------------------------------------
+    //level 3 enemies
+    this.load.spritesheet('boss_level3', 'assets/sprites/Enemy/mud_idle4X.png', {frameWidth:248,frameHeight:256});
+    //-------------------------------------------------------------------
     // Npcs
     this.load.spritesheet("computer_sprite", "assets/level1/computer.png", { frameWidth: 320, frameHeight: 192 });
     this.load.spritesheet("rexona_sprite", "assets/level1/rexona.png", { frameWidth: 128, frameHeight: 192 });

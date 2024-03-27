@@ -30,7 +30,7 @@ export default class Level2 extends Phaser.Scene {
     const enemies = this.createEnemies(layers);
 
     //create boss
-    const boss = new BossLevel2(this, 9664, 960, 'boss_level2')
+    const boss = new BossLevel2(this, 9664, 960, 'boss_level2').setDepth(3)
 
     // RexonaNpc sprite
     const dvdNpc = new Npc(this, 7420, 700, 'hub_sprite', 'hub', player)
@@ -38,14 +38,14 @@ export default class Level2 extends Phaser.Scene {
     .setScale(1.2)
 
     // Npc sprite
-    const omoNpc = new Npc(this, 7600, 700, 'omo_sprite', 'omo', player)
+    const omoNpc = new Npc(this, 9664, 1150, 'omo_sprite', 'omo', player)
     .setScale(0.6)
     .setSize(150, 120)
+    .setDepth(2)
 
     // Set world bounds based on maps
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
-
     // Create background
     this.createBg(map)
 
@@ -113,11 +113,16 @@ export default class Level2 extends Phaser.Scene {
     player.takesHit(enemy)
   }
 
+  onProjectileHit(entity, source) {
+    entity.takesHit(source)
+  }
+
   // add enemy slime colliders
   createEnemyColliders(enemies, { colliders }) {
     enemies
       .addCollider(colliders.platforms)
       .addCollider(colliders.player, this.onPlayerCollision)
+      .addCollider(colliders.player.projectiles, this.onProjectileHit)
   }
 
   // Add player colliders

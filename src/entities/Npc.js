@@ -201,6 +201,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   }
 
   quizLogic(sprite) {
+    this.scene.cameras.main.setZoom(1);
+
     // Parse informations from texts array
     const currentQuestion = this.texts[this.questionIndex];
     const questionText = currentQuestion[0];
@@ -215,10 +217,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     if(sprite === 'rexona') {
       centerX = this.scene.cameras.main.centerX;
       centerY = this.scene.cameras.main.centerY;
-    } else if (sprite === 'omo') {
+    } else {
       centerX = this.npcPlayer.x;
       centerY = this.npcPlayer.y;
-      this.scene.cameras.main.setZoom(1);
     }
 
     this.npcPlayer.pauseUpdate() // Make sure player will not move while interacting
@@ -279,15 +280,16 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         this.quizLogic(sprite)
     } else {
         console.log('End of quiz');
-        console.log(this.questionsCorrectCount + " out of " + this.texts.length);
-        // Resume camera zoom
-        this.scene.cameras.main.setZoom(this.scene.zoomFactor);
-        // Check Quiz results
-        if (this.questionsCorrectCount === this.texts.length) {
-          this.closeQuiz(false, true)
+        this.npcPlayer.resumeUpdate() // Make sure player will not move while interacting
+        this.closeQuiz()
+        console.log('correct questions: '+ this.questionsCorrectCount);
+        console.log('ammount of questions: '+ this.texts.length);
+        if (this.questionsCorrectCount === this.texts.length)
+        {
           this.npcPlayer.collectPowerUp(sprite)
           this.destroyInstance()
-        } else {
+        }
+        else {
           this.closeQuiz(true, true)
         }
 
@@ -323,7 +325,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     }
 
     // Allow the player to move again
-    if(resume) this.npcPlayer.resumeUpdate();
+    this.npcPlayer.resumeUpdate();
   }
 
   // Build hub images links and texts
