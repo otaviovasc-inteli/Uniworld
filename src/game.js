@@ -5,6 +5,7 @@ import Level2 from "./scenes/Level2.js";
 import PlayerSelect from "./scenes/PlayerSelect.js";
 import TutorialScreen from "./scenes/TutorialScreen.js";
 import Level3 from "./scenes/Level3.js";
+import Level4 from "./scenes/Level4.js";
 
 // Phaser config to instanciate game
 const WIDTH = 1280;
@@ -15,7 +16,7 @@ const SHARED_CONFIG = {
   height: HEIGHT,
 }
 
-const Scenes = [TitleScreen, Level1, Level2, Level3, Preload, PlayerSelect, TutorialScreen];
+const Scenes = [TitleScreen, Level1, Level2, Level3, Level4, Preload, PlayerSelect, TutorialScreen];
 const createScenes = Scene => new Scene(SHARED_CONFIG);
 const initScene = () => Scenes.map(createScenes)
 
@@ -26,7 +27,7 @@ var config = {
     default: 'arcade',
     arcade: {
         gravity: { y: 0 },
-        debug: true
+        debug: false
     }
   },
   pixelArt: true,
