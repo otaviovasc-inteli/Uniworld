@@ -344,7 +344,6 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
   bounceOff = () => {
     // if hitted by right side, bounce to right, else to left
-    log(this.body);
     this.body.touching.right ?
       this.setVelocityX(-this.bounceVelocity) :
       this.setVelocityX(this.bounceVelocity)
