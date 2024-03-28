@@ -40,7 +40,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.jumpSpeed = this.oldPlayer.jumpSpeed || 600;
     this.jumpCount = this.oldPlayer.jumpCount || 0;
     this.consecutiveJumps = this.oldPlayer.consecutiveJumps || 1;
-    this.bounceVelocity = this.oldPlayer.bounceVelocity || 400
+    this.bounceVelocity = this.oldPlayer.bounceVelocity || 250
     this.hasBeenHit = false
     this.allowedNextLevel = false
     this.allowedToShot = this.oldPlayer.allowedToShot || false
@@ -350,7 +350,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       this.setVelocityX(-this.bounceVelocity) :
       this.setVelocityX(this.bounceVelocity)
 
-    setTimeout(() => this.setVelocityY(-this.bounceVelocity), 0)
+    this.setVelocityY(-this.bounceVelocity * 2)
   }
 
   checkPoint() {
