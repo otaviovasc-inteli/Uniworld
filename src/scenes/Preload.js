@@ -51,7 +51,7 @@ export default class Preload extends Phaser.Scene {
     this.load.tilemapTiledJSON('level4', 'assets/level4/assets/uni_level.json');
     this.load.image('level4_t1', 'assets/level4/assets/level4_t1.png');
     this.load.image('bg_azul', 'assets/level4/assets/bg_azul.png');
-    this.load.image('bg_color', 'assets/level4/assets/bg_color.png'); 
+    this.load.image('bg_color', 'assets/level4/assets/bg_color.png');
     this.load.image('bg_cinza', 'assets/level4/assets/bg_cinza.png');
     this.load.image('cif_logo', 'assets/level4/assets/cif_logo.png');
     this.load.image('clear_logo', 'assets/level4/assets/clear_logo.png');
@@ -106,6 +106,7 @@ export default class Preload extends Phaser.Scene {
     this.load.image('reuniaoTeams', 'assets/level1/reuniaoTeams.png');
     this.load.image("Ekey", "assets/player/E.png");
     this.load.spritesheet('omo_sprite', 'assets/level2/omo.png', {frameWidth: 100, frameHeight: 160})
+    this.load.spritesheet('kibon_sprite', 'assets/level3/kibon.png', {frameWidth: 128, frameHeight: 128})
     // ------------------------------------------------------------------
     // Sound effects and music
     this.load.audio("grass_sound", "assets/sounds/level2/lvl_2_grass_walk.ogg");

@@ -71,7 +71,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
   }
 
   getAttackDelay() {
-    return Phaser.Math.Between(1000, 4000)
+    return Phaser.Math.Between(2500, 5000)
   }
 
   getProjectiles() {

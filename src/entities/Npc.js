@@ -77,6 +77,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           case 'omo':
               this.quizLogic('omo');
             break;
+          case 'kibon':
+              this.quizLogic('kibon');
+            break;
           case 'hub':
               this.hubLogic();
             break;

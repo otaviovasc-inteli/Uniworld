@@ -158,6 +158,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     } else {
       centerX = this.x;
       centerY = this.y;
+      this.scene.cameras.main.setZoom(1)
     }
 
     // Create window and close button logic
@@ -175,6 +176,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       }
       this.XBtn = null
       this.videoTutorial = null
+      this.scene.cameras.main.setZoom(this.scene.zoomFactor)
       this.resumeUpdate() // Re-allow player movement
     });
   }
@@ -332,8 +334,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.setAlpha(1)
       })
     }
-
-    this.scene.time.delayedCall(800, () => {this.hasBeenHit = false})
+    this.resumeUpdate()
+    this.scene.time.delayedCall(1000, () => {this.hasBeenHit = false})
   }
 
   die() {
