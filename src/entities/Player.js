@@ -183,7 +183,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
   update() { //Death logic for each level from falling
     if (this.y > 1960 && this.scene.sys.settings.key === "level2") {
-      this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
+      this.setPosition(this.checkpointCords.x, this.checkpointCords.y - 150);
       this.hp.restoreHp();
       console.log("Player died, respawned at checkpoint")
     }

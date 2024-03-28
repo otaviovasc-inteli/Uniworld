@@ -393,18 +393,6 @@
          "objects":[
                 {
                  "height":0,
-                 "id":8,
-                 "name":"spawnPoint",
-                 "point":true,
-                 "rotation":0,
-                 "type":"graySmoke",
-                 "visible":true,
-                 "width":0,
-                 "x":1176,
-                 "y":2481
-                }, 
-                {
-                 "height":0,
                  "id":9,
                  "name":"spawnPoint",
                  "point":true,
@@ -436,8 +424,8 @@
                  "type":"graySmoke",
                  "visible":true,
                  "width":0,
-                 "x":4222.66666666667,
-                 "y":2050.66666666667
+                 "x":4156,
+                 "y":2141.57575757576
                 }, 
                 {
                  "height":0,
@@ -448,8 +436,8 @@
                  "type":"graySmoke",
                  "visible":true,
                  "width":0,
-                 "x":6430.24242424242,
-                 "y":1810.24242424242
+                 "x":5465.0303030303,
+                 "y":2053.27272727272
                 }, 
                 {
                  "height":0,
@@ -460,20 +448,8 @@
                  "type":"graySmoke",
                  "visible":true,
                  "width":0,
-                 "x":6042.66666666667,
-                 "y":1811.33333333333
-                }, 
-                {
-                 "height":0,
-                 "id":84,
-                 "name":"spawnPoint",
-                 "point":true,
-                 "rotation":0,
-                 "type":"graySmoke",
-                 "visible":true,
-                 "width":0,
-                 "x":530,
-                 "y":2170
+                 "x":6274.66666666667,
+                 "y":1859.33333333333
                 }, 
                 {
                  "height":0,
