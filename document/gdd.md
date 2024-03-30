@@ -346,7 +346,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 <div align="center">
 <sub>Figura 6 - Diagrama de Cenas</sub>
-<img src="../assets/GameFlow3.png" width="100%">
+<img src="../assets/GameFlow4.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
