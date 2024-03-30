@@ -642,6 +642,46 @@ Que nota deu ao jogo? | 8.0
 O que gostou no jogo? | Estética
 O que poderia melhorar no jogo? | Melhorar a forma de mutar o jogo e melhorar a história/objetivo.
 
+TESTE 3: 
+Nome | Vinicius Santos
+--- | ---
+Testes conduzido por | Igor, Raphael, Thiago, David
+Idade | 26
+Local | Durante o desenvolvimento
+Dia | 27/03/2024
+Horário | 14:20:00
+Duração | 20 minutos
+Dispositivo | Próprio funcionário
+Já possuía experiência prévia com games? | Sim, jogador casual
+Conseguiu iniciar o jogo? | Sim
+Entendeu as regras e mecânicas do jogo? | Sim, conseguiu entender todas as regras e mecânicas do jogo
+Conseguiu progredir no jogo? | Com dificuldades
+Apresentou dificuldades? | Dificuldades em derrotar o chefe final
+Que nota deu ao jogo? | 7,5
+O que gostou no jogo? | Estética
+O que poderia melhorar no jogo? | Trilha entre jogo e aprendizado, separando o conteúdo em mais NPCs, inimigos mais fáceis
+
+TESTE 4:
+
+Nome | Eduardo Rossi
+--- | ---
+Testes conduzido por | Igor, Rafael, Thiago, David
+Idade | 62
+Local | Durante o desenvolvimento
+Dia | 27/03/2024
+Horário | 14:40:00
+Duração | 20 minutos
+Dispositivo | Próprio funcionário
+Já possuía experiência prévia com games? | Não, nenhuma
+Conseguiu iniciar o jogo? | Sim
+Entendeu as regras e mecânicas do jogo? | Não, ele não conseguiu entender as regras e mecânicas do jogo
+Conseguiu progredir no jogo? | Não, ele não entendeu como progredir
+Apresentou dificuldades? | Sim, dificuldade em entender e aplicar as regras e mecânicas
+Que nota deu ao jogo? | 10
+O que gostou no jogo? | Estética
+O que poderia melhorar no jogo? | Volume que está muito alto
+
+
 
 
 ### 5.2.2 Melhorias
