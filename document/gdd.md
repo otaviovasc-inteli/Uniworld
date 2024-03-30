@@ -8,7 +8,7 @@
 
 <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">David Deodato</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Igor Sampaio</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Marlos Guedes</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Otávio Vasconcelos</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Raphael Silva</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Ricardo Planas</a> e <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Thiago Volcati</a>
 
-<img src= "assets/titleScreen/sky.png">
+<img src="../assets/preserveranceGames.png" width="100%">
 
 ## Sumário
 
@@ -294,6 +294,14 @@ Figura 8: Descrição dos objetos dispostos na primeira cena de combate, como pl
 </div>
 
 Figura 9: Descrição dos objetos dispostos na segunda cena de combate, como plataformas, NPCs e coletáveis.
+
+<div align="center">
+<sub>Figura 9 - Página de preload - Exemplo de modularização do código</sub>
+<img src="../assets/concept_map_4.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+Figura 10: Descrição dos objetos dispostos na última cena, como as plataformas e as marcas do cenário.
 
 ### 3.3.5. Trilha sonora (sprint 3)
 
@@ -810,7 +818,8 @@ Que nota deu ao jogo? | 8.0
 O que gostou no jogo? | Estética
 O que poderia melhorar no jogo? | Melhorar a forma de mutar o jogo e melhorar a história/objetivo.
 
-TESTE 3: 
+TESTE 3:
+
 Nome | Vinicius Santos
 --- | ---
 Testes conduzido por | Igor, Raphael, Thiago, David
@@ -858,11 +867,9 @@ Com base no feedback dos testes realizados em 27/03/2024, identificamos áreas d
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
-*Escreva de que formas a solução do jogo atingiu os objetivos descritos na seção 1 deste documento. Indique pontos fortes e pontos a melhorar de maneira geral.*
-
-*Relacione os pontos de melhorias evidenciados nos testes com plano de ações para serem implementadas no jogo. O grupo não precisa implementá-las, pode deixar registrado aqui o plano para futuros desenvolvimentos.*
-
-*Relacione também quaisquer ideias que o grupo tenha para melhorias futuras*
+&nbsp;&nbsp;&nbsp;&nbsp;À caminho da sprint final, o grupo foi capaz de identificar alguns aspectos como futuras dificuldades e futuros planos para a última etapa do projeto. Durante a entrega da sprint e os testes dos jogos com funcionários Unilever, fomos capazes de validar mecânicas de movimentação, efeitos visuais e sonoros e outras funcionalidades em jogo de modo geral. Além disso, também recebemos feedbacks em relação à finalidade corporativa do jogo, ensinar e instruir os novos funcionários no processo de onboarding da Unilever, de modo interativo e acessível para todos os públicos, seja mais ou menos habituados com jogos.
+&nbsp;&nbsp;&nbsp;&nbsp;Assim, é possível concluir que dentre os futuros planos da equipe incluem a inclusão de mais personagens não jogáveis (NPCs) ao decorrer do jogo, para relembrar comandos e fornecer instruções. Além disso, refinar disposição do hub de links e frisar a impossibilidade de prosseguir dentro do jogo mediante não conclusão dos questionários propostos, facilitar o nível de dificuldade do jogo e outros ajustes menores, mas que seguem a mesma linha de raciocínio.
+&nbsp;&nbsp;&nbsp;&nbsp;Por fim, algumas das dificuldades seriam o tempo restante para a conclusão e apresentação do projeto ao parceiro e a inclusão de um idioma extra, além dos ajustes necessários com NPCs. Porém, acreditamos que a última quinzena será mais do que suficiente para a finalização do produto.
 
 # <a name="c7"></a>7. Referências (sprint 5)
 
