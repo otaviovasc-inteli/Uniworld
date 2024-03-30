@@ -601,18 +601,50 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 
 ### 5.2.1 Registros de testes
 
-*Descreva nesta seção as sessões de teste/entrevista com diferentes jogadores. Registre cada teste conforme o template a seguir.*
+TESTE 1:
 
-Nome | João Jonas (use nomes fictícios)
+Nome | Bruna Collado
 --- | ---
-Já possuía experiência prévia com games? | sim, é um jogador casual
-Conseguiu iniciar o jogo? | sim
-Entendeu as regras e mecânicas do jogo? | entendeu as regras, mas sobre as mecânicas, apenas as essenciais, não explorou os comandos complexos
-Conseguiu progredir no jogo? | sim, sem dificuldades  
-Apresentou dificuldades? | Não, conseguiu jogar com facilidade e afirmou ser fácil
+teste conduzido por: | Igor, Rafael, Thiago, David.
+idade: | 40
+local: | meet/inteli
+dia: | 27/03/2024
+horário: | 15:00:00.
+duração: | 20 minutos.
+dispositivo: | computador/notebook
+
+Já possuía experiência prévia com games? | quase nenhuma
+Conseguiu iniciar o jogo? | Sim, mas com dificuldades.
+Entendeu as regras e mecânicas do jogo? | Não, ela não conseguiu entender as regras e mecânicas do jogo.
+Conseguiu progredir no jogo? | Não, ela não entendeu como progredir.
+Apresentou dificuldades? | Sim, dificuldade em entender as regras e mecânicas.
 Que nota deu ao jogo? | 9.0
-O que gostou no jogo? | Gostou  de como o jogo vai ficando mais difícil ao longo do tempo sem deixar de ser divertido
-O que poderia melhorar no jogo? | A responsividade do personagem aos controles, disse que havia um pouco de atraso desde o momento do comando até a resposta do personagem
+O que gostou no jogo? | Estética e teclas intuitivas.
+O que poderia melhorar no jogo? | Expliciar as instruções.
+
+
+TESTE 2:
+
+Nome | Lilian Florio.
+--- | ---
+teste conduzido por: | Igor, Rafael, Thiago, David.
+idade: | 36
+local: | meet/inteli
+dia: | 27/03/2024
+horário: | 15:00:00.
+duração: | 20 minutos.
+dispositivo: | computador/notebook
+
+Já possuía experiência prévia com games? | Nunca.
+Conseguiu iniciar o jogo? | Sim
+Entendeu as regras e mecânicas do jogo? | Não, ela não conseguiu entender as regras e mecânicas do jogo.
+Conseguiu progredir no jogo? | Sim, mas possuiu muitas dificuldades.
+Apresentou dificuldades? | Sim, dificuldade em entender as regras e mecânicas.
+Que nota deu ao jogo? | 8.0
+O que gostou no jogo? | Estética
+O que poderia melhorar no jogo? | Melhorar a forma de mutar o jogo e melhorar a história/objetivo.
+
+
 
 ### 5.2.2 Melhorias
 
