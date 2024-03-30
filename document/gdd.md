@@ -557,38 +557,55 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 
 <img src="../assets/mvp/mvp2.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Desenvolvemos nosso MVP com uma tela de título, onde é possível realizar algumas configurações do jogo.
+
 <img src="../assets/mvp/mvp3.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Introduzimos um recurso de acessibilidade que permite escolher qual será o seu jogador, aumentando a imersão e proporcionando maior identificação do jogador com o jogo.
+
 <img src="../assets/mvp/mvp4.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Após escolher o personagem, apresentamos uma tela animada com os controles básicos do jogo.
+
 <img src="../assets/mvp/mvp5.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo se inicia na casa do colaborador.
+
 <img src="../assets/mvp/mvp7.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Incluímos como affordance a resposta visual do jogador ao interagir com elementos com os quais é possível interagir.
+
 <img src="../assets/mvp/mvp6.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;No início do jogo, o jogador deve interagir com o computador para receber a missão da diretora da Unilever, recebendo assim uma contextualização do enredo e dos objetivos do jogo.
+
 <img src="../assets/mvp/mvp8.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Durante o jogo, ao derrotar chefões, surgem power-ups representando produtos da marca Unilever, e para coletá-los, o jogador deve acertar o quiz que aparece após a interação com o item.
+
 <img src="../assets/mvp/mvp9.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Após acertar todas as perguntas do quiz, o jogador desbloqueia melhorias ou novas habilidades. Quando uma nova tecla é adicionada ao conjunto de controles, um pop-up com uma nova tela de tutorial animado explica brevemente a nova mecânica do jogo.
+
 <img src="../assets/mvp/mvp10.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Após interagir com todos os elementos disponíveis na primeira fase, o jogador pode sair de casa e começar sua jornada. Então, inicia-se a próxima fase do jogo, que representa um mundo lúdico com vários elementos temáticos da Unilever e inimigos para enfrentar.
+
 <img src="../assets/mvp/mvp11.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Ao longo das fases, um NPC distribui links relacionados ao conteúdo de onboarding necessário para o próximo quiz e também serve como checkpoint.
+
 <img src="../assets/mvp/mvp12.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Hub de links.
+
 <img src="../assets/mvp/mvp13.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;No final de cada fase, o jogador deve enfrentar um chefão que, ao ser derrotado, libera uma recompensa (power-up/quiz).
+
 <img src="../assets/mvp/mvp14.png" width="100%">
 Item liberado pelo boss após ser derrotado.
+
 <img src="../assets/mvp/mvp15.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Na fase da cidade Unilever, o jogador enfrenta novos inimigos e um novo chefão.
+
 <img src="../assets/mvp/mvp16.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Novo chefão da cidade Unilever.
+
 <img src="../assets/mvp/mvp17.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Após coletar o power-up do novo chefão, o jogador desbloqueia uma nova habilidade, o "movimento rápido".
+
 <img src="../assets/mvp/mvp1.png" width="100%">
 &nbsp;&nbsp;&nbsp;&nbsp;Por fim, na fase final, o jogador chega ao escritório da Unilever e conclui o jogo.
+
 
 ## 4.5. Revisão do MVP (sprint 5)
 
