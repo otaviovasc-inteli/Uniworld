@@ -686,7 +686,7 @@ O que poderia melhorar no jogo? | Volume que está muito alto
 
 ### 5.2.2 Melhorias
 
-*Descreva nesta seção um plano de melhorias sobre o jogo, com base nos resultados dos testes de jogabilidade*
+Com base no feedback dos testes realizados em 27/03/2024, identificamos áreas de melhoria em nosso jogo, especialmente relacionadas à dificuldade e à clareza dos controles e objetivos. Para tornar a jogabilidade mais acessível e intuitiva, planejamos implementar algumas mudanças. Primeiramente, reduziremos o número de inimigos, aumentando assim o tamanho das plataformas para facilitar a movimentação. Quanto à obviedade dos objetivos, pretendemos tornar as instruções mais claras e impedir o progresso do jogador até que as instruções sejam compreendidas, garantindo que ele não avance sem visualizá-las
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
