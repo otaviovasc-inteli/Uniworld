@@ -64,6 +64,22 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
+&nbsp;&nbsp;&nbsp;&nbsp; Na seção "Proposta de Valor", há três componentes principais:
+
+&nbsp;&nbsp;&nbsp;&nbsp; *Produtos e Serviços:* Apresenta a ideia de "Onboarding Gamificado", sugerindo um processo de integração que usa elementos de jogos.
+
+&nbsp;&nbsp;&nbsp;&nbsp; *Criadores de Ganho:* Detalha como o onboarding gamificado pode ajudar a compreender a estrutura organizacional, canais de suporte e o "dicionário" Unilever. Este ponto esta direcionado a facilitar a adaptação dos novos colaboradores e tornar o aprendizado sobre a empresa mais divertido e atraente.
+
+&nbsp;&nbsp;&nbsp;&nbsp; *Aliviadores de Dor:* Enfatiza a importância de tornar a aprendizagem empresarial divertida e atraente para aliviar a dificuldade dos novos colaboradores em absorver informações extensas.
+
+&nbsp;&nbsp;&nbsp;&nbsp; Na seção "Segmentos de Clientes", também existem três componentes:
+
+&nbsp;&nbsp;&nbsp;&nbsp; *Trabalhos do Cliente:* Fala sobre a necessidade de promover a cultura empresarial e tornar o onboarding mais engajado e moderno.
+
+&nbsp;&nbsp;&nbsp;&nbsp; *Ganhos:* Destaca a busca por mais eficiência.
+
+&nbsp;&nbsp;&nbsp;&nbsp; *Dores:* Menciona como o onboarding monótono e desinteressante pode ser um obstáculo, possivelmente levando a uma dificuldade dos novos colaboradores em absorver informações.
+
 ### 1.1.5. Matriz de Riscos (sprints 1 e 4)
 
 
