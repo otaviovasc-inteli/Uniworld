@@ -87,7 +87,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 <div align="center">
 <sub>Figura 3 - Matriz de Riscos</sub>
-<img src="../assets/Matriz de Riscos4.png" width="100%">
+<img src="../assets/Matriz2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
