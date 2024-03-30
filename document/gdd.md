@@ -612,7 +612,6 @@ dia: | 27/03/2024
 horário: | 15:00:00.
 duração: | 20 minutos.
 dispositivo: | computador/notebook
-
 Já possuía experiência prévia com games? | quase nenhuma
 Conseguiu iniciar o jogo? | Sim, mas com dificuldades.
 Entendeu as regras e mecânicas do jogo? | Não, ela não conseguiu entender as regras e mecânicas do jogo.
@@ -634,7 +633,6 @@ dia: | 27/03/2024
 horário: | 15:00:00.
 duração: | 20 minutos.
 dispositivo: | computador/notebook
-
 Já possuía experiência prévia com games? | Nunca.
 Conseguiu iniciar o jogo? | Sim
 Entendeu as regras e mecânicas do jogo? | Não, ela não conseguiu entender as regras e mecânicas do jogo.
