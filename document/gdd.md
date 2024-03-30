@@ -682,7 +682,7 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Na fase da cidade Unilever, o jogador enfrenta novos inimigos e um novo chefão.
 
 <div align="center">
-<sub>Figura 14 - Ilustração do Chefão - Level 3</sub>
+<sub>Figura 15 - Ilustração do Chefão - Level 3</sub>
 <img src="../assets/mvp/mvp16.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 
@@ -691,7 +691,7 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Novo chefão da cidade Unilever.
 
 <div align="center">
-<sub>Figura 15 - Ilustração do Tutorial</sub>
+<sub>Figura 16 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp17.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 
@@ -700,7 +700,7 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Após coletar o power-up do novo chefão, o jogador desbloqueia uma nova habilidade, o "movimento rápido".
 
 <div align="center">
-<sub>Figura 16 - Ilustração do Level 4</sub>
+<sub>Figura 17 - Ilustração do Level 4</sub>
 <img src="../assets/mvp/mvp1.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 
