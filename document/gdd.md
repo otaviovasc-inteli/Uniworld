@@ -634,22 +634,92 @@ Item liberado pelo boss após ser derrotado.
 
 ### 5.2.1 Registros de testes
 
-*Descreva nesta seção as sessões de teste/entrevista com diferentes jogadores. Registre cada teste conforme o template a seguir.*
+TESTE 1:
 
-Nome | João Jonas (use nomes fictícios)
+Nome | Bruna Collado
 --- | ---
-Já possuía experiência prévia com games? | sim, é um jogador casual
-Conseguiu iniciar o jogo? | sim
-Entendeu as regras e mecânicas do jogo? | entendeu as regras, mas sobre as mecânicas, apenas as essenciais, não explorou os comandos complexos
-Conseguiu progredir no jogo? | sim, sem dificuldades  
-Apresentou dificuldades? | Não, conseguiu jogar com facilidade e afirmou ser fácil
+teste conduzido por: | Igor, Rafael, Thiago, David.
+idade: | 40
+local: | meet/inteli
+dia: | 27/03/2024
+horário: | 15:00:00.
+duração: | 20 minutos.
+dispositivo: | computador/notebook
+Já possuía experiência prévia com games? | quase nenhuma
+Conseguiu iniciar o jogo? | Sim, mas com dificuldades.
+Entendeu as regras e mecânicas do jogo? | Não, ela não conseguiu entender as regras e mecânicas do jogo.
+Conseguiu progredir no jogo? | Não, ela não entendeu como progredir.
+Apresentou dificuldades? | Sim, dificuldade em entender as regras e mecânicas.
 Que nota deu ao jogo? | 9.0
-O que gostou no jogo? | Gostou  de como o jogo vai ficando mais difícil ao longo do tempo sem deixar de ser divertido
-O que poderia melhorar no jogo? | A responsividade do personagem aos controles, disse que havia um pouco de atraso desde o momento do comando até a resposta do personagem
+O que gostou no jogo? | Estética e teclas intuitivas.
+O que poderia melhorar no jogo? | Expliciar as instruções.
+
+
+TESTE 2:
+
+Nome | Lilian Florio.
+--- | ---
+teste conduzido por: | Igor, Rafael, Thiago, David.
+idade: | 36
+local: | meet/inteli
+dia: | 27/03/2024
+horário: | 15:00:00.
+duração: | 20 minutos.
+dispositivo: | computador/notebook
+Já possuía experiência prévia com games? | Nunca.
+Conseguiu iniciar o jogo? | Sim
+Entendeu as regras e mecânicas do jogo? | Não, ela não conseguiu entender as regras e mecânicas do jogo.
+Conseguiu progredir no jogo? | Sim, mas possuiu muitas dificuldades.
+Apresentou dificuldades? | Sim, dificuldade em entender as regras e mecânicas.
+Que nota deu ao jogo? | 8.0
+O que gostou no jogo? | Estética
+O que poderia melhorar no jogo? | Melhorar a forma de mutar o jogo e melhorar a história/objetivo.
+
+TESTE 3: 
+Nome | Vinicius Santos
+--- | ---
+Testes conduzido por | Igor, Raphael, Thiago, David
+Idade | 26
+Local | Durante o desenvolvimento
+Dia | 27/03/2024
+Horário | 14:20:00
+Duração | 20 minutos
+Dispositivo | Próprio funcionário
+Já possuía experiência prévia com games? | Sim, jogador casual
+Conseguiu iniciar o jogo? | Sim
+Entendeu as regras e mecânicas do jogo? | Sim, conseguiu entender todas as regras e mecânicas do jogo
+Conseguiu progredir no jogo? | Com dificuldades
+Apresentou dificuldades? | Dificuldades em derrotar o chefe final
+Que nota deu ao jogo? | 7,5
+O que gostou no jogo? | Estética
+O que poderia melhorar no jogo? | Trilha entre jogo e aprendizado, separando o conteúdo em mais NPCs, inimigos mais fáceis
+
+TESTE 4:
+
+Nome | Eduardo Rossi
+--- | ---
+Testes conduzido por | Igor, Rafael, Thiago, David
+Idade | 62
+Local | Durante o desenvolvimento
+Dia | 27/03/2024
+Horário | 14:40:00
+Duração | 20 minutos
+Dispositivo | Próprio funcionário
+Já possuía experiência prévia com games? | Não, nenhuma
+Conseguiu iniciar o jogo? | Sim
+Entendeu as regras e mecânicas do jogo? | Não, ele não conseguiu entender as regras e mecânicas do jogo
+Conseguiu progredir no jogo? | Não, ele não entendeu como progredir
+Apresentou dificuldades? | Sim, dificuldade em entender e aplicar as regras e mecânicas
+Que nota deu ao jogo? | 10
+O que gostou no jogo? | Estética
+O que poderia melhorar no jogo? | Volume que está muito alto
+
+
+
 
 ### 5.2.2 Melhorias
 
-*Descreva nesta seção um plano de melhorias sobre o jogo, com base nos resultados dos testes de jogabilidade*
+Com base no feedback dos testes realizados em 27/03/2024, identificamos áreas de melhoria em nosso jogo, especialmente relacionadas à dificuldade e à clareza dos controles e objetivos. Para tornar a jogabilidade mais acessível e intuitiva, planejamos implementar algumas mudanças. Primeiramente, reduziremos o número de inimigos, aumentando assim o tamanho das plataformas para facilitar a movimentação. Quanto à obviedade dos objetivos, pretendemos tornar as instruções mais claras e impedir o progresso do jogador até que as instruções sejam compreendidas, garantindo que ele não avance sem visualizá-las
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
 
