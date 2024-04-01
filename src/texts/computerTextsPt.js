@@ -1,5 +1,5 @@
 // Each line represent one interaction in that dialog box, you can edit text as you want
-const computerTexts =
+const computerTextsPt =
 [
   'Diretora: Olá, colaborador, seja bem vindo a Unilever!',
   'Diretora: aqui na Unilever utilizamos o Microsoft Teams como principal forma de comunicação remota.',
@@ -7,4 +7,4 @@ const computerTexts =
   'Director: Iremos te enviar uma das nossas marcas para você conseguir enfrentar os desafios a frente sem nem suar',
   'Director: Contamos com você, herói, ajude-nos a recuperar nossas marcas e reestruturar a empresa'
 ];
-export default computerTexts;
+export default computerTextsPt;

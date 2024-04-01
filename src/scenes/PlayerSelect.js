@@ -21,22 +21,22 @@ export default class PlayerSelect extends Phaser.Scene {
     f1.on('pointerover', () => {
 
         f1.setFrame(1);
-        this.sound.add('hover_sound', {loop: false, volume: 0.5}).play()
+        this.sound.add('hover_sound', {loop: false, volume: 0.3}).play()
     });
     f2.on('pointerover', () => {
         // Change the frame to 1 when mouse is over
         f2.setFrame(1);
-        this.sound.add('hover_sound', {loop: false, volume: 0.5}).play()
+        this.sound.add('hover_sound', {loop: false, volume: 0.3}).play()
     });
     m1.on('pointerover', () => {
       // Change the frame to 1 when mouse is over
       m1.setFrame(1);
-      this.sound.add('hover_sound', {loop: false, volume: 0.5}).play()
+      this.sound.add('hover_sound', {loop: false, volume: 0.3}).play()
     });
     m2.on('pointerover', () => {
       // Change the frame to 1 when mouse is over
       m2.setFrame(1);
-      this.sound.add('hover_sound', {loop: false, volume: 0.5}).play()
+      this.sound.add('hover_sound', {loop: false, volume: 0.3}).play()
     });
 
     // Change to "unselected" frame
@@ -58,25 +58,25 @@ export default class PlayerSelect extends Phaser.Scene {
 
     // Call the startGame function when the button is clicked and play select
     f1.on('pointerdown', () => {
-      this.sound.add('select_sound', {loop: false, volume: 0.7}).play()
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
       this.playerSelecionado = '1'
       this.startGame(this.playerSelecionado)
     });
 
     f2.on('pointerdown', () => {
-      this.sound.add('select_sound', {loop: false, volume: 0.7}).play()
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
       this.playerSelecionado = '2'
       this.startGame(this.playerSelecionado)
     });
 
     m1.on('pointerdown', () => {
-      this.sound.add('select_sound', {loop: false, volume: 0.7}).play()
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
       this.playerSelecionado = '3'
       this.startGame(this.playerSelecionado)
     });
 
     m2.on('pointerdown', () => {
-      this.sound.add('select_sound', {loop: false, volume: 0.7}).play()
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
       this.playerSelecionado = '4'
       this.startGame(this.playerSelecionado)
     });
