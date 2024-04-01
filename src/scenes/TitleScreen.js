@@ -14,7 +14,7 @@ export default class TitleScreen extends Phaser.Scene {
     this.load.image('cloudCover', 'assets/titleScreen/cloudCover.png');
     this.load.spritesheet("play", "assets/titleScreen/play_x4.png", { frameWidth: 192, frameHeight: 52 });
     this.load.spritesheet("music", "assets/titleScreen/music_x4.png", { frameWidth: 64, frameHeight: 64 });
-    this.load.spritesheet("settings", "assets/titleScreen/settings_x4.png", { frameWidth: 64, frameHeight: 64 });
+    this.load.spritesheet("language", "assets/titleScreen/language.png", { frameWidth: 64, frameHeight: 64 });
   }
 
   create() {
@@ -27,10 +27,46 @@ export default class TitleScreen extends Phaser.Scene {
 
     const playButton = this.add.sprite(533, 320, 'play', 0).setOrigin(0, 0).setScale(1.2);
     const musicButton = this.add.sprite(686, 400, 'music', 0).setOrigin(0, 0).setScale(1.2);
-    const settingsButton = this.add.sprite(533, 400, 'settings', 0).setOrigin(0, 0).setScale(1.2);
+    const languageButton = this.add.sprite(533, 400, 'language', 0).setOrigin(0, 0).setScale(1.2).setInteractive();
 
     this.titleMusic = this.sound.add('title_music', {loop: true, volume: 0.7})
     this.titleMusic.play()
+
+    // Initialize current language. Let's start with Portuguese ('Pt')
+    this.game.language = 'Pt' // 'Pt' for Portuguese, 'En' for English
+
+    const updateButtonFrame = () => {
+      // Update button frame based on current language
+      const frame = this.game.language === 'Pt' ? 0 : 2
+      languageButton.setFrame(frame)
+    }
+
+    languageButton.on('pointerover', () => {
+      // Change the frame to hover state based on current language
+      const hoverFrame = this.game.language === 'Pt' ? 1 : 3
+      languageButton.setFrame(hoverFrame)
+    })
+
+    languageButton.on('pointerout', updateButtonFrame)
+
+    languageButton.on('pointerdown', () => {
+      // Play sound effect
+      this.sound.add('select_sound', { loop: false, volume: 0.7 }).play()
+
+      // Toggle language
+      if (this.game.language === 'Pt') {
+        this.game.language = 'En'
+      } else {
+        this.game.language = 'Pt'
+      }
+
+      // Update the button's frame to reflect the new language's normal state
+      updateButtonFrame()
+      console.log("Selected language: "+this.game.language);
+    })
+
+    // Initialize button frame based on the current language
+    updateButtonFrame()
 
     playButton.setInteractive();
     playButton.on('pointerover', () => {

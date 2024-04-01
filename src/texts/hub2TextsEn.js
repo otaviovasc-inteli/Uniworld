@@ -1,6 +1,6 @@
 // Each line one link, first element being the link and second being the text
 // to be displayed (becareful with text length)
-const hub2TextsEN =
+const hub2TextsEn =
 [
  // Structure ['link', 'text to be displayed'],
   ['https://unilever.sharepoint.com/sites/AboutUnilever/SitePages/Unilever-Dictionary.aspx', 'Unilever content'],
@@ -8,4 +8,4 @@ const hub2TextsEN =
   ['https://www.youtube.com/watch?v=LRPgU-KbPhU', 'Unilever content'],
   ['https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'Unilever content'],
 ];
-export default hub2TextsEN;
+export default hub2TextsEn;

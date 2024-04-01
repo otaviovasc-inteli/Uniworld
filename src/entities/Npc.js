@@ -10,6 +10,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     scene.physics.add.existing(this);
     this.name = npcName
     this.npcPlayer = player
+    this.language = this.scene.game.language
 
     this.questionIndex = 0; // Keep track of the current question on quiz
     this.questionsCorrectCount = 0; // Track correct answers on quiz
@@ -42,7 +43,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
     // Set texts modularly
     try {
-      const textsModule = await import(`../texts/${this.name}Texts.js`);
+      const textsModule = await import(`../texts/${this.name}Texts${this.language}.js`);
       this.texts = textsModule.default;
     } catch (error) {
       console.error(`Error importing texts for ${this.name}:`, error);
