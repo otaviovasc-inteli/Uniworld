@@ -25,6 +25,9 @@ export default class Smoke extends Phaser.Physics.Arcade.Sprite {
 	}
 
 	init() {
+    this.hurtSound = this.scene.sound.add("smoke_hurt", {loop: false, volume: 0.6})
+    this.dieSound = this.scene.sound.add("smoke_die", {loop: false, volume: 0.8})
+
 		this.gravity = 1000;
 		this.speed = 100
 		this.timeFromLastTurn = 0
@@ -108,11 +111,13 @@ export default class Smoke extends Phaser.Physics.Arcade.Sprite {
 		this.health -= source.damage
 
 		if(this.health <= 0){
+      this.dieSound.play() // die sound
 		  this.setTint(0xff0000)
 		  this.setVelocity(0, -200)
 		  this.body.checkCollision.none = true
 		  this.setCollideWorldBounds(false)
 		} else {
+      this.hurtSound.play() // hurt sound
 		  this.setAlpha(0.25);
 		  this.scene.time.delayedCall(200, () => {
 			  this.setAlpha(1);

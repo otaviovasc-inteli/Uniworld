@@ -85,6 +85,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   createSounds(scene) {
     this.jumpSound = scene.sound.add('jump_sound', {loop: false, volume: 0.2, rate: 1.5})
     this.shootSound = scene.sound.add('shoot_effect', {loop: false, volume: 0.3})
+    this.hurtSound = scene.sound.add('player_hurt', {loop: false, volume: 1})
     switch (this.scene.sys.settings.key) {
       case "level1":
         this.walkSound = scene.sound.add("floor_sound", {loop: false, volume: 0.2, rate: 0.55});
@@ -326,6 +327,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   takesHit(source) {
     if (this.hasBeenHit) return
 
+    this.hurtSound.play()
     this.hasBeenHit = true
     this.hp.decrease(source.damage) // Monster damage
     // Check if player died
