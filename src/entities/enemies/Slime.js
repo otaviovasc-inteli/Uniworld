@@ -29,6 +29,9 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 		this.speed = 150
 		this.timeFromLastTurn = 0
 
+    this.hurtSound = this.scene.sound.add("slime_hurt", {loop: false, volume: 0.8})
+    this.dieSound = this.scene.sound.add("slime_die", {loop: false, volume: 0.2, rate: 1.2})
+
 		this.body.setGravityY(this.gravity);
 		this.setCollideWorldBounds(true);
 		this.setOrigin(0.5, 1);
@@ -111,13 +114,15 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
     this.health -= source.damage
 
     if(this.health <= 0){
+      this.dieSound.play() // die sound
       this.setTint(0xff0000)
       this.setVelocity(0, -200)
       this.body.checkCollision.none = true
       this.setCollideWorldBounds(false)
     } else {
-      this.setAlpha(0.25);
-      this.scene.time.delayedCall(200, () => {
+      this.hurtSound.play() // hurt sound
+      this.setAlpha(0.25); // set opacity
+      this.scene.time.delayedCall(250, () => {
           this.setAlpha(1);
       })
     }

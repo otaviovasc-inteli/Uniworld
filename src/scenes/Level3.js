@@ -14,6 +14,7 @@ export default class Level3 extends Phaser.Scene {
   }
 
   create() {
+    this.createSounds()
     this.cameras.main.fadeIn(2000, 30, 30, 0);
 
     const map = this.createMap();
@@ -213,7 +214,19 @@ export default class Level3 extends Phaser.Scene {
       .addCollider(colliders.projectiles, this.onProjectileHit)
   }
 
+  // Handle sounds logics
+  createSounds() {
+    //starts playing music
+    this.musicSound = this.sound.add("music_level3", {loop: true, volume: 0.3});
+    this.fxSound = this.sound.add("cityTraffic", {loop: true, volume: 0.2});
 
+    // start playing music if not playing already
+    if (!this.musicSound.isPlaying)
+      this.musicSound.play();
+
+    if (!this.fxSound.isPlaying)
+      this.fxSound.play();
+  }
 
   setupFollowupCameraOn(player, map) {
     this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
