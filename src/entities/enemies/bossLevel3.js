@@ -44,7 +44,9 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.body.offset.y = 19;
     this.setFlipX(true);
     this.setScale(1);
-    this.hitSound = this.scene.sound.add('boss_hit_sound_level3', {loop: false, volume: 0.5, rate: 2})
+
+    this.hitSound = this.scene.sound.add('slime_die', {loop: false, volume: 0.3, rate: 2.3})
+    this.dieSound = this.scene.sound.add('boss3_die', {loop: false, volume: 1.2, rate:1.2})
   }
 
   initEvents() {
@@ -85,6 +87,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
   takesHit(source) {
     this.health -= source.damage
     if(this.health <= 0){
+      this.dieSound.play() // Die sound
       this.setTint(0xff0000)
       this.setVelocity(0, -200)
       this.body.checkCollision.none = true

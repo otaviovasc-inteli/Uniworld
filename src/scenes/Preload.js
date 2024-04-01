@@ -116,14 +116,24 @@ export default class Preload extends Phaser.Scene {
     this.load.audio("music_level1", "assets/sounds/level1/music_level_1.mp3");
     this.load.audio("open_level1", "assets/sounds/level1/open_level_1.ogg");
     this.load.audio("dialog_sound", "assets/sounds/dialog_sound.ogg");
+    this.load.audio("player_hurt", "assets/sounds/player_hurt.wav");
     this.load.audio("hover_sound", "assets/sounds/hover_sound.wav");
+    this.load.audio("slime_hurt", "assets/sounds/level2/slimeHit.wav");
+    this.load.audio("slime_die", "assets/sounds/level2/slime_die.wav");
+    this.load.audio("smoke_hurt", "assets/sounds/level3/smoke_hurt.wav");
+    this.load.audio("smoke_die", "assets/sounds/level3/smoke_die.wav");
+    this.load.audio("shoot_effect", "assets/sounds/shootEffect.wav");
     this.load.audio("select_sound", "assets/sounds/select_sound.wav");
     this.load.audio("music_level2", "assets/sounds/level2/lvl_2_theme.mp3");
     this.load.audio("door_sound", "assets/sounds/level1/door_sound.mp3");
     this.load.audio("collect_powerup_sound", "assets/sounds/collect_powerup_sound.mp3");
     this.load.audio("dash_sound", "assets/sounds/dash_sound.wav");
     this.load.audio("boss_hit_sound_level2", 'assets/sounds/level2/hitBossLevel2.wav');
+    this.load.audio("boss2_die", 'assets/sounds/level2/boss2_die.mp3');
     this.load.audio("boss_hit_sound_level3", 'assets/sounds/level3/hitBossLevel3.wav');
+    this.load.audio("boss3_die", 'assets/sounds/level3/boss3_die.wav');
+    this.load.audio("cityTraffic", 'assets/sounds/level3/cityTraffic.wav');
+    this.load.audio("music_level3", 'assets/sounds/level3/cityBattle.mp3');
 
     // Completed
     this.load.once('complete', () => {

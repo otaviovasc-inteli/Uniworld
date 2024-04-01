@@ -196,6 +196,7 @@ export default class Level2 extends Phaser.Scene {
     // Change level logic, sounds and camera effect
     this.physics.add.overlap(player, endOfLevel, () => {
       // Remember to add sounds after
+      this.musicSound.stop();
 
       console.log("Next level allowed?: " + player.allowedNextLevel);
 

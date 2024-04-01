@@ -29,6 +29,20 @@ export default anims =>{
   })
 
   anims.create({
+    key: 'kibon_idle',
+    frames: anims.generateFrameNumbers('kibon_sprite', { start: 0, end: 4 }),
+    frameRate: 5,
+    repeat: -1
+  });
+
+  anims.create({
+    key: 'kibon_overlap',
+    frames: anims.generateFrameNumbers('kibon_sprite', { start: 5, end: 9 }),
+    frameRate: 5,
+    repeat: -1
+  });
+
+  anims.create({
     key: 'omo_idle',
     frames: anims.generateFrameNumbers('omo_sprite', { start: 0, end: 4 }),
     frameRate: 5,
@@ -41,7 +55,7 @@ export default anims =>{
     frameRate: 5,
     repeat: -1
   });
-  
+
   anims.create({
     key: 'hub2_idle',
     frames: anims.generateFrameNumbers('hub_sprite', {start: 0, end: 4}),

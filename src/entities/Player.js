@@ -42,8 +42,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.consecutiveJumps = this.oldPlayer.consecutiveJumps || 1;
     this.bounceVelocity = this.oldPlayer.bounceVelocity || 250
     this.hasBeenHit = false
-    this.allowedNextLevel = false
-    this.allowedToShot = this.oldPlayer.allowedToShot || false
+    this.allowedNextLevel = true
+    this.allowedToShot = this.oldPlayer.allowedToShot || true
     this.allowedToDash = this.oldPlayer.allowedToDash || true
 
     // Health logic and setup
@@ -84,6 +84,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
   createSounds(scene) {
     this.jumpSound = scene.sound.add('jump_sound', {loop: false, volume: 0.2, rate: 1.5})
+    this.shootSound = scene.sound.add('shoot_effect', {loop: false, volume: 0.3})
+    this.hurtSound = scene.sound.add('player_hurt', {loop: false, volume: 1})
     switch (this.scene.sys.settings.key) {
       case "level1":
         this.walkSound = scene.sound.add("floor_sound", {loop: false, volume: 0.2, rate: 0.55});
@@ -250,7 +252,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
       // Check if enough time has passed
       if (currentTime - this.lastProjectileTime > this.projectileCooldown) {
-        // var projectile = new Projectiles(this.scene, this.x, this.y, "projectile", this.flipX);
+        // Shoot sound
+        this.shootSound.play()
         this.projectiles.fireProjectile(this, "projectile_anim")
 
         // Update the last projectile time
@@ -324,6 +327,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   takesHit(source) {
     if (this.hasBeenHit) return
 
+    this.hurtSound.play()
     this.hasBeenHit = true
     this.hp.decrease(source.damage) // Monster damage
     // Check if player died
