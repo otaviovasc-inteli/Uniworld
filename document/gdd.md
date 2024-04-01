@@ -31,15 +31,15 @@
 <br>
 
 
-# <a name="c1"></a>1. Introdução (sprints 1 e 4)
+# <a name="c1"></a>1. Introdução
 
 ## 1.1. Escopo do Projeto
 
-### 1.1.1. Contexto da indústria (sprints 1 e 4)
+### 1.1.1. Contexto da indústria
 
 &nbsp;&nbsp;&nbsp;&nbsp;Unilever é uma empresa multinacional que possui mais de 400 marcas em mais de 190 países ao redor do mundo e está presente na vida de mais de 3,4 bilhões de pessoas com seus produtos diariamente. Essa indústria é uma das maiores no segmento de bens de consumo no mundo, possuindo cinco vertentes no mercado: alimentação, limpeza, produtos de higiene e produtos de cuidados pessoais. Entre as principais marcas estão: Omo, Dove, Doriana, Kibon, Hellmann 's, Rexona, Knorr-Cica, Lipton, Magnum, Comfort. Contudo, há corporações  multinacionais nesse ramo que competem o pódio, como a Procter & Gamble e a Nestlé.
 
-### 1.1.2. Análise SWOT (sprints 1 e 4)
+### 1.1.2. Análise SWOT
 
 &nbsp;&nbsp;&nbsp;&nbsp;A análise SWOT é relacionada ao parceiro Unilever, a tabela foi feita a fim de realizar uma avaliação ambiental no âmbito estratégico, levando em consideração o contexto da indústria, ocorrências e as características do ambiente interno e externo da Unilever.
 
@@ -49,12 +49,12 @@
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-### 1.1.3. Descrição da Solução Desenvolvida (sprints 1 e 4)
+### 1.1.3. Descrição da Solução Desenvolvida
 
 &nbsp;&nbsp;&nbsp;&nbsp;A Unilever, apesar de sua posição como empresa líder global, identificou defasagens em seu processo de onboarding, notada na baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o onboarding, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa. 
 A solução proposta será utilizada como uma ferramenta interativa e dinâmica, apresentando-se na forma de um jogo personalizado destinado a envolver ativamente os novos membros da empresa. Os benefícios almejados incluem aumento na retenção de informações, uma compreensão mais profunda da empresa e um alinhamento eficaz com os valores e objetivos da Unilever. O critério de sucesso será medido através de análises periódicas de desempenho, satisfação e engajamento, visando proporcionar uma transição positiva para o ambiente de trabalho da Unilever.
 
-### 1.1.4. Proposta de Valor (sprints 1 e 4)
+### 1.1.4. Proposta de Valor
 
 &nbsp;&nbsp;&nbsp;&nbsp;A proposta de valor descreve aspectos essenciais para criação de valor para o projeto, traçando o objetivo de melhor entender a realidade do parceiro e entregar uma solução alinhada com o que a Unilever espera.
 
@@ -80,7 +80,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 &nbsp;&nbsp;&nbsp;&nbsp; *Dores:* Menciona como o onboarding monótono e desinteressante pode ser um obstáculo, possivelmente levando a uma dificuldade dos novos colaboradores em absorver informações.
 
-### 1.1.5. Matriz de Riscos (sprints 1 e 4)
+### 1.1.5. Matriz de Riscos
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;A matriz de risco demonstra os riscos observados no projeto pela equipe de desenvolvimento, representando ameaças e oportunidades, assim como impactos relevantes sobre o projeto. Em verde, estão indicados percalços que não necessitam de intervenção; em amarelo, pontos que apresentam média probabilidade e demandam certa atenção; e, em vermelho, estão destacados pontos críticos que devem ser evitados.
@@ -91,7 +91,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-## 1.2. Requisitos do Projeto (sprints 1 e 2)
+## 1.2. Requisitos do Projeto
 
 
 \# | Requisito
@@ -111,43 +111,43 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 13 | Mecânica de dash
 
 
-## 1.3. Público-alvo do Projeto (sprint 2)
+## 1.3. Público-alvo do Projeto
 
 Nosso público alvo são pessoas com perfil médio de estagiários na Unilever, na faixa etária média de 24 anos, com formação acadêmica conectada à área de tecnologia
 
-# <a name="c2"></a>2. Visão Geral do Jogo (sprint 2)
+# <a name="c2"></a>2. Visão Geral do Jogo
 
-## 2.1. Objetivos do Jogo (sprint 2)
+## 2.1. Objetivos do Jogo 
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogador precisa derrotar inimigos pelo mapa, concluir os quizzes e derrotar o chefão da fase, nas duas cenas de combate. Desse modo, o jogador será capaz de concluir o jogo integralmente. Conforme solicitado, nenhuma das partes anteriormente citadas será uma barreira para o colaborador completar o processo de integração.
 
-## 2.2. Características do Jogo (sprint 2)
+## 2.2. Características do Jogo
 
-### 2.2.1. Gênero do Jogo (sprint 2)
+### 2.2.1. Gênero do Jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em movimentar seu personagem através do ambiente no qual jogo acontece. O Gênero de aventura, por sua vez, são jogos nos quais o jogador assume o lugar de protagonista e tem como objetivo explorar o ambiente interativamente e concluir quebra-cabeças.
 
-### 2.2.2. Plataforma do Jogo (sprint 2)
+### 2.2.2. Plataforma do Jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo é feito para Desktop e será jogado na plataforma Web. Como indicado pelo termo de abertura do projeto e reafirmado pelos parceiros durante as sprints, a opção pela plataforma web desktop está mais alinhada com a proposta e objetivos definidos para o projeto.
 
-### 2.2.3. Número de jogadores (sprint 2)
+### 2.2.3. Número de jogadores
 
 &nbsp;&nbsp;&nbsp;&nbsp;Devido a indicação do parceiro e, as limitações provenientes das escolhas pela plataforma web e sem ligação com os servidores da empresa, o jogo será individual, por buscando salientar o desenvolvimento individual de cada colaborador.
 
-### 2.2.4. Títulos semelhantes e inspirações (sprint 2)
+### 2.2.4. Títulos semelhantes e inspirações
 
 &nbsp;&nbsp;&nbsp;&nbsp;Entre as inspirações para o jogo, pode-se listar Sonic, Mario e Mega Man. As escolhas decorrem do fato de que os jogos citados pertencem aos mesmos gêneros do jogo criado, tendo como base a movimentação em duas dimensões, arte em pixel e a temática de aventura. Além disso, os jogos em questão revolucionaram suas época ao trazer inovação, originalidade, simplicidade e valores igualmente desenvolvidos neste projeto.
 
-### 2.2.5. Tempo estimado de jogo (sprint 5)
+### 2.2.5. Tempo estimado de jogo
 
 *Ex. O jogo pode ser concluído em 3 horas passando por todas as fases.*
 
 *Ex. cada partida dura até 15 minutos*
 
-# <a name="c3"></a>3. Game Design (sprints 2 e 3)
+# <a name="c3"></a>3. Game Design
 
-## 3.1. Enredo do Jogo (sprints 2 e 3)
+## 3.1. Enredo do Jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;Você acorda, está se preparando para o primeiro dia na Unilever, mas nota algo diferente, o mundo está imerso em um ambiente mágico, onde a harmonia é mantida pela energia vital da natureza balanceada pela Unilever. No entanto, este equilíbrio está sendo abalado pois as principais marcas foram roubadas por vilões tenebrosos, e agora você precisa batalhar com eles para recuperar e restaurar o equílibro. Os vilões por trás disso tudo são o "Rei da Poluição" e o "Rei do Desmatamento". Estes vilões, acompanhados por seus monstros, espalham o caos, sujeira e a destruição, poluindo e destruindo os belos cenários naturais e ameaçando a vida de todas as criaturas mágicas que habitam esse mundo, incluindo a sua. E agora? Devolva as marcas para Unilver para salvar o mundo?
 
@@ -219,7 +219,7 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 
 &nbsp;&nbsp;&nbsp;&nbsp;A fase acaba com o personagem seguindo pelo cenário e encontrando um computador para interação no final do mapa. Neste computador quando ele interagir, reaparecerá a cena 0.
 
-## 3.2. Personagens (sprints 2 e 3)
+## 3.2. Personagens
 
 ### 3.2.1. Controláveis
 
@@ -241,9 +241,9 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-## 3.3. Mundo do jogo (sprints 2 e 3)
+## 3.3. Mundo do jogo
 
-### 3.3.1. Locações Principais e/ou Mapas (sprints 2 e 3)
+### 3.3.1. Locações Principais e/ou Mapas
 
 &nbsp;&nbsp;&nbsp;&nbsp;A cena inicial do jogo será no quarto, ambiente no qual é possível encontrar objetos como uma cama, guarda-roupas, mesa, janelas, um quadro e os itens principais deste ambiente: o desodorante Rexona e um notebook. O personagem irá acordar no ambiente em questão e irá interagir com um notebook que, dentro dele, encontrará informações sobre as plataformas que são utilizadas na empresa. No computador, após utilizar a ferramenta do Teams, entrará numa reunião onde receberá a missão de chegar a Unilever.
 
@@ -267,15 +267,15 @@ PARABÉNS! Você conseguiu derrotar todos os vilões e recuperar as nossas tão 
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-### 3.3.2. Navegação pelo mundo (sprints 2 e 3)
+### 3.3.2. Navegação pelo mundo
 
 &nbsp;&nbsp;&nbsp;&nbsp;O personagem controlável tem a possibilidade de mover-se no eixo X, fazendo com que seja intuitivo a linearidade de avanço da história, cujo seguir para direita indica avanço. Ademais, o personagem tem a possibilidade de se deslocar no eixo Y, mas retornando sempre para o ponto inicial neste eixo após algum tempo, simulando uma mecânica de pulo. Além disso, as fases são desbloqueadas conforme conclusão dos objetivos de cada fase, que consiste em, até o momento, completar um quiz ou derrotar determinado inimigo. A progressão em questão acontece naturalmente, ao decorrer do jogo e sem grandes dificuldades para o jogador.
 
-### 3.3.3. Condições climáticas e temporais (sprints 2 e 3)
+### 3.3.3. Condições climáticas e temporais
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo apresentará algumas mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários da segunda cena foram projetados com um tempo ensolarado que permeia do início ao fim. Além disso, a passagem do tempo não possui influência no mundo do jogo, devido a pedido do próprio parceiro sobre a criação de poucas ou nenhuma limitaçõe para conclusão do onboarding.
 
-### 3.3.4. Concept Art (sprint 2)
+### 3.3.4. Concept Art
 
 Concept art é a criação de imagens que representam ideias, personagens, ambientes e conceitos para produtos, ajudando a visualizar e desenvolver a direção criativa antes da produção completa.
 
@@ -303,7 +303,7 @@ Figura 9: Descrição dos objetos dispostos na segunda cena de combate, como pla
 
 Figura 10: Descrição dos objetos dispostos na última cena, como as plataformas e as marcas do cenário.
 
-### 3.3.5. Trilha sonora (sprint 3)
+### 3.3.5. Trilha sonora
 
 \# | título | ocorrência | autoria
 --- | --- | --- | ---
@@ -313,7 +313,7 @@ Figura 10: Descrição dos objetos dispostos na última cena, como as plataforma
 4 | The Grand Score | Level 3 (Cidade Unilever) | - <a href="https://pixabay.com/music/solo-guitar-trip-to-home-relaxing-acoustic-guitar-background-music-7625/">Oleksii Kaplunskyi</a>
 
 Licensas: https://mixkit.co/license/#sfxFree
-## 3.4. Inventário e Bestiário (sprint 3)
+## 3.4. Inventário e Bestiário
 
 ### 3.4.1. Inventário
 
@@ -336,7 +336,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 3 | Chefe Desmatamento | <img src="../assets/bestiario/reiMamentoImagem.png"> | No final do nível 2 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
 3 | Rei da Poluição | <img src="../assets/bestiario/mudImagem.png"> | No final do nível 3 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
 
-## 3.5. Gameflow (Diagrama de cenas) (sprint 2)
+## 3.5. Gameflow (Diagrama de cenas)
 
 &nbsp;&nbsp;&nbsp;&nbsp;Essa imagem apresenta um diagrama de fluxo de jogo para "UniWorld". Nele, encontramos várias cenas do jogo, diagramas de classe associados à programação orientada a objetos, e explicações sobre a progressão do jogador e suas interações. Aqui está uma explicação detalhada dos diferentes elementos:
 
@@ -358,17 +358,17 @@ Licensas: https://mixkit.co/license/#sfxFree
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-## 3.6. Regras do jogo (sprint 3)
+## 3.6. Regras do jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogador deve concluir a fase, derrotando os inimigos, ganhando power ups e coletando os pedaços do logo da Unilever. Além disso, no final da fase, deve derrotar um boss e responder um quiz. Caso ele acerte o quiz, ele terá uma bonificação em alguma habilidade (força, alcance, velocidade...). Além disso, caso o jogador consiga formar a logo da Unilever espalhada pelo mapa, reunindo os pedaços, ele ganha uma vida extra.
 
-## 3.7. Mecânicas do jogo (sprint 3)
+## 3.7. Mecânicas do jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem irá dar um pulo duplo. Outra tecla importante para a jogabilidade proposta no nosso game é a tecla E, que usa a mecânica de interação, caso apertada ao lado de um NPC ou power-up por exemplo.
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
-## 4.1. Desenvolvimento preliminar do jogo (sprint 1)
+## 4.1. Desenvolvimento preliminar do jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;O processo inicial de desenvolvimento se deu por meio da entrega do MPV, implementando a existência de um cenário e  a movimentação básica do personagem, como ilustra a figura 1. Além disso, diálogos com NPCs (Personagem não Jogável) também foram incluídos, contemplados na figura 2.
 
@@ -384,7 +384,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-## 4.2. Desenvolvimento básico do jogo (sprint 2)
+## 4.2. Desenvolvimento básico do jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;Ao longo do desenvolvimento da versão básica do jogo, o grupo foi capaz de incluir novas mecânicas, novo design e mais fases. A figura 1 abaixo ilustra a tela de início funcional do jogo, que permite o acesso às demais funcionalidades. Em seguida, a figura 2 apresenta a tela de seleção de personagem criada, possibilitando maior diversidade ao representar o colaborador. A figura 3 ilustra o ambiente do Quarto, que contém as novas interações com itens e NPCs (Personagens Não-Jogáveis), como demonstradas na figura 4. Por fim, a figura 5 ilustra o novo cenário ao ar livre chamado Mundo Lúdico, que será intermediário ao longo do jogo.
 
@@ -419,7 +419,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 </div>
 
 
-## 4.3. Desenvolvimento intermediário do jogo (sprint 3)
+## 4.3. Desenvolvimento intermediário do jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;Em relação ao processo criativo para o desenvolvimento do jogo, foi um jornada de refinamento e aprimoramento constante. Analisamos as ideias e elementos anteriores, realizamos melhorias significativas para garantir a melhor experiência possível para os jogadores.
 
@@ -577,7 +577,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <img src="../src/assets/enemies/smoke.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 
-## 4.4. Desenvolvimento final do MVP (sprint 4)
+## 4.4. Desenvolvimento final do MVP
 
 <div align="center">
 <sub>Figura 1 - Ilustração da Title Screen</sub>
@@ -733,11 +733,11 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Por fim, na fase final, o jogador chega ao escritório da Unilever e conclui o jogo.
 
 
-## 4.5. Revisão do MVP (sprint 5)
+## 4.5. Revisão do MVP
 
 *Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar.*
 
-# <a name="c5"></a>5. Testes (sprint 4)
+# <a name="c5"></a>5. Testes
 
 ## 5.1. Casos de Teste
 
@@ -773,7 +773,7 @@ Item liberado pelo boss após ser derrotado.
  
 
 
-## 5.2. Testes de jogabilidade (playtests) (sprint 4)
+## 5.2. Testes de jogabilidade (playtests)
 
 ### 5.2.1 Registros de testes
 
@@ -865,13 +865,13 @@ O que poderia melhorar no jogo? | Volume que está muito alto
 
 Com base no feedback dos testes realizados em 27/03/2024, identificamos áreas de melhoria em nosso jogo, especialmente relacionadas à dificuldade e à clareza dos controles e objetivos. Para tornar a jogabilidade mais acessível e intuitiva, planejamos implementar algumas mudanças. Primeiramente, reduziremos o número de inimigos, aumentando assim o tamanho das plataformas para facilitar a movimentação. Quanto à obviedade dos objetivos, pretendemos tornar as instruções mais claras e impedir o progresso do jogador até que as instruções sejam compreendidas, garantindo que ele não avance sem visualizá-las
 
-# <a name="c6"></a>6. Conclusões e trabalhos futuros (sprint 5)
+# <a name="c6"></a>6. Conclusões e trabalhos futuros
 
 &nbsp;&nbsp;&nbsp;&nbsp;À caminho da sprint final, o grupo foi capaz de identificar alguns aspectos como futuras dificuldades e futuros planos para a última etapa do projeto. Durante a entrega da sprint e os testes dos jogos com funcionários Unilever, fomos capazes de validar mecânicas de movimentação, efeitos visuais e sonoros e outras funcionalidades em jogo de modo geral. Além disso, também recebemos feedbacks em relação à finalidade corporativa do jogo, ensinar e instruir os novos funcionários no processo de onboarding da Unilever, de modo interativo e acessível para todos os públicos, seja mais ou menos habituados com jogos.
 &nbsp;&nbsp;&nbsp;&nbsp;Assim, é possível concluir que dentre os futuros planos da equipe incluem a inclusão de mais personagens não jogáveis (NPCs) ao decorrer do jogo, para relembrar comandos e fornecer instruções. Além disso, refinar disposição do hub de links e frisar a impossibilidade de prosseguir dentro do jogo mediante não conclusão dos questionários propostos, facilitar o nível de dificuldade do jogo e outros ajustes menores, mas que seguem a mesma linha de raciocínio.
 &nbsp;&nbsp;&nbsp;&nbsp;Por fim, algumas das dificuldades seriam o tempo restante para a conclusão e apresentação do projeto ao parceiro e a inclusão de um idioma extra, além dos ajustes necessários com NPCs. Porém, acreditamos que a última quinzena será mais do que suficiente para a finalização do produto.
 
-# <a name="c7"></a>7. Referências (sprint 5)
+# <a name="c7"></a>7. Referências
 
 _Incluir as principais referências de seu projeto, para que seu parceiro possa consultar caso ele se interessar em aprofundar. Um exemplo de referência de livro e de site:_<br>
 
