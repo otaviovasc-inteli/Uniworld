@@ -17,11 +17,13 @@
 - <a href="https://www.linkedin.com/in/thiago-volcati-a42a94208/">Thiago Martins Volcati de Almeida</a>
 - <a href="https://www.linkedin.com/in/igor-sampaio-silva/">Igor Sampaio Silva</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Ricardo Planas</a>
-- <a href="https://www.linkedin.com/in/victorbarq/">David Deodato Alvarenga Nascimento</a>
+- <a href="https://www.linkedin.com/in/david-deodato-41b9b72b7/">David Deodato Alvarenga Nascimento</a>
 
 ## 👩‍🏫 Professores:
 ### Orientador(a)
-- <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 1</a>
+- <a href="https://www.linkedin.com/in/victorbarq/">Fabiana Martins de Oliveira</a>
+
+
 ### Instrutores
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 2</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 3</a>
