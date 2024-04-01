@@ -36,9 +36,6 @@
 
 ## 📜 Descrição
 
-*
-Claro, aqui está a versão mais detalhada e descritiva do seu projeto:
-
 O nosso projeto consiste em um jogo para o processo de onboarding da Unilever. Durante esse processo, serão apresentadas informações cruciais sobre a empresa e sua cultura. Assim, o objetivo principal do nosso jogo é transmitir essas novas informações para os novos colaboradores que estão ingressando na área de TI, de uma maneira que seja envolvente e divertida. Reconhecemos que muitas vezes o processo de onboarding pode ser percebido como tedioso, mas é também uma etapa necessária. Por isso, nossa proposta é transformar essa absorção de informações em uma experiência gamificada e atraente.
 
 Para alcançar esse objetivo, nosso jogo conta com um enredo intrigante e um objetivo claro. Na trama, algumas marcas da Unilever foram roubadas e nosso herói (o jogador) é encarregado de resgatá-las. Durante sua jornada, ele encontrará diversos desafios, incluindo enfrentar inimigos. Para derrotá-los, ele precisará coletar armas, as quais serão obtidas ao acessar links de conteúdo e responder quizzes dentro do jogo. Isso garante a validação da absorção do conteúdo e incentiva o jogador a acertar as perguntas para progredir no jogo e, consequentemente, prestar atenção nas informações fornecidas.
