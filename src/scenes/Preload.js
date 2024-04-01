@@ -65,8 +65,8 @@ export default class Preload extends Phaser.Scene {
 
     // ------------------------------------------------------------------
      // Level3
-     this.load.spritesheet('diretora_npc', 'assets/npc/diretora_npc.png', { frameWidth: 256, frameHeight: 256});
-         // ------------------------------------------------------------------
+     
+     // ------------------------------------------------------------------
     // Hub
     this.load.spritesheet('hub_sprite', 'assets/level2/dvd_npc.png', { frameWidth: 256, frameHeight: 160 });
     this.load.image('hub_screen', 'assets/links/links_screen.png');
@@ -107,6 +107,7 @@ export default class Preload extends Phaser.Scene {
     this.load.image("Ekey", "assets/player/E.png");
     this.load.spritesheet('omo_sprite', 'assets/level2/omo.png', {frameWidth: 100, frameHeight: 160})
     this.load.spritesheet('kibon_sprite', 'assets/level3/kibon.png', {frameWidth: 128, frameHeight: 128})
+    this.load.spritesheet('diretora_npc', 'assets/npc/diretora_npc.png', { frameWidth: 256, frameHeight: 256});
     // ------------------------------------------------------------------
     // Sound effects and music
     this.load.audio("grass_sound", "assets/sounds/level2/lvl_2_grass_walk.ogg");

@@ -1,4 +1,6 @@
 import Player from "../entities/Player.js";
+import Npc from "../entities/Npc.js";
+
 
 export default class level4 extends Phaser.Scene {
   constructor() {
@@ -23,11 +25,6 @@ export default class level4 extends Phaser.Scene {
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;
 
-    // DiretoraNpc sprite
-    // const diretora = new Npc(this, x, y, '', '', player)
-    // .setSize(100, 120)
-    // .setScale(1.2)
-
     // // Add player object and set bounds to map pass player from previous scene
     const oldPlayer = this.sys.settings.data.player;
     const playerSelecionado = this.sys.settings.data.playerSelecionado;
@@ -42,6 +39,12 @@ export default class level4 extends Phaser.Scene {
 
     //this.createEndOfLevel(playerZones.end, player, playerSelecionado);
     this.setupFollowupCameraOn(player, map);
+
+    // DiretoraNpc sprite
+    const diretoraNpc = new Npc(this, 11648, 1980, 'diretora_npc', 'diretora', player)
+    .setSize(100, 120)
+    .setScale(1.2)
+    .setFlip(true, false)
   }
 
   //create player in scene

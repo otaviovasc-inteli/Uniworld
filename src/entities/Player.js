@@ -44,7 +44,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.hasBeenHit = false
     this.allowedNextLevel = false
     this.allowedToShot = this.oldPlayer.allowedToShot || false
-    this.allowedToDash = this.oldPlayer.allowedToDash || false
+    this.allowedToDash = this.oldPlayer.allowedToDash || true
 
     // Health logic and setup
     const leftTopCornerX = (1280 - (1280 / 0.7)) / 2 + 20

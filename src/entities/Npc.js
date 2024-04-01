@@ -89,6 +89,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
             break;
           case "diretora":
               this.diretoraLogic();
+            break;
           default:
             throw new Error('Npc name not found')
         }
