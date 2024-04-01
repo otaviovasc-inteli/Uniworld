@@ -87,6 +87,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
             case 'hub2':
               this.hubLogic();
             break;
+          case "diretora":
+              this.diretoraLogic();
+            break;
           default:
             throw new Error('Npc name not found')
         }
@@ -193,6 +196,22 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         this.destroyDialog();
         this.dialogImage.destroy();
         this.dialogImage = null
+        this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
+        this.dialogSound.pause() // pause dialog sound
+      } else {
+        // Show the next message
+        this.createDialog(this.texts);
+        this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
+        this.dialogSound.stop() // Stop dialog sound
+        this.dialogSound.play() // Play dialog sound
+      }
+  }
+
+  // Npc's Logics
+  diretoraLogic() {
+      if (this.dialogIndex >= this.texts.length) {
+        // If all messages have been displayed, destroy the dialog window and image
+        this.destroyDialog();
         this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
         this.dialogSound.pause() // pause dialog sound
       } else {
