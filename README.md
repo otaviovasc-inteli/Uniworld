@@ -54,7 +54,7 @@ Cidade Unilever: onde o jogador depara-se com problemas ambientais que a Unileve
 
 Unilever: o último nível, que apresenta um desafio mais espacial, sem inimigos. Aqui, o jogador passa por plataformas, devolvendo as marcas roubadas para a diretora e encontrando referências à Unilever.
 
-Tentamos incorporar elementos importantes para a Unilever, como a questão do desmatamento e da poluição, representados pelos inimigos enfrentados pelo jogador, o que demonstra seu comprometimento com a empresa.*
+Tentamos incorporar elementos importantes para a Unilever, como a questão do desmatamento e da poluição, representados pelos inimigos enfrentados pelo jogador, o que demonstra seu comprometimento com a empresa.
 
 LINK PARA O JOGO: https://inteli-college.github.io/2024-T0012-IN01-G02/src/
 
