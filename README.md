@@ -73,7 +73,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🔧 Como executar o código
 
-*Clonar Repositorio, instalar extensão "Live Server", clicar sobre o arquivo "index.html" com o botão direito do mouse e abrir com o Live Server*
+*Clonar Repositorio, instalar extensão "Live Server", clicar sobre "src" com o botão direito do mouse e abrir com o Live Server, clicar em "src" novamente na tela que abrir*
 
 
 ## 🗃 Histórico de lançamentos
