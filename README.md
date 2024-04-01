@@ -19,18 +19,20 @@
 - <a href="https://www.linkedin.com/in/victorbarq/">Ricardo Planas</a>
 - <a href="https://www.linkedin.com/in/david-deodato-41b9b72b7/">David Deodato Alvarenga Nascimento</a>
 
-## 👩‍🏫 Professores:
-### Orientador(a)
-- <a href="https://www.linkedin.com/in/victorbarq/">Fabiana Martins de Oliveira</a>
 
-
-### Instrutores
+### 👩‍🏫 Professores:
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 2</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 3</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 4</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 5</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 6</a>
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 7</a>
+
+
+## Instrutores
+### Orientador(a)
+- <a href="https://www.linkedin.com/in/victorbarq/">Cesar Almiñana</a>
+
 
 ## 📜 Descrição
 
