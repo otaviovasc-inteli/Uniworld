@@ -192,6 +192,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       this.hp.restoreHp();
       console.log("Player died, respawned at checkpoint")
     }
+    else if (this.y > 2300 && this.scene.sys.settings.key === "level4") {
+      this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
+      this.hp.restoreHp();
+      console.log("Player died, respawned at checkpoint")
+    }
 
     // If player update is paused, do nothing
     if (!this.updateEnabled || this.hasBeenHit) {
