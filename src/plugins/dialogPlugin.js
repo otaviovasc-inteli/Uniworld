@@ -66,18 +66,24 @@ export default class DialogModalPlugin {
     return this.scene.sys.game.config.height;
   }
   // Calculates where to place the dialog window based on the game size
-  _calculateWindowDimensions(width, height) {
-    var x = this.padding;
-    var y = height - this.windowHeight - this.padding;
-    var rectWidth = width - (this.padding * 2);
-    var rectHeight = this.windowHeight;
-    return {
-      x,
-      y,
-      rectWidth,
-      rectHeight
-    };
-  }
+  // Adjust _calculateWindowDimensions to use camera viewport
+_calculateWindowDimensions() {
+  const camera = this.scene.cameras.main;
+  const width = camera.width;
+  const height = camera.height;
+  const rectWidth = width * 0.8; // Dialog width as a percentage of viewport width
+  const rectHeight = this.windowHeight; // Fixed or dynamic height for the dialog box
+  const x = camera.scrollX + (width - rectWidth) / 2; // Center horizontally in the viewport
+  const y = camera.scrollY + height - rectHeight - this.padding; // Positioned at the bottom with padding
+  return {
+    x,
+    y,
+    rectWidth,
+    rectHeight
+  };
+}
+  
+
   // Creates the inner dialog window (where the text is displayed)
   _createInnerWindow(x, y, rectWidth, rectHeight) {
     // Style the rectangle
@@ -123,29 +129,36 @@ export default class DialogModalPlugin {
   }
   // Calcuate the position of the text in the dialog window
   _setText(text, depth) {
-    // Reset the dialog
     if (this.text) this.text.destroy();
-    var x = this.padding + 10;
-    var y = this._getGameHeight() - this.windowHeight - this.padding + 10;
+    var gameWidth = this._getGameWidth();
+    var dimensions = this._calculateWindowDimensions(gameWidth, this._getGameHeight());
+    var textX = dimensions.x + 10; // Slightly offset from the left border of the dialog box
+    var textY = dimensions.y + 10; // Slightly offset from the top border of the dialog box
     this.text = this.scene.make.text({
-      x,
-      y,
+      x: textX,
+      y: textY,
       text,
       style: {
         font: 'bold 25px Arial',
-        wordWrap: { width: this._getGameWidth() - (this.padding * 2) - 25 }
+        wordWrap: { width: dimensions.rectWidth - 20 } // Ensure text wraps within the dialog box
       }
     });
-    // Text Depth
-    this.text.setDepth((depth || 3) + 1);
+    // Set depth to make sure text appears above the dialog box background and border
+    this.text.setDepth((depth || this.depth || 3) + 1);
   }
+  
+  
   // Creates the dialog window
-  _createWindow() {
+_createWindow() {
     var gameHeight = this._getGameHeight();
     var gameWidth = this._getGameWidth();
     var dimensions = this._calculateWindowDimensions(gameWidth, gameHeight);
     this.graphics = this.scene.add.graphics();
     this._createOuterWindow(dimensions.x, dimensions.y, dimensions.rectWidth, dimensions.rectHeight);
     this._createInnerWindow(dimensions.x, dimensions.y, dimensions.rectWidth, dimensions.rectHeight);
+    // Adjust the text position based on the new dialog window position
+    if (this.text) {
+      this._setText(this.text.text, this.depth);
+    }
   }
 }
