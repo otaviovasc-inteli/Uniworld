@@ -64,8 +64,8 @@ export default class Preload extends Phaser.Scene {
     this.load.image('uni_logo', 'assets/level4/assets/uni_logo.png');
 
     // ------------------------------------------------------------------
-     // Level3
-     
+     // Congrats
+    this.load.image('congrats_bg', 'assets/congratulation/congratulation.png');     
      // ------------------------------------------------------------------
     // Hub
     this.load.spritesheet('hub_sprite', 'assets/level2/dvd_npc.png', { frameWidth: 256, frameHeight: 160 });
