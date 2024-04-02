@@ -214,6 +214,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         this.destroyDialog();
         this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
         this.dialogSound.pause() // pause dialog sound
+        this.scene.scene.start("congrats")
       } else {
         // Show the next message
         this.createDialog(this.texts);
