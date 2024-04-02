@@ -1,10 +1,10 @@
 import Smoke from "./Smoke.js";
 
 // extends smoke properties (used only to specify class, so tile can read and spawn enemy correctly)
-export default class graySmoke extends Smoke {
+export default class blackSmoke extends Smoke {
   constructor(scene, x, y, smoke_name) {
     super(scene, x, y, smoke_name);
-    this.damage = 25
+    this.damage = 40
     this.health = 2
 
     this.init_graySmoke()

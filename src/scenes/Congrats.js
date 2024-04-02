@@ -4,8 +4,6 @@ export default class Congrats extends Phaser.Scene {
     }
 
     create () {
-
-        this.add.image('congrats_bg')
-        
-        }
+        this.add.image(0, 0,'congrats_bg').setOrigin(0, 0)
+    }
 }
