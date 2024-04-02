@@ -84,7 +84,13 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           case 'hub':
               this.hubLogic();
             break;
-            case 'hub2':
+          case 'hub2':
+              this.hubLogic();
+            break;
+          case 'hub3':
+              this.hubLogic();
+            break;
+          case 'hub4':
               this.hubLogic();
             break;
           case "diretora":
@@ -359,41 +365,61 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     // Get texts and urls from hubTexts.js
     const url1 = this.texts[0]
     const url2 = this.texts[1]
-    const url3 = this.texts[2]
-    const url4 = this.texts[3]
 
     // Those if's check if the element already exists so it wont double them.
     // Add hub screen and x button if they dont exist already
-    if (!this.screen) this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y - 50, "hub_screen").setDepth(2)
-    if (!this.xBtnLink) this.xBtnLink = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 290, "hub_close").setDepth(3).setScale(0.05)
+    if (!this.screen) this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y - 50, "hub_screen").setDepth(1)
+    if (!this.xBtnLink) this.xBtnLink = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 290, "hub_close").setDepth(2).setScale(0.05)
 
     // Clickable links
-    if (!this.link_button1) this.link_button1 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 110  - 50, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
-    if (!this.link_button2) this.link_button2 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 20 - 50, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
-    if (!this.link_button3) this.link_button3 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y + 70 - 50, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
-    if (!this.link_button4) this.link_button4 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y + 160 - 50, 'hub_link_button').setDepth(3).setScale(0.5).setInteractive();
+    if (!this.link_button1) this.link_button1 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 110  - 50, 'hub_link_button').setDepth(2).setScale(0.5).setInteractive();
+    if (!this.link_button2) this.link_button2 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 20 - 70, 'hub_link_button').setDepth(2).setScale(0.5).setInteractive();
 
     // Add text labels
-    if (!this.text_hub_1) this.text_hub_1 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 130 - 50, url1[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
-    if (!this.text_hub_2) this.text_hub_2 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 40 - 50, url2[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
-    if (!this.text_hub_3) this.text_hub_3 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 50 - 50, url3[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
-    if (!this.text_hub_4) this.text_hub_4 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y + 140 - 50, url4[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(3);
+    if (!this.text_hub_1) this.text_hub_1 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 130 - 50, url1[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(2);
+    if (!this.text_hub_2) this.text_hub_2 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 40 - 70, url2[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(2);
+
+     // Draw progress bar background if it doesn't exist
+    if (!this.progressBarBg) {
+      this.progressBarBg = this.scene.add.graphics().setDepth(2);
+      this.progressBarBg.fillStyle(0xffffff, 1); // Grey color for the background
+      this.progressBarBg.fillRect(this.npcPlayer.x - 450, this.npcPlayer.y - 50, 880, 40); // Position and size of the progress bar background
+    }
+
+    // Update progress bar fill based on clicksCount
+    if (!this.progressBarFill) {
+        this.progressBarFill = this.scene.add.graphics().setDepth(3);
+    } else {
+        this.progressBarFill.clear(); // Clear previous fill
+    }
+    this.progressBarFill.fillStyle(0x00ff00, 1); // Green color for the fill
+    // Calculate fill width based on clicks count
+    this.clicksCount = 0
+    const fillWidth = this.clicksCount * (880 / 2);
+    this.progressBarFill.fillRect(this.npcPlayer.x - 450, this.npcPlayer.y - 50, fillWidth, 40);
+
+
+    // Initialize link clicked flags if not already done
+    if (this.link1Clicked === undefined) this.link1Clicked = false;
+    if (this.link2Clicked === undefined) this.link2Clicked = false;
 
     // Add links to the buttons
     this.link_button1.on('pointerdown', () => {
       window.open(url1[0], '_blank'); // Open in a new tab
+      if (!this.link1Clicked) {
+        this.link1Clicked = true; // Set the flag to indicate link 2 has been clicked
+        this.clicksCount = this.link1Clicked + this.link2Clicked;
+        this.updateProgressBar(); // Call a function to update the progress bar
+      }
     });
 
     this.link_button2.on('pointerdown', () => {
       window.open(url2[0], '_blank'); // Open in a new tab
-    });
-
-    this.link_button3.on('pointerdown', () => {
-      window.open(url3[0], '_blank'); // Open in a new tab
-    });
-
-    this.link_button4.on('pointerdown', () => {
-      window.open(url4[0], '_blank'); // Open in a new tab
+      if (!this.link2Clicked) {
+        this.link2Clicked = true; // Set the flag to indicate link 2 has been clicked
+        this.clicksCount = this.link1Clicked + this.link2Clicked;
+        this.updateProgressBar(); // Call a function to update the progress bar
+      }
     });
 
     // Prevent player from moving while hub is opened
@@ -412,20 +438,32 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       this.link_button1 = null
       this.link_button2.destroy()
       this.link_button2 = null
-      this.link_button3.destroy()
-      this.link_button3 = null
-      this.link_button4.destroy()
-      this.link_button4 = null
       this.text_hub_1.destroy()
       this.text_hub_1 = null
       this.text_hub_2.destroy()
       this.text_hub_2 = null
-      this.text_hub_3.destroy()
-      this.text_hub_3 = null
-      this.text_hub_4.destroy()
-      this.text_hub_4 = null
+
+      // Additionally, destroy the progress bar graphics
+      if (this.progressBarBg) {
+        this.progressBarBg.destroy();
+        this.progressBarBg = null;
+      }
+      if (this.progressBarFill) {
+        this.progressBarFill.destroy();
+        this.progressBarFill = null;
+      }
+
+      // Reset clicks count
+      this.clicksCount = 0;
+
       return;
     });
   }
 
+  updateProgressBar() {
+    const fillWidth = this.clicksCount * (880 / 2);
+    this.progressBarFill.clear();
+    this.progressBarFill.fillStyle(0x00ff00, 1);
+    this.progressBarFill.fillRect(this.npcPlayer.x - 450, this.npcPlayer.y - 50, fillWidth, 40);
+  }
 }

@@ -37,6 +37,11 @@ export default class Level2 extends Phaser.Scene {
     .setSize(100, 120)
     .setScale(1.2)
 
+    //colocando o Npc de links no terceiro mapa
+    const dvdNpc2 = new Npc(this, 6828, 1659, "hub_sprite", "hub2", player)
+      .setSize(100, 120)
+      .setScale(1.2)
+
     // Npc sprite
     const omoNpc = new Npc(this, 9664, 1150, 'omo_sprite', 'omo', player)
     .setScale(0.6)

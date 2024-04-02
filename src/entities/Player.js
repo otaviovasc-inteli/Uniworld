@@ -45,6 +45,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.allowedNextLevel = true
     this.allowedToShot = this.oldPlayer.allowedToShot || true
     this.allowedToDash = this.oldPlayer.allowedToDash || true
+    this.allowedVoidDeath = false
 
     // Health logic and setup
     const leftTopCornerX = (1280 - (1280 / 0.7)) / 2 + 20
@@ -184,20 +185,22 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   }
 
   update() { //Death logic for each level from falling
-    if (this.y > 1960 && this.scene.sys.settings.key === "level2") {
-      this.setPosition(this.checkpointCords.x, this.checkpointCords.y - 150);
-      this.hp.restoreHp();
-      console.log("Player died, respawned at checkpoint")
-    }
-    else if (this.y > 3100 && this.scene.sys.settings.key === "level3") {
-      this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
-      this.hp.restoreHp();
-      console.log("Player died, respawned at checkpoint")
-    }
-    else if (this.y > 2300 && this.scene.sys.settings.key === "level4") {
-      this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
-      this.hp.restoreHp();
-      console.log("Player died, respawned at checkpoint")
+    if(this.allowedVoidDeath){
+      if (this.y > 1960 && this.scene.sys.settings.key === "level2") {
+        this.setPosition(this.checkpointCords.x, this.checkpointCords.y - 150);
+        this.hp.restoreHp();
+        console.log("Player died, respawned at checkpoint")
+      }
+      else if (this.y > 3100 && this.scene.sys.settings.key === "level3") {
+        this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
+        this.hp.restoreHp();
+        console.log("Player died, respawned at checkpoint")
+      }
+      else if (this.y > 2300 && this.scene.sys.settings.key === "level4") {
+        this.setPosition(this.checkpointCords.x, this.checkpointCords.y);
+        this.hp.restoreHp();
+        console.log("Player died, respawned at checkpoint")
+      }
     }
 
     // If player update is paused, do nothing
