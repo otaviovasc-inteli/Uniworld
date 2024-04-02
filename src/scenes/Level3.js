@@ -4,6 +4,7 @@ import GreenSlime from "../entities/enemies/greenSlime.js";
 import PurpleSlime from "../entities/enemies/purpleSlime.js";
 import Enemies from "../groups/enemies.js";
 import graySmoke from "../entities/enemies/graySmoke.js";
+import blackSmoke from "../entities/enemies/graySmoke.js";
 import BossLevel3 from "../entities/enemies/bossLevel3.js";
 
 
