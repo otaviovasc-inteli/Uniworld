@@ -365,6 +365,25 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     // Get texts and urls from hubTexts.js
     const url1 = this.texts[0]
     const url2 = this.texts[1]
+    const dialogTexts = this.texts[2]
+    let finishedDialog = false
+
+    this.destroyHub()
+
+    // Dialog box modal
+    if (this.dialogIndex >= dialogTexts.length) {
+      // If all messages have been displayed, destroy the dialog window and image
+      this.destroyDialog();
+      this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
+      this.dialogSound.pause() // pause dialog sound
+      finishedDialog = true
+    } else {
+      // Show the next message
+      this.createDialog(dialogTexts);
+      this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
+      this.dialogSound.stop() // Stop dialog sound
+      this.dialogSound.play() // Play dialog sound
+    }
 
     // Those if's check if the element already exists so it wont double them.
     // Add hub screen and x button if they dont exist already
@@ -404,60 +423,39 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     if (this.link2Clicked === undefined) this.link2Clicked = false;
 
     // Add links to the buttons
-    this.link_button1.on('pointerdown', () => {
-      window.open(url1[0], '_blank'); // Open in a new tab
-      if (!this.link1Clicked) {
-        this.link1Clicked = true; // Set the flag to indicate link 2 has been clicked
-        this.clicksCount = this.link1Clicked + this.link2Clicked;
-        this.updateProgressBar(); // Call a function to update the progress bar
-      }
-    });
+    if(finishedDialog){
+      this.link_button1.on('pointerdown', () => {
+        window.open(url1[0], '_blank'); // Open in a new tab
+        if (!this.link1Clicked) {
+          this.link1Clicked = true; // Set the flag to indicate link 2 has been clicked
+          this.clicksCount = this.link1Clicked + this.link2Clicked;
+          this.updateProgressBar(); // Call a function to update the progress bar
+        }
+      });
+    }
 
-    this.link_button2.on('pointerdown', () => {
-      window.open(url2[0], '_blank'); // Open in a new tab
-      if (!this.link2Clicked) {
-        this.link2Clicked = true; // Set the flag to indicate link 2 has been clicked
-        this.clicksCount = this.link1Clicked + this.link2Clicked;
-        this.updateProgressBar(); // Call a function to update the progress bar
-      }
-    });
+    if(finishedDialog){
+      this.link_button2.on('pointerdown', () => {
+        window.open(url2[0], '_blank'); // Open in a new tab
+        if (!this.link2Clicked) {
+          this.link2Clicked = true; // Set the flag to indicate link 2 has been clicked
+          this.clicksCount = this.link1Clicked + this.link2Clicked;
+          this.updateProgressBar(); // Call a function to update the progress bar
+        }
+      });
+    }
 
     // Prevent player from moving while hub is opened
     this.npcPlayer.pauseUpdate()
 
     // Close button loginc
     this.xBtnLink.setInteractive()
-    this.xBtnLink.on('pointerdown', () => {
-      // Destroy images and end function
-      this.npcPlayer.resumeUpdate()
-      this.screen.destroy()
-      this.screen = null
-      this.xBtnLink.destroy()
-      this.xBtnLink = null
-      this.link_button1.destroy()
-      this.link_button1 = null
-      this.link_button2.destroy()
-      this.link_button2 = null
-      this.text_hub_1.destroy()
-      this.text_hub_1 = null
-      this.text_hub_2.destroy()
-      this.text_hub_2 = null
-
-      // Additionally, destroy the progress bar graphics
-      if (this.progressBarBg) {
-        this.progressBarBg.destroy();
-        this.progressBarBg = null;
-      }
-      if (this.progressBarFill) {
-        this.progressBarFill.destroy();
-        this.progressBarFill = null;
-      }
-
-      // Reset clicks count
-      this.clicksCount = 0;
-
-      return;
-    });
+    if(finishedDialog){
+      this.xBtnLink.on('pointerdown', () => {
+        this.destroyHub()
+        return;
+      });
+    }
   }
 
   updateProgressBar() {
@@ -465,5 +463,37 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.progressBarFill.clear();
     this.progressBarFill.fillStyle(0x00ff00, 1);
     this.progressBarFill.fillRect(this.npcPlayer.x - 450, this.npcPlayer.y - 50, fillWidth, 40);
+  }
+
+  destroyHub(){
+    // Destroy images and end function
+    this.npcPlayer.resumeUpdate()
+    if (this.screen) this.screen.destroy()
+    this.screen = null
+    if (this.xBtnLink) this.xBtnLink.destroy()
+    this.xBtnLink = null
+    if (this.link_button1) this.link_button1.destroy()
+    this.link_button1 = null
+    if (this.link_button2) this.link_button2.destroy()
+    this.link_button2 = null
+    if (this.text_hub_1) this.text_hub_1.destroy()
+    this.text_hub_1 = null
+    if (this.text_hub_2) this.text_hub_2.destroy()
+    this.text_hub_2 = null
+
+    // Additionally, destroy the progress bar graphics
+    if (this.progressBarBg) {
+      this.progressBarBg.destroy();
+      this.progressBarBg = null;
+    }
+    if (this.progressBarFill) {
+      this.progressBarFill.destroy();
+      this.progressBarFill = null;
+    }
+
+    // Reset clicks count
+    this.clicksCount = 0;
+    this.link1Clicked = false;
+    this.link2Clicked = false;
   }
 }

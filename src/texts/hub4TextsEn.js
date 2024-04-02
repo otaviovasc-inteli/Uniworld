@@ -5,7 +5,10 @@ const hub4TextsEn =
  // Structure ['link', 'text to be displayed'],
   ['https://unilever.sharepoint.com/sites/AboutUnilever/SitePages/Unilever-Dictionary.aspx', 'Unilever content'],
   ['https://degreed.com/plan/3210455?editmode=false⦁autosuggest=false', 'Unilever content'],
-  ['https://www.youtube.com/watch?v=LRPgU-KbPhU', 'Unilever content'],
-  ['https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'Unilever content'],
+  ["You are incredible, collaborator! The fact that you've come this far proves you are a strong warrior.",
+   "Next, you are about to face an extremely dangerous villain: The Pollution King!",
+   "Before taking on this challenge, remember that you must consume the training from the links below.",
+   "This is your last duel. Finish the training, defeat the Pollution King, and return Kibon to Unilever!",
+   "We trust in you, hero :)"]
 ];
 export default hub4TextsEn;
