@@ -111,4 +111,25 @@ export default anims =>{
     frameRate: 4,
     repeat: -1
   })
+
+  anims.create({
+    key: 'checkpoint_blue_point_idle',
+    frames: anims.generateFrameNumbers('checkpoint_blue_point', {start: 0, end: 3}),
+    frameRate: 4,
+    repeat: -1
+  })
+
+  anims.create({
+    key: 'checkpoint_red_point_idle',
+    frames: anims.generateFrameNumbers('checkpoint_red_point', {start: 0, end: 3}),
+    frameRate: 4,
+    repeat: -1
+  })
+
+  anims.create({
+    key: 'checkpoint_word_idle',
+    frames: anims.generateFrameNumbers('checkpoint_word', {start: 0, end: 1}),
+    frameRate: 1,
+    repeat: 1
+  })
 }

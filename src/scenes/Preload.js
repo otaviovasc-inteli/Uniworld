@@ -73,6 +73,9 @@ export default class Preload extends Phaser.Scene {
     this.load.image('hub_screen', 'assets/links/links_screen.png');
     this.load.image('hub_close', 'assets/links/x_button.png');
     this.load.spritesheet('hub_link_button', 'assets/links/link_button.png', { frameWidth: 128, frameHeight: 128 })
+    this.load.spritesheet('checkpoint_word', 'assets/links/checkpoint.png', { frameWidth: 500, frameHeight: 120 })
+    this.load.spritesheet('checkpoint_blue_point', 'assets/links/blue_point.png', { frameWidth: 48, frameHeight: 32 });
+    this.load.spritesheet('checkpoint_red_point', 'assets/links/red_point.png',{ frameWidth: 48, frameHeight: 32 });
   // ------------------------------------------------------------------
     // Quiz
     this.load.image('quiz_window', 'assets/quiz/quiz_window.png');
@@ -136,6 +139,7 @@ export default class Preload extends Phaser.Scene {
     this.load.audio("boss3_die", 'assets/sounds/level3/boss3_die.wav');
     this.load.audio("cityTraffic", 'assets/sounds/level3/cityTraffic.wav');
     this.load.audio("music_level3", 'assets/sounds/level3/cityBattle.mp3');
+    this.load.audio("checkpoint_sound", "assets/sounds/checkpoint_sound.wav");
 
     // Completed
     this.load.once('complete', () => {

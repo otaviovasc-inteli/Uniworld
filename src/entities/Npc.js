@@ -411,6 +411,11 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       this.progressBarBg.fillRect(this.npcPlayer.x - 450, this.npcPlayer.y - 50, 880, 40); // Position and size of the progress bar background
     }
 
+    // Draw checkpoint visual insight if it doesn't exist
+    if (!this.checkpoint_word) this.checkpoint_word = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y + 90, "checkpoint_word").setDepth(1)
+    if (!this.checkpoint_blue_point) this.checkpoint_blue_point = this.scene.add.sprite(this.npcPlayer.x - 400, this.npcPlayer.y + 75, "checkpoint_blue_point").setScale(4).setDepth(1)
+    this.checkpoint_blue_point.play('checkpoint_blue_point_idle', true)
+
     // Update progress bar fill based on clicksCount
     if (!this.progressBarFill) {
         this.progressBarFill = this.scene.add.graphics().setDepth(3);
@@ -438,8 +443,15 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           this.clicksCount = this.link1Clicked + this.link2Clicked;
           this.updateProgressBar(); // Call a function to update the progress bar
         }
-        if (this.link1Clicked && this.link2Clicked) // If both links are clicked, set checkpoint
+        if (this.link1Clicked && this.link2Clicked){ // If both links are clicked, set checkpoint
           this.npcPlayer.checkPoint()
+          if (!this.checkpoint_red_point) {
+            this.checkpoint_red_point = this.scene.add.sprite(this.npcPlayer.x + 400, this.npcPlayer.y + 75, "checkpoint_red_point").setScale(4).setDepth(1)
+            this.checkpoint_red_point.play('checkpoint_red_point_idle', true)
+            this.checkpoint_word.setFrame(1)
+            this.scene.sound.add('checkpoint_sound', {loop: false, volume: 0.7}).play()
+          }
+        }
       });
       // Link button2
       this.link_button2.on('pointerdown', () => {
@@ -449,8 +461,15 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           this.clicksCount = this.link1Clicked + this.link2Clicked;
           this.updateProgressBar(); // Call a function to update the progress bar
         }
-        if (this.link1Clicked && this.link2Clicked) // If both links are clicked, set checkpoint
+        if (this.link1Clicked && this.link2Clicked){ // If both links are clicked, set checkpoint
           this.npcPlayer.checkPoint()
+          if (!this.checkpoint_red_point) {
+            this.checkpoint_red_point = this.scene.add.sprite(this.npcPlayer.x + 400, this.npcPlayer.y + 75, "checkpoint_red_point").setScale(4).setDepth(1)
+            this.checkpoint_red_point.play('checkpoint_red_point_idle', true)
+            this.checkpoint_word.setFrame(1)
+            this.scene.sound.add('checkpoint_sound', {loop: false, volume: 0.7}).play();
+          }
+        }
       });
 
       // Hover effects
@@ -504,6 +523,12 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.text_hub_1 = null
     if (this.text_hub_2) this.text_hub_2.destroy()
     this.text_hub_2 = null
+    if (this.checkpoint_word) this.checkpoint_word.destroy()
+    this.checkpoint_word = null
+    if (this.checkpoint_blue_point) this.checkpoint_blue_point.destroy()
+    this.checkpoint_blue_point = null
+    if (this.checkpoint_red_point) this.checkpoint_red_point.destroy()
+    this.checkpoint_red_point = null
 
     // Additionally, destroy the progress bar graphics
     if (this.progressBarBg) {
