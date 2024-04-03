@@ -249,7 +249,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;O segundo ambiente se encontra no Mundo Lúdico, onde o Player terá a primeira gameplay de fato do jogo, nessa fase, é possivel encontrar objetos de decoração relacionados à Unilever, será possível batalhar contra inimigos e no final da fase um "chefão". O objetivo do Player nessa fase é interagir com o NPC que disponibiliza dos Links de aprendizado da Unilever e depois interagir com o objeto de Quiz que lhe dará ou não o powerUp baseado no resultado. Depois de derrotar o primeiro chefe, pode seguir para o terceiro ambiente
+&nbsp;&nbsp;&nbsp;&nbsp;O segundo ambiente é o Mundo Lúdico, onde o Player terá da fato a primeira gameplay do jogo, nessa fase, é possivel encontrar objetos de decoração relacionados à Unilever, será possível batalhar contra inimigos e no final da fase um "chefão". O objetivo do Player nessa fase é interagir com o NPC que disponibiliza dos Links de aprendizado da Unilever e depois interagir com o objeto de Quiz que lhe dará o *Power-up* baseado no resultado. Depois de derrotar o primeiro chefe, pode seguir para o terceiro ambiente
 <div align="center">
 <sub>Figura 2 - Ilustração do Mundo Lúdico</sub>
 <img src="../assets/printMundoLudico.png" width="100%">
@@ -268,7 +268,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 ### 3.3.3. Condições climáticas e temporais
 
-&nbsp;&nbsp;&nbsp;&nbsp;O jogo apresentará algumas mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários da segunda cena foram projetados com um tempo ensolarado que permeia do início ao fim. Além disso, a passagem do tempo não possui influência no mundo do jogo, devido a pedido do próprio parceiro sobre a criação de poucas ou nenhuma limitaçõe para conclusão do onboarding.
+&nbsp;&nbsp;&nbsp;&nbsp;O jogo apresentará poucas mudanças climáticas em cenários ao longo da experiência do usuário. O enredo e cenários da segunda cena foram projetados com um tempo ensolarado que permeia do início ao fim. Além disso, a passagem do tempo não possui influência no mundo do jogo, devido a pedido do próprio parceiro sobre a criação de poucas ou nenhuma limitaçõe para conclusão do onboarding.
 
 ### 3.3.4. Concept Art
 
@@ -357,7 +357,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 &nbsp;&nbsp;&nbsp;&nbsp;O jogador deve concluir a fase, ganhando *power-ups* e derrotando os inimigos. Além disso, deve derrotar dois *boss*, o Rei desmatamento e o Rei poluição. Ao derrotar cada rei, o jogador deverá responder um quiz para ganhar o *power-up*. Caso ele acerte, vai receber uma bonificação em alguma habilidade (força, alcance, velocidade...). 
 ## 3.7. Mecânicas do jogo (sprint 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem irá dar um pulo duplo. Outra tecla importante para a jogabilidade proposta no nosso game é a tecla E, que usa a mecânica de interação, caso apertada ao lado de um NPC ou power-up por exemplo. A tecla Q é responsável pela mecânica de ataque do jogador e a tecla W pela mecânica de movimentação de avanço rápido.
+&nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem irá dar um pulo duplo. Outra tecla importante para a jogabilidade proposta no nosso game é a tecla E, que usa a mecânica de interação, caso apertada ao lado de um NPC ou power-up. Por fim, a tecla Q é responsável pela mecânica de ataque do jogador e a tecla W pela mecânica de movimentação de avanço rápido.
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
@@ -376,6 +376,8 @@ Licensas: https://mixkit.co/license/#sfxFree
 <img src="../assets/DialogoInical.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;As demonstrações acima destacam o processo preliminar de desenvolvimento de jogo.
 
 ## 4.2. Desenvolvimento básico do jogo
 
@@ -411,10 +413,9 @@ Licensas: https://mixkit.co/license/#sfxFree
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;Diante das implementações, pode-se apontar grande avanço em relação ao desenvolvimento preliminar, apresentando grandes implementações como um novo nível e melhora no funcionamento dos diálogos com personagens não jogáveis.
 
 ## 4.3. Desenvolvimento intermediário do jogo
-
-&nbsp;&nbsp;&nbsp;&nbsp;Em relação ao processo criativo para o desenvolvimento do jogo, foi um jornada de refinamento e aprimoramento constante. Analisamos as ideias e elementos anteriores, realizamos melhorias significativas para garantir a melhor experiência possível para os jogadores.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Optamos por manter o estilo de jogo 2D de plataforma e aventura em pixels, inspirado em jogos clássicos como Super Mario World, Mega Man e Sonic. Essa escolha foi resultado de uma análise das mecânicas de jogabilidade desses títulos e de como elas poderiam ser adaptadas e melhoradas para atender aos objetivos específicos do nosso jogo.
 
@@ -569,6 +570,8 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 14 - Inimigo - Fumaça </sub>
 <img src="../src/assets/enemies/smoke.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+&nbsp;&nbsp;&nbsp;&nbsp;O processo criativo para o desenvolvimento do jogo, foi um jornada de refinamento e aprimoramento constante. Analisamos as ideias e elementos anteriores, realizamos melhorias significativas para garantir a melhor experiência possível para os jogadores, construindo um mundo mais amplo e desafiador.
 
 ## 4.4. Desenvolvimento final do MVP
 
@@ -725,6 +728,7 @@ Item liberado pelo boss após ser derrotado.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Por fim, na fase final, o jogador chega ao escritório da Unilever e conclui o jogo.
 
+&nbsp;&nbsp;&nbsp;&nbsp;Durante o desenvolvimento do MPV, o grupo contemplou todos os elementos necessários para entregar o mínimo produto viável alinhado com os pedidos do parceiro. Assim, foram concluídas as mecânicas de combate, exploração, movimentação e tutoriais, garantindo plenitude no funcionamento do jogo.
 
 ## 4.5. Revisão do MVP
 
@@ -856,18 +860,17 @@ O que poderia melhorar no jogo? | Volume que está muito alto
 
 ### 5.2.2 Melhorias
 
-Com base no feedback dos testes realizados em 27/03/2024, identificamos áreas de melhoria em nosso jogo, especialmente relacionadas à dificuldade e à clareza dos controles e objetivos. Para tornar a jogabilidade mais acessível e intuitiva, planejamos implementar algumas mudanças. Primeiramente, reduziremos o número de inimigos, aumentando assim o tamanho das plataformas para facilitar a movimentação. Quanto à obviedade dos objetivos, pretendemos tornar as instruções mais claras e impedir o progresso do jogador até que as instruções sejam compreendidas, garantindo que ele não avance sem visualizá-las
+Com base no feedback dos testes realizados em 27/03/2024, identificamos áreas de melhoria em nosso jogo, especialmente relacionadas à dificuldade e à clareza dos controles e objetivos. Para tornar a jogabilidade mais acessível e intuitiva, planejamos implementar algumas mudanças. Primeiramente, reduziremos o número de inimigos, aumentando também o tamanho das plataformas para facilitar a movimentação. Quanto à orientação dos objetivos, pretendemos tornar as instruções mais claras e impedir o progresso do jogador até que as instruções sejam compreendidas, garantindo que ele não avance sem visualizá-las e compreendê-las.
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros
 
-&nbsp;&nbsp;&nbsp;&nbsp;À medida que nos aproximamos da fase final de desenvolvimento, refletimos sobre o valioso feedback obtido através de playtests com funcionários da Unilever. Identificamos aspectos cruciais para aprimoramento, como o equilíbrio da dificuldade do jogo, a necessidade de opções para gerenciar a música de fundo ao longo do jogo, e a clareza das instruções fornecidas aos jogadores.
+&nbsp;&nbsp;&nbsp;&nbsp;À medida que nos aproximamos da fase final de desenvolvimento, refletimos sobre o valioso feedback obtido através de playtests com funcionários da Unilever. Identificamos aspectos cruciais para aprimoramento, como o equilíbrio da dificuldade do jogo, a necessidade de opções para gerenciar a música de fundo ao longo do jogo e a clareza das instruções fornecidas aos jogadores.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Reconhecemos a importância de uma experiência de aprendizado envolvente e livre de frustrações. Por isso, planejamos incorporar adições explicativas e ícones acessíveis, juntamente com diálogos adicionais ao longo das fases, garantindo assim que todos os jogadores, independentemente da sua experiência com videogames, possam avançar no jogo.
+&nbsp;&nbsp;&nbsp;&nbsp;Reconhecemos a importância de uma experiência de aprendizado envolvente e livre de frustrações. Por isso, planejamos incorporar adições explicativas e ícones acessíveis, juntamente com diálogos adicionais ao longo das fases, garantindo assim que todos os jogadores, independentemente de sua experiência com videogames, possam avançar no jogo.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Nossas futuras implementações terão o objetivo de resolver esses empecilhos, como a adição de ainda mais personagens não jogáveis (NPCs) ao decorrer do jogo, para manter o funcionário em contante contato com o enredo, refinar a disposição do Heads-Up Display (HUD), impossibilitar a progressão sem a conclusão dos conteúdos educativose e adicionar outros idiomas.
+&nbsp;&nbsp;&nbsp;&nbsp;Nossas futuras implementações terão o objetivo de resolver esses empecilhos, como a adição de ainda mais personagens não jogáveis (NPCs) ao decorrer do jogo, para manter o funcionário em constante contato com o enredo, refinar a disposição do Heads-Up Display (HUD), impossibilitar a progressão sem a conclusão dos conteúdos educativos e adicionar outros idiomas.
 
-
-&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, como equipe, queremos transmitir que esse projeto é muito mais que apenas um jogo, é uma jornada em direção à inovação na educação corporativa e no engajamento de funcionários. O feedback que recebemos é uma forma de entendermos que o que estamos fazendo possui o nosso compromisso com a excelência e a melhoria contínua. Enquanto nos preparamos para as etapas finais de desenvolvimento, mantemos nosso foco no objetivo de criar um jogo que seja não apenas divertido, mas também uma ferramenta de aprendizado e integração para a Unilever.
+&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, como equipe, queremos transmitir que esse projeto é muito mais que apenas um jogo; é uma jornada em direção à inovação na educação corporativa e no engajamento de funcionários. O feedback que recebemos é uma forma de entendermos que o que estamos fazendo possui nosso compromisso com a excelência e a melhoria contínua. Enquanto nos preparamos para as etapas finais de desenvolvimento, mantemos nosso foco no objetivo de criar um jogo que seja não apenas divertido, mas também uma ferramenta de aprendizado e integração para a Unilever.
 
 
 # <a name="c7"></a>7. Referências
