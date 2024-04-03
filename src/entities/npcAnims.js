@@ -71,6 +71,34 @@ export default anims =>{
   })
 
   anims.create({
+    key: 'hub3_idle',
+    frames: anims.generateFrameNumbers('hub_sprite', {start: 0, end: 4}),
+    frameRate: 4,
+    repeat: -1
+  })
+
+  anims.create({
+    key: 'hub3_overlap',
+    frames: anims.generateFrameNumbers('hub_sprite', {start: 5, end: 9}),
+    frameRate: 4,
+    repeat: -1
+  })
+
+  anims.create({
+    key: 'hub4_idle',
+    frames: anims.generateFrameNumbers('hub_sprite', {start: 0, end: 4}),
+    frameRate: 4,
+    repeat: -1
+  })
+
+  anims.create({
+    key: 'hub4_overlap',
+    frames: anims.generateFrameNumbers('hub_sprite', {start: 5, end: 9}),
+    frameRate: 4,
+    repeat: -1
+  })
+
+  anims.create({
     key: 'diretora_idle',
     frames: anims.generateFrameNumbers('diretora_npc', {start: 0, end: 5}),
     frameRate: 4,
