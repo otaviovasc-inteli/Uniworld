@@ -224,7 +224,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o jogador. Ao interagir com os NPCs, o personagem terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 2 NPCs diferentes, com o design a seguir:
 
-<img src="../assets/Dvdd.png">
+<img src="../assets/Dvdd.png">    
 <img src="../assets/diretora.png">
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
@@ -233,7 +233,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 <div align="center">
 <sub>Figura 4 - Ilustração do ambiente Quarto</sub>
-<img src="../assets/playerSelecter.jpg" width="100%">
+<img src="../assets/PlayerSelecter.jpg">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -293,7 +293,7 @@ Figura 2: Descrição dos objetos dispostos na segunda cena de combate, como pla
 
 <div align="center">
 <sub>Figura 3 - Página de preload - Exemplo de modularização do código</sub>
-<img src="../assets/concept_map_4.png" width="100%">
+<img src="../assets/concept_cena_combate_2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -327,9 +327,10 @@ Licensas: https://mixkit.co/license/#sfxFree
 --- | --- | --- | --- | --- | --- | ---
 1 | Slime verde | <img src="../assets/bestiario/greenSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
 2 | Slime roxo | <img src="../assets/bestiario/purpleSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
-3 | Fumaçinha | <img src="../assets/bestiario/smokeImagem.png"> | Segunda cena de combate | Anda na direção do player e possui 2 de vida e 1 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
-4 | Chefe Desmatamento | <img src="../assets/bestiario/reiMamentoImagem.png"> | No final do nível 2 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
-5 | Rei da Poluição | <img src="../assets/bestiario/mudImagem.png"> | No final do nível 3 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
+3 | Smoke | <img src="../assets/bestiario/smokeImagem.png"> | Segunda cena de combate | Anda na direção do player e possui 2 de vida e 1 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
+4 | BlackSmoke | <img src="../assets/blacksmoke.png"> | Segunda cena de combate | Anda na direção do player e possui 3 de vida e 1 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
+5 | Chefe Desmatamento | <img src="../assets/bestiario/reiMamentoImagem.png"> | No final do nível 2 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
+6 | Rei da Poluição | <img src="../assets/bestiario/mudImagem.png"> | No final do nível 3 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
 
 ## 3.5. Gameflow (Diagrama de cenas)
 
