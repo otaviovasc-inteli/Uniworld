@@ -247,7 +247,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     if(sprite === 'rexona') {
       centerX = this.scene.cameras.main.centerX;
       centerY = this.scene.cameras.main.centerY;
-    } else {
+    } else { // Else use location of NPC
       centerX = this.npcPlayer.x;
       centerY = this.npcPlayer.y;
     }
@@ -278,6 +278,12 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         // Answers text
         this.answerTexts.push(this.scene.add.text(centerX - 210, centerY + (55 * index) - 80, answers[index], { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2))
 
+        answerButton.on('pointerover', () => {
+          answerButton.setScale(4.6)
+        });
+        answerButton.on('pointerout', () => {
+          answerButton.setScale(3.8)
+        });
         // Checking if the selected button is the correct answer
         answerButton.on('pointerdown', () => {
             if (letter === correctAnswerLetter) {
@@ -360,8 +366,6 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
   // Build hub images links and texts
   hubLogic() {
-    this.npcPlayer.checkPoint()
-
     // Get texts and urls from hubTexts.js
     const url1 = this.texts[0]
     const url2 = this.texts[1]
@@ -431,6 +435,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           this.clicksCount = this.link1Clicked + this.link2Clicked;
           this.updateProgressBar(); // Call a function to update the progress bar
         }
+        if (this.link1Clicked && this.link2Clicked) // If both links are clicked, set checkpoint
+          this.npcPlayer.checkPoint()
       });
     }
 
@@ -442,6 +448,8 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           this.clicksCount = this.link1Clicked + this.link2Clicked;
           this.updateProgressBar(); // Call a function to update the progress bar
         }
+        if (this.link1Clicked && this.link2Clicked) // If both links are clicked, set checkpoint
+          this.npcPlayer.checkPoint()
       });
     }
 
@@ -458,7 +466,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     }
   }
 
-  updateProgressBar() {
+  updateProgressBar() { // Similar to healthbar system
     const fillWidth = this.clicksCount * (880 / 2);
     this.progressBarFill.clear();
     this.progressBarFill.fillStyle(0x00ff00, 1);

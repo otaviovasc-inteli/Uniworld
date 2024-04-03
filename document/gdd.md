@@ -119,7 +119,7 @@ Nosso público alvo são pessoas com perfil médio de estagiários na Unilever, 
 
 ## 2.1. Objetivos do Jogo 
 
-&nbsp;&nbsp;&nbsp;&nbsp;O jogador precisa derrotar inimigos pelo mapa, concluir os quizzes e derrotar o chefão da fase, nas duas cenas de combate. Desse modo, o jogador será capaz de concluir o jogo integralmente. Conforme solicitado, nenhuma das partes anteriormente citadas será uma barreira para o colaborador completar o processo de integração.
+&nbsp;&nbsp;&nbsp;&nbsp;O jogador precisa derrotar inimigos pelo mapa, concluir trilhas de treinamento da Unilever, os quizzes e derrotar o chefão da fase, nas duas cenas de combate. Desse modo, o jogador será capaz de concluir o jogo integralmente. Conforme solicitado, nenhuma das partes anteriormente citadas (exceto trilhas obrigatórias) será uma barreira para o colaborador completar o processo de integração.
 
 ## 2.2. Características do Jogo
 
