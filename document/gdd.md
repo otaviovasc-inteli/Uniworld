@@ -224,7 +224,8 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o jogador. Ao interagir com os NPCs, o personagem terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 2 NPCs diferentes, com o design a seguir:
 
-<img src="../assets/Dvdd.png">    <img src="../assets/diretora.png">
+<img src="../assets/Dvdd.png">    
+<img src="../assets/diretora.png">
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
