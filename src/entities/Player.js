@@ -330,6 +330,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   takesHit(source) {
     if (this.hasBeenHit) return
 
+    if (source.traveledDistance) source.destroyProjectile()
+
     this.hurtSound.play()
     this.hasBeenHit = true
     this.hp.decrease(source.damage) // Monster damage
