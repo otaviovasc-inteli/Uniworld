@@ -853,19 +853,52 @@ Com base no feedback dos testes realizados em 27/03/2024, identificamos áreas d
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros
 
-&nbsp;&nbsp;&nbsp;&nbsp;À caminho da sprint final, o grupo foi capaz de identificar alguns aspectos como futuras dificuldades e futuros planos para a última etapa do projeto. Durante a entrega da sprint e os testes dos jogos com funcionários Unilever, fomos capazes de validar mecânicas de movimentação, efeitos visuais e sonoros e outras funcionalidades em jogo de modo geral. Além disso, também recebemos feedbacks em relação à finalidade corporativa do jogo, ensinar e instruir os novos funcionários no processo de onboarding da Unilever, de modo interativo e acessível para todos os públicos, seja mais ou menos habituados com jogos.
-&nbsp;&nbsp;&nbsp;&nbsp;Assim, é possível concluir que dentre os futuros planos da equipe incluem a inclusão de mais personagens não jogáveis (NPCs) ao decorrer do jogo, para relembrar comandos e fornecer instruções. Além disso, refinar disposição do hub de links e frisar a impossibilidade de prosseguir dentro do jogo mediante não conclusão dos questionários propostos, facilitar o nível de dificuldade do jogo e outros ajustes menores, mas que seguem a mesma linha de raciocínio.
-&nbsp;&nbsp;&nbsp;&nbsp;Por fim, algumas das dificuldades seriam o tempo restante para a conclusão e apresentação do projeto ao parceiro e a inclusão de um idioma extra, além dos ajustes necessários com NPCs. Porém, acreditamos que a última quinzena será mais do que suficiente para a finalização do produto.
+&nbsp;&nbsp;&nbsp;&nbsp;À medida que nos aproximamos da fase final de desenvolvimento, refletimos sobre o valioso feedback obtido através de playtests com funcionários da Unilever. Identificamos aspectos cruciais para aprimoramento, como o equilíbrio da dificuldade do jogo, a necessidade de opções para gerenciar a música de fundo ao longo do jogo, e a clareza das instruções fornecidas aos jogadores.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Reconhecemos a importância de uma experiência de aprendizado envolvente e livre de frustrações. Por isso, planejamos incorporar adições explicativas e ícones acessíveis, juntamente com diálogos adicionais ao longo das fases, garantindo assim que todos os jogadores, independentemente da sua experiência com videogames, possam avançar no jogo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Nossas futuras implementações terão o objetivo de resolver esses empecilhos, como a adição de ainda mais personagens não jogáveis (NPCs) ao decorrer do jogo, para manter o funcionário em contante contato com o enredo, refinar a disposição do Heads-Up Display (HUD), impossibilitar a progressão sem a conclusão dos conteúdos educativose e adicionar outros idiomas.
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, como equipe, queremos transmitir que esse projeto é muito mais que apenas um jogo, é uma jornada em direção à inovação na educação corporativa e no engajamento de funcionários. O feedback que recebemos é uma forma de entendermos que o que estamos fazendo possui o nosso compromisso com a excelência e a melhoria contínua. Enquanto nos preparamos para as etapas finais de desenvolvimento, mantemos nosso foco no objetivo de criar um jogo que seja não apenas divertido, mas também uma ferramenta de aprendizado e integração para a Unilever.
+
 
 # <a name="c7"></a>7. Referências
 
-_Incluir as principais referências de seu projeto, para que seu parceiro possa consultar caso ele se interessar em aprofundar. Um exemplo de referência de livro e de site:_<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Segue a seguir as referências do material utilizado para a produção do Game Desing Document e jogo.
 
-LUCK, Heloisa. Liderança em gestão escolar. 4. ed. Petrópolis: Vozes, 2010. <br>
-SOBRENOME, Nome. Título do livro: subtítulo do livro. Edição. Cidade de publicação: Nome da editora, Ano de publicação. <br>
 
-INTELI. Adalove. Disponível em: https://adalove.inteli.edu.br/feed. Acesso em: 1 out. 2023 <br>
-SOBRENOME, Nome. Título do site. Disponível em: link do site. Acesso em: Dia Mês Ano
+Minetto, Bianca. Matriz de Riscos (Matriz de Probabilidade e Impacto). Disponível em: <https://ferramentasdaqualidade.org/matriz-de-riscos-matriz-de-probabilidade-e-impacto/>. Acesso em: 22 fev. 2024.
+
+STRATEGYZER. Strategyzer’s Value Proposition Canvas Explained. YouTube, 7 mar. 2017. Disponível em: <https://www.youtube.com/watch?v=ReM1uqmVfP0>. Acesso em: 22 fev. 2024.
+
+Eiko, Júlia. O que é Concept Art?. Disponível em: <https://revospace.com.br/artigo/o-que-e-concept-art/>. Acesso em: 20 fev. 2024.
+
+
+NOIZ, Criatividade ENTENDA TUDO SOBRE A TEORIA DAS CORES. YouTube, 28 set. 2016. Disponível em: <https://www.youtube.com/watch?v=IWTAIUiLJvk>.Acesso em: 2 abr. 2024.
+
+
+GRIGG, A. Animation Basics in 14 Minutes (6 Big ideas for beginners). YouTube, 6 abr. 2022. Disponível em: <https://www.youtube.com/watch?v=pF--YKCCUMw>. Acesso em: 5 abr. 2024.
+
+
+Paula, Ana. O que é e como funciona a Estrutura de Dados Lista. Disponível em: <https://www.treinaweb.com.br/blog/o-que-e-e-como-funciona-a-estrutura-de-dados-lista#google_vignette>. Acesso em: 2 abr. 2024.
+
+
+Monory, Tony. How to Create a Parallax Background in Phaser. Disponível em: <https://www.joshmorony.com/how-to-create-a-parallax-background-in-phaser/>. Acesso em: 3 abr. 2024.
+
+
+CASAROTTO, C. As 5 forças de Porter: o que são, para que servem e como aplicar?. Disponível em: <https://rockcontent.com/br/blog/5-forcas-de-porter/> Acesso em: 7 abr. 2024.
+
+
+BÓSON TREINAMENTOS. O que é Programação Orientada a Objetos - Conceitos Básicos de POO. YouTube, 28 out. 2020. Disponível em: <https://www.youtube.com/watch?v=dG7LlYne2VA>. Acesso em: 16 abr. 2024.
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;Estas referências foram de demasiada importância e nos auxiliaram durante o processo de produção do nosso projeto. Cada link, artigo, site, desempenhou um papel fundamental na moldagem das nossas ideias, fornecendo percepções e insights em áreas como design, narrativa, mecânicas e negócios.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Agradecemos profundamente a todos os autores, criadores e educadores cujos trabalhos contribuíram para a riqueza e profundidade do nosso projeto. Sem a disponibilidade do conhecimento compartilhado através destas fontes, atravessar pelos desafios do desenvolvimento de jogos seria mais desafiador.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Por fim, reconhecemos que o processo criativo é contínuo e colaborativo. Continuaremos a buscar conhecimento e inspiração nas obras de profissionais da indústria e acadêmicos enquanto avançamos em nossos próprios caminhos criativos e técnicos.
 
 # <a name="c8"></a>Anexos
 
