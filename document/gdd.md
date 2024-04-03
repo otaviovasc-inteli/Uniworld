@@ -233,7 +233,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 <div align="center">
 <sub>Figura 4 - Ilustração do ambiente Quarto</sub>
-<img src="../assets/playerSelecter.jpg" width="100%">
+<img src="../assets/mvp/playerSelecter.jpg" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
