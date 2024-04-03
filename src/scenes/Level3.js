@@ -34,19 +34,20 @@ export default class Level3 extends Phaser.Scene {
     const boss = new BossLevel3(this, 8312, 1344, 'boss_level3', player).setDepth(3).setScale(1.4)
 
     //colocando o Npc de links no terceiro mapa
-    const dvdNpc = new Npc(this, 6828, 1659, "hub_sprite", "hub3", player)
+    new Npc(this, 1220, 2485, "hub_sprite", "hub3", player)
       .setSize(100, 120)
       .setScale(1.2)
       .setFlip(true, false);
 
-    const dvdNpc2 = new Npc(this, 5828, 2109, "hub_sprite", "hub4", player)
+    new Npc(this, 6828, 1659, "hub_sprite", "hub4", player)
       .setSize(100, 120)
       .setScale(1.2)
       .setFlip(true, false);
 
-    const kibonNpc = new Npc(this, 8342, 1500, 'kibon_sprite', 'kibon', player)
-    .setSize(150, 120)
-    .setDepth(2)
+
+    new Npc(this, 8342, 1500, 'kibon_sprite', 'kibon', player)
+      .setSize(150, 120)
+      .setDepth(2)
 
     this.physics.world.bounds.height = map.heightInPixels;
     this.physics.world.bounds.width = map.widthInPixels;

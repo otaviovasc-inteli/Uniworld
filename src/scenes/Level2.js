@@ -33,20 +33,20 @@ export default class Level2 extends Phaser.Scene {
     const boss = new BossLevel2(this, 9664, 960, 'boss_level2', player).setDepth(3)
 
     // RexonaNpc sprite
-    const dvdNpc = new Npc(this, 7420, 700, 'hub_sprite', 'hub', player)
-    .setSize(100, 120)
-    .setScale(1.2)
+    new Npc(this, 950, 1659, 'hub_sprite', 'hub', player)
+      .setSize(100, 120)
+      .setScale(1.2)
 
     //colocando o Npc de links no terceiro mapa
-    const dvdNpc2 = new Npc(this, 6828, 1659, "hub_sprite", "hub2", player)
+    new Npc(this, 7420, 700, "hub_sprite", "hub2", player)
       .setSize(100, 120)
       .setScale(1.2)
 
     // Npc sprite
-    const omoNpc = new Npc(this, 9664, 1150, 'omo_sprite', 'omo', player)
-    .setScale(0.6)
-    .setSize(150, 120)
-    .setDepth(2)
+    new Npc(this, 9664, 1150, 'omo_sprite', 'omo', player)
+      .setScale(0.6)
+      .setSize(150, 120)
+      .setDepth(2)
 
     // Set world bounds based on maps
     this.physics.world.bounds.height = map.heightInPixels;

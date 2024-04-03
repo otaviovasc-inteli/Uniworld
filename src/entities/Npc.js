@@ -366,13 +366,15 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
   // Build hub images links and texts
   hubLogic() {
+    this.destroyHub()
+    this.scene.cameras.main.setZoom(0.85)
+
     // Get texts and urls from hubTexts.js
     const url1 = this.texts[0]
     const url2 = this.texts[1]
     const dialogTexts = this.texts[2]
     let finishedDialog = false
 
-    this.destroyHub()
 
     // Dialog box modal
     if (this.dialogIndex >= dialogTexts.length) {
@@ -392,15 +394,15 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     // Those if's check if the element already exists so it wont double them.
     // Add hub screen and x button if they dont exist already
     if (!this.screen) this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y - 50, "hub_screen").setDepth(1)
-    if (!this.xBtnLink) this.xBtnLink = this.scene.add.image(this.npcPlayer.x + 380, this.npcPlayer.y - 290, "hub_close").setDepth(2).setScale(0.05)
+    if (!this.xBtnLink) this.xBtnLink = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 290, "hub_close").setDepth(2).setScale(0.06)
 
     // Clickable links
     if (!this.link_button1) this.link_button1 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 110  - 50, 'hub_link_button').setDepth(2).setScale(0.5).setInteractive();
     if (!this.link_button2) this.link_button2 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 20 - 70, 'hub_link_button').setDepth(2).setScale(0.5).setInteractive();
 
     // Add text labels
-    if (!this.text_hub_1) this.text_hub_1 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 130 - 50, url1[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(2);
-    if (!this.text_hub_2) this.text_hub_2 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 40 - 70, url2[1], { font: '40px Arial', fill: '#ffffff' }).setDepth(2);
+    if (!this.text_hub_1) this.text_hub_1 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 130 - 50, url1[1], { font: '40px Arial', fill: '#0060bb' }).setDepth(2);
+    if (!this.text_hub_2) this.text_hub_2 = this.scene.add.text(this.npcPlayer.x - 450, this.npcPlayer.y - 40 - 70, url2[1], { font: '40px Arial', fill: '#0060bb' }).setDepth(2);
 
      // Draw progress bar background if it doesn't exist
     if (!this.progressBarBg) {
@@ -415,7 +417,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     } else {
         this.progressBarFill.clear(); // Clear previous fill
     }
-    this.progressBarFill.fillStyle(0x00ff00, 1); // Green color for the fill
+    this.progressBarFill.fillStyle(0x00a2ff, 1); // Blue color for the fill
     // Calculate fill width based on clicks count
     this.clicksCount = 0
     const fillWidth = this.clicksCount * (880 / 2);
@@ -428,6 +430,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
     // Add links to the buttons
     if(finishedDialog){
+      // Link button1
       this.link_button1.on('pointerdown', () => {
         window.open(url1[0], '_blank'); // Open in a new tab
         if (!this.link1Clicked) {
@@ -438,9 +441,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         if (this.link1Clicked && this.link2Clicked) // If both links are clicked, set checkpoint
           this.npcPlayer.checkPoint()
       });
-    }
-
-    if(finishedDialog){
+      // Link button2
       this.link_button2.on('pointerdown', () => {
         window.open(url2[0], '_blank'); // Open in a new tab
         if (!this.link2Clicked) {
@@ -450,6 +451,20 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         }
         if (this.link1Clicked && this.link2Clicked) // If both links are clicked, set checkpoint
           this.npcPlayer.checkPoint()
+      });
+
+      // Hover effects
+      this.link_button1.on('pointerover', () => {
+        this.link_button1.setFrame(1)
+      });
+      this.link_button2.on('pointerover', () => {
+        this.link_button2.setFrame(1)
+      });
+      this.link_button1.on('pointerout', () => {
+        this.link_button1.setFrame(0)
+      });
+      this.link_button2.on('pointerout', () => {
+        this.link_button2.setFrame(0)
       });
     }
 
@@ -469,12 +484,13 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
   updateProgressBar() { // Similar to healthbar system
     const fillWidth = this.clicksCount * (880 / 2);
     this.progressBarFill.clear();
-    this.progressBarFill.fillStyle(0x00ff00, 1);
+    this.progressBarFill.fillStyle(0x00a2ff, 1);
     this.progressBarFill.fillRect(this.npcPlayer.x - 450, this.npcPlayer.y - 50, fillWidth, 40);
   }
 
   destroyHub(){
     // Destroy images and end function
+    this.scene.cameras.main.setZoom(this.scene.zoomFactor)
     this.npcPlayer.resumeUpdate()
     if (this.screen) this.screen.destroy()
     this.screen = null
