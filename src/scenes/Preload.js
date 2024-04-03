@@ -15,7 +15,8 @@ export default class Preload extends Phaser.Scene {
     this.load.image("blue-bg", "assets/selection/bg-lightblue.png")
     // ------------------------------------------------------------------
     // Tutorial
-    this.load.video('tutorial', 'assets/links/videoTutorial1.mp4');
+    this.load.video('tutorialPt', 'assets/links/videoTutorial1.mp4');
+    this.load.video('tutorialEn', 'assets/links/videoTutorial1En.mp4');
     this.load.video('rexonaTutorial', 'assets/links/videoTutorialQ.mp4')
     this.load.video('kibonTutorial', 'assets/links/videoTutorialW.mp4')
     // ------------------------------------------------------------------
@@ -65,7 +66,7 @@ export default class Preload extends Phaser.Scene {
 
     // ------------------------------------------------------------------
      // Congrats
-    this.load.image('congrats_bg', 'assets/congratulation/congratulation.png');     
+    this.load.image('congrats_bg', 'assets/congratulation/congratulation.png');
      // ------------------------------------------------------------------
     // Hub
     this.load.spritesheet('hub_sprite', 'assets/level2/dvd_npc.png', { frameWidth: 256, frameHeight: 160 });
@@ -81,10 +82,10 @@ export default class Preload extends Phaser.Scene {
     // ------------------------------------------------------------------
     // Players
     this.load.spritesheet("projectile", "./assets/player/projectiles/projectile_rexonna2.png", { frameWidth: 254, frameHeight: 232 });
-    this.load.spritesheet("player1", "assets/player/player1.png", { frameWidth: 256, frameHeight: 256 });
-    this.load.spritesheet("player2", "assets/player/player2.png", { frameWidth: 256, frameHeight: 256 });
-    this.load.spritesheet("player3", "assets/player/player3.png", { frameWidth: 256, frameHeight: 256 });
-    this.load.spritesheet("player4", "assets/player/player4.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player1_0", "assets/player/player1.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player2_0", "assets/player/player2.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player3_0", "assets/player/player3.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player4_0", "assets/player/player4.png", { frameWidth: 256, frameHeight: 256 });
     this.load.spritesheet("dash_anim", "assets/player/dash.png", { frameWidth: 128, frameHeight: 128 });
     this.load.spritesheet("collect_sprite", "assets/player/collect_sprite.png", { frameWidth: 256, frameHeight: 208 });
     //-------------------------------------------------------------------
