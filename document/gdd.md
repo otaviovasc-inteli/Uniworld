@@ -293,7 +293,7 @@ Figura 2: Descrição dos objetos dispostos na segunda cena de combate, como pla
 
 <div align="center">
 <sub>Figura 3 - Página de preload - Exemplo de modularização do código</sub>
-<img src="../assets/concept_map_4.png" width="100%">
+<img src="../assets/concept_cena_combate_2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
