@@ -238,8 +238,8 @@ export default class Level3 extends Phaser.Scene {
   }
 
   setupFollowupCameraOn(player, map) {
-    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
-    this.cameras.main.startFollow(player, true);
+    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels); // Set camera boundaries
+    this.cameras.main.startFollow(player, true) // Camera follows player
     this.cameras.main.setZoom(this.zoomFactor);
   }
 

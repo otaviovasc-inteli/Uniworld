@@ -214,9 +214,9 @@ export default class Level2 extends Phaser.Scene {
   }
 
   setupFollowupCameraOn(player, map) {
-    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)
-    this.cameras.main.setZoom(this.zoomFactor);
-    this.cameras.main.startFollow(player, true)
+    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels)// Set camera boundaries
+    this.cameras.main.startFollow(player, true) // Camera follows player
+    this.cameras.main.setZoom(this.zoomFactor); // Set Zoom
   }
 
   // Handle sounds logics
@@ -240,7 +240,7 @@ export default class Level2 extends Phaser.Scene {
   }
 
   createEnv() {
-    // Aviao
+    // Plane decoration
     this.plane = this.add.sprite(600, 1000, 'aviao_unilever')
       .setOrigin(0, 0).setScale(0.7).setAlpha(0.6).setDepth(-2);
     this.anims.create({
@@ -251,8 +251,8 @@ export default class Level2 extends Phaser.Scene {
     });
     this.plane.play('aviao', true)
 
-    // Balao
-    this.balao = this.add.sprite(2100, 700, 'balao_unilever')
+    // Baloon Decoration
+    this.baloon = this.add.sprite(2100, 700, 'balao_unilever')
       .setOrigin(0, 0).setScale(0.8).setAlpha(0.8).setDepth(-1);
     this.anims.create({
       key: 'balao',
@@ -260,9 +260,9 @@ export default class Level2 extends Phaser.Scene {
       frameRate: 2,
       repeat: -1
     });
-    this.balao.play('balao')
+    this.baloon.play('balao')
 
-    // Placas
+    // Signs Decoration
     this.add.image(600, 1680, 'placa_unilever').setScale(0.8).setDepth(-5)
     this.add.image(3100, 1680, 'placa_unilever').setScale(0.8).setDepth(-5)
   }
