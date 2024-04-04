@@ -805,7 +805,7 @@ Item liberado pelo boss após ser derrotado.
 
 <div align="center">
 <sub>Figura 27 - Destruição de Projetil </sub>
-<img src="../assets/4.5/hubCode.png" width="100%">
+<img src="../assets/4.5/traveledDistance.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 
 
