@@ -51,7 +51,7 @@
 
 ### 1.1.3. Descrição da Solução Desenvolvida
 
-&nbsp;&nbsp;&nbsp;&nbsp;A Unilever, apesar de sua posição como empresa líder global, identificou defasagens em seu processo de onboarding, notada na baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o onboarding, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa. 
+&nbsp;&nbsp;&nbsp;&nbsp;A Unilever, apesar de sua posição como empresa líder global, identificou defasagens em seu processo de onboarding, notada na baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o onboarding, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa.
 A solução proposta será utilizada como uma ferramenta interativa e dinâmica, apresentando-se na forma de um jogo personalizado destinado a envolver ativamente os novos membros da empresa. Os benefícios almejados incluem aumento na retenção de informações, uma compreensão mais profunda da empresa e um alinhamento eficaz com os valores e objetivos da Unilever. O critério de sucesso será medido através de análises periódicas de desempenho, satisfação e engajamento, visando proporcionar uma transição positiva para o ambiente de trabalho da Unilever.
 
 ### 1.1.4. Proposta de Valor
@@ -96,7 +96,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 \# | Requisito
 --- | ---
-1 | Recompensas por responder perguntas relacionadas à Unilever 
+1 | Recompensas por responder perguntas relacionadas à Unilever
 2 | Os controles serão: seta cima, esquerda, baixo, direita, Q W e E
 3 | HUB de direcionamento para trilhas específicas de Onboarding da Unilever
 4 | Apresentação de informações públicas da empresa de forma gamificada
@@ -117,7 +117,7 @@ Nosso público alvo são pessoas com perfil médio de estagiários na Unilever, 
 
 # <a name="c2"></a>2. Visão Geral do Jogo
 
-## 2.1. Objetivos do Jogo 
+## 2.1. Objetivos do Jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogador precisa derrotar inimigos pelo mapa, concluir trilhas de treinamento da Unilever, os quizzes e derrotar o chefão da fase, nas duas cenas de combate. Desse modo, o jogador será capaz de concluir o jogo integralmente. Conforme solicitado, nenhuma das partes anteriormente citadas (exceto trilhas obrigatórias e quizzes) será uma barreira para o colaborador completar o processo de integração.
 
@@ -224,7 +224,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o jogador. Ao interagir com os NPCs, o personagem terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 2 NPCs diferentes, com o design a seguir:
 
-<img src="../assets/Dvdd.png">    
+<img src="../assets/Dvdd.png">
 <img src="../assets/diretora.png">
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
@@ -325,7 +325,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 &nbsp;&nbsp;&nbsp;&nbsp;O bestiário é constituído por todos os inimigos presentes dentro do jogo.
 \# | Inimigo |  | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
-1 | Slime verde | <img src="../assets/bestiario/greenSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime 
+1 | Slime verde | <img src="../assets/bestiario/greenSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
 2 | Slime roxo | <img src="../assets/bestiario/purpleSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 3 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
 3 | Smoke | <img src="../assets/bestiario/smokeImagem.png"> | Segunda cena de combate | Anda na direção do player e possui 2 de vida e 1 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
 4 | BlackSmoke | <img src="../assets/blacksmoke.png"> | Segunda cena de combate | Anda na direção do player e possui 3 de vida e 1 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
@@ -356,7 +356,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 3.6. Regras do jogo
 
-&nbsp;&nbsp;&nbsp;&nbsp;O jogador deve concluir a fase, ganhando *power-ups* e derrotando os inimigos. Além disso, deve derrotar dois *boss*, o Rei desmatamento e o Rei poluição. Ao derrotar cada rei, o jogador deverá responder um quiz para ganhar o *power-up*. Caso ele acerte, vai receber uma bonificação em alguma habilidade (força, alcance, velocidade...). 
+&nbsp;&nbsp;&nbsp;&nbsp;O jogador deve concluir a fase, ganhando *power-ups* e derrotando os inimigos. Além disso, deve derrotar dois *boss*, o Rei desmatamento e o Rei poluição. Ao derrotar cada rei, o jogador deverá responder um quiz para ganhar o *power-up*. Caso ele acerte, vai receber uma bonificação em alguma habilidade (força, alcance, velocidade...).
 ## 3.7. Mecânicas do jogo (sprint 3)
 
 &nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem irá dar um pulo duplo. Outra tecla importante para a jogabilidade proposta no nosso game é a tecla E, que usa a mecânica de interação, caso apertada ao lado de um NPC ou power-up. Por fim, a tecla Q é responsável pela mecânica de ataque do jogador e a tecla W pela mecânica de movimentação de avanço rápido.
@@ -423,7 +423,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 &nbsp;&nbsp;&nbsp;&nbsp;A escolha de manter um ambiente colorido, combinado com desafios ambientais, foi pensada na ideia de oferecer entretenimento e também uma jogabilidade que promova o aprendizado e o engajamento dos funcionários. Aprimorar a narrativa da Unilever, com a missão de recuperar as marcas roubadas pelos vilões, foi uma decisão estratégica para alinhar o jogo com os valores e objetivos da empresa, tornando-o relevante e significativo para o público-alvo.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Os controles simplificados e a jogabilidade intuitiva foram aprimorados após avaliar feedbacks e testes anteriores, visando oferecer uma experiência mais fluida e imersiva para os jogadores. Adicionamos elementos como power-ups, NPCs informativos e recompensas estrategicamente para enriquecer a experiência de jogo. 
+&nbsp;&nbsp;&nbsp;&nbsp;Os controles simplificados e a jogabilidade intuitiva foram aprimorados após avaliar feedbacks e testes anteriores, visando oferecer uma experiência mais fluida e imersiva para os jogadores. Adicionamos elementos como power-ups, NPCs informativos e recompensas estrategicamente para enriquecer a experiência de jogo.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Visualmente, o estilo pixel art e a trilha sonora foram refinados para criar uma atmosfera envolvente e atraente, garantindo uma imersão total no universo do jogo e fortalecendo a identidade visual e sonora do projeto.
 
@@ -438,7 +438,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 &nbsp;&nbsp;&nbsp;&nbsp;Além disso, buscamos complementar a estética dos mapas com imagens do itch.io, que trouxeram detalhes e elementos visuais adicionais para enriquecer a experiência dos jogadores. Essa combinação de recursos e ferramentas resultou em ambientes gráficos detalhados, coesos e envolventes, garantindo uma jornada visualmente estimulante e imersiva ao explorar os diversos cenários do jogo.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Dentro do âmbito técnico, o jogo já possui grandes avanços. Antes mesmo da programação do jogo em si houve a criação de uma tela de pré-carregamento dedicada, garantindo uma modularidade do código, onde todos os preloads poderiam ser encontrados de uma vez só. Essa tela é essencial para carregar todos os recursos necessários, como imagens, áudios e outros ativos, otimizando assim o desempenho geral do jogo. 
+&nbsp;&nbsp;&nbsp;&nbsp;Dentro do âmbito técnico, o jogo já possui grandes avanços. Antes mesmo da programação do jogo em si houve a criação de uma tela de pré-carregamento dedicada, garantindo uma modularidade do código, onde todos os preloads poderiam ser encontrados de uma vez só. Essa tela é essencial para carregar todos os recursos necessários, como imagens, áudios e outros ativos, otimizando assim o desempenho geral do jogo.
 <div align="center">
 <sub>Figura 2 - Página de preload - Exemplo de modularização do código</sub>
 <img src="../assets/Desenvolvimento/Preload_1.png" width="100%">
@@ -446,7 +446,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Em seguida, iniciamos o processo de confecção do jogo em si. Buscando referências externas, chegamos a conclusão que em jogos desse estilo, é natural trazer uma tela de título antes da jogatina, no intuito de induzir o jogador a querer iniciar o jogo, mas além disso, buscamos já imergir o jogador no estilo de arte pixelada que ele encontrará ao longo da aventura, e mergulhar os jogadores em uma atmosfera nostálgica desde o início. 
+&nbsp;&nbsp;&nbsp;&nbsp;Em seguida, iniciamos o processo de confecção do jogo em si. Buscando referências externas, chegamos a conclusão que em jogos desse estilo, é natural trazer uma tela de título antes da jogatina, no intuito de induzir o jogador a querer iniciar o jogo, mas além disso, buscamos já imergir o jogador no estilo de arte pixelada que ele encontrará ao longo da aventura, e mergulhar os jogadores em uma atmosfera nostálgica desde o início.
 <div align="center">
 <sub>Figura 3 - Página de título - Apresentação inicial do game</sub>
 <img src="../assets/Desenvolvimento/titleScreen.png" width="100%">
@@ -466,7 +466,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Dando um passo adiante na direção da inclusão e diversidade, foi encontrado em uma pesquisa de público alvo uma necessidade latente de englobar a diversidade dentro do jogo. Por conta disso, implementamos um sistema de seleção de personagens complexo. Os jogadores podem escolher entre quatro personagens diferentes, cada um com suas próprias características e aparências únicas. 
+&nbsp;&nbsp;&nbsp;&nbsp;Dando um passo adiante na direção da inclusão e diversidade, foi encontrado em uma pesquisa de público alvo uma necessidade latente de englobar a diversidade dentro do jogo. Por conta disso, implementamos um sistema de seleção de personagens complexo. Os jogadores podem escolher entre quatro personagens diferentes, cada um com suas próprias características e aparências únicas.
 <div align="center">
 <sub>Figura 6 - Inclusão e Diversidade - Player select</sub>
 <img src="../assets/Desenvolvimento/character_select.png" width="100%">
@@ -734,7 +734,88 @@ Item liberado pelo boss após ser derrotado.
 
 ## 4.5. Revisão do MVP
 
-*Descreva e ilustre aqui o desenvolvimento dos refinamentos e revisões da versão final do jogo, explicando brevemente o que foi entregue em termos de MVP. Utilize prints de tela para ilustrar.*
+### 4.5.1. Novas funcionalidades:
+
+&nbsp;&nbsp;&nbsp;&nbsp;Começamos a sprint de refinamento implementando um sistema de tradução, atualmente temos as traduções em inglês e português.
+
+<div align="center">
+<sub>Figura 18 - Tela de título - Inglês </sub>
+<img src="../assets/4.5/titleIngles.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+<div align="center">
+<sub>Figura 19 - Tela de título - Português </sub>
+<img src="../assets/4.5/titlePortugues.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+&nbsp;&nbsp;&nbsp;&nbsp; E desenvolvemos os arquivos de dialogo e quiz traduzidos:
+
+<div align="center">
+<sub>Figura 20 - Arquivos de texto </sub>
+<img src="../assets/4.5/textsFolder.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Aqui a variável 'this.language' guarda um texto que pode ser "En" ou "Pt" baseado na escolha feita na tela de título
+
+<div align="center">
+<sub>Figura 21 - Importação modular dos textos traduzidos </sub>
+<img src="../assets/4.5/translationCode.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp; Sprite de Super: Nessa Sprint colocamos em jogo os designs de personagens Super. Atualmente contamos com 16 Sprites sendo eles 4 padrões e 4 Super Sprites para cada um deles:
+
+<div align="center">
+<sub>Figura 22 - Todas as possíveis texturas do Player </sub>
+<img src="../assets/4.5/playerSprites.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Foi implementado através da padronização do nome dos arquivos e criação dinâmica das animações. Toda vez que o player coleta um powerUp, muda a variável 'selectedSprite' para o Sprite correspondente, então deleta as animações antigas e cria as novas como mostrado abaixo:
+
+<div align="center">
+<sub>Figura 23 - Criação das animações </sub>
+<img src="../assets/4.5/playerAnims.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp; O Hub de Links (recurso para aprendizado dos novos colaboradores) foi repensado, melhoramos seu design, adicionamos uma caixa de diálogo e tambem o Checkpoint como sendo a "recompensa" se ambos os links forem abertos. Possuí resposta visual e sonora.
+
+<div align="center">
+<sub>Figura 24 - Hub de Links - 0 Clicks </sub>
+<img src="../assets/4.5/hub0Clicks.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Quando o diálogo é finalizado, é abilitado os clicks nos links, a cada click a barra de progresso sobe, quando vc clica em todos os links a barra completa e o Checkpoint é redefinido para aquela localização.
+
+<div align="center">
+<sub>Figura 25 - Hub de Links - 2 Clicks </sub>
+<img src="../assets/4.5/hub2Clicks.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+&nbsp;&nbsp;&nbsp;&nbsp; Aqui temos um pedaço do código que cria o Hub de links, nesse trecho abrimos uma janela quando o botão é clicado e checamos se ambos os botões ja foram clicados, se sim, define o Checkpoint muda a imagem e toca um som.
+
+<div align="center">
+<sub>Figura 26 - Hub de Links - Código de um botão do link. </sub>
+<img src="../assets/4.5/hubCode.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+### 4.5.2 Resolução de Bugs:
+
+&nbsp;&nbsp;&nbsp;&nbsp; Tinhamos uma inconstância nos projeteis do player, onde em algumas ocasiões o projetil era destruído antes de colidir com um Inimigo, isso acontecia pois não zeravamos a variavel 'this.traveledDistance' quando destruia um projetil, portanto o seguinte ja vinha com um valor elevado nessa variável.
+
+<div align="center">
+<sub>Figura 27 - Destruição de Projetil </sub>
+<img src="../assets/4.5/hubCode.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp; Tambem relacionado àos projeteis, o projetil dos chefões não estavam sendo destruidos após acertar o Player, o que causava um comportamento indesejado de Hit Multiplo. Isso foi facilmente resolvido com a criação de uma função destroyProjectile(destroi o projetil) essa que é chamada dentro da função takesHit(lida com a logica de receber dano) do Player
+
+<div align="center">
+<sub>Figura 28 - Lógica de levar Hit </sub>
+<img src="../assets/4.5/takesHit.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+
 
 # <a name="c5"></a>5. Testes
 
@@ -746,7 +827,7 @@ Item liberado pelo boss após ser derrotado.
 
 
 \# | pré-condição do teste | o que ocorre no teste | resultado esperado do teste
---- | --- | --- | --- 
+--- | --- | --- | ---
 1 | Abrir tela inicial do jogo | Clicar no botão “play” | Iniciar cena 1
 2 | Abrir tela inicial do jogo | Clicar no botão “som” | Silenciar som do jogo
 3 | Posicionar personagem em frente ao notebook | Apertar tecla de interação com o notebook | Abrir diálogo na plataforma teams
@@ -755,12 +836,12 @@ Item liberado pelo boss após ser derrotado.
 6 | Entrar no jogo | Apertar “E” na frente do NPC | Interagir com o  NPC
 7 | Entrar no jogo | Apertar várias vezes o botão “E” na frente do npc   | O jogo não bugar
 8 | Entrar no jogo | Apertar ‘E” com coletáveis   | Coletar o item
-9 | Entrar no jogo | Alguém, que nunca jogou o jogo, vai passar todo o jogo | Conseguir finalizar 
+9 | Entrar no jogo | Alguém, que nunca jogou o jogo, vai passar todo o jogo | Conseguir finalizar
 10 | Entrar no jogo | Alguém, que nunca jogou o jogo, enfrentar os inimigos fáceis | Conseguir finalizar
 11 | Entrar no jogo | Alguém, que nunca jogou, enfrentar o boss | Conseguir matá-lo
-12 | Entrar no jogo | Pular,correr,ficar parado | Movimentação fluida das sprites 
-13 | Entrar no menu  | Ativar e desativar o  som | O som parar (ao clicar em desativar) e voltar (ao clicar em ativar)  
-14 | Entrar na seleção de personagem |  Selecionar personagem | O jogo iniciar com o personagem selecionado 
+12 | Entrar no jogo | Pular,correr,ficar parado | Movimentação fluida das sprites
+13 | Entrar no menu  | Ativar e desativar o  som | O som parar (ao clicar em desativar) e voltar (ao clicar em ativar)
+14 | Entrar na seleção de personagem |  Selecionar personagem | O jogo iniciar com o personagem selecionado
 
 
 
@@ -769,7 +850,7 @@ Item liberado pelo boss após ser derrotado.
 
 
 
- 
+
 
 
 ## 5.2. Testes de jogabilidade (playtests)

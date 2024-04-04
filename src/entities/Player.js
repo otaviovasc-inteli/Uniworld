@@ -338,10 +338,11 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
   takesHit(source) {
     if (this.hasBeenHit) return
 
+    // If source have traveledDistance propertie it is a projectile, so destroy it.
     if (source.traveledDistance) source.destroyProjectile()
 
     this.hurtSound.play()
-    this.hasBeenHit = true
+    this.hasBeenHit = true // Give invulnerability
     this.hp.decrease(source.damage) // Monster damage
     // Check if player died
     if(this.hp.currentHp() < 1) {

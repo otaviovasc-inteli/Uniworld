@@ -15,7 +15,7 @@ export default (anims, selectedPlayer, selectedSprite) =>{
       anims.remove(key);
     }
   });
-
+  
   // Animate the sprites
   anims.create({
     key: 'player_run',

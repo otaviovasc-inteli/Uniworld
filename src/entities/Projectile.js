@@ -66,12 +66,14 @@ export default class Projectile extends Phaser.Physics.Arcade.Sprite {
       this.play(anim, true)
     }
 
+    // Inactive and reset projectile properties
     destroyProjectile() {
       this.activateProjectile(false)
-      this.traveledDistance = 0
       this.body.reset(0, 0)
+      this.traveledDistance = 0 // Reset Traveled distance
     }
 
+    // Switch on/off projectile
     activateProjectile(isActive) {
       this.setActive(isActive)
       this.setVisible(isActive)

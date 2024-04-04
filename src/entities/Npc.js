@@ -47,7 +47,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
       this.texts = textsModule.default;
     } catch (error) {
       console.error(`Error importing texts for ${this.name}:`, error);
-      this.texts = ['Lorem Ipsum Dolor Amet'];
+      this.texts = ['Check Your text import'];
     }
   }
 
