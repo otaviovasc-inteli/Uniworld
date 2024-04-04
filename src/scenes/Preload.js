@@ -84,11 +84,29 @@ export default class Preload extends Phaser.Scene {
     this.load.image('quiz_button_C', 'assets/quiz/quiz_button_C.png');
     // ------------------------------------------------------------------
     // Players
-    this.load.spritesheet("projectile", "./assets/player/projectiles/projectile_rexonna2.png", { frameWidth: 254, frameHeight: 232 });
-    this.load.spritesheet("player1_0", "assets/player/player1.png", { frameWidth: 256, frameHeight: 256 });
-    this.load.spritesheet("player2_0", "assets/player/player2.png", { frameWidth: 256, frameHeight: 256 });
-    this.load.spritesheet("player3_0", "assets/player/player3.png", { frameWidth: 256, frameHeight: 256 });
-    this.load.spritesheet("player4_0", "assets/player/player4.png", { frameWidth: 256, frameHeight: 256 });
+    // Standard
+    this.load.spritesheet("player1_0", "assets/player/player1_0.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player2_0", "assets/player/player2_0.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player3_0", "assets/player/player3_0.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player4_0", "assets/player/player4_0.png", { frameWidth: 256, frameHeight: 256 });
+    // Powerup Rexona
+    this.load.spritesheet("player1_1", "assets/player/player1_1.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player2_1", "assets/player/player2_1.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player3_1", "assets/player/player3_1.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player4_1", "assets/player/player4_1.png", { frameWidth: 256, frameHeight: 256 });
+    // Powerup Omo
+    this.load.spritesheet("player1_2", "assets/player/player1_2.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player2_2", "assets/player/player2_2.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player3_2", "assets/player/player3_2.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player4_2", "assets/player/player4_2.png", { frameWidth: 256, frameHeight: 256 });
+    // Powerup Kibon
+    this.load.spritesheet("player1_3", "assets/player/player1_3.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player2_3", "assets/player/player2_3.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player3_3", "assets/player/player3_3.png", { frameWidth: 256, frameHeight: 256 });
+    this.load.spritesheet("player4_3", "assets/player/player4_3.png", { frameWidth: 256, frameHeight: 256 });
+
+    this.load.spritesheet("projectile0", "./assets/player/projectiles/projectile_rexonna2.png", { frameWidth: 254, frameHeight: 232 });
+    this.load.spritesheet("projectile1", "./assets/player/projectiles/projectile_kibom2.png", { frameWidth: 254, frameHeight: 232 });
     this.load.spritesheet("dash_anim", "assets/player/dash.png", { frameWidth: 128, frameHeight: 128 });
     this.load.spritesheet("collect_sprite", "assets/player/collect_sprite.png", { frameWidth: 256, frameHeight: 208 });
     //-------------------------------------------------------------------
