@@ -140,6 +140,8 @@ export default class Preload extends Phaser.Scene {
     this.load.audio("cityTraffic", 'assets/sounds/level3/cityTraffic.wav');
     this.load.audio("music_level3", 'assets/sounds/level3/cityBattle.mp3');
     this.load.audio("checkpoint_sound", "assets/sounds/checkpoint_sound.wav");
+    this.load.audio("music_level4", 'assets/sounds/level4/music_level4.mp3');
+
 
     // Completed
     this.load.once('complete', () => {

@@ -206,6 +206,8 @@ export default class Level3 extends Phaser.Scene {
 
       console.log("Next level allowed?: " + player.allowedNextLevel);
 
+      this.musicSound.stop()
+
       if(player.allowedNextLevel) {
         this.cameras.main.fadeOut(1000, 0, 0, 0, (camera, progress) => {
           if(progress === 1) this.scene.start("level4", {player: player, playerSelecionado: playerSelecionado});

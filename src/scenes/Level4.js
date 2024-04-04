@@ -11,7 +11,7 @@ export default class level4 extends Phaser.Scene {
   create() {
     console.log("level4");
     // Init all sounds in the level
-    // this.createSounds();
+    this.createSounds();
 
     // FadeIn effect
     this.cameras.main.fadeIn(2000, 30, 30, 0);
@@ -133,12 +133,12 @@ export default class level4 extends Phaser.Scene {
   }
 
   // Handle sounds logics
-  //createSounds() {
+  createSounds() {
   // starts playing music
-  //this.musicSound = this.sound.add("music_level4", {loop: true, volume: 0.2});
+  this.musicSound = this.sound.add("music_level4", {loop: true, volume: 0.2});
 
   // start playing music if not playing already
-  //   if (!this.musicSound.isPlaying)
-  //     this.musicSound.play();
-  // }
+    if (!this.musicSound.isPlaying)
+      this.musicSound.play();
+  }
 }
