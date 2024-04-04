@@ -12,12 +12,12 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     scene.physics.add.existing(this);
     Object.assign(this, collidable);
 
-    // Which player art will be used as sprite
-    if (selectedPlayer) this.selectedPlayer = selectedPlayer;
-
     // Set old player properties when recreating
     if (oldPlayer) this.oldPlayer = oldPlayer;
     else this.oldPlayer = false;
+
+    // Which player art will be used as sprite
+    this.selectedPlayer = this.oldPlayer.selectedPlayer || selectedPlayer;
 
     // Track how many Npc is in the scene
     Player.instanceCount++;
@@ -46,6 +46,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.allowedToShot = this.oldPlayer.allowedToShot || true
     this.allowedToDash = this.oldPlayer.allowedToDash || true
     this.allowedVoidDeath = false
+    this.selectedSprite = this.oldPlayer.selectedSprite || 0
 
     // Health logic and setup
     const leftTopCornerX = (1280 - (1280 / 0.7)) / 2 + 20
@@ -56,7 +57,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     // Projectile properties
     this.projectileCooldown = this.oldPlayer.projectileCooldown || 800; // Cooldown in milliseconds
     this.lastProjectileTime = 0; // Timestamp of the last projectile shot
-    this.projectiles =  new Projectiles(this.scene, "projectile")
+    this.projectileAnimIndex = this.oldPlayer.projectileAnimIndex || 0
+    this.projectiles =  new Projectiles(this.scene, `projectile${this.projectileAnimIndex}`)
     this.lastDirection = Phaser.Physics.Arcade.FACING_RIGHT
 
     // Checkpoint
@@ -80,7 +82,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     // This if is just to not recriate animations.
     if (Player.instanceCount <= 1)
-      initAnimations(this.scene.anims, this.selectedPlayer);
+      initAnimations(this.scene.anims, this.selectedPlayer, this.selectedSprite);
   }
 
   createSounds(scene) {
@@ -127,15 +129,19 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
         this.allowedToShot = true; // Powerup properties
         this.allowedNextLevel = true // Allow player to switch level
+        this.selectedSprite = 1 // Change sprite
+        initAnimations(this.scene.anims, this.selectedPlayer, this.selectedSprite); // Reset animations
         this.powerupTutorial(powerup)
         break;
 
       case 'omo':
         console.log("Collect Omo, projectile cooldown reduce, next level allowed");
         this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
+        this.projectileAnimIndex++;
         this.projectileCooldown = 400; // Powerup properties
         this.allowedNextLevel = true // Allow player to switch level
-        // this.powerupTutorial(powerup)
+        this.selectedSprite = 3 // Change sprite
+        initAnimations(this.scene.anims, this.selectedPlayer, this.selectedSprite); // Reset animations
         break;
 
       case 'kibon':
@@ -143,6 +149,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
         this.allowedToDash = true; // Powerup properties
         this.allowedNextLevel = true // Allow player to switch level
+        this.selectedSprite = 2 // Change sprite
+        initAnimations(this.scene.anims, this.selectedPlayer, this.selectedSprite); // Reset animations
         this.powerupTutorial(powerup)
         break;
 
@@ -257,7 +265,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
       if (currentTime - this.lastProjectileTime > this.projectileCooldown) {
         // Shoot sound
         this.shootSound.play()
-        this.projectiles.fireProjectile(this, "projectile_anim")
+        this.projectiles.fireProjectile(this, `projectile_anim${this.projectileAnimIndex}`)
 
         // Update the last projectile time
         this.lastProjectileTime = currentTime;

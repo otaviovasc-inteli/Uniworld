@@ -1,8 +1,15 @@
 export default anims =>{
   // Animate the sprites
   anims.create({
-    key: 'projectile_anim',
-    frames: anims.generateFrameNumbers('projectile', { start: 0, end: 5}),
+    key: 'projectile_anim0',
+    frames: anims.generateFrameNumbers('projectile0', { start: 0, end: 5}),
+    frameRate: 6,
+    repeat: -1
+  });
+
+  anims.create({
+    key: 'projectile_anim1',
+    frames: anims.generateFrameNumbers('projectile1', { start: 0, end: 5}),
     frameRate: 6,
     repeat: -1
   });
