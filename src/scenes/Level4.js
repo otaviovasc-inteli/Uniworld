@@ -127,9 +127,9 @@ export default class level4 extends Phaser.Scene {
 
   // Set up camera to follow player
   setupFollowupCameraOn(player, map) {
-    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);
+    this.cameras.main.setBounds(0, 0, map.widthInPixels, map.heightInPixels);// Set camera boundaries
+    this.cameras.main.startFollow(player, true) // Camera follows player
     this.cameras.main.setZoom(this.zoomFactor);
-    this.cameras.main.startFollow(player, true);
   }
 
   // Handle sounds logics
