@@ -500,12 +500,32 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     }
   }
 
-  updateProgressBar() { // Similar to healthbar system
+  updateProgressBar() {
+    // Calculate the fill width of the progress bar based on click count
     const fillWidth = this.clicksCount * (880 / 2);
     this.progressBarFill.clear();
-    this.progressBarFill.fillStyle(0x00a2ff, 1);
-    this.progressBarFill.fillRect(this.npcPlayer.x - 450, this.npcPlayer.y - 50, fillWidth, 40);
+    this.progressBarFill.fillStyle(0x00a2ff, 1); // Blue color for the fill
+    this.progressBarFill.fillRect(this.npcPlayer.x - 450, this.npcPlayer.y - 50, fillWidth, 40); // Drawing the progress bar
+
+    // Calculating the progress percentage
+    const progressPercentage = Math.floor((this.clicksCount / 2) * 100); // Adjust if the number of clicks for 100% changes
+
+    // Positioning and updating the percentage text
+    if (!this.progressText) {
+        // If the text does not exist yet, create it and center it within the progress bar
+        this.progressText = this.scene.add.text(0, 0, `${progressPercentage}%`, { font: 'bold 32px Arial', fill: '#0060bb' }).setDepth(3);
+        // Center the text horizontally and vertically within the progress bar
+        this.progressText.setX(this.npcPlayer.x - 450 + (880 / 2) - (this.progressText.width / 2));
+        this.progressText.setY(this.npcPlayer.y - 50 + (40 / 2) - (this.progressText.height / 2));
+    } else {
+        // If the text already exists, just update its content
+        this.progressText.setText(`${progressPercentage}%`);
+        // Make sure the text remains centered after the update
+        this.progressText.setX(this.npcPlayer.x - 450 + (880 / 2) - (this.progressText.width / 2));
+        this.progressText.setY(this.npcPlayer.y - 50 + (40 / 2) - (this.progressText.height / 2));
+    }
   }
+
 
   destroyHub(){
     // Destroy images and end function
@@ -538,6 +558,11 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     if (this.progressBarFill) {
       this.progressBarFill.destroy();
       this.progressBarFill = null;
+    }
+
+    if (this.progressText) {
+      this.progressText.destroy();
+      this.progressText = null;
     }
 
     // Reset clicks count
