@@ -329,7 +329,7 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     }
 
     // Prevents player from falling too fast and passing through the ground
-    const maxFallSpeed = 1000
+    const maxFallSpeed = 800
     if (this.body.velocity.y > maxFallSpeed) {
       this.body.setVelocityY(maxFallSpeed)
     }

@@ -1,6 +1,7 @@
 export default class TitleScreen extends Phaser.Scene {
   constructor() {
     super("titleScreen");
+    this.languageText = null;
   }
 
   preload() {
@@ -60,10 +61,33 @@ export default class TitleScreen extends Phaser.Scene {
         this.game.language = 'Pt'
       }
 
+      //Add text when changes the language
+      updateLanguageText();
+
       // Update the button's frame to reflect the new language's normal state
       updateButtonFrame()
       console.log("Selected language: "+this.game.language);
     })
+
+
+    const updateLanguageText = () => {
+      // destroy the text if already exists
+      if (this.languageText) {
+        this.languageText.destroy();
+      }
+
+      // config where the thext will spawn
+      const text = this.game.language === 'Pt' ? 'Idioma: Português' : 'Language: English';
+    this.languageText = this.add.text(530, 490, text, { font: '30px Arial', fill: '#000000' })
+
+      // set time for disappear
+    setTimeout(() => {
+      this.languageText.setVisible(false);
+    }, 2000);
+    }
+
+    // initialize the text on title
+    updateLanguageText();
 
     // Initialize button frame based on the current language
     updateButtonFrame()
