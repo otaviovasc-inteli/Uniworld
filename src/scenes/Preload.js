@@ -106,7 +106,8 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("player4_3", "assets/player/player4_3.png", { frameWidth: 256, frameHeight: 256 });
 
     this.load.spritesheet("projectile0", "./assets/player/projectiles/projectile_rexonna2.png", { frameWidth: 254, frameHeight: 232 });
-    this.load.spritesheet("projectile1", "./assets/player/projectiles/projectile_kibom2.png", { frameWidth: 254, frameHeight: 232 });
+    this.load.spritesheet("projectile1", "./assets/player/projectiles/projectile_omo.png", { frameWidth: 254, frameHeight: 232 });
+    this.load.spritesheet("projectile2", "./assets/player/projectiles/projectile_kibom2.png", { frameWidth: 254, frameHeight: 232 });
     this.load.spritesheet("dash_anim", "assets/player/dash.png", { frameWidth: 128, frameHeight: 128 });
     this.load.spritesheet("collect_sprite", "assets/player/collect_sprite.png", { frameWidth: 256, frameHeight: 208 });
     //-------------------------------------------------------------------

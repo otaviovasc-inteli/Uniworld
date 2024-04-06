@@ -140,16 +140,17 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
         this.projectileAnimIndex++;
         this.projectileCooldown = 400; // Powerup properties
         this.allowedNextLevel = true // Allow player to switch level
-        this.selectedSprite = 3 // Change sprite
+        this.selectedSprite = 2 // Change sprite
         initAnimations(this.scene.anims, this.selectedPlayer, this.selectedSprite); // Reset animations
         break;
 
       case 'kibon':
         console.log("Collect Kibon, allowed to dash, next level allowed");
         this.scene.sound.add("collect_powerup_sound", {loop: false, volume: 0.8, rate: 2}).play()
+        this.projectileAnimIndex++;
         this.allowedToDash = true; // Powerup properties
         this.allowedNextLevel = true // Allow player to switch level
-        this.selectedSprite = 2 // Change sprite
+        this.selectedSprite = 3 // Change sprite
         initAnimations(this.scene.anims, this.selectedPlayer, this.selectedSprite); // Reset animations
         this.powerupTutorial(powerup)
         break;
