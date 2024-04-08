@@ -78,6 +78,12 @@ export default class TitleScreen extends Phaser.Scene {
       console.log("Selected language: "+this.game.language);
     })
 
+    creditosButton.on('pointerdown', () => {
+      // Play sound effect
+      this.sound.add('select_sound', { loop: false, volume: 0.7 }).play()
+      this.scene.start("creditScreen", {titleMusicObject: this.titleMusic});
+  });
+
 
     const updateLanguageText = () => {
       // destroy the text if already exists
