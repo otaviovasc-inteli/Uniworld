@@ -75,6 +75,7 @@ export default class Preload extends Phaser.Scene {
     this.load.image('quiz_button_A', 'assets/quiz/quiz_button_A.png');
     this.load.image('quiz_button_B', 'assets/quiz/quiz_button_B.png');
     this.load.image('quiz_button_C', 'assets/quiz/quiz_button_C.png');
+    this.load.image('uni_quiz_logo', 'assets/quiz/uniQuiz.png');
     // ------------------------------------------------------------------
     // Players
     // Standard
@@ -97,7 +98,8 @@ export default class Preload extends Phaser.Scene {
     this.load.spritesheet("player2_3", "assets/player/player2_3.png", { frameWidth: 256, frameHeight: 256 });
     this.load.spritesheet("player3_3", "assets/player/player3_3.png", { frameWidth: 256, frameHeight: 256 });
     this.load.spritesheet("player4_3", "assets/player/player4_3.png", { frameWidth: 256, frameHeight: 256 });
-
+    //-------------------------------------------------------------------
+    // Anims
     this.load.spritesheet("projectile0", "./assets/player/projectiles/projectile_rexonna2.png", { frameWidth: 254, frameHeight: 232 });
     this.load.spritesheet("projectile1", "./assets/player/projectiles/projectile_omo.png", { frameWidth: 254, frameHeight: 232 });
     this.load.spritesheet("projectile2", "./assets/player/projectiles/projectile_kibom2.png", { frameWidth: 254, frameHeight: 232 });
