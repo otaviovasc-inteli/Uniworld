@@ -2,7 +2,8 @@
 const kibonTextsEn =
 [
   // Estrutura ['Question', ['option1', 'option2', 'option3', 'answer']]
-  ["Is unilever against deflorestation?", ['A) Não', 'B) Sim', 'C) Mais ou menos', 'B']],
-  ["Are u having fun playing?", ['A) Sim', 'B) Não', 'C) Mais ou menos', 'A']]
+  ["What does ERP stand for?", ['A) Electronic Resource Platform', 'B) Enterprise Resource Planning', 'C) Efficient Resource Processing', 'B']],
+  ["What does HR stand for?", ['A) Human Resources', 'B) High Revenue', 'C) Hardware Replacement', 'A']],
+  ["What does URS stand for?", ['A) User Requirement Specification', 'B) Unilever Reporting System', 'C) Unilever Resource System', 'A']]
 ];
 export default kibonTextsEn;
