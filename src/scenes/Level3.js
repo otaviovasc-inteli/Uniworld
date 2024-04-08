@@ -34,12 +34,12 @@ export default class Level3 extends Phaser.Scene {
     const boss = new BossLevel3(this, 8312, 1344, 'boss_level3', player).setDepth(3).setScale(1.4)
 
     //colocando o Npc de links no terceiro mapa
-    new Npc(this, 2990, 2045, "hub_sprite", "hub3", player)
+    new Npc(this, 2990, 2109, "hub_sprite", "hub3", player)
       .setSize(100, 120)
       .setScale(1.2)
       .setFlip(true, false);
 
-    new Npc(this, 6528, 1149, "hub_sprite", "hub4", player)
+    new Npc(this, 6528, 1213, "hub_sprite", "hub4", player)
       .setSize(100, 120)
       .setScale(1.2)
       .setFlip(true, false);

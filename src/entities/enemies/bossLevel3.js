@@ -29,6 +29,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
     this.speed = 150;
     this.damage = 25
     this.health = 10
+    this.isAlive = true // Used to check if enemy is alive
 
     this.projectiles = new Projectiles(this.scene, 'boss_level3_projectile').setDepth(2)
 
@@ -63,7 +64,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
 
   update(time) {
     // Check if it's time to attack
-    if (time - this.timeFromLastAttack >= this.attackDelay && !this.isAttacking) {
+    if (time - this.timeFromLastAttack >= this.attackDelay && !this.isAttacking && this.isAlive) {
       this.timeFromLastAttack = time;
       this.isAttacking = true;
       this.attackDelay = this.getAttackDelay()
@@ -87,6 +88,7 @@ export default class BossLevel2 extends Phaser.Physics.Arcade.Sprite {
   takesHit(source) {
     this.health -= source.damage
     if(this.health <= 0){
+      this.isAlive= false
       this.dieSound.play() // Die sound
       this.setTint(0xff0000)
       this.setVelocity(0, -200)
