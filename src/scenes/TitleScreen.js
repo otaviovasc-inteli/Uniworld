@@ -77,8 +77,19 @@ export default class TitleScreen extends Phaser.Scene {
       }
 
       // config where the thext will spawn
-      const text = this.game.language === 'Pt' ? 'Idioma: Português' : 'Language: English';
-    this.languageText = this.add.text(530, 490, text, { font: '30px Arial', fill: '#000000' })
+      const text = this.game.language === 'Pt' ? 'Idioma: Português' : 'Language: English'
+      const textStyle = {
+        font: 'bold 30px "Arial Black"',
+        fill: '#ffffff',
+        stroke: '#000000',
+        strokeThickness: 6
+      }
+      // Coordinates for centering the text
+    const centerX = this.sys.game.config.width / 2
+
+      // Adding the text
+    this.languageText = this.add.text(centerX + 12,  505, text, textStyle)
+    this.languageText.setOrigin(0.5, 0.5)   
 
       // set time for disappear
     setTimeout(() => {
