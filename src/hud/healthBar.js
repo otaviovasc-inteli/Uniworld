@@ -41,11 +41,11 @@ export default class HealthBar {
     this.bar.fillRect(x, y, width+margin, height+margin)
 
     this.bar.fillStyle(0xFFFFFF)
-    this.bar.fillRect(x + margin, y + margin, width - margin, height - margin)
+    this.bar.fillRect(x + margin, y + margin, width - margin * 2, height - margin * 2)
 
     const healthWidth = Math.floor(this.value * this.pixelPerHealth)
 
     this.bar.fillStyle(0x00FF00)
-    this.bar.fillRect(x + margin, y + margin, healthWidth - margin, height - margin)
+    this.bar.fillRect(x + margin, y + margin, Math.max(0, healthWidth - margin * 2), height - margin * 2)
   }
 }

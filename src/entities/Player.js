@@ -2,6 +2,7 @@ import initAnimations from "./playerAnims.js";
 import collidable from "../mixins/collidable.js";
 import Projectiles from "./Projectiles.js";
 import HealthBar from "../hud/healthBar.js";
+import CooldownBar from "../hud/cooldownBar.js";
 
 export default class Player extends Phaser.Physics.Arcade.Sprite {
   static instanceCount = 0;
@@ -48,18 +49,19 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.allowedVoidDeath = false
     this.selectedSprite = this.oldPlayer.selectedSprite || 0
 
-    // Health logic and setup
-    const leftTopCornerX = (1280 - (1280 / 0.7)) / 2 + 20
-    const leftTopCornerY = (720 - (720 / 0.7)) / 2 + 20
-    this.health = 100
-    this.hp = new HealthBar(this.scene, leftTopCornerX, leftTopCornerY, this.health)
-
     // Projectile properties
     this.projectileCooldown = this.oldPlayer.projectileCooldown || 800; // Cooldown in milliseconds
     this.lastProjectileTime = 0; // Timestamp of the last projectile shot
     this.projectileAnimIndex = this.oldPlayer.projectileAnimIndex || 0
     this.projectiles =  new Projectiles(this.scene, `projectile${this.projectileAnimIndex}`)
     this.lastDirection = Phaser.Physics.Arcade.FACING_RIGHT
+
+    // Health and cooldown logic and setup
+    const leftTopCornerX = (1280 - (1280 / 0.7)) / 2 + 20
+    const leftTopCornerY = (720 - (720 / 0.7)) / 2 + 20
+    this.health = 100
+    this.hp = new HealthBar(this.scene, leftTopCornerX, leftTopCornerY, this.health)
+    this.coolDownBar = new CooldownBar(this.scene, leftTopCornerX, leftTopCornerY, this.projectileCooldown)
 
     // Checkpoint
     this.checkpointCords = {x: this.x, y: this.y + 50}
@@ -264,6 +266,8 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
       // Check if enough time has passed
       if (currentTime - this.lastProjectileTime > this.projectileCooldown) {
+        // Cooldown bar
+        this.coolDownBar.startCooldown(this.projectileCooldown)
         // Shoot sound
         this.shootSound.play()
         this.projectiles.fireProjectile(this, `projectile_anim${this.projectileAnimIndex}`)
