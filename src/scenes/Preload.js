@@ -123,7 +123,7 @@ export default class Preload extends Phaser.Scene {
     this.load.image('reuniaoTeams', 'assets/level1/reuniaoTeams.png');
     this.load.image("Ekey", "assets/player/E.png");
     this.load.spritesheet('omo_sprite', 'assets/level2/omo.png', {frameWidth: 100, frameHeight: 160})
-    this.load.spritesheet('kibon_sprite', 'assets/level3/kibon.png', {frameWidth: 128, frameHeight: 128})
+    this.load.spritesheet('kibon_sprite', 'assets/level3/kibon-sheet.png', {frameWidth: 128, frameHeight: 128})
     this.load.spritesheet('diretora_npc', 'assets/npc/diretora_npc.png', { frameWidth: 256, frameHeight: 256});
 
     // Completed
