@@ -5,8 +5,10 @@ export default class TitleScreen extends Phaser.Scene {
   }
 
   preload() {
+    this.load.video('background_clouds', 'assets/titleScreen/backgroundLoop.mp4')
     this.load.audio("select_sound", "assets/sounds/select_sound.wav");
     this.load.audio("title_music", "assets/sounds/title_music.ogg");
+    this.load.audio("hover_sound", "assets/sounds/hover_sound.wav");
     this.load.image('sky', 'assets/titleScreen/sky.png');
     this.load.image('title', 'assets/titleScreen/title.png');
     this.load.image('hills', 'assets/titleScreen/hills.png');
@@ -22,10 +24,11 @@ export default class TitleScreen extends Phaser.Scene {
   }
 
   create() {
-    
-    this.sky = this.add.image(0, 0, "sky").setOrigin(0, 0).setScale(1.5);
-    this.cloudCover = this.add.image(0, -50, "cloudCover").setOrigin(0, 0).setScale(1.12);
-    this.clouds = this.add.image(0, -80, "clouds").setOrigin(0, 0).setScale(1.12);
+
+    // this.sky = this.add.image(0, 0, "sky").setOrigin(0, 0).setScale(1.5);
+    this.add.video(0, -100, "background_clouds").setOrigin(0,0).setScale(1.12).play(true).setPlaybackRate(0.7);
+    // this.cloudCover = this.add.image(0, -50, "cloudCover").setOrigin(0, 0).setScale(1.12);
+    // this.clouds = this.add.image(0, -80, "clouds").setOrigin(0, 0).setScale(1.12);
     this.title = this.add.image(250, 120, "title").setOrigin(0, 0);
     this.hills = this.add.image(0, -100, "hills").setOrigin(0, 0).setScale(1.12);
     this.foreground = this.add.image(0, -100, "foreground").setOrigin(0, 0).setScale(1.12);
@@ -104,7 +107,7 @@ export default class TitleScreen extends Phaser.Scene {
 
       // Adding the text
     this.languageText = this.add.text(centerX + 12,  570, text, textStyle)
-    this.languageText.setOrigin(0.5, 0.5)   
+    this.languageText.setOrigin(0.5, 0.5)
 
       // set time for disappear
     setTimeout(() => {
