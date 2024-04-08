@@ -2,7 +2,7 @@
 const rexonaTextsEn =
 [
   // Structure ['Question', ['option1', 'option2', 'option3', 'answer']]
-  ["To collect our brands you must complete the quizes. Got it?", ['A) No', 'B) Yes', 'C) No', 'B']],
-  ["Question 2.", ['A) Yes', 'B) No', 'C) No', 'A']]
+  ["To collect our brands you must complete the quizes. Got it?", ['A) No', 'B) Yes', 'C) More or less', 'B']],
+  ["On the next scene, you'll be introduced to combat, so pay attention, okay?", ['A) Yes', 'B) No', 'C) More or less', 'A']]
 ];
 export default rexonaTextsEn;
