@@ -262,27 +262,27 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.quizTitle = this.scene.add.text(centerX, centerY - 210, 'UniQuiz', { font: '24px Arial', fill: '#000' }).setOrigin(0.5).setDepth(2);
 
     // Display the question text, creating or updating it
-    this.quizText = this.scene.add.text(centerX - 210, centerY - 180, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2);
+    this.quizText = this.scene.add.text(centerX - 400, centerY - 180, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX + 100} }).setOrigin(0, 0).setDepth(2);
 
     // Close button logic
-    this.quizXBtn = this.scene.add.image(centerX + 200, centerY - 210, 'hub_close').setInteractive().setDepth(3).setScale(0.025);
+    this.quizXBtn = this.scene.add.image(centerX + 330, centerY - 210, 'hub_close').setInteractive().setDepth(3).setScale(0.025);
     this.quizXBtn.on('pointerdown', () => this.closeQuiz(true));
 
     // Display each answer button
     ['A', 'B', 'C'].forEach((letter, index) => {
         // Determine button image based on letter
         let buttonImage = `quiz_button_${letter}`;
-        let answerButton = this.scene.add.image(centerX + (index * 172) - 172, centerY + 170, buttonImage).setScale(3.8).setInteractive().setDepth(2);
+        let answerButton = this.scene.add.image(centerX + (index * 330) - 330, centerY + 177, buttonImage).setScale(1).setInteractive().setDepth(2);
         this.answerButtons.push(answerButton)
 
         // Answers text
-        this.answerTexts.push(this.scene.add.text(centerX - 210, centerY + (55 * index) - 80, answers[index], { font: '24px Arial', fill: '#000', wordWrap: {width: centerX - 200} }).setOrigin(0, 0).setDepth(2))
+        this.answerTexts.push(this.scene.add.text(centerX - 400, centerY + (55 * index) - 80, answers[index], { font: '24px Arial', fill: '#000', wordWrap: {width: centerX + 100} }).setOrigin(0, 0).setDepth(2))
 
         answerButton.on('pointerover', () => {
-          answerButton.setScale(4.6)
+          answerButton.setScale(1.1)
         });
         answerButton.on('pointerout', () => {
-          answerButton.setScale(3.8)
+          answerButton.setScale(1)
         });
         // Checking if the selected button is the correct answer
         answerButton.on('pointerdown', () => {

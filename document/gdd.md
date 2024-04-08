@@ -915,6 +915,10 @@ Que nota deu ao jogo? | 9.0
 O que gostou no jogo? | Estética e teclas intuitivas.
 O que poderia melhorar no jogo? | Expliciar as instruções.
 
+Observações:
+
+Ele disse que a velocidade dos projéteis do chefe está muito rápida. Além disso, mencionou que o alcance está inconsistente, às vezes próximo demais, outras vezes distante demais
+
 
 TESTE 2:
 
@@ -935,6 +939,8 @@ Apresentou dificuldades? | Sim, dificuldade em entender as regras e mecânicas.
 Que nota deu ao jogo? | 8.0
 O que gostou no jogo? | Estética
 O que poderia melhorar no jogo? | Melhorar a forma de mutar o jogo e melhorar a história/objetivo.
+
+
 
 TESTE 3:
 
@@ -977,11 +983,61 @@ O que gostou no jogo? | Estética
 O que poderia melhorar no jogo? | Volume que está muito alto
 
 
-
-
 ### 5.2.2 Melhorias
 
-Com base no feedback dos testes realizados em 27/03/2024, identificamos áreas de melhoria em nosso jogo, especialmente relacionadas à dificuldade e à clareza dos controles e objetivos. Para tornar a jogabilidade mais acessível e intuitiva, planejamos implementar algumas mudanças. Primeiramente, reduziremos o número de inimigos, aumentando também o tamanho das plataformas para facilitar a movimentação. Quanto à orientação dos objetivos, pretendemos tornar as instruções mais claras e impedir o progresso do jogador até que as instruções sejam compreendidas, garantindo que ele não avance sem visualizá-las e compreendê-las.
+Caso de Teste 1: Observações e Melhorias
+
+
+ | Observações
+--- | ---
+1 | A velocidade dos projéteis do chefe está muito rápida.
+2 | O alcance dos projéteis está inconsistente, variando entre muito perto e muito longe.
+
+Melhorias:
+
+Ajustar a velocidade dos projéteis do chefe para garantir que os jogadores tenham tempo suficiente para reagir.
+Corrigir o bug relacionado ao alcance dos projéteis para garantir uma experiência de jogo consistente.
+Caso de Teste 2: Observações e Melhorias
+Observações:
+
+Dificuldade em entender a necessidade de acertar o quiz para sair do quarto, tentando passar pela porta sem sucesso.
+Não conseguiu avançar no jogo por não saber que deveria apertar “Q” para usar o poder, resultando em múltiplas mortes.
+Melhorias:
+
+Tornar mais claro a necessidade de resolver o quiz para avançar, possivelmente com dicas visuais ou textuais.
+Melhorar a instrução sobre o uso da tecla “Q” para habilidades especiais, incluindo tutoriais ou dicas na tela.
+Caso de Teste 3: Observações e Melhorias
+Observações:
+
+Dificuldade em entender que a tecla “E” avança as falas.
+Não percebeu a necessidade de pressionar “Q” para usar o poder.
+A quantidade de inimigos é alta, levando a mortes frequentes e dificuldade em passar da primeira fase.
+Instruções pouco claras sobre comandos e interações no jogo.
+Melhorias:
+
+Tornar as instruções sobre a tecla “E” mais evidentes.
+Diminuir a quantidade de inimigos ou ajustar a dificuldade para equilibrar a progressão do jogador.
+Reforçar as instruções de jogo, especialmente sobre o uso de habilidades e a interação com elementos do jogo.
+Caso de Teste 4: Observações e Melhorias
+Observações:
+
+Problemas de visibilidade da barra de vida devido ao zoom do navegador.
+Dificuldade em identificar objetos interativos e a necessidade de pressionar “E”.
+Confusão sobre o tutorial de mecânica de poder.
+Plataformas pequenas dificultam o combate e a movimentação.
+Falta de uma opção para mutar a música.
+História percebida como pouco clara e não explícita.
+Ícone de configurações não foi compreendido.
+Melhorias:
+
+Garantir que elementos importantes do UI se ajustem ao zoom do navegador.
+Melhorar a indicação de interatividade dos objetos e a importância da tecla “E”.
+Clarificar o tutorial sobre a mecânica de poder, possivelmente adicionando texto explicativo.
+Ajustar o design das plataformas para facilitar o combate e a movimentação.
+Incluir uma opção para mutar a música no jogo.
+Desenvolver uma narrativa mais explícita e guiar melhor o jogador através da história.
+Redesenhar ou reetiquetar o ícone de configurações para melhor reconhecimento.
+Essas observações e sugestões devem ajudar a refinar a experiência do usuário e tornar o seu jogo mais acessível e agradável para uma ampla gama de jogadores.
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros
 
