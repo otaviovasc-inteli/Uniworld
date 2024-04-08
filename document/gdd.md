@@ -988,10 +988,11 @@ O que poderia melhorar no jogo? | Volume que está muito alto
 Caso de Teste 1: Observações e Melhorias
 
 
-Observações:
-
+ | Observações
+--- | ---
 1 | A velocidade dos projéteis do chefe está muito rápida.
-O alcance dos projéteis está inconsistente, variando entre muito perto e muito longe.
+2 | O alcance dos projéteis está inconsistente, variando entre muito perto e muito longe.
+
 Melhorias:
 
 Ajustar a velocidade dos projéteis do chefe para garantir que os jogadores tenham tempo suficiente para reagir.
