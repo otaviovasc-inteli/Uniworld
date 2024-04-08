@@ -38,7 +38,7 @@ export default class HealthBar {
 
     const margin = 6
     this.bar.fillStyle(0x00000)
-    this.bar.fillRect(x, y, width+margin, height+margin)
+    this.bar.fillRect(x, y, width + margin, height+margin)
 
     this.bar.fillStyle(0xFFFFFF)
     this.bar.fillRect(x + margin, y + margin, width - margin * 2, height - margin * 2)
