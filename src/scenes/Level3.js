@@ -174,7 +174,7 @@ export default class Level3 extends Phaser.Scene {
     this.bgBuilding = this.add
       .tileSprite(
         bgBuildingObject.x + 100,
-        bgBuildingObject.y - 100,
+        bgBuildingObject.y - 600,
         bgBuildingObject.width,
         bgBuildingObject.height,
         "predios_bg"
