@@ -15,10 +15,14 @@ export default class TitleScreen extends Phaser.Scene {
     this.load.image('cloudCover', 'assets/titleScreen/cloudCover.png');
     this.load.spritesheet("play", "assets/titleScreen/play_x4.png", { frameWidth: 192, frameHeight: 52 });
     this.load.spritesheet("music", "assets/titleScreen/music_x4.png", { frameWidth: 64, frameHeight: 64 });
+    this.load.spritesheet("botao_jogar", "assets/titleScreen/botao_jogar.png", { frameWidth: 192, frameHeight: 52 });
     this.load.spritesheet("language", "assets/titleScreen/language.png", { frameWidth: 64, frameHeight: 64 });
+    this.load.spritesheet("creditos", "assets/titleScreen/creditos_x4.png", { frameWidth: 192, frameHeight: 52 });
+    this.load.spritesheet("credits", "assets/titleScreen/credits_x4.png", { frameWidth: 192, frameHeight: 52 });
   }
 
   create() {
+    
     this.sky = this.add.image(0, 0, "sky").setOrigin(0, 0).setScale(1.5);
     this.cloudCover = this.add.image(0, -50, "cloudCover").setOrigin(0, 0).setScale(1.12);
     this.clouds = this.add.image(0, -80, "clouds").setOrigin(0, 0).setScale(1.12);
@@ -26,10 +30,11 @@ export default class TitleScreen extends Phaser.Scene {
     this.hills = this.add.image(0, -100, "hills").setOrigin(0, 0).setScale(1.12);
     this.foreground = this.add.image(0, -100, "foreground").setOrigin(0, 0).setScale(1.12);
 
-    const playButton = this.add.sprite(533, 320, 'play', 0).setOrigin(0, 0).setScale(1.2);
-    const musicButton = this.add.sprite(686, 400, 'music', 0).setOrigin(0, 0).setScale(1.2);
-    const languageButton = this.add.sprite(533, 400, 'language', 0).setOrigin(0, 0).setScale(1.2).setInteractive();
-
+    let creditosButton = this.add.sprite(533, 390, 'creditos', 0).setOrigin(0, 0).setScale(1.2).setInteractive();
+    let playButton = this.add.sprite(533, 320, 'botao_jogar', 0).setOrigin(0, 0).setScale(1.2);
+    const musicButton = this.add.sprite(686, 460, 'music', 0).setOrigin(0, 0).setScale(1.2);
+    const languageButton = this.add.sprite(533, 460, 'language', 0).setOrigin(0, 0).setScale(1.2).setInteractive();
+    //const botao_jogar = this.add.sprite(533, 320, 'botao_jogar', 0).setOrigin(0, 0).setScale(1.2);
     this.titleMusic = this.sound.add('title_music', {loop: true, volume: 0.7})
     this.titleMusic.play()
 
@@ -57,8 +62,12 @@ export default class TitleScreen extends Phaser.Scene {
       // Toggle language
       if (this.game.language === 'Pt') {
         this.game.language = 'En'
+        playButton = this.add.sprite(533, 320, 'play', 0).setOrigin(0, 0).setScale(1.2);
+        creditosButton = this.add.sprite(533, 390, 'credits', 0).setOrigin(0, 0).setScale(1.2);
       } else {
         this.game.language = 'Pt'
+        playButton = this.add.sprite(533, 320, 'botao_jogar', 0).setOrigin(0, 0).setScale(1.2);
+        creditosButton = this.add.sprite(533, 390, 'creditos', 0).setOrigin(0, 0).setScale(1.2);
       }
 
       //Add text when changes the language
@@ -88,7 +97,7 @@ export default class TitleScreen extends Phaser.Scene {
     const centerX = this.sys.game.config.width / 2
 
       // Adding the text
-    this.languageText = this.add.text(centerX + 12,  505, text, textStyle)
+    this.languageText = this.add.text(centerX + 12,  570, text, textStyle)
     this.languageText.setOrigin(0.5, 0.5)   
 
       // set time for disappear
@@ -102,6 +111,17 @@ export default class TitleScreen extends Phaser.Scene {
 
     // Initialize button frame based on the current language
     updateButtonFrame()
+
+    creditosButton.setInteractive();
+    creditosButton.on('pointerover', () => {
+        // Change the frame to 1 when mouse is over
+        creditosButton.setFrame(1);
+    });
+
+    creditosButton.on('pointerout', () => {
+        // Change the frame back to 0 when mouse is out
+        creditosButton.setFrame(0);
+    });
 
     playButton.setInteractive();
     playButton.on('pointerover', () => {
