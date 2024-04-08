@@ -41,7 +41,7 @@ export default class CreditScreen extends Phaser.Scene {
     this.botaoVoltar = this.add.image(640, 660, "botao_voltar", 0);
 
     // adiciona os nomes dos integrantes na tela e links do linkedin aos respectivos nomes (mudar o do ricardo)
-    this.add.text(415, 275, "                 Integrantes do Grupo:\n (clique nos nomes para ver os linkedins!)", { font: "bold 25px poppins", color: "#000000", stroke: "#ffffff", strokeThickness: 4});
+    this.add.text(415, 275, "                Integrantes do Grupo:\n (clique nos nomes para ver os linkedins!)", { font: "bold 25px poppins", color: "#000000", stroke: "#ffffff", strokeThickness: 4});
     //this.add.text(520, 320, "clique nos nomes para ver os linkedins!", {font: "15px poppins" });
     this.add // Raphael
       .text(480, 360, "Raphael Silva - Programação", { font: "bold 25px poppins",  color: "#000000", stroke: "#ffffff", strokeThickness: 4 })
