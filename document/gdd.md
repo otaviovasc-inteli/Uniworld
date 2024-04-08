@@ -91,6 +91,44 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
+### 1.1.6. 5 Forças de Porter
+
+#### Obstáculos para novos entrantes:
+&nbsp;&nbsp;&nbsp;&nbsp;A indústria na qual a Unilever opera apresenta barreiras significativas à entrada, incluindo altos custos de capital para produção e distribuição, exigências regulatórias estritas, e a necessidade de estabelecer uma forte marca e rede de distribuição. A Unilever beneficia-se de economias de escala e de um portfólio de marcas bem estabelecido que são reconhecidas e confiáveis pelos consumidores.
+
+#### Impacto dos novos entrantes: 
+&nbsp;&nbsp;&nbsp;&nbsp;Embora haja barreiras significativas, o surgimento de novos entrantes focados em nichos de mercado ou inovações, especialmente no segmento de produtos orgânicos e sustentáveis, pode desafiar a posição da Unilever. Contudo, o impacto potencial é moderado devido à forte presença de mercado e capacidade de inovação da Unilever.
+
+#### Produtos ou serviços substitutos relevantes: 
+&nbsp;&nbsp;&nbsp;&nbsp;Existem diversos produtos substitutos nos segmentos em que a Unilever atua, desde marcas locais até alternativas orgânicas e naturais. A tendência crescente de conscientização sobre saúde e sustentabilidade tem impulsionado a procura por esses substitutos.
+
+#### Nível de ameaça dos substitutos: 
+&nbsp;&nbsp;&nbsp;&nbsp;A ameaça é considerável, especialmente com a crescente preocupação dos consumidores com a sustentabilidade e ingredientes naturais. A Unilever tem respondido por meio do desenvolvimento de produtos mais sustentáveis e através de aquisições estratégicas de marcas neste segmento.
+
+#### Principais fornecedores da indústria:
+
+&nbsp;&nbsp;&nbsp;&nbsp;A Unilever lida com uma ampla gama de fornecedores, incluindo produtores de matérias-primas, embalagens, e serviços de logística.
+
+#### Poder de barganha dos fornecedores:
+
+&nbsp;&nbsp;&nbsp;&nbsp; O poder de barganha dos fornecedores é moderado. A Unilever, devido ao seu tamanho e volume de compras, consegue exercer uma negociação favorável em muitos casos. No entanto, para ingredientes específicos ou tecnologias patenteadas, os fornecedores podem ter maior poder de barganha.
+
+#### Principais tipos de clientes da indústria:
+
+&nbsp;&nbsp;&nbsp;&nbsp; Os clientes da Unilever variam desde grandes varejistas e supermercados até consumidores individuais.
+
+#### Poder de barganha dos clientes:
+
+&nbsp;&nbsp;&nbsp;&nbsp; O poder de barganha dos clientes é significativo, especialmente dos grandes varejistas que podem negociar preços melhores devido ao volume de compra. Os consumidores individuais têm poder limitado, mas influenciam a empresa através das preferências de consumo e tendências.
+
+#### Principais concorrentes na indústria:
+
+&nbsp;&nbsp;&nbsp;&nbsp; A Unilever compete com outras multinacionais como Procter & Gamble, Nestlé, e L'Oréal, além de diversas empresas locais e regionais.
+
+#### Nível de rivalidade:
+
+&nbsp;&nbsp;&nbsp;&nbsp;A rivalidade na indústria é alta, com competição intensa em inovação, marketing, e expansão para novos mercados. A Unilever mantém sua competitividade através de inovação constante, diversificação de produtos, e sustentabilidade como parte de sua estratégia de negócios.
+
 ## 1.2. Requisitos do Projeto
 
 
