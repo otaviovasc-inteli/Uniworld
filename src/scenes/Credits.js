@@ -16,7 +16,7 @@ export default class CreditScreen extends Phaser.Scene {
   }
 
   create() {
-    // add the background
+    // adiciona o fundo
     this.sky = this.add.image(0, 0, "sky").setOrigin(0, 0).setScale(1.5);
     this.cloudCover = this.add
       .image(0, -50, "cloudCover")
@@ -36,23 +36,19 @@ export default class CreditScreen extends Phaser.Scene {
       .setOrigin(0, 0)
       .setScale(1.12);
 
+    // adiciona o retângulo de fundo e o botão voltar
     this.add.image(640, 450, "credit_space").setScale(0.5);
     this.botaoVoltar = this.add.image(640, 660, "botao_voltar", 0);
 
-    this.add.text(390, 290, "Integrantes do Grupo:", {font: "40px"});
-    this.names = [
-      this.add.text(510, 370, "Raphael Silva", {font: "40px"}),
-      this.add.text(460, 400, "Igor Sampaio Silva", {font: "40px"}),
-      this.add.text(505, 430, "Thiago Volcati", {font: "40px"}),
-      this.add.text(515, 460, "David Deodato", {font: "40px"}),
-      this.add.text(460, 490, "Otávio Vasconcelos", {font: "40px"}),
-      this.add.text(510, 520, "Marlos Guedes", {font: "40px"}),
-      this.add.text(480, 550, "Ricardo Redondas", {font: "40px"}),
-    ];
-    //this.names.setInteractive();
-    //this.names.forEach(name => {
-        
-    //});
+    // adiciona os nomes dos integrantes na tela e links do linkedin aos respectivos nomes (mudar o do ricardo)
+    this.add.text(420, 290, "Integrantes do Grupo:", { font: "35px" });
+    this.add.text(500, 340, "Raphael Silva", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/raphaelfelipesilva/")});
+    this.add.text(450, 380, "Igor Sampaio Silva", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/igor-sampaio-silva/")});
+    this.add.text(495, 420, "Thiago Volcati", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/thiago-volcati-a42a94208/")});
+    this.add.text(505, 460, "David Deodato", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/david-deodato-41b9b72b7/")});
+    this.add.text(450, 500, "Otávio Vasconcelos", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/otavio-vasconcelos-a11827208/")});
+    this.add.text(500, 540, "Marlos Guedes", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/marlos-do-carmo-guedes-366987250/")});
+    this.add.text(470, 580, "Ricardo Redondas", { font: "35px" }, this.url7).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/school/inteli-edu/")});
 
     this.botaoVoltar.setInteractive();
     this.botaoVoltar.on("pointerover", () => {
