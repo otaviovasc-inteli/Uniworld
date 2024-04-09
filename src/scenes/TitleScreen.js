@@ -28,10 +28,10 @@ export default class TitleScreen extends Phaser.Scene {
     this.hills = this.add.image(0, -100, "hills").setOrigin(0, 0).setScale(1.12);
     this.foreground = this.add.image(0, -100, "foreground").setOrigin(0, 0).setScale(1.12);
 
-    let creditsButton = this.add.sprite(533, 390, 'creditos', 0).setOrigin(0, 0).setScale(1.2).setInteractive();
-    let playButton = this.add.sprite(533, 320, 'botao_jogar', 0).setOrigin(0, 0).setScale(1.2);
     const musicButton = this.add.sprite(686, 460, 'music', 0).setOrigin(0, 0).setScale(1.2);
     const languageButton = this.add.sprite(533, 460, 'language', 0).setOrigin(0, 0).setScale(1.2).setInteractive();
+    this.playButton = this.add.sprite(533, 320, 'botao_jogar', 0).setOrigin(0, 0).setScale(1.2);
+    this.creditsButton = this.add.sprite(533, 390, 'creditos', 0).setOrigin(0, 0).setScale(1.2).setInteractive();
     
     
     // adding the title sprite
@@ -57,7 +57,22 @@ export default class TitleScreen extends Phaser.Scene {
     }
 
     // Initialize current language. Let's start with Portuguese ('Pt')
-    this.game.language = 'Pt' // 'Pt' for Portuguese, 'En' for English
+    this.game.language = this.sys.settings.data.language || 'Pt'
+    this.language = this.game.language
+
+    switch (this.language) {
+      case 'Pt':
+        this.creditsButton.setTexture('creditos');
+        this.playButton.setTexture('botao_jogar');
+        break;
+      case 'En':
+        this.playButton.setTexture('play');
+        this.creditsButton.setTexture('credits');
+        break;
+      default:
+        console.log('no language selected');
+        break;
+    }
 
     const updateButtonFrame = () => {
       // Update button frame based on current language
@@ -80,12 +95,12 @@ export default class TitleScreen extends Phaser.Scene {
       // Toggle language
       if (this.game.language === 'Pt') {
         this.game.language = 'En'
-        playButton = this.add.sprite(533, 320, 'play', 0).setOrigin(0, 0).setScale(1.2);
-        creditsButton = this.add.sprite(533, 390, 'credits', 0).setOrigin(0, 0).setScale(1.2);
+        this.playButton = this.add.sprite(533, 320, 'play', 0).setOrigin(0, 0).setScale(1.2);
+        this.creditsButton = this.add.sprite(533, 390, 'credits', 0).setOrigin(0, 0).setScale(1.2);
       } else {
         this.game.language = 'Pt'
-        playButton = this.add.sprite(533, 320, 'botao_jogar', 0).setOrigin(0, 0).setScale(1.2);
-        creditsButton = this.add.sprite(533, 390, 'creditos', 0).setOrigin(0, 0).setScale(1.2);
+        this.playButton = this.add.sprite(533, 320, 'botao_jogar', 0).setOrigin(0, 0).setScale(1.2);
+        this.creditsButton = this.add.sprite(533, 390, 'creditos', 0).setOrigin(0, 0).setScale(1.2);
       }
 
       //Add text when changes the language
@@ -96,11 +111,11 @@ export default class TitleScreen extends Phaser.Scene {
       console.log("Selected language: "+this.game.language);
     })
 
-    creditsButton.on('pointerdown', () => {
+    this.creditsButton.on('pointerdown', () => {
       // Play sound effect
       this.sound.add('select_sound', { loop: false, volume: 0.7 }).play()
       this.titleMusic.pause()
-      this.scene.start("creditScreen", { titleMusicObject: this.titleMusic });
+      this.scene.start("creditScreen", { titleMusicObject: this.titleMusic, language: this.game.language });
     });
 
 
@@ -137,29 +152,29 @@ export default class TitleScreen extends Phaser.Scene {
     // Initialize button frame based on the current language
     updateButtonFrame()
 
-    creditsButton.setInteractive();
-    creditsButton.on('pointerover', () => {
+    this.creditsButton.setInteractive();
+    this.creditsButton.on('pointerover', () => {
         // Change the frame to 1 when mouse is over
-        creditsButton.setFrame(1);
+        this.creditsButton.setFrame(1);
     });
 
-    creditsButton.on('pointerout', () => {
+    this.creditsButton.on('pointerout', () => {
         // Change the frame back to 0 when mouse is out
-        creditsButton.setFrame(0);
+        this.creditsButton.setFrame(0);
     });
 
-    playButton.setInteractive();
-    playButton.on('pointerover', () => {
+    this.playButton.setInteractive();
+    this.playButton.on('pointerover', () => {
         // Change the frame to 1 when mouse is over
-        playButton.setFrame(1);
+        this.playButton.setFrame(1);
     });
 
-    playButton.on('pointerout', () => {
+    this.playButton.on('pointerout', () => {
         // Change the frame back to 0 when mouse is out
-        playButton.setFrame(0);
+        this.playButton.setFrame(0);
     });
 
-    playButton.on('pointerdown', () => {
+    this.playButton.on('pointerdown', () => {
       // Call the startGame function when the button is clicked
       this.sound.add('select_sound', {loop: false, volume: 0.7}).play()
       this.preloadGame();
