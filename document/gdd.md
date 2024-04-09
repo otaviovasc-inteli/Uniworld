@@ -986,61 +986,116 @@ O que gostou no jogo? | Estética
 O que poderia melhorar no jogo? | Volume que está muito alto
 
 
+TESTE 5:
+
+Nome | Davi Massariol
+--- | ---
+Testes conduzido por | Thiago
+Idade | 18
+Local | Discord
+Dia | 31/03/2024
+Horário | 16:38:00
+Duração | 20 minutos
+Dispositivo | Próprio voluntário
+Já possuía experiência prévia com games? | Sim, muita
+Conseguiu iniciar o jogo? | Sim
+Entendeu as regras e mecânicas do jogo? | Sim, conseguiu entender as regras e mecânicas do jogo
+Conseguiu progredir no jogo? | Sim, muito bem
+Apresentou dificuldades? |  Não, nenhuma
+Que nota deu ao jogo? | 10
+O que gostou no jogo? | Mecânicas
+O que poderia melhorar no jogo? | Melhor destaque de interativos
+
+
+
 ### 5.2.2 Melhorias
 
 Caso de Teste 1: Observações e Melhorias
 
 
- | Observações
+Número | Observações
 --- | ---
 1 | A velocidade dos projéteis do chefe está muito rápida.
 2 | O alcance dos projéteis está inconsistente, variando entre muito perto e muito longe.
 
-Melhorias:
+Número | Melhorias:
+--- | ---
+1 | Ajustar a velocidade dos projéteis do chefe para garantir que os jogadores tenham tempo suficiente para reagir.
+2 | Corrigir o bug relacionado ao alcance dos projéteis para garantir uma experiência de jogo consistente.
 
-Ajustar a velocidade dos projéteis do chefe para garantir que os jogadores tenham tempo suficiente para reagir.
-Corrigir o bug relacionado ao alcance dos projéteis para garantir uma experiência de jogo consistente.
+
 Caso de Teste 2: Observações e Melhorias
-Observações:
 
-Dificuldade em entender a necessidade de acertar o quiz para sair do quarto, tentando passar pela porta sem sucesso.
-Não conseguiu avançar no jogo por não saber que deveria apertar “Q” para usar o poder, resultando em múltiplas mortes.
-Melhorias:
 
-Tornar mais claro a necessidade de resolver o quiz para avançar, possivelmente com dicas visuais ou textuais.
-Melhorar a instrução sobre o uso da tecla “Q” para habilidades especiais, incluindo tutoriais ou dicas na tela.
+Número | Observações:
+--- | ---
+! | Dificuldade em entender a necessidade de acertar o quiz para sair do quarto, tentando passar pela porta sem sucesso.
+2 | Não conseguiu avançar no jogo por não saber que deveria apertar “Q” para usar o poder, resultando em múltiplas mortes.
+
+Número | Melhorias:
+--- | ---
+1 | Tornar mais claro a necessidade de resolver o quiz para avançar, possivelmente com dicas visuais ou textuais.
+2 | Melhorar a instrução sobre o uso da tecla “Q” para habilidades especiais, incluindo tutoriais ou dicas na tela.
+
+
 Caso de Teste 3: Observações e Melhorias
-Observações:
 
-Dificuldade em entender que a tecla “E” avança as falas.
-Não percebeu a necessidade de pressionar “Q” para usar o poder.
-A quantidade de inimigos é alta, levando a mortes frequentes e dificuldade em passar da primeira fase.
-Instruções pouco claras sobre comandos e interações no jogo.
-Melhorias:
+Número | Observações:
+--- | ---
+1 | Dificuldade em entender que a tecla “E” avança as falas.
+2 | Não percebeu a necessidade de pressionar “Q” para usar o poder.
+3 | A quantidade de inimigos é alta, levando a mortes frequentes e dificuldade em passar da primeira fase.
+4 | Instruções pouco claras sobre comandos e interações no jogo.
 
-Tornar as instruções sobre a tecla “E” mais evidentes.
-Diminuir a quantidade de inimigos ou ajustar a dificuldade para equilibrar a progressão do jogador.
-Reforçar as instruções de jogo, especialmente sobre o uso de habilidades e a interação com elementos do jogo.
+Número | Melhorias:
+--- | ---
+1 | Tornar as instruções sobre a tecla “E” mais evidentes.
+2 | Diminuir a quantidade de inimigos ou ajustar a dificuldade para equilibrar a progressão do jogador.
+3 | Reforçar as instruções de jogo, especialmente sobre o uso de habilidades e a interação com elementos do jogo.
+
+
+
 Caso de Teste 4: Observações e Melhorias
-Observações:
 
-Problemas de visibilidade da barra de vida devido ao zoom do navegador.
-Dificuldade em identificar objetos interativos e a necessidade de pressionar “E”.
-Confusão sobre o tutorial de mecânica de poder.
-Plataformas pequenas dificultam o combate e a movimentação.
-Falta de uma opção para mutar a música.
-História percebida como pouco clara e não explícita.
-Ícone de configurações não foi compreendido.
-Melhorias:
+Número | Observações:
+--- | ---
+1 | Problemas de visibilidade da barra de vida devido ao zoom do navegador.
+2 | Dificuldade em identificar objetos interativos e a necessidade de pressionar “E”.
+3 | Confusão sobre o tutorial de mecânica de poder.
+4 | Plataformas pequenas dificultam o combate e a movimentação.
+5 | Falta de uma opção para mutar a música.
+6 | História percebida como pouco clara e não explícita.
+7 | Ícone de configurações não foi compreendido.
 
-Garantir que elementos importantes do UI se ajustem ao zoom do navegador.
-Melhorar a indicação de interatividade dos objetos e a importância da tecla “E”.
-Clarificar o tutorial sobre a mecânica de poder, possivelmente adicionando texto explicativo.
-Ajustar o design das plataformas para facilitar o combate e a movimentação.
-Incluir uma opção para mutar a música no jogo.
-Desenvolver uma narrativa mais explícita e guiar melhor o jogador através da história.
-Redesenhar ou reetiquetar o ícone de configurações para melhor reconhecimento.
-Essas observações e sugestões devem ajudar a refinar a experiência do usuário e tornar o seu jogo mais acessível e agradável para uma ampla gama de jogadores.
+Número | Melhorias:
+--- | ---
+1 | Garantir que elementos importantes do UI se ajustem ao zoom do navegador.
+2 | Melhorar a indicação de interatividade dos objetos e a importância da tecla “E”.
+3 | Clarificar o tutorial sobre a mecânica de poder, possivelmente adicionando texto explicativo.
+4 | Ajustar o design das plataformas para facilitar o combate e a movimentação.
+5 | Incluir uma opção para mutar a música no jogo.
+6 | Desenvolver uma narrativa mais explícita e guiar melhor o jogador através da história.
+7 | Redesenhar ou reetiquetar o ícone de configurações para melhor reconhecimento.
+
+
+
+Caso de Teste 5: Observações e Melhorias
+
+Número | Observações:
+--- | ---
+1 | Alta experiência prévia, portanto reconheceu facilmente todas as mecânicas e dinâmicas.
+2 | A principio achou que o balão e o banco eram interativos
+3 | Achou o ultimo mapa fraco
+
+Número | Melhorias:
+--- | ---
+1 | Melhorar o design do último mapa
+2 | Abaixar transparência e/ou excluir alguns assets que causem confusão visual
+
+
+
+
+ Essas observações e sugestões devem ajudar a refinar a experiência do usuário e tornar o seu jogo mais acessível e agradável para uma ampla gama de jogadores.
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros
 
