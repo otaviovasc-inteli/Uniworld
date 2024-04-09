@@ -567,7 +567,7 @@ this.playButton.on('pointerdown', () => {
 ```
 
 <div align="center">
-<sub>Figura 5 - Transição de Cena - Utilização do Phaser.Scene
+<sub>Código - Transição de Cena - Utilização do Phaser.Scene
 </div>
 
 ```javascript
@@ -593,7 +593,7 @@ preloadGame() {
 &nbsp;&nbsp;&nbsp;&nbsp;Essa informação é utilizada em uma função específica, como a 'initAnimations', que é responsável por carregar as animações corretas para o personagem escolhido. Isso é feito utilizando estruturas de decisão condicionais, como instruções if-else, que verificam o valor da variável 'selectedPlayer' e carregam as spritesheets e animações correspondentes.
 
 <div align="center">
-<sub>Figura 7 - Trecho de código da Player Select - Números de ID
+<sub>Código - Trecho de código da Player Select - Números de ID
 </div>
 
 ```javascript
@@ -628,7 +628,7 @@ preloadGame() {
 ```
 
 <div align="center">
-<sub>Figura 8 - Trecho de código da PlayerAnims - Infusão do ID para carregamento dos sprites desejados
+<sub>Código - Trecho de código da PlayerAnims - Infusão do ID para carregamento dos sprites desejados
 </div>
 
 ```javascript
@@ -652,7 +652,7 @@ preloadGame() {
 &nbsp;&nbsp;&nbsp;&nbsp;Para isso ser possível, foi feito um vídeo em formato de cutscene. Com o método do Phaser "create", o vídeo é adicionado na tela, fazendo com que pareça que uma imagem está se locomovendo.
 
 <div align="center">
-<sub>Código 1 - Trecho do código da TutorialScreen - criando a animação do vídeo </sub>
+<sub>Código - Trecho do código da TutorialScreen - criando a animação do vídeo </sub>
 
 
 
@@ -702,13 +702,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Decidimos incluir diversas decorações temáticas, como placas com o símbolo da Unilever, um avião e um balão com o logo de uma das empresas da Unilever: Dove. Esses elementos não apenas reforçam a identidade da marca, mas também criam uma conexão entre o jogo e o contexto do processo de onboarding dos novos funcionários de TI na Unilever: se conectar com a empresa, seus valores e marcas.
 
 <div align="center">
-<<<<<<< Updated upstream
-<sub>Figura 13 - Trecho código - level 2
-=======
-<sub>Figura 29 - Trecho código - level 2 </sub>
-<img src="../assets/backend_map.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
->>>>>>> Stashed changes
+<sub>Código - Trecho código - level 2
 </div>
 
 ```javascript
@@ -969,13 +963,7 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp; Aqui a variável 'this.language' guarda um texto que pode ser "En" ou "Pt" baseado na escolha feita na tela de título
 
 <div align="center">
-<<<<<<< Updated upstream
 <sub>Código - Importação modular dos textos traduzidos
-=======
-<sub>Figura 51 - Importação modular dos textos traduzidos </sub>
-<img src="../assets/4.5/translationCode.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
->>>>>>> Stashed changes
 </div>
 
 ```javascript
@@ -1000,13 +988,7 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp; Foi implementado através da padronização do nome dos arquivos e criação dinâmica das animações. Toda vez que o player coleta um powerUp, muda a variável 'selectedSprite' para o Sprite correspondente, então deleta as animações antigas e cria as novas como mostrado abaixo:
 
 <div align="center">
-<<<<<<< Updated upstream
 <sub>Código - Criação das animações
-=======
-<sub>Figura 53 - Criação das animações </sub>
-<img src="../assets/4.5/playerAnims.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
->>>>>>> Stashed changes
 </div>
 
 ```javascript
@@ -1071,13 +1053,7 @@ export default (anims, selectedPlayer, selectedSprite) =>{
 &nbsp;&nbsp;&nbsp;&nbsp; Aqui temos um pedaço do código que cria o Hub de links, nesse trecho abrimos uma janela quando o botão é clicado e checamos se ambos os botões ja foram clicados, se sim, define o Checkpoint muda a imagem e toca um som.
 
 <div align="center">
-<<<<<<< Updated upstream
 <sub>Código - Hub de Links - Código de um botão do link.
-=======
-<sub>Figura 56 - Hub de Links - Código de um botão do link. </sub>
-<img src="../assets/4.5/hubCode.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
->>>>>>> Stashed changes
 </div>
 
 ```javascript
@@ -1108,13 +1084,7 @@ export default (anims, selectedPlayer, selectedSprite) =>{
 &nbsp;&nbsp;&nbsp;&nbsp; Tinhamos uma inconstância nos projeteis do player, onde em algumas ocasiões o projetil era destruído antes de colidir com um Inimigo, isso acontecia pois não zeravamos a variavel 'this.traveledDistance' quando destruia um projetil, portanto o seguinte ja vinha com um valor elevado nessa variável.
 
 <div align="center">
-<<<<<<< Updated upstream
 <sub>Código - Destruição de Projetil
-=======
-<sub>Figura 57 - Destruição de Projetil </sub>
-<img src="../assets/4.5/traveledDistance.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
->>>>>>> Stashed changes
 </div>
 
 ```javascript
@@ -1137,16 +1107,11 @@ export default (anims, selectedPlayer, selectedSprite) =>{
 &nbsp;&nbsp;&nbsp;&nbsp; Tambem relacionado àos projeteis, o projetil dos chefões não estavam sendo destruidos após acertar o Player, o que causava um comportamento indesejado de Hit Multiplo. Isso foi facilmente resolvido com a criação de uma função destroyProjectile(destroi o projetil) essa que é chamada dentro da função takesHit(lida com a logica de receber dano) do Player
 
 <div align="center">
-<<<<<<< Updated upstream
 <sub>Código - Lógica de levar Hit
-=======
-<sub>Figura 57 - Lógica de levar Hit </sub>
-<img src="../assets/4.5/takesHit.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
->>>>>>> Stashed changes
 </div>
 
 ```javascript
+
 takesHit(source) {
     if (this.hasBeenHit) return
 
