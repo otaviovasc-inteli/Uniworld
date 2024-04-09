@@ -550,17 +550,31 @@ export default class Preload extends Phaser.Scene {
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Para simplificar o gerenciamento das transições entre as diferentes cenas do jogo, fazemos uso da classe Phaser.Scene. Essa abordagem não só facilita a criação de ambientes de jogo coesos, mas também contribui para uma experiência de jogo mais organizada e envolvente. Ao tornar o botão "PLAY" interativo, com o auxílio dessa classe a transição para a próxima cena se torna eficiente e enxuta.
-<div align="center">
-<sub>Código - Interatividade e Comandos</sub>
-<img src="../assets/Desenvolvimento/transicao_de_cena_1.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
-</div>
 
 <div align="center">
-<sub>Figura 5 - Transição de Cena - Utilização do Phaser.Scene</sub>
-<img src="../assets/Desenvolvimento/transicao_de_cena_2.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Interatividade e Comandos
 </div>
+
+```javascript
+this.playButton.on('pointerdown', () => {
+      // Call the startGame function when the button is clicked
+      this.sound.add('select_sound', {loop: false, volume: 0.7}).play()
+      this.preloadGame();
+    });
+```
+
+<div align="center">
+<sub>Figura 5 - Transição de Cena - Utilização do Phaser.Scene
+</div>
+
+```javascript
+preloadGame() {
+    this.cameras.main.fadeOut(400, 0, 0, 0, (camera, progress) => {
+      if(progress === 1) this.scene.start("preload", {titleMusicObject: this.titleMusic})
+    })
+  }
+}
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;Dando um passo adiante na direção da inclusão e diversidade, foi encontrado em uma pesquisa de público alvo uma necessidade latente de englobar a diversidade dentro do jogo. Por conta disso, implementamos um sistema de seleção de personagens complexo. Os jogadores podem escolher entre quatro personagens diferentes, cada um com suas próprias características e aparências únicas.
 <div align="center">
@@ -576,17 +590,52 @@ export default class Preload extends Phaser.Scene {
 &nbsp;&nbsp;&nbsp;&nbsp;Essa informação é utilizada em uma função específica, como a 'initAnimations', que é responsável por carregar as animações corretas para o personagem escolhido. Isso é feito utilizando estruturas de decisão condicionais, como instruções if-else, que verificam o valor da variável 'selectedPlayer' e carregam as spritesheets e animações correspondentes.
 
 <div align="center">
-<sub>Figura 7 - Trecho de código da Player Select - Números de ID</sub>
-<img src="../assets/Desenvolvimento/ID_playerselect.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Figura 7 - Trecho de código da Player Select - Números de ID
 </div>
+
+```javascript
+// Call the startGame function when the button is clicked and play select
+    f1.on('pointerdown', () => {
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
+      this.playerSelecionado = '1'
+      this.startGame(this.playerSelecionado)
+    });
+
+
+    f2.on('pointerdown', () => {
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
+      this.playerSelecionado = '2'
+      this.startGame(this.playerSelecionado)
+    });
+
+
+    m1.on('pointerdown', () => {
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
+      this.playerSelecionado = '3'
+      this.startGame(this.playerSelecionado)
+    });
+
+
+    m2.on('pointerdown', () => {
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
+      this.playerSelecionado = '4'
+      this.startGame(this.playerSelecionado)
+    });
+
+```
 
 <div align="center">
-<sub>Figura 8 - Trecho de código da PlayerAnims - Infusão do ID para carregamento dos sprites desejados</sub>
-<img src="../assets/Desenvolvimento/playerSelecionado.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Figura 8 - Trecho de código da PlayerAnims - Infusão do ID para carregamento dos sprites desejados
 </div>
 
+```javascript
+ anims.create({
+    key: 'player_run',
+    frames: anims.generateFrameNumbers(`player${selectedPlayer}_${selectedSprite}`, { start: 10, end: 17 }),
+    frameRate: 12,
+    repeat: -1
+  });
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;Na primeira cena de interação, os jogadores são introduzidos às mecânicas básicas do jogo. Aqui, eles aprendem sobre as habilidades de movimentação do personagem principal, incluindo movimento horizontal e vertical.
 
@@ -650,10 +699,55 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Decidimos incluir diversas decorações temáticas, como placas com o símbolo da Unilever, um avião e um balão com o logo de uma das empresas da Unilever: Dove. Esses elementos não apenas reforçam a identidade da marca, mas também criam uma conexão entre o jogo e o contexto do processo de onboarding dos novos funcionários de TI na Unilever: se conectar com a empresa, seus valores e marcas.
 
 <div align="center">
-<sub>Figura 13 - Trecho código - level 2 </sub>
-<img src="../assets/backend_map.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Figura 13 - Trecho código - level 2
 </div>
+
+```javascript
+
+ const enemies = this.createEnemies(layers);
+
+
+    //create boss
+    const boss = new BossLevel2(this, 9664, 960, 'boss_level2', player).setDepth(3)
+
+
+    // RexonaNpc sprite
+    new Npc(this, 950, 1659, 'hub_sprite', 'hub', player)
+      .setSize(100, 120)
+      .setScale(1.2)
+
+
+    //colocando o Npc de links no terceiro mapa
+    new Npc(this, 7420, 700, "hub_sprite", "hub2", player)
+      .setSize(100, 120)
+      .setScale(1.2)
+
+
+    // Npc sprite
+    new Npc(this, 9664, 1150, 'omo_sprite', 'omo', player)
+      .setScale(0.6)
+      .setSize(150, 120)
+      .setDepth(2)
+
+
+    // Set world bounds based on maps
+    this.physics.world.bounds.height = map.heightInPixels;
+    this.physics.world.bounds.width = map.widthInPixels;
+    // Create background
+    this.createBg(map)
+
+
+    // Create decorations
+    this.createEnv()
+
+
+    // Collider player with platforms
+    this.createPlayerColliders(player, {
+      colliders: {
+        platforms: layers.platforms,
+        projectiles: boss.getProjectiles()
+    }})
+```
 
 
 
@@ -866,10 +960,20 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp; Aqui a variável 'this.language' guarda um texto que pode ser "En" ou "Pt" baseado na escolha feita na tela de título
 
 <div align="center">
-<sub>Figura 21 - Importação modular dos textos traduzidos </sub>
-<img src="../assets/4.5/translationCode.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Importação modular dos textos traduzidos
 </div>
+
+```javascript
+
+ try {
+      const textsModule = await import(`../texts/${this.name}Texts${this.language}.js`);
+      this.texts = textsModule.default;
+    } catch (error) {
+      console.error(`Error importing texts for ${this.name}:`, error);
+      this.texts = ['Check Your text import'];
+    }
+  }
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp; Sprite de Super: Nessa Sprint colocamos em jogo os designs de personagens Super. Atualmente contamos com 16 Sprites sendo eles 4 padrões e 4 Super Sprites para cada um deles:
 
@@ -881,10 +985,53 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp; Foi implementado através da padronização do nome dos arquivos e criação dinâmica das animações. Toda vez que o player coleta um powerUp, muda a variável 'selectedSprite' para o Sprite correspondente, então deleta as animações antigas e cria as novas como mostrado abaixo:
 
 <div align="center">
-<sub>Figura 23 - Criação das animações </sub>
-<img src="../assets/4.5/playerAnims.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Criação das animações
 </div>
+
+```javascript
+export default (anims, selectedPlayer, selectedSprite) =>{
+  // Define all player animation keys
+  const animationKeys = [
+    'player_run',
+    'player_idle',
+    'player_jump',
+    'player_fall',
+    'player_attack',
+    'player_dash',
+  ];
+
+
+  // Remove existing animations if they exist
+  animationKeys.forEach(key => {
+    if (anims.exists(key)) {
+      anims.remove(key);
+    }
+  });
+ 
+  // Animate the sprites
+  anims.create({
+    key: 'player_run',
+    frames: anims.generateFrameNumbers(`player${selectedPlayer}_${selectedSprite}`, { start: 10, end: 17 }),
+    frameRate: 12,
+    repeat: -1
+  });
+
+
+  anims.create({
+    key: 'player_idle',
+    frames: anims.generateFrameNumbers(`player${selectedPlayer}_${selectedSprite}`, { start: 18, end: 25 }),
+    frameRate: 6,
+    repeat: -1
+  });
+
+
+  anims.create({
+    key: 'player_jump',
+    frames: anims.generateFrameNumbers(`player${selectedPlayer}_${selectedSprite}`, { start: 8, end: 9 }),
+    frameRate: 2,
+    repeat: -1
+  });
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp; O Hub de Links (recurso para aprendizado dos novos colaboradores) foi repensado, melhoramos seu design, adicionamos uma caixa de diálogo e tambem o Checkpoint como sendo a "recompensa" se ambos os links forem abertos. Possuí resposta visual e sonora.
 
@@ -903,27 +1050,92 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp; Aqui temos um pedaço do código que cria o Hub de links, nesse trecho abrimos uma janela quando o botão é clicado e checamos se ambos os botões ja foram clicados, se sim, define o Checkpoint muda a imagem e toca um som.
 
 <div align="center">
-<sub>Figura 26 - Hub de Links - Código de um botão do link. </sub>
-<img src="../assets/4.5/hubCode.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Hub de Links - Código de um botão do link.
 </div>
+
+```javascript
+// Link button2
+      this.link_button2.on('pointerdown', () => {
+        window.open(url2[0], '_blank'); // Open in a new tab
+        if (!this.link2Clicked) {
+          this.link2Clicked = true; // Set the flag to indicate link 2 has been clicked
+          this.clicksCount = this.link1Clicked + this.link2Clicked;
+          this.updateProgressBar(); // Call a function to update the progress bar
+        }
+        if (this.link1Clicked && this.link2Clicked){ // If both links are clicked, do whatever
+          this.npcPlayer.checkPoint() // Set checkpoint
+          allowClosing = true
+          this.xBtnLink.setAlpha(1)
+          if (!this.checkpoint_red_point) {
+            this.checkpoint_red_point = this.scene.add.sprite(this.npcPlayer.x + 400, this.npcPlayer.y + 75, "checkpoint_red_point").setScale(4).setDepth(1)
+            this.checkpoint_red_point.play('checkpoint_red_point_idle', true)
+            this.checkpoint_word.setFrame(1)
+            this.scene.sound.add('checkpoint_sound', {loop: false, volume: 0.7}).play();
+          }
+        }
+      });
+```
+
 ### 4.5.2 Resolução de Bugs:
 
 &nbsp;&nbsp;&nbsp;&nbsp; Tinhamos uma inconstância nos projeteis do player, onde em algumas ocasiões o projetil era destruído antes de colidir com um Inimigo, isso acontecia pois não zeravamos a variavel 'this.traveledDistance' quando destruia um projetil, portanto o seguinte ja vinha com um valor elevado nessa variável.
 
 <div align="center">
-<sub>Figura 27 - Destruição de Projetil </sub>
-<img src="../assets/4.5/traveledDistance.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Destruição de Projetil
 </div>
+
+```javascript
+// Inactive and reset projectile properties
+    destroyProjectile() {
+      this.activateProjectile(false)
+      this.body.reset(0, 0)
+      this.traveledDistance = 0 // Reset Traveled distance
+    }
+
+
+    // Switch on/off projectile
+    activateProjectile(isActive) {
+      this.setActive(isActive)
+      this.setVisible(isActive)
+    }
+}
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp; Tambem relacionado àos projeteis, o projetil dos chefões não estavam sendo destruidos após acertar o Player, o que causava um comportamento indesejado de Hit Multiplo. Isso foi facilmente resolvido com a criação de uma função destroyProjectile(destroi o projetil) essa que é chamada dentro da função takesHit(lida com a logica de receber dano) do Player
 
 <div align="center">
-<sub>Figura 28 - Lógica de levar Hit </sub>
-<img src="../assets/4.5/takesHit.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Lógica de levar Hit
 </div>
+
+```javascript
+takesHit(source) {
+    if (this.hasBeenHit) return
+
+
+    // If source have traveledDistance propertie it is a projectile, so destroy it.
+    if (source.traveledDistance) source.destroyProjectile()
+
+
+    this.hurtSound.play()
+    this.hasBeenHit = true // Give invulnerability
+    this.hp.decrease(source.damage) // Monster damage
+    // Check if player died
+    if(this.hp.currentHp() < 1) {
+      // Dead
+      console.log("Dead");
+      this.die()
+    } else {
+      // Hurt
+      this.bounceOff()
+      this.setAlpha(0.25)
+      this.scene.time.delayedCall(200, () => {
+        this.setAlpha(1)
+      })
+    }
+    this.resumeUpdate()
+    this.scene.time.delayedCall(1000, () => {this.hasBeenHit = false})
+  }
+```
 
 # <a name="c5"></a>5. Testes
 
