@@ -88,7 +88,7 @@ export default class TitleScreen extends Phaser.Scene {
       // Play sound effect
       this.sound.add('select_sound', { loop: false, volume: 0.7 }).play()
       this.titleMusic.pause()
-      this.scene.start("creditScreen", { titleMusicObject: this.titleMusic });
+      this.scene.start("creditScreen", { titleMusicObject: this.titleMusic, language: this.game.language });
     });
 
 
