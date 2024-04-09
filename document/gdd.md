@@ -571,8 +571,9 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 12 - Inclusão e Diversidade - Player select</sub>
 <img src="../assets/Desenvolvimento/character_select.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Uma das mecânicas mais importantes do jogo é a movimentação e o pulo duplo. A movimentação é controlada pelas teclas direcionais do teclado ou pelas teclas A, W e D. Já o pulo duplo adiciona uma camada adicional de complexidade à jogabilidade, permitindo que os jogadores realizem até dois pulos consecutivos. Uma imagem que demonstre a movimentação do personagem e a mecânica do pulo duplo seria ideal para elucidar este ponto. [Inserir captura de tela da movimentação do personagem e do pulo duplo]
+&nbsp;&nbsp;&nbsp;&nbsp;Uma das mecânicas mais importantes do jogo é a movimentação e o pulo duplo. A movimentação é controlada pelas teclas direcionais do teclado ou pelas teclas A, W e D. Já o pulo duplo adiciona uma camada adicional de complexidade à jogabilidade, permitindo que os jogadores realizem até dois pulos consecutivos. Uma imagem que demonstre a movimentação do personagem e a mecânica do pulo duplo seria ideal para elucidar este ponto.
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;O objetivo ao criar o Mapa 1 foi introduzir os jogadores ao universo do jogo de forma cativante e envolvente. Para alcançar esse objetivo, optamos por um ambiente lúdico e inspirador, onde o jogador se sentiria motivado a explorar e progredir. A música de aventura selecionada foi cuidadosamente escolhida para instigar entusiasmo e um senso de desafio no jogador, complementando a atmosfera de exploração.
@@ -585,6 +586,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 13 - Trecho código - level 2 </sub>
 <img src="../assets/backend_map.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 
 
@@ -610,6 +612,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 14 - Inimigo - Fumaça </sub>
 <img src="../src/assets/enemies/smoke.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;O processo criativo para o desenvolvimento do jogo, foi um jornada de refinamento e aprimoramento constante. Analisamos as ideias e elementos anteriores, realizamos melhorias significativas para garantir a melhor experiência possível para os jogadores, construindo um mundo mais amplo e desafiador.
 
@@ -619,7 +622,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 1 - Ilustração da Title Screen</sub>
 <img src="../assets/mvp/mvp2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Desenvolvemos nosso MVP com uma tela de título, onde é possível realizar algumas configurações do jogo.
@@ -628,7 +631,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 2 - Ilustração da seleção de personagem</sub>
 <img src="../assets/mvp/mvp3.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Introduzimos um recurso de acessibilidade que permite escolher qual será o seu jogador, aumentando a imersão e proporcionando maior identificação do jogador com o jogo.
@@ -637,7 +640,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 3 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp4.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Após escolher o personagem, apresentamos uma tela animada com os controles básicos do jogo.
@@ -646,7 +649,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 4 - Ilustração do ambiente Quarto</sub>
 <img src="../assets/mvp/mvp5.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo se inicia na casa do colaborador.
@@ -655,7 +658,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 5 - Ilustração do affordance</sub>
 <img src="../assets/mvp/mvp7.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Incluímos como affordance a resposta visual do jogador ao interagir com elementos com os quais é possível interagir.
@@ -664,7 +667,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 6 - Ilustração da interação com o computador</sub>
 <img src="../assets/mvp/mvp6.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;No início do jogo, o jogador deve interagir com o computador para receber a missão da diretora da Unilever, recebendo assim uma contextualização do enredo e dos objetivos do jogo.
@@ -673,7 +676,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 7 - Ilustração do Chefão - Level 2</sub>
 <img src="../assets/mvp/mvp8.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Durante o jogo, ao derrotar chefões, surgem power-ups representando produtos da marca Unilever, e para coletá-los, o jogador deve acertar o quiz que aparece após a interação com o item.
@@ -682,7 +685,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 8 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp9.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Após acertar todas as perguntas do quiz, o jogador desbloqueia melhorias ou novas habilidades. Quando uma nova tecla é adicionada ao conjunto de controles, um pop-up com uma nova tela de tutorial animado explica brevemente a nova mecânica do jogo.
@@ -691,7 +694,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 9 - Ilustração do Level 2</sub>
 <img src="../assets/mvp/mvp10.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Após interagir com todos os elementos disponíveis na primeira fase, o jogador pode sair de casa e começar sua jornada. Então, inicia-se a próxima fase do jogo, que representa um mundo lúdico com vários elementos temáticos da Unilever e inimigos para enfrentar.
@@ -700,7 +703,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 10 - Ilustração do NPC de hub de links / checkpoint</sub>
 <img src="../assets/mvp/mvp11.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Ao longo das fases, um NPC distribui links relacionados ao conteúdo de onboarding necessário para o próximo quiz e também serve como checkpoint.
@@ -709,7 +712,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 11 - Ilustração do hub de links</sub>
 <img src="../assets/mvp/mvp12.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Hub de links.
@@ -718,7 +721,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 12 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp13.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;No final de cada fase, o jogador deve enfrentar um chefão que, ao ser derrotado, libera uma recompensa (power-up/quiz).
@@ -727,7 +730,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 <sub>Figura 13 - Ilustração do Power-up</sub>
 <img src="../assets/mvp/mvp14.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 Item liberado pelo boss após ser derrotado.
@@ -736,7 +739,7 @@ Item liberado pelo boss após ser derrotado.
 <sub>Figura 14 - Ilustração do Level 3</sub>
 <img src="../assets/mvp/mvp15.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Na fase da cidade Unilever, o jogador enfrenta novos inimigos e um novo chefão.
@@ -745,7 +748,7 @@ Item liberado pelo boss após ser derrotado.
 <sub>Figura 15 - Ilustração do Chefão - Level 3</sub>
 <img src="../assets/mvp/mvp16.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Novo chefão da cidade Unilever.
@@ -754,7 +757,7 @@ Item liberado pelo boss após ser derrotado.
 <sub>Figura 16 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp17.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Após coletar o power-up do novo chefão, o jogador desbloqueia uma nova habilidade, o "movimento rápido".
@@ -763,7 +766,7 @@ Item liberado pelo boss após ser derrotado.
 <sub>Figura 17 - Ilustração do Level 4</sub>
 <img src="../assets/mvp/mvp1.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Por fim, na fase final, o jogador chega ao escritório da Unilever e conclui o jogo.
@@ -780,26 +783,26 @@ Item liberado pelo boss após ser derrotado.
 <sub>Figura 18 - Tela de título - Inglês </sub>
 <img src="../assets/4.5/titleIngles.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 <div align="center">
 <sub>Figura 19 - Tela de título - Português </sub>
 <img src="../assets/4.5/titlePortugues.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 &nbsp;&nbsp;&nbsp;&nbsp; E desenvolvemos os arquivos de dialogo e quiz traduzidos:
 
 <div align="center">
 <sub>Figura 20 - Arquivos de texto </sub>
 <img src="../assets/4.5/textsFolder.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 &nbsp;&nbsp;&nbsp;&nbsp; Aqui a variável 'this.language' guarda um texto que pode ser "En" ou "Pt" baseado na escolha feita na tela de título
 
 <div align="center">
 <sub>Figura 21 - Importação modular dos textos traduzidos </sub>
 <img src="../assets/4.5/translationCode.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 &nbsp;&nbsp;&nbsp;&nbsp; Sprite de Super: Nessa Sprint colocamos em jogo os designs de personagens Super. Atualmente contamos com 16 Sprites sendo eles 4 padrões e 4 Super Sprites para cada um deles:
 
@@ -807,14 +810,14 @@ Item liberado pelo boss após ser derrotado.
 <sub>Figura 22 - Todas as possíveis texturas do Player </sub>
 <img src="../assets/4.5/playerSprites.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 &nbsp;&nbsp;&nbsp;&nbsp; Foi implementado através da padronização do nome dos arquivos e criação dinâmica das animações. Toda vez que o player coleta um powerUp, muda a variável 'selectedSprite' para o Sprite correspondente, então deleta as animações antigas e cria as novas como mostrado abaixo:
 
 <div align="center">
 <sub>Figura 23 - Criação das animações </sub>
 <img src="../assets/4.5/playerAnims.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 &nbsp;&nbsp;&nbsp;&nbsp; O Hub de Links (recurso para aprendizado dos novos colaboradores) foi repensado, melhoramos seu design, adicionamos uma caixa de diálogo e tambem o Checkpoint como sendo a "recompensa" se ambos os links forem abertos. Possuí resposta visual e sonora.
 
@@ -822,21 +825,21 @@ Item liberado pelo boss após ser derrotado.
 <sub>Figura 24 - Hub de Links - 0 Clicks </sub>
 <img src="../assets/4.5/hub0Clicks.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 &nbsp;&nbsp;&nbsp;&nbsp; Quando o diálogo é finalizado, é abilitado os clicks nos links, a cada click a barra de progresso sobe, quando vc clica em todos os links a barra completa e o Checkpoint é redefinido para aquela localização.
 
 <div align="center">
 <sub>Figura 25 - Hub de Links - 2 Clicks </sub>
 <img src="../assets/4.5/hub2Clicks.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 &nbsp;&nbsp;&nbsp;&nbsp; Aqui temos um pedaço do código que cria o Hub de links, nesse trecho abrimos uma janela quando o botão é clicado e checamos se ambos os botões ja foram clicados, se sim, define o Checkpoint muda a imagem e toca um som.
 
 <div align="center">
 <sub>Figura 26 - Hub de Links - Código de um botão do link. </sub>
 <img src="../assets/4.5/hubCode.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 ### 4.5.2 Resolução de Bugs:
 
 &nbsp;&nbsp;&nbsp;&nbsp; Tinhamos uma inconstância nos projeteis do player, onde em algumas ocasiões o projetil era destruído antes de colidir com um Inimigo, isso acontecia pois não zeravamos a variavel 'this.traveledDistance' quando destruia um projetil, portanto o seguinte ja vinha com um valor elevado nessa variável.
@@ -845,7 +848,7 @@ Item liberado pelo boss após ser derrotado.
 <sub>Figura 27 - Destruição de Projetil </sub>
 <img src="../assets/4.5/traveledDistance.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 &nbsp;&nbsp;&nbsp;&nbsp; Tambem relacionado àos projeteis, o projetil dos chefões não estavam sendo destruidos após acertar o Player, o que causava um comportamento indesejado de Hit Multiplo. Isso foi facilmente resolvido com a criação de uma função destroyProjectile(destroi o projetil) essa que é chamada dentro da função takesHit(lida com a logica de receber dano) do Player
 
@@ -853,7 +856,7 @@ Item liberado pelo boss após ser derrotado.
 <sub>Figura 28 - Lógica de levar Hit </sub>
 <img src="../assets/4.5/takesHit.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-
+</div>
 
 # <a name="c5"></a>5. Testes
 
