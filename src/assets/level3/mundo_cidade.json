@@ -417,18 +417,6 @@
                 }, 
                 {
                  "height":0,
-                 "id":94,
-                 "name":"spawnPoint",
-                 "point":true,
-                 "rotation":0,
-                 "type":"graySmoke",
-                 "visible":true,
-                 "width":0,
-                 "x":2436.0100050025,
-                 "y":2333.6065811257
-                }, 
-                {
-                 "height":0,
                  "id":80,
                  "name":"spawnPoint",
                  "point":true,
