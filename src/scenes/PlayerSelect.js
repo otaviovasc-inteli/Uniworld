@@ -5,11 +5,13 @@ export default class PlayerSelect extends Phaser.Scene {
 
   create() {
     const bg = this.add.image(0, 0, "blue-bg").setScale(10).setOrigin(0, 0);
-    const title = this.add.image(250, 80, "title").setOrigin(0, 0);
+    this.title = this.add.sprite(295, 110, 'title_sheet').setOrigin(0, 0).setScale(0.2);
     const f1 = this.add.image(240, 360, "frame1F");
     const f2 = this.add.image(510, 360, "frame2F");
     const m1 = this.add.image(770, 360, "frame1M");
     const m2 = this.add.image(1040, 360, "frame2M");
+
+    this.title.play('title_anim', true)
 
     f1.setInteractive();
     f2.setInteractive();

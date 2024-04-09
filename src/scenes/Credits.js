@@ -21,21 +21,11 @@ export default class CreditScreen extends Phaser.Scene {
     this.music.resume();
 
     // Adds background
-    this.add
-      .video(0, -100, "background_clouds")
-      .setOrigin(0, 0)
-      .setScale(1.12)
-      .play(true)
-      .setPlaybackRate(0.7);
-    this.title = this.add.image(250, 120, "title").setOrigin(0, 0);
-    this.hills = this.add
-      .image(0, -100, "hills")
-      .setOrigin(0, 0)
-      .setScale(1.12);
-    this.foreground = this.add
-      .image(0, -100, "foreground")
-      .setOrigin(0, 0)
-      .setScale(1.12);
+    this.add.video(0, -100, "background_clouds").setOrigin(0,0).setScale(1.12).play(true).setPlaybackRate(0.7);
+    this.title = this.add.sprite(295, 150, 'title_sheet').setOrigin(0, 0).setScale(0.2);
+    this.hills = this.add.image(0, -100, "hills").setOrigin(0, 0).setScale(1.12);
+    this.foreground = this.add.image(0, -100, "foreground").setOrigin(0, 0).setScale(1.12);
+    this.title.anims.play('title_anim', true)
 
     // Add return button image and credits background
     this.add.image(640, 450, "credit_space").setScale(0.505);

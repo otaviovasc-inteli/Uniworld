@@ -12,6 +12,19 @@
 
 ## Sumário
 
+Lista de figuras:
+
+Numeração | Figura
+--- | ---
+1 | Preserverance Games
+2 | Análise SWOT
+3 | Proposta de Valor
+4 | Matriz de Riscos
+5 | Npc hub
+6 | Npc diretora
+7 | 
+
+
 [1. Introdução](#c1)
 
 [2. Visão Geral do Jogo](#c2)
@@ -262,7 +275,10 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o jogador. Ao interagir com os NPCs, o personagem terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 2 NPCs diferentes, com o design a seguir:
 
+<sub>Figura 3 - Npc hub</sub>
 <img src="../assets/Dvdd.png">
+
+<sub>Figura 3 - Npc diretora</sub>
 <img src="../assets/diretora.png">
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
