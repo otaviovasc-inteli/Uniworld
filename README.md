@@ -79,15 +79,20 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 ## 🗃 Histórico de lançamentos
 
 * 0.5.0 - 11/04/2024
+#### Entrega 5
     *
 * 0.4.0 - 28/03/2024
+#### Entrega 4
     *
 * 0.3.0 - 15/03/2024
+#### Entrega 3
     *
 * 0.2.0 - 01/03/2024
+#### Entrega 2
     *
 * 0.1.0 - 15/02/2024
-    *
+#### Entrega 1
+    * Jogo com movimentação e interação básica com NPC, Primeiros personagens e animações implementadas.
 
 ## 📋 Licença/License
 
