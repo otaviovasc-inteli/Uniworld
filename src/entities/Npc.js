@@ -17,6 +17,9 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.answerTexts = []
     this.isDestroyed = false; // Track if this instance is destroyed
 
+    this.selectSound = this.scene.sound.add('hover_sound', {loop: false, volume: 0.7})
+    this.finishedDialog = false // Variable used to prevent hub from talking twice
+
     // Track how many Npc is in the scene
     Npc.instanceCount++;
     // This is just to not recriate animations.
@@ -276,7 +279,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         this.answerButtons.push(answerButton)
 
         // Answers text
-        this.answerTexts.push(this.scene.add.text(centerX - 400, centerY + (55 * index) - 80, answers[index], { font: '24px Arial', fill: '#000', wordWrap: {width: centerX + 100} }).setOrigin(0, 0).setDepth(2))
+        this.answerTexts.push(this.scene.add.text(centerX - 400, centerY + (55 * index) - 80, answers[index], { font: '20px Arial', fill: '#000', wordWrap: {width: centerX - 100} }).setOrigin(0, 0).setDepth(2))
 
         answerButton.on('pointerover', () => {
           answerButton.setScale(1.1)
@@ -289,14 +292,14 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
             if (letter === correctAnswerLetter) {
                 console.log('Correct answer!');
                 this.questionsCorrectCount++; // Increase correct answers counter
-                this.scene.sound.add('select_sound', {loop: false, volume: 0.7}).play()
+                this.selectSound.play()
                 answerButton.setTint(0x00ff00); // Make the button green to indicate correct answer
                 this.scene.time.delayedCall(500, () => { // This delayedCall add time so player can see the button turning green
                   this.nextQuestion(sprite);
                 })
             } else {
                 console.log('Wrong answer!');
-                this.scene.sound.add('select_sound', {loop: false, volume: 0.7, rate: 0.5}).play()
+                this.selectSound.play()
                 answerButton.setTint(0xff0000);
                 this.scene.time.delayedCall(500, () => {
                   this.nextQuestion(sprite);
@@ -373,28 +376,30 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     const url1 = this.texts[0]
     const url2 = this.texts[1]
     const dialogTexts = this.texts[2]
-    let finishedDialog = false
-
+    let allowClosing = false
 
     // Dialog box modal
-    if (this.dialogIndex >= dialogTexts.length) {
-      // If all messages have been displayed, destroy the dialog window and image
-      this.destroyDialog();
-      this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
-      this.dialogSound.pause() // pause dialog sound
-      finishedDialog = true
-    } else {
-      // Show the next message
-      this.createDialog(dialogTexts);
-      this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
-      this.dialogSound.stop() // Stop dialog sound
-      this.dialogSound.play() // Play dialog sound
+    if(!this.finishedDialog){
+      if (this.dialogIndex >= dialogTexts.length) {
+        // If all messages have been displayed, destroy the dialog window and image
+        this.destroyDialog();
+        this.npcPlayer.resumeUpdate() // Player able to move when interaction is over
+        this.dialogSound.pause() // pause dialog sound
+        this.finishedDialog = true
+      } else {
+        // Show the next message
+        this.createDialog(dialogTexts);
+        this.npcPlayer.pauseUpdate() // Prevent player from moving while interacting
+        this.dialogSound.stop() // Stop dialog sound
+        this.dialogSound.play() // Play dialog sound
+      }
     }
 
     // Those if's check if the element already exists so it wont double them.
     // Add hub screen and x button if they dont exist already
     if (!this.screen) this.screen = this.scene.add.image(this.npcPlayer.x, this.npcPlayer.y - 50, "hub_screen").setDepth(1)
-    if (!this.xBtnLink) this.xBtnLink = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 290, "hub_close").setDepth(2).setScale(0.06)
+    if (!this.xBtnLink) this.xBtnLink = this.scene.add.sprite(this.npcPlayer.x + 350, this.npcPlayer.y - 290, "continue_button").setDepth(2).setScale(0.9)
+    this.xBtnLink.setAlpha(0) // Make button invisible till its allowed to click
 
     // Clickable links
     if (!this.link_button1) this.link_button1 = this.scene.add.image(this.npcPlayer.x + 400, this.npcPlayer.y - 110  - 50, 'hub_link_button').setDepth(2).setScale(0.5).setInteractive();
@@ -428,13 +433,12 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     const fillWidth = this.clicksCount * (880 / 2);
     this.progressBarFill.fillRect(this.npcPlayer.x - 450, this.npcPlayer.y - 50, fillWidth, 40);
 
-
     // Initialize link clicked flags if not already done
     if (this.link1Clicked === undefined) this.link1Clicked = false;
     if (this.link2Clicked === undefined) this.link2Clicked = false;
 
     // Add links to the buttons
-    if(finishedDialog){
+    if(this.finishedDialog){
       // Link button1
       this.link_button1.on('pointerdown', () => {
         window.open(url1[0], '_blank'); // Open in a new tab
@@ -443,8 +447,10 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           this.clicksCount = this.link1Clicked + this.link2Clicked;
           this.updateProgressBar(); // Call a function to update the progress bar
         }
-        if (this.link1Clicked && this.link2Clicked){ // If both links are clicked, set checkpoint
-          this.npcPlayer.checkPoint()
+        if (this.link1Clicked && this.link2Clicked){ // If both links are clicked, do whatever
+          this.npcPlayer.checkPoint() // Set checkpoint
+          allowClosing = true
+          this.xBtnLink.setAlpha(1)
           if (!this.checkpoint_red_point) {
             this.checkpoint_red_point = this.scene.add.sprite(this.npcPlayer.x + 400, this.npcPlayer.y + 75, "checkpoint_red_point").setScale(4).setDepth(1)
             this.checkpoint_red_point.play('checkpoint_red_point_idle', true)
@@ -461,8 +467,10 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
           this.clicksCount = this.link1Clicked + this.link2Clicked;
           this.updateProgressBar(); // Call a function to update the progress bar
         }
-        if (this.link1Clicked && this.link2Clicked){ // If both links are clicked, set checkpoint
-          this.npcPlayer.checkPoint()
+        if (this.link1Clicked && this.link2Clicked){ // If both links are clicked, do whatever
+          this.npcPlayer.checkPoint() // Set checkpoint
+          allowClosing = true
+          this.xBtnLink.setAlpha(1)
           if (!this.checkpoint_red_point) {
             this.checkpoint_red_point = this.scene.add.sprite(this.npcPlayer.x + 400, this.npcPlayer.y + 75, "checkpoint_red_point").setScale(4).setDepth(1)
             this.checkpoint_red_point.play('checkpoint_red_point_idle', true)
@@ -472,12 +480,23 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         }
       });
 
+      this.xBtnLink.on('pointerover', () => {
+        this.xBtnLink.setFrame(1)
+        this.selectSound.play()
+      });
+
+      this.xBtnLink.on('pointerout', () => {
+        this.xBtnLink.setFrame(0)
+      });
+
       // Hover effects
       this.link_button1.on('pointerover', () => {
         this.link_button1.setFrame(1)
+        this.selectSound.play()
       });
       this.link_button2.on('pointerover', () => {
         this.link_button2.setFrame(1)
+        this.selectSound.play()
       });
       this.link_button1.on('pointerout', () => {
         this.link_button1.setFrame(0)
@@ -492,7 +511,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
 
     // Close button loginc
     this.xBtnLink.setInteractive()
-    if(finishedDialog){
+    if(this.finishedDialog){
       this.xBtnLink.on('pointerdown', () => {
         this.destroyHub()
         return;

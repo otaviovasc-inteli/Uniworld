@@ -76,6 +76,7 @@ export default class Preload extends Phaser.Scene {
     this.load.image('quiz_button_B', 'assets/quiz/quiz_button_B.png');
     this.load.image('quiz_button_C', 'assets/quiz/quiz_button_C.png');
     this.load.image('uni_quiz_logo', 'assets/quiz/uniQuiz.png');
+    this.load.spritesheet('continue_button', 'assets/quiz/continue_button.png', { frameWidth: 192, frameHeight: 52 });
     // ------------------------------------------------------------------
     // Players
     // Standard
