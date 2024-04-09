@@ -134,7 +134,7 @@ export default class CreditScreen extends Phaser.Scene {
       })
       .setInteractive()
       .on("pointerdown", () => {
-        window.open("https://www.linkedin.com/school/inteli-edu/");
+        window.open("https://www.linkedin.com/in/ricardo-de-toledo-planas-365b932ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGu6Ne8vuSuO5qUKdDrxSeA%3D%3D");
       });
     } else if (this.game.language === 'En') {
       this.add.text(
@@ -228,7 +228,7 @@ export default class CreditScreen extends Phaser.Scene {
       })
       .setInteractive()
       .on("pointerdown", () => {
-        window.open("https://www.linkedin.com/school/inteli-edu/");
+        window.open("https://www.linkedin.com/in/ricardo-de-toledo-planas-365b932ba?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGu6Ne8vuSuO5qUKdDrxSeA%3D%3D");
       });
     }
     
@@ -247,7 +247,7 @@ export default class CreditScreen extends Phaser.Scene {
     this.botaoVoltar.on("pointerdown", () => {
       this.sound.add("select_sound", { loop: false, volume: 0.7 }).play();
       this.music.pause();
-      this.scene.start("titleScreen", { titleMusicObject: this.music });
+      this.scene.start("titleScreen", { titleMusicObject: this.music, language: this.game.language });
     });
   }
 }
