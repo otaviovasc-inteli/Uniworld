@@ -22,7 +22,12 @@ Numeração | Figura
 4 | Matriz de Riscos
 5 | Npc hub
 6 | Npc diretora
-7 | 
+7 | Seleção De Player Imagem
+8 | Ilustração do ambiente Quarto
+9 | Ilustração do Mundo Lúdico
+10 | Ilustração NPC do Hub de Links
+11 | Ilustração do Hub de Links
+12 | 
 
 
 [1. Introdução](#c1)
@@ -286,7 +291,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no jogo, no qual o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Tanto para os semblantes masculinos, quanto para os femininos, haveram 2 opções de etnia.
 
 <div align="center">
-<sub>Figura 4 - Ilustração do ambiente Quarto</sub>
+<sub>Figura 7 - Seleção De Player Imagem</sub>
 <img src="../assets/PlayerSelecter.jpg">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -298,7 +303,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 &nbsp;&nbsp;&nbsp;&nbsp;A cena inicial do jogo será no quarto, ambiente no qual é possível encontrar objetos como uma cama, guarda-roupas, mesa, janelas, um quadro e os itens principais deste ambiente: o desodorante Rexona e um notebook. O personagem irá acordar no ambiente em questão e irá interagir com um notebook que, dentro dele, encontrará informações sobre as plataformas que são utilizadas na empresa. No computador, após utilizar a ferramenta do Teams, entrará numa reunião onde receberá a missão de chegar a Unilever (figura 1).
 
 <div align="center">
-<sub>Figura 1 - Ilustração do ambiente Quarto</sub>
+<sub>Figura 8 - Ilustração do ambiente Quarto</sub>
 <img src="../assets/printQuarto.jpg" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -306,13 +311,13 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;O segundo ambiente é o Mundo Lúdico, onde o Player terá da fato a primeira gameplay do jogo, nessa fase, é possivel encontrar objetos de decoração relacionados à Unilever, será possível batalhar contra inimigos e no final da fase um "chefão". O objetivo do Player nessa fase é interagir com o NPC que disponibiliza dos Links de aprendizado da Unilever e depois interagir com o objeto de Quiz que lhe dará o *Power-up* baseado no resultado. Depois de derrotar o primeiro chefe, pode seguir para o terceiro ambiente
 <div align="center">
-<sub>Figura 2 - Ilustração do Mundo Lúdico</sub>
+<sub>Figura 9 - Ilustração do Mundo Lúdico</sub>
 <img src="../assets/printMundoLudico.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-<sub>Figura 3 - Ilustração NPC do Hub de Links</sub>
+<sub>Figura 10 - Ilustração NPC do Hub de Links</sub>
 <img src="../assets/printDvdNpc.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
-<sub>Figura 4 - Ilustração do Hub de Links</sub>
+<sub>Figura 11 - Ilustração do Hub de Links</sub>
 <img src="../assets/printHubLinks.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -330,7 +335,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 Concept art é a criação de imagens que representam ideias, personagens, ambientes e conceitos para produtos, ajudando a visualizar e desenvolver a direção criativa antes da produção completa.
 
 <div align="center">
-<sub>Figura 1 - Arte Conceitual da Cena 2</sub>
+<sub>Figura 12 - Arte Conceitual da Cena 2</sub>
 <img src="../assets/Conceptart.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -338,7 +343,7 @@ Concept art é a criação de imagens que representam ideias, personagens, ambie
 Figura 1: Descrição dos objetos dispostos na primeira cena de combate, como plataformas, NPCs e coletáveis.
 
 <div align="center">
-<sub>Figura 2 - Página de preload - Exemplo de modularização do código</sub>
+<sub>Figura 13 - Arte Conceitual da Cena 3</sub>
 <img src="../assets/concept_cena_combate_2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -346,8 +351,8 @@ Figura 1: Descrição dos objetos dispostos na primeira cena de combate, como pl
 Figura 2: Descrição dos objetos dispostos na segunda cena de combate, como plataformas, NPCs e coletáveis.
 
 <div align="center">
-<sub>Figura 3 - Página de preload - Exemplo de modularização do código</sub>
-<img src="../assets/concept_cena_combate_2.png" width="100%">
+<sub>Figura 14 - Arte Conceitual da Cena 4</sub>
+<img src="../assets/concept_map_ 4.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
@@ -403,7 +408,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 &nbsp;&nbsp;&nbsp;&nbsp;Esse tipo de diagrama é útil para os desenvolvedores de jogos planejarem a progressão do jogo, as classes e métodos necessários para implementar diferentes cenas do jogo, e para acompanhar como o jogador irá experimentar o jogo do início ao fim.
 
 <div align="center">
-<sub>Figura 1 - Diagrama de Cenas</sub>
+<sub>Figura 15 - Diagrama de Cenas</sub>
 <img src="../assets/GameFlow4.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -422,13 +427,13 @@ Licensas: https://mixkit.co/license/#sfxFree
 &nbsp;&nbsp;&nbsp;&nbsp;O processo inicial de desenvolvimento se deu por meio da entrega do MPV, implementando a existência de um cenário e  a movimentação básica do personagem, como ilustra a figura 1. Além disso, diálogos com NPCs (Personagem não Jogável) também foram incluídos, contemplados na figura 2.
 
 <div align="center">
-<sub>Figura 1 - Fase Inicial - Mundo Lúdico</sub>
+<sub>Figura 16 - Fase Inicial - Mundo Lúdico</sub>
 <img src="../assets/versaoInicialJogo.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
-<sub>Figura 2 - Fase Inicial - Interação com NPC</sub>
+<sub>Figura 17 - Fase Inicial - Interação com NPC</sub>
 <img src="../assets/DialogoInical.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -440,31 +445,31 @@ Licensas: https://mixkit.co/license/#sfxFree
 &nbsp;&nbsp;&nbsp;&nbsp;Ao longo do desenvolvimento da versão básica do jogo, o grupo foi capaz de incluir novas mecânicas, novo design e mais fases. A figura 1 abaixo ilustra a tela de início funcional do jogo, que permite o acesso às demais funcionalidades. Em seguida, a figura 2 apresenta a tela de seleção de personagem criada, possibilitando maior diversidade ao representar o colaborador. A figura 3 ilustra o ambiente do Quarto, que contém as novas interações com itens e NPCs (Personagens Não-Jogáveis), como demonstradas na figura 4. Por fim, a figura 5 ilustra o novo cenário ao ar livre chamado Mundo Lúdico, que será intermediário ao longo do jogo.
 
 <div align="center">
-<sub>Figura 1 - Tela de Início</sub>
+<sub>Figura 18 - Tela de Início</sub>
 <img src="../assets/UniWorld.jpg" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
-<sub>Figura 2 - Seleção de Personagem</sub>
+<sub>Figura 19 - Seleção de Personagem</sub>
 <img src="../assets/PlayerSelecter.jpg" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
-<sub>Figura 3 - Fase 1 - Quarto</sub>
+<sub>Figura 20 - Fase 1 - Quarto</sub>
 <img src="../assets/printQuarto.jpg" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
-<sub>Figura 4 - Fase 1 - Interação com NPC dentro do Quarto</sub>
+<sub>Figura 21 - Fase 1 - Interação com NPC dentro do Quarto</sub>
 <img src="../assets/NotebookNpcQuarto.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 <div align="center">
-<sub>Figura 5 - Fase 2 - Mundo Lúdico</sub>
+<sub>Figura 22 - Fase 2 - Mundo Lúdico</sub>
 <img src="../assets/MundoLudico.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -483,7 +488,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 &nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, cada escolha e elemento do jogo para a Unilever foi analisado, melhorado e implementado após um processo de reflexão, resultando em uma experiência de jogo melhor e mais impactante para os jogadores.
 <div align="center">
-<sub>Figura 1 - Fase 1 - Interação com NPC dentro do Quarto</sub>
+<sub>Figura 23 - Fase 1 - Interação com NPC dentro do Quarto</sub>
 <img src="../assets/printQuarto.jpg" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -494,22 +499,59 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 &nbsp;&nbsp;&nbsp;&nbsp;Dentro do âmbito técnico, o jogo já possui grandes avanços. Antes mesmo da programação do jogo em si houve a criação de uma tela de pré-carregamento dedicada, garantindo uma modularidade do código, onde todos os preloads poderiam ser encontrados de uma vez só. Essa tela é essencial para carregar todos os recursos necessários, como imagens, áudios e outros ativos, otimizando assim o desempenho geral do jogo.
 <div align="center">
-<sub>Figura 2 - Página de preload - Exemplo de modularização do código</sub>
-<img src="../assets/Desenvolvimento/Preload_1.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Página de preload - Exemplo de modularização do código</sub>
 </div>
 
 
+```javascript
+export default class Preload extends Phaser.Scene {
+  constructor() {
+    super("preload");
+  }
+
+  preload() {
+    this.load.image("bg1", "assets/level2/back.png");
+    // ------------------------------------------------------------------
+    // playerSelect
+    this.load.spritesheet("frame1F", "assets/selection/selection1F.png", { frameWidth: 256, frameHeight: 256 })
+    this.load.spritesheet("frame1M", "assets/selection/selection1M.png", { frameWidth: 256, frameHeight: 256 })
+    this.load.spritesheet("frame2F", "assets/selection/selection2F.png", { frameWidth: 256, frameHeight: 256 })
+    this.load.spritesheet("frame2M", "assets/selection/selection2M.png", { frameWidth: 256, frameHeight: 256 })
+    this.load.image("blue-bg", "assets/selection/bg-lightblue.png")
+    // ------------------------------------------------------------------
+    // level1
+    this.load.tilemapTiledJSON('level1', 'assets/level1/sceneInterior.json');
+    this.load.image('level1_t1', 'assets/level1/level1_t1.png');
+    this.load.image('level1_t2', 'assets/level1/level1_t2.png');
+    this.load.image('level1_t3', 'assets/level1/level1_t3.png');
+    // ------------------------------------------------------------------
+    // Level2
+    this.load.tilemapTiledJSON('level2', 'assets/level2/mundo_ludico.json');
+    this.load.image('level2_t1', 'assets/level2/level2_t1.png');
+    this.load.image('level2_t2', 'assets/level2/level2_t2.png');
+    this.load.image('bg_cloud', 'assets/level2/background/bg-cloud.png');
+    this.load.image('bg_color_blue', 'assets/level2/background/bg-color-blue.png');
+    this.load.image('bg_color_green', 'assets/level2/background/bg-color-green.png');
+    this.load.image('bg_foreground', 'assets/level2/background/foreground.png');
+    this.load.image('bg_hills', 'assets/level2/background/hills.png');
+    this.load.image('placa_unilever', 'assets/level2/placa_unilever.png');
+    this.load.spritesheet('aviao_unilever', 'assets/level2/aviao_unilever.png', { frameWidth: 256, frameHeight: 144 });
+    this.load.spritesheet('balao_unilever', 'assets/level2/balao_unilever.png', { frameWidth: 192, frameHeight: 256 });
+    
+```
+    
+
 &nbsp;&nbsp;&nbsp;&nbsp;Em seguida, iniciamos o processo de confecção do jogo em si. Buscando referências externas, chegamos a conclusão que em jogos desse estilo, é natural trazer uma tela de título antes da jogatina, no intuito de induzir o jogador a querer iniciar o jogo, mas além disso, buscamos já imergir o jogador no estilo de arte pixelada que ele encontrará ao longo da aventura, e mergulhar os jogadores em uma atmosfera nostálgica desde o início.
+
 <div align="center">
-<sub>Figura 3 - Página de título - Apresentação inicial do game</sub>
+<sub>Figura 24 - Página de título - Apresentação inicial do game</sub>
 <img src="../assets/Desenvolvimento/titleScreen.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Para simplificar o gerenciamento das transições entre as diferentes cenas do jogo, fazemos uso da classe Phaser.Scene. Essa abordagem não só facilita a criação de ambientes de jogo coesos, mas também contribui para uma experiência de jogo mais organizada e envolvente. Ao tornar o botão "PLAY" interativo, com o auxílio dessa classe a transição para a próxima cena se torna eficiente e enxuta.
 <div align="center">
-<sub>Figura 4 - Botão de PLAY - Interatividade e Comandos</sub>
+<sub>Código - Interatividade e Comandos</sub>
 <img src="../assets/Desenvolvimento/transicao_de_cena_1.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -522,7 +564,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 &nbsp;&nbsp;&nbsp;&nbsp;Dando um passo adiante na direção da inclusão e diversidade, foi encontrado em uma pesquisa de público alvo uma necessidade latente de englobar a diversidade dentro do jogo. Por conta disso, implementamos um sistema de seleção de personagens complexo. Os jogadores podem escolher entre quatro personagens diferentes, cada um com suas próprias características e aparências únicas.
 <div align="center">
-<sub>Figura 6 - Inclusão e Diversidade - Player select</sub>
+<sub>Figura 25 - Inclusão e Diversidade - Player select</sub>
 <img src="../assets/Desenvolvimento/character_select.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -549,7 +591,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 &nbsp;&nbsp;&nbsp;&nbsp;Na primeira cena de interação, os jogadores são introduzidos às mecânicas básicas do jogo. Aqui, eles aprendem sobre as habilidades de movimentação do personagem principal, incluindo movimento horizontal e vertical.
 
 <div align="center">
-<sub>Figura 9 - Imagem do tutorial - Primeira cena de interação com o usuário</sub>
+<sub>Figura 26 - Imagem do tutorial - Primeira cena de interação com o usuário</sub>
 <img src="../assets/Desenvolvimento/tutorial.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -558,18 +600,27 @@ Licensas: https://mixkit.co/license/#sfxFree
 &nbsp;&nbsp;&nbsp;&nbsp;Para isso ser possível, foi feito um vídeo em formato de cutscene. Com o método do Phaser "create", o vídeo é adicionado na tela, fazendo com que pareça que uma imagem está se locomovendo.
 
 <div align="center">
-<sub>Figura 10 - Trecho do código da TutorialScreen - criando a animação do vídeo/sub>
-<img src="../assets/Desenvolvimento/video_tutorial.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
-</div>
+<sub>Código 1 - Trecho do código da TutorialScreen - criando a animação do vídeo </sub>
 
+
+
+```javascript
+create() {
+    this.video = this.add.video(0, 0, 'tutorial').setOrigin(0, 0); // Create and position video
+    this.video.play() // Play video
+
+    this.interactKey = this.input.keyboard.addKey(Phaser.input.KeyBoard.KeyCodes.E); // interact key
+
+    this.playerSelecionado = this.sys.settings.data.playerSelecionado; // Pass selected player to level1
+}
+```
 
 Ao adentrar a cena do quarto em nosso jogo, proporcionamos uma transição visual e narrativa fluida do tutorial anterior. Iniciamos com a tela escurecida da cena anterior gradualmente clareando, criando uma sensação de continuidade e imersão para o jogador. Assim que o ambiente se torna visível, o jogador se encontra diante de um computador. Esse elemento é destacado visualmente, com um brilho sutil ao redor, indicando sua interatividade. Uma prompt visual instrui o jogador a pressionar a tecla "E" para interagir.
 
 Ao realizar essa interação, uma caixa de texto surge, introduzindo a história do jogo e delineando o objetivo principal do jogador: auxiliar na recuperação das marcas roubadas da Unilever. Essa abordagem não só envolve o jogador na narrativa, mas também fornece contexto para suas futuras ações no jogo.
 
 <div align="center">
-<sub>Figura 11 - Imagem do Teams - player recebendo a missão </sub>
+<sub>Figura 27 - Imagem do Teams - player recebendo a missão </sub>
 <img src="../assets/Desenvolvimento/Teams.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
