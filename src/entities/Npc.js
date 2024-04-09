@@ -259,10 +259,10 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.quizWindow = this.scene.add.image(centerX, centerY, 'quiz_window').setDepth(2);
 
     // Create 'UniQuiz'
-    this.quizTitle = this.scene.add.text(centerX, centerY - 210, 'UniQuiz', { font: '24px Arial', fill: '#000' }).setOrigin(0.5).setDepth(2);
+    this.quizTitle = this.scene.add.image(centerX, centerY - 200, 'uni_quiz_logo').setOrigin(0.5).setDepth(2).setScale(0.2);
 
     // Display the question text, creating or updating it
-    this.quizText = this.scene.add.text(centerX - 400, centerY - 180, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX + 100} }).setOrigin(0, 0).setDepth(2);
+    this.quizText = this.scene.add.text(centerX - 400, centerY - 170, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX + 100} }).setOrigin(0, 0).setDepth(2);
 
     // Close button logic
     this.quizXBtn = this.scene.add.image(centerX + 330, centerY - 210, 'hub_close').setInteractive().setDepth(3).setScale(0.025);

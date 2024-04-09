@@ -16,79 +16,28 @@ export default class CreditScreen extends Phaser.Scene {
   }
 
   create() {
-    // adiciona o fundo
-    this.sky = this.add.image(0, 0, "sky").setOrigin(0, 0).setScale(1.5);
-    this.cloudCover = this.add
-      .image(0, -50, "cloudCover")
-      .setOrigin(0, 0)
-      .setScale(1.12);
-    this.clouds = this.add
-      .image(0, -80, "clouds")
-      .setOrigin(0, 0)
-      .setScale(1.12);
-    this.title = this.add.image(250, 120, "title").setOrigin(0, 0);
-    this.hills = this.add
-      .image(0, -100, "hills")
-      .setOrigin(0, 0)
-      .setScale(1.12);
-    this.foreground = this.add
-      .image(0, -100, "foreground")
-      .setOrigin(0, 0)
-      .setScale(1.12);
+    this.music = this.sys.settings.data.titleMusicObject;
+    this.music.resume()
 
-    // adiciona o retângulo de fundo e o botão voltar
-    this.add.image(640, 440, "credit_space").setScale(0.5);
+    // Adds background
+    this.add.video(0, -100, "background_clouds").setOrigin(0,0).setScale(1.12).play(true).setPlaybackRate(0.7);
+    this.title = this.add.image(250, 120, "title").setOrigin(0, 0);
+    this.hills = this.add.image(0, -100, "hills").setOrigin(0, 0).setScale(1.12);
+    this.foreground = this.add.image(0, -100, "foreground").setOrigin(0, 0).setScale(1.12);
+
+    // Add return button image and credits background
+    this.add.image(640, 450, "credit_space").setScale(0.5);
     this.botaoVoltar = this.add.image(640, 660, "botao_voltar", 0);
 
-    // adiciona os nomes dos integrantes na tela e links do linkedin aos respectivos nomes (mudar o do ricardo)
-    this.add.text(415, 275, "                Integrantes do Grupo:\n (clique nos nomes para ver os linkedins!)", { font: "bold 25px poppins", color: "#000000", stroke: "#ffffff", strokeThickness: 4});
-    //this.add.text(520, 320, "clique nos nomes para ver os linkedins!", {font: "15px poppins" });
-    this.add // Raphael
-      .text(480, 360, "Raphael Silva - Programação", { font: "bold 25px poppins",  color: "#000000", stroke: "#ffffff", strokeThickness: 4 })
-      .setInteractive()
-      .on("pointerdown", () => {
-        window.open("https://www.linkedin.com/in/raphaelfelipesilva/");
-      });
-    this.add // Igor
-      .text(485, 395, "Igor Sampaio Silva - Design", { font: "bold 25px poppins",  color: "#000000", stroke: "#ffffff", strokeThickness: 4 })
-      .setInteractive()
-      .on("pointerdown", () => {
-        window.open("https://www.linkedin.com/in/igor-sampaio-silva/");
-      });
-    this.add // Thiago
-      .text(468, 430, "Thiago Volcati - Documentação", { font: "bold 25px poppins",  color: "#000000", stroke: "#ffffff", strokeThickness: 4 })
-      .setInteractive()
-      .on("pointerdown", () => {
-        window.open("https://www.linkedin.com/in/thiago-volcati-a42a94208/");
-      });
-    this.add // David
-      .text(468, 465, "David Deodato - Documentação", { font: "bold 25px poppins",  color: "#000000", stroke: "#ffffff", strokeThickness: 4 })
-      .setInteractive()
-      .on("pointerdown", () => {
-        window.open("https://www.linkedin.com/in/david-deodato-41b9b72b7/");
-      });
-    this.add // Otávio
-      .text(455, 500, "Otávio Vasconcelos - Programação", { font: "bold 25px poppins",  color: "#000000", stroke: "#ffffff", strokeThickness: 4 })
-      .setInteractive()
-      .on("pointerdown", () => {
-        window.open(
-          "https://www.linkedin.com/in/otavio-vasconcelos-a11827208/"
-        );
-      });
-    this.add // Marlos
-      .text(515, 535, "Marlos Guedes - Design", { font: "bold 25px poppins",  color: "#000000", stroke: "#ffffff", strokeThickness: 4 })
-      .setInteractive()
-      .on("pointerdown", () => {
-        window.open(
-          "https://www.linkedin.com/in/marlos-do-carmo-guedes-366987250/"
-        );
-      });
-    this.add // Ricardo
-      .text(515, 570, "Ricardo Planas - Design", { font: "bold 25px poppins",  color: "#000000", stroke: "#ffffff", strokeThickness: 4 })
-      .setInteractive()
-      .on("pointerdown", () => {
-        window.open("https://www.linkedin.com/school/inteli-edu/");
-      });
+    // Add contributtor names and its linkedin
+    this.add.text(420, 290, "Integrantes do Grupo:", { font: "35px" });
+    this.add.text(500, 340, "Raphael Silva", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/raphaelfelipesilva/")});
+    this.add.text(450, 380, "Igor Sampaio Silva", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/igor-sampaio-silva/")});
+    this.add.text(495, 420, "Thiago Volcati", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/thiago-volcati-a42a94208/")});
+    this.add.text(505, 460, "David Deodato", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/david-deodato-41b9b72b7/")});
+    this.add.text(450, 500, "Otávio Vasconcelos", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/otavio-vasconcelos-a11827208/")});
+    this.add.text(500, 540, "Marlos Guedes", { font: "35px" }).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/in/marlos-do-carmo-guedes-366987250/")});
+    this.add.text(470, 580, "Ricardo Planas", { font: "35px" }, this.url7).setInteractive().on('pointerdown', () => {window.open("https://www.linkedin.com/school/inteli-edu/")});
 
     this.botaoVoltar.setInteractive();
     this.botaoVoltar.on("pointerover", () => {
@@ -104,7 +53,8 @@ export default class CreditScreen extends Phaser.Scene {
     // retorna para a tela de início quando clicado
     this.botaoVoltar.on("pointerdown", () => {
       this.sound.add("select_sound", { loop: false, volume: 0.7 }).play();
-      this.scene.start("titleScreen", { titleMusicObject: this.titleMusic });
+      this.music.pause()
+      this.scene.start("titleScreen", { titleMusicObject: this.music });
     });
   }
 }
