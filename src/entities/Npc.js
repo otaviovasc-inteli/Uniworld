@@ -279,7 +279,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         this.answerButtons.push(answerButton)
 
         // Answers text
-        this.answerTexts.push(this.scene.add.text(centerX - 400, centerY + (55 * index) - 80, answers[index], { font: '20px Arial', fill: '#000', wordWrap: {width: centerX - 100} }).setOrigin(0, 0).setDepth(2))
+        this.answerTexts.push(this.scene.add.text(centerX - 400, centerY + (60 * index) - 100, answers[index], { font: '22px Arial', fill: '#000', wordWrap: {width: centerX + 100} }).setOrigin(0, 0).setDepth(2))
 
         answerButton.on('pointerover', () => {
           answerButton.setScale(1.1)
