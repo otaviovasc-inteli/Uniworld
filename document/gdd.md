@@ -62,7 +62,9 @@ Numeração | Figura
 
 ### 1.1.1. Contexto da indústria
 
-&nbsp;&nbsp;&nbsp;&nbsp;Unilever é uma empresa multinacional que possui mais de 400 marcas em mais de 190 países ao redor do mundo e está presente na vida de mais de 3,4 bilhões de pessoas com seus produtos diariamente. Essa indústria é uma das maiores no segmento de bens de consumo no mundo, possuindo cinco vertentes no mercado: alimentação, limpeza, produtos de higiene e produtos de cuidados pessoais. Entre as principais marcas estão: Omo, Dove, Doriana, Kibon, Hellmann 's, Rexona, Knorr-Cica, Lipton, Magnum, Comfort. Contudo, há corporações  multinacionais nesse ramo que competem o pódio, como a Procter & Gamble e a Nestlé.
+&nbsp;&nbsp;&nbsp;&nbsp;A Unilever, gigante multinacional no segmento de bens de consumo, registra uma presença marcante na economia global, com suas mais de 400 marcas alcançando consumidores em mais de 190 países e gerando um volume de negócios que se expressa em bilhões de dólares anualmente. Essa contribuição substancial ao PIB global destaca seu papel influente no mercado internacional. Com vertentes diversificadas que incluem alimentação, limpeza, higiene pessoal e cuidados pessoais, a empresa se orgulha de marcas icônicas como Omo, Dove, Doriana, Kibon, Hellmann's, Rexona, Knorr-Cica, Lipton, Magnum e Comfort.
+
+Em meio a este sucesso, a Unilever não está isenta de desafios. A empresa enfrenta a intensa competição de outras corporações multinacionais como a Procter & Gamble e a Nestlé. Dentre os obstáculos, incluem-se a necessidade de se adaptar às flutuações econômicas globais, a demanda por práticas sustentáveis e a pressão constante por inovação frente a consumidores que buscam novidades e responsabilidade socioambiental. Além disso, o impacto da digitalização nas estratégias de marketing e vendas, bem como nas expectativas dos consumidores, são desafios contínuos que a Unilever precisa gerenciar para manter sua posição de liderança e continuar a expandir seu impacto econômico.
 
 ### 1.1.2. Análise SWOT
 
@@ -129,7 +131,39 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;A matriz de risco fornece uma visão estratégica crucial para o gerenciamento de riscos, enfatizando a importância de antecipar e mitigar problemas que possam surgir. Riscos como as divergências criativas e a dificuldade em cumprir prazos, por exemplo, destacam a necessidade de processos de desenvolvimento ágeis e adaptativos. Esta matriz é essencial para assegurar que a equipe se mantenha alinhada e o projeto progrida de forma eficiente e eficaz.
+&nbsp;&nbsp;&nbsp;&nbsp;A matriz de risco fornece uma visão estratégica crucial para o gerenciamento de riscos, enfatizando a importância de antecipar e mitigar problemas que possam surgir. Riscos como as divergências criativas e a dificuldade em cumprir prazos, por exemplo, destacam a necessidade de processos de desenvolvimento ágeis e adaptativos. Esta matriz é essencial para assegurar que a equipe se mantenha alinhada e o projeto progrida de forma eficiente e eficaz. Nessa perspetiva, o grupo elaborou planos de ação para cada um dos riscos levantados:
+
+*1. Eventuais Bugs:* Implementar testes automatizados contínuos e revisões de código para identificar e corrigir bugs precocemente.
+
+*2. Problemas de Comunicação:* Estabelecer canais de comunicação claros e reuniões regulares de alinhamento entre as equipes.
+
+*3. Não finalizar o projeto no prazo:* Criar um cronograma realista com marcos bem definidos e revisões periódicas do progresso.
+
+*4. Jogo ficar grande demais:* Definir um escopo de projeto claro e aplicar a metodologia de desenvolvimento ágil para adaptar mudanças.
+
+*5. Divergências criativas nas implementações:* Promover workshops de alinhamento criativo e ter um documento de visão do projeto para referência.
+
+*6. Dificuldade em continuar as etapas do projeto:* Designar um gerente de projeto para monitorar o progresso e resolver bloqueios.
+
+*7. O jogo conter erros:* Estabelecer uma fase de Quality Assurance (QA) rigorosa antes do lançamento.
+
+*8. Não conseguirmos entregar o projeto:* Ter um plano B de escopo reduzido pronto para implementação em caso de atrasos críticos.
+
+*9. Deixarmos algum bug escapar na varredura/testes:* Implementar uma fase de beta testing com usuários externos para detecção de bugs residuais.
+
+*10. Escopo mal Definido:* Trabalhar com o cliente para definir e documentar claramente os requisitos e o escopo do projeto.
+
+*11. Tangenciar a proposta pedida pelo cliente:* Manter revisões de alinhamento frequentes com o cliente para garantir que as entregas atendam às expectativas.
+
+*12. Projeto Incompleto:* Garantir que cada entrega tenha critérios de aceitação bem definidos e revisões de progresso com o cliente.
+
+*13. Incompatibilidade e Falhas de Performance em Plataformas Diversificadas:* Realizar testes de compatibilidade e desempenho em todas as plataformas-alvo.
+
+*14. Plágio não intencional:* Realizar checagens de originalidade e ter políticas claras de direitos autorais e referências.
+
+*15. Perda ou corrupção de dados do jogo:* Implementar backups regulares e estratégias de recuperação de desastres.
+
+*16. Ausência de Membro(s) na equipe:* Desenvolver um plano de contingência para redistribuição de tarefas e contratação de recursos temporários se necessário.
 
 ### 1.1.6. 5 Forças de Porter
 
@@ -189,7 +223,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 12 | Contato com plataformas Unilever (Uniops & degreed)
 13 | Mecânica de dash
 
-&nbsp;&nbsp;&nbsp;&nbsp;Com a conclusão do desenvolvimento da solução gamificada, avaliamos que os requisitos estabelecidos foram atendidos, resultando em uma experiência que reflete os valores e práticas da Unilever. Ao longo do processo, cada elemento, desde as mecânicas intuitivas de controle até o envolvente mundo lúdico, foi meticulosamente desenhado para engajar os novos colaboradores de maneira eficaz e agradável. Após reflexão e consideração do conteúdo já incorporado no jogo, a equipe decidiu que a inclusão de uma mecânica específica para o dicionário da Unilever não era mais essencial para o escopo do projeto. Todas as decisões relacionadas a implementação dos requisitos foi pensando em um produto final que não só atenda, mas supere as expectativas dos usuários, proporcionando uma experiência de aprendizado completa e envolvente sem sobrecarregar o processo com elementos redundantes. Continuaremos, no entanto, a monitorar o feedback dos jogadores e a avaliar oportunidades para futuras melhorias e adições ao jogo.
+&nbsp;&nbsp;&nbsp;&nbsp;Com a conclusão do desenvolvimento da solução gamificada, avaliamos que os requisitos estabelecidos foram atendidos, resultando em uma experiência que reflete os valores e práticas da Unilever. Ao longo do processo, cada elemento, desde as mecânicas intuitivas de controle até o envolvente mundo lúdico, foi meticulosamente desenhado para engajar os novos colaboradores de maneira eficaz e x'agradável. Após reflexão e consideração do conteúdo já incorporado no jogo, a equipe decidiu que a inclusão de uma mecânica específica para o dicionário da Unilever não era mais essencial para o escopo do projeto. Todas as decisões relacionadas a implementação dos requisitos foi pensando em um produto final que não só atenda, mas supere as expectativas dos usuários, proporcionando uma experiência de aprendizado completa e envolvente sem sobrecarregar o processo com elementos redundantes. Continuaremos, no entanto, a monitorar o feedback dos jogadores e a avaliar oportunidades para futuras melhorias e adições ao jogo.
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -202,15 +236,19 @@ Portanto, após fazer correções no jogo, no intuito de torna-lo adaptável par
 
 # <a name="c2"></a>2. Visão Geral do Jogo
 
+&nbsp;&nbsp;&nbsp;&nbsp;Ao longo da leitura você será introduzido a diversos pontos principaos do jogo, incluindo os objetivos principais que os jogadores devem alcançar para progredir e completar o jogo. Além disso, discute características fundamentais que definem a experiência do jogo, como seu gênero, a plataforma na qual será jogado, o formato de jogo individual para enfatizar o desenvolvimento pessoal dos colaboradores, bem como os títulos que serviram de inspiração para a sua criação. Este capítulo também aborda o tempo estimado necessário para concluir o jogo, fornecendo assim uma compreensão abrangente tanto da estrutura quanto do conteúdo do jogo, garantindo que os jogadores tenham clareza sobre o que esperar e como navegar pelo universo do jogo.
+
 ## 2.1. Objetivos do Jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogador precisa derrotar inimigos pelo mapa, concluir trilhas de treinamento da Unilever, os quizzes e derrotar o chefão da fase, nas duas cenas de combate. Desse modo, o jogador será capaz de concluir o jogo integralmente. Conforme solicitado, nenhuma das partes anteriormente citadas (exceto trilhas obrigatórias e quizzes) será uma barreira para o colaborador completar o processo de integração.
 
 ## 2.2. Características do Jogo
 
+ &nbsp;&nbsp;&nbsp;&nbsp;As características do jogo, são elementos fundamentais na definição da experiência geral do usuário. Estas características são classificadas em várias categorias, incluindo o gênero do jogo, a plataforma em que é jogado, o número de jogadores que suporta, as inspirações por trás de sua criação e o tempo estimado necessário para completá-lo. Cada uma dessas categorias desempenha um papel crucial na modelagem da jogabilidade e na interação do jogador com o jogo, determinando assim a forma como os jogadores irão perceber e interagir com o ambiente do jogo. Este segmento visa fornecer uma compreensão clara de como o jogo é estruturado e o que os jogadores podem esperar ao embarcar nesta aventura.
+
 ### 2.2.1. Gênero do Jogo
 
-&nbsp;&nbsp;&nbsp;&nbsp;O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em movimentar seu personagem através do ambiente no qual jogo acontece. O Gênero de aventura, por sua vez, são jogos nos quais o jogador assume o lugar de protagonista e tem como objetivo explorar o ambiente interativamente e concluir quebra-cabeças.
+&nbsp;&nbsp;&nbsp;&nbsp;O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em movimentar seu personagem através do ambiente no qual o jogo acontece. Os jogos do gênero de aventura, por sua vez, são jogos nos quais o jogador assume o lugar de protagonista e tem como objetivo explorar o ambiente interativamente e concluir quebra-cabeças.
 
 ### 2.2.2. Plataforma do Jogo
 
@@ -218,7 +256,7 @@ Portanto, após fazer correções no jogo, no intuito de torna-lo adaptável par
 
 ### 2.2.3. Número de jogadores
 
-&nbsp;&nbsp;&nbsp;&nbsp;Devido a indicação do parceiro e, as limitações provenientes das escolhas pela plataforma web e sem ligação com os servidores da empresa, o jogo será individual, por buscando salientar o desenvolvimento individual de cada colaborador.
+&nbsp;&nbsp;&nbsp;&nbsp;Devido à indicação do parceiro e, as limitações provenientes das escolhas pela plataforma web e sem ligação com os servidores da empresa, o jogo será individual, buscando salientar o desenvolvimento individual de cada colaborador.
 
 ### 2.2.4. Títulos semelhantes e inspirações
 
@@ -226,15 +264,15 @@ Portanto, após fazer correções no jogo, no intuito de torna-lo adaptável par
 
 ### 2.2.5. Tempo estimado de jogo
 
-*Ex. O jogo pode ser concluído em 3 horas passando por todas as fases.*
-
-*Ex. cada partida dura até 15 minutos*
+&nbsp;&nbsp;&nbsp;&nbsp;O jogo conta com 3 fases principais, nas quais o tempo médio para finalização é 5 minutos, comprovado pelos testes realizados com colaboradores da Unilever, amigos pessoais dos membros do grupo e orientadores do projeto.
 
 # <a name="c3"></a>3. Game Design
 
+&nbsp;&nbsp;&nbsp;&nbsp;Para um bom engajamento com o público alvo e um nível técnico elevado, o jogo foi projetado com antecedência e seus principais pontos de game design foram desenhados com minuciosidade e precisão, desde o enredo, até o personagens incluídos, cenários utilizados, diagramas de cenas e outras questões oriundas dessas.
+
 ## 3.1. Enredo do Jogo
 
-&nbsp;&nbsp;&nbsp;&nbsp;Você acorda, está se preparando para o primeiro dia na Unilever, mas nota algo diferente, o mundo no qual a harmonia é mantida pela energia vital da natureza balanceada pela Unilever está sendo abalado, pois as principais marcas foram roubadas por vilões tenebrosos. Agora, você precisará batalhar com eles para recuperar as principais marcas e restaurar o equílibro. Os vilões por trás disso tudo são o "Rei do Desmatamento" e o "Rei da Poluição". Estes vilões, acompanhados por seus monstros, espalham o caos, sujeira e a destruição, poluindo e destruindo a natureza e ameaçando a vida de todas as criaturas que habitam esse mundo, incluindo a você. E agora? Devolva as marcas para Unilver para salvar o mundo!
+&nbsp;&nbsp;&nbsp;&nbsp;Você acorda, está se preparando para o primeiro dia na Unilever, mas nota algo diferente, o mundo no qual a harmonia é mantida pela energia vital da natureza balanceada pela Unilever está sendo abalado, pois as principais marcas foram roubadas por vilões tenebrosos. Agora, você precisará batalhar com eles para recuperar as principais marcas e restaurar o equílibro. Os vilões por trás disso tudo são o "Rei do Desmatamento" e o "Rei da Poluição". Estes vilões, acompanhados por seus monstros, espalham o caos, sujeira e a destruição, poluindo e destruindo a natureza e ameaçando a vida de todas as criaturas que habitam esse mundo, incluindo a você. E agora,devolva as marcas para a Unilver!
 
 
 
@@ -254,16 +292,20 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp; Descrição: Quarto do personagem com um computador e um Rexona (*Power-up*) interativo.
 
-&nbsp;&nbsp;&nbsp;&nbsp;O personagem irá acordar em seu aconchegante quarto, tendo como objetivo interagir com o computador. No dispositivo, ele será instroduzido a experiência de uso do Microsoft Teams, onde sua diretora o dará a missão de recuperar as marcas e lhe dará uma das marcas que sobraram para ajuda-lo em sua caminhada.
+&nbsp;&nbsp;&nbsp;&nbsp;O personagem irá acordar em seu aconchegante quarto, tendo como objetivo interagir com o computador. No dispositivo, ele será instroduzido a experiência de uso do Microsoft Teams, onde sua diretora o dará a missão de recuperar as marcas e lhe dará uma das marcas que sobraram para ajudá-lo em sua caminhada.
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Fala da diretora:
 
-'Diretora: Olá, colaborador, seja bem vindo a Unilever!',
-'Diretora: Aqui na Unilever utilizamos o Microsoft Teams como principal forma de comunicação remota.'
-'Diretora: Vilões tenebrosos roubaram algumas de nossas marcas, e por conta disso, não estamos mais conseguindo manter o equilíbrio da Unilever.'
-'Diretora: Iremos te enviar uma das nossas marcas para você conseguir enfrentar os desafios a frente sem nem suar'
-'Diretora: Contamos com você, herói, ajude-nos a recuperar nossas marcas e reestruturar a empresa'
+'Olá, colaborador, seja bem vindo a Unilever!',
+
+' Aqui na Unilever utilizamos o Microsoft Teams como principal forma de comunicação remota.'
+
+'Vilões tenebrosos roubaram algumas de nossas marcas, e por conta disso, não estamos mais conseguindo manter o equilíbrio da Unilever.'
+
+'Iremos te enviar uma das nossas marcas para você conseguir enfrentar os desafios a frente sem nem suar'
+
+'Contamos com você, herói, ajude-nos a recuperar nossas marcas e reestruturar a empresa'
 
 &nbsp;&nbsp;&nbsp;&nbsp;Em seguida, o personagem seguirá pela cena e deverá interagir com o Rexona.
 
@@ -289,17 +331,27 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;No fim da fase, o jogador encontrará a diretora. Ao conversar com o NPC se iniciará o seguinte diálogo:
 
-'Diretora: Incrível, você conseguiu, herói! Bem-vindo à Unilever!',
-'Diretora: Graças a sua coragem e determinação, todas as nossas marcas foram recuperadas.',
-'Diretora: Você não apenas restaurou o equilíbrio da Unilever, mas também reforçou nossa união e resiliência como equipe.',
-'Diretora: Seu feito vai além de apenas recuperar as marcas; você inspirou a todos nós a sermos melhores e mais fortes juntos.',
-'Diretora: Em nome de toda a equipe Unilever, eu gostaria de expressar nossa mais profunda gratidão. Você é um verdadeiro herói para nós.',
-'Diretora: Vamos continuar a comunicar e colaborar pelo Microsoft Teams. Quem sabe que novas aventuras nos aguardam?',
-'Diretora: Por agora, celebre, herói! Você mais do que merece. Estamos ansiosos para vê-lo brilhar ainda mais no futuro.'
+&nbsp;&nbsp;&nbsp;&nbsp;Fala da Diretora:
+
+'Incrível, você conseguiu, herói! Bem-vindo à Unilever!',
+
+'Graças a sua coragem e determinação, todas as nossas marcas foram recuperadas.',
+
+'Você não apenas restaurou o equilíbrio da Unilever, mas também reforçou nossa união e resiliência como equipe.',
+
+'Seu feito vai além de apenas recuperar as marcas; você inspirou a todos nós a sermos melhores e mais fortes juntos.',
+
+'Em nome de toda a equipe Unilever, eu gostaria de expressar nossa mais profunda gratidão. Você é um verdadeiro herói para nós.',
+
+'Vamos continuar a comunicar e colaborar pelo Microsoft Teams. Quem sabe que novas aventuras nos aguardam?',
+
+'Por agora, celebre, herói! Você mais do que merece. Estamos ansiosos para vê-lo brilhar ainda mais no futuro.'
 
 &nbsp;&nbsp;&nbsp;&nbsp;A fase e o jogo se encerram com o recebimento de uma tela de congratulações ao jogador pelo seu empenho e conquistas.
 
 ## 3.2. Personagens
+
+&nbsp;&nbsp;&nbsp;&nbsp;Para a transmissão ideal de conteúdo o jogador controlará um personagem controlável, por meio das teclas do teclado, para explorar o mundo proposto e ter acesso ao material proposto pela equipe, mas além disso, ele ao decorrer do *storytelling* ele deverá encontrar e interagir com personagens não controláveis, que tem tarefas pré-definidas (NPCs). 
 
 ### 3.2.1. Controláveis
 
