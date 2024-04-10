@@ -9,7 +9,7 @@
 <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">David Deodato</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Igor Sampaio</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Marlos Guedes</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Otávio Vasconcelos</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Raphael Silva</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Ricardo Planas</a> e <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Thiago Volcati</a>
 
 <div align="center">
-<sub>Figura 1 - Preserverance Games</sub>
+<sub>Figura 01 - Preserverance Games</sub>
 <img src="../assets/preserveranceGames.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -19,15 +19,15 @@ Lista de figuras:
 
 Numeração | Figura
 --- | ---
-1 | Preserverance Games
-2 | Análise SWOT
-3 | Proposta de Valor
-4 | Matriz de Riscos
-5 | Npc hub
-6 | Npc diretora
-7 | Seleção De Jogador Imagem
-8 | Ilustração do ambiente Quarto
-9 | Ilustração do Mundo Lúdico
+01 | Preserverance Games
+02 | Análise SWOT
+03 | Proposta de Valor
+04 | Matriz de Riscos
+05 | Npc hub
+06 | Npc diretora
+07 | Seleção De Jogador Imagem
+08 | Ilustração do ambiente Quarto
+09 | Ilustração do Mundo Lúdico
 10 | Ilustração NPC do Hub de Links
 11 | Ilustração do Hub de Links
 12 | Arte Conceitual da Cena 2
@@ -75,7 +75,26 @@ Numeração | Figura
 Lista de tabelas:
 Numeração | Tabela
 --- | ---
-1 | 
+01 | Requisitos do Projeto
+02 | Trilha sonora
+03 | Inventário
+04 | Bestiário
+05 | Casos de Teste
+06 | Teste 1
+07 | Teste 2
+08 | Teste 3
+09 | Teste 4
+10 | Teste 5
+11 | Observações do Teste 1
+12 | Melhorias do Teste 1
+13 | Observações do Teste 2
+14 | Melhorias do Teste 2
+15 | Observações do Teste 3
+16 | Melhorias do Teste 3
+17 | Observações do Teste 4
+18 | Melhorias do Teste 4
+19 | Observações do Teste 5
+20 | Melhorias do Teste 5
 
 [1. Introdução](#c1)
 
@@ -115,7 +134,7 @@ Em meio a este sucesso, a Unilever não está isenta de desafios. A empresa enfr
 &nbsp;&nbsp;&nbsp;&nbsp;A análise SWOT é relacionada ao parceiro Unilever, a tabela foi feita a fim de realizar uma avaliação ambiental no âmbito estratégico, levando em consideração o contexto da indústria, ocorrências e as características do ambiente interno e externo da Unilever.
 
 <div align="center">
-<sub>Figura 2 - Análise SWOT</sub>
+<sub>Figura 02 - Análise SWOT</sub>
 <img src="../assets/SWOT-analise.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -142,7 +161,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 &nbsp;&nbsp;&nbsp;&nbsp;A proposta de valor descreve aspectos essenciais para criação de valor para o projeto, traçando o objetivo de melhor entender a realidade do parceiro e entregar uma solução alinhada com o que a Unilever espera.
 
 <div align="center">
-<sub>Figura 3 - Proposta de Valor</sub>
+<sub>Figura 03 - Proposta de Valor</sub>
 <img src="../assets/vpc.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -169,7 +188,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 &nbsp;&nbsp;&nbsp;&nbsp;A matriz de risco demonstra os riscos observados no projeto pela equipe de desenvolvimento, representando ameaças e oportunidades, assim como impactos relevantes sobre o projeto. Em verde, estão indicados percalços que não necessitam de intervenção; em amarelo, pontos que apresentam média probabilidade e demandam certa atenção; e, em vermelho, estão destacados pontos críticos que devem ser evitados.
 
 <div align="center">
-<sub>Figura 4 - Matriz de Riscos</sub>
+<sub>Figura 04 - Matriz de Riscos</sub>
 <img src="../assets/Matriz3.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -250,6 +269,9 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 ## 1.2. Requisitos do Projeto
 
 &nbsp;&nbsp;&nbsp;&nbsp;Após um longo processo criativo, que abrangesse os interesses do grupo, da Unilever e a viabilidade de implementação das mecânicas e idéias discutidas, o grupo impôs alguns requisitos para produção da solução gamificada que não fugisse da premissa original.
+<div align="center">
+<sub>Tabela 01 - Requisitos do Projeto</sub>
+</div>
 
 \# | Requisito
 --- | ---
@@ -266,6 +288,9 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 11 | Realização de quiz
 12 | Contato com plataformas Unilever (Uniops & degreed)
 13 | Mecânica de avanço rápido
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Com a conclusão do desenvolvimento da solução gamificada, avaliamos que os requisitos estabelecidos foram atendidos, resultando em uma experiência que reflete os valores e práticas da Unilever. Ao longo do processo, cada elemento, desde as mecânicas intuitivas de controle até o envolvente mundo lúdico, foi meticulosamente desenhado para engajar os novos colaboradores de maneira eficaz e x'agradável. Após reflexão e consideração do conteúdo já incorporado no jogo, a equipe decidiu que a inclusão de uma mecânica específica para o dicionário da Unilever não era mais essencial para o escopo do projeto. Todas as decisões relacionadas a implementação dos requisitos foi pensando em um produto final que não só atenda, mas supere as expectativas dos usuários, proporcionando uma experiência de aprendizado completa e envolvente sem sobrecarregar o processo com elementos redundantes. Continuaremos, no entanto, a monitorar o feedback dos jogadores e a avaliar oportunidades para futuras melhorias e adições ao jogo.
 
@@ -405,10 +430,10 @@ Descrição: Tela simples de título com botão *play*, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o jogador. Ao interagir com os NPCs, o personagem terá acesso a *links* e materiais sobre a Unilever. Ao longo do mapa terão 2 NPCs diferentes, com o design a seguir:
 
-<sub>Figura 5 - Npc hub</sub>
+<sub>Figura 05 - Npc hub</sub>
 <img src="../assets/Dvdd.png">
 
-<sub>Figura 6 - Npc diretora</sub>
+<sub>Figura 06 - Npc diretora</sub>
 <img src="../assets/diretora.png">
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
@@ -418,7 +443,7 @@ Descrição: Tela simples de título com botão *play*, idioma atual e som.
 &nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, o jogo apresenta a diversidade na seleção de personagens, que oferece uma representação tangível de diferentes gêneros e etnias, reforçando o compromisso do jogo com a inclusividade. A imagem ilustrativa da seleção de personagens exemplifica essa diversidade, proporcionando aos jogadores a oportunidade de escolher avatares que refletem uma variedade de identidades.
 
 <div align="center">
-<sub>Figura 7 - Seleção De Jogador Imagem</sub>
+<sub>Figura 07 - Seleção De Jogador Imagem</sub>
 <img src="../assets/PlayerSelecter.jpg">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -433,7 +458,7 @@ Descrição: Tela simples de título com botão *play*, idioma atual e som.
 &nbsp;&nbsp;&nbsp;&nbsp;A cena inicial do jogo será no quarto, ambiente no qual é possível encontrar objetos como uma cama, guarda-roupas, mesa, janelas, um quadro e os itens principais deste ambiente: o desodorante Rexona e um notebook. O personagem irá acordar no ambiente em questão e irá interagir com um notebook que, dentro dele, encontrará informações sobre as plataformas que são utilizadas na empresa. No computador, após utilizar a ferramenta do Teams, entrará numa reunião onde receberá a missão de chegar a Unilever (figura 1).
 
 <div align="center">
-<sub>Figura 8 - Ilustração do ambiente Quarto</sub>
+<sub>Figura 08 - Ilustração do ambiente Quarto</sub>
 <img src="../assets/printQuarto.jpg" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -441,7 +466,7 @@ Descrição: Tela simples de título com botão *play*, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;O segundo ambiente é o Mundo Lúdico, onde o Player terá da fato a primeira gameplay do jogo, nessa fase, é possivel encontrar objetos de decoração relacionados à Unilever, será possível batalhar contra inimigos e no final da fase um "chefão". O objetivo do Player nessa fase é interagir com o NPC que disponibiliza dos *Links* de aprendizado da Unilever e depois interagir com o objeto de Quiz que lhe dará o *Power-up* baseado no resultado. Depois de derrotar o primeiro chefe, pode seguir para o terceiro ambiente
 <div align="center">
-<sub>Figura 9 - Ilustração do Mundo Lúdico</sub>
+<sub>Figura 09 - Ilustração do Mundo Lúdico</sub>
 <img src="../assets/printMundoLudico.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 <sub>Figura 10 - Ilustração NPC do Hub de Links</sub>
@@ -489,6 +514,9 @@ Figura 2: Descrição dos objetos dispostos na segunda cena de combate, como pla
 Figura 3: Descrição dos objetos dispostos na última cena, como as plataformas e as marcas do cenário.
 
 ### 3.3.5. Trilha sonora
+<div align="center">
+<sub>Tabela 02 - Trilha sonora</sub>
+</div>
 
 \# | título | ocorrência | autoria
 --- | --- | --- | ---
@@ -496,22 +524,34 @@ Figura 3: Descrição dos objetos dispostos na última cena, como as plataformas
 2 | Acoustic Folk Music Guitar | Level 1 (Quarto do Personagem) | - <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Art Music</a>
 3 | The Grand Score | Level 2 (Mundo Lúdico) | - <a href="https://www.chosic.com/download-audio/28030/">Alexander Nakarada</a>
 4 | The Grand Score | Level 3 (Cidade Unilever) | - <a href="https://pixabay.com/music/solo-guitar-trip-to-home-relaxing-acoustic-guitar-background-music-7625/">Oleksii Kaplunskyi</a>
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 Licensas: https://mixkit.co/license/#sfxFree
+
 ## 3.4. Inventário e Bestiário
 
 ### 3.4.1. Inventário
 
 &nbsp;&nbsp;&nbsp;&nbsp;O inventário é constituído por todos os itens presentes dentro do jogo.
+<div align="center">
+<sub>Tabela 03 - Inventário</sub>
+</div>
 
 \# | item |  | como obter | função | efeito sonoro
 --- | --- | --- | --- | --- | ---
 1 | Rexona | <img src="../assets/inventario/rexonaImagem.png"> | ele pode ser obtido no início da cena 3 | aumentar a força do personagem | Não tem
 2 | Omo | <img src="../assets/inventario/omoImagem.png"> | ele pode ser obtido no final da cena 4 | aumentar a força do personagem | Não tem
 3 | Kibon | <img src="../assets/inventario/sorveteImagem.png"> | ele pode ser obtido no final da cena 5 | aumentar a mobilidade do personagem | Não tem
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 ### 3.4.2. Bestiário
 &nbsp;&nbsp;&nbsp;&nbsp;O bestiário é constituído por todos os inimigos presentes dentro do jogo.
+<div align="center">
+<sub>Tabela 04 - Bestiário</sub>
+</div>
+
 \# | Inimigo |  | Ocorrências | Função | Impacto | Efeito sonoro
 --- | --- | --- | --- | --- | --- | ---
 1 | Slime verde | <img src="../assets/bestiario/greenSlime.png"> | Primeira cena de combate | Pula no chão em sua direção, com velocidade constante, tendo 2 de vida e 1 de dano por ataque e com o objetivo de atacar o personagem| Caso o jogador encoste no inimigo, o personagem perderá 1 ponto de vida | Som de slime
@@ -520,7 +560,9 @@ Licensas: https://mixkit.co/license/#sfxFree
 4 | BlackSmoke | <img src="../assets/blacksmoke.png"> | Segunda cena de combate | Anda na direção do player e possui 3 de vida e 1 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 1 ponto de vida | Não tem
 5 | Chefe Desmatamento | <img src="../assets/bestiario/reiMamentoImagem.png"> | No final do nível 2 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
 6 | Rei da Poluição | <img src="../assets/bestiario/mudImagem.png"> | No final do nível 3 | Anda na direção do player e possui 5 de vida e 2 de dano| Caso o jogador encoste no projétil do inimigo, o personagem perderá 2 ponto de vida | Não tem
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 ## 3.5. Gameflow (Diagrama de cenas)
 
 &nbsp;&nbsp;&nbsp;&nbsp;Um diagrama de cena é uma ferramenta visual que mapeia a sequência e a conexão entre diferentes cenas ou fases de um jogo. Ele detalha eventos importantes, interações e transições, ajudando a organizar a narrativa e a progressão de maneira lógica para garantir uma experiência fluida e envolvente para o jogador.
@@ -1325,6 +1367,10 @@ takesHit(source) {
 
 &nbsp;&nbsp;&nbsp;&nbsp;Nesse sentido, conduzimos esses testes com a participação de jovens, incluindo nós mesmos, com idades entre 18 e 20 anos. As avaliações foram realizadas no período de fevereiro a março de 2024. A seguir, apresentamos os resultados desses testes
 
+&nbsp;&nbsp;&nbsp;&nbsp;O inventário é constituído por todos os itens presentes dentro do jogo.
+<div align="center">
+<sub>Tabela 05 - Casos de Teste</sub>
+</div>
 
 \# | pré-condição do teste | o que ocorre no teste | resultado esperado do teste
 --- | --- | --- | ---
@@ -1342,7 +1388,9 @@ takesHit(source) {
 12 | Entrar no jogo | Pular,correr,ficar parado | Movimentação fluida das sprites
 13 | Entrar no menu  | Ativar e desativar o  som | O som parar (ao clicar em desativar) e voltar (ao clicar em ativar)
 14 | Entrar na seleção de personagem |  Selecionar personagem | O jogo iniciar com o personagem selecionado
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 
 
@@ -1358,6 +1406,9 @@ takesHit(source) {
 ### 5.2.1 Registros de testes
 
 TESTE 1:
+<div align="center">
+<sub>Tabela 06 - Teste 1</sub>
+</div>
 
 Nome | Bruna Collado
 --- | ---
@@ -1376,13 +1427,18 @@ Apresentou dificuldades? | Sim, dificuldade em entender as regras e mecânicas.
 Que nota deu ao jogo? | 9.0
 O que gostou no jogo? | Estética e teclas intuitivas.
 O que poderia melhorar no jogo? | Expliciar as instruções.
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 Observações:
 
 Ele disse que a velocidade dos projéteis do chefe está muito rápida. Além disso, mencionou que o alcance está inconsistente, às vezes próximo demais, outras vezes distante demais
 
 
 TESTE 2:
+<div align="center">
+<sub>Tabela 07 - Teste 2</sub>
+</div>
 
 Nome | Lilian Florio.
 --- | ---
@@ -1401,10 +1457,15 @@ Apresentou dificuldades? | Sim, dificuldade em entender as regras e mecânicas.
 Que nota deu ao jogo? | 8.0
 O que gostou no jogo? | Estética
 O que poderia melhorar no jogo? | Melhorar a forma de mutar o jogo e melhorar a história/objetivo.
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 
 TESTE 3:
+<div align="center">
+<sub>Tabela 08 - Teste 3</sub>
+</div>
 
 Nome | Vinicius Santos
 --- | ---
@@ -1423,8 +1484,13 @@ Apresentou dificuldades? | Dificuldades em derrotar o chefe final
 Que nota deu ao jogo? | 7,5
 O que gostou no jogo? | Estética
 O que poderia melhorar no jogo? | Trilha entre jogo e aprendizado, separando o conteúdo em mais NPCs, inimigos mais fáceis
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 TESTE 4:
+<div align="center">
+<sub>Tabela 09 - Teste 4</sub>
+</div>
 
 Nome | Eduardo Rossi
 --- | ---
@@ -1443,9 +1509,14 @@ Apresentou dificuldades? | Sim, dificuldade em entender e aplicar as regras e me
 Que nota deu ao jogo? | 10
 O que gostou no jogo? | Estética
 O que poderia melhorar no jogo? | Volume que está muito alto
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 TESTE 5:
+<div align="center">
+<sub>Tabela 10 - Teste 5</sub>
+</div>
 
 Nome | Davi Massariol
 --- | ---
@@ -1464,40 +1535,69 @@ Apresentou dificuldades? |  Não, nenhuma
 Que nota deu ao jogo? | 10
 O que gostou no jogo? | Mecânicas
 O que poderia melhorar no jogo? | Melhor destaque de interativos
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 
 ### 5.2.2 Melhorias
 
 Caso de Teste 1: Observações e Melhorias
 
+<div align="center">
+<sub>Tabela 11 - Observações do Teste 1</sub>
+</div>
 
 Número | Observações
 --- | ---
 1 | A velocidade dos projéteis do chefe está muito rápida.
 2 | O alcance dos projéteis está inconsistente, variando entre muito perto e muito longe.
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Tabela 12 - Melhorias do Teste 1</sub>
+</div>
 
 Número | Melhorias:
 --- | ---
 1 | Ajustar a velocidade dos projéteis do chefe para garantir que os jogadores tenham tempo suficiente para reagir.
 2 | Corrigir o bug relacionado ao alcance dos projéteis para garantir uma experiência de jogo consistente.
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 Caso de Teste 2: Observações e Melhorias
 
+<div align="center">
+<sub>Tabela 13 - Observaçõesdo Teste 2</sub>
+</div>
 
 Número | Observações:
 --- | ---
 ! | Dificuldade em entender a necessidade de acertar o quiz para sair do quarto, tentando passar pela porta sem sucesso.
 2 | Não conseguiu avançar no jogo por não saber que deveria apertar “Q” para usar o poder, resultando em múltiplas mortes.
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Tabela 14 - Melhorias do Teste 2</sub>
+</div>
 
 Número | Melhorias:
 --- | ---
 1 | Tornar mais claro a necessidade de resolver o quiz para avançar, possivelmente com dicas visuais ou textuais.
 2 | Melhorar a instrução sobre o uso da tecla “Q” para habilidades especiais, incluindo tutoriais ou dicas na tela.
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 Caso de Teste 3: Observações e Melhorias
+<div align="center">
+<sub>Tabela 15 - Observações do Teste 3</sub>
+</div>
 
 Número | Observações:
 --- | ---
@@ -1505,16 +1605,28 @@ Número | Observações:
 2 | Não percebeu a necessidade de pressionar “Q” para usar o poder.
 3 | A quantidade de inimigos é alta, levando a mortes frequentes e dificuldade em passar da primeira fase.
 4 | Instruções pouco claras sobre comandos e interações no jogo.
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Tabela 16 - Melhorias do Teste 3</sub>
+</div>
 
 Número | Melhorias:
 --- | ---
 1 | Tornar as instruções sobre a tecla “E” mais evidentes.
 2 | Diminuir a quantidade de inimigos ou ajustar a dificuldade para equilibrar a progressão do jogador.
 3 | Reforçar as instruções de jogo, especialmente sobre o uso de habilidades e a interação com elementos do jogo.
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 
 Caso de Teste 4: Observações e Melhorias
+<div align="center">
+<sub>Tabela 17 - Observações do Teste 4</sub>
+</div>
 
 Número | Observações:
 --- | ---
@@ -1525,6 +1637,13 @@ Número | Observações:
 5 | Falta de uma opção para mutar a música.
 6 | História percebida como pouco clara e não explícita.
 7 | Ícone de configurações não foi compreendido.
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Tabela 18 - Melhorias do Teste 4</sub>
+</div>
 
 Número | Melhorias:
 --- | ---
@@ -1535,26 +1654,38 @@ Número | Melhorias:
 5 | Incluir uma opção para mutar a música no jogo.
 6 | Desenvolver uma narrativa mais explícita e guiar melhor o jogador através da história.
 7 | Redesenhar ou reetiquetar o ícone de configurações para melhor reconhecimento.
-
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
 
 Caso de Teste 5: Observações e Melhorias
+<div align="center">
+<sub>Tabela 19 - Observações do Teste 5</sub>
+</div>
 
 Número | Observações:
 --- | ---
 1 | Alta experiência prévia, portanto reconheceu facilmente todas as mecânicas e dinâmicas.
 2 | A principio achou que o balão e o banco eram interativos
 3 | Achou o ultimo mapa fraco
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+<div align="center">
+<sub>Tabela 20 - Melhorias do Teste 5</sub>
+</div>
 
 Número | Melhorias:
 --- | ---
 1 | Melhorar o design do último mapa
 2 | Abaixar transparência e/ou excluir alguns assets que causem confusão visual
+<div align="center">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 
-
-
-
- Essas observações e sugestões devem ajudar a refinar a experiência do usuário e tornar o seu jogo mais acessível e agradável para uma ampla gama de jogadores.
+&nbsp;&nbsp;&nbsp;&nbsp;Essas observações e sugestões devem ajudar a refinar a experiência do usuário e tornar o seu jogo mais acessível e agradável para uma ampla gama de jogadores.
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros
 
