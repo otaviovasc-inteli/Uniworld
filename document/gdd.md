@@ -413,13 +413,18 @@ Descrição: Tela simples de título com botão *play*, idioma atual e som.
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
 
-&nbsp;&nbsp;&nbsp;&nbsp;O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no jogo, no qual o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Tanto para os semblantes masculinos, quanto para os femininos, haveram 2 opções de etnia.
+&nbsp;&nbsp;&nbsp;&nbsp;Diversidade se refere à presença e representação de diferentes características, identidades e experiências entre indivíduos em um determinado contexto. Inclui, mas não se limita a, diferenças de raça, etnia, gênero, idade, religião, deficiência, orientação sexual. Diversidade valoriza a singularidade de cada pessoa, reconhecendo a riqueza que essas diferenças trazem para comunidades, organizações e sociedades como um todo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, o jogo apresenta a diversidade na seleção de personagens, que oferece uma representação tangível de diferentes gêneros e etnias, reforçando o compromisso do jogo com a inclusividade. A imagem ilustrativa da seleção de personagens exemplifica essa diversidade, proporcionando aos jogadores a oportunidade de escolher avatares que refletem uma variedade de identidades.
 
 <div align="center">
 <sub>Figura 7 - Seleção De Jogador Imagem</sub>
 <img src="../assets/PlayerSelecter.jpg">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Com essa integração de personagens variados, o jogo evidencia a importância de possuir variados personagens com o intuito de representar todos, além de representar a representatividade promovida pela própria Unilever, promovendo uma experiência inclusiva e envolvente aos funcionário, e que reflete a sociedade.
+
 
 ## 3.3. Mundo do jogo
 
@@ -536,17 +541,42 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo então transporta o jogador para o "ambiente mundo urbano devastado" em um ônibus. Neste cenário, assim como no anterior, a progressão se dá por meio da interação NPC de hub de *links*, superação de desafios de plataformas e um encontro com outro NPC do hub de *links*, resultando na luta contra o chefe do segundo nível. Vencer este chefe permite ao jogador realizar outro quiz para obter um novo *power-up*, desbloqueando a habilidade de realizar um *dash*.
 
-&nbsp;&nbsp;&nbsp;&nbsp;No último nível, "ambiente Unilever", enfrenta-se desafios de plataformas que exigem o uso da habilidade de dash. Cair resulta no retorno ao início do nível, mas superar esses desafios leva ao encontro com o NPC da diretora, onde o jogador recebe *feedback* positivo, sinalizando a conclusão do jogo.
+&nbsp;&nbsp;&nbsp;&nbsp;No último nível, "ambiente Unilever", enfrenta-se desafios de plataformas que exigem o uso da habilidade de dash. Cair resulta no retorno ao início do nível, mas superar esses desafios leva ao encontro com o NPC da diretora, onde o jogador recebe *feedback* positivo. Além disso, aparecerá as congratulações, sinalizando a conclusão do jogo.
+
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;Por fim, a combinação de todos os componentes do projeto formam o diagrama de cenas, o qual descreve, de forma cronológica, o fluxo esperado de progressão no jogo. Esse diagrama é fundamental, pois oferece uma visão clara do trajeto que os jogadores devem seguir, dos desafios que enfrentarão e da sequência em que a narrativa se desenrolará. Através dele, conseguimos garantir uma experiência coesa, permitindo que os desenvolvedores visualizem e refinem a jornada do jogador desde o início até a conclusão do jogo.
 
 
 ## 3.6. Regras do jogo
 
-&nbsp;&nbsp;&nbsp;&nbsp;O jogador deve concluir a fase, ganhando *power-ups* e derrotando os inimigos. Além disso, deve derrotar dois *boss*, o Rei desmatamento e o Rei poluição. Ao derrotar cada rei, o jogador deverá responder um quiz para ganhar o *power-up*. Caso ele acerte, vai receber uma bonificação em alguma habilidade (força, alcance, velocidade...).
+&nbsp;&nbsp;&nbsp;&nbsp;As regras são o que descrevrem as ações dos jogadores ao longo do jogo, de forma a direcionar o rumo do jogador. Elas definem o que pode ou o que não pode ser feito, os objetivos a serem alcançados, como o jogo é vencido ou perdido, e quais ações são permitidas ou proibidas. As regras são essenciais para dar estrutura ao jogo, criar desafios, fomentar a competição ou cooperação, e guiar os jogadores através da experiência de jogo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Movimentação e Controles: Os jogadores se movimentam usando as teclas direcionais. A tecla "Q" é usada para atirar, a tecla "W" para uso do *dash*, e a tecla "E" para interações com objetos e NPCs.
+&nbsp;&nbsp;&nbsp;&nbsp;Progressão e Objetivos: Para avançar no jogo, os jogadores devem completar tarefas específicas em cada cena, incluindo derrotar inimigos, interagir com NPCs, e responder quizzes corretamente. O objetivo final é recuperar todas as marcas roubadas e trazer de volta o equilíbrio da Unilever.
+&nbsp;&nbsp;&nbsp;&nbsp;*Power-ups* e Itens: Ao longo do jogo, os jogadores podem coletar as marcas, que fornecem poderes adicionais. Estes itens são importantes para derrotar os inimigos e para completar os níveis.
+&nbsp;&nbsp;&nbsp;&nbsp;Vidas e Dano: Os jogadores começam com uma determinada quantidade de vida, representada pela *health bar*. O contato com inimigos resulta em perda de vida. Se a vida chegar a zero, o jogador retorna ao último *checkpoint*.
+&nbsp;&nbsp;&nbsp;&nbsp;*Checkpoints*: Existem alguns *checkpoints* ao longo do jogo, sendo eles os NPCs. Ao perder todas as vidas, o jogador renasce no último *checkpoint* ativado.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Em suma, as regras são extremamente importantes para criar a estrutura dentro da qual a experiência de jogo se desenrola. Elas definem os limites e possibilidades, incentivando a criatividade, estratégia, e interação, enquanto garantem que o jogo seja engajante, desafiador, e divertido.
+
 ## 3.7. Mecânicas do jogo (sprint 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem irá dar um pulo duplo. Outra tecla importante para a jogabilidade proposta no nosso game é a tecla E, que usa a mecânica de interação, caso apertada ao lado de um NPC ou *power-up*. Por fim, a tecla Q é responsável pela mecânica de ataque do jogador e a tecla W pela mecânica de movimentação de avanço rápido.
+&nbsp;&nbsp;&nbsp;&nbsp;As mecânicas de um jogo referem-se ao conjunto de regras que regem a interação do jogador com o jogo. Elas são os componentes básicos que permitem que as ações aconteçam de forma coesa e coerente, influenciando diretamente a jogabilidade e experiência do jogador. As mecânicas são essenciais para contruir como o jogo irá funcionar, como os jogadores irão alcançar o objetivo, como vão se movimentar, como vão enfrentar os desafios e como o jogo corresponde às ações dos jogadores.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Nesse jogo, há inúmeras mecânicas que o torna divertido e criativo, sendo elas: movimentação, interação, combate, *quizzes*, *power-ups*. Segue o detalhamento, respectivamente, de cada uma dessas mecânicas abaixo:
+
+&nbsp;&nbsp;&nbsp;&nbsp;Movimentação: Os jogadores controlam um personagem que pode mover-se para a esquerda, direita, realizar pulos e pulos duplos.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Interação: Ao pressionar a tecla "E" perto de objetos ou NPCs, os jogadores podem interagir, recebendo itens, e informações importantes para a progressão do jogo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Combate: A tecla "Q" permite que os jogadores realizem ataques básicos. Esses ataques são essenciais para derrotar inimigos ao longo do jogo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;*Quizzes*: Em diversos pontos do jogo, os jogadores respondem quizzes que testam seu conhecimento sobre a Unilever. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;*Power-ups*: Itens especiais utilizados para a progressão do jogo. Eles fornecem a capacidade de atirar e utilizar *dash*.
+
+&nbsp;&nbsp;&nbsp;&nbsp;A fusão de todas as mecânicas proporcionam experiências incríveis e personalizadas para os jogadores, de forma que sejam essenciais para construir a jogabilidade, o engajamento, e como interações entre jogador e jogo.
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
@@ -1539,7 +1569,9 @@ Número | Melhorias:
 
 # <a name="c7"></a>7. Referências
 
-&nbsp;&nbsp;&nbsp;&nbsp;Segue a seguir as referências do material utilizado para a produção do Game Desing Document e jogo.
+ &nbsp;&nbsp;&nbsp;&nbsp;Referências são todas as fontes de inspiração utilizadas para moldar o design e a direção criativa de um jogo. Isso abrange uma ampla gama de materiais, como outros jogos, obras de arte, literatura, cinema, e até mesmo teorias científicas, dependendo do foco do jogo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Segue a seguir as referências do material utilizado para a produção do *Game Desing Document* e do jogo.
 
 
 Minetto, Bianca. Matriz de Riscos (Matriz de Probabilidade e Impacto). Disponível em: <https://ferramentasdaqualidade.org/matriz-de-riscos-matriz-de-probabilidade-e-impacto/>. Acesso em: 22 fev. 2024.
@@ -1550,7 +1582,7 @@ STRATEGYZER. Strategyzer’s Value Proposition Canvas Explained. YouTube, 7 mar.
 Eiko, Júlia. O que é Concept Art?. Disponível em: <https://revospace.com.br/artigo/o-que-e-concept-art/>. Acesso em: 20 fev. 2024.
 
 
-NOIZ, Criatividade ENTENDA TUDO SOBRE A TEORIA DAS CORES. YouTube, 28 set. 2016. Disponível em: <https://www.youtube.com/watch?v=IWTAIUiLJvk>.Acesso em: 2 abr. 2024.
+NOIZ, Criatividade ENTENDA TUDO SOBRE A TEORIA DAS CORES. YouTube, 28 set. 2016. Disponível em: <https://www.youtube.com/watch?v=IWTAIUiLJvk>. Acesso em: 2 abr. 2024.
 
 
 GRIGG, A. Animation Basics in 14 Minutes (6 Big ideas for beginners). YouTube, 6 abr. 2022. Disponível em: <https://www.youtube.com/watch?v=pF--YKCCUMw>. Acesso em: 5 abr. 2024.
