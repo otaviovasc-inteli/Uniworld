@@ -28,11 +28,6 @@ Numeração | Figura
 7 | Seleção De Jogador Imagem
 8 | Ilustração do ambiente Quarto
 9 | Ilustração do Mundo Lúdico
-<<<<<<< Updated upstream
-10 | Ilustração NPC do Hub de *Links*
-11 | Ilustração do Hub de *Links*
-12 | 
-=======
 10 | Ilustração NPC do Hub de Links
 11 | Ilustração do Hub de Links
 12 | Arte Conceitual da Cena 2
@@ -76,7 +71,6 @@ Numeração | Figura
 50 | Personagens com os power-ups
 51 | Hub de links - 0 clicks
 52 | Hub de links - 2 clicks
->>>>>>> Stashed changes
 
 Lista de tabelas:
 Numeração | Tabela
@@ -138,11 +132,7 @@ Numeração | Tabela
 
 ### 1.1.3. Descrição da Solução Desenvolvida
 
-<<<<<<< Updated upstream
-&nbsp;&nbsp;&nbsp;&nbsp;A empresa Unilever, especialista em setores de consumo, sempre atenta a seu colaborador, identificou defasagens em seu processo de onboarding, e busca solução para essa problemática. Essa identificação se deu por baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o onboarding, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa.
-=======
 &nbsp;&nbsp;&nbsp;&nbsp;A Unilever, apesar de sua posição como empresa líder global, identificou defasagens em seu processo de *onboarding*, notada na baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o *onboarding*, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa.
->>>>>>> Stashed changes
 A solução proposta será utilizada como uma ferramenta interativa e dinâmica, apresentando-se na forma de um jogo personalizado destinado a envolver ativamente os novos membros da empresa. Os benefícios almejados incluem aumento na retenção de informações, uma compreensão mais profunda da empresa e um alinhamento eficaz com os valores e objetivos da Unilever. O critério de sucesso será medido através de análises periódicas de desempenho, satisfação e engajamento, visando proporcionar uma transição positiva para o ambiente de trabalho da Unilever.
 
 ### 1.1.4. Proposta de Valor
@@ -157,33 +147,19 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 &nbsp;&nbsp;&nbsp;&nbsp; **Na seção "Proposta de Valor", há três componentes principais destacados na figura, que buscam trazer o papel da corporação no modelo de negócios.**
 
-<<<<<<< Updated upstream
-&nbsp;&nbsp;&nbsp;&nbsp; *1. Produtos e Serviços:* Apresenta a ideia de "Onboarding Gamificado", sugerindo um processo de integração que usa elementos de jogos.
+&nbsp;&nbsp;&nbsp;&nbsp; *1. Produtos e Serviços:* Apresenta a ideia de "*Onboarding* Gamificado", sugerindo um processo de integração que usa elementos de jogos.
 
-&nbsp;&nbsp;&nbsp;&nbsp; *2. Criadores de Ganho:* Detalha como o onboarding gamificado pode ajudar a compreender a estrutura organizacional, canais de suporte e o "dicionário" Unilever. Este ponto esta direcionado a facilitar a adaptação dos novos colaboradores e tornar o aprendizado sobre a empresa mais divertido e atraente.
-=======
-&nbsp;&nbsp;&nbsp;&nbsp; *Produtos e Serviços:* Apresenta a ideia de "*Onboarding* Gamificado", sugerindo um processo de integração que usa elementos de jogos.
-
-&nbsp;&nbsp;&nbsp;&nbsp; *Criadores de Ganho:* Detalha como o "*Onboarding* Gamificado" pode ajudar a compreender a estrutura organizacional, canais de suporte e o Dicionário Unilever. Este ponto esta direcionado a facilitar a adaptação dos novos colaboradores e tornar o aprendizado sobre a empresa mais divertido e atraente.
->>>>>>> Stashed changes
+&nbsp;&nbsp;&nbsp;&nbsp; *2. Criadores de Ganho:* Detalha como o *onboarding* gamificado pode ajudar a compreender a estrutura organizacional, canais de suporte e o Dicionário Unilever. Este ponto esta direcionado a facilitar a adaptação dos novos colaboradores e tornar o aprendizado sobre a empresa mais divertido e atraente.
 
 &nbsp;&nbsp;&nbsp;&nbsp; *3. Aliviadores de Dor:* Enfatiza a importância de tornar a aprendizagem empresarial divertida e atraente para aliviar a dificuldade dos novos colaboradores em absorver informações extensas.
 
 &nbsp;&nbsp;&nbsp;&nbsp; **Na seção "Segmentos de Clientes", também existem três componentes principais destacados na figura, que buscam trazer o papel do cliente no modelo de negócios.**
 
-<<<<<<< Updated upstream
-&nbsp;&nbsp;&nbsp;&nbsp; *1. Trabalhos do Cliente:* Fala sobre a necessidade de promover a cultura empresarial e tornar o onboarding mais engajado e moderno.
-=======
-&nbsp;&nbsp;&nbsp;&nbsp; *Trabalhos do Cliente:* Fala sobre a necessidade de promover a cultura empresarial e tornar o *onboarding* mais engajado e moderno.
->>>>>>> Stashed changes
+&nbsp;&nbsp;&nbsp;&nbsp; *1. Trabalhos do Cliente:* Fala sobre a necessidade de promover a cultura empresarial e tornar o *onboarding* mais engajado e moderno.
 
 &nbsp;&nbsp;&nbsp;&nbsp; *2. Ganhos:* Destaca a busca por mais eficiência.
 
-<<<<<<< Updated upstream
-&nbsp;&nbsp;&nbsp;&nbsp; *3. Dores:* Menciona como o onboarding monótono e desinteressante pode ser um obstáculo, possivelmente levando a uma dificuldade dos novos colaboradores em absorver informações.
-=======
-&nbsp;&nbsp;&nbsp;&nbsp; *Dores:* Menciona como o *onboarding* monótono e desinteressante pode ser um obstáculo, possivelmente levando a uma dificuldade dos novos colaboradores em absorver informações.
->>>>>>> Stashed changes
+&nbsp;&nbsp;&nbsp;&nbsp; *3. Dores:* Menciona como o *onboarding* monótono e desinteressante pode ser um obstáculo, possivelmente levando a uma dificuldade dos novos colaboradores em absorver informações.
 
 ### 1.1.5. Matriz de Riscos
 
@@ -341,21 +317,13 @@ Descrição: Tela simples de título com botão *play*, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;O personagem sai do quarto e se depara com um mundo lúdico ao estilo Super Mario. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do Rexona. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos *links* disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos *links* oferecidos pelos NPCs e responder os quizzes corretamente.
 
-<<<<<<< Updated upstream
 &nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um *checkpoint* junto a um hub de *links* (representado por um NPC), que vai disponibilizar as trilhas Unilever, a fim de que o colaborador aprenda as principais ferramentas utilizadas dentro da empresa. Depois disso, ele poderá prosseguir na fase e enfrentar o *boss* “Rei da poluição”. Caso ele perca para o rei, irá renascer no *checkpoint* e vai pode enfrentar novamente quantas vezes forem necessárias para vencê-lo. O dano desferido é acumulado, garantindo que o colaborador consiga derrotá-lo. Após vencer o *boss*, ele soltará um item “Omo” e, ao interagir com o item, o jogador deverá responder um quiz sobre o conteúdo estudado nas trilhas. Caso ele acerte todas as questões, obterá o *Power-up* e receberá a transformação de “Super Omo”, assim podendo avançar para a próxima fase. Porém, caso não consiga concluir o questionário, ele deve realizar o quiz novamente, até que obtenha êxito.
-=======
-&nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um *checkpoint* junto a um *hub* de links (representado por um NPC), que vai disponibilizar as trilhas Unilever, a fim de que o colaborador aprenda as principais ferramentas utilizadas dentro da empresa. Depois disso, ele poderá prosseguir na fase e enfrentar o *boss* “Rei da poluição”. Caso ele perca para o rei, irá renascer no *checkpoint* e vai pode enfrentar novamente quantas vezes forem necessárias para vencê-lo. O dano desferido é acumulado, garantindo que o colaborador consiga derrotá-lo. Após vencer o *boss*, ele soltará um item “Omo” e, ao interagir com o item, o jogador deverá responder um quiz sobre o conteúdo estudado nas trilhas. Caso ele acerte todas as questões, obterá o *Power-up* e receberá a transformação de “Super Omo”, assim podendo avançar para a próxima fase. Porém, caso não consiga concluir o questionário, ele deve realizar o quiz novamente, até que obtenha êxito.
->>>>>>> Stashed changes
 
 &nbsp;&nbsp;&nbsp;&nbsp;Para finalizar a fase, o jogador deverá prosseguir até o ônibus que vai levar ele até o próximo mapa.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 5 - Exploração urbana combate 2
 
-<<<<<<< Updated upstream
-&nbsp;&nbsp;&nbsp;&nbsp;Agora o personagem se encotra em um cenário urbano. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos, agora mais poderosos. Perto do final da fase, terá novamente um hub de *links* (representado por um NPC), que disponibilizará *links* com outros materiais da Unilever, onde o jogador aprenderá mais conteúdos providos pela Unilever, obrigatórios para prosseguir na fase. Essa plataforma em que o NPC está vai ser um *checkpoint*, assim como no nível anterior.
-=======
 &nbsp;&nbsp;&nbsp;&nbsp;Agora o personagem se encotra em um cenário urbano. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos, agora mais poderosos. Perto do final da fase, terá novamente um *hub* de links (representado por um NPC), que disponibilizará links com outros materiais da Unilever, onde o jogador aprenderá mais conteúdos providos pela Unilever, obrigatórios para prosseguir na fase. Essa plataforma em que o NPC está vai ser um *checkpoint*, assim como no nível anterior.
->>>>>>> Stashed changes
 
 &nbsp;&nbsp;&nbsp;&nbsp;No fim da fase, o jogador vai enfrentar o *boss* “Rei da Poluição”. Caso ele perca, irá retornar ao *checkpoint* e enfrentará novamente o *boss*, quantas vezes forem necessárias e também com dano cumulativo. Quando o jogador suceder, o rei deverá soltar o item “Kibon”, que ao ser coletado transformará o jogador no “Super Kibon”, adicionando o *dash*/avanço rápido, uma nova mecânica de movimentação do jogador. Para coletar esse item, o colaborador deve responder um quiz com perguntas sobre os conteúdos. Se ele não conseguir, deverá completar o quiz novamente, até o faça.
 
@@ -1053,40 +1021,21 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Iniciamos a sprint de refinamento com a implementação de um sistema de tradução, que atualmente suporta inglês e português. Além disso, aprimoramos o título do jogo, que agora apresenta uma sprite de um planeta girando e adicionamos um botão "Créditos", no qual constam os nomes de cada integrante, suas principais funções durante o projeto e suas respectivas contas do LinkedIn.
 
 <div align="center">
-<<<<<<< Updated upstream
-<sub>Figura 48 - Tela de título - Inglês</sub>
-=======
 <sub>Figura 47 - Tela de título - Inglês </sub>
->>>>>>> Stashed changes
 <img src="../assets/4.5/titleIngles.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
+
 <div align="center">
-<<<<<<< Updated upstream
-<sub>Figura 49 - Tela de título - Português</sub>
-=======
 <sub>Figura 48 - Tela de título - Português </sub>
->>>>>>> Stashed changes
 <img src="../assets/4.5/titlePortugues.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-
-<div align="center">
-<<<<<<< Updated upstream
-<sub>Figura 50 - Tela de título - Imagem dos créditos </sub>
-<img src="../assets/4.5/creditos.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
-</div>
-
-
 E aqui estão os arquivos de diálogo e quiz traduzidos:
 
 <div align="center">
-<sub>Figura 51 - Arquivos de texto </sub>
-=======
 <sub>Figura 49 - Arquivos de texto </sub>
->>>>>>> Stashed changes
 <img src="../assets/4.5/textsFolder.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -1176,11 +1125,7 @@ export default (anims, selectedPlayer, selectedSprite) =>{
 &nbsp;&nbsp;&nbsp;&nbsp;Apenas após o término do diálogo será possível clicar nos *links* disponibilizados. A barra de progresso do Hub de *Links* aumentará de acordo com a quantidade de *links* acessados, e o jogador só poderá fechar este Hub ao acessar todos os *links* disponíveis. Adicionalmente, a opção de fechar o Hub estará indisponível enquanto a barra de progresso não atingir 100%, ou seja, enquanto todos os *links* não forem acessados.
 
 <div align="center">
-<<<<<<< Updated upstream
-<sub>Figura 54 - Hub de Links - 2 Clicks </sub>
-=======
 <sub>Figura 52 - Hub de Links - 2 Clicks </sub>
->>>>>>> Stashed changes
 <img src="../assets/4.5/hub2Clicks.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
