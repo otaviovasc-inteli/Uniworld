@@ -25,13 +25,63 @@ Numeração | Figura
 4 | Matriz de Riscos
 5 | Npc hub
 6 | Npc diretora
-7 | Seleção De Player Imagem
+7 | Seleção De Jogador Imagem
 8 | Ilustração do ambiente Quarto
 9 | Ilustração do Mundo Lúdico
+<<<<<<< Updated upstream
 10 | Ilustração NPC do Hub de *Links*
 11 | Ilustração do Hub de *Links*
 12 | 
+=======
+10 | Ilustração NPC do Hub de Links
+11 | Ilustração do Hub de Links
+12 | Arte Conceitual da Cena 2
+13 | Arte Conceitual da Cena 3
+14 | Arte Conceitual da Cena 4
+15 | Diagrama de Cenas
+16 | Fase Inicial - Mundo Lúdico
+17 | Fase Inicial - Interação com NPC
+18 | Tela de Início
+19 | Seleção de Personagem
+20 | Fase 1 - Quarto
+21 | Fase 1 - Interação com NPC dentro do Quarto
+22 | Fase 2 - Mundo Lúdico
+23 | Fase 1 - Interação com NPC dentro do quarto
+24 | Página do título - Apresentação inicial do game
+25 | Inclusão e Diversidade - Player select
+26 | Imagem do tutorial - Primeira cena de interação com o usuário
+27 | Imagem do Teams - player recebendo a missão
+28 | Inclusão e Diversidade - Player select
+29 | Inimigo - Fumaça
+30 | Ilustração da Title Screen
+31 | Ilustração da seleção de personagem
+32 | Ilustração do Tutorial
+33 | Ilustração do ambiente Quarto
+34 | Ilustração do affordance
+35 | Ilustração da Interação com o computador
+36 | Ilustração do Chefão - Level 2
+37 | Ilustração do Tutorial de combate
+38 | Ilustração do Level 2
+39 | Ilustração do NPC do hub de links/checkpoint
+40 | Ilustração do hub de links
+41 | Ilustração do Tutorial
+42 | Ilustração do Power-up
+43 | Ilustração do Level 3
+44 | Ilustração do Chefão - Level 3
+45 | Ilustraçao do Tutorial de avanço rápido
+46 | Ilustração do Level 4
+47 | Tela de título - Inglês
+48 | Tela de título - Português
+49 | Arquivos de texto
+50 | Personagens com os power-ups
+51 | Hub de links - 0 clicks
+52 | Hub de links - 2 clicks
+>>>>>>> Stashed changes
 
+Lista de tabelas:
+Numeração | Tabela
+--- | ---
+1 | 
 
 [1. Introdução](#c1)
 
@@ -62,7 +112,7 @@ Numeração | Figura
 
 ### 1.1.1. Contexto da indústria
 
-&nbsp;&nbsp;&nbsp;&nbsp;Unilever é uma empresa multinacional que possui mais de 400 marcas em mais de 190 países ao redor do mundo e está presente na vida de mais de 3,4 bilhões de pessoas com seus produtos diariamente. Essa indústria é uma das maiores no segmento de bens de consumo no mundo, possuindo cinco vertentes no mercado: alimentação, limpeza, produtos de higiene e produtos de cuidados pessoais. Entre as principais marcas estão: Omo, Dove, Doriana, Kibon, Hellmann 's, Rexona, Knorr-Cica, Lipton, Magnum, Comfort. Contudo, há corporações  multinacionais nesse ramo que competem o pódio, como a Procter & Gamble e a Nestlé.
+&nbsp;&nbsp;&nbsp;&nbsp;Unilever é uma empresa multinacional que possui mais de 400 marcas em mais de 190 países ao redor do mundo e está presente na vida de mais de 3,4 bilhões de pessoas com seus produtos diariamente. Essa indústria é uma das maiores no segmento de bens de consumo no mundo, possuindo cinco vertentes no mercado: alimentação, limpeza, produtos de higiene e produtos de cuidados pessoais. Entre as principais marcas estão: Omo, Dove, Doriana, Kibon, Hellmann 's, Rexona, Knorr-Cica, Lipton, Magnum, Comfort. Contudo, há corporações multinacionais nesse ramo que competem o pódio, como a Procter & Gamble e a Nestlé.
 
 ### 1.1.2. Análise SWOT
 
@@ -88,7 +138,11 @@ Numeração | Figura
 
 ### 1.1.3. Descrição da Solução Desenvolvida
 
+<<<<<<< Updated upstream
 &nbsp;&nbsp;&nbsp;&nbsp;A empresa Unilever, especialista em setores de consumo, sempre atenta a seu colaborador, identificou defasagens em seu processo de onboarding, e busca solução para essa problemática. Essa identificação se deu por baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o onboarding, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa.
+=======
+&nbsp;&nbsp;&nbsp;&nbsp;A Unilever, apesar de sua posição como empresa líder global, identificou defasagens em seu processo de *onboarding*, notada na baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o *onboarding*, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa.
+>>>>>>> Stashed changes
 A solução proposta será utilizada como uma ferramenta interativa e dinâmica, apresentando-se na forma de um jogo personalizado destinado a envolver ativamente os novos membros da empresa. Os benefícios almejados incluem aumento na retenção de informações, uma compreensão mais profunda da empresa e um alinhamento eficaz com os valores e objetivos da Unilever. O critério de sucesso será medido através de análises periódicas de desempenho, satisfação e engajamento, visando proporcionar uma transição positiva para o ambiente de trabalho da Unilever.
 
 ### 1.1.4. Proposta de Valor
@@ -103,19 +157,33 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 &nbsp;&nbsp;&nbsp;&nbsp; **Na seção "Proposta de Valor", há três componentes principais destacados na figura, que buscam trazer o papel da corporação no modelo de negócios.**
 
+<<<<<<< Updated upstream
 &nbsp;&nbsp;&nbsp;&nbsp; *1. Produtos e Serviços:* Apresenta a ideia de "Onboarding Gamificado", sugerindo um processo de integração que usa elementos de jogos.
 
 &nbsp;&nbsp;&nbsp;&nbsp; *2. Criadores de Ganho:* Detalha como o onboarding gamificado pode ajudar a compreender a estrutura organizacional, canais de suporte e o "dicionário" Unilever. Este ponto esta direcionado a facilitar a adaptação dos novos colaboradores e tornar o aprendizado sobre a empresa mais divertido e atraente.
+=======
+&nbsp;&nbsp;&nbsp;&nbsp; *Produtos e Serviços:* Apresenta a ideia de "*Onboarding* Gamificado", sugerindo um processo de integração que usa elementos de jogos.
+
+&nbsp;&nbsp;&nbsp;&nbsp; *Criadores de Ganho:* Detalha como o "*Onboarding* Gamificado" pode ajudar a compreender a estrutura organizacional, canais de suporte e o Dicionário Unilever. Este ponto esta direcionado a facilitar a adaptação dos novos colaboradores e tornar o aprendizado sobre a empresa mais divertido e atraente.
+>>>>>>> Stashed changes
 
 &nbsp;&nbsp;&nbsp;&nbsp; *3. Aliviadores de Dor:* Enfatiza a importância de tornar a aprendizagem empresarial divertida e atraente para aliviar a dificuldade dos novos colaboradores em absorver informações extensas.
 
 &nbsp;&nbsp;&nbsp;&nbsp; **Na seção "Segmentos de Clientes", também existem três componentes principais destacados na figura, que buscam trazer o papel do cliente no modelo de negócios.**
 
+<<<<<<< Updated upstream
 &nbsp;&nbsp;&nbsp;&nbsp; *1. Trabalhos do Cliente:* Fala sobre a necessidade de promover a cultura empresarial e tornar o onboarding mais engajado e moderno.
+=======
+&nbsp;&nbsp;&nbsp;&nbsp; *Trabalhos do Cliente:* Fala sobre a necessidade de promover a cultura empresarial e tornar o *onboarding* mais engajado e moderno.
+>>>>>>> Stashed changes
 
 &nbsp;&nbsp;&nbsp;&nbsp; *2. Ganhos:* Destaca a busca por mais eficiência.
 
+<<<<<<< Updated upstream
 &nbsp;&nbsp;&nbsp;&nbsp; *3. Dores:* Menciona como o onboarding monótono e desinteressante pode ser um obstáculo, possivelmente levando a uma dificuldade dos novos colaboradores em absorver informações.
+=======
+&nbsp;&nbsp;&nbsp;&nbsp; *Dores:* Menciona como o *onboarding* monótono e desinteressante pode ser um obstáculo, possivelmente levando a uma dificuldade dos novos colaboradores em absorver informações.
+>>>>>>> Stashed changes
 
 ### 1.1.5. Matriz de Riscos
 
@@ -187,7 +255,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 10 | Mundo lúdico - estilo Mario
 11 | Realização de quiz
 12 | Contato com plataformas Unilever (Uniops & degreed)
-13 | Mecânica de dash
+13 | Mecânica de avanço rápido
 
 &nbsp;&nbsp;&nbsp;&nbsp;Com a conclusão do desenvolvimento da solução gamificada, avaliamos que os requisitos estabelecidos foram atendidos, resultando em uma experiência que reflete os valores e práticas da Unilever. Ao longo do processo, cada elemento, desde as mecânicas intuitivas de controle até o envolvente mundo lúdico, foi meticulosamente desenhado para engajar os novos colaboradores de maneira eficaz e agradável. Após reflexão e consideração do conteúdo já incorporado no jogo, a equipe decidiu que a inclusão de uma mecânica específica para o dicionário da Unilever não era mais essencial para o escopo do projeto. Todas as decisões relacionadas a implementação dos requisitos foi pensando em um produto final que não só atenda, mas supere as expectativas dos usuários, proporcionando uma experiência de aprendizado completa e envolvente sem sobrecarregar o processo com elementos redundantes. Continuaremos, no entanto, a monitorar o feedback dos jogadores e a avaliar oportunidades para futuras melhorias e adições ao jogo.
 
@@ -210,19 +278,19 @@ Portanto, após fazer correções no jogo, no intuito de torna-lo adaptável par
 
 ### 2.2.1. Gênero do Jogo
 
-&nbsp;&nbsp;&nbsp;&nbsp;O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em movimentar seu personagem através do ambiente no qual jogo acontece. O Gênero de aventura, por sua vez, são jogos nos quais o jogador assume o lugar de protagonista e tem como objetivo explorar o ambiente interativamente e concluir quebra-cabeças.
+&nbsp;&nbsp;&nbsp;&nbsp;O gênero do jogo é de plataforma e aventura. O gênero de plataforma consiste em movimentar seu personagem através do ambiente no qual o jogo acontece. O Gênero de aventura, por sua vez, são jogos nos quais o jogador assume o lugar de protagonista e tem como objetivo explorar o ambiente interativamente e concluir quebra-cabeças.
 
 ### 2.2.2. Plataforma do Jogo
 
-&nbsp;&nbsp;&nbsp;&nbsp;O jogo é feito para Desktop e será jogado na plataforma Web. Como indicado pelo termo de abertura do projeto e reafirmado pelos parceiros durante as sprints, a opção pela plataforma web desktop está mais alinhada com a proposta e objetivos definidos para o projeto.
+&nbsp;&nbsp;&nbsp;&nbsp;O jogo é feito para *desktop* e será jogado na plataforma *web*. Como indicado pelo termo de abertura do projeto e reafirmado pelos parceiros durante as *sprints*, a opção pela plataforma *web* *desktop* está mais alinhada com a proposta e objetivos definidos para o projeto.
 
 ### 2.2.3. Número de jogadores
 
-&nbsp;&nbsp;&nbsp;&nbsp;Devido a indicação do parceiro e, as limitações provenientes das escolhas pela plataforma web e sem ligação com os servidores da empresa, o jogo será individual, por buscando salientar o desenvolvimento individual de cada colaborador.
+&nbsp;&nbsp;&nbsp;&nbsp;Devido a indicação do parceiro e, as limitações provenientes das escolhas pela plataforma *web* e sem ligação com os servidores da empresa, o jogo será individual, por buscando salientar o desenvolvimento individual de cada colaborador.
 
 ### 2.2.4. Títulos semelhantes e inspirações
 
-&nbsp;&nbsp;&nbsp;&nbsp;Entre as inspirações para o jogo, pode-se listar Sonic, Mario e Mega Man. As escolhas decorrem do fato de que os jogos citados pertencem aos mesmos gêneros do jogo criado, tendo como base a movimentação em duas dimensões, arte em pixel e a temática de aventura. Além disso, os jogos em questão revolucionaram suas época ao trazer inovação, originalidade, simplicidade e valores igualmente desenvolvidos neste projeto.
+&nbsp;&nbsp;&nbsp;&nbsp;Entre as inspirações para o jogo, pode-se listar Sonic, Mario e Mega Man. As escolhas decorrem do fato de que os jogos citados pertencem aos mesmos gêneros do jogo criado, tendo como base a movimentação em duas dimensões, arte em *pixel* e a temática de aventura. Além disso, os jogos em questão revolucionaram suas época ao trazer inovação, originalidade, simplicidade e valores igualmente desenvolvidos neste projeto.
 
 ### 2.2.5. Tempo estimado de jogo
 
@@ -240,7 +308,7 @@ Portanto, após fazer correções no jogo, no intuito de torna-lo adaptável par
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 0 - Tela de Título
-Descrição: Tela simples de título com botão play, idioma atual e som.
+Descrição: Tela simples de título com botão *play*, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 1 - Seletor de personagem
 
@@ -262,24 +330,32 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 'Diretora: Olá, colaborador, seja bem vindo a Unilever!',
 'Diretora: Aqui na Unilever utilizamos o Microsoft Teams como principal forma de comunicação remota.'
 'Diretora: Vilões tenebrosos roubaram algumas de nossas marcas, e por conta disso, não estamos mais conseguindo manter o equilíbrio da Unilever.'
-'Diretora: Iremos te enviar uma das nossas marcas para você conseguir enfrentar os desafios a frente sem nem suar'
-'Diretora: Contamos com você, herói, ajude-nos a recuperar nossas marcas e reestruturar a empresa'
+'Diretora: Iremos te enviar uma das nossas marcas para você conseguir enfrentar os desafios a frente sem nem suar.'
+'Diretora: Contamos com você, herói, ajude-nos a recuperar nossas marcas e reestruturar a empresa.'
 
 &nbsp;&nbsp;&nbsp;&nbsp;Em seguida, o personagem seguirá pela cena e deverá interagir com o Rexona.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Iniciará o o primeiro quiz do jogo, somente para aprendizado do funcionamento do quiz e validação dos comandos, feitos com o mouse
+&nbsp;&nbsp;&nbsp;&nbsp;Iniciará o o primeiro quiz do jogo, somente para aprendizado do funcionamento do quiz e validação dos comandos, feitos com o mouse.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 4 - Cenário combate 1
 
 &nbsp;&nbsp;&nbsp;&nbsp;O personagem sai do quarto e se depara com um mundo lúdico ao estilo Super Mario. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do Rexona. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos *links* disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos *links* oferecidos pelos NPCs e responder os quizzes corretamente.
 
+<<<<<<< Updated upstream
 &nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um *checkpoint* junto a um hub de *links* (representado por um NPC), que vai disponibilizar as trilhas Unilever, a fim de que o colaborador aprenda as principais ferramentas utilizadas dentro da empresa. Depois disso, ele poderá prosseguir na fase e enfrentar o *boss* “Rei da poluição”. Caso ele perca para o rei, irá renascer no *checkpoint* e vai pode enfrentar novamente quantas vezes forem necessárias para vencê-lo. O dano desferido é acumulado, garantindo que o colaborador consiga derrotá-lo. Após vencer o *boss*, ele soltará um item “Omo” e, ao interagir com o item, o jogador deverá responder um quiz sobre o conteúdo estudado nas trilhas. Caso ele acerte todas as questões, obterá o *Power-up* e receberá a transformação de “Super Omo”, assim podendo avançar para a próxima fase. Porém, caso não consiga concluir o questionário, ele deve realizar o quiz novamente, até que obtenha êxito.
+=======
+&nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um *checkpoint* junto a um *hub* de links (representado por um NPC), que vai disponibilizar as trilhas Unilever, a fim de que o colaborador aprenda as principais ferramentas utilizadas dentro da empresa. Depois disso, ele poderá prosseguir na fase e enfrentar o *boss* “Rei da poluição”. Caso ele perca para o rei, irá renascer no *checkpoint* e vai pode enfrentar novamente quantas vezes forem necessárias para vencê-lo. O dano desferido é acumulado, garantindo que o colaborador consiga derrotá-lo. Após vencer o *boss*, ele soltará um item “Omo” e, ao interagir com o item, o jogador deverá responder um quiz sobre o conteúdo estudado nas trilhas. Caso ele acerte todas as questões, obterá o *Power-up* e receberá a transformação de “Super Omo”, assim podendo avançar para a próxima fase. Porém, caso não consiga concluir o questionário, ele deve realizar o quiz novamente, até que obtenha êxito.
+>>>>>>> Stashed changes
 
 &nbsp;&nbsp;&nbsp;&nbsp;Para finalizar a fase, o jogador deverá prosseguir até o ônibus que vai levar ele até o próximo mapa.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 5 - Exploração urbana combate 2
 
+<<<<<<< Updated upstream
 &nbsp;&nbsp;&nbsp;&nbsp;Agora o personagem se encotra em um cenário urbano. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos, agora mais poderosos. Perto do final da fase, terá novamente um hub de *links* (representado por um NPC), que disponibilizará *links* com outros materiais da Unilever, onde o jogador aprenderá mais conteúdos providos pela Unilever, obrigatórios para prosseguir na fase. Essa plataforma em que o NPC está vai ser um *checkpoint*, assim como no nível anterior.
+=======
+&nbsp;&nbsp;&nbsp;&nbsp;Agora o personagem se encotra em um cenário urbano. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos, agora mais poderosos. Perto do final da fase, terá novamente um *hub* de links (representado por um NPC), que disponibilizará links com outros materiais da Unilever, onde o jogador aprenderá mais conteúdos providos pela Unilever, obrigatórios para prosseguir na fase. Essa plataforma em que o NPC está vai ser um *checkpoint*, assim como no nível anterior.
+>>>>>>> Stashed changes
 
 &nbsp;&nbsp;&nbsp;&nbsp;No fim da fase, o jogador vai enfrentar o *boss* “Rei da Poluição”. Caso ele perca, irá retornar ao *checkpoint* e enfrentará novamente o *boss*, quantas vezes forem necessárias e também com dano cumulativo. Quando o jogador suceder, o rei deverá soltar o item “Kibon”, que ao ser coletado transformará o jogador no “Super Kibon”, adicionando o *dash*/avanço rápido, uma nova mecânica de movimentação do jogador. Para coletar esse item, o colaborador deve responder um quiz com perguntas sobre os conteúdos. Se ele não conseguir, deverá completar o quiz novamente, até o faça.
 
@@ -320,7 +396,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo abordará a diversidade e representatividade dos personagens por meio de um sistema de seleção inicial no jogo, no qual o jogador poderá escolher o sprite de personagem com o qual ele se identifica. Tanto para os semblantes masculinos, quanto para os femininos, haveram 2 opções de etnia.
 
 <div align="center">
-<sub>Figura 7 - Seleção De Player Imagem</sub>
+<sub>Figura 7 - Seleção De Jogador Imagem</sub>
 <img src="../assets/PlayerSelecter.jpg">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -802,7 +878,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Com as bases do jogo estabelecidas neste estágio intermediário de desenvolvimento, estamos prontos para avançar para etapas mais avançadas, incluindo a expansão das mecânicas, a introdução de desafios adicionais e o refinamento geral da experiência do jogador.
 
 <div align="center">
-<sub>Figura 30 - Inimigo - Fumaça </sub>
+<sub>Figura 29 - Inimigo - Fumaça </sub>
 <img src="../src/assets/enemies/smoke.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -812,7 +888,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 ## 4.4. Desenvolvimento final do MVP
 
 <div align="center">
-<sub>Figura 31 - Ilustração da Title Screen</sub>
+<sub>Figura 30 - Ilustração da Title Screen</sub>
 <img src="../assets/mvp/mvp2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -821,7 +897,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Desenvolvemos nosso MVP com uma tela de título, onde é possível realizar algumas configurações do jogo.
 
 <div align="center">
-<sub>Figura 32 - Ilustração da seleção de personagem</sub>
+<sub>Figura 31 - Ilustração da seleção de personagem</sub>
 <img src="../assets/mvp/mvp3.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -830,7 +906,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Introduzimos um recurso de acessibilidade que permite escolher qual será o seu jogador, aumentando a imersão e proporcionando maior identificação do jogador com o jogo.
 
 <div align="center">
-<sub>Figura 33 - Ilustração do Tutorial</sub>
+<sub>Figura 32 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp4.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -839,7 +915,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Após escolher o personagem, apresentamos uma tela animada com os controles básicos do jogo.
 
 <div align="center">
-<sub>Figura 34 - Ilustração do ambiente Quarto</sub>
+<sub>Figura 33 - Ilustração do ambiente Quarto</sub>
 <img src="../assets/mvp/mvp5.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -848,7 +924,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo se inicia na casa do colaborador.
 
 <div align="center">
-<sub>Figura 35 - Ilustração do affordance</sub>
+<sub>Figura 34 - Ilustração do affordance</sub>
 <img src="../assets/mvp/mvp7.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -857,7 +933,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Incluímos como affordance a resposta visual do jogador ao interagir com elementos com os quais é possível interagir.
 
 <div align="center">
-<sub>Figura 36 - Ilustração da interação com o computador</sub>
+<sub>Figura 35 - Ilustração da interação com o computador</sub>
 <img src="../assets/mvp/mvp6.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -866,7 +942,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;No início do jogo, o jogador deve interagir com o computador para receber a missão da diretora da Unilever, recebendo assim uma contextualização do enredo e dos objetivos do jogo.
 
 <div align="center">
-<sub>Figura 37 - Ilustração do Chefão - Level 2</sub>
+<sub>Figura 36 - Ilustração do Chefão - Level 2</sub>
 <img src="../assets/mvp/mvp8.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -875,7 +951,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Durante o jogo, ao derrotar chefões, surgem *power-ups* representando produtos da marca Unilever, e para coletá-los, o jogador deve acertar o quiz que aparece após a interação com o item.
 
 <div align="center">
-<sub>Figura 38 - Ilustração do Tutorial</sub>
+<sub>Figura 37 - Ilustração do Tutorial de combate</sub>
 <img src="../assets/mvp/mvp9.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -884,7 +960,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Após acertar todas as perguntas do quiz, o jogador desbloqueia melhorias ou novas habilidades. Quando uma nova tecla é adicionada ao conjunto de controles, um pop-up com uma nova tela de tutorial animado explica brevemente a nova mecânica do jogo.
 
 <div align="center">
-<sub>Figura 39 - Ilustração do Level 2</sub>
+<sub>Figura 38 - Ilustração do Level 2</sub>
 <img src="../assets/mvp/mvp10.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -893,7 +969,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Após interagir com todos os elementos disponíveis na primeira fase, o jogador pode sair de casa e começar sua jornada. Então, inicia-se a próxima fase do jogo, que representa um mundo lúdico com vários elementos temáticos da Unilever e inimigos para enfrentar.
 
 <div align="center">
-<sub>Figura 40 - Ilustração do NPC de hub de links / checkpoint</sub>
+<sub>Figura 39 - Ilustração do NPC de hub de links/checkpoint</sub>
 <img src="../assets/mvp/mvp11.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -902,7 +978,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Ao longo das fases, um NPC distribui *links* relacionados ao conteúdo de onboarding necessário para o próximo quiz e também serve como *checkpoint*.
 
 <div align="center">
-<sub>Figura 41 - Ilustração do hub de links</sub>
+<sub>Figura 40 - Ilustração do hub de links</sub>
 <img src="../assets/mvp/mvp12.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -911,7 +987,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Hub de *links*.
 
 <div align="center">
-<sub>Figura 42 - Ilustração do Tutorial</sub>
+<sub>Figura 41 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp13.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -920,7 +996,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;No final de cada fase, o jogador deve enfrentar um chefão que, ao ser derrotado, libera uma recompensa (*power-up*/quiz).
 
 <div align="center">
-<sub>Figura 43 - Ilustração do Power-up</sub>
+<sub>Figura 42 - Ilustração do Power-up</sub>
 <img src="../assets/mvp/mvp14.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -929,7 +1005,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 Item liberado pelo boss após ser derrotado.
 
 <div align="center">
-<sub>Figura 44 - Ilustração do Level 3</sub>
+<sub>Figura 43 - Ilustração do Level 3</sub>
 <img src="../assets/mvp/mvp15.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -938,7 +1014,7 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Na fase da cidade Unilever, o jogador enfrenta novos inimigos e um novo chefão.
 
 <div align="center">
-<sub>Figura 45 - Ilustração do Chefão - Level 3</sub>
+<sub>Figura 44 - Ilustração do Chefão - Level 3</sub>
 <img src="../assets/mvp/mvp16.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -947,7 +1023,7 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Novo chefão da cidade Unilever.
 
 <div align="center">
-<sub>Figura 46 - Ilustração do Tutorial</sub>
+<sub>Figura 45 - Ilustração do Tutorial de avanço rápido</sub>
 <img src="../assets/mvp/mvp17.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -956,7 +1032,7 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Após coletar o *power-up* do novo chefão, o jogador desbloqueia uma nova habilidade, o "movimento rápido".
 
 <div align="center">
-<sub>Figura 47 - Ilustração do Level 4</sub>
+<sub>Figura 46 - Ilustração do Level 4</sub>
 <img src="../assets/mvp/mvp1.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -977,18 +1053,27 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Iniciamos a sprint de refinamento com a implementação de um sistema de tradução, que atualmente suporta inglês e português. Além disso, aprimoramos o título do jogo, que agora apresenta uma sprite de um planeta girando e adicionamos um botão "Créditos", no qual constam os nomes de cada integrante, suas principais funções durante o projeto e suas respectivas contas do LinkedIn.
 
 <div align="center">
+<<<<<<< Updated upstream
 <sub>Figura 48 - Tela de título - Inglês</sub>
+=======
+<sub>Figura 47 - Tela de título - Inglês </sub>
+>>>>>>> Stashed changes
 <img src="../assets/4.5/titleIngles.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 <div align="center">
+<<<<<<< Updated upstream
 <sub>Figura 49 - Tela de título - Português</sub>
+=======
+<sub>Figura 48 - Tela de título - Português </sub>
+>>>>>>> Stashed changes
 <img src="../assets/4.5/titlePortugues.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 
 <div align="center">
+<<<<<<< Updated upstream
 <sub>Figura 50 - Tela de título - Imagem dos créditos </sub>
 <img src="../assets/4.5/creditos.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
@@ -999,6 +1084,9 @@ E aqui estão os arquivos de diálogo e quiz traduzidos:
 
 <div align="center">
 <sub>Figura 51 - Arquivos de texto </sub>
+=======
+<sub>Figura 49 - Arquivos de texto </sub>
+>>>>>>> Stashed changes
 <img src="../assets/4.5/textsFolder.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -1025,7 +1113,7 @@ E aqui estão os arquivos de diálogo e quiz traduzidos:
 &nbsp;&nbsp;&nbsp;&nbsp; Durante esta Sprint, implementamos os designs de personagens "Super". Atualmente, dispomos de 16 sprites, sendo 4 padrões e 4 Super Sprites para cada um deles:
 
 <div align="center">
-<sub>Figura 52 - Personagens com os power-ups </sub>
+<sub>Figura 50 - Personagens com os power-ups </sub>
 <img src="../assets/4.5/playerSprites.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -1081,14 +1169,18 @@ export default (anims, selectedPlayer, selectedSprite) =>{
 
 &nbsp;&nbsp;&nbsp;&nbsp; O Hub de *Links*, recurso para o aprendizado dos novos colaboradores, foi aprimorado em design e funcionalidade. Adicionamos uma caixa de diálogo e um *Checkpoint* como recompensa por abrir ambos os *links*. Este possui *feedback* visual e sonoro.
 <div align="center">
-<sub>Figura 53 - Hub de Links - 0 Clicks </sub>
+<sub>Figura 51 - Hub de Links - 0 Clicks </sub>
 <img src="../assets/4.5/hub0Clicks.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 &nbsp;&nbsp;&nbsp;&nbsp;Apenas após o término do diálogo será possível clicar nos *links* disponibilizados. A barra de progresso do Hub de *Links* aumentará de acordo com a quantidade de *links* acessados, e o jogador só poderá fechar este Hub ao acessar todos os *links* disponíveis. Adicionalmente, a opção de fechar o Hub estará indisponível enquanto a barra de progresso não atingir 100%, ou seja, enquanto todos os *links* não forem acessados.
 
 <div align="center">
+<<<<<<< Updated upstream
 <sub>Figura 54 - Hub de Links - 2 Clicks </sub>
+=======
+<sub>Figura 52 - Hub de Links - 2 Clicks </sub>
+>>>>>>> Stashed changes
 <img src="../assets/4.5/hub2Clicks.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
