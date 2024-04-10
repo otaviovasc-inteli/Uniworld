@@ -8,8 +8,11 @@
 
 <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">David Deodato</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Igor Sampaio</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Marlos Guedes</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Otávio Vasconcelos</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Raphael Silva</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Ricardo Planas</a> e <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Thiago Volcati</a>
 
+<div align="center">
+<sub>Figura 1 - Preserverance Games</sub>
 <img src="../assets/preserveranceGames.png" width="100%">
-
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
 ## Sumário
 
 Lista de figuras:
@@ -25,8 +28,8 @@ Numeração | Figura
 7 | Seleção De Player Imagem
 8 | Ilustração do ambiente Quarto
 9 | Ilustração do Mundo Lúdico
-10 | Ilustração NPC do Hub de Links
-11 | Ilustração do Hub de Links
+10 | Ilustração NPC do Hub de *Links*
+11 | Ilustração do Hub de *Links*
 12 | 
 
 
@@ -66,7 +69,7 @@ Numeração | Figura
 &nbsp;&nbsp;&nbsp;&nbsp;A análise SWOT é relacionada ao parceiro Unilever, a tabela foi feita a fim de realizar uma avaliação ambiental no âmbito estratégico, levando em consideração o contexto da indústria, ocorrências e as características do ambiente interno e externo da Unilever.
 
 <div align="center">
-<sub>Figura 1 - Análise SWOT</sub>
+<sub>Figura 2 - Análise SWOT</sub>
 <img src="../assets/SWOT-analise.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -93,7 +96,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 &nbsp;&nbsp;&nbsp;&nbsp;A proposta de valor descreve aspectos essenciais para criação de valor para o projeto, traçando o objetivo de melhor entender a realidade do parceiro e entregar uma solução alinhada com o que a Unilever espera.
 
 <div align="center">
-<sub>Figura 2 - Proposta de Valor</sub>
+<sub>Figura 3 - Proposta de Valor</sub>
 <img src="../assets/vpc.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -120,7 +123,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 &nbsp;&nbsp;&nbsp;&nbsp;A matriz de risco demonstra os riscos observados no projeto pela equipe de desenvolvimento, representando ameaças e oportunidades, assim como impactos relevantes sobre o projeto. Em verde, estão indicados percalços que não necessitam de intervenção; em amarelo, pontos que apresentam média probabilidade e demandam certa atenção; e, em vermelho, estão destacados pontos críticos que devem ser evitados.
 
 <div align="center">
-<sub>Figura 3 - Matriz de Riscos</sub>
+<sub>Figura 4 - Matriz de Riscos</sub>
 <img src="../assets/Matriz3.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -268,15 +271,15 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 4 - Cenário combate 1
 
-&nbsp;&nbsp;&nbsp;&nbsp;O personagem sai do quarto e se depara com um mundo lúdico ao estilo Super Mario. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do Rexona. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos links disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos links oferecidos pelos NPCs e responder os quizzes corretamente.
+&nbsp;&nbsp;&nbsp;&nbsp;O personagem sai do quarto e se depara com um mundo lúdico ao estilo Super Mario. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos com o poder do Rexona. Ao longo da fase, estarão espalhados 2 NPCs que são obrigatórios para prosseguir na fase. Quando o jogador interagir com eles, terá acesso aos *links* disponibilizados pela Unilever, e só poderá prosseguir no jogo após clicar nos *links* oferecidos pelos NPCs e responder os quizzes corretamente.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um *checkpoint* junto a um hub de links (representado por um NPC), que vai disponibilizar as trilhas Unilever, a fim de que o colaborador aprenda as principais ferramentas utilizadas dentro da empresa. Depois disso, ele poderá prosseguir na fase e enfrentar o *boss* “Rei da poluição”. Caso ele perca para o rei, irá renascer no *checkpoint* e vai pode enfrentar novamente quantas vezes forem necessárias para vencê-lo. O dano desferido é acumulado, garantindo que o colaborador consiga derrotá-lo. Após vencer o *boss*, ele soltará um item “Omo” e, ao interagir com o item, o jogador deverá responder um quiz sobre o conteúdo estudado nas trilhas. Caso ele acerte todas as questões, obterá o *Power-up* e receberá a transformação de “Super Omo”, assim podendo avançar para a próxima fase. Porém, caso não consiga concluir o questionário, ele deve realizar o quiz novamente, até que obtenha êxito.
+&nbsp;&nbsp;&nbsp;&nbsp;Perto do fim da fase, haverá um *checkpoint* junto a um hub de *links* (representado por um NPC), que vai disponibilizar as trilhas Unilever, a fim de que o colaborador aprenda as principais ferramentas utilizadas dentro da empresa. Depois disso, ele poderá prosseguir na fase e enfrentar o *boss* “Rei da poluição”. Caso ele perca para o rei, irá renascer no *checkpoint* e vai pode enfrentar novamente quantas vezes forem necessárias para vencê-lo. O dano desferido é acumulado, garantindo que o colaborador consiga derrotá-lo. Após vencer o *boss*, ele soltará um item “Omo” e, ao interagir com o item, o jogador deverá responder um quiz sobre o conteúdo estudado nas trilhas. Caso ele acerte todas as questões, obterá o *Power-up* e receberá a transformação de “Super Omo”, assim podendo avançar para a próxima fase. Porém, caso não consiga concluir o questionário, ele deve realizar o quiz novamente, até que obtenha êxito.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Para finalizar a fase, o jogador deverá prosseguir até o ônibus que vai levar ele até o próximo mapa.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Cena 5 - Exploração urbana combate 2
 
-&nbsp;&nbsp;&nbsp;&nbsp;Agora o personagem se encotra em um cenário urbano. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos, agora mais poderosos. Perto do final da fase, terá novamente um hub de links (representado por um NPC), que disponibilizará links com outros materiais da Unilever, onde o jogador aprenderá mais conteúdos providos pela Unilever, obrigatórios para prosseguir na fase. Essa plataforma em que o NPC está vai ser um *checkpoint*, assim como no nível anterior.
+&nbsp;&nbsp;&nbsp;&nbsp;Agora o personagem se encotra em um cenário urbano. Para avançar na fase, ele deve seguir para direita e derrotar os inimigos, agora mais poderosos. Perto do final da fase, terá novamente um hub de *links* (representado por um NPC), que disponibilizará *links* com outros materiais da Unilever, onde o jogador aprenderá mais conteúdos providos pela Unilever, obrigatórios para prosseguir na fase. Essa plataforma em que o NPC está vai ser um *checkpoint*, assim como no nível anterior.
 
 &nbsp;&nbsp;&nbsp;&nbsp;No fim da fase, o jogador vai enfrentar o *boss* “Rei da Poluição”. Caso ele perca, irá retornar ao *checkpoint* e enfrentará novamente o *boss*, quantas vezes forem necessárias e também com dano cumulativo. Quando o jogador suceder, o rei deverá soltar o item “Kibon”, que ao ser coletado transformará o jogador no “Super Kibon”, adicionando o *dash*/avanço rápido, uma nova mecânica de movimentação do jogador. Para coletar esse item, o colaborador deve responder um quiz com perguntas sobre os conteúdos. Se ele não conseguir, deverá completar o quiz novamente, até o faça.
 
@@ -304,12 +307,12 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 
 ### 3.2.2. Non-Playable Characters (NPC)
 
-&nbsp;&nbsp;&nbsp;&nbsp;O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o jogador. Ao interagir com os NPCs, o personagem terá acesso a links e materiais sobre a Unilever. Ao longo do mapa terão 2 NPCs diferentes, com o design a seguir:
+&nbsp;&nbsp;&nbsp;&nbsp;O jogo contará com diversos NPCs pacíficos espalhados pelo mapa, que não terão nome, de acordo com o enredo serão apenas pessoas dispostas a ajudar o jogador. Ao interagir com os NPCs, o personagem terá acesso a *links* e materiais sobre a Unilever. Ao longo do mapa terão 2 NPCs diferentes, com o design a seguir:
 
-<sub>Figura 3 - Npc hub</sub>
+<sub>Figura 5 - Npc hub</sub>
 <img src="../assets/Dvdd.png">
 
-<sub>Figura 3 - Npc diretora</sub>
+<sub>Figura 6 - Npc diretora</sub>
 <img src="../assets/diretora.png">
 
 ### 3.2.3. Diversidade e Representatividade dos Personagens
@@ -335,7 +338,7 @@ Descrição: Tela simples de título com botão play, idioma atual e som.
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;O segundo ambiente é o Mundo Lúdico, onde o Player terá da fato a primeira gameplay do jogo, nessa fase, é possivel encontrar objetos de decoração relacionados à Unilever, será possível batalhar contra inimigos e no final da fase um "chefão". O objetivo do Player nessa fase é interagir com o NPC que disponibiliza dos Links de aprendizado da Unilever e depois interagir com o objeto de Quiz que lhe dará o *Power-up* baseado no resultado. Depois de derrotar o primeiro chefe, pode seguir para o terceiro ambiente
+&nbsp;&nbsp;&nbsp;&nbsp;O segundo ambiente é o Mundo Lúdico, onde o Player terá da fato a primeira gameplay do jogo, nessa fase, é possivel encontrar objetos de decoração relacionados à Unilever, será possível batalhar contra inimigos e no final da fase um "chefão". O objetivo do Player nessa fase é interagir com o NPC que disponibiliza dos *Links* de aprendizado da Unilever e depois interagir com o objeto de Quiz que lhe dará o *Power-up* baseado no resultado. Depois de derrotar o primeiro chefe, pode seguir para o terceiro ambiente
 <div align="center">
 <sub>Figura 9 - Ilustração do Mundo Lúdico</sub>
 <img src="../assets/printMundoLudico.png" width="100%">
@@ -419,32 +422,35 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 ## 3.5. Gameflow (Diagrama de cenas)
 
-&nbsp;&nbsp;&nbsp;&nbsp;Essa imagem apresenta um diagrama de fluxo de jogo para "UniWorld". Nele, encontramos várias cenas do jogo, diagramas de classe associados à programação orientada a objetos, e explicações sobre a progressão do jogador e suas interações. Aqui está uma explicação detalhada dos diferentes elementos:
-
-&nbsp;&nbsp;&nbsp;&nbsp;Na cena inicial, quando o jogador inicia o jogo, é recebido com a tela inicial, oferecendo opções para jogar ("PLAY"), ajustar configurações ou silenciar o som. À esquerda, vemos um diagrama de classe intitulado "Tela de Título", que lista atributos e métodos como setInteractive() e preloadGame(), indicando que esta tela prepara o jogo para começar e configura elementos interativos.
-
-&nbsp;&nbsp;&nbsp;&nbsp;Na cena de Seleção de Personagem, o jogador pode escolher seu personagem. O diagrama de classe associado é "Seleção de Jogador", com atributos como countdown e cloudCover, e métodos incluindo startGame() e setInteractive(). Nisso, vemos  a presença de um temporizador de contagem regressiva e uma animação como se fosse nuvens cobrindo os personagens antes da seleção.
-
-&nbsp;&nbsp;&nbsp;&nbsp;No Mundo do Jogo, a área principal de jogabilidade, o jogador navega com o personagem pelo mundo, explorando, eliminando inimigos e superando obstáculos. O diagrama de classe inclui atributos como player e métodos como createPlayer(), createWorldLevel(), e vários outros que indicam funcionalidades para criar o nível, o personagem do jogador e a física do jogo.
-
-&nbsp;&nbsp;&nbsp;&nbsp;Na cena do Quarto, o jogador está dentro de um quarto e deve interagir com um objeto, um item "Renona", para coletá-lo. O diagrama de classe é semelhante ao "Jogador no Mundo", mas inclui um método createMap(), sugerindo que esta cena envolve navegar em um espaço menor e fechado, como um mapa.
-
-&nbsp;&nbsp;&nbsp;&nbsp;Cada cena é conectada por linhas vermelhas para a próxima, indicando o fluxo do jogo. O jogador começa na tela inicial, escolhe seu personagem, entra no mundo do jogo para navegar pelos níveis e interage com objetos em cenas específicas, como o quarto.
-
-&nbsp;&nbsp;&nbsp;&nbsp;Esse tipo de diagrama é útil para os desenvolvedores de jogos planejarem a progressão do jogo, as classes e métodos necessários para implementar diferentes cenas do jogo, e para acompanhar como o jogador irá experimentar o jogo do início ao fim.
+&nbsp;&nbsp;&nbsp;&nbsp;Um diagrama de cena é uma ferramenta visual que mapeia a sequência e a conexão entre diferentes cenas ou fases de um jogo. Ele detalha eventos importantes, interações e transições, ajudando a organizar a narrativa e a progressão de maneira lógica para garantir uma experiência fluida e envolvente para o jogador.
 
 <div align="center">
 <sub>Figura 15 - Diagrama de Cenas</sub>
-<img src="../assets/GameFlow4.png" width="100%">
+<img src="../assets/GameFlow5.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;Essa imagem apresenta um diagrama de fluxo de jogo para "UniWorld". Nela, encontramos várias cenas do jogo, diagramas de classe associados à programação orientada a objetos, e explicações sobre a progressão do jogador e suas interações. Aqui está uma explicação detalhada dos diferentes elementos:
+
+&nbsp;&nbsp;&nbsp;&nbsp;No início do jogo, os jogadores se deparam com um menu principal que oferece opções para iniciar o jogo, ajustar configurações de som, selecionar o idioma e visualizar os créditos. Ajustes de som podem ser feitos com um simples clique para alternar entre ligado e desligado. Da mesma forma, a seleção de idioma permite alternar entre inglês e português com apenas um clique.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Ao escolher a opção "JOGAR", o jogador é levado à seleção de personagens e, em seguida, a um tutorial introdutório. Posteriormente, o cenário muda para o quarto do personagem, onde interações com o computador dão início ao enredo. Adiante, ao interagir com o "Rexona", o jogador passará por um quiz, caso ele acerte, receberá o *power-up* "Rexona". Em caso de erro, o quiz pode ser repetido. Com o *power-up* em mãos, o jogador avança para o próximo estágio ao interagir com a porta, entrando no primeiro nível, o "mundo lúdico".
+
+&nbsp;&nbsp;&nbsp;&nbsp;No mundo lúdico, o jogador precisará enfretar os inimigos para seguir adiante, ao passo que poderá interar com os NPCs pelo caminho, onde encontrará o Hub de *Links* e marcará os *checkpoints*. O ápice desse nível é o embate com o chefe final, cuja derrota recoloca o jogador no último *checkpoint*, enquanto a vitória concede o *power-up* Omo, após a conclusão e aprovação em um novo quiz.
+
+&nbsp;&nbsp;&nbsp;&nbsp;O jogo então transporta o jogador para o "ambiente mundo urbano devastado" em um ônibus. Neste cenário, assim como no anterior, a progressão se dá por meio da interação NPC de hub de *links*, superação de desafios de plataformas e um encontro com outro NPC do hub de *links*, resultando na luta contra o chefe do segundo nível. Vencer este chefe permite ao jogador realizar outro quiz para obter um novo *power-up*, desbloqueando a habilidade de realizar um *dash*.
+
+&nbsp;&nbsp;&nbsp;&nbsp;No último nível, "ambiente Unilever", enfrenta-se desafios de plataformas que exigem o uso da habilidade de dash. Cair resulta no retorno ao início do nível, mas superar esses desafios leva ao encontro com o NPC da diretora, onde o jogador recebe *feedback* positivo, sinalizando a conclusão do jogo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Por fim, a combinação de todos os componentes do projeto formam o diagrama de cenas, o qual descreve, de forma cronológica, o fluxo esperado de progressão no jogo. Esse diagrama é fundamental, pois oferece uma visão clara do trajeto que os jogadores devem seguir, dos desafios que enfrentarão e da sequência em que a narrativa se desenrolará. Através dele, conseguimos garantir uma experiência coesa, permitindo que os desenvolvedores visualizem e refinem a jornada do jogador desde o início até a conclusão do jogo.
+
 
 ## 3.6. Regras do jogo
 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogador deve concluir a fase, ganhando *power-ups* e derrotando os inimigos. Além disso, deve derrotar dois *boss*, o Rei desmatamento e o Rei poluição. Ao derrotar cada rei, o jogador deverá responder um quiz para ganhar o *power-up*. Caso ele acerte, vai receber uma bonificação em alguma habilidade (força, alcance, velocidade...).
 ## 3.7. Mecânicas do jogo (sprint 3)
 
-&nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem irá dar um pulo duplo. Outra tecla importante para a jogabilidade proposta no nosso game é a tecla E, que usa a mecânica de interação, caso apertada ao lado de um NPC ou power-up. Por fim, a tecla Q é responsável pela mecânica de ataque do jogador e a tecla W pela mecânica de movimentação de avanço rápido.
+&nbsp;&nbsp;&nbsp;&nbsp;No nosso jogo de plataforma 2D para computador, o jogador pode utilizar as teclas de seta do teclado para usar as mecânicas de se locomover e pular. Além disso caso o jogador pressione 2 vezes seguidas as teclas para cima o personagem irá dar um pulo duplo. Outra tecla importante para a jogabilidade proposta no nosso game é a tecla E, que usa a mecânica de interação, caso apertada ao lado de um NPC ou *power-up*. Por fim, a tecla Q é responsável pela mecânica de ataque do jogador e a tecla W pela mecânica de movimentação de avanço rápido.
 
 # <a name="c4"></a>4. Desenvolvimento do Jogo
 
@@ -508,7 +514,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 
 &nbsp;&nbsp;&nbsp;&nbsp;A escolha de manter um ambiente colorido, combinado com desafios ambientais, foi pensada na ideia de oferecer entretenimento e também uma jogabilidade que promova o aprendizado e o engajamento dos funcionários. Aprimorar a narrativa da Unilever, com a missão de recuperar as marcas roubadas pelos vilões, foi uma decisão estratégica para alinhar o jogo com os valores e objetivos da empresa, tornando-o relevante e significativo para o público-alvo.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Os controles simplificados e a jogabilidade intuitiva foram aprimorados após avaliar feedbacks e testes anteriores, visando oferecer uma experiência mais fluida e imersiva para os jogadores. Adicionamos elementos como power-ups, NPCs informativos e recompensas estrategicamente para enriquecer a experiência de jogo.
+&nbsp;&nbsp;&nbsp;&nbsp;Os controles simplificados e a jogabilidade intuitiva foram aprimorados após avaliar *feedbacks* e testes anteriores, visando oferecer uma experiência mais fluida e imersiva para os jogadores. Adicionamos elementos como *power-ups*, NPCs informativos e recompensas estrategicamente para enriquecer a experiência de jogo.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Visualmente, o estilo pixel art e a trilha sonora foram refinados para criar uma atmosfera envolvente e atraente, garantindo uma imersão total no universo do jogo e fortalecendo a identidade visual e sonora do projeto.
 
@@ -576,17 +582,31 @@ export default class Preload extends Phaser.Scene {
 </div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Para simplificar o gerenciamento das transições entre as diferentes cenas do jogo, fazemos uso da classe Phaser.Scene. Essa abordagem não só facilita a criação de ambientes de jogo coesos, mas também contribui para uma experiência de jogo mais organizada e envolvente. Ao tornar o botão "PLAY" interativo, com o auxílio dessa classe a transição para a próxima cena se torna eficiente e enxuta.
-<div align="center">
-<sub>Código - Interatividade e Comandos</sub>
-<img src="../assets/Desenvolvimento/transicao_de_cena_1.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
-</div>
 
 <div align="center">
-<sub>Figura 5 - Transição de Cena - Utilização do Phaser.Scene</sub>
-<img src="../assets/Desenvolvimento/transicao_de_cena_2.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Interatividade e Comandos
 </div>
+
+```javascript
+this.playButton.on('pointerdown', () => {
+      // Call the startGame function when the button is clicked
+      this.sound.add('select_sound', {loop: false, volume: 0.7}).play()
+      this.preloadGame();
+    });
+```
+
+<div align="center">
+<sub>Código - Transição de Cena - Utilização do Phaser.Scene
+</div>
+
+```javascript
+preloadGame() {
+    this.cameras.main.fadeOut(400, 0, 0, 0, (camera, progress) => {
+      if(progress === 1) this.scene.start("preload", {titleMusicObject: this.titleMusic})
+    })
+  }
+}
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;Dando um passo adiante na direção da inclusão e diversidade, foi encontrado em uma pesquisa de público alvo uma necessidade latente de englobar a diversidade dentro do jogo. Por conta disso, implementamos um sistema de seleção de personagens complexo. Os jogadores podem escolher entre quatro personagens diferentes, cada um com suas próprias características e aparências únicas.
 <div align="center">
@@ -602,17 +622,52 @@ export default class Preload extends Phaser.Scene {
 &nbsp;&nbsp;&nbsp;&nbsp;Essa informação é utilizada em uma função específica, como a 'initAnimations', que é responsável por carregar as animações corretas para o personagem escolhido. Isso é feito utilizando estruturas de decisão condicionais, como instruções if-else, que verificam o valor da variável 'selectedPlayer' e carregam as spritesheets e animações correspondentes.
 
 <div align="center">
-<sub>Figura 7 - Trecho de código da Player Select - Números de ID</sub>
-<img src="../assets/Desenvolvimento/ID_playerselect.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Trecho de código da Player Select - Números de ID
 </div>
+
+```javascript
+// Call the startGame function when the button is clicked and play select
+    f1.on('pointerdown', () => {
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
+      this.playerSelecionado = '1'
+      this.startGame(this.playerSelecionado)
+    });
+
+
+    f2.on('pointerdown', () => {
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
+      this.playerSelecionado = '2'
+      this.startGame(this.playerSelecionado)
+    });
+
+
+    m1.on('pointerdown', () => {
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
+      this.playerSelecionado = '3'
+      this.startGame(this.playerSelecionado)
+    });
+
+
+    m2.on('pointerdown', () => {
+      this.sound.add('select_sound', {loop: false, volume: 0.5}).play()
+      this.playerSelecionado = '4'
+      this.startGame(this.playerSelecionado)
+    });
+
+```
 
 <div align="center">
-<sub>Figura 8 - Trecho de código da PlayerAnims - Infusão do ID para carregamento dos sprites desejados</sub>
-<img src="../assets/Desenvolvimento/playerSelecionado.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Trecho de código da PlayerAnims - Infusão do ID para carregamento dos sprites desejados
 </div>
 
+```javascript
+ anims.create({
+    key: 'player_run',
+    frames: anims.generateFrameNumbers(`player${selectedPlayer}_${selectedSprite}`, { start: 10, end: 17 }),
+    frameRate: 12,
+    repeat: -1
+  });
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;Na primeira cena de interação, os jogadores são introduzidos às mecânicas básicas do jogo. Aqui, eles aprendem sobre as habilidades de movimentação do personagem principal, incluindo movimento horizontal e vertical.
 
@@ -626,7 +681,7 @@ export default class Preload extends Phaser.Scene {
 &nbsp;&nbsp;&nbsp;&nbsp;Para isso ser possível, foi feito um vídeo em formato de cutscene. Com o método do Phaser "create", o vídeo é adicionado na tela, fazendo com que pareça que uma imagem está se locomovendo.
 
 <div align="center">
-<sub>Código 1 - Trecho do código da TutorialScreen - criando a animação do vídeo </sub>
+<sub>Código - Trecho do código da TutorialScreen - criando a animação do vídeo </sub>
 
 
 
@@ -651,17 +706,17 @@ Ao realizar essa interação, uma caixa de texto surge, introduzindo a história
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-Após a interação inicial com o computador, o jogador percebe outro item colecionável na sala: um desodorante da marca Rexona. Novamente, um feedback visual e a instrução para pressionar "E" indicam a possibilidade de interação. Ao fazê-lo, o jogador é apresentado a um quiz que não apenas aprimora o envolvimento narrativo, mas também serve como um mecanismo para avaliar o conhecimento do jogador sobre informações relevantes à Unilever. Caso o jogador erre alguma pergunta, é oferecida a oportunidade de refazer o quiz para consolidar o aprendizado.
+Após a interação inicial com o computador, o jogador percebe outro item colecionável na sala: um desodorante da marca Rexona. Novamente, um *feedback* visual e a instrução para pressionar "E" indicam a possibilidade de interação. Ao fazê-lo, o jogador é apresentado a um quiz que não apenas aprimora o envolvimento narrativo, mas também serve como um mecanismo para avaliar o conhecimento do jogador sobre informações relevantes à Unilever. Caso o jogador erre alguma pergunta, é oferecida a oportunidade de refazer o quiz para consolidar o aprendizado.
 
-Ao coletar o item com sucesso, um feedback auditivo sutil confirma a ação do jogador, fornecendo uma resposta imediata e recompensadora. Além disso, a presença de uma trilha sonora de fundo, cuidadosamente selecionada para evocar conforto e familiaridade, contribui para estabelecer uma atmosfera acolhedora e imersiva na cena do quarto.
+Ao coletar o item com sucesso, um *feedback* auditivo sutil confirma a ação do jogador, fornecendo uma resposta imediata e recompensadora. Além disso, a presença de uma trilha sonora de fundo, cuidadosamente selecionada para evocar conforto e familiaridade, contribui para estabelecer uma atmosfera acolhedora e imersiva na cena do quarto.
 
-Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na narrativa, oferecer feedback claro e criar uma experiência de jogo coesa e agradável. Ao integrar sons e interações visuais significativas, buscamos garantir que o jogador se sinta imerso no universo do jogo e motivado a prosseguir em sua jornada de aprendizado e exploração.
+Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na narrativa, oferecer *feedback* claro e criar uma experiência de jogo coesa e agradável. Ao integrar sons e interações visuais significativas, buscamos garantir que o jogador se sinta imerso no universo do jogo e motivado a prosseguir em sua jornada de aprendizado e exploração.
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Em seguida à cena do menu e do quarto, o jogador embarca na aventura no "Mundo Lúdico", o primeiro mapa do jogo. Neste cenário encantador, concebemos uma experiência imersiva que desafia o jogador a superar obstáculos e derrotar inimigos enquanto explora um ambiente vibrante e cheio de vida.
 
 <div align="center">
-<sub>Figura 12 - Inclusão e Diversidade - Player select</sub>
+<sub>Figura 28 - Inclusão e Diversidade - Player select</sub>
 <img src="../assets/Desenvolvimento/character_select.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -676,10 +731,55 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Decidimos incluir diversas decorações temáticas, como placas com o símbolo da Unilever, um avião e um balão com o logo de uma das empresas da Unilever: Dove. Esses elementos não apenas reforçam a identidade da marca, mas também criam uma conexão entre o jogo e o contexto do processo de onboarding dos novos funcionários de TI na Unilever: se conectar com a empresa, seus valores e marcas.
 
 <div align="center">
-<sub>Figura 13 - Trecho código - level 2 </sub>
-<img src="../assets/backend_map.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Trecho código - level 2
 </div>
+
+```javascript
+
+ const enemies = this.createEnemies(layers);
+
+
+    //create boss
+    const boss = new BossLevel2(this, 9664, 960, 'boss_level2', player).setDepth(3)
+
+
+    // RexonaNpc sprite
+    new Npc(this, 950, 1659, 'hub_sprite', 'hub', player)
+      .setSize(100, 120)
+      .setScale(1.2)
+
+
+    //colocando o Npc de links no terceiro mapa
+    new Npc(this, 7420, 700, "hub_sprite", "hub2", player)
+      .setSize(100, 120)
+      .setScale(1.2)
+
+
+    // Npc sprite
+    new Npc(this, 9664, 1150, 'omo_sprite', 'omo', player)
+      .setScale(0.6)
+      .setSize(150, 120)
+      .setDepth(2)
+
+
+    // Set world bounds based on maps
+    this.physics.world.bounds.height = map.heightInPixels;
+    this.physics.world.bounds.width = map.widthInPixels;
+    // Create background
+    this.createBg(map)
+
+
+    // Create decorations
+    this.createEnv()
+
+
+    // Collider player with platforms
+    this.createPlayerColliders(player, {
+      colliders: {
+        platforms: layers.platforms,
+        projectiles: boss.getProjectiles()
+    }})
+```
 
 
 
@@ -702,7 +802,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Com as bases do jogo estabelecidas neste estágio intermediário de desenvolvimento, estamos prontos para avançar para etapas mais avançadas, incluindo a expansão das mecânicas, a introdução de desafios adicionais e o refinamento geral da experiência do jogador.
 
 <div align="center">
-<sub>Figura 14 - Inimigo - Fumaça </sub>
+<sub>Figura 30 - Inimigo - Fumaça </sub>
 <img src="../src/assets/enemies/smoke.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -712,7 +812,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 ## 4.4. Desenvolvimento final do MVP
 
 <div align="center">
-<sub>Figura 1 - Ilustração da Title Screen</sub>
+<sub>Figura 31 - Ilustração da Title Screen</sub>
 <img src="../assets/mvp/mvp2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -721,7 +821,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Desenvolvemos nosso MVP com uma tela de título, onde é possível realizar algumas configurações do jogo.
 
 <div align="center">
-<sub>Figura 2 - Ilustração da seleção de personagem</sub>
+<sub>Figura 32 - Ilustração da seleção de personagem</sub>
 <img src="../assets/mvp/mvp3.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -730,7 +830,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Introduzimos um recurso de acessibilidade que permite escolher qual será o seu jogador, aumentando a imersão e proporcionando maior identificação do jogador com o jogo.
 
 <div align="center">
-<sub>Figura 3 - Ilustração do Tutorial</sub>
+<sub>Figura 33 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp4.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -739,7 +839,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Após escolher o personagem, apresentamos uma tela animada com os controles básicos do jogo.
 
 <div align="center">
-<sub>Figura 4 - Ilustração do ambiente Quarto</sub>
+<sub>Figura 34 - Ilustração do ambiente Quarto</sub>
 <img src="../assets/mvp/mvp5.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -748,7 +848,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;O jogo se inicia na casa do colaborador.
 
 <div align="center">
-<sub>Figura 5 - Ilustração do affordance</sub>
+<sub>Figura 35 - Ilustração do affordance</sub>
 <img src="../assets/mvp/mvp7.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -757,7 +857,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Incluímos como affordance a resposta visual do jogador ao interagir com elementos com os quais é possível interagir.
 
 <div align="center">
-<sub>Figura 6 - Ilustração da interação com o computador</sub>
+<sub>Figura 36 - Ilustração da interação com o computador</sub>
 <img src="../assets/mvp/mvp6.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -766,16 +866,16 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;No início do jogo, o jogador deve interagir com o computador para receber a missão da diretora da Unilever, recebendo assim uma contextualização do enredo e dos objetivos do jogo.
 
 <div align="center">
-<sub>Figura 7 - Ilustração do Chefão - Level 2</sub>
+<sub>Figura 37 - Ilustração do Chefão - Level 2</sub>
 <img src="../assets/mvp/mvp8.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Durante o jogo, ao derrotar chefões, surgem power-ups representando produtos da marca Unilever, e para coletá-los, o jogador deve acertar o quiz que aparece após a interação com o item.
+&nbsp;&nbsp;&nbsp;&nbsp;Durante o jogo, ao derrotar chefões, surgem *power-ups* representando produtos da marca Unilever, e para coletá-los, o jogador deve acertar o quiz que aparece após a interação com o item.
 
 <div align="center">
-<sub>Figura 8 - Ilustração do Tutorial</sub>
+<sub>Figura 38 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp9.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -784,7 +884,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Após acertar todas as perguntas do quiz, o jogador desbloqueia melhorias ou novas habilidades. Quando uma nova tecla é adicionada ao conjunto de controles, um pop-up com uma nova tela de tutorial animado explica brevemente a nova mecânica do jogo.
 
 <div align="center">
-<sub>Figura 9 - Ilustração do Level 2</sub>
+<sub>Figura 39 - Ilustração do Level 2</sub>
 <img src="../assets/mvp/mvp10.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -793,34 +893,34 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 &nbsp;&nbsp;&nbsp;&nbsp;Após interagir com todos os elementos disponíveis na primeira fase, o jogador pode sair de casa e começar sua jornada. Então, inicia-se a próxima fase do jogo, que representa um mundo lúdico com vários elementos temáticos da Unilever e inimigos para enfrentar.
 
 <div align="center">
-<sub>Figura 10 - Ilustração do NPC de hub de links / checkpoint</sub>
+<sub>Figura 40 - Ilustração do NPC de hub de links / checkpoint</sub>
 <img src="../assets/mvp/mvp11.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Ao longo das fases, um NPC distribui links relacionados ao conteúdo de onboarding necessário para o próximo quiz e também serve como checkpoint.
+&nbsp;&nbsp;&nbsp;&nbsp;Ao longo das fases, um NPC distribui *links* relacionados ao conteúdo de onboarding necessário para o próximo quiz e também serve como *checkpoint*.
 
 <div align="center">
-<sub>Figura 11 - Ilustração do hub de links</sub>
+<sub>Figura 41 - Ilustração do hub de links</sub>
 <img src="../assets/mvp/mvp12.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Hub de links.
+&nbsp;&nbsp;&nbsp;&nbsp;Hub de *links*.
 
 <div align="center">
-<sub>Figura 12 - Ilustração do Tutorial</sub>
+<sub>Figura 42 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp13.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;No final de cada fase, o jogador deve enfrentar um chefão que, ao ser derrotado, libera uma recompensa (power-up/quiz).
+&nbsp;&nbsp;&nbsp;&nbsp;No final de cada fase, o jogador deve enfrentar um chefão que, ao ser derrotado, libera uma recompensa (*power-up*/quiz).
 
 <div align="center">
-<sub>Figura 13 - Ilustração do Power-up</sub>
+<sub>Figura 43 - Ilustração do Power-up</sub>
 <img src="../assets/mvp/mvp14.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -829,7 +929,7 @@ Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na 
 Item liberado pelo boss após ser derrotado.
 
 <div align="center">
-<sub>Figura 14 - Ilustração do Level 3</sub>
+<sub>Figura 44 - Ilustração do Level 3</sub>
 <img src="../assets/mvp/mvp15.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -838,7 +938,7 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Na fase da cidade Unilever, o jogador enfrenta novos inimigos e um novo chefão.
 
 <div align="center">
-<sub>Figura 15 - Ilustração do Chefão - Level 3</sub>
+<sub>Figura 45 - Ilustração do Chefão - Level 3</sub>
 <img src="../assets/mvp/mvp16.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -847,16 +947,16 @@ Item liberado pelo boss após ser derrotado.
 &nbsp;&nbsp;&nbsp;&nbsp;Novo chefão da cidade Unilever.
 
 <div align="center">
-<sub>Figura 16 - Ilustração do Tutorial</sub>
+<sub>Figura 46 - Ilustração do Tutorial</sub>
 <img src="../assets/mvp/mvp17.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;Após coletar o power-up do novo chefão, o jogador desbloqueia uma nova habilidade, o "movimento rápido".
+&nbsp;&nbsp;&nbsp;&nbsp;Após coletar o *power-up* do novo chefão, o jogador desbloqueia uma nova habilidade, o "movimento rápido".
 
 <div align="center">
-<sub>Figura 17 - Ilustração do Level 4</sub>
+<sub>Figura 47 - Ilustração do Level 4</sub>
 <img src="../assets/mvp/mvp1.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
@@ -870,86 +970,233 @@ Item liberado pelo boss após ser derrotado.
 
 ### 4.5.1. Novas funcionalidades:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Começamos a sprint de refinamento implementando um sistema de tradução, atualmente temos as traduções em inglês e português.
+&nbsp;&nbsp;&nbsp;&nbsp;Nesta seção, listamos todas as implementações e funcionalidades finais realizadas. Aprimoramos itens já antes implementados e adicionamos detalhes que terão a função de tornar o jogo cada mais imersivo e engajante.
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;Iniciamos a sprint de refinamento com a implementação de um sistema de tradução, que atualmente suporta inglês e português. Além disso, aprimoramos o título do jogo, que agora apresenta uma sprite de um planeta girando e adicionamos um botão "Créditos", no qual constam os nomes de cada integrante, suas principais funções durante o projeto e suas respectivas contas do LinkedIn.
 
 <div align="center">
-<sub>Figura 18 - Tela de título - Inglês </sub>
+<sub>Figura 48 - Tela de título - Inglês</sub>
 <img src="../assets/4.5/titleIngles.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 <div align="center">
-<sub>Figura 19 - Tela de título - Português </sub>
+<sub>Figura 49 - Tela de título - Português</sub>
 <img src="../assets/4.5/titlePortugues.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
-&nbsp;&nbsp;&nbsp;&nbsp; E desenvolvemos os arquivos de dialogo e quiz traduzidos:
+
 
 <div align="center">
-<sub>Figura 20 - Arquivos de texto </sub>
+<sub>Figura 50 - Tela de título - Imagem dos créditos </sub>
+<img src="../assets/4.5/creditos.png" width="100%">
+<sup>Fonte: Material produzido pelos autores (2024)</sup>
+</div>
+
+
+E aqui estão os arquivos de diálogo e quiz traduzidos:
+
+<div align="center">
+<sub>Figura 51 - Arquivos de texto </sub>
 <img src="../assets/4.5/textsFolder.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
-&nbsp;&nbsp;&nbsp;&nbsp; Aqui a variável 'this.language' guarda um texto que pode ser "En" ou "Pt" baseado na escolha feita na tela de título
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;A variável 'this.language' armazena uma string que pode ser "En" ou "Pt", dependendo da escolha feita na tela de título.
 
 <div align="center">
-<sub>Figura 21 - Importação modular dos textos traduzidos </sub>
-<img src="../assets/4.5/translationCode.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Importação modular dos textos traduzidos
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp; Sprite de Super: Nessa Sprint colocamos em jogo os designs de personagens Super. Atualmente contamos com 16 Sprites sendo eles 4 padrões e 4 Super Sprites para cada um deles:
+```javascript
+
+ try {
+      const textsModule = await import(`../texts/${this.name}Texts${this.language}.js`);
+      this.texts = textsModule.default;
+    } catch (error) {
+      console.error(`Error importing texts for ${this.name}:`, error);
+      this.texts = ['Check Your text import'];
+    }
+  }
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp; Durante esta Sprint, implementamos os designs de personagens "Super". Atualmente, dispomos de 16 sprites, sendo 4 padrões e 4 Super Sprites para cada um deles:
 
 <div align="center">
-<sub>Figura 22 - Todas as possíveis texturas do Player </sub>
+<sub>Figura 52 - Personagens com os power-ups </sub>
 <img src="../assets/4.5/playerSprites.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
-&nbsp;&nbsp;&nbsp;&nbsp; Foi implementado através da padronização do nome dos arquivos e criação dinâmica das animações. Toda vez que o player coleta um powerUp, muda a variável 'selectedSprite' para o Sprite correspondente, então deleta as animações antigas e cria as novas como mostrado abaixo:
-
+&nbsp;&nbsp;&nbsp;&nbsp;  Esses sprites foram implementados através da padronização do nome dos arquivos e da criação dinâmica das animações. Sempre que o jogador coleta um *power-up*, a variável 'selectedSprite' muda para o sprite correspondente, em seguida, as animações antigas são deletadas e as novas são criadas, como mostrado a seguir:
 <div align="center">
-<sub>Figura 23 - Criação das animações </sub>
-<img src="../assets/4.5/playerAnims.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Criação das animações
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp; O Hub de Links (recurso para aprendizado dos novos colaboradores) foi repensado, melhoramos seu design, adicionamos uma caixa de diálogo e tambem o Checkpoint como sendo a "recompensa" se ambos os links forem abertos. Possuí resposta visual e sonora.
+```javascript
+export default (anims, selectedPlayer, selectedSprite) =>{
+  // Define all player animation keys
+  const animationKeys = [
+    'player_run',
+    'player_idle',
+    'player_jump',
+    'player_fall',
+    'player_attack',
+    'player_dash',
+  ];
 
+
+  // Remove existing animations if they exist
+  animationKeys.forEach(key => {
+    if (anims.exists(key)) {
+      anims.remove(key);
+    }
+  });
+ 
+  // Animate the sprites
+  anims.create({
+    key: 'player_run',
+    frames: anims.generateFrameNumbers(`player${selectedPlayer}_${selectedSprite}`, { start: 10, end: 17 }),
+    frameRate: 12,
+    repeat: -1
+  });
+
+
+  anims.create({
+    key: 'player_idle',
+    frames: anims.generateFrameNumbers(`player${selectedPlayer}_${selectedSprite}`, { start: 18, end: 25 }),
+    frameRate: 6,
+    repeat: -1
+  });
+
+
+  anims.create({
+    key: 'player_jump',
+    frames: anims.generateFrameNumbers(`player${selectedPlayer}_${selectedSprite}`, { start: 8, end: 9 }),
+    frameRate: 2,
+    repeat: -1
+  });
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp; O Hub de *Links*, recurso para o aprendizado dos novos colaboradores, foi aprimorado em design e funcionalidade. Adicionamos uma caixa de diálogo e um *Checkpoint* como recompensa por abrir ambos os *links*. Este possui *feedback* visual e sonoro.
 <div align="center">
-<sub>Figura 24 - Hub de Links - 0 Clicks </sub>
+<sub>Figura 53 - Hub de Links - 0 Clicks </sub>
 <img src="../assets/4.5/hub0Clicks.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
-&nbsp;&nbsp;&nbsp;&nbsp; Quando o diálogo é finalizado, é abilitado os clicks nos links, a cada click a barra de progresso sobe, quando vc clica em todos os links a barra completa e o Checkpoint é redefinido para aquela localização.
+&nbsp;&nbsp;&nbsp;&nbsp;Apenas após o término do diálogo será possível clicar nos *links* disponibilizados. A barra de progresso do Hub de *Links* aumentará de acordo com a quantidade de *links* acessados, e o jogador só poderá fechar este Hub ao acessar todos os *links* disponíveis. Adicionalmente, a opção de fechar o Hub estará indisponível enquanto a barra de progresso não atingir 100%, ou seja, enquanto todos os *links* não forem acessados.
 
 <div align="center">
-<sub>Figura 25 - Hub de Links - 2 Clicks </sub>
+<sub>Figura 54 - Hub de Links - 2 Clicks </sub>
 <img src="../assets/4.5/hub2Clicks.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
-&nbsp;&nbsp;&nbsp;&nbsp; Aqui temos um pedaço do código que cria o Hub de links, nesse trecho abrimos uma janela quando o botão é clicado e checamos se ambos os botões ja foram clicados, se sim, define o Checkpoint muda a imagem e toca um som.
+&nbsp;&nbsp;&nbsp;&nbsp;Segue um trecho do código referente à criação do Hub de *Links*. Resumidamente, ao clicar no botão, uma nova janela é aberta. Checamos se ambos os botões já foram clicados e, em caso afirmativo, definimos o *Checkpoint*, imagem muda e um som é reproduzido.
 
 <div align="center">
-<sub>Figura 26 - Hub de Links - Código de um botão do link. </sub>
-<img src="../assets/4.5/hubCode.png" width="100%">
+<sub>Código - Hub de Links - Código de um botão do link.
+</div>
+
+```javascript
+// Link button2
+      this.link_button2.on('pointerdown', () => {
+        window.open(url2[0], '_blank'); // Open in a new tab
+        if (!this.link2Clicked) {
+          this.link2Clicked = true; // Set the flag to indicate link 2 has been clicked
+          this.clicksCount = this.link1Clicked + this.link2Clicked;
+          this.updateProgressBar(); // Call a function to update the progress bar
+        }
+        if (this.link1Clicked && this.link2Clicked){ // If both links are clicked, do whatever
+          this.npcPlayer.checkPoint() // Set checkpoint
+          allowClosing = true
+          this.xBtnLink.setAlpha(1)
+          if (!this.checkpoint_red_point) {
+            this.checkpoint_red_point = this.scene.add.sprite(this.npcPlayer.x + 400, this.npcPlayer.y + 75, "checkpoint_red_point").setScale(4).setDepth(1)
+            this.checkpoint_red_point.play('checkpoint_red_point_idle', true)
+            this.checkpoint_word.setFrame(1)
+            this.scene.sound.add('checkpoint_sound', {loop: false, volume: 0.7}).play();
+          }
+        }
+      });
+```
+
+Com a ideia de tornar o jogo mais intuitivo, adicionamos essa placa no level 3, que indica o que terá na próxima cena, level 4. 
+
+<div align="center">
+<sub>Figura 55 - Placa indicando a próxima fase </sub>
+<img src="../assets/4.5/unilever_plate.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;A adição da tradução amplia nossa capacidade de alcançar e engajar funcionários que não apenas falam português, mas inglês também, garantindo uma experiência inclusiva desde o início. A implementação de sprites de superpersonagens oferece uma experiência ainda mais personalizada e engajada, incentivando os jogadores a explorar e prossegui na história do jogo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;O Hub de *Links*, repensado e aprimorado, não só melhora a interface visual como também integra mecanismos de recompensa mais eficazes para incentivar o aprendizado. Essas inovações são importantes para garantir que a experiência de onboarding seja tanto informativa quanto envolvente.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Finalmente, a implementação dessas atualizações na reta final do projeto destaca nosso compromisso em criar uma experiência de aprendizado gamificada que não apenas informe, mas também encante os novos funcionários. Ao introduzir essas funcionalidades e melhorias, visamos não apenas facilitar o processo de onboarding, mas também demonstrar a cultura inovadora e centrada no colaborador da Unilever.
+
+
 ### 4.5.2 Resolução de Bugs:
 
 &nbsp;&nbsp;&nbsp;&nbsp; Tinhamos uma inconstância nos projeteis do player, onde em algumas ocasiões o projetil era destruído antes de colidir com um Inimigo, isso acontecia pois não zeravamos a variavel 'this.traveledDistance' quando destruia um projetil, portanto o seguinte ja vinha com um valor elevado nessa variável.
 
 <div align="center">
-<sub>Figura 27 - Destruição de Projetil </sub>
-<img src="../assets/4.5/traveledDistance.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Destruição de Projetil
 </div>
+
+```javascript
+// Inactive and reset projectile properties
+    destroyProjectile() {
+      this.activateProjectile(false)
+      this.body.reset(0, 0)
+      this.traveledDistance = 0 // Reset Traveled distance
+    }
+
+
+    // Switch on/off projectile
+    activateProjectile(isActive) {
+      this.setActive(isActive)
+      this.setVisible(isActive)
+    }
+}
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp; Tambem relacionado àos projeteis, o projetil dos chefões não estavam sendo destruidos após acertar o Player, o que causava um comportamento indesejado de Hit Multiplo. Isso foi facilmente resolvido com a criação de uma função destroyProjectile(destroi o projetil) essa que é chamada dentro da função takesHit(lida com a logica de receber dano) do Player
 
 <div align="center">
-<sub>Figura 28 - Lógica de levar Hit </sub>
-<img src="../assets/4.5/takesHit.png" width="100%">
-<sup>Fonte: Material produzido pelos autores (2024)</sup>
+<sub>Código - Lógica de levar Hit
 </div>
+
+```javascript
+
+takesHit(source) {
+    if (this.hasBeenHit) return
+
+
+    // If source have traveledDistance propertie it is a projectile, so destroy it.
+    if (source.traveledDistance) source.destroyProjectile()
+
+
+    this.hurtSound.play()
+    this.hasBeenHit = true // Give invulnerability
+    this.hp.decrease(source.damage) // Monster damage
+    // Check if player died
+    if(this.hp.currentHp() < 1) {
+      // Dead
+      console.log("Dead");
+      this.die()
+    } else {
+      // Hurt
+      this.bounceOff()
+      this.setAlpha(0.25)
+      this.scene.time.delayedCall(200, () => {
+        this.setAlpha(1)
+      })
+    }
+    this.resumeUpdate()
+    this.scene.time.delayedCall(1000, () => {this.hasBeenHit = false})
+  }
+```
 
 # <a name="c5"></a>5. Testes
 
@@ -1192,13 +1439,13 @@ Número | Melhorias:
 
 # <a name="c6"></a>6. Conclusões e trabalhos futuros
 
-&nbsp;&nbsp;&nbsp;&nbsp;À medida que nos aproximamos da fase final de desenvolvimento, refletimos sobre o valioso feedback obtido através de playtests com funcionários da Unilever. Identificamos aspectos cruciais para aprimoramento, como o equilíbrio da dificuldade do jogo, a necessidade de opções para gerenciar a música de fundo ao longo do jogo e a clareza das instruções fornecidas aos jogadores.
+&nbsp;&nbsp;&nbsp;&nbsp;À medida que nos aproximamos da fase final de desenvolvimento, refletimos sobre o valioso *feedback* obtido através de playtests com funcionários da Unilever. Identificamos aspectos cruciais para aprimoramento, como o equilíbrio da dificuldade do jogo, a necessidade de opções para gerenciar a música de fundo ao longo do jogo e a clareza das instruções fornecidas aos jogadores.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Reconhecemos a importância de uma experiência de aprendizado envolvente e livre de frustrações. Por isso, planejamos incorporar adições explicativas e ícones acessíveis, juntamente com diálogos adicionais ao longo das fases, garantindo assim que todos os jogadores, independentemente de sua experiência com videogames, possam avançar no jogo.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Nossas futuras implementações terão o objetivo de resolver esses empecilhos, como a adição de ainda mais personagens não jogáveis (NPCs) ao decorrer do jogo, para manter o funcionário em constante contato com o enredo, refinar a disposição do Heads-Up Display (HUD), impossibilitar a progressão sem a conclusão dos conteúdos educativos e adicionar outros idiomas.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, como equipe, queremos transmitir que esse projeto é muito mais que apenas um jogo; é uma jornada em direção à inovação na educação corporativa e no engajamento de funcionários. O feedback que recebemos é uma forma de entendermos que o que estamos fazendo possui nosso compromisso com a excelência e a melhoria contínua. Enquanto nos preparamos para as etapas finais de desenvolvimento, mantemos nosso foco no objetivo de criar um jogo que seja não apenas divertido, mas também uma ferramenta de aprendizado e integração para a Unilever.
+&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, como equipe, queremos transmitir que esse projeto é muito mais que apenas um jogo; é uma jornada em direção à inovação na educação corporativa e no engajamento de funcionários. O *feedback* que recebemos é uma forma de entendermos que o que estamos fazendo possui nosso compromisso com a excelência e a melhoria contínua. Enquanto nos preparamos para as etapas finais de desenvolvimento, mantemos nosso foco no objetivo de criar um jogo que seja não apenas divertido, mas também uma ferramenta de aprendizado e integração para a Unilever.
 
 
 # <a name="c7"></a>7. Referências

@@ -265,11 +265,19 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
     this.quizTitle = this.scene.add.image(centerX, centerY - 200, 'uni_quiz_logo').setOrigin(0.5).setDepth(2).setScale(0.2);
 
     // Display the question text, creating or updating it
-    this.quizText = this.scene.add.text(centerX - 400, centerY - 170, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX + 100} }).setOrigin(0, 0).setDepth(2);
+    this.quizText = this.scene.add.text(centerX - 400, centerY - 165, questionText, { font: '24px Arial', fill: '#000', wordWrap: {width: centerX + 100} }).setOrigin(0, 0).setDepth(2);
 
     // Close button logic
-    this.quizXBtn = this.scene.add.image(centerX + 330, centerY - 210, 'hub_close').setInteractive().setDepth(3).setScale(0.025);
+    this.quizXBtn = this.scene.add.sprite(centerX + 280, centerY - 190, 'continue_button').setInteractive().setDepth(3).setScale(0.8);
     this.quizXBtn.on('pointerdown', () => this.closeQuiz(true));
+    this.quizXBtn.on('pointerover', () => {
+      this.quizXBtn.setFrame(1)
+      this.selectSound.play()
+    });
+    this.quizXBtn.on('pointerout', () => {
+      this.quizXBtn.setFrame(0)
+      this.selectSound.play()
+    });
 
     // Display each answer button
     ['A', 'B', 'C'].forEach((letter, index) => {
@@ -279,7 +287,7 @@ export default class Npc extends Phaser.Physics.Arcade.Sprite {
         this.answerButtons.push(answerButton)
 
         // Answers text
-        this.answerTexts.push(this.scene.add.text(centerX - 400, centerY + (55 * index) - 80, answers[index], { font: '20px Arial', fill: '#000', wordWrap: {width: centerX - 100} }).setOrigin(0, 0).setDepth(2))
+        this.answerTexts.push(this.scene.add.text(centerX - 400, centerY + (60 * index) - 95, answers[index], { font: '22px Arial', fill: '#000', wordWrap: {width: centerX + 100} }).setOrigin(0, 0).setDepth(2))
 
         answerButton.on('pointerover', () => {
           answerButton.setScale(1.1)

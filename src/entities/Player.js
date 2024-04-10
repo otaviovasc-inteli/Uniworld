@@ -46,10 +46,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
     this.selectedSprite = this.oldPlayer.selectedSprite || 0
 
     // Dev mode // true - true - true - false
-    this.allowedNextLevel = false
-    this.allowedToShot = this.oldPlayer.allowedToShot || false
-    this.allowedToDash = this.oldPlayer.allowedToDash || false
-    this.allowedVoidDeath = true
+    this.allowedNextLevel = true
+    this.allowedToShot = this.oldPlayer.allowedToShot || true
+    this.allowedToDash = this.oldPlayer.allowedToDash || true
+    this.allowedVoidDeath = false
 
     // Projectile properties
     this.projectileCooldown = this.oldPlayer.projectileCooldown || 800; // Cooldown in milliseconds
