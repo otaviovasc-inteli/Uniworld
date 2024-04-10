@@ -80,7 +80,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 * 0.5.0 - 11/04/2024
 #### Entrega 5
-    *Correção de bugs, adicionamos a tela final, adicionou novos affordances e npc diretora
+    *Correção de bugs, adicionamos a tela final, adicionou novos affordances, npc diretora e finalização do jogo
 * 0.4.0 - 28/03/2024
 #### Entrega 4
     * Implementação do mapa level 3 no jogo. Além disso, fizemos o sistema de combate do jogo, implementamos os inimigos e colocamos o segundo npc hub de links no jogo.
