@@ -13,6 +13,7 @@
 <img src="../assets/preserveranceGames.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
+
 ## Sumário
 
 Lista de figuras:
