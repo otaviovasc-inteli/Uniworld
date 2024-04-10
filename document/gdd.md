@@ -51,7 +51,11 @@ Numeração | Figura
 
 # <a name="c1"></a>1. Introdução
 
+&nbsp;&nbsp;&nbsp;&nbsp;Este documento delineia a proposta de desenvolvimento de um jogo destinado a aprimorar e gamificar o processo de onboarding na Unilever. O objetivo é transformar a integração de novos colaboradores numa experiência mais envolvente e informativa, utilizando elementos de jogo para facilitar a aprendizagem e a absorção de informações essenciais sobre a empresa. A introdução abrange o escopo do projeto, oferecendo uma visão detalhada sobre o contexto da indústria, a análise SWOT realizada para a Unilever, a descrição da solução desenvolvida, a proposta de valor, os riscos associados e uma aplicação das 5 Forças de Porter para entender melhor o ambiente competitivo no qual a Unilever opera.
+
 ## 1.1. Escopo do Projeto
+
+&nbsp;&nbsp;&nbsp;&nbsp;O escopo do projeto é detalhadamente descrito através de uma série de subseções, que incluem uma visão sobre o contexto da indústria de bens de consumo, onde a Unilever se posiciona como líder global. Uma análise SWOT é apresentada, destacando forças, fraquezas, oportunidades e ameaças específicas à Unilever. A solução proposta visa gamificar o processo de onboarding, tornando-o mais interativo e engajante para os novos colaboradores, com uma descrição detalhada da solução desenvolvida, a proposta de valor, uma matriz de riscos identificada pela equipe de desenvolvimento e uma análise das 5 Forças de Porter para compreender os desafios e oportunidades no mercado.
 
 ### 1.1.1. Contexto da indústria
 
@@ -67,9 +71,21 @@ Numeração | Figura
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
+&nbsp;&nbsp;&nbsp;&nbsp;A matriz SWOT da Unilever revela uma empresa que se beneficia de uma posição forte e confiável no mercado global, apoiada por um portfólio de marcas multinacionais renomadas e um compromisso com a sustentabilidade e responsabilidade social. Essas forças servem não só para reforçar a reputação da Unilever, mas também para criar uma base sólida para iniciativas futuras e manter a lealdade do consumidor.
+
+&nbsp;&nbsp;&nbsp;&nbsp;No entanto, a empresa enfrenta desafios significativos. A concorrência intensa, especialmente de empresas especializadas em seus setores, como a Nestlé e a Johnson & Johnson, exige uma constante inovação e adaptação. Além disso, a complexidade organizacional decorrente da diversidade de setores atendidos pode gerar dificuldades internas, o que exige uma gestão ágil e adaptável.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Em termos de oportunidades, a Unilever está bem posicionada para se beneficiar do crescimento tecnológico na automação de processos e onboarding de funcionários, assim como tem capacidade de investimento para expandir em mercados emergentes de bens de consumo, que são essenciais para o crescimento contínuo da empresa.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Por outro lado, ameaças externas, como a volatilidade dos preços das matérias-primas e os riscos associados à reputação devido ao tamanho e visibilidade da empresa, podem impactar negativamente a Unilever a qualquer momento. Assim, é essencial que a empresa continue a monitorar essas ameaças e desenvolva estratégias proativas para mitigar possíveis impactos.
+
+&nbsp;&nbsp;&nbsp;&nbsp;A análise SWOT enfatiza a necessidade de a Unilever continuar a alavancar suas forças enquanto aborda suas fraquezas e capitaliza as oportunidades disponíveis, sempre consciente das ameaças que podem afetar sua operação e seu status no mercado.
+
+
+
 ### 1.1.3. Descrição da Solução Desenvolvida
 
-&nbsp;&nbsp;&nbsp;&nbsp;A Unilever, apesar de sua posição como empresa líder global, identificou defasagens em seu processo de onboarding, notada na baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o onboarding, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa.
+&nbsp;&nbsp;&nbsp;&nbsp;A empresa Unilever, especialista em setores de consumo, sempre atenta a seu colaborador, identificou defasagens em seu processo de onboarding, e busca solução para essa problemática. Essa identificação se deu por baixa absorção de informações críticas pelos novos colaboradores. A proposta de solução almeja reformular e gamificar o onboarding, incorporando elementos lúdicos para tornar a aprendizagem envolvente e significativa.
 A solução proposta será utilizada como uma ferramenta interativa e dinâmica, apresentando-se na forma de um jogo personalizado destinado a envolver ativamente os novos membros da empresa. Os benefícios almejados incluem aumento na retenção de informações, uma compreensão mais profunda da empresa e um alinhamento eficaz com os valores e objetivos da Unilever. O critério de sucesso será medido através de análises periódicas de desempenho, satisfação e engajamento, visando proporcionar uma transição positiva para o ambiente de trabalho da Unilever.
 
 ### 1.1.4. Proposta de Valor
@@ -82,21 +98,21 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp; Na seção "Proposta de Valor", há três componentes principais:
+&nbsp;&nbsp;&nbsp;&nbsp; **Na seção "Proposta de Valor", há três componentes principais destacados na figura, que buscam trazer o papel da corporação no modelo de negócios.**
 
-&nbsp;&nbsp;&nbsp;&nbsp; *Produtos e Serviços:* Apresenta a ideia de "Onboarding Gamificado", sugerindo um processo de integração que usa elementos de jogos.
+&nbsp;&nbsp;&nbsp;&nbsp; *1. Produtos e Serviços:* Apresenta a ideia de "Onboarding Gamificado", sugerindo um processo de integração que usa elementos de jogos.
 
-&nbsp;&nbsp;&nbsp;&nbsp; *Criadores de Ganho:* Detalha como o onboarding gamificado pode ajudar a compreender a estrutura organizacional, canais de suporte e o "dicionário" Unilever. Este ponto esta direcionado a facilitar a adaptação dos novos colaboradores e tornar o aprendizado sobre a empresa mais divertido e atraente.
+&nbsp;&nbsp;&nbsp;&nbsp; *2. Criadores de Ganho:* Detalha como o onboarding gamificado pode ajudar a compreender a estrutura organizacional, canais de suporte e o "dicionário" Unilever. Este ponto esta direcionado a facilitar a adaptação dos novos colaboradores e tornar o aprendizado sobre a empresa mais divertido e atraente.
 
-&nbsp;&nbsp;&nbsp;&nbsp; *Aliviadores de Dor:* Enfatiza a importância de tornar a aprendizagem empresarial divertida e atraente para aliviar a dificuldade dos novos colaboradores em absorver informações extensas.
+&nbsp;&nbsp;&nbsp;&nbsp; *3. Aliviadores de Dor:* Enfatiza a importância de tornar a aprendizagem empresarial divertida e atraente para aliviar a dificuldade dos novos colaboradores em absorver informações extensas.
 
-&nbsp;&nbsp;&nbsp;&nbsp; Na seção "Segmentos de Clientes", também existem três componentes:
+&nbsp;&nbsp;&nbsp;&nbsp; **Na seção "Segmentos de Clientes", também existem três componentes principais destacados na figura, que buscam trazer o papel do cliente no modelo de negócios.**
 
-&nbsp;&nbsp;&nbsp;&nbsp; *Trabalhos do Cliente:* Fala sobre a necessidade de promover a cultura empresarial e tornar o onboarding mais engajado e moderno.
+&nbsp;&nbsp;&nbsp;&nbsp; *1. Trabalhos do Cliente:* Fala sobre a necessidade de promover a cultura empresarial e tornar o onboarding mais engajado e moderno.
 
-&nbsp;&nbsp;&nbsp;&nbsp; *Ganhos:* Destaca a busca por mais eficiência.
+&nbsp;&nbsp;&nbsp;&nbsp; *2. Ganhos:* Destaca a busca por mais eficiência.
 
-&nbsp;&nbsp;&nbsp;&nbsp; *Dores:* Menciona como o onboarding monótono e desinteressante pode ser um obstáculo, possivelmente levando a uma dificuldade dos novos colaboradores em absorver informações.
+&nbsp;&nbsp;&nbsp;&nbsp; *3. Dores:* Menciona como o onboarding monótono e desinteressante pode ser um obstáculo, possivelmente levando a uma dificuldade dos novos colaboradores em absorver informações.
 
 ### 1.1.5. Matriz de Riscos
 
@@ -108,6 +124,9 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 <img src="../assets/Matriz3.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;A matriz de risco fornece uma visão estratégica crucial para o gerenciamento de riscos, enfatizando a importância de antecipar e mitigar problemas que possam surgir. Riscos como as divergências criativas e a dificuldade em cumprir prazos, por exemplo, destacam a necessidade de processos de desenvolvimento ágeis e adaptativos. Esta matriz é essencial para assegurar que a equipe se mantenha alinhada e o projeto progrida de forma eficiente e eficaz.
 
 ### 1.1.6. 5 Forças de Porter
 
@@ -149,6 +168,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 
 ## 1.2. Requisitos do Projeto
 
+&nbsp;&nbsp;&nbsp;&nbsp;Após um longo processo criativo, que abrangesse os interesses do grupo, da Unilever e a viabilidade de implementação das mecânicas e idéias discutidas, o grupo impôs alguns requisitos para produção da solução gamificada que não fugisse da premissa original.
 
 \# | Requisito
 --- | ---
@@ -166,10 +186,16 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 12 | Contato com plataformas Unilever (Uniops & degreed)
 13 | Mecânica de dash
 
+&nbsp;&nbsp;&nbsp;&nbsp;Com a conclusão do desenvolvimento da solução gamificada, avaliamos que os requisitos estabelecidos foram atendidos, resultando em uma experiência que reflete os valores e práticas da Unilever. Ao longo do processo, cada elemento, desde as mecânicas intuitivas de controle até o envolvente mundo lúdico, foi meticulosamente desenhado para engajar os novos colaboradores de maneira eficaz e agradável. Após reflexão e consideração do conteúdo já incorporado no jogo, a equipe decidiu que a inclusão de uma mecânica específica para o dicionário da Unilever não era mais essencial para o escopo do projeto. Todas as decisões relacionadas a implementação dos requisitos foi pensando em um produto final que não só atenda, mas supere as expectativas dos usuários, proporcionando uma experiência de aprendizado completa e envolvente sem sobrecarregar o processo com elementos redundantes. Continuaremos, no entanto, a monitorar o feedback dos jogadores e a avaliar oportunidades para futuras melhorias e adições ao jogo.
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
 
 ## 1.3. Público-alvo do Projeto
 
-Nosso público alvo são pessoas com perfil médio de estagiários na Unilever, na faixa etária média de 24 anos, com formação acadêmica conectada à área de tecnologia
+&nbsp;&nbsp;&nbsp;&nbsp;O público-alvo de um produto é um fator crucial no momento de desenvolver algo como um jogo. O grupo fez uma pesquisa de público-alvo, filtrando pessoas recém-contratadas pela Unilever como estágiarias e trainees, que gerou um dado cujo maioria das pessoas estão na faixa etária média de 24 anos, formadas ou ainda na formação acadêmica conectada à área de tecnologia.
+Em outro momento, foi realizado um reunião com alguns funcionários recém-contratados, na qual o grupo pode veriricar que existem pessoas de outras faixa-etárias e gostos que não tinham sido identificadas na pesquisa de público-alvo. 
+Portanto, após fazer correções no jogo, no intuito de torna-lo adaptável para diferentes pessoas, o público-alvo se resume em pessoas recém contratadas pela Unilever, de qualquer faixa etária, gostos e formações.
 
 # <a name="c2"></a>2. Visão Geral do Jogo
 
