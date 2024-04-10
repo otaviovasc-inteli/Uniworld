@@ -80,16 +80,16 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 * 0.5.0 - 11/04/2024
 #### Entrega 5
-    *
+    *Correção de bugs, adicionamos a tela final, adicionou novos affordances, npc diretora e finalização do jogo
 * 0.4.0 - 28/03/2024
 #### Entrega 4
-    *
+    * Implementação do mapa level 3 no jogo. Além disso, fizemos o sistema de combate do jogo, implementamos os inimigos e colocamos o segundo npc hub de links no jogo.
 * 0.3.0 - 15/03/2024
 #### Entrega 3
-    *
+    * Implementação do mapa level 2 no jogo. Além disso, fizemos o primeiro casos de teste do jogo. Além do mais, implementamos o primeiro NPC de links
 * 0.2.0 - 01/03/2024
 #### Entrega 2
-    *
+    * Implementação de duas cenas: quarto e primeiro mapa de level
 * 0.1.0 - 15/02/2024
 #### Entrega 1
     * Jogo com movimentação e interação básica com NPC, Primeiros personagens e animações implementadas.

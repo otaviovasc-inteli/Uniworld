@@ -401,6 +401,18 @@
                  "width":0,
                  "x":4320,
                  "y":1182.05263157895
+                }, 
+                {
+                 "height":0,
+                 "id":72,
+                 "name":"spawnPoint",
+                 "point":true,
+                 "rotation":0,
+                 "type":"PurpleSlime",
+                 "visible":true,
+                 "width":0,
+                 "x":5650.42692114515,
+                 "y":1426.41888498242
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -409,7 +421,7 @@
          "y":0
         }],
  "nextlayerid":18,
- "nextobjectid":62,
+ "nextobjectid":73,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.2",

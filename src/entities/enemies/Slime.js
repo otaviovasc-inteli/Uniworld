@@ -67,15 +67,19 @@ export default class Slime extends Phaser.Physics.Arcade.Sprite {
 
 		// conditional to make the enemy stay on platform
 		if (!hasHit && this.timeFromLastTurn + 100 < time) {
-			this.setFlipX(!this.flipX)
-			this.setVelocityX(this.speed = -this.speed)
-			this.timeFromLastTurn = time
+			this.switchDirection(time)
 		}
 
 		// clear old and stroke line
 		this.rayGraphics.clear();
 		this.rayGraphics.strokeLineShape(ray);
 	}
+
+  switchDirection(time) {
+    this.setFlipX(!this.flipX)
+    this.setVelocityX(this.speed = -this.speed)
+    this.timeFromLastTurn = time ? time : 10
+  }
 
 	// raycast function
 	raycast(body, layer, rayLength = 130) {
