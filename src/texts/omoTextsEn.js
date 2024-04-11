@@ -2,7 +2,7 @@
 const omoTextsEn =
 [
   // Structure ['Question', ['option1', 'option2', 'option3', 'answer']]
-  ["What is the primary purpose of UniOps?", ['A) UniOps focuses solely on marketing strategies to promote Unilever products globally.', 'B) UniOps aims to streamline operations, optimize resources, and fuel business growth by integrating tools, processes, and systems.', 'C) UniOps primarily deals with employee wellness initiatives within the company.', 'B']],
-  ["What is the primary goal of Unilever Compass?", ['A) To lead globally in sustainable business, demonstrating how purpose-driven, future-proof models achieve top-tier financial performance within the top third of our industry.', "B) To solely prioritize short-term financial gains, disregarding environmental and social impacts, and lacking consideration for sustainability principles.", 'C) To maintain current business practices without integrating sustainability measures or adapting to future challenges, potentially hindering long-term growth and competitiveness.', 'A']]
+  ["What is the primary purpose of UniOps?", ['A) UniOps aims to optimize operations, resources, and drive business growth..', 'B) UniOps focuses exclusively on marketing strategies to promote Unilever products\n globally.', 'C) UniOps primarily deals with employee well-being initiatives.', 'A']],
+  ["What is the primary goal of Unilever Compass?", ['A) Leading globally in sustainable business, demonstrating how purpose-driven and \nfuture-proof models achieve top-tier financial performance.', "B) Exclusively prioritizing short-term financial gains, disregarding environmental impacts.", 'C) Maintaining current business practices without integrating sustainability measures or \nadapting to future challenges.', 'A']]
 ];
 export default omoTextsEn;
