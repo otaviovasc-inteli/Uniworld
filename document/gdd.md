@@ -6,7 +6,7 @@
 
 ## Preserverance Games
 
-<a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">David Deodato</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Igor Sampaio</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Marlos Guedes</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Otávio Vasconcelos</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Raphael Silva</a>, <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Ricardo Planas</a> e <a href="https://pixabay.com/music/acoustic-group-acoustic-folk-music-guitar-141345/">Thiago Volcati</a>
+<a href="https://www.linkedin.com/in/david-deodato-41b9b72b7/">David Deodato Alvarenga da Silva</a>, <a href="https://www.linkedin.com/in/igor-sampaio-silva/">Igor Sampaio Silva</a>, <a href="https://www.linkedin.com/in/marlos-do-carmo-guedes-366987250/">Marlos do Carmo Guedes</a>, <a href="https://www.linkedin.com/in/otavio-vasconcelos-a11827208/">Otávio de Carvalho Vasconcelos</a>, <a href="https://www.linkedin.com/in/raphaelfelipesilva/">Raphael Felipe da Silva</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ricardo de Toledo Planas</a> e <a href="https://www.linkedin.com/in/thiago-volcati-a42a94208/">Thiago Martins Volcati de Almeida</a>
 
 <div align="center">
 <sub>Figura 01 - Preserverance Games</sub>
