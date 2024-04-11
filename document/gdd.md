@@ -517,7 +517,7 @@ Nesta cena, o personagem adentra o ambiente da cidade devastada. Aqui, o jogador
 Nesta última fase, o jogador explora o interior da Unilever, com referências às marcas decorando as paredes. A fase desafia o jogador com obstáculos de plataformas, sem inimigos, focando em desafios de movimentação. Aqui, o jogador pode usar o 'dash' para superar as plataformas com rapidez. Ao final, o encontro com o NPC da diretora marca a conclusão da missão, congratulando o jogador por restaurar as marcas à Unilever.
 
 
-###Conclusão:
+### Conclusão:
 
 Portanto, concluímos que o propósito inicial das nossas artes conceituais era criar um ambiente lúdico que evocasse nostalgia e divertisse o jogador, afastando a percepção de um mero jogo educacional sem estímulo. Avançando para o próximo nível, a introdução à cidade devastada aproxima o jogador da realidade, destacando questões como a poluição, um problema que a Unilever se esforça para combater. Por fim, introduzimos o universo Unilever, promovendo um contato mais profundo com a proposta, as marcas e a identidade da empresa, trazendo o jogador para a realidade da Unilever.
 
@@ -527,6 +527,8 @@ Portanto, concluímos que o propósito inicial das nossas artes conceituais era 
 <div align="center">
 <sub>Tabela 02 - Trilha sonora</sub>
 </div>
+
+A trilha sonora, que permeia o jogo como som de fundo, é crucial para a criação de um jogo, constituindo uma parte significativa da imersão do jogador. Esses sons podem moldar os sentimentos experimentados durante o jogo, desde medo e aflição até um senso de aventura ou empatia.
 
 \# | título | ocorrência | autoria
 --- | --- | --- | ---
@@ -538,6 +540,8 @@ Portanto, concluímos que o propósito inicial das nossas artes conceituais era 
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 Licensas: https://mixkit.co/license/#sfxFree
+
+Portanto, concluímos a importância vital das trilhas sonoras em jogos. No nosso jogo, na tela de menu, optamos por uma música calma para que o jogador possa navegar tranquilamente pelas opções, incluindo a mudança de idioma ou o controle do som. Ao iniciar o jogo, na cena do quarto, introduzimos uma música ambiente, sinalizando que a jornada começou. Para a fase 1, escolhemos uma música que incita o senso de aventura, adequada ao mundo lúdico, incentivando o jogador a enfrentar os desafios. Na fase 2, a música se torna mais frenética, refletindo a urgência em combater a poluição, uma problemática que demanda ação imediata. Essa escolha busca estimular a resolução do problema no jogador. Na última fase, adotamos uma música que remete a um ambiente corporativo, mas de forma agradável, para envolver o jogador sem causar tensão, criando uma atmosfera acolhedora.
 
 ## 3.4. Inventário e Bestiário
 
