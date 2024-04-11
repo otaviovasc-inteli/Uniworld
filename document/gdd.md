@@ -498,17 +498,27 @@ Concept art é a criação de imagens que representam ideias, personagens, ambie
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
+Nesta cena, o personagem adentra o mundo lúdico, onde enfrenta desafios, esquivando-se e derrotando inimigos. Interage com NPCs de hub de link no início e fim da fase. O ápice é o confronto com o chefe da desmatamento. Após vencer, deve completar um quiz que valida os conteúdos aprendidos, coletar o power-up e avançar para a próxima etapa.
+
 <div align="center">
 <sub>Figura 13 - Arte Conceitual da Cena 3</sub>
 <img src="../assets/concept_cena_combate_2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
+Nesta cena, o personagem adentra o ambiente da cidade devastada. Aqui, o jogador deve navegar por plataformas, evitando ou enfrentando inimigos. No início e no fim da fase, ocorre a interação com um NPC de hub de links. Após explorar os links no final da fase, o jogador enfrenta o chefe, o rei da poluição. Vencendo-o, precisa acertar um quiz para coletar o power-up.
+
 <div align="center">
 <sub>Figura 14 - Arte Conceitual da Cena 4</sub>
 <img src="../assets/concept_map_ 4.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
+
+Nesta última fase, o jogador explora o interior da Unilever, com referências às marcas decorando as paredes. A fase desafia o jogador com obstáculos de plataformas, sem inimigos, focando em desafios de movimentação. Aqui, o jogador pode usar o 'dash' para superar as plataformas com rapidez. Ao final, o encontro com o NPC da diretora marca a conclusão da missão, congratulando o jogador por restaurar as marcas à Unilever.
+
+
+Conclusão: Portanto, concluímos que o propósito inicial das nossas artes conceituais era criar um ambiente lúdico que evocasse nostalgia e divertisse o jogador, afastando a percepção de um mero jogo educacional sem estímulo. Avançando para o próximo nível, a introdução à cidade devastada aproxima o jogador da realidade, destacando questões como a poluição, um problema que a Unilever se esforça para combater. Por fim, introduzimos o universo Unilever, promovendo um contato mais profundo com a proposta, as marcas e a identidade da empresa, trazendo o jogador para a realidade da Unilever.
+
 
 
 ### 3.3.5. Trilha sonora
