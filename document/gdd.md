@@ -292,7 +292,7 @@ A solução proposta será utilizada como uma ferramenta interativa e dinâmica,
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Com a conclusão do desenvolvimento da solução gamificada, avaliamos que os requisitos estabelecidos foram atendidos, resultando em uma experiência que reflete os valores e práticas da Unilever. Ao longo do processo, cada elemento, desde as mecânicas intuitivas de controle até o envolvente mundo lúdico, foi meticulosamente desenhado para engajar os novos colaboradores de maneira eficaz e x'agradável. Após reflexão e consideração do conteúdo já incorporado no jogo, a equipe decidiu que a inclusão de uma mecânica específica para o dicionário da Unilever não era mais essencial para o escopo do projeto. Todas as decisões relacionadas a implementação dos requisitos foi pensando em um produto final que não só atenda, mas supere as expectativas dos usuários, proporcionando uma experiência de aprendizado completa e envolvente sem sobrecarregar o processo com elementos redundantes. Continuaremos, no entanto, a monitorar o feedback dos jogadores e a avaliar oportunidades para futuras melhorias e adições ao jogo.
+&nbsp;&nbsp;&nbsp;&nbsp;Com a conclusão do desenvolvimento da solução gamificada, avaliamos que os requisitos estabelecidos foram atendidos, resultando em uma experiência que reflete os valores e práticas da Unilever. Ao longo do processo, cada elemento, desde as mecânicas intuitivas de controle até o envolvente mundo lúdico, foi meticulosamente desenhado para engajar os novos colaboradores de maneira eficaz e agradável. Após reflexão e consideração do conteúdo já incorporado no jogo, a equipe decidiu que a inclusão de uma mecânica específica para o dicionário da Unilever não era mais essencial para o escopo do projeto. Todas as decisões relacionadas a implementação dos requisitos foi pensando em um produto final que não só atenda, mas supere as expectativas dos usuários, proporcionando uma experiência de aprendizado completa e envolvente sem sobrecarregar o processo com elementos redundantes. Continuaremos, no entanto, a monitorar o feedback dos jogadores e a avaliar oportunidades para futuras melhorias e adições ao jogo.
 
 &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -469,9 +469,11 @@ Descrição: Tela simples de título com botão *play*, idioma atual e som.
 <sub>Figura 09 - Ilustração do Mundo Lúdico</sub>
 <img src="../assets/printMundoLudico.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
+
 <sub>Figura 10 - Ilustração NPC do Hub de Links</sub>
 <img src="../assets/printDvdNpc.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
+
 <sub>Figura 11 - Ilustração do Hub de Links</sub>
 <img src="../assets/printHubLinks.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
@@ -495,15 +497,11 @@ Concept art é a criação de imagens que representam ideias, personagens, ambie
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-Figura 1: Descrição dos objetos dispostos na primeira cena de combate, como plataformas, NPCs e coletáveis.
-
 <div align="center">
 <sub>Figura 13 - Arte Conceitual da Cena 3</sub>
 <img src="../assets/concept_cena_combate_2.png" width="100%">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
-
-Figura 2: Descrição dos objetos dispostos na segunda cena de combate, como plataformas, NPCs e coletáveis.
 
 <div align="center">
 <sub>Figura 14 - Arte Conceitual da Cena 4</sub>
@@ -511,7 +509,6 @@ Figura 2: Descrição dos objetos dispostos na segunda cena de combate, como pla
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-Figura 3: Descrição dos objetos dispostos na última cena, como as plataformas e as marcas do cenário.
 
 ### 3.3.5. Trilha sonora
 <div align="center">
@@ -546,6 +543,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 <div align="center">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
+
 ### 3.4.2. Bestiário
 &nbsp;&nbsp;&nbsp;&nbsp;O bestiário é constituído por todos os inimigos presentes dentro do jogo.
 <div align="center">
@@ -563,6 +561,7 @@ Licensas: https://mixkit.co/license/#sfxFree
 <div align="center">
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
+
 ## 3.5. Gameflow (Diagrama de cenas)
 
 &nbsp;&nbsp;&nbsp;&nbsp;Um diagrama de cena é uma ferramenta visual que mapeia a sequência e a conexão entre diferentes cenas ou fases de um jogo. Ele detalha eventos importantes, interações e transições, ajudando a organizar a narrativa e a progressão de maneira lógica para garantir uma experiência fluida e envolvente para o jogador.
@@ -850,6 +849,7 @@ preloadGame() {
 
 <div align="center">
 <sub>Código - Trecho do código da TutorialScreen - criando a animação do vídeo </sub>
+</div>
 
 
 
@@ -864,9 +864,9 @@ create() {
 }
 ```
 
-Ao adentrar a cena do quarto em nosso jogo, proporcionamos uma transição visual e narrativa fluida do tutorial anterior. Iniciamos com a tela escurecida da cena anterior gradualmente clareando, criando uma sensação de continuidade e imersão para o jogador. Assim que o ambiente se torna visível, o jogador se encontra diante de um computador. Esse elemento é destacado visualmente, com um brilho sutil ao redor, indicando sua interatividade. Uma prompt visual instrui o jogador a pressionar a tecla "E" para interagir.
+&nbsp;&nbsp;&nbsp;&nbsp;Ao adentrar a cena do quarto em nosso jogo, proporcionamos uma transição visual e narrativa fluida do tutorial anterior. Iniciamos com a tela escurecida da cena anterior gradualmente clareando, criando uma sensação de continuidade e imersão para o jogador. Assim que o ambiente se torna visível, o jogador se encontra diante de um computador. Esse elemento é destacado visualmente, com um brilho sutil ao redor, indicando sua interatividade. Uma prompt visual instrui o jogador a pressionar a tecla "E" para interagir.
 
-Ao realizar essa interação, uma caixa de texto surge, introduzindo a história do jogo e delineando o objetivo principal do jogador: auxiliar na recuperação das marcas roubadas da Unilever. Essa abordagem não só envolve o jogador na narrativa, mas também fornece contexto para suas futuras ações no jogo.
+&nbsp;&nbsp;&nbsp;&nbsp;Ao realizar essa interação, uma caixa de texto surge, introduzindo a história do jogo e delineando o objetivo principal do jogador: auxiliar na recuperação das marcas roubadas da Unilever. Essa abordagem não só envolve o jogador na narrativa, mas também fornece contexto para suas futuras ações no jogo.
 
 <div align="center">
 <sub>Figura 27 - Imagem do Teams - player recebendo a missão </sub>
@@ -874,11 +874,11 @@ Ao realizar essa interação, uma caixa de texto surge, introduzindo a história
 <sup>Fonte: Material produzido pelos autores (2024)</sup>
 </div>
 
-Após a interação inicial com o computador, o jogador percebe outro item colecionável na sala: um desodorante da marca Rexona. Novamente, um *feedback* visual e a instrução para pressionar "E" indicam a possibilidade de interação. Ao fazê-lo, o jogador é apresentado a um quiz que não apenas aprimora o envolvimento narrativo, mas também serve como um mecanismo para avaliar o conhecimento do jogador sobre informações relevantes à Unilever. Caso o jogador erre alguma pergunta, é oferecida a oportunidade de refazer o quiz para consolidar o aprendizado.
+&nbsp;&nbsp;&nbsp;&nbsp;Após a interação inicial com o computador, o jogador percebe outro item colecionável na sala: um desodorante da marca Rexona. Novamente, um *feedback* visual e a instrução para pressionar "E" indicam a possibilidade de interação. Ao fazê-lo, o jogador é apresentado a um quiz que não apenas aprimora o envolvimento narrativo, mas também serve como um mecanismo para avaliar o conhecimento do jogador sobre informações relevantes à Unilever. Caso o jogador erre alguma pergunta, é oferecida a oportunidade de refazer o quiz para consolidar o aprendizado.
 
-Ao coletar o item com sucesso, um *feedback* auditivo sutil confirma a ação do jogador, fornecendo uma resposta imediata e recompensadora. Além disso, a presença de uma trilha sonora de fundo, cuidadosamente selecionada para evocar conforto e familiaridade, contribui para estabelecer uma atmosfera acolhedora e imersiva na cena do quarto.
+&nbsp;&nbsp;&nbsp;&nbsp;Ao coletar o item com sucesso, um *feedback* auditivo sutil confirma a ação do jogador, fornecendo uma resposta imediata e recompensadora. Além disso, a presença de uma trilha sonora de fundo, cuidadosamente selecionada para evocar conforto e familiaridade, contribui para estabelecer uma atmosfera acolhedora e imersiva na cena do quarto.
 
-Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na narrativa, oferecer *feedback* claro e criar uma experiência de jogo coesa e agradável. Ao integrar sons e interações visuais significativas, buscamos garantir que o jogador se sinta imerso no universo do jogo e motivado a prosseguir em sua jornada de aprendizado e exploração.
+&nbsp;&nbsp;&nbsp;&nbsp;Cada elemento nessa etapa foi projetado com o objetivo de envolver o jogador na narrativa, oferecer *feedback* claro e criar uma experiência de jogo coesa e agradável. Ao integrar sons e interações visuais significativas, buscamos garantir que o jogador se sinta imerso no universo do jogo e motivado a prosseguir em sua jornada de aprendizado e exploração.
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;Em seguida à cena do menu e do quarto, o jogador embarca na aventura no "Mundo Lúdico", o primeiro mapa do jogo. Neste cenário encantador, concebemos uma experiência imersiva que desafia o jogador a superar obstáculos e derrotar inimigos enquanto explora um ambiente vibrante e cheio de vida.
