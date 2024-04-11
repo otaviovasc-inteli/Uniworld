@@ -517,7 +517,9 @@ Nesta cena, o personagem adentra o ambiente da cidade devastada. Aqui, o jogador
 Nesta última fase, o jogador explora o interior da Unilever, com referências às marcas decorando as paredes. A fase desafia o jogador com obstáculos de plataformas, sem inimigos, focando em desafios de movimentação. Aqui, o jogador pode usar o 'dash' para superar as plataformas com rapidez. Ao final, o encontro com o NPC da diretora marca a conclusão da missão, congratulando o jogador por restaurar as marcas à Unilever.
 
 
-Conclusão: Portanto, concluímos que o propósito inicial das nossas artes conceituais era criar um ambiente lúdico que evocasse nostalgia e divertisse o jogador, afastando a percepção de um mero jogo educacional sem estímulo. Avançando para o próximo nível, a introdução à cidade devastada aproxima o jogador da realidade, destacando questões como a poluição, um problema que a Unilever se esforça para combater. Por fim, introduzimos o universo Unilever, promovendo um contato mais profundo com a proposta, as marcas e a identidade da empresa, trazendo o jogador para a realidade da Unilever.
+###Conclusão:
+
+Portanto, concluímos que o propósito inicial das nossas artes conceituais era criar um ambiente lúdico que evocasse nostalgia e divertisse o jogador, afastando a percepção de um mero jogo educacional sem estímulo. Avançando para o próximo nível, a introdução à cidade devastada aproxima o jogador da realidade, destacando questões como a poluição, um problema que a Unilever se esforça para combater. Por fim, introduzimos o universo Unilever, promovendo um contato mais profundo com a proposta, as marcas e a identidade da empresa, trazendo o jogador para a realidade da Unilever.
 
 
 
