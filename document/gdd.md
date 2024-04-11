@@ -541,6 +541,8 @@ A trilha sonora, que permeia o jogo como som de fundo, é crucial para a criaç�
 </div>
 Licensas: https://mixkit.co/license/#sfxFree
 
+### Conclusão:
+
 Portanto, concluímos a importância vital das trilhas sonoras em jogos. No nosso jogo, na tela de menu, optamos por uma música calma para que o jogador possa navegar tranquilamente pelas opções, incluindo a mudança de idioma ou o controle do som. Ao iniciar o jogo, na cena do quarto, introduzimos uma música ambiente, sinalizando que a jornada começou. Para a fase 1, escolhemos uma música que incita o senso de aventura, adequada ao mundo lúdico, incentivando o jogador a enfrentar os desafios. Na fase 2, a música se torna mais frenética, refletindo a urgência em combater a poluição, uma problemática que demanda ação imediata. Essa escolha busca estimular a resolução do problema no jogador. Na última fase, adotamos uma música que remete a um ambiente corporativo, mas de forma agradável, para envolver o jogador sem causar tensão, criando uma atmosfera acolhedora.
 
 ## 3.4. Inventário e Bestiário
